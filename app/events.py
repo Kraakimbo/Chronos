@@ -17,8 +17,16 @@ MONTHS_FR = [
 ]
 
 
-def events_list():
-    return list(EVENTS.values())
+def chronological_key(event):
+    """Sort key across BC/AD dates: (year, month, day), oldest first."""
+    return (event["year"], event["month"], event["day"])
+
+
+def events_list(chronological=False):
+    events = list(EVENTS.values())
+    if chronological:
+        events.sort(key=chronological_key)
+    return events
 
 
 def today_french_label(today=None):
@@ -69,6 +77,7 @@ def search_events(query=None, category=None, era_key=None):
             or q in _normalize(e["category"])
             or q in _normalize(e["location"])
         ]
+    results.sort(key=chronological_key)
     return results
 
 

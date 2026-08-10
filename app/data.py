@@ -694,6 +694,1235 @@ EVENTS = {
         ],
         "quiz_slug": "nuit-4-aout-consequence",
     },
+    "bataille-de-waterloo": {
+        "slug": "bataille-de-waterloo",
+        "title": "La bataille de Waterloo",
+        "month": 6,
+        "day": 18,
+        "year": 1815,
+        "date_label": "18 Juin 1815",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Militaire",
+        "location": "Waterloo, Belgique",
+        "location_label": "Mont-Saint-Jean",
+        "map_pos": (49, 32),
+        "summary": (
+            "L'armée de Napoléon est défaite par les forces coalisées "
+            "britanniques et prussiennes, mettant fin définitivement à "
+            "l'épopée impériale française."
+        ),
+        "before": (
+            "Revenu du bannissement de l'île d'Elbe, Napoléon reprend le "
+            "pouvoir en France pendant les Cent-Jours, provoquant la "
+            "formation d'une septième coalition contre lui."
+        ),
+        "during": (
+            "L'armée française affronte les troupes britanniques du duc de "
+            "Wellington, puis l'arrivée décisive de l'armée prussienne de "
+            "Blücher en fin de journée fait basculer la bataille."
+        ),
+        "after": (
+            "Napoléon abdique une seconde fois quatre jours plus tard et est "
+            "exilé sur l'île de Sainte-Hélène, où il mourra en 1821."
+        ),
+        "narrative": [
+            (
+                "Après son évasion de l'île d'Elbe en février 1815, Napoléon "
+                "reprend le pouvoir en France sans coup férir. Les grandes "
+                "puissances européennes, réunies au congrès de Vienne, "
+                "forment aussitôt une nouvelle coalition pour l'arrêter."
+            ),
+            (
+                "Le 18 juin 1815, près du village belge de Waterloo, "
+                "l'armée française affronte les troupes anglo-alliées du "
+                "duc de Wellington, retranchées sur le plateau du "
+                "Mont-Saint-Jean. Les assauts français, dont la célèbre "
+                "charge de cavalerie du maréchal Ney, ne parviennent pas à "
+                "percer les lignes ennemies."
+            ),
+            (
+                "En fin d'après-midi, l'armée prussienne du maréchal "
+                "Blücher, que Napoléon croyait tenue à distance, arrive sur "
+                "le flanc droit français. Prise en tenaille, la Grande "
+                "Armée se débande. La Garde impériale, engagée en dernier "
+                "recours, est repoussée."
+            ),
+        ],
+        "why_it_matters": (
+            "Waterloo met un terme définitif à l'épopée napoléonienne et "
+            "ouvre en Europe une longue période de restauration monarchique "
+            "et d'équilibre entre grandes puissances qui durera jusqu'à la "
+            "Première Guerre mondiale."
+        ),
+        "characters": [
+            {"name": "Napoléon Ier", "role": "Empereur des Français", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Duc de Wellington", "role": "Commandant anglo-allié", "emoji": "🎖️", "bg": "#E9E4D8"},
+            {"name": "Maréchal Blücher", "role": "Commandant prussien", "emoji": "🛡️", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "waterloo-consequence",
+    },
+    "sacre-napoleon": {
+        "slug": "sacre-napoleon",
+        "title": "Le sacre de Napoléon Ier",
+        "month": 12,
+        "day": 2,
+        "year": 1804,
+        "date_label": "2 Décembre 1804",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Paris, France",
+        "location_label": "Cathédrale Notre-Dame",
+        "map_pos": (48, 35),
+        "summary": (
+            "Napoléon Bonaparte se couronne empereur des Français à "
+            "Notre-Dame de Paris, en présence du pape Pie VII, marquant la "
+            "naissance du Premier Empire."
+        ),
+        "before": (
+            "Premier consul depuis 1799 puis consul à vie, Bonaparte fait "
+            "approuver par référendum populaire l'instauration d'un Empire "
+            "héréditaire."
+        ),
+        "during": (
+            "Lors d'une cérémonie fastueuse à Notre-Dame, Napoléon se "
+            "couronne lui-même, puis couronne son épouse Joséphine, sous le "
+            "regard du pape venu spécialement de Rome."
+        ),
+        "after": (
+            "Le Premier Empire est instauré ; Napoléon règne sur la France "
+            "jusqu'à sa première abdication en 1814."
+        ),
+        "narrative": [
+            (
+                "Après le coup d'État du 18 brumaire en 1799 et plusieurs "
+                "années passées comme Premier consul, Napoléon Bonaparte "
+                "fait plébisciter par le peuple français l'instauration "
+                "d'un Empire héréditaire à son profit."
+            ),
+            (
+                "Le 2 décembre 1804, la cathédrale Notre-Dame de Paris "
+                "accueille une cérémonie de sacre fastueuse, orchestrée par "
+                "le peintre Jacques-Louis David. Le pape Pie VII, venu tout "
+                "exprès de Rome, bénit les insignes impériaux, mais c'est "
+                "Napoléon lui-même qui pose la couronne sur sa tête, puis "
+                "couronne son épouse Joséphine."
+            ),
+            (
+                "Ce geste, resté célèbre, symbolise la volonté de Napoléon "
+                "de tenir son pouvoir du peuple et de lui-même plutôt que de "
+                "l'Église, tout en s'inscrivant dans la continuité "
+                "cérémonielle des sacres royaux français."
+            ),
+        ],
+        "why_it_matters": (
+            "Le sacre marque la transformation de la République française "
+            "en Empire héréditaire et l'apogée politique de Napoléon, qui "
+            "dominera l'Europe militairement jusqu'à sa défaite de 1814-1815."
+        ),
+        "characters": [
+            {"name": "Napoléon Ier", "role": "Empereur des Français", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Joséphine de Beauharnais", "role": "Impératrice", "emoji": "💎", "bg": "#F3E8E1"},
+            {"name": "Pape Pie VII", "role": "Chef de l'Église catholique", "emoji": "⛪", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "sacre-napoleon-lieu",
+    },
+    "chute-de-constantinople": {
+        "slug": "chute-de-constantinople",
+        "title": "La chute de Constantinople",
+        "month": 5,
+        "day": 29,
+        "year": 1453,
+        "date_label": "29 Mai 1453",
+        "era": "Moyen Âge",
+        "era_key": "moyen-age",
+        "category": "Militaire",
+        "location": "Constantinople",
+        "location_label": "Constantinople (Istanbul)",
+        "map_pos": (58, 40),
+        "summary": (
+            "Après un siège de près de deux mois, les troupes ottomanes de "
+            "Mehmed II s'emparent de Constantinople, mettant fin à onze "
+            "siècles d'Empire byzantin."
+        ),
+        "before": (
+            "Affaibli et isolé, l'Empire byzantin ne contrôle plus que sa "
+            "capitale, encerclée par l'armée ottomane du jeune sultan "
+            "Mehmed II."
+        ),
+        "during": (
+            "Après des semaines de siège et de bombardements par une "
+            "artillerie inédite, les troupes ottomanes percent les "
+            "murailles théodosiennes et envahissent la ville."
+        ),
+        "after": (
+            "Constantinople devient la capitale de l'Empire ottoman sous le "
+            "nom d'Istanbul ; la chute de la ville est traditionnellement "
+            "considérée comme la fin du Moyen Âge en Europe."
+        ),
+        "narrative": [
+            (
+                "Depuis des siècles, Constantinople résiste aux sièges "
+                "grâce à ses puissantes murailles théodosiennes. Mais en "
+                "1453, le jeune sultan ottoman Mehmed II rassemble une "
+                "armée immense et une artillerie de canons géants conçus "
+                "spécialement pour percer ces remparts."
+            ),
+            (
+                "Le siège débute début avril. Pendant près de deux mois, la "
+                "ville, défendue par une garnison réduite sous l'empereur "
+                "Constantin XI, résiste malgré des bombardements "
+                "incessants. Mehmed II fait même transporter une partie de "
+                "sa flotte par voie terrestre pour contourner une chaîne "
+                "bloquant l'accès à la Corne d'Or."
+            ),
+            (
+                "Le 29 mai 1453 à l'aube, un assaut général finit par percer "
+                "les défenses. Constantin XI meurt dans les combats. La "
+                "ville est prise, marquant la fin de l'Empire byzantin, "
+                "héritier direct de l'Empire romain d'Orient depuis plus de "
+                "onze siècles."
+            ),
+        ],
+        "why_it_matters": (
+            "La chute de Constantinople met fin à l'Empire byzantin et "
+            "marque, pour de nombreux historiens, la transition symbolique "
+            "entre le Moyen Âge et la Renaissance en Europe, notamment par "
+            "l'exil de savants byzantins qui contribuera à la diffusion des "
+            "textes antiques en Occident."
+        ),
+        "characters": [
+            {"name": "Mehmed II", "role": "Sultan ottoman", "emoji": "🏹", "bg": "#FDECD8"},
+            {"name": "Constantin XI", "role": "Dernier empereur byzantin", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "constantinople-consequence",
+    },
+    "signature-magna-carta": {
+        "slug": "signature-magna-carta",
+        "title": "La signature de la Magna Carta",
+        "month": 6,
+        "day": 15,
+        "year": 1215,
+        "date_label": "15 Juin 1215",
+        "era": "Moyen Âge",
+        "era_key": "moyen-age",
+        "category": "Politique",
+        "location": "Runnymede, Angleterre",
+        "location_label": "Prairie de Runnymede",
+        "map_pos": (44, 25),
+        "summary": (
+            "Le roi Jean sans Terre appose son sceau sur la Grande Charte, "
+            "un texte limitant pour la première fois le pouvoir royal "
+            "anglais face à ses barons."
+        ),
+        "before": (
+            "Impopulaire après des défaites militaires en France et une "
+            "fiscalité jugée abusive, le roi Jean sans Terre fait face à "
+            "une révolte de ses barons."
+        ),
+        "during": (
+            "Réunis à Runnymede, les barons contraignent le roi à sceller "
+            "un document limitant son pouvoir et garantissant certains "
+            "droits, notamment celui d'être jugé par ses pairs."
+        ),
+        "after": (
+            "Bien que rapidement contestée par le roi lui-même, la Grande "
+            "Charte sera plusieurs fois réaffirmée et deviendra un texte "
+            "fondateur du droit constitutionnel anglais."
+        ),
+        "narrative": [
+            (
+                "Au début du XIIIe siècle, le roi Jean sans Terre "
+                "d'Angleterre s'aliène ses barons par de lourdes taxes "
+                "destinées à financer des guerres coûteuses et infructueuses "
+                "contre le roi de France, ainsi que par des conflits avec "
+                "la papauté."
+            ),
+            (
+                "En 1215, une coalition de barons en révolte s'empare de "
+                "Londres et contraint le roi à négocier. Le 15 juin, dans "
+                "la prairie de Runnymede au bord de la Tamise, Jean sans "
+                "Terre appose son sceau sur la Magna Carta, un document en "
+                "soixante-trois articles."
+            ),
+            (
+                "Le texte garantit notamment qu'aucun homme libre ne peut "
+                "être emprisonné ou dépossédé sans jugement légal de ses "
+                "pairs, et qu'aucune taxe exceptionnelle ne peut être levée "
+                "sans l'accord d'un conseil de barons — une première limite "
+                "posée au pouvoir royal absolu."
+            ),
+        ],
+        "why_it_matters": (
+            "Bien que largement pensée pour protéger les intérêts des "
+            "barons plutôt que du peuple, la Magna Carta est devenue un "
+            "symbole fondateur de l'État de droit et a inspiré des "
+            "principes constitutionnels repris bien plus tard, jusque dans "
+            "la Déclaration d'indépendance américaine."
+        ),
+        "characters": [
+            {"name": "Jean sans Terre", "role": "Roi d'Angleterre", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Barons rebelles", "role": "Noblesse anglaise", "emoji": "🛡️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "magna-carta-principe",
+    },
+    "eruption-vesuve": {
+        "slug": "eruption-vesuve",
+        "title": "L'éruption du Vésuve et la destruction de Pompéi",
+        "month": 8,
+        "day": 24,
+        "year": 79,
+        "date_label": "24 Août 79",
+        "era": "Antiquité",
+        "era_key": "antiquite",
+        "category": "Catastrophe naturelle",
+        "location": "Pompéi, Italie",
+        "location_label": "Golfe de Naples",
+        "map_pos": (53, 44),
+        "summary": (
+            "L'éruption soudaine du Vésuve ensevelit les villes romaines de "
+            "Pompéi et Herculanum sous plusieurs mètres de cendres, figeant "
+            "leur vie quotidienne pour deux millénaires."
+        ),
+        "before": (
+            "Pompéi et Herculanum sont des villes romaines prospères au "
+            "pied du Vésuve, un volcan considéré comme endormi depuis des "
+            "générations."
+        ),
+        "during": (
+            "En quelques heures, le volcan projette une colonne de cendres "
+            "et de pierre ponce sur des kilomètres, avant que des coulées "
+            "pyroclastiques brûlantes ne recouvrent les villes."
+        ),
+        "after": (
+            "Les cités sont abandonnées et oubliées pendant plus de "
+            "seize siècles, avant d'être redécouvertes par des fouilles "
+            "archéologiques à partir du XVIIIe siècle."
+        ),
+        "narrative": [
+            (
+                "Le Vésuve, volcan surplombant la baie de Naples, était "
+                "considéré comme éteint par les habitants de la région. Le "
+                "24 août de l'an 79, il entre brutalement en éruption, "
+                "projetant une immense colonne de cendres et de pierre "
+                "ponce à près de 30 kilomètres d'altitude."
+            ),
+            (
+                "Pendant plusieurs heures, cendres et pierres s'abattent sur "
+                "Pompéi, poussant une partie de la population à fuir. Dans "
+                "la nuit, des coulées pyroclastiques — des nuées de gaz "
+                "brûlants et de débris dévalant les pentes du volcan à "
+                "grande vitesse — surprennent et tuent ceux restés sur "
+                "place, notamment à Herculanum, ensevelie plus rapidement "
+                "encore."
+            ),
+            (
+                "L'écrivain romain Pline le Jeune, témoin depuis l'autre "
+                "rive du golfe de Naples, laisse un récit détaillé de la "
+                "catastrophe, au cours de laquelle son oncle Pline "
+                "l'Ancien, parti porter secours, trouve la mort."
+            ),
+        ],
+        "why_it_matters": (
+            "L'éruption a paradoxalement permis la conservation "
+            "exceptionnelle de Pompéi et Herculanum sous les cendres, "
+            "offrant aux archéologues depuis le XVIIIe siècle un instantané "
+            "unique et détaillé de la vie quotidienne romaine."
+        ),
+        "characters": [
+            {"name": "Pline l'Ancien", "role": "Naturaliste, amiral romain", "emoji": "📜", "bg": "#FDECD8"},
+            {"name": "Pline le Jeune", "role": "Écrivain, témoin", "emoji": "🪶", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "vesuve-consequence",
+    },
+    "krach-de-1929": {
+        "slug": "krach-de-1929",
+        "title": "Le krach de 1929",
+        "month": 10,
+        "day": 24,
+        "year": 1929,
+        "date_label": "24 Octobre 1929",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Économie",
+        "location": "New York, États-Unis",
+        "location_label": "Wall Street",
+        "map_pos": (24, 37),
+        "summary": (
+            "Le « jeudi noir » à la Bourse de New York déclenche un krach "
+            "boursier qui précipite le monde dans la Grande Dépression des "
+            "années 1930."
+        ),
+        "before": (
+            "Après des années de spéculation effrénée alimentée par "
+            "l'achat d'actions à crédit, les cours de la Bourse de New York "
+            "atteignent des niveaux jugés intenables."
+        ),
+        "during": (
+            "Le 24 octobre 1929, une vague de ventes paniquées s'abat sur "
+            "Wall Street ; malgré une intervention des grandes banques, la "
+            "confiance s'effondre définitivement les jours suivants."
+        ),
+        "after": (
+            "Le krach entraîne faillites bancaires et chômage de masse aux "
+            "États-Unis, puis se propage à l'économie mondiale, provoquant "
+            "la Grande Dépression."
+        ),
+        "narrative": [
+            (
+                "Durant les « années folles », la Bourse de New York connaît "
+                "une hausse spectaculaire, largement alimentée par des "
+                "investisseurs empruntant massivement pour acheter des "
+                "actions, pariant sur une hausse continue des cours."
+            ),
+            (
+                "Le 24 octobre 1929, surnommé « jeudi noir », une vague de "
+                "ventes massives et paniquées s'abat sur le New York Stock "
+                "Exchange. Un consortium de grandes banques tente "
+                "d'enrayer la chute en rachetant des actions, offrant un "
+                "répit temporaire."
+            ),
+            (
+                "Mais la confiance ne revient pas : les 28 et 29 octobre, "
+                "surnommés « lundi noir » et « mardi noir », voient de "
+                "nouvelles chutes vertigineuses. En quelques jours, des "
+                "milliards de dollars de valeur boursière s'évaporent, "
+                "ruinant nombre d'investisseurs."
+            ),
+        ],
+        "why_it_matters": (
+            "Le krach de 1929 déclenche la Grande Dépression, la pire crise "
+            "économique du XXe siècle, marquée par des faillites bancaires "
+            "en série, un chômage massif et des répercussions économiques "
+            "et politiques mondiales durant toute la décennie suivante."
+        ),
+        "characters": [
+            {"name": "Herbert Hoover", "role": "Président des États-Unis", "emoji": "🏛️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "krach-1929-consequence",
+    },
+    "attaque-pearl-harbor": {
+        "slug": "attaque-pearl-harbor",
+        "title": "L'attaque de Pearl Harbor",
+        "month": 12,
+        "day": 7,
+        "year": 1941,
+        "date_label": "7 Décembre 1941",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Militaire",
+        "location": "Hawaï, États-Unis",
+        "location_label": "Base navale de Pearl Harbor",
+        "map_pos": (12, 48),
+        "summary": (
+            "L'aviation japonaise attaque par surprise la flotte américaine "
+            "du Pacifique, provoquant l'entrée en guerre des États-Unis "
+            "dans la Seconde Guerre mondiale."
+        ),
+        "before": (
+            "Les tensions entre les États-Unis et le Japon impérial "
+            "s'aggravent après l'embargo américain sur le pétrole imposé "
+            "en réponse à l'expansion japonaise en Asie."
+        ),
+        "during": (
+            "Des avions japonais lancés depuis des porte-avions frappent "
+            "sans avertissement la flotte américaine ancrée à Pearl Harbor, "
+            "détruisant ou endommageant de nombreux navires de guerre."
+        ),
+        "after": (
+            "Les États-Unis déclarent la guerre au Japon dès le lendemain, "
+            "entraînant leur entrée dans le conflit mondial aux côtés des "
+            "Alliés."
+        ),
+        "narrative": [
+            (
+                "Au matin du 7 décembre 1941, alors que les négociations "
+                "diplomatiques se poursuivent officiellement à Washington, "
+                "des centaines d'avions japonais décollent de porte-avions "
+                "et frappent par surprise la base navale américaine de "
+                "Pearl Harbor, à Hawaï."
+            ),
+            (
+                "En un peu moins de deux heures, l'attaque coule ou "
+                "endommage huit cuirassés américains et détruit près de "
+                "200 avions, faisant environ 2 400 morts, pour la plupart "
+                "des militaires. Les porte-avions américains, absents ce "
+                "jour-là, échappent à la destruction."
+            ),
+            (
+                "Le président Franklin D. Roosevelt qualifie le 7 décembre "
+                "de « date qui restera dans l'infamie » devant le Congrès, "
+                "qui vote la déclaration de guerre au Japon dès le "
+                "lendemain."
+            ),
+        ],
+        "why_it_matters": (
+            "L'attaque de Pearl Harbor précipite l'entrée en guerre des "
+            "États-Unis, jusque-là officiellement neutres, et transforme "
+            "définitivement le conflit européen en une guerre véritablement "
+            "mondiale."
+        ),
+        "characters": [
+            {"name": "Franklin D. Roosevelt", "role": "Président des États-Unis", "emoji": "🏛️", "bg": "#E9E4D8"},
+            {"name": "Isoroku Yamamoto", "role": "Amiral japonais", "emoji": "⚓", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "pearl-harbor-consequence",
+    },
+    "bombardement-hiroshima": {
+        "slug": "bombardement-hiroshima",
+        "title": "Le bombardement d'Hiroshima",
+        "month": 8,
+        "day": 6,
+        "year": 1945,
+        "date_label": "6 Août 1945",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Militaire",
+        "location": "Hiroshima, Japon",
+        "location_label": "Hiroshima",
+        "map_pos": (78, 40),
+        "summary": (
+            "Les États-Unis larguent la première bombe atomique de "
+            "l'histoire militaire sur la ville d'Hiroshima, provoquant des "
+            "destructions et des pertes humaines sans précédent."
+        ),
+        "before": (
+            "Dans les derniers mois de la guerre du Pacifique, le Japon "
+            "refuse de capituler malgré des bombardements conventionnels "
+            "dévastateurs sur ses grandes villes."
+        ),
+        "during": (
+            "Le bombardier américain Enola Gay largue la bombe atomique "
+            "« Little Boy » sur Hiroshima, détruisant la majeure partie de "
+            "la ville en quelques instants."
+        ),
+        "after": (
+            "Une seconde bombe atomique frappe Nagasaki trois jours plus "
+            "tard ; le Japon annonce sa capitulation le 15 août 1945, "
+            "mettant fin à la Seconde Guerre mondiale."
+        ),
+        "narrative": [
+            (
+                "À l'été 1945, malgré une situation militaire désespérée, "
+                "le gouvernement japonais refuse la capitulation sans "
+                "conditions exigée par les Alliés, qui redoutent le coût "
+                "humain d'une invasion terrestre du Japon."
+            ),
+            (
+                "Le 6 août 1945 à 8h15 du matin, le bombardier américain "
+                "Enola Gay largue sur Hiroshima la bombe atomique « Little "
+                "Boy ». L'explosion détruit instantanément une grande "
+                "partie de la ville et tue des dizaines de milliers de "
+                "personnes sur le coup, un bilan qui continuera de "
+                "s'alourdir dans les mois suivants du fait des radiations."
+            ),
+            (
+                "Le Japon ne capitule pas immédiatement. Le 9 août, une "
+                "seconde bombe atomique frappe la ville de Nagasaki. "
+                "L'empereur Hirohito annonce la capitulation du Japon le "
+                "15 août, mettant un terme définitif à la Seconde Guerre "
+                "mondiale."
+            ),
+        ],
+        "why_it_matters": (
+            "Premier usage militaire de l'arme atomique de l'histoire, le "
+            "bombardement d'Hiroshima précipite la fin de la Seconde Guerre "
+            "mondiale tout en ouvrant l'ère nucléaire et ses lourdes "
+            "questions éthiques et stratégiques, encore débattues "
+            "aujourd'hui."
+        ),
+        "characters": [
+            {"name": "Harry S. Truman", "role": "Président des États-Unis", "emoji": "🏛️", "bg": "#E9E4D8"},
+            {"name": "Hirohito", "role": "Empereur du Japon", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "hiroshima-date",
+    },
+    "capitulation-allemande-1945": {
+        "slug": "capitulation-allemande-1945",
+        "title": "La capitulation allemande de 1945",
+        "month": 5,
+        "day": 8,
+        "year": 1945,
+        "date_label": "8 Mai 1945",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Militaire",
+        "location": "Reims puis Berlin",
+        "location_label": "Berlin, quartier de Karlshorst",
+        "map_pos": (53, 30),
+        "summary": (
+            "La capitulation sans conditions de l'Allemagne nazie met fin à "
+            "la Seconde Guerre mondiale en Europe, célébrée comme le "
+            "« Jour de la Victoire »."
+        ),
+        "before": (
+            "Après le suicide d'Hitler le 30 avril 1945 et la chute de "
+            "Berlin encerclée par l'Armée rouge, l'effondrement militaire "
+            "allemand est total."
+        ),
+        "during": (
+            "Une première capitulation est signée à Reims le 7 mai ; une "
+            "seconde cérémonie, exigée par Staline, se tient à Berlin dans "
+            "la nuit du 8 au 9 mai."
+        ),
+        "after": (
+            "La guerre continue en Asie jusqu'à la capitulation du Japon en "
+            "août, mais le 8 mai reste commémoré comme la fin des combats "
+            "en Europe."
+        ),
+        "narrative": [
+            (
+                "Fin avril 1945, l'Armée rouge encercle Berlin. Adolf "
+                "Hitler se suicide dans son bunker le 30 avril, alors que "
+                "les combats font rage dans les rues de la capitale "
+                "allemande en ruines."
+            ),
+            (
+                "Le 7 mai, le général Alfred Jodl signe à Reims, au "
+                "quartier général du général Eisenhower, l'acte de "
+                "capitulation sans conditions de toutes les forces "
+                "allemandes. Staline, jugeant la cérémonie insuffisamment "
+                "solennelle et voulant que la capitulation soit actée sur "
+                "le sol allemand, exige une seconde signature."
+            ),
+            (
+                "Dans la nuit du 8 au 9 mai, une nouvelle cérémonie se "
+                "tient à Berlin-Karlshorst devant les représentants "
+                "soviétiques. En France et dans la plupart des pays "
+                "occidentaux, c'est le 8 mai qui reste célébré comme le "
+                "jour de la victoire en Europe."
+            ),
+        ],
+        "why_it_matters": (
+            "La capitulation allemande met fin à près de six ans de guerre "
+            "en Europe, ayant fait des dizaines de millions de morts, et "
+            "ouvre la voie à la partition de l'Allemagne et au début de la "
+            "guerre froide entre les Alliés occidentaux et l'URSS."
+        ),
+        "characters": [
+            {"name": "Dwight D. Eisenhower", "role": "Commandant suprême allié", "emoji": "🎖️", "bg": "#E9E4D8"},
+            {"name": "Joseph Staline", "role": "Dirigeant soviétique", "emoji": "⭐", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "victoire-europe-mois",
+    },
+    "vol-de-gagarine": {
+        "slug": "vol-de-gagarine",
+        "title": "Le vol de Youri Gagarine",
+        "month": 4,
+        "day": 12,
+        "year": 1961,
+        "date_label": "12 Avril 1961",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Science",
+        "location": "Baïkonour, URSS",
+        "location_label": "Cosmodrome de Baïkonour",
+        "map_pos": (66, 26),
+        "summary": (
+            "Le cosmonaute soviétique Youri Gagarine devient le premier "
+            "être humain à voyager dans l'espace, à bord du vaisseau "
+            "Vostok 1."
+        ),
+        "before": (
+            "En pleine guerre froide, l'URSS et les États-Unis se livrent à "
+            "une course à l'espace acharnée depuis le lancement du "
+            "satellite Spoutnik en 1957."
+        ),
+        "during": (
+            "Gagarine effectue une orbite complète autour de la Terre à "
+            "bord de Vostok 1, un vol d'un peu moins de deux heures, avant "
+            "d'atterrir en parachute en Russie."
+        ),
+        "after": (
+            "Gagarine devient un héros mondial et un symbole de la "
+            "propagande soviétique, relançant la course à l'espace qui "
+            "mènera les Américains sur la Lune huit ans plus tard."
+        ),
+        "narrative": [
+            (
+                "Le 12 avril 1961, le cosmonaute soviétique Youri Gagarine, "
+                "un pilote de chasse de 27 ans, décolle du cosmodrome de "
+                "Baïkonour à bord du vaisseau Vostok 1 pour devenir le "
+                "premier être humain à quitter l'atmosphère terrestre."
+            ),
+            (
+                "En 108 minutes, Gagarine effectue une orbite complète "
+                "autour de la Terre à une altitude d'environ 300 "
+                "kilomètres. Durant le vol, largement automatisé, il "
+                "observe et décrit la courbure de la Terre, une vision "
+                "alors inédite pour un être humain."
+            ),
+            (
+                "Le vaisseau redescend et Gagarine s'éjecte pour atterrir "
+                "en parachute près de la Volga, comme prévu par la "
+                "procédure soviétique. Il est immédiatement célébré comme "
+                "un héros national et devient une figure mondiale de la "
+                "conquête spatiale."
+            ),
+        ],
+        "why_it_matters": (
+            "Le vol de Gagarine constitue une victoire majeure de l'URSS "
+            "dans la course à l'espace et pousse les États-Unis à "
+            "accélérer leur propre programme spatial, qui aboutira à "
+            "l'alunissage d'Apollo 11 en 1969."
+        ),
+        "characters": [
+            {"name": "Youri Gagarine", "role": "Cosmonaute soviétique", "emoji": "👨‍🚀", "bg": "#E4E1E7"},
+            {"name": "Sergueï Korolev", "role": "Ingénieur en chef du programme spatial", "emoji": "🚀", "bg": "#FDECD8"},
+        ],
+        "quiz_slug": "gagarine-duree",
+    },
+    "discours-i-have-a-dream": {
+        "slug": "discours-i-have-a-dream",
+        "title": "Le discours « I Have a Dream »",
+        "month": 8,
+        "day": 28,
+        "year": 1963,
+        "date_label": "28 Août 1963",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Société",
+        "location": "Washington, États-Unis",
+        "location_label": "Lincoln Memorial",
+        "map_pos": (23, 37),
+        "summary": (
+            "Martin Luther King prononce son discours emblématique devant "
+            "plus de 200 000 personnes, lors de la Marche sur Washington "
+            "pour l'emploi et la liberté."
+        ),
+        "before": (
+            "Le mouvement pour les droits civiques prend de l'ampleur aux "
+            "États-Unis face à la ségrégation raciale persistante, "
+            "notamment dans les États du Sud."
+        ),
+        "during": (
+            "Devant le Lincoln Memorial, Martin Luther King prononce un "
+            "discours appelant à la fin du racisme et à l'égalité entre "
+            "Américains, culminant sur la formule « I have a dream »."
+        ),
+        "after": (
+            "Le discours contribue à l'adoption du Civil Rights Act en "
+            "1964 et du Voting Rights Act en 1965, interdisant la "
+            "discrimination raciale légale aux États-Unis."
+        ),
+        "narrative": [
+            (
+                "Le 28 août 1963, plus de 200 000 personnes se rassemblent "
+                "à Washington pour la « Marche sur Washington pour l'emploi "
+                "et la liberté », réclamant la fin de la ségrégation "
+                "raciale et l'égalité économique pour les Afro-Américains."
+            ),
+            (
+                "Devant le Lincoln Memorial, le pasteur Martin Luther King "
+                "prononce un discours qui restera l'un des plus célèbres du "
+                "XXe siècle. S'écartant en partie de son texte préparé, il "
+                "développe une vision d'une Amérique où ses enfants "
+                "« ne seront pas jugés sur la couleur de leur peau mais sur "
+                "le contenu de leur caractère »."
+            ),
+            (
+                "Le discours, retransmis à la télévision devant des "
+                "millions de téléspectateurs, marque un tournant dans la "
+                "prise de conscience nationale sur les droits civiques aux "
+                "États-Unis."
+            ),
+        ],
+        "why_it_matters": (
+            "Ce discours reste un symbole majeur du mouvement américain "
+            "pour les droits civiques, qui aboutira l'année suivante au "
+            "Civil Rights Act de 1964 interdisant la discrimination raciale "
+            "dans de nombreux domaines de la vie publique."
+        ),
+        "characters": [
+            {"name": "Martin Luther King", "role": "Pasteur, militant des droits civiques", "emoji": "🎙️", "bg": "#FDECD8"},
+            {"name": "John Lewis", "role": "Militant, futur député", "emoji": "📢", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "mlk-discours-lieu",
+    },
+    "revolution-doctobre": {
+        "slug": "revolution-doctobre",
+        "title": "La révolution d'Octobre",
+        "month": 11,
+        "day": 7,
+        "year": 1917,
+        "date_label": "7 Novembre 1917",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Petrograd, Russie",
+        "location_label": "Palais d'Hiver",
+        "map_pos": (62, 24),
+        "summary": (
+            "Les bolcheviks de Lénine renversent le gouvernement "
+            "provisoire russe lors d'une insurrection presque sans effusion "
+            "de sang, ouvrant la voie au premier État communiste du monde."
+        ),
+        "before": (
+            "Affaibli par la Première Guerre mondiale et la révolution de "
+            "février 1917 qui a renversé le tsar, le gouvernement "
+            "provisoire russe perd le soutien populaire."
+        ),
+        "during": (
+            "Des gardes rouges bolcheviks s'emparent des points "
+            "stratégiques de Petrograd puis prennent d'assaut le Palais "
+            "d'Hiver, siège du gouvernement provisoire."
+        ),
+        "after": (
+            "Lénine proclame un gouvernement soviétique ; une guerre civile "
+            "éclate bientôt en Russie, menant à la fondation de l'URSS en "
+            "1922."
+        ),
+        "narrative": [
+            (
+                "Après l'abdication du tsar Nicolas II en février 1917, un "
+                "gouvernement provisoire peine à s'imposer face à une "
+                "population russe épuisée par la guerre et la famine, "
+                "tandis que les soviets — conseils d'ouvriers et de "
+                "soldats — gagnent en influence, notamment sous "
+                "l'impulsion des bolcheviks de Vladimir Lénine."
+            ),
+            (
+                "Dans la nuit du 6 au 7 novembre 1917 (24-25 octobre selon "
+                "le calendrier julien alors en vigueur en Russie, d'où le "
+                "nom de « révolution d'Octobre »), des gardes rouges "
+                "bolcheviks occupent sans grande résistance les points "
+                "stratégiques de Petrograd — gares, ponts, centrale "
+                "téléphonique — avant de prendre d'assaut le Palais "
+                "d'Hiver, siège du gouvernement provisoire."
+            ),
+            (
+                "Le lendemain, Lénine proclame la formation d'un "
+                "gouvernement soviétique et annonce des décrets immédiats "
+                "sur la paix et sur la terre, cherchant à s'assurer le "
+                "soutien des soldats et des paysans."
+            ),
+        ],
+        "why_it_matters": (
+            "La révolution d'Octobre installe le premier État communiste de "
+            "l'histoire, qui deviendra l'URSS en 1922 et façonnera une "
+            "grande partie de la géopolitique mondiale du XXe siècle, "
+            "jusqu'à sa dissolution en 1991."
+        ),
+        "characters": [
+            {"name": "Vladimir Lénine", "role": "Chef des bolcheviks", "emoji": "📢", "bg": "#FDECD8"},
+            {"name": "Alexandre Kerenski", "role": "Chef du gouvernement provisoire", "emoji": "🏛️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "revolution-octobre-lieu",
+    },
+    "these-de-luther": {
+        "slug": "these-de-luther",
+        "title": "Les 95 thèses de Luther",
+        "month": 10,
+        "day": 31,
+        "year": 1517,
+        "date_label": "31 Octobre 1517",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Religion",
+        "location": "Wittenberg, Saint-Empire",
+        "location_label": "Église du château de Wittenberg",
+        "map_pos": (52, 27),
+        "summary": (
+            "Le moine Martin Luther affiche ses 95 thèses critiquant la "
+            "vente des indulgences, un geste considéré comme le point de "
+            "départ de la Réforme protestante."
+        ),
+        "before": (
+            "L'Église catholique finance notamment la basilique Saint-Pierre "
+            "de Rome par la vente d'indulgences, promettant la réduction des "
+            "peines des péchés en échange d'argent."
+        ),
+        "during": (
+            "Le moine augustin Martin Luther rédige 95 thèses théologiques "
+            "contestant cette pratique et, selon la tradition, les affiche "
+            "sur la porte de l'église du château de Wittenberg."
+        ),
+        "after": (
+            "Le texte se diffuse rapidement grâce à l'imprimerie et "
+            "déclenche une rupture religieuse majeure, menant à la "
+            "naissance du protestantisme."
+        ),
+        "narrative": [
+            (
+                "Au début du XVIe siècle, l'Église catholique autorise la "
+                "vente d'indulgences pour financer notamment la "
+                "construction de la basilique Saint-Pierre de Rome. Le "
+                "prédicateur Johann Tetzel promeut cette pratique en "
+                "Allemagne avec un zèle qui scandalise le moine augustin "
+                "Martin Luther, professeur de théologie à Wittenberg."
+            ),
+            (
+                "Le 31 octobre 1517, Luther rédige 95 thèses en latin "
+                "contestant la théologie des indulgences et, selon la "
+                "tradition la plus répandue, les affiche sur la porte de "
+                "l'église du château de Wittenberg — un lieu qui servait "
+                "aussi de tableau d'affichage universitaire."
+            ),
+            (
+                "Grâce à l'imprimerie récemment développée par Gutenberg, "
+                "le texte est rapidement traduit en allemand et diffusé "
+                "dans tout le Saint-Empire, déclenchant un débat théologique "
+                "qui échappe vite au contrôle de l'Église romaine."
+            ),
+        ],
+        "why_it_matters": (
+            "Cet acte est traditionnellement considéré comme le point de "
+            "départ de la Réforme protestante, qui va diviser durablement "
+            "le christianisme occidental et bouleverser la carte religieuse "
+            "et politique de l'Europe pour les siècles suivants."
+        ),
+        "characters": [
+            {"name": "Martin Luther", "role": "Moine, théologien", "emoji": "📜", "bg": "#FDECD8"},
+            {"name": "Johann Tetzel", "role": "Prédicateur des indulgences", "emoji": "⛪", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "luther-consequence",
+    },
+    "liberation-mandela": {
+        "slug": "liberation-mandela",
+        "title": "La libération de Nelson Mandela",
+        "month": 2,
+        "day": 11,
+        "year": 1990,
+        "date_label": "11 Février 1990",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Le Cap, Afrique du Sud",
+        "location_label": "Prison de Victor Verster",
+        "map_pos": (52, 68),
+        "summary": (
+            "Après 27 ans d'emprisonnement, Nelson Mandela est libéré, "
+            "marquant le début du démantèlement officiel du régime "
+            "d'apartheid en Afrique du Sud."
+        ),
+        "before": (
+            "Emprisonné depuis 1962 pour son opposition au régime "
+            "ségrégationniste de l'apartheid, Mandela est devenu le symbole "
+            "mondial de la lutte contre la discrimination raciale en "
+            "Afrique du Sud."
+        ),
+        "during": (
+            "Sous la pression internationale croissante, le président "
+            "sud-africain Frederik de Klerk annonce la libération de "
+            "Mandela, qui sort de prison le 11 février 1990 sous les "
+            "acclamations."
+        ),
+        "after": (
+            "Mandela négocie avec de Klerk la fin de l'apartheid, avant "
+            "d'être élu premier président noir d'Afrique du Sud lors des "
+            "premières élections multiraciales de 1994."
+        ),
+        "narrative": [
+            (
+                "Condamné à la prison à vie en 1964 pour sabotage et "
+                "complot contre l'État sud-africain, Nelson Mandela, "
+                "dirigeant du Congrès national africain (ANC), devient "
+                "pendant ses 27 années de détention le symbole mondial de "
+                "la résistance au régime d'apartheid."
+            ),
+            (
+                "Face à des sanctions économiques internationales "
+                "croissantes et à une contestation interne grandissante, le "
+                "président Frederik de Klerk, arrivé au pouvoir en 1989, "
+                "amorce une politique de réformes et lève l'interdiction "
+                "frappant l'ANC."
+            ),
+            (
+                "Le 11 février 1990, Nelson Mandela sort de la prison de "
+                "Victor Verster, près du Cap, sous les acclamations de la "
+                "foule et une couverture médiatique mondiale. Il entame "
+                "aussitôt des négociations avec de Klerk pour démanteler "
+                "l'apartheid."
+            ),
+        ],
+        "why_it_matters": (
+            "La libération de Mandela ouvre la voie aux négociations qui "
+            "mettront fin à l'apartheid et aux premières élections "
+            "multiraciales de 1994, lors desquelles Mandela est élu "
+            "président, devenant un symbole mondial de réconciliation."
+        ),
+        "characters": [
+            {"name": "Nelson Mandela", "role": "Dirigeant de l'ANC", "emoji": "✊", "bg": "#FDECD8"},
+            {"name": "Frederik de Klerk", "role": "Président d'Afrique du Sud", "emoji": "🏛️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "mandela-duree-prison",
+    },
+    "lancement-spoutnik": {
+        "slug": "lancement-spoutnik",
+        "title": "Le lancement de Spoutnik 1",
+        "month": 10,
+        "day": 4,
+        "year": 1957,
+        "date_label": "4 Octobre 1957",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Science",
+        "location": "Baïkonour, URSS",
+        "location_label": "Cosmodrome de Baïkonour",
+        "map_pos": (66, 26),
+        "summary": (
+            "L'URSS met sur orbite Spoutnik 1, premier satellite artificiel "
+            "de l'histoire, déclenchant la course à l'espace avec les "
+            "États-Unis."
+        ),
+        "before": (
+            "En pleine guerre froide, l'URSS et les États-Unis développent "
+            "chacun des programmes de fusées, initialement à but militaire, "
+            "capables d'atteindre l'espace."
+        ),
+        "during": (
+            "Une fusée soviétique R-7 place en orbite Spoutnik 1, une "
+            "sphère métallique de 58 centimètres émettant un simple signal "
+            "radio régulier."
+        ),
+        "after": (
+            "La nouvelle provoque un choc aux États-Unis, qui créent la "
+            "NASA l'année suivante et accélèrent leur propre programme "
+            "spatial."
+        ),
+        "narrative": [
+            (
+                "Le 4 octobre 1957, l'Union soviétique lance depuis le "
+                "cosmodrome de Baïkonour une fusée R-7 emportant Spoutnik "
+                "1, une sphère métallique polie d'à peine 58 centimètres de "
+                "diamètre équipée de quatre antennes radio."
+            ),
+            (
+                "Une fois en orbite, le satellite se contente d'émettre un "
+                "signal radio simple et régulier, un « bip-bip » captable "
+                "par des radioamateurs du monde entier, preuve manifeste de "
+                "la réussite soviétique."
+            ),
+            (
+                "Aux États-Unis, la nouvelle provoque une onde de choc "
+                "connue sous le nom de « moment Spoutnik » : l'opinion "
+                "publique et le gouvernement américains, pris de court, "
+                "craignent d'avoir pris du retard technologique et "
+                "militaire sur l'URSS."
+            ),
+        ],
+        "why_it_matters": (
+            "Spoutnik 1 marque le début de l'ère spatiale et de la course "
+            "à l'espace entre les États-Unis et l'URSS, qui aboutira "
+            "notamment à la création de la NASA en 1958 et, onze ans plus "
+            "tard, à l'alunissage d'Apollo 11."
+        ),
+        "characters": [
+            {"name": "Sergueï Korolev", "role": "Ingénieur en chef du programme spatial", "emoji": "🚀", "bg": "#FDECD8"},
+            {"name": "Nikita Khrouchtchev", "role": "Dirigeant soviétique", "emoji": "⭐", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "spoutnik-annee",
+    },
+    "chute-empire-romain-occident": {
+        "slug": "chute-empire-romain-occident",
+        "title": "La chute de l'Empire romain d'Occident",
+        "month": 9,
+        "day": 4,
+        "year": 476,
+        "date_label": "4 Septembre 476",
+        "era": "Antiquité",
+        "era_key": "antiquite",
+        "category": "Politique",
+        "location": "Ravenne, Italie",
+        "location_label": "Ravenne, capitale impériale",
+        "map_pos": (52, 41),
+        "summary": (
+            "Le chef germanique Odoacre dépose le dernier empereur romain "
+            "d'Occident, Romulus Augustule, marquant traditionnellement la "
+            "fin de l'Antiquité en Europe."
+        ),
+        "before": (
+            "Affaibli par des décennies d'invasions, de crises économiques "
+            "et de coups d'État militaires, l'Empire romain d'Occident ne "
+            "contrôle plus qu'une fraction de son territoire d'origine."
+        ),
+        "during": (
+            "Le chef militaire germanique Odoacre renverse le jeune "
+            "empereur Romulus Augustule et se proclame roi d'Italie, sans "
+            "nommer de nouvel empereur."
+        ),
+        "after": (
+            "Odoacre renvoie les insignes impériaux à Constantinople, "
+            "laissant l'empereur d'Orient seul héritier officiel du titre "
+            "impérial romain."
+        ),
+        "narrative": [
+            (
+                "Au Ve siècle, l'Empire romain d'Occident est exsangue : "
+                "invasions germaniques répétées, généraux qui font et "
+                "défont les empereurs à leur guise, économie exsangue. Le "
+                "dernier empereur, Romulus Augustule, n'a que quelques mois "
+                "de règne, porté au pouvoir enfant par son propre père."
+            ),
+            (
+                "En 476, Odoacre, chef militaire d'origine germanique à la "
+                "tête de troupes fédérées au service de Rome, se retourne "
+                "contre le pouvoir impérial après le refus de lui accorder "
+                "des terres en Italie. Il dépose Romulus Augustule sans "
+                "effusion de sang notable et se proclame roi d'Italie."
+            ),
+            (
+                "Plutôt que de se faire proclamer empereur à son tour, "
+                "Odoacre renvoie les insignes impériaux à Constantinople, "
+                "reconnaissant symboliquement l'empereur d'Orient, Zénon, "
+                "comme seul souverain légitime — mettant ainsi fin à la "
+                "lignée des empereurs d'Occident."
+            ),
+        ],
+        "why_it_matters": (
+            "Cet événement est conventionnellement retenu par les "
+            "historiens comme la date de la fin de l'Empire romain "
+            "d'Occident et de l'Antiquité, ouvrant la période du Moyen Âge "
+            "en Europe occidentale."
+        ),
+        "characters": [
+            {"name": "Odoacre", "role": "Chef germanique, roi d'Italie", "emoji": "🛡️", "bg": "#E9E4D8"},
+            {"name": "Romulus Augustule", "role": "Dernier empereur d'Occident", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "chute-rome-consequence",
+    },
+    "invention-machine-vapeur-watt": {
+        "slug": "invention-machine-vapeur-watt",
+        "title": "Le brevet de la machine à vapeur de Watt",
+        "month": 1,
+        "day": 5,
+        "year": 1769,
+        "date_label": "5 Janvier 1769",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Science",
+        "location": "Écosse, Royaume-Uni",
+        "location_label": "Glasgow",
+        "map_pos": (44, 21),
+        "summary": (
+            "L'ingénieur écossais James Watt dépose le brevet de sa machine "
+            "à vapeur perfectionnée, une innovation décisive qui va "
+            "déclencher la révolution industrielle."
+        ),
+        "before": (
+            "Les machines à vapeur existantes, comme celle de Newcomen, "
+            "sont peu efficaces énergétiquement et limitées au pompage de "
+            "l'eau dans les mines."
+        ),
+        "during": (
+            "James Watt met au point un condenseur séparé qui améliore "
+            "radicalement le rendement de la machine à vapeur, et en "
+            "dépose le brevet."
+        ),
+        "after": (
+            "Associé à l'industriel Matthew Boulton, Watt commercialise ses "
+            "machines, qui se répandent dans les mines puis les usines "
+            "textiles, propulsant la révolution industrielle britannique."
+        ),
+        "narrative": [
+            (
+                "Dans les années 1760, l'ingénieur écossais James Watt "
+                "travaille comme réparateur d'instruments à l'université de "
+                "Glasgow, où on lui confie la réparation d'un modèle de "
+                "machine à vapeur de Newcomen, utilisée pour pomper l'eau "
+                "des mines."
+            ),
+            (
+                "Watt remarque que la machine gaspille énormément d'énergie "
+                "en refroidissant puis en réchauffant sans cesse le même "
+                "cylindre. Il conçoit un condenseur séparé, permettant de "
+                "maintenir le cylindre principal chaud en permanence, ce "
+                "qui améliore considérablement le rendement énergétique."
+            ),
+            (
+                "Le 5 janvier 1769, Watt dépose le brevet de son invention. "
+                "Faute de moyens pour l'exploiter seul, il s'associe "
+                "quelques années plus tard à l'industriel Matthew Boulton, "
+                "et leurs machines à vapeur perfectionnées se répandent "
+                "rapidement dans les mines puis les usines textiles "
+                "britanniques."
+            ),
+        ],
+        "why_it_matters": (
+            "L'amélioration de la machine à vapeur par Watt est considérée "
+            "comme l'un des déclencheurs majeurs de la révolution "
+            "industrielle, en fournissant une source d'énergie mécanique "
+            "fiable qui transformera profondément l'économie et la société "
+            "des XVIIIe et XIXe siècles."
+        ),
+        "characters": [
+            {"name": "James Watt", "role": "Ingénieur, inventeur", "emoji": "⚙️", "bg": "#E4E1E7"},
+            {"name": "Matthew Boulton", "role": "Industriel, associé", "emoji": "🏭", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "watt-invention",
+    },
+    "decouverte-tombe-toutankhamon": {
+        "slug": "decouverte-tombe-toutankhamon",
+        "title": "La découverte de la tombe de Toutânkhamon",
+        "month": 11,
+        "day": 4,
+        "year": 1922,
+        "date_label": "4 Novembre 1922",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Exploration",
+        "location": "Vallée des Rois, Égypte",
+        "location_label": "Vallée des Rois",
+        "map_pos": (56, 44),
+        "summary": (
+            "L'archéologue britannique Howard Carter découvre l'entrée de "
+            "la tombe intacte du pharaon Toutânkhamon, l'une des plus "
+            "grandes découvertes archéologiques du XXe siècle."
+        ),
+        "before": (
+            "Après des années de fouilles infructueuses financées par Lord "
+            "Carnarvon, Howard Carter cherche la tombe d'un pharaon mineur "
+            "dont l'existence n'était que supposée."
+        ),
+        "during": (
+            "Les ouvriers de Carter dégagent un escalier menant à une porte "
+            "scellée portant les sceaux intacts de Toutânkhamon, encore "
+            "jamais pillée."
+        ),
+        "after": (
+            "Le dégagement et l'inventaire du trésor funéraire, comprenant "
+            "le célèbre masque en or, dureront près de dix ans et "
+            "captiveront le monde entier."
+        ),
+        "narrative": [
+            (
+                "Depuis 1907, l'archéologue britannique Howard Carter fouille "
+                "la Vallée des Rois pour le compte de son mécène, Lord "
+                "Carnarvon, à la recherche de la tombe du pharaon "
+                "Toutânkhamon, un souverain mineur mort jeune dont "
+                "l'emplacement du tombeau restait inconnu."
+            ),
+            (
+                "Le 4 novembre 1922, après des années de recherches "
+                "infructueuses et alors que le financement touchait à sa "
+                "fin, les ouvriers de Carter découvrent une marche taillée "
+                "dans la roche. Elle mène à un escalier, puis à une porte "
+                "scellée portant des cachets encore intacts."
+            ),
+            (
+                "Le 26 novembre, Carter perce un petit trou dans la porte "
+                "intérieure et, à la lueur d'une bougie, aperçoit « des "
+                "choses merveilleuses » : la tombe, quasiment inviolée "
+                "depuis plus de 3 000 ans, regorge d'un trésor funéraire "
+                "exceptionnel, dont le célèbre masque funéraire en or du "
+                "pharaon."
+            ),
+        ],
+        "why_it_matters": (
+            "La découverte de la tombe de Toutânkhamon reste l'une des plus "
+            "importantes de l'archéologie moderne : sa richesse quasi "
+            "intacte a considérablement enrichi la connaissance de l'Égypte "
+            "ancienne et déclenché un engouement mondial pour "
+            "l'égyptologie."
+        ),
+        "characters": [
+            {"name": "Howard Carter", "role": "Archéologue britannique", "emoji": "🔍", "bg": "#E4E1E7"},
+            {"name": "Lord Carnarvon", "role": "Mécène de l'expédition", "emoji": "💰", "bg": "#FDECD8"},
+            {"name": "Toutânkhamon", "role": "Pharaon d'Égypte", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "toutankhamon-decouvreur",
+    },
 }
 
 TODAY_EVENT_SLUG = "prise-de-la-bastille"
@@ -902,6 +2131,283 @@ QUIZ_QUESTIONS = {
             "Dans un mouvement d'entraînement collectif, nobles et clergé "
             "renoncent tour à tour à leurs privilèges féodaux et fiscaux, "
             "mettant fin de facto au système seigneurial en France."
+        ),
+    },
+    "waterloo-consequence": {
+        "slug": "waterloo-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Qu'est-il arrivé à Napoléon après sa défaite à Waterloo ?",
+        "options": [
+            "Il a repris le pouvoir en France",
+            "Il a été exilé sur l'île de Sainte-Hélène",
+            "Il a été exécuté",
+            "Il est devenu roi d'Espagne",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Napoléon abdique le 22 juin 1815, quatre jours après Waterloo, "
+            "et est exilé par les Britanniques sur l'île isolée de "
+            "Sainte-Hélène, dans l'Atlantique Sud, où il mourra en 1821."
+        ),
+    },
+    "sacre-napoleon-lieu": {
+        "slug": "sacre-napoleon-lieu",
+        "era": "Époque Contemporaine",
+        "prompt": "Qui a couronné Napoléon Ier lors de son sacre en 1804 ?",
+        "options": [
+            "Le pape Pie VII",
+            "Napoléon s'est couronné lui-même",
+            "Le roi d'Espagne",
+            "L'archevêque de Paris",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Bien que le pape Pie VII ait fait le déplacement de Rome pour "
+            "bénir les insignes impériaux, c'est Napoléon lui-même qui a "
+            "posé la couronne sur sa tête, un geste hautement symbolique."
+        ),
+    },
+    "constantinople-consequence": {
+        "slug": "constantinople-consequence",
+        "era": "Moyen Âge",
+        "prompt": "Quel empire prend fin avec la chute de Constantinople en 1453 ?",
+        "options": [
+            "L'Empire romain d'Occident",
+            "L'Empire byzantin",
+            "L'Empire perse",
+            "L'Empire carolingien",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "La chute de Constantinople met fin à l'Empire byzantin, "
+            "héritier direct de l'Empire romain d'Orient depuis plus de "
+            "onze siècles, et marque pour beaucoup la fin du Moyen Âge."
+        ),
+    },
+    "magna-carta-principe": {
+        "slug": "magna-carta-principe",
+        "era": "Moyen Âge",
+        "prompt": "Quel principe la Magna Carta de 1215 a-t-elle établi ?",
+        "options": [
+            "Le suffrage universel",
+            "La limitation du pouvoir royal face aux barons",
+            "L'abolition de l'esclavage",
+            "La liberté de la presse",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "La Magna Carta garantit notamment qu'aucun homme libre ne peut "
+            "être emprisonné sans jugement légal, posant une limite inédite "
+            "au pouvoir absolu du roi d'Angleterre."
+        ),
+    },
+    "vesuve-consequence": {
+        "slug": "vesuve-consequence",
+        "era": "Antiquité",
+        "prompt": "Qu'est-il arrivé à Pompéi après l'éruption du Vésuve en l'an 79 ?",
+        "options": [
+            "La ville a été reconstruite immédiatement",
+            "La ville a été ensevelie et oubliée pendant des siècles",
+            "La ville a été déplacée",
+            "La ville est devenue une nouvelle capitale romaine",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Ensevelie sous plusieurs mètres de cendres, Pompéi a été "
+            "oubliée pendant plus de seize siècles avant d'être redécouverte "
+            "par des fouilles archéologiques au XVIIIe siècle."
+        ),
+    },
+    "krach-1929-consequence": {
+        "slug": "krach-1929-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Quelle crise économique majeure le krach de 1929 a-t-il déclenchée ?",
+        "options": [
+            "La Grande Dépression",
+            "La crise du pétrole",
+            "L'hyperinflation allemande",
+            "La crise des subprimes",
+        ],
+        "correct_index": 0,
+        "fun_fact": (
+            "Le krach de Wall Street en octobre 1929 précipite la Grande "
+            "Dépression, la pire crise économique du XXe siècle, marquée "
+            "par un chômage de masse dans le monde entier."
+        ),
+    },
+    "pearl-harbor-consequence": {
+        "slug": "pearl-harbor-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Quelle a été la conséquence directe de l'attaque de Pearl Harbor ?",
+        "options": [
+            "Le Japon a capitulé",
+            "Les États-Unis sont entrés en guerre",
+            "La France a été libérée",
+            "L'URSS a rejoint l'Axe",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le lendemain de l'attaque du 7 décembre 1941, les États-Unis "
+            "déclarent la guerre au Japon, entraînant leur entrée dans la "
+            "Seconde Guerre mondiale."
+        ),
+    },
+    "hiroshima-date": {
+        "slug": "hiroshima-date",
+        "era": "Époque Contemporaine",
+        "prompt": "En quelle année la bombe atomique a-t-elle été larguée sur Hiroshima ?",
+        "options": ["1943", "1944", "1945", "1946"],
+        "correct_index": 2,
+        "fun_fact": (
+            "Le 6 août 1945, le bombardier Enola Gay largue la première "
+            "bombe atomique de l'histoire militaire sur Hiroshima, "
+            "précipitant la capitulation du Japon quelques jours plus tard."
+        ),
+    },
+    "victoire-europe-mois": {
+        "slug": "victoire-europe-mois",
+        "era": "Époque Contemporaine",
+        "prompt": "En quel mois la capitulation allemande de 1945 a-t-elle été signée ?",
+        "options": ["Janvier", "Mai", "Août", "Décembre"],
+        "correct_index": 1,
+        "fun_fact": (
+            "L'Allemagne capitule le 8 mai 1945, mettant fin à la Seconde "
+            "Guerre mondiale en Europe — une date encore commémorée chaque "
+            "année en France."
+        ),
+    },
+    "gagarine-duree": {
+        "slug": "gagarine-duree",
+        "era": "Époque Contemporaine",
+        "prompt": "Qu'a accompli Youri Gagarine le 12 avril 1961 ?",
+        "options": [
+            "Le premier alunissage",
+            "Le premier vol spatial habité",
+            "La première sortie dans l'espace",
+            "Le premier satellite artificiel",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "En 108 minutes, Gagarine devient le premier être humain à "
+            "voyager dans l'espace, effectuant une orbite complète autour "
+            "de la Terre à bord de Vostok 1."
+        ),
+    },
+    "mlk-discours-lieu": {
+        "slug": "mlk-discours-lieu",
+        "era": "Époque Contemporaine",
+        "prompt": "Où Martin Luther King a-t-il prononcé son discours « I Have a Dream » ?",
+        "options": [
+            "Devant la Maison-Blanche",
+            "Devant le Lincoln Memorial à Washington",
+            "À l'ONU à New York",
+            "Au Capitole",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le 28 août 1963, King prononce son discours devant plus de "
+            "200 000 personnes rassemblées au Lincoln Memorial lors de la "
+            "Marche sur Washington."
+        ),
+    },
+    "revolution-octobre-lieu": {
+        "slug": "revolution-octobre-lieu",
+        "era": "Époque Contemporaine",
+        "prompt": "Quel bâtiment les bolcheviks prennent-ils d'assaut lors de la révolution d'Octobre ?",
+        "options": [
+            "Le Kremlin",
+            "Le Palais d'Hiver",
+            "La cathédrale Saint-Basile",
+            "Le palais de Peterhof",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le Palais d'Hiver de Petrograd, siège du gouvernement "
+            "provisoire, est pris d'assaut par les gardes rouges bolcheviks "
+            "dans la nuit du 6 au 7 novembre 1917."
+        ),
+    },
+    "luther-consequence": {
+        "slug": "luther-consequence",
+        "era": "Renaissance",
+        "prompt": "Quel mouvement religieux les 95 thèses de Luther ont-elles déclenché ?",
+        "options": [
+            "La Réforme protestante",
+            "Les croisades",
+            "Le schisme d'Orient",
+            "L'Inquisition",
+        ],
+        "correct_index": 0,
+        "fun_fact": (
+            "En contestant la vente des indulgences en 1517, Luther "
+            "déclenche la Réforme protestante, qui divisera durablement le "
+            "christianisme occidental."
+        ),
+    },
+    "mandela-duree-prison": {
+        "slug": "mandela-duree-prison",
+        "era": "Époque Contemporaine",
+        "prompt": "Combien d'années Nelson Mandela a-t-il passées en prison avant sa libération en 1990 ?",
+        "options": ["7 ans", "17 ans", "27 ans", "37 ans"],
+        "correct_index": 2,
+        "fun_fact": (
+            "Emprisonné en 1962 pour son opposition à l'apartheid, Mandela "
+            "est libéré le 11 février 1990 après 27 ans de détention, "
+            "devenant plus tard le premier président noir d'Afrique du Sud."
+        ),
+    },
+    "spoutnik-annee": {
+        "slug": "spoutnik-annee",
+        "era": "Époque Contemporaine",
+        "prompt": "En quelle année l'URSS a-t-elle lancé Spoutnik 1, premier satellite artificiel ?",
+        "options": ["1949", "1957", "1961", "1969"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Lancé le 4 octobre 1957, Spoutnik 1 marque le début de l'ère "
+            "spatiale et déclenche la course à l'espace entre l'URSS et les "
+            "États-Unis."
+        ),
+    },
+    "chute-rome-consequence": {
+        "slug": "chute-rome-consequence",
+        "era": "Antiquité",
+        "prompt": "Qui dépose le dernier empereur romain d'Occident en 476 ?",
+        "options": ["Attila", "Odoacre", "Clovis", "Charlemagne"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le chef germanique Odoacre dépose Romulus Augustule en 476 et "
+            "renvoie les insignes impériaux à Constantinople — une date "
+            "conventionnellement retenue comme la fin de l'Antiquité."
+        ),
+    },
+    "watt-invention": {
+        "slug": "watt-invention",
+        "era": "Renaissance",
+        "prompt": "Quelle amélioration James Watt apporte-t-il à la machine à vapeur en 1769 ?",
+        "options": [
+            "Un condenseur séparé",
+            "Des roues en caoutchouc",
+            "Un moteur électrique",
+            "Une chaudière en verre",
+        ],
+        "correct_index": 0,
+        "fun_fact": (
+            "En ajoutant un condenseur séparé, Watt évite de refroidir puis "
+            "réchauffer sans cesse le même cylindre, améliorant "
+            "considérablement le rendement énergétique de la machine à "
+            "vapeur."
+        ),
+    },
+    "toutankhamon-decouvreur": {
+        "slug": "toutankhamon-decouvreur",
+        "era": "Époque Contemporaine",
+        "prompt": "Qui a découvert la tombe de Toutânkhamon en 1922 ?",
+        "options": ["Jean-François Champollion", "Howard Carter", "Heinrich Schliemann", "Flinders Petrie"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le 4 novembre 1922, l'archéologue britannique Howard Carter "
+            "découvre l'entrée de la tombe quasi intacte de Toutânkhamon "
+            "dans la Vallée des Rois, après des années de recherches."
         ),
     },
 }

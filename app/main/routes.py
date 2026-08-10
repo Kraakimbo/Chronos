@@ -42,7 +42,7 @@ def home():
         is_exact_match=is_exact_match,
         today_label=today_french_label(),
         years_ago=years_ago(event) if is_exact_match else None,
-        other_events=[e for e in events_list() if e["slug"] != event["slug"]][:2],
+        other_events=[e for e in events_list(chronological=True) if e["slug"] != event["slug"]][:2],
         active_page="home",
         level=level_info(current_user),
         badges=badges_for(current_user),
@@ -60,12 +60,12 @@ def explorer():
 
     has_filter = bool(query or category != "Tous" or era_key)
     results = search_events(query=query, category=category, era_key=era_key) if has_filter else None
-    map_events = [e for e in events_list() if e.get("map_pos")]
+    map_events = [e for e in events_list(chronological=True) if e.get("map_pos")]
 
     collections = [
-        {"key": "rome-antique", "badge": "Rome Antique", "title": "La Chute de l'Empire", "description": "Découvrez les derniers jours d'une civilisation millénaire."},
-        {"key": "revolution-industrielle", "badge": None, "title": "Révolution Industrielle", "description": None},
-        {"key": "egypte-pharaons", "badge": None, "title": "Égypte des Pharaons", "description": None},
+        EVENTS["chute-empire-romain-occident"],
+        EVENTS["invention-machine-vapeur-watt"],
+        EVENTS["decouverte-tombe-toutankhamon"],
     ]
     return render_template(
         "pages/explorer.html",
