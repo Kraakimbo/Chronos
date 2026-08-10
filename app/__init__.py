@@ -1,3 +1,4 @@
+import logging
 import os
 
 from dotenv import load_dotenv
@@ -19,6 +20,15 @@ mail = Mail()
 def create_app(config_object="config.Config"):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_object)
+
+    # Flask lazily attaches a default handler to app.logger (writing to the
+    # WSGI errors stream, i.e. stderr under gunicorn) the first time it's
+    # used, but leaves the logger's own level unset once debug=False, which
+    # defaults to WARNING — so app.logger.info() calls (bootstrap admin
+    # creation, password-reset links when no SMTP is configured) silently
+    # vanish in production. Force INFO through explicitly.
+    if not app.debug:
+        app.logger.setLevel(logging.INFO)
 
     # Render (and most PaaS) terminate TLS at a reverse proxy and forward
     # plain HTTP internally: trust its X-Forwarded-* headers so
