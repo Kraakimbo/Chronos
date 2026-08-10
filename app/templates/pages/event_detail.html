@@ -12,7 +12,7 @@
           <span class="material-symbols-outlined">arrow_back</span>
         </a>
         <span class="px-sm py-xs bg-primary-container/20 text-on-primary-container border border-primary-container/30 rounded-full font-label-caps">{{ event.era }}</span>
-        <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }} · Il y a {{ years_ago }} ans</span>
+        <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }} · Il y a {{ years_ago }} ans{% if event.approximate %} · date approximative{% endif %}</span>
       </div>
       <h1 class="font-display-lg text-3xl md:text-5xl text-on-surface mb-md max-w-3xl">{{ event.title }}</h1>
       <div class="flex items-center gap-xs text-on-surface-variant font-body-base">
