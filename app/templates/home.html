@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Accueil - Chronos{% endblock %}
+{% block content %}
+<div class="text-center">
+  <h1 class="font-headline text-3xl text-on-surface mb-sm">Bienvenue, {{ user.username }} !</h1>
+  <p class="font-body text-on-surface-variant mb-lg">
+    Niveau d'étude : <span class="font-bold text-primary">{{ user.study_level or "non renseigné" }}</span><br>
+    XP : {{ user.xp }} · Série : {{ user.streak_days }} jours
+  </p>
+  <a class="inline-block bg-primary-container text-on-primary-container px-lg py-md rounded-full font-body font-bold hover:opacity-90 transition-opacity" href="{{ url_for('auth.logout') }}">
+    Se déconnecter
+  </a>
+</div>
+{% endblock %}
