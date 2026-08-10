@@ -63,6 +63,28 @@ Cliquer sur **Create Web Service** : Render construit et démarre l'app, puis fo
 
 ⚠️ **Persistance** : le plan gratuit a un disque éphémère — la base SQLite (et donc les comptes créés) est réinitialisée à chaque redéploiement ou redémarrage après inactivité. Pour une démo qui doit garder ses données, ajouter une base Postgres gratuite Render et définir `DATABASE_URL` avec l'URL fournie (nécessite d'ajouter `psycopg2-binary` à `requirements.txt`).
 
+#### Compte de connexion sans passer par l'inscription
+
+Pour te connecter directement sans remplir le formulaire `/auth/inscription`, ajoute ces variables dans **Environment** sur Render (voir `app/seed.py`) :
+
+| Clé | Valeur |
+|---|---|
+| `ADMIN_USERNAME` | l'identifiant que tu veux |
+| `ADMIN_EMAIL` | ton email |
+| `ADMIN_PASSWORD` | un mot de passe (8+ caractères, majuscule, minuscule, chiffre) |
+
+Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore (aucun doublon si l'app redémarre plusieurs fois). Va ensuite sur `/auth/connexion` avec ces identifiants. C'est un compte utilisateur classique (le projet n'a pas de rôle "administrateur" avec des permissions particulières côté app) — juste un raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement, puisque le disque gratuit de Render efface la base à chaque redémarrage.
+
+Pour un **deuxième compte** (ou plus), ajoute les mêmes 3 variables avec un suffixe `_2`, `_3`, etc. — pas dans les mêmes cases, chaque compte a son propre trio de variables :
+
+| Clé | Valeur |
+|---|---|
+| `ADMIN_USERNAME_2` | identifiant du 2e compte |
+| `ADMIN_EMAIL_2` | son email |
+| `ADMIN_PASSWORD_2` | son mot de passe |
+
+Continue avec `_3`, `_4`... pour d'autres comptes (jusqu'à 10 pris en charge).
+
 ### Structure
 
 ```

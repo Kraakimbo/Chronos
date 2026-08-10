@@ -27,3 +27,10 @@ class Config:
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     MAIL_DEFAULT_SENDER = os.environ.get("MAIL_DEFAULT_SENDER", "no-reply@chronos.app")
+
+    # Optional bootstrap account, auto-created at startup so you can log in
+    # without going through /auth/inscription. Set all three to enable it.
+    ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME")
+    ADMIN_EMAIL = os.environ.get("ADMIN_EMAIL")
+    ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
+    ADMIN_STUDY_LEVEL = os.environ.get("ADMIN_STUDY_LEVEL", "etudiant_adulte")
