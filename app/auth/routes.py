@@ -4,7 +4,8 @@ from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 
 from app import db
-from app.auth.forms import LoginForm, RegistrationForm
+from app.auth.forms import LoginForm, RegistrationForm, RequestResetForm, ResetPasswordForm
+from app.email import send_reset_email
 from app.models import User
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/auth")
@@ -74,3 +75,45 @@ def logout():
     logout_user()
     flash("À bientôt sur Chronos !", "info")
     return redirect(url_for("auth.login"))
+
+
+@auth_bp.route("/mot-de-passe-oublie", methods=["GET", "POST"])
+def reset_request():
+    if current_user.is_authenticated:
+        return redirect(url_for("main.home"))
+
+    form = RequestResetForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data.strip().lower()).first()
+        if user:
+            send_reset_email(user)
+        # Same message whether or not the account exists, to avoid leaking
+        # which emails are registered.
+        flash(
+            "Si un compte existe avec cet email, un lien de réinitialisation "
+            "vient d'être envoyé.",
+            "info",
+        )
+        return redirect(url_for("auth.login"))
+
+    return render_template("auth/reset_request.html", form=form)
+
+
+@auth_bp.route("/reinitialiser/<token>", methods=["GET", "POST"])
+def reset_token(token):
+    if current_user.is_authenticated:
+        return redirect(url_for("main.home"))
+
+    user = User.verify_reset_token(token)
+    if user is None:
+        flash("Ce lien de réinitialisation est invalide ou a expiré.", "error")
+        return redirect(url_for("auth.reset_request"))
+
+    form = ResetPasswordForm()
+    if form.validate_on_submit():
+        user.set_password(form.password.data)
+        db.session.commit()
+        flash("Ton mot de passe a été mis à jour, tu peux te connecter.", "success")
+        return redirect(url_for("auth.login"))
+
+    return render_template("auth/reset_password.html", form=form)

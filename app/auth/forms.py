@@ -79,6 +79,41 @@ class RegistrationForm(FlaskForm):
             raise ValidationError("Niveau d'étude invalide.")
 
 
+class RequestResetForm(FlaskForm):
+    email = StringField(
+        "Email",
+        validators=[
+            DataRequired(message="L'email est requis."),
+            Email(message="Adresse email invalide."),
+        ],
+    )
+    submit = SubmitField("Envoyer le lien de réinitialisation")
+
+
+class ResetPasswordForm(FlaskForm):
+    password = PasswordField(
+        "Nouveau mot de passe",
+        validators=[
+            DataRequired(message="Le mot de passe est requis."),
+            Regexp(
+                PASSWORD_REGEXP,
+                message=(
+                    "8 caractères minimum, avec au moins une majuscule, "
+                    "une minuscule et un chiffre."
+                ),
+            ),
+        ],
+    )
+    confirm_password = PasswordField(
+        "Confirmer le mot de passe",
+        validators=[
+            DataRequired(message="Merci de confirmer le mot de passe."),
+            EqualTo("password", message="Les mots de passe ne correspondent pas."),
+        ],
+    )
+    submit = SubmitField("Réinitialiser le mot de passe")
+
+
 class LoginForm(FlaskForm):
     identifier = StringField(
         "Identifiant ou email", validators=[DataRequired(message="Champ requis.")]

@@ -23,6 +23,7 @@
     {% for error in form.password.errors %}
       <p class="text-error text-xs mt-xs">{{ error }}</p>
     {% endfor %}
+    <a class="block text-right text-xs text-primary font-bold hover:opacity-80 mt-xs" href="{{ url_for('auth.reset_request') }}">Mot de passe oublié ?</a>
   </div>
 
   <label class="flex items-center gap-sm font-body text-sm text-on-surface-variant">
