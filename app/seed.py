@@ -38,26 +38,46 @@ def _bootstrap_accounts():
 
 
 def seed_admin_account() -> None:
-    """Create bootstrap accounts from ADMIN_* env vars, if configured.
+    """Create/sync bootstrap accounts from ADMIN_* env vars, if configured.
 
     Lets you log in without going through /auth/inscription (handy right
-    after a fresh deploy where the DB is empty). No-op per account if its
-    env vars aren't set, or if a user with that username/email already
-    exists.
+    after a fresh deploy where the DB is empty).
+
+    - If a user with the exact same username AND email already exists,
+      it's treated as this same bootstrap account: its password/study
+      level are re-synced to the current env var values every startup,
+      so changing ADMIN_PASSWORD in Render and restarting is enough —
+      no need to delete the account first.
+    - If a user matches on only one of username/email (a real, unrelated
+      account happens to collide), it's left untouched and logged as a
+      conflict instead of being overwritten.
     """
     from app.models import User
 
     for username, email, password, study_level in _bootstrap_accounts():
         email = email.strip().lower()
-        existing = User.query.filter(
+
+        exact_match = User.query.filter_by(username=username, email=email).first()
+        if exact_match:
+            exact_match.set_password(password)
+            exact_match.study_level = study_level
+            db.session.commit()
+            current_app.logger.info(
+                "Compte admin bootstrap '%s' resynchronisé (mot de passe à "
+                "jour avec ADMIN_PASSWORD actuel).",
+                username,
+            )
+            continue
+
+        conflict = User.query.filter(
             (User.username == username) | (User.email == email)
         ).first()
-        if existing:
-            conflict = "identifiant" if existing.username == username else "email"
+        if conflict:
+            field = "identifiant" if conflict.username == username else "email"
             current_app.logger.info(
                 "Compte admin bootstrap '%s' ignoré : %s déjà utilisé par "
                 "le compte existant '%s' (%s).",
-                username, conflict, existing.username, existing.email,
+                username, field, conflict.username, conflict.email,
             )
             continue
 
