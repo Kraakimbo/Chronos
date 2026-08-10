@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Connexion - Chronos{% endblock %}
+{% block content %}
+<div class="text-center mb-xl">
+  <h1 class="font-headline text-3xl text-on-surface mb-sm">Bon retour</h1>
+  <p class="font-body text-on-surface-variant">Connecte-toi pour retrouver ta progression.</p>
+</div>
+
+<form method="POST" novalidate class="flex flex-col gap-md">
+  {{ form.hidden_tag() }}
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.identifier.id }}">{{ form.identifier.label.text }}</label>
+    {{ form.identifier(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="username") }}
+    {% for error in form.identifier.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.password.id }}">{{ form.password.label.text }}</label>
+    {{ form.password(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="current-password") }}
+    {% for error in form.password.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+    <a class="block text-right text-xs text-primary font-bold hover:opacity-80 mt-xs" href="{{ url_for('auth.reset_request') }}">Mot de passe oublié ?</a>
+  </div>
+
+  <label class="flex items-center gap-sm font-body text-sm text-on-surface-variant">
+    {{ form.remember_me(class_="accent-[#735c00]") }}
+    {{ form.remember_me.label.text }}
+  </label>
+
+  {{ form.submit(class_="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body font-bold rounded-full hover:opacity-90 transition-opacity mt-sm") }}
+</form>
+
+<p class="text-center font-body text-sm text-on-surface-variant mt-lg">
+  Pas encore de compte ?
+  <a class="text-primary font-bold hover:opacity-80" href="{{ url_for('auth.register') }}">Créer un compte</a>
+</p>
+{% endblock %}

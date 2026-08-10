@@ -1,0 +1,57 @@
+{% extends "base_app.html" %}
+{% block title %}Digital Museum - Accueil{% endblock %}
+{% block content %}
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-2xl">
+  <section class="flex flex-col gap-sm">
+    <h2 class="font-display-lg text-3xl md:text-4xl text-on-surface">Aujourd'hui, {{ event.date_label.split(' ')[0:2] | join(' ') }}</h2>
+    <p class="font-body-base text-on-surface-variant max-w-2xl">Découvrez les événements qui ont façonné l'histoire ce jour-là.</p>
+  </section>
+
+  <section class="relative w-full rounded-2xl overflow-hidden ambient-shadow border border-outline-variant bg-surface-container-lowest">
+    <div class="relative h-[400px] md:h-[500px] w-full bg-surface-container flex items-end">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c1b]/90 via-[#1a1c1b]/40 to-transparent"></div>
+      <div class="relative w-full p-lg md:p-xl flex flex-col gap-md">
+        <div class="flex items-center gap-sm">
+          <span class="bg-primary text-on-primary px-sm py-unit rounded-full font-label-caps uppercase tracking-wider">{{ event.era }}</span>
+          <span class="text-surface-container-high font-body-base flex items-center gap-unit">
+            <span class="material-symbols-outlined text-[16px]">location_on</span>{{ event.location }} · {{ event.date_label }}
+          </span>
+        </div>
+        <h3 class="font-display-lg text-2xl md:text-4xl text-surface-container-lowest">{{ event.title }}</h3>
+        <p class="font-body-base text-surface-container-high max-w-2xl">{{ event.summary }}</p>
+        <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="mt-sm self-start bg-surface-container-lowest text-on-surface px-lg py-md rounded-full font-body-bold hover:bg-surface-container-high transition-colors ambient-shadow flex items-center gap-sm">
+          Découvrir l'événement
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+    <div class="md:col-span-2 flex flex-col gap-lg">
+      <h3 class="font-headline-md text-xl md:text-2xl text-on-surface">Prochaine étape</h3>
+      <div class="flex items-center gap-md p-md rounded-xl bg-surface-container-lowest border border-outline-variant ambient-shadow">
+        <div class="flex flex-col flex-grow">
+          <span class="text-primary font-label-caps uppercase mb-unit">{{ event.era }}</span>
+          <h4 class="font-body-bold text-on-surface">{{ event.title }}</h4>
+          <p class="font-body-base text-on-surface-variant">{{ event.why_it_matters }}</p>
+        </div>
+        <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="material-symbols-outlined text-outline">chevron_right</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-lg">
+      <h3 class="font-headline-md text-xl md:text-2xl text-on-surface">Ta progression</h3>
+      <div class="p-lg rounded-2xl bg-[#FFF9E6] border border-primary/20 ambient-shadow flex flex-col items-center text-center gap-md">
+        <div class="flex flex-col items-center justify-center">
+          <span class="font-stat-lg text-2xl text-[#1a1c1b]">{{ current_user.xp }} XP</span>
+          <span class="font-label-caps text-on-surface-variant">Niveau d'étude : {{ current_user.study_level or "non renseigné" }}</span>
+        </div>
+        <a href="{{ url_for('main.quiz') }}" class="w-full mt-sm bg-primary-container text-on-primary-container px-md py-sm rounded-full font-body-bold hover:opacity-90 transition-opacity">
+          Quiz Quotidien (+20 XP)
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

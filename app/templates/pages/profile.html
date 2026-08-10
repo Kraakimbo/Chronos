@@ -1,0 +1,38 @@
+{% extends "base_app.html" %}
+{% block title %}Profil - Chronos{% endblock %}
+{% block content %}
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl space-y-xl">
+  <section class="bg-surface-container-lowest rounded-2xl p-lg md:p-xl ambient-shadow border border-outline-variant/30 flex flex-col md:flex-row items-center gap-lg">
+    <div class="w-32 h-32 rounded-full bg-surface-container-high border-4 border-surface flex items-center justify-center shrink-0">
+      <span class="material-symbols-outlined text-[56px] text-on-surface-variant">account_circle</span>
+    </div>
+    <div class="flex-1 text-center md:text-left w-full">
+      <h2 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-2">{{ current_user.username }}</h2>
+      <p class="font-body-bold text-primary uppercase tracking-widest mb-lg">{{ current_user.study_level or "Niveau non renseigné" }}</p>
+      <div class="w-full max-w-md mx-auto md:mx-0">
+        <div class="flex justify-between font-label-caps text-on-surface-variant mb-2">
+          <span>XP total</span><span>{{ current_user.xp }} XP</span>
+        </div>
+        <div class="h-3 w-full bg-[#FFF9E6] rounded-full overflow-hidden border border-outline-variant/20">
+          <div class="h-full bg-primary-container rounded-full" style="width: {{ [current_user.xp % 500 / 5, 100] | min }}%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-md md:gap-lg">
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
+      <h3 class="font-body-bold text-on-surface-variant mb-sm">Chronos Tokens</h3>
+      <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.tokens }}</p>
+    </div>
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
+      <h3 class="font-body-base text-sm text-on-surface-variant">Série active</h3>
+      <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.streak_days }} <span class="text-base">jours 🔥</span></p>
+    </div>
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
+      <h3 class="font-body-base text-sm text-on-surface-variant">Membre depuis</h3>
+      <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.created_at.strftime('%d/%m/%Y') }}</p>
+    </div>
+  </section>
+</main>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Créer un compte - Chronos{% endblock %}
+{% block content %}
+<div class="text-center mb-xl">
+  <h1 class="font-headline text-3xl text-on-surface mb-sm">Crée ton compte</h1>
+  <p class="font-body text-on-surface-variant">Choisis un identifiant et un mot de passe pour commencer ton exploration.</p>
+</div>
+
+<form method="POST" novalidate class="flex flex-col gap-md">
+  {{ form.hidden_tag() }}
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.username.id }}">{{ form.username.label.text }}</label>
+    {{ form.username(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="username") }}
+    {% for error in form.username.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.email.id }}">{{ form.email.label.text }}</label>
+    {{ form.email(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="email") }}
+    {% for error in form.email.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.password.id }}">{{ form.password.label.text }}</label>
+    {{ form.password(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="new-password") }}
+    <p class="text-xs text-on-surface-variant mt-xs">8 caractères minimum, une majuscule, une minuscule et un chiffre.</p>
+    {% for error in form.password.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.confirm_password.id }}">{{ form.confirm_password.label.text }}</label>
+    {{ form.confirm_password(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", autocomplete="new-password") }}
+    {% for error in form.confirm_password.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  <fieldset>
+    <legend class="block font-body font-bold text-sm text-on-surface mb-sm">{{ form.study_level.label.text }}</legend>
+    <div class="flex flex-col gap-sm">
+      {% for subfield in form.study_level %}
+        <label class="flex items-center gap-sm rounded-xl border border-outline-variant/40 bg-surface-container-lowest px-md py-sm cursor-pointer has-[:checked]:border-primary-container has-[:checked]:bg-primary-container/10">
+          {{ subfield(class_="accent-[#735c00]") }}
+          <span class="font-body text-sm text-on-surface">{{ subfield.label.text }}</span>
+        </label>
+      {% endfor %}
+    </div>
+    {% for error in form.study_level.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </fieldset>
+
+  {{ form.submit(class_="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body font-bold rounded-full hover:opacity-90 transition-opacity mt-sm") }}
+</form>
+
+<p class="text-center font-body text-sm text-on-surface-variant mt-lg">
+  Déjà un compte ?
+  <a class="text-primary font-bold hover:opacity-80" href="{{ url_for('auth.login') }}">Se connecter</a>
+</p>
+{% endblock %}

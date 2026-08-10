@@ -1,0 +1,58 @@
+{% extends "base_app.html" %}
+{% block title %}Quiz - Chronos{% endblock %}
+{% block content %}
+<main class="max-w-[900px] mx-auto px-margin-mobile pt-lg pb-2xl flex flex-col gap-lg">
+  <div class="flex items-center gap-sm">
+    <span class="material-symbols-outlined text-tertiary">history_edu</span>
+    <span class="font-label-caps text-tertiary uppercase tracking-wider">{{ question.era }}</span>
+  </div>
+  <h2 class="font-display-lg text-2xl md:text-4xl text-on-background">{{ question.prompt }}</h2>
+
+  {% if result is none %}
+  <form method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    {% for option in question.options %}
+    <button type="submit" name="answer_index" value="{{ loop.index0 }}"
+      class="flex items-start gap-md p-md rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:bg-surface-container-low hover:border-primary-container transition-colors text-left">
+      <div class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center font-body-bold text-secondary shrink-0">{{ "ABCD"[loop.index0] }}</div>
+      <span class="font-body-base text-on-surface pt-1">{{ option }}</span>
+    </button>
+    {% endfor %}
+  </form>
+  {% else %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {% for option in question.options %}
+    <div class="flex items-start gap-md p-md rounded-xl border-2 text-left
+      {% if loop.index0 == question.correct_index %}border-primary-container bg-[#FFF9E6]
+      {% elif loop.index0 == result.chosen_index %}border-error bg-error-container
+      {% else %}border-outline-variant/40 bg-surface-container-lowest opacity-60{% endif %}">
+      <div class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center font-body-bold text-secondary shrink-0">{{ "ABCD"[loop.index0] }}</div>
+      <span class="font-body-base text-on-surface pt-1">{{ option }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="glass-panel bg-surface-container-low p-lg rounded-2xl border border-outline-variant/20">
+    <h3 class="font-headline-md text-xl text-on-surface mb-sm flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary-container">info</span> Le saviez-vous ?
+    </h3>
+    <p class="font-body-base text-on-surface-variant leading-relaxed">{{ question.fun_fact }}</p>
+  </div>
+
+  <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 ambient-shadow p-xl text-center flex flex-col items-center">
+    {% if result.correct %}
+      <h3 class="font-display-lg text-2xl text-primary mb-xs">Bonne réponse !</h3>
+      <p class="font-stat-lg text-lg text-primary-container mb-lg">+20 XP · +5 🪙</p>
+    {% else %}
+      <h3 class="font-display-lg text-2xl text-error mb-xs">Pas tout à fait...</h3>
+      <p class="font-body-base text-on-surface-variant mb-lg">La bonne réponse est surlignée en or ci-dessus.</p>
+    {% endif %}
+    <div class="w-full flex flex-col gap-sm">
+      <a href="{{ url_for('main.home') }}" class="w-full h-[52px] bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-body-bold rounded-full transition-colors flex items-center justify-center gap-2">
+        <span>Continuer l'exploration</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+  {% endif %}
+</main>
+{% endblock %}

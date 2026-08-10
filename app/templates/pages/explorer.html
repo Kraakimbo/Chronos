@@ -1,0 +1,38 @@
+{% extends "base_app.html" %}
+{% block title %}On This Day - Explorer{% endblock %}
+{% block content %}
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-2xl">
+  <section class="mb-xl">
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+        <span class="material-symbols-outlined text-outline">search</span>
+      </div>
+      <input class="w-full bg-[#F2F0EC] border-none rounded-full py-4 pl-12 pr-4 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary-container transition-all duration-300 shadow-sm" placeholder="Rechercher une époque, un événement, une figure historique..." type="text" disabled>
+    </div>
+  </section>
+
+  <h2 class="font-display-lg text-2xl md:text-4xl mb-lg">Traverser les Âges</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {% for era in eras %}
+    <div class="relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-[0_4px_20px_rgba(0,0,0,0.06)] bg-surface-container flex items-end">
+      <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] tracking-wider uppercase">
+        {{ era.range }}
+      </div>
+      <div class="p-lg w-full">
+        <h3 class="font-headline-md text-xl text-on-surface mb-xs">{{ era.name }}</h3>
+        <p class="text-on-surface-variant text-sm font-body-base">{{ era.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
+  <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="block relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm bg-surface-container flex items-end">
+    <div class="p-lg">
+      <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ event.era }}</span>
+      <h4 class="font-display-lg text-2xl mb-xs">{{ event.title }}</h4>
+      <p class="text-sm text-on-surface-variant">{{ event.summary }}</p>
+    </div>
+  </a>
+</main>
+{% endblock %}
