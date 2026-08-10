@@ -1,12 +1,14 @@
 # Chronos
 
-Application musée d'histoire gamifiée ("On This Day") — design issu de Google Stitch, backend Flask.
+Application musée d'histoire gamifiée — design issu de Google Stitch, backend Flask.
 
 ## Fonctionnalités
 
-- **Comptes utilisateurs** : inscription (identifiant, email, mot de passe, niveau d'étude), connexion, déconnexion.
+- **Comptes utilisateurs** : inscription (identifiant, email, mot de passe, niveau d'étude), connexion, déconnexion, suppression de compte.
 - **Mot de passe oublié** : demande de réinitialisation par email avec lien à durée de vie limitée (30 min).
-- **Pages câblées** : accueil (événement du jour), explorateur (frise des époques), fiche événement, quiz avec récompenses XP/tokens/série, profil avec statistiques réelles. Toutes protégées par connexion.
+- **Pages câblées** : accueil (événement du jour), explorateur (frise des époques), fiche événement, quiz (question aléatoire à chaque visite parmi plusieurs, récompenses XP/tokens/série), profil avec statistiques réelles et choix d'avatar. Toutes protégées par connexion.
+- **Chronos Tokens** : icône dédiée (SVG inline, pas d'étoile générique), affichée dans la navigation, le profil et les résultats de quiz.
+- **Illustrations** : bannières SVG inline (silhouettes thématiques) pour l'événement du jour et chaque époque de l'explorateur — pas de dépendance à des images externes éphémères.
 
 ## Sécurité
 

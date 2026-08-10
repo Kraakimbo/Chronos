@@ -1,5 +1,6 @@
 {% extends "base_app.html" %}
-{% block title %}On This Day - Explorer{% endblock %}
+{% from "_illustrations.html" import era_illustration, bastille_illustration %}
+{% block title %}Chronos - Explorer{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-2xl">
   <section class="mb-xl">
@@ -15,12 +16,14 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
     {% for era in eras %}
     <div class="relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-[0_4px_20px_rgba(0,0,0,0.06)] bg-surface-container flex items-end">
+      <div class="absolute inset-0">{{ era_illustration(era.key) }}</div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
       <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] tracking-wider uppercase">
         {{ era.range }}
       </div>
-      <div class="p-lg w-full">
-        <h3 class="font-headline-md text-xl text-on-surface mb-xs">{{ era.name }}</h3>
-        <p class="text-on-surface-variant text-sm font-body-base">{{ era.description }}</p>
+      <div class="relative p-lg w-full">
+        <h3 class="font-headline-md text-xl text-white mb-xs">{{ era.name }}</h3>
+        <p class="text-white/80 text-sm font-body-base">{{ era.description }}</p>
       </div>
     </div>
     {% endfor %}
@@ -28,10 +31,12 @@
 
   <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
   <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="block relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm bg-surface-container flex items-end">
-    <div class="p-lg">
+    <div class="absolute inset-0">{{ bastille_illustration() }}</div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+    <div class="relative p-lg">
       <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ event.era }}</span>
-      <h4 class="font-display-lg text-2xl mb-xs">{{ event.title }}</h4>
-      <p class="text-sm text-on-surface-variant">{{ event.summary }}</p>
+      <h4 class="font-display-lg text-2xl mb-xs text-white">{{ event.title }}</h4>
+      <p class="text-sm text-white/80">{{ event.summary }}</p>
     </div>
   </a>
 </main>
