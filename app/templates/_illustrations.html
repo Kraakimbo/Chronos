@@ -205,7 +205,7 @@
     <polygon points="288,175 305,200 288,200"/>
   </g>
 </svg>
-{% else %}
+{% elif slug == "nuit-du-4-aout" %}
 <svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La nuit du 4 août 1789">
   <defs>
     <linearGradient id="sky4Aout" x1="0" y1="0" x2="0" y2="1">
@@ -225,6 +225,304 @@
     <circle cx="260" cy="180" r="4"/>
   </g>
   <rect x="0" y="240" width="400" height="60" fill="#2b2013"/>
+</svg>
+{% elif slug == "bataille-de-waterloo" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La bataille de Waterloo">
+  <defs>
+    <linearGradient id="skyWaterloo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a9a08a"/>
+      <stop offset="100%" stop-color="#5c5240"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyWaterloo)"/>
+  <rect y="220" width="400" height="80" fill="#6b7a4a"/>
+  <g fill="#2b2013">
+    {% for i in range(6) %}<rect x="{{ 40 + i * 60 }}" y="200" width="10" height="30" transform="rotate(15 {{ 45+i*60 }} 215)"/>{% endfor %}
+  </g>
+  <g fill="#8a1a1a">
+    <circle cx="120" cy="210" r="6"/><circle cx="260" cy="205" r="6"/>
+  </g>
+  <circle cx="330" cy="70" r="20" fill="#e3e2e0" opacity="0.5"/>
+</svg>
+{% elif slug == "sacre-napoleon" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le sacre de Napoléon">
+  <defs>
+    <linearGradient id="skySacre" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a52"/>
+      <stop offset="100%" stop-color="#6b1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skySacre)"/>
+  <g fill="#e9c349">
+    <polygon points="200,60 215,100 190,100"/>
+    <circle cx="200" cy="55" r="10"/>
+  </g>
+  <g fill="#2b2013">
+    <rect x="100" y="140" width="200" height="120"/>
+    <rect x="120" y="100" width="18" height="60"/>
+    <rect x="262" y="100" width="18" height="60"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "chute-de-constantinople" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La chute de Constantinople">
+  <defs>
+    <linearGradient id="skyConstantinople" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8b98a"/>
+      <stop offset="100%" stop-color="#8a3a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyConstantinople)"/>
+  <g fill="#3a2a1c">
+    {% for i in range(8) %}<rect x="{{ 20 + i * 48 }}" y="170" width="34" height="90"/>{% endfor %}
+  </g>
+  <g fill="#e9c349" opacity="0.8">
+    <circle cx="200" cy="130" r="18" fill="none" stroke="#e9c349" stroke-width="4"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "signature-magna-carta" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La signature de la Magna Carta">
+  <defs>
+    <linearGradient id="skyMagna" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcd7c2"/>
+      <stop offset="100%" stop-color="#7d8a6a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyMagna)"/>
+  <rect x="130" y="90" width="140" height="180" rx="4" fill="#f4e9d6" stroke="#a68a55" stroke-width="3"/>
+  <g stroke="#7a5a2e" stroke-width="2" opacity="0.6">
+    {% for y in range(120, 240, 20) %}<line x1="150" y1="{{ y }}" x2="250" y2="{{ y }}"/>{% endfor %}
+  </g>
+  <circle cx="250" cy="250" r="14" fill="#a2431a"/>
+</svg>
+{% elif slug == "eruption-vesuve" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="L'éruption du Vésuve">
+  <defs>
+    <linearGradient id="skyVesuve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4d4335"/>
+      <stop offset="100%" stop-color="#a2431a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyVesuve)"/>
+  <polygon points="150,240 220,90 290,240" fill="#3a2a1c"/>
+  <g fill="#8a8577" opacity="0.85">
+    <ellipse cx="220" cy="80" rx="40" ry="20"/>
+    <ellipse cx="250" cy="55" rx="55" ry="26"/>
+    <ellipse cx="200" cy="40" rx="35" ry="18"/>
+  </g>
+  <g fill="#ba1a1a">
+    <circle cx="215" cy="130" r="6"/><circle cx="230" cy="150" r="5"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#2b2013"/>
+</svg>
+{% elif slug == "krach-de-1929" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le krach de 1929">
+  <rect width="400" height="300" fill="#e3e2e0"/>
+  <g fill="none" stroke="#ba1a1a" stroke-width="4">
+    <polyline points="20,80 80,100 140,90 200,140 260,120 320,220 380,260"/>
+  </g>
+  <g fill="#2f3130">
+    <rect x="40" y="200" width="30" height="60"/>
+    <rect x="120" y="180" width="30" height="80"/>
+    <rect x="200" y="160" width="30" height="100"/>
+    <rect x="280" y="140" width="30" height="120"/>
+  </g>
+  <rect x="0" y="260" width="400" height="40" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "attaque-pearl-harbor" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="L'attaque de Pearl Harbor">
+  <defs>
+    <linearGradient id="skyPearl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c98a4b"/>
+      <stop offset="100%" stop-color="#3a2a1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyPearl)"/>
+  <rect y="210" width="400" height="90" fill="#3a4a5a"/>
+  <g fill="#1a1c1b">
+    <rect x="60" y="180" width="90" height="30" rx="4"/>
+    <rect x="220" y="185" width="100" height="28" rx="4"/>
+  </g>
+  <g fill="#e3a15c" opacity="0.9">
+    <circle cx="110" cy="175" r="14"/><circle cx="270" cy="180" r="16"/>
+  </g>
+</svg>
+{% elif slug == "bombardement-hiroshima" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le bombardement d'Hiroshima">
+  <rect width="400" height="300" fill="#e8b98a"/>
+  <polygon points="200,280 160,140 240,140" fill="#8a8577" opacity="0.9"/>
+  <circle cx="200" cy="120" r="45" fill="#fff3c4"/>
+  <circle cx="200" cy="120" r="65" fill="#e9c349" opacity="0.5"/>
+  <rect x="0" y="255" width="400" height="45" fill="#2b2013"/>
+</svg>
+{% elif slug == "capitulation-allemande-1945" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La capitulation allemande de 1945">
+  <defs>
+    <linearGradient id="skyCapitulation" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a95a0"/>
+      <stop offset="100%" stop-color="#3a4a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyCapitulation)"/>
+  <g fill="#2f3130">
+    <rect x="80" y="150" width="240" height="110"/>
+    <rect x="180" y="110" width="40" height="40"/>
+  </g>
+  <rect x="150" y="200" width="100" height="14" fill="#e3e2e0"/>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "vol-de-gagarine" or slug == "lancement-spoutnik" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="{{ 'Le vol de Gagarine' if slug == 'vol-de-gagarine' else 'Le lancement de Spoutnik' }}">
+  <rect width="400" height="300" fill="#0d1117"/>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="50" cy="50" r="1.5"/><circle cx="120" cy="30" r="1"/><circle cx="260" cy="60" r="1.5"/>
+    <circle cx="340" cy="40" r="1"/><circle cx="90" cy="90" r="1"/><circle cx="310" cy="100" r="1.5"/>
+  </g>
+  <ellipse cx="200" cy="270" rx="260" ry="60" fill="#2b3a4a"/>
+  <g fill="#e9c349">
+    <circle cx="200" cy="170" r="24"/>
+    <polygon points="200,140 210,170 190,170"/>
+    <line x1="176" y1="170" x2="140" y2="150" stroke="#e9c349" stroke-width="2"/>
+    <line x1="224" y1="170" x2="260" y2="150" stroke="#e9c349" stroke-width="2"/>
+  </g>
+  <path d="M200 194 q -10 30 -4 55" fill="none" stroke="#e3a15c" stroke-width="6" opacity="0.8"/>
+</svg>
+{% elif slug == "discours-i-have-a-dream" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le discours I Have a Dream">
+  <defs>
+    <linearGradient id="skyMLK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#c9843f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyMLK)"/>
+  <g fill="#e3e2e0">
+    <rect x="150" y="90" width="100" height="130"/>
+    <rect x="130" y="200" width="20" height="60"/><rect x="160" y="200" width="20" height="60"/>
+    <rect x="220" y="200" width="20" height="60"/><rect x="250" y="200" width="20" height="60"/>
+  </g>
+  <g fill="#4d3a1f" opacity="0.7">
+    {% for i in range(12) %}<circle cx="{{ 40 + i * 30 }}" cy="270" r="8"/>{% endfor %}
+  </g>
+  <rect x="0" y="285" width="400" height="15" fill="#3a2a1c"/>
+</svg>
+{% elif slug == "revolution-doctobre" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La révolution d'Octobre">
+  <defs>
+    <linearGradient id="skyOctobre" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a1a1a"/>
+      <stop offset="100%" stop-color="#2b2013"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyOctobre)"/>
+  <g fill="#1a1c1b">
+    <rect x="90" y="140" width="220" height="110"/>
+    <ellipse cx="140" cy="130" rx="20" ry="26"/>
+    <ellipse cx="260" cy="130" rx="20" ry="26"/>
+    <ellipse cx="200" cy="115" rx="24" ry="32"/>
+  </g>
+  <g fill="#e9c349">
+    <circle cx="140" cy="104" r="6"/><circle cx="200" cy="83" r="6"/><circle cx="260" cy="104" r="6"/>
+  </g>
+  <rect x="0" y="250" width="400" height="50" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "these-de-luther" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Les 95 thèses de Luther">
+  <defs>
+    <linearGradient id="skyLuther" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcd7c2"/>
+      <stop offset="100%" stop-color="#7a5a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyLuther)"/>
+  <rect x="150" y="60" width="14" height="200" fill="#3a2a1c"/>
+  <rect x="90" y="90" width="120" height="150" fill="#f4e9d6" stroke="#a68a55" stroke-width="3" transform="rotate(-3 150 165)"/>
+  <g stroke="#7a5a2e" stroke-width="2" opacity="0.6" transform="rotate(-3 150 165)">
+    {% for y in range(115, 220, 18) %}<line x1="105" y1="{{ y }}" x2="195" y2="{{ y }}"/>{% endfor %}
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#4d3a1f"/>
+</svg>
+{% elif slug == "liberation-mandela" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La libération de Nelson Mandela">
+  <defs>
+    <linearGradient id="skyMandela" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#c9843f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyMandela)"/>
+  <g fill="#2f3130">
+    <rect x="40" y="160" width="320" height="100"/>
+    {% for i in range(9) %}<rect x="{{ 55 + i * 36 }}" y="140" width="16" height="20"/>{% endfor %}
+  </g>
+  <rect x="170" y="200" width="60" height="60" fill="#fdf2d0"/>
+  <rect x="0" y="255" width="400" height="45" fill="#3a2a1c"/>
+</svg>
+{% elif slug == "chute-empire-romain-occident" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La chute de l'Empire romain d'Occident">
+  <defs>
+    <linearGradient id="skyChuteRome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a35c"/>
+      <stop offset="100%" stop-color="#5c3d1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyChuteRome)"/>
+  <g fill="#3a2a1c">
+    {% for i in range(9) %}
+    <rect x="{{ 40 + i * 38 }}" y="150" width="20" height="{{ 110 if i % 3 else 70 }}" rx="2"/>
+    {% endfor %}
+  </g>
+  <g fill="#8a3a1a" opacity="0.6">
+    <circle cx="120" cy="140" r="8"/><circle cx="260" cy="130" r="10"/>
+  </g>
+  <rect x="0" y="260" width="400" height="40" fill="#2b2013"/>
+</svg>
+{% elif slug == "invention-machine-vapeur-watt" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le brevet de la machine à vapeur de Watt">
+  <rect width="400" height="300" fill="#c7cdd4"/>
+  <g fill="#2f3130">
+    <rect x="150" y="140" width="100" height="120" rx="4"/>
+    <rect x="185" y="90" width="30" height="55"/>
+    <circle cx="200" cy="80" r="14"/>
+  </g>
+  <g fill="#e3e2e0" opacity="0.85">
+    <ellipse cx="200" cy="55" rx="24" ry="14"/>
+    <ellipse cx="215" cy="35" rx="20" ry="12"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#3a4a5a"/>
+</svg>
+{% elif slug == "decouverte-tombe-toutankhamon" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La découverte de la tombe de Toutânkhamon">
+  <defs>
+    <linearGradient id="skyToutankhamon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#3a2a1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyToutankhamon)"/>
+  <rect x="160" y="90" width="80" height="140" rx="10" fill="#e9c349"/>
+  <rect x="170" y="100" width="60" height="30" rx="6" fill="#0d1117"/>
+  <g fill="#0d1117">
+    <rect x="178" y="140" width="44" height="6"/><rect x="178" y="155" width="44" height="6"/>
+    <rect x="178" y="170" width="44" height="6"/>
+  </g>
+  <g fill="#a2431a" opacity="0.7">
+    <rect x="185" y="90" width="30" height="14"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
+{% else %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Événement historique">
+  <defs>
+    <linearGradient id="skyGeneric" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#c9843f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGeneric)"/>
+  <circle cx="200" cy="150" r="60" fill="none" stroke="#735c00" stroke-width="4"/>
+  <text x="200" y="162" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="40" fill="#735c00">C</text>
 </svg>
 {% endif %}
 {% endmacro %}
