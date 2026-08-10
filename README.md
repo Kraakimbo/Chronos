@@ -32,6 +32,37 @@ Puis ouvrir `http://localhost:5000/auth/inscription`.
 
 Sans configuration SMTP (`MAIL_SERVER` non défini dans `.env`), le lien de réinitialisation de mot de passe est simplement écrit dans les logs de l'application au lieu d'être envoyé par email — pratique pour le développement local.
 
+### Déployer sur Render (gratuit)
+
+Le dépôt est prêt pour Render : `requirements.txt` (avec `gunicorn`), `Procfile` (`web: gunicorn run:app`) et `runtime.txt` (version Python) sont déjà en place.
+
+Sur [render.com](https://render.com) → **New → Web Service**, renseigner :
+
+| Champ | Valeur |
+|---|---|
+| Source / Repository | `Kraakimbo/Chronos` |
+| Branch | `main` (ou la branche à déployer) |
+| Language / Runtime | **Python 3** |
+| Region | la plus proche de toi |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `gunicorn run:app` |
+| Instance Type | **Free** |
+
+Puis dans l'onglet **Environment**, ajouter les variables :
+
+| Clé | Valeur |
+|---|---|
+| `SECRET_KEY` | une valeur générée avec `python -c "import secrets; print(secrets.token_hex(32))"` |
+| `FLASK_ENV` | `production` |
+
+`DATABASE_URL`, `MAIL_SERVER` et les autres variables de `.env.example` sont optionnelles : sans elles, l'app utilise SQLite et journalise les liens de réinitialisation de mot de passe dans les logs Render au lieu de les envoyer par email.
+
+Dans **Settings → Health Check Path**, mettre `/auth/connexion` (la route `/` redirige vers la connexion si non authentifié, ce que le health check par défaut sur `/` peut mal interpréter).
+
+Cliquer sur **Create Web Service** : Render construit et démarre l'app, puis fournit une URL publique du type `https://chronos-xxxx.onrender.com`.
+
+⚠️ **Persistance** : le plan gratuit a un disque éphémère — la base SQLite (et donc les comptes créés) est réinitialisée à chaque redéploiement ou redémarrage après inactivité. Pour une démo qui doit garder ses données, ajouter une base Postgres gratuite Render et définir `DATABASE_URL` avec l'URL fournie (nécessite d'ajouter `psycopg2-binary` à `requirements.txt`).
+
 ### Structure
 
 ```

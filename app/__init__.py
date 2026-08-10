@@ -6,6 +6,7 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 load_dotenv()
 
@@ -18,6 +19,11 @@ mail = Mail()
 def create_app(config_object="config.Config"):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_object(config_object)
+
+    # Render (and most PaaS) terminate TLS at a reverse proxy and forward
+    # plain HTTP internally: trust its X-Forwarded-* headers so
+    # request.is_secure and url_for(_external=True) reflect https.
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
 
     os.makedirs(app.instance_path, exist_ok=True)
 
