@@ -45,9 +45,25 @@
     <div class="flex flex-col gap-lg">
       <h3 class="font-headline-md text-xl md:text-2xl text-on-surface">Ta progression</h3>
       <div class="p-lg rounded-2xl bg-[#FFF9E6] border border-primary/20 ambient-shadow flex flex-col items-center text-center gap-md">
-        <div class="flex flex-col items-center justify-center">
-          <span class="font-stat-lg text-2xl text-[#1a1c1b]">{{ current_user.xp }} XP</span>
-          <span class="font-label-caps text-on-surface-variant">Niveau d'étude : {{ current_user.study_level or "non renseigné" }}</span>
+        <div class="relative w-32 h-32 flex items-center justify-center">
+          <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" fill="none" r="45" stroke="#d0c5af" stroke-width="8"/>
+            <circle cx="50" cy="50" fill="none" r="45" stroke="#d4af37" stroke-width="8"
+              stroke-dasharray="{{ level.ring_circumference }}" stroke-dashoffset="{{ level.ring_dashoffset }}" stroke-linecap="round"/>
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span class="font-stat-lg text-xl text-[#1a1c1b]">Lvl {{ level.level }}</span>
+            <span class="font-label-caps text-on-surface-variant">{{ level.xp_in_level }} / {{ level.xp_target }} XP</span>
+          </div>
+        </div>
+        <div class="flex gap-sm">
+          {% for badge in badges %}
+          <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-xl shadow-sm
+            {{ 'border-2 border-primary' if badge.unlocked else 'border border-outline-variant opacity-50 grayscale' }}"
+            title="Badge {{ badge.label }}{{ '' if badge.unlocked else ' (verrouillé)' }}">
+            {{ badge.emoji }}
+          </div>
+          {% endfor %}
         </div>
         <a href="{{ url_for('main.quiz') }}" class="w-full mt-sm bg-primary-container text-on-primary-container px-md py-sm rounded-full font-body-bold hover:opacity-90 transition-opacity">
           Quiz Quotidien (+20 XP)

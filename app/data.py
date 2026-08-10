@@ -64,6 +64,12 @@ EVENTS = {
             "force Louis XVI à reculer."
         ),
         "quiz_slug": "bastille-importance",
+        "characters": [
+            {"name": "Louis XVI", "role": "Roi de France", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "C. Desmoulins", "role": "Journaliste, Orateur", "emoji": "📢", "bg": "#FDECD8"},
+            {"name": "De Launay", "role": "Gouverneur", "emoji": "🎖️", "bg": "#E9E4D8"},
+        ],
+        "location_label": "Place de la Bastille",
     }
 }
 
