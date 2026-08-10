@@ -53,10 +53,18 @@ def seed_admin_account() -> None:
             (User.username == username) | (User.email == email)
         ).first()
         if existing:
+            conflict = "identifiant" if existing.username == username else "email"
+            current_app.logger.info(
+                "Compte admin bootstrap '%s' ignoré : %s déjà utilisé par "
+                "le compte existant '%s' (%s).",
+                username, conflict, existing.username, existing.email,
+            )
             continue
 
         admin = User(username=username, email=email, study_level=study_level)
         admin.set_password(password)
         db.session.add(admin)
         db.session.commit()
-        current_app.logger.info("Compte admin bootstrap créé : %s", username)
+        current_app.logger.info(
+            "Compte admin bootstrap créé : %s (%s)", username, email
+        )
