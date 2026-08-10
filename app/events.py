@@ -49,9 +49,15 @@ def find_todays_event(today=None):
     day, rotates daily) when no event in the calendar matches today's
     month/day exactly — so the home page always has something to show
     without ever claiming a false "this happened today".
+
+    Events flagged "approximate" (no reliably documented day, just a
+    year) are excluded from both the exact-match check and the featured
+    rotation: they still show up everywhere else (search, era/category
+    filters, the map), just never as "today's" pick, since we can't
+    honestly claim they landed on today's date.
     """
     today = today or date.today()
-    events = events_list()
+    events = [e for e in events_list() if not e.get("approximate")]
 
     for event in events:
         if event["month"] == today.month and event["day"] == today.day:

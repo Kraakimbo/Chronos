@@ -23,6 +23,13 @@ DEFAULT_AVATAR_ID = "1"
 # projection), and the same depth of writing as the original Bastille entry:
 # before/during/after, a 3-paragraph narrative, why_it_matters and 2-3 key
 # figures.
+#
+# Optional "approximate": True — for events whose exact day isn't reliably
+# documented (only a year, or a rough period is known). Use month=1, day=1
+# as a placeholder for sorting purposes and phrase date_label as "Vers
+# <année>" rather than a specific day. These events are excluded from the
+# "on this day" home-page matching (see app/events.py:find_todays_event)
+# but still show up everywhere else — search, era/category filters, map.
 EVENTS = {
     "prise-de-la-bastille": {
         "slug": "prise-de-la-bastille",
@@ -1923,6 +1930,1203 @@ EVENTS = {
         ],
         "quiz_slug": "toutankhamon-decouvreur",
     },
+    "siege-de-bagdad-1258": {
+        "slug": "siege-de-bagdad-1258",
+        "title": "Le siège de Bagdad par les Mongols",
+        "month": 2,
+        "day": 10,
+        "year": 1258,
+        "date_label": "10 Février 1258",
+        "era": "Moyen Âge",
+        "era_key": "moyen-age",
+        "category": "Militaire",
+        "location": "Bagdad, Irak",
+        "location_label": "Bagdad, capitale abbasside",
+        "map_pos": (62, 45),
+        "summary": (
+            "L'armée mongole d'Hulagu Khan met à sac Bagdad, capitale du "
+            "califat abbasside, mettant fin à cinq siècles d'âge d'or "
+            "intellectuel du monde musulman."
+        ),
+        "before": (
+            "Bagdad est depuis le VIIIe siècle le cœur intellectuel et "
+            "culturel du monde musulman, abritant la Maison de la Sagesse "
+            "et d'immenses bibliothèques."
+        ),
+        "during": (
+            "Après un siège de moins de deux semaines, les troupes "
+            "mongoles d'Hulagu Khan, petit-fils de Gengis Khan, percent les "
+            "défenses et pillent systématiquement la ville."
+        ),
+        "after": (
+            "Le dernier calife abbasside est exécuté, la ville est "
+            "largement détruite et sa population décimée, marquant la fin "
+            "du califat abbasside."
+        ),
+        "narrative": [
+            (
+                "Depuis sa fondation au VIIIe siècle, Bagdad est la "
+                "capitale du califat abbasside et l'un des plus grands "
+                "centres intellectuels du monde, abritant la Maison de la "
+                "Sagesse où savants et traducteurs préservent et enrichissent "
+                "le savoir grec, perse et indien."
+            ),
+            (
+                "En 1258, Hulagu Khan, petit-fils de Gengis Khan, mène une "
+                "armée mongole jusqu'aux portes de Bagdad après que le "
+                "calife Al-Musta'sim a refusé de se soumettre. Le siège dure "
+                "moins de deux semaines : le 10 février, les défenses de la "
+                "ville cèdent et les troupes mongoles s'y répandent."
+            ),
+            (
+                "Le sac de Bagdad qui suit est d'une violence extrême : des "
+                "centaines de milliers d'habitants sont tués, les "
+                "bibliothèques incendiées, leurs manuscrits jetés dans le "
+                "Tigre au point, selon la légende, de teinter le fleuve "
+                "d'encre. Le calife Al-Musta'sim est exécuté quelques jours "
+                "plus tard."
+            ),
+        ],
+        "why_it_matters": (
+            "La destruction de Bagdad met fin à cinq siècles d'âge d'or "
+            "intellectuel abbasside et marque, pour de nombreux historiens, "
+            "un tournant dans le déclin scientifique et culturel du monde "
+            "musulman médiéval, dont les effets se feront sentir pendant "
+            "des siècles."
+        ),
+        "characters": [
+            {"name": "Hulagu Khan", "role": "Chef militaire mongol", "emoji": "🏹", "bg": "#E9E4D8"},
+            {"name": "Al-Musta'sim", "role": "Dernier calife abbasside", "emoji": "📜", "bg": "#FDECD8"},
+        ],
+        "quiz_slug": "bagdad-consequence",
+    },
+    "mort-de-barbe-noire": {
+        "slug": "mort-de-barbe-noire",
+        "title": "La mort de Barbe Noire",
+        "month": 11,
+        "day": 22,
+        "year": 1718,
+        "date_label": "22 Novembre 1718",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Piraterie",
+        "location": "Ocracoke, Caroline du Nord",
+        "location_label": "Détroit d'Ocracoke",
+        "map_pos": (28, 45),
+        "summary": (
+            "Le célèbre pirate Edward Teach, dit « Barbe Noire », est tué "
+            "lors d'un abordage naval, marquant le déclin de l'âge d'or de "
+            "la piraterie dans les Caraïbes et l'Atlantique."
+        ),
+        "before": (
+            "Après avoir terrorisé le commerce dans les Caraïbes et jusqu'à "
+            "bloquer le port de Charleston avec son navire amiral, Barbe "
+            "Noire s'est retiré en Caroline du Nord, où il négocie "
+            "discrètement avec les autorités locales."
+        ),
+        "during": (
+            "Le lieutenant Robert Maynard, envoyé par le gouverneur de "
+            "Virginie, surprend Barbe Noire à Ocracoke ; un combat au corps "
+            "à corps s'ensuit sur le pont du navire."
+        ),
+        "after": (
+            "Barbe Noire est tué au terme du combat, décapité, et sa tête "
+            "exposée à la proue du navire de Maynard en guise "
+            "d'avertissement aux autres pirates."
+        ),
+        "narrative": [
+            (
+                "Edward Teach, surnommé « Barbe Noire » pour son épaisse "
+                "barbe noire qu'il tressait et enflammait parfois au combat "
+                "pour effrayer ses adversaires, devient l'un des pirates les "
+                "plus redoutés des Caraïbes et de la côte atlantique "
+                "américaine au début du XVIIIe siècle, période connue comme "
+                "l'âge d'or de la piraterie."
+            ),
+            (
+                "En 1718, après avoir bloqué le port de Charleston avec son "
+                "navire amiral le Queen Anne's Revenge, il se retire à "
+                "Ocracoke, en Caroline du Nord, où il profite d'une "
+                "amnistie tout en poursuivant discrètement ses activités. "
+                "Le gouverneur de Virginie, inquiet, envoie une expédition "
+                "navale sous le commandement du lieutenant Robert Maynard "
+                "pour le capturer."
+            ),
+            (
+                "Le 22 novembre 1718, les navires de Maynard rejoignent "
+                "Barbe Noire à Ocracoke. Après un échange de tirs, un combat "
+                "au sabre s'engage sur le pont. Barbe Noire, blessé à de "
+                "multiples reprises, finit par être tué. Sa tête est "
+                "tranchée et suspendue à la proue du navire de Maynard."
+            ),
+        ],
+        "why_it_matters": (
+            "La mort de Barbe Noire marque symboliquement le déclin de "
+            "l'âge d'or de la piraterie caribéenne, alors que les grandes "
+            "puissances européennes intensifient leur répression navale "
+            "contre les pirates dans les décennies suivantes."
+        ),
+        "characters": [
+            {"name": "Edward Teach (Barbe Noire)", "role": "Capitaine pirate", "emoji": "🏴‍☠️", "bg": "#2f3130"},
+            {"name": "Robert Maynard", "role": "Lieutenant de la Royal Navy", "emoji": "⚓", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "barbe-noire-lieu",
+    },
+    "mort-de-gengis-khan": {
+        "slug": "mort-de-gengis-khan",
+        "title": "La mort de Gengis Khan",
+        "month": 8,
+        "day": 18,
+        "year": 1227,
+        "date_label": "18 Août 1227",
+        "era": "Moyen Âge",
+        "era_key": "moyen-age",
+        "category": "Politique",
+        "location": "Empire mongol (actuelle Mongolie/Chine)",
+        "location_label": "Région du Gansu",
+        "map_pos": (78, 22),
+        "summary": (
+            "Le fondateur de l'Empire mongol, Gengis Khan, meurt lors d'une "
+            "campagne militaire, laissant derrière lui le plus vaste empire "
+            "continu de l'histoire."
+        ),
+        "before": (
+            "Depuis son couronnement en 1206, Gengis Khan a unifié les "
+            "tribus mongoles et conquis un territoire immense, de la Chine "
+            "du Nord à l'Asie centrale et la Perse."
+        ),
+        "during": (
+            "Lors d'une campagne contre le royaume Tangut de Xi Xia, "
+            "Gengis Khan meurt, probablement de maladie ou des suites d'une "
+            "chute de cheval selon les sources."
+        ),
+        "after": (
+            "L'empire est divisé entre ses fils et petits-fils en plusieurs "
+            "khanats, qui continueront l'expansion mongole jusqu'en Europe "
+            "de l'Est et au Moyen-Orient."
+        ),
+        "narrative": [
+            (
+                "Né vers 1162 sous le nom de Temüjin, Gengis Khan parvient à "
+                "unifier les tribus rivales des steppes mongoles et se fait "
+                "proclamer souverain suprême en 1206. Il lance ensuite une "
+                "série de campagnes militaires fulgurantes qui font de "
+                "l'Empire mongol le plus vaste territoire continu jamais "
+                "conquis dans l'histoire."
+            ),
+            (
+                "En 1227, alors qu'il mène une campagne punitive contre le "
+                "royaume Tangut de Xi Xia, dans le nord-ouest de la Chine "
+                "actuelle, Gengis Khan meurt le 18 août, dans des "
+                "circonstances que les chroniques anciennes rapportent "
+                "différemment — maladie, blessure de chasse ou chute de "
+                "cheval."
+            ),
+            (
+                "Selon la tradition mongole, son lieu de sépulture est "
+                "resté volontairement secret, ses funérailles ayant été "
+                "suivies de l'exécution de tous ceux ayant croisé le "
+                "convoi funéraire, afin que personne ne puisse jamais "
+                "localiser sa tombe."
+            ),
+        ],
+        "why_it_matters": (
+            "À sa mort, Gengis Khan laisse un empire s'étendant de la mer "
+            "de Chine à l'Europe de l'Est, que ses descendants continueront "
+            "d'agrandir pendant des décennies, transformant durablement les "
+            "équilibres politiques et commerciaux de l'Eurasie, notamment "
+            "via la Route de la soie."
+        ),
+        "characters": [
+            {"name": "Gengis Khan", "role": "Fondateur de l'Empire mongol", "emoji": "🏹", "bg": "#E9E4D8"},
+            {"name": "Ögödei Khan", "role": "Fils et successeur", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "gengis-khan-empire",
+    },
+    "traite-de-nankin": {
+        "slug": "traite-de-nankin",
+        "title": "Le traité de Nankin",
+        "month": 8,
+        "day": 29,
+        "year": 1842,
+        "date_label": "29 Août 1842",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Nankin, Chine",
+        "location_label": "Nankin",
+        "map_pos": (85, 38),
+        "summary": (
+            "La Chine impériale, vaincue lors de la première guerre de "
+            "l'Opium, cède Hong Kong au Royaume-Uni et ouvre ses ports au "
+            "commerce britannique."
+        ),
+        "before": (
+            "Le refus chinois de laisser entrer l'opium britannique, "
+            "massivement exporté depuis l'Inde, dégénère en conflit armé "
+            "avec le Royaume-Uni dès 1839."
+        ),
+        "during": (
+            "Militairement écrasée par la marine britannique, la Chine "
+            "signe le traité de Nankin, premier des « traités inégaux » "
+            "imposés par les puissances occidentales."
+        ),
+        "after": (
+            "Hong Kong devient une colonie britannique, cinq ports chinois "
+            "sont ouverts au commerce étranger, et la Chine entame une "
+            "longue période d'ingérence étrangère surnommée le « siècle de "
+            "l'humiliation »."
+        ),
+        "narrative": [
+            (
+                "Au début du XIXe siècle, des marchands britanniques "
+                "exportent massivement de l'opium cultivé en Inde vers la "
+                "Chine, créant une épidémie de toxicomanie que les "
+                "autorités impériales tentent d'endiguer en interdisant et "
+                "confisquant les cargaisons."
+            ),
+            (
+                "Cette confiscation déclenche la première guerre de "
+                "l'Opium en 1839. La marine britannique, technologiquement "
+                "très supérieure, inflige défaite sur défaite à l'armée "
+                "chinoise le long des côtes et des fleuves."
+            ),
+            (
+                "Le 29 août 1842, à bord d'un navire de guerre britannique "
+                "ancré près de Nankin, les représentants chinois signent un "
+                "traité de paix qui cède Hong Kong au Royaume-Uni, ouvre "
+                "cinq ports au commerce étranger et impose de lourdes "
+                "réparations financières à la Chine."
+            ),
+        ],
+        "why_it_matters": (
+            "Premier des « traités inégaux » imposés à la Chine par les "
+            "puissances occidentales, le traité de Nankin ouvre une période "
+            "d'ingérence étrangère et d'affaiblissement de l'Empire chinois "
+            "que l'historiographie chinoise désigne comme le « siècle de "
+            "l'humiliation »."
+        ),
+        "characters": [
+            {"name": "Qishan", "role": "Négociateur impérial chinois", "emoji": "📜", "bg": "#FDECD8"},
+            {"name": "Henry Pottinger", "role": "Représentant britannique", "emoji": "⚓", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "nankin-consequence",
+    },
+    "restauration-meiji": {
+        "slug": "restauration-meiji",
+        "title": "La restauration Meiji",
+        "month": 1,
+        "day": 3,
+        "year": 1868,
+        "date_label": "3 Janvier 1868",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Kyoto, Japon",
+        "location_label": "Kyoto",
+        "map_pos": (92, 35),
+        "summary": (
+            "Le pouvoir impérial est officiellement restauré au Japon aux "
+            "dépens du shogunat, ouvrant une ère de modernisation "
+            "accélérée qui transformera le pays en puissance mondiale."
+        ),
+        "before": (
+            "Depuis des siècles, le Japon est dirigé dans les faits par des "
+            "shoguns, tandis que l'empereur ne conserve qu'un rôle "
+            "symbolique. L'arrivée de navires occidentaux dans les années "
+            "1850 fragilise ce système."
+        ),
+        "during": (
+            "Des clans réformistes renversent le dernier shogun Tokugawa "
+            "Yoshinobu et proclament la restauration du pouvoir impérial "
+            "sous le jeune empereur Meiji."
+        ),
+        "after": (
+            "Le nouveau gouvernement lance des réformes radicales "
+            "d'industrialisation et de modernisation qui font du Japon, en "
+            "quelques décennies, une puissance militaire et industrielle "
+            "majeure."
+        ),
+        "narrative": [
+            (
+                "Pendant plus de deux siècles, le Japon vit isolé du reste "
+                "du monde sous l'autorité des shoguns Tokugawa, tandis que "
+                "l'empereur ne conserve qu'un rôle religieux et symbolique "
+                "à Kyoto. L'arrivée en 1853 des navires de guerre "
+                "américains du commodore Perry, exigeant l'ouverture du "
+                "pays, fragilise durablement l'autorité du shogunat."
+            ),
+            (
+                "Des clans réformistes, jugeant le shogunat incapable de "
+                "défendre le pays face aux puissances occidentales, "
+                "prennent les armes. Le 3 janvier 1868, ils proclament à "
+                "Kyoto la restauration du pouvoir impérial sous le jeune "
+                "empereur Mutsuhito, qui prendra le nom de règne Meiji."
+            ),
+            (
+                "Le nouveau gouvernement impérial engage aussitôt un vaste "
+                "programme de modernisation : abolition du système "
+                "féodal, industrialisation accélérée, adoption de "
+                "technologies et d'institutions occidentales, tout en "
+                "préservant une identité nationale forte."
+            ),
+        ],
+        "why_it_matters": (
+            "La restauration Meiji transforme en quelques décennies le "
+            "Japon d'un pays féodal isolé en une puissance industrielle et "
+            "militaire majeure, seule nation asiatique à rivaliser avec les "
+            "puissances occidentales au tournant du XXe siècle."
+        ),
+        "characters": [
+            {"name": "Empereur Meiji", "role": "Empereur du Japon", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Tokugawa Yoshinobu", "role": "Dernier shogun", "emoji": "🎖️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "meiji-consequence",
+    },
+    "independance-de-linde": {
+        "slug": "independance-de-linde",
+        "title": "L'indépendance de l'Inde",
+        "month": 8,
+        "day": 15,
+        "year": 1947,
+        "date_label": "15 Août 1947",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "New Delhi, Inde",
+        "location_label": "New Delhi",
+        "map_pos": (72, 48),
+        "summary": (
+            "Après des décennies de résistance non-violente menée par "
+            "Gandhi, l'Inde britannique accède à l'indépendance, "
+            "immédiatement suivie de la partition douloureuse avec le "
+            "Pakistan."
+        ),
+        "before": (
+            "Le mouvement d'indépendance indien, porté notamment par "
+            "Gandhi et sa doctrine de résistance non-violente, s'intensifie "
+            "après la Seconde Guerre mondiale, qui a épuisé le Royaume-Uni."
+        ),
+        "during": (
+            "Le Royaume-Uni accorde l'indépendance à l'Inde le 15 août "
+            "1947, mais divise simultanément le territoire en deux États : "
+            "l'Inde à majorité hindoue et le Pakistan à majorité musulmane."
+        ),
+        "after": (
+            "La partition provoque des déplacements de population massifs "
+            "et des violences intercommunautaires qui font des centaines "
+            "de milliers de morts."
+        ),
+        "narrative": [
+            (
+                "Colonie britannique depuis le XIXe siècle, l'Inde développe "
+                "à partir des années 1920 un puissant mouvement "
+                "d'indépendance porté notamment par Mohandas Gandhi, dont "
+                "la doctrine de résistance non-violente (satyagraha) "
+                "mobilise des millions d'Indiens."
+            ),
+            (
+                "Épuisé économiquement par la Seconde Guerre mondiale, le "
+                "Royaume-Uni accepte finalement d'accorder l'indépendance. "
+                "Le 15 août 1947, l'Inde devient indépendante sous la "
+                "direction du Premier ministre Jawaharlal Nehru. Mais le "
+                "territoire est simultanément partitionné en deux "
+                "dominions : l'Union indienne, à majorité hindoue, et le "
+                "Pakistan, à majorité musulmane."
+            ),
+            (
+                "Cette partition, décidée dans l'urgence, provoque l'un "
+                "des plus grands déplacements de population de l'histoire "
+                "— environ 15 millions de personnes traversant les "
+                "nouvelles frontières — accompagné de violences "
+                "intercommunautaires qui font plusieurs centaines de "
+                "milliers de morts."
+            ),
+        ],
+        "why_it_matters": (
+            "L'indépendance de l'Inde met fin à près de deux siècles de "
+            "domination coloniale britannique et donne naissance à la plus "
+            "grande démocratie du monde, tandis que la partition avec le "
+            "Pakistan laisse des tensions régionales encore vives "
+            "aujourd'hui."
+        ),
+        "characters": [
+            {"name": "Mahatma Gandhi", "role": "Leader du mouvement d'indépendance", "emoji": "🕊️", "bg": "#FDECD8"},
+            {"name": "Jawaharlal Nehru", "role": "Premier Premier ministre indien", "emoji": "🏛️", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "inde-independance-consequence",
+    },
+    "bataille-dadoua": {
+        "slug": "bataille-dadoua",
+        "title": "La bataille d'Adoua",
+        "month": 3,
+        "day": 1,
+        "year": 1896,
+        "date_label": "1er Mars 1896",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Militaire",
+        "location": "Adoua, Éthiopie",
+        "location_label": "Adoua",
+        "map_pos": (58, 60),
+        "summary": (
+            "L'armée éthiopienne de l'empereur Ménélik II inflige une "
+            "défaite écrasante aux troupes coloniales italiennes, "
+            "préservant l'indépendance de l'Éthiopie."
+        ),
+        "before": (
+            "L'Italie, cherchant à étendre sa colonie d'Érythrée, envahit "
+            "le territoire éthiopien après l'échec d'un traité litigieux "
+            "sur le statut de protectorat."
+        ),
+        "during": (
+            "Près d'Adoua, l'armée éthiopienne, largement supérieure en "
+            "nombre et bien organisée par Ménélik II, écrase les troupes "
+            "italiennes en une seule journée de combat."
+        ),
+        "after": (
+            "L'Italie reconnaît l'indépendance complète de l'Éthiopie par "
+            "le traité d'Addis-Abeba, qui reste la seule nation africaine à "
+            "avoir vaincu militairement une puissance coloniale européenne "
+            "au XIXe siècle."
+        ),
+        "narrative": [
+            (
+                "À la fin du XIXe siècle, en pleine « ruée vers l'Afrique » "
+                "coloniale, l'Italie cherche à étendre son influence "
+                "depuis sa colonie érythréenne vers l'Éthiopie, s'appuyant "
+                "sur un traité dont les versions italienne et amharique "
+                "diffèrent sur le statut de protectorat du pays."
+            ),
+            (
+                "Face au refus de l'empereur Ménélik II de se soumettre, "
+                "l'Italie envahit militairement le territoire éthiopien. Le "
+                "1er mars 1896, près de la ville d'Adoua, l'armée "
+                "éthiopienne, forte d'environ 100 000 hommes bien organisés "
+                "et partiellement équipés d'armes modernes achetées en "
+                "Europe, affronte les troupes italiennes, largement "
+                "inférieures en nombre."
+            ),
+            (
+                "La bataille tourne rapidement au désastre pour l'Italie : "
+                "en une seule journée, son armée est écrasée, subissant des "
+                "milliers de morts et de prisonniers. C'est l'une des plus "
+                "lourdes défaites coloniales européennes du XIXe siècle."
+            ),
+        ],
+        "why_it_matters": (
+            "La victoire d'Adoua préserve durablement l'indépendance de "
+            "l'Éthiopie, qui restera avec le Liberia l'une des rares "
+            "nations africaines à échapper à la colonisation européenne, et "
+            "devient un puissant symbole de résistance anticoloniale à "
+            "travers le continent."
+        ),
+        "characters": [
+            {"name": "Ménélik II", "role": "Empereur d'Éthiopie", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Taytu Betoul", "role": "Impératrice, stratège militaire", "emoji": "🛡️", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "adoua-consequence",
+    },
+    "conference-de-berlin": {
+        "slug": "conference-de-berlin",
+        "title": "L'ouverture de la conférence de Berlin",
+        "month": 11,
+        "day": 15,
+        "year": 1884,
+        "date_label": "15 Novembre 1884",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Berlin, Allemagne",
+        "location_label": "Berlin",
+        "map_pos": (53, 30),
+        "summary": (
+            "Les grandes puissances européennes se réunissent à Berlin pour "
+            "régler entre elles le partage colonial de l'Afrique, sans "
+            "qu'aucun représentant africain n'y soit convié."
+        ),
+        "before": (
+            "La compétition coloniale entre puissances européennes en "
+            "Afrique s'intensifie, en particulier autour du bassin du "
+            "Congo, menaçant de dégénérer en conflit ouvert entre elles."
+        ),
+        "during": (
+            "À l'invitation du chancelier allemand Otto von Bismarck, les "
+            "représentants de quatorze puissances établissent des règles "
+            "communes pour se partager le continent africain."
+        ),
+        "after": (
+            "Dans les décennies qui suivent, la quasi-totalité du continent "
+            "africain est colonisée par les puissances européennes, "
+            "souvent selon des frontières artificielles tracées sans "
+            "considération pour les peuples et royaumes existants."
+        ),
+        "narrative": [
+            (
+                "Au début des années 1880, la rivalité entre puissances "
+                "européennes pour le contrôle de territoires africains, "
+                "en particulier autour du bassin du fleuve Congo, s'envenime "
+                "au point de menacer la paix entre elles."
+            ),
+            (
+                "Le chancelier allemand Otto von Bismarck convoque une "
+                "conférence à Berlin, qui s'ouvre le 15 novembre 1884 et "
+                "réunit les représentants de quatorze pays européens ainsi "
+                "que des États-Unis. Aucun représentant africain n'est "
+                "convié aux discussions qui décident pourtant du sort du "
+                "continent."
+            ),
+            (
+                "La conférence, qui se conclut en février 1885, établit des "
+                "règles pour la reconnaissance mutuelle des possessions "
+                "coloniales et l'« occupation effective » requise pour "
+                "revendiquer un territoire, déclenchant une accélération "
+                "brutale de la colonisation du continent africain, connue "
+                "sous le nom de « ruée vers l'Afrique »."
+            ),
+        ],
+        "why_it_matters": (
+            "La conférence de Berlin formalise le partage colonial de "
+            "l'Afrique entre puissances européennes, dessinant des "
+            "frontières arbitraires dont les conséquences politiques et "
+            "ethniques se font encore sentir sur le continent aujourd'hui."
+        ),
+        "characters": [
+            {"name": "Otto von Bismarck", "role": "Chancelier allemand, organisateur", "emoji": "🏛️", "bg": "#E9E4D8"},
+            {"name": "Léopold II", "role": "Roi des Belges", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "berlin-conference-participants",
+    },
+    "chute-de-tenochtitlan": {
+        "slug": "chute-de-tenochtitlan",
+        "title": "La chute de Tenochtitlan",
+        "month": 8,
+        "day": 13,
+        "year": 1521,
+        "date_label": "13 Août 1521",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Militaire",
+        "location": "Tenochtitlan (actuelle Mexico)",
+        "location_label": "Tenochtitlan",
+        "map_pos": (15, 50),
+        "summary": (
+            "Après un siège de plusieurs mois, le conquistador Hernán "
+            "Cortés et ses alliés amérindiens s'emparent de la capitale "
+            "aztèque, marquant la fin de l'Empire aztèque."
+        ),
+        "before": (
+            "Après avoir été chassé de la ville lors de la « Nuit "
+            "triste » en 1520, Cortés rassemble une alliance de peuples "
+            "amérindiens hostiles aux Aztèques pour reprendre Tenochtitlan."
+        ),
+        "during": (
+            "Un siège de plus de deux mois, combiné à une épidémie de "
+            "variole ravageant la population aztèque, affaiblit "
+            "considérablement la défense de la ville avant sa chute finale."
+        ),
+        "after": (
+            "Tenochtitlan est détruite et sur ses ruines sera bâtie Mexico, "
+            "capitale de la Nouvelle-Espagne, marquant le début de la "
+            "colonisation espagnole du Mexique."
+        ),
+        "narrative": [
+            (
+                "Arrivé au Mexique en 1519, le conquistador espagnol Hernán "
+                "Cortés est d'abord accueilli avec méfiance par l'empereur "
+                "aztèque Moctezuma II à Tenochtitlan, capitale flamboyante "
+                "bâtie sur un lac et comptant alors plus d'habitants que "
+                "n'importe quelle ville d'Europe."
+            ),
+            (
+                "Après des tensions croissantes, les Espagnols sont chassés "
+                "de la ville en 1520 lors d'un épisode sanglant surnommé la "
+                "« Nuit triste ». Cortés se replie, rassemble des renforts "
+                "et surtout noue une alliance stratégique avec des peuples "
+                "amérindiens, notamment les Tlaxcaltèques, hostiles à la "
+                "domination aztèque."
+            ),
+            (
+                "Renforcé par ces alliés et alors qu'une épidémie de "
+                "variole apportée par les Européens décime la population "
+                "aztèque, Cortés assiège Tenochtitlan pendant plus de deux "
+                "mois. La ville tombe le 13 août 1521, marquant la fin de "
+                "l'Empire aztèque."
+            ),
+        ],
+        "why_it_matters": (
+            "La chute de Tenochtitlan marque le début de la colonisation "
+            "espagnole du Mexique et de l'Amérique centrale, avec des "
+            "conséquences démographiques et culturelles dévastatrices pour "
+            "les populations autochtones, décimées par les épidémies et la "
+            "domination coloniale."
+        ),
+        "characters": [
+            {"name": "Hernán Cortés", "role": "Conquistador espagnol", "emoji": "⚔️", "bg": "#F3E8E1"},
+            {"name": "Cuauhtémoc", "role": "Dernier empereur aztèque", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "tenochtitlan-consequence",
+    },
+    "capture-datahualpa": {
+        "slug": "capture-datahualpa",
+        "title": "La capture d'Atahualpa à Cajamarca",
+        "month": 11,
+        "day": 16,
+        "year": 1532,
+        "date_label": "16 Novembre 1532",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Militaire",
+        "location": "Cajamarca, Pérou",
+        "location_label": "Cajamarca",
+        "map_pos": (20, 68),
+        "summary": (
+            "Une poignée de conquistadors espagnols menés par Francisco "
+            "Pizarre capture par surprise l'empereur inca Atahualpa, "
+            "précipitant l'effondrement de l'Empire inca."
+        ),
+        "before": (
+            "Affaibli par une récente guerre civile entre héritiers du "
+            "trône, l'Empire inca, alors le plus vaste des Amériques, ne "
+            "se méfie pas de la petite troupe espagnole qui approche."
+        ),
+        "during": (
+            "Lors d'une rencontre organisée à Cajamarca, les conquistadors "
+            "tendent une embuscade et capturent Atahualpa, massacrant sa "
+            "garde pourtant nettement plus nombreuse."
+        ),
+        "after": (
+            "Malgré une rançon colossale versée en or et en argent pour sa "
+            "libération, Atahualpa est exécuté quelques mois plus tard, "
+            "ouvrant la voie à la conquête espagnole du Pérou."
+        ),
+        "narrative": [
+            (
+                "En 1532, Francisco Pizarre débarque au Pérou avec à peine "
+                "environ 180 hommes, alors que l'Empire inca, le plus vaste "
+                "d'Amérique précolombienne, sort tout juste d'une guerre "
+                "civile opposant les frères Atahualpa et Huáscar pour le "
+                "trône."
+            ),
+            (
+                "Atahualpa, victorieux de cette guerre civile, accepte de "
+                "rencontrer les Espagnols à Cajamarca, entouré de plusieurs "
+                "milliers de guerriers mais peu armés pour le combat. "
+                "Pizarre tend une embuscade : profitant de l'effet de "
+                "surprise et de leurs armes à feu et chevaux, inconnus des "
+                "Incas, les Espagnols massacrent la garde impériale et "
+                "capturent Atahualpa le 16 novembre 1532."
+            ),
+            (
+                "Pour obtenir sa libération, Atahualpa propose de remplir "
+                "une pièce de sa prison d'or et deux fois d'argent — l'une "
+                "des plus grandes rançons de l'histoire. Bien que la rançon "
+                "soit livrée, Pizarre fait tout de même exécuter Atahualpa "
+                "en 1533, craignant une révolte inca."
+            ),
+        ],
+        "why_it_matters": (
+            "La capture puis l'exécution d'Atahualpa désorganisent "
+            "durablement l'Empire inca et permettent aux Espagnols, "
+            "pourtant en très petit nombre, de conquérir en quelques années "
+            "l'ensemble du Pérou, l'un des épisodes les plus marquants de "
+            "la colonisation européenne des Amériques."
+        ),
+        "characters": [
+            {"name": "Francisco Pizarre", "role": "Conquistador espagnol", "emoji": "⚔️", "bg": "#F3E8E1"},
+            {"name": "Atahualpa", "role": "Empereur inca", "emoji": "👑", "bg": "#FFF3C4"},
+        ],
+        "quiz_slug": "atahualpa-rancon",
+    },
+    "cook-a-botany-bay": {
+        "slug": "cook-a-botany-bay",
+        "title": "L'arrivée du capitaine Cook à Botany Bay",
+        "month": 4,
+        "day": 29,
+        "year": 1770,
+        "date_label": "29 Avril 1770",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Exploration",
+        "location": "Botany Bay, Australie",
+        "location_label": "Botany Bay",
+        "map_pos": (95, 80),
+        "summary": (
+            "Le navigateur britannique James Cook débarque sur la côte est "
+            "de l'Australie, ouvrant la voie à la colonisation britannique "
+            "du continent."
+        ),
+        "before": (
+            "Parti explorer le Pacifique à bord de l'Endeavour, notamment "
+            "pour observer le passage de Vénus, Cook reçoit également "
+            "l'ordre secret de chercher un continent austral inconnu."
+        ),
+        "during": (
+            "Après avoir cartographié la Nouvelle-Zélande, Cook atteint la "
+            "côte est de l'Australie et débarque à Botany Bay, nommée "
+            "ainsi pour la richesse de sa flore observée par les "
+            "botanistes de l'expédition."
+        ),
+        "after": (
+            "Cook revendique la côte est de l'Australie au nom de la "
+            "couronne britannique sous le nom de Nouvelle-Galles du Sud, "
+            "ouvrant la voie à la colonisation britannique qui débutera "
+            "en 1788."
+        ),
+        "narrative": [
+            (
+                "En 1768, le lieutenant James Cook prend la mer à bord de "
+                "l'Endeavour pour une expédition scientifique officiellement "
+                "chargée d'observer le passage de Vénus devant le Soleil "
+                "depuis Tahiti, mais porteuse aussi d'instructions secrètes "
+                "de rechercher un vaste continent austral supposé exister."
+            ),
+            (
+                "Après avoir cartographié les côtes de la Nouvelle-Zélande, "
+                "Cook navigue vers l'ouest et atteint le 19 avril 1770 la "
+                "côte sud-est de l'Australie, jusqu'alors inconnue des "
+                "Européens. Le 29 avril, il débarque à Botany Bay, ainsi "
+                "nommée en raison de l'abondance de nouvelles espèces "
+                "végétales que les botanistes de l'expédition y "
+                "découvrent."
+            ),
+            (
+                "Poursuivant sa route vers le nord le long de la côte, Cook "
+                "revendique formellement l'ensemble du littoral oriental "
+                "australien au nom de la couronne britannique, sous le nom "
+                "de Nouvelle-Galles du Sud, sans consultation des peuples "
+                "aborigènes qui habitent le continent depuis des dizaines "
+                "de milliers d'années."
+            ),
+        ],
+        "why_it_matters": (
+            "L'exploration de Cook ouvre la voie à la colonisation "
+            "britannique de l'Australie, qui débutera officiellement en "
+            "1788 avec l'arrivée de la First Fleet, transformant "
+            "durablement le destin du continent et de ses peuples "
+            "autochtones."
+        ),
+        "characters": [
+            {"name": "James Cook", "role": "Navigateur, explorateur", "emoji": "🧭", "bg": "#E4E1E7"},
+            {"name": "Joseph Banks", "role": "Botaniste de l'expédition", "emoji": "🌿", "bg": "#FDECD8"},
+        ],
+        "quiz_slug": "cook-australie-nom",
+    },
+    "fondation-de-sydney": {
+        "slug": "fondation-de-sydney",
+        "title": "La fondation de la colonie de Sydney",
+        "month": 1,
+        "day": 26,
+        "year": 1788,
+        "date_label": "26 Janvier 1788",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Politique",
+        "location": "Sydney, Australie",
+        "location_label": "Port Jackson",
+        "map_pos": (96, 78),
+        "summary": (
+            "La « First Fleet » britannique, chargée de déporter des "
+            "bagnards, débarque à Port Jackson et fonde la première colonie "
+            "européenne d'Australie."
+        ),
+        "before": (
+            "Ayant perdu ses colonies pénitentiaires américaines après "
+            "l'indépendance des États-Unis, le Royaume-Uni cherche une "
+            "nouvelle destination pour ses bagnards."
+        ),
+        "during": (
+            "Une flotte de onze navires, transportant environ 1 400 "
+            "personnes dont plus de 700 bagnards, débarque à Port Jackson "
+            "après huit mois de traversée."
+        ),
+        "after": (
+            "La colonie pénitentiaire de Nouvelle-Galles du Sud se "
+            "développe rapidement, marquant le début de la colonisation "
+            "européenne durable de l'Australie, aux dépens des peuples "
+            "aborigènes."
+        ),
+        "narrative": [
+            (
+                "Après avoir perdu ses colonies pénitentiaires nord-"
+                "américaines à la suite de l'indépendance des États-Unis en "
+                "1783, le Royaume-Uni, confronté à une surpopulation "
+                "carcérale, décide d'établir une nouvelle colonie pénale sur "
+                "la côte australienne repérée par Cook dix-huit ans plus "
+                "tôt."
+            ),
+            (
+                "Sous le commandement du capitaine Arthur Phillip, une "
+                "flotte de onze navires — la « First Fleet » — quitte "
+                "l'Angleterre en mai 1787 avec environ 1 400 personnes à "
+                "bord, dont plus de 700 bagnards. Après un voyage de plus "
+                "de huit mois, la flotte atteint Botany Bay puis se déplace "
+                "vers le mouillage plus favorable de Port Jackson."
+            ),
+            (
+                "Le 26 janvier 1788, Arthur Phillip hisse le drapeau "
+                "britannique et proclame formellement la colonie de "
+                "Nouvelle-Galles du Sud — une date célébrée depuis comme "
+                "« Australia Day », bien que profondément contestée par les "
+                "communautés aborigènes, pour qui elle marque le début de "
+                "la dépossession de leurs terres."
+            ),
+        ],
+        "why_it_matters": (
+            "La fondation de cette colonie pénitentiaire marque le début de "
+            "la colonisation européenne durable de l'Australie, dont les "
+            "conséquences pour les peuples aborigènes — dépossession des "
+            "terres, épidémies, violences — se font sentir pendant des "
+            "générations."
+        ),
+        "characters": [
+            {"name": "Arthur Phillip", "role": "Commandant de la First Fleet", "emoji": "⚓", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "sydney-fondation-nom",
+    },
+    "prise-de-jerusalem-par-saladin": {
+        "slug": "prise-de-jerusalem-par-saladin",
+        "title": "La prise de Jérusalem par Saladin",
+        "month": 10,
+        "day": 2,
+        "year": 1187,
+        "date_label": "2 Octobre 1187",
+        "era": "Moyen Âge",
+        "era_key": "moyen-age",
+        "category": "Militaire",
+        "location": "Jérusalem",
+        "location_label": "Jérusalem",
+        "map_pos": (60, 43),
+        "summary": (
+            "Le sultan ayyoubide Saladin reprend Jérusalem aux croisés "
+            "après près d'un siècle de domination latine, un choc majeur "
+            "pour la chrétienté occidentale."
+        ),
+        "before": (
+            "Affaiblis par leurs divisions internes, les États latins "
+            "d'Orient subissent une lourde défaite face à Saladin à la "
+            "bataille de Hattin, quelques mois avant le siège de "
+            "Jérusalem."
+        ),
+        "during": (
+            "Après un court siège, la garnison chrétienne de Jérusalem, "
+            "incapable de résister, négocie une reddition qui épargne la "
+            "population."
+        ),
+        "after": (
+            "La perte de Jérusalem déclenche en Europe l'appel à la "
+            "troisième croisade, mais Saladin conserve le contrôle de la "
+            "ville."
+        ),
+        "narrative": [
+            (
+                "En juillet 1187, l'armée des États latins d'Orient, "
+                "affaiblie par des rivalités internes, subit une défaite "
+                "écrasante face aux forces du sultan ayyoubide Saladin à la "
+                "bataille de Hattin, en Galilée, perdant l'essentiel de sa "
+                "capacité militaire."
+            ),
+            (
+                "Profitant de cette victoire, Saladin marche sur Jérusalem, "
+                "tenue par les croisés depuis sa conquête en 1099 lors de la "
+                "première croisade. La ville, presque dépourvue de "
+                "défenseurs après Hattin, ne peut résister longtemps au "
+                "siège."
+            ),
+            (
+                "Contrairement au massacre qui avait suivi la prise "
+                "chrétienne de la ville en 1099, Saladin négocie une "
+                "reddition le 2 octobre 1187, autorisant les habitants "
+                "chrétiens à quitter la ville moyennant rançon, un geste de "
+                "clémence resté célèbre dans les deux traditions "
+                "historiques."
+            ),
+        ],
+        "why_it_matters": (
+            "La perte de Jérusalem provoque un choc majeur en Europe "
+            "occidentale et déclenche l'appel à la troisième croisade, "
+            "mais la ville restera sous contrôle musulman, à l'exception de "
+            "brèves périodes, jusqu'au XXe siècle."
+        ),
+        "characters": [
+            {"name": "Saladin", "role": "Sultan ayyoubide", "emoji": "🏹", "bg": "#E9E4D8"},
+            {"name": "Guy de Lusignan", "role": "Roi de Jérusalem", "emoji": "🛡️", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "saladin-jerusalem-annee",
+    },
+    "prise-de-grenade": {
+        "slug": "prise-de-grenade",
+        "title": "La prise de Grenade",
+        "month": 1,
+        "day": 2,
+        "year": 1492,
+        "date_label": "2 Janvier 1492",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Militaire",
+        "location": "Grenade, Espagne",
+        "location_label": "Alhambra de Grenade",
+        "map_pos": (40, 40),
+        "summary": (
+            "Les Rois Catholiques Isabelle de Castille et Ferdinand "
+            "d'Aragon s'emparent de Grenade, dernier royaume musulman "
+            "d'Espagne, achevant huit siècles de Reconquista."
+        ),
+        "before": (
+            "Le royaume nasride de Grenade, dernier territoire musulman "
+            "d'Al-Andalus, résiste depuis des décennies face à l'avancée "
+            "des royaumes chrétiens espagnols."
+        ),
+        "during": (
+            "Après un long siège, le sultan Boabdil rend la ville aux "
+            "souverains catholiques sans combat final, quittant l'Alhambra "
+            "pour l'exil."
+        ),
+        "after": (
+            "La chute de Grenade marque la fin de huit siècles de présence "
+            "musulmane en Espagne et permet aux Rois Catholiques de "
+            "financer, la même année, l'expédition de Christophe Colomb."
+        ),
+        "narrative": [
+            (
+                "Depuis la conquête musulmane du VIIIe siècle, l'Espagne "
+                "chrétienne mène par étapes une reconquête connue sous le "
+                "nom de Reconquista. Au XVe siècle, il ne subsiste plus "
+                "qu'un seul territoire musulman dans la péninsule : le "
+                "royaume nasride de Grenade."
+            ),
+            (
+                "Isabelle Ire de Castille et Ferdinand II d'Aragon, dont le "
+                "mariage a uni les deux principaux royaumes chrétiens "
+                "d'Espagne, lancent une campagne de plusieurs années contre "
+                "Grenade, affaiblie par des divisions internes entre "
+                "prétendants au trône nasride."
+            ),
+            (
+                "Après un siège prolongé, le sultan Boabdil (Muhammad XII) "
+                "capitule et remet les clés de la ville et de la forteresse "
+                "de l'Alhambra aux souverains catholiques le 2 janvier "
+                "1492, avant de partir en exil au Maroc."
+            ),
+        ],
+        "why_it_matters": (
+            "La chute de Grenade met fin à huit siècles de présence "
+            "musulmane en Espagne et permet aux Rois Catholiques, la même "
+            "année 1492, de financer l'expédition de Christophe Colomb vers "
+            "les Amériques, deux événements qui redessinent durablement "
+            "l'histoire mondiale."
+        ),
+        "characters": [
+            {"name": "Isabelle Ire de Castille", "role": "Reine de Castille", "emoji": "👑", "bg": "#FFF3C4"},
+            {"name": "Boabdil", "role": "Dernier sultan de Grenade", "emoji": "🏰", "bg": "#E9E4D8"},
+        ],
+        "quiz_slug": "grenade-annee",
+    },
+    "bataille-de-lepante": {
+        "slug": "bataille-de-lepante",
+        "title": "La bataille de Lépante",
+        "month": 10,
+        "day": 7,
+        "year": 1571,
+        "date_label": "7 Octobre 1571",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Militaire",
+        "location": "Golfe de Patras, Grèce",
+        "location_label": "Golfe de Patras",
+        "map_pos": (56, 40),
+        "summary": (
+            "La flotte de la Sainte Ligue chrétienne écrase la flotte "
+            "ottomane lors d'une des plus grandes batailles navales de "
+            "l'histoire, stoppant l'expansion navale ottomane en "
+            "Méditerranée."
+        ),
+        "before": (
+            "L'Empire ottoman, en pleine expansion méditerranéenne après "
+            "la prise de Chypre, menace directement les puissances "
+            "catholiques d'Europe du Sud."
+        ),
+        "during": (
+            "Une flotte coalisée espagnole, vénitienne et pontificale "
+            "affronte la flotte ottomane dans le golfe de Patras, dans un "
+            "combat rapproché entre galères."
+        ),
+        "after": (
+            "La flotte ottomane est quasiment anéantie, mettant un coup "
+            "d'arrêt symbolique à son expansion navale, bien que l'Empire "
+            "reconstruise rapidement sa marine."
+        ),
+        "narrative": [
+            (
+                "En 1571, après la conquête de Chypre par les Ottomans, le "
+                "pape Pie V parvient à organiser une alliance navale, la "
+                "Sainte Ligue, réunissant l'Espagne, Venise, les États "
+                "pontificaux et plusieurs autres puissances italiennes, sous "
+                "le commandement de Don Juan d'Autriche."
+            ),
+            (
+                "Le 7 octobre 1571, les deux flottes, comptant chacune plus "
+                "de 200 galères et des dizaines de milliers d'hommes, "
+                "s'affrontent dans le golfe de Patras, près de la ville de "
+                "Lépante. Le combat, mené au corps à corps entre navires "
+                "selon les usages navals de l'époque, tourne rapidement à "
+                "l'avantage de la Sainte Ligue."
+            ),
+            (
+                "La flotte ottomane est presque entièrement détruite ou "
+                "capturée, et des milliers de rameurs chrétiens réduits en "
+                "esclavage sur les galères ottomanes sont libérés. La "
+                "bataille marque l'une des plus grandes défaites navales "
+                "de l'histoire ottomane."
+            ),
+        ],
+        "why_it_matters": (
+            "Bien que l'Empire ottoman reconstruise rapidement sa flotte, "
+            "Lépante met un coup d'arrêt symbolique fort à son expansion "
+            "navale en Méditerranée occidentale et reste, pour "
+            "l'historiographie européenne, l'une des batailles les plus "
+            "célèbres de la Renaissance."
+        ),
+        "characters": [
+            {"name": "Don Juan d'Autriche", "role": "Commandant de la Sainte Ligue", "emoji": "⚓", "bg": "#E9E4D8"},
+            {"name": "Ali Pacha", "role": "Amiral de la flotte ottomane", "emoji": "🏹", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "lepante-consequence",
+    },
+    "bataille-de-panipat": {
+        "slug": "bataille-de-panipat",
+        "title": "La première bataille de Panipat",
+        "month": 4,
+        "day": 21,
+        "year": 1526,
+        "date_label": "21 Avril 1526",
+        "era": "Renaissance",
+        "era_key": "renaissance",
+        "category": "Militaire",
+        "location": "Panipat, Inde",
+        "location_label": "Panipat",
+        "map_pos": (72, 46),
+        "summary": (
+            "Le conquérant Babur, descendant de Gengis Khan et de Tamerlan, "
+            "écrase le sultanat de Delhi et fonde l'Empire moghol qui "
+            "dominera l'Inde pendant plus de trois siècles."
+        ),
+        "before": (
+            "Chassé de son royaume d'Asie centrale, Babur cherche à "
+            "établir un nouveau territoire et envahit le nord de l'Inde, "
+            "alors dirigé par le sultanat de Delhi."
+        ),
+        "during": (
+            "Bien qu'en infériorité numérique, l'armée de Babur, utilisant "
+            "l'artillerie et des tactiques innovantes, écrase les forces du "
+            "sultan Ibrahim Lodi, tué au combat."
+        ),
+        "after": (
+            "Babur s'empare de Delhi et d'Agra et fonde l'Empire moghol, "
+            "qui dominera le sous-continent indien jusqu'au XIXe siècle."
+        ),
+        "narrative": [
+            (
+                "Descendant à la fois de Gengis Khan et de Tamerlan, le "
+                "prince Babur perd son royaume ancestral en Asie centrale "
+                "et se tourne vers l'Inde du Nord pour y bâtir un nouvel "
+                "empire, profitant des divisions internes du sultanat de "
+                "Delhi."
+            ),
+            (
+                "Le 21 avril 1526, à Panipat, au nord de Delhi, l'armée "
+                "réduite mais bien équipée de Babur — notamment dotée de "
+                "canons et de mousquets, encore rares en Inde à l'époque — "
+                "affronte les forces bien plus nombreuses mais moins "
+                "organisées du sultan Ibrahim Lodi."
+            ),
+            (
+                "Grâce à une tactique combinant artillerie et charges de "
+                "cavalerie, Babur remporte une victoire écrasante ; le "
+                "sultan Ibrahim Lodi est tué sur le champ de bataille. "
+                "Babur s'empare rapidement de Delhi puis d'Agra."
+            ),
+        ],
+        "why_it_matters": (
+            "Cette victoire fonde l'Empire moghol, qui dominera la majeure "
+            "partie du sous-continent indien pendant plus de trois siècles "
+            "et laissera un héritage architectural et culturel considérable, "
+            "dont le Taj Mahal reste le symbole le plus célèbre."
+        ),
+        "characters": [
+            {"name": "Babur", "role": "Fondateur de l'Empire moghol", "emoji": "🏹", "bg": "#E9E4D8"},
+            {"name": "Ibrahim Lodi", "role": "Sultan de Delhi", "emoji": "🛡️", "bg": "#F3E8E1"},
+        ],
+        "quiz_slug": "panipat-fondateur",
+    },
+    "independance-du-ghana": {
+        "slug": "independance-du-ghana",
+        "title": "L'indépendance du Ghana",
+        "month": 3,
+        "day": 6,
+        "year": 1957,
+        "date_label": "6 Mars 1957",
+        "era": "Époque Contemporaine",
+        "era_key": "epoque-contemporaine",
+        "category": "Politique",
+        "location": "Accra, Ghana",
+        "location_label": "Accra",
+        "map_pos": (48, 58),
+        "summary": (
+            "Le Ghana devient la première colonie d'Afrique subsaharienne "
+            "à accéder à l'indépendance, ouvrant la voie à la "
+            "décolonisation du continent africain."
+        ),
+        "before": (
+            "Sous la direction de Kwame Nkrumah, la Gold Coast britannique "
+            "mène une campagne de plusieurs années pour l'autonomie puis "
+            "l'indépendance complète."
+        ),
+        "during": (
+            "Le 6 mars 1957, le pays accède à l'indépendance sous le nom de "
+            "Ghana, en référence à l'ancien empire africain médiéval, avec "
+            "Kwame Nkrumah comme premier chef de gouvernement."
+        ),
+        "after": (
+            "L'indépendance ghanéenne inspire et accélère les mouvements "
+            "d'indépendance dans toute l'Afrique subsaharienne, dont la "
+            "grande majorité des colonies accéderont à leur tour à "
+            "l'indépendance dans les années qui suivent."
+        ),
+        "narrative": [
+            (
+                "Colonie britannique sous le nom de Gold Coast, le "
+                "territoire mène à partir de la fin des années 1940 une "
+                "campagne pour l'autonomie puis l'indépendance complète, "
+                "portée notamment par le leader panafricaniste Kwame "
+                "Nkrumah et son parti, le Convention People's Party."
+            ),
+            (
+                "Après des grèves, des manifestations et des négociations "
+                "avec les autorités britanniques, le pays accède à "
+                "l'indépendance le 6 mars 1957, prenant le nom de Ghana en "
+                "hommage à l'ancien empire du Ghana médiéval d'Afrique de "
+                "l'Ouest, bien que situé sur un territoire différent."
+            ),
+            (
+                "Kwame Nkrumah devient le premier chef de gouvernement puis "
+                "président du pays, et se fait rapidement le porte-voix "
+                "d'un panafricanisme militant, appelant les autres colonies "
+                "africaines à suivre l'exemple ghanéen."
+            ),
+        ],
+        "why_it_matters": (
+            "Premier pays d'Afrique subsaharienne à obtenir son "
+            "indépendance, le Ghana devient un symbole et un catalyseur de "
+            "la décolonisation du continent : dix-sept autres pays "
+            "africains accéderont à leur tour à l'indépendance dès 1960, "
+            "surnommée « l'année de l'Afrique »."
+        ),
+        "characters": [
+            {"name": "Kwame Nkrumah", "role": "Premier président du Ghana", "emoji": "✊", "bg": "#FDECD8"},
+        ],
+        "quiz_slug": "ghana-independance-annee",
+    },
 }
 
 TODAY_EVENT_SLUG = "prise-de-la-bastille"
@@ -2408,6 +3612,257 @@ QUIZ_QUESTIONS = {
             "Le 4 novembre 1922, l'archéologue britannique Howard Carter "
             "découvre l'entrée de la tombe quasi intacte de Toutânkhamon "
             "dans la Vallée des Rois, après des années de recherches."
+        ),
+    },
+    "bagdad-consequence": {
+        "slug": "bagdad-consequence",
+        "era": "Moyen Âge",
+        "prompt": "Qu'est-ce que le sac de Bagdad par les Mongols en 1258 a marqué ?",
+        "options": [
+            "Le début du califat abbasside",
+            "La fin de l'âge d'or intellectuel abbasside",
+            "La conversion des Mongols à l'islam",
+            "La fondation de l'Empire ottoman",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Les Mongols d'Hulagu Khan détruisent les immenses "
+            "bibliothèques de Bagdad en 1258, mettant fin à cinq siècles "
+            "d'âge d'or scientifique et culturel du monde abbasside."
+        ),
+    },
+    "barbe-noire-lieu": {
+        "slug": "barbe-noire-lieu",
+        "era": "Renaissance",
+        "prompt": "Où le pirate Barbe Noire a-t-il été tué en 1718 ?",
+        "options": ["Aux Bahamas", "À la Jamaïque", "À Ocracoke, Caroline du Nord", "À Tortuga"],
+        "correct_index": 2,
+        "fun_fact": (
+            "Barbe Noire est tué le 22 novembre 1718 lors d'un combat au "
+            "sabre contre les hommes du lieutenant Robert Maynard, envoyé "
+            "par le gouverneur de Virginie."
+        ),
+    },
+    "gengis-khan-empire": {
+        "slug": "gengis-khan-empire",
+        "era": "Moyen Âge",
+        "prompt": "Qu'a fondé Gengis Khan avant sa mort en 1227 ?",
+        "options": [
+            "Le plus vaste empire continu de l'histoire",
+            "La Route de la soie",
+            "L'Empire ottoman",
+            "Le califat abbasside",
+        ],
+        "correct_index": 0,
+        "fun_fact": (
+            "En unifiant les tribus mongoles puis en menant des conquêtes "
+            "fulgurantes, Gengis Khan bâtit le plus vaste territoire "
+            "continu jamais conquis dans l'histoire."
+        ),
+    },
+    "nankin-consequence": {
+        "slug": "nankin-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Quel territoire la Chine cède-t-elle au Royaume-Uni par le traité de Nankin en 1842 ?",
+        "options": ["Shanghai", "Hong Kong", "Macao", "Taïwan"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Le traité de Nankin, qui met fin à la première guerre de "
+            "l'Opium, cède Hong Kong au Royaume-Uni et ouvre cinq ports "
+            "chinois au commerce étranger."
+        ),
+    },
+    "meiji-consequence": {
+        "slug": "meiji-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Qu'a déclenché la restauration Meiji au Japon en 1868 ?",
+        "options": [
+            "L'isolement total du Japon",
+            "Une modernisation et industrialisation accélérées",
+            "La colonisation du Japon par les États-Unis",
+            "L'abolition de l'empereur",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Après la restauration du pouvoir impérial en 1868, le Japon "
+            "engage un vaste programme de modernisation qui en fait, en "
+            "quelques décennies, une puissance industrielle majeure."
+        ),
+    },
+    "inde-independance-consequence": {
+        "slug": "inde-independance-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Quel événement a immédiatement suivi l'indépendance de l'Inde en 1947 ?",
+        "options": [
+            "Une alliance avec le Royaume-Uni",
+            "La partition avec le Pakistan",
+            "La guerre avec la Chine",
+            "L'abolition de la démocratie",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "L'indépendance de l'Inde le 15 août 1947 s'accompagne d'une "
+            "partition douloureuse avec le Pakistan, provoquant le "
+            "déplacement d'environ 15 millions de personnes."
+        ),
+    },
+    "adoua-consequence": {
+        "slug": "adoua-consequence",
+        "era": "Époque Contemporaine",
+        "prompt": "Quel pays l'Éthiopie a-t-elle vaincu à la bataille d'Adoua en 1896 ?",
+        "options": ["La France", "Le Royaume-Uni", "L'Italie", "L'Espagne"],
+        "correct_index": 2,
+        "fun_fact": (
+            "En écrasant l'armée italienne à Adoua en 1896, l'Éthiopie "
+            "reste l'une des seules nations africaines à avoir préservé son "
+            "indépendance face à la colonisation européenne du XIXe siècle."
+        ),
+    },
+    "berlin-conference-participants": {
+        "slug": "berlin-conference-participants",
+        "era": "Époque Contemporaine",
+        "prompt": "Qui était absent des négociations lors de la conférence de Berlin de 1884-85 ?",
+        "options": [
+            "Les représentants britanniques",
+            "Les représentants africains",
+            "Les représentants allemands",
+            "Les représentants français",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "La conférence de Berlin réunit quatorze puissances pour "
+            "décider du partage colonial de l'Afrique, sans qu'aucun "
+            "représentant africain n'y soit convié."
+        ),
+    },
+    "tenochtitlan-consequence": {
+        "slug": "tenochtitlan-consequence",
+        "era": "Renaissance",
+        "prompt": "Quel empire prend fin avec la chute de Tenochtitlan en 1521 ?",
+        "options": ["L'Empire inca", "L'Empire aztèque", "L'Empire maya", "L'Empire toltèque"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Après un siège de plus de deux mois et une épidémie de "
+            "variole, Hernán Cortés et ses alliés amérindiens s'emparent de "
+            "Tenochtitlan, mettant fin à l'Empire aztèque."
+        ),
+    },
+    "atahualpa-rancon": {
+        "slug": "atahualpa-rancon",
+        "era": "Renaissance",
+        "prompt": "Comment Atahualpa a-t-il tenté d'obtenir sa libération après sa capture en 1532 ?",
+        "options": [
+            "En offrant une armée",
+            "En remplissant une pièce d'or et d'argent",
+            "En cédant son trône",
+            "En épousant Pizarre",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Atahualpa propose de remplir une pièce d'or et deux fois "
+            "d'argent en échange de sa liberté — l'une des plus grandes "
+            "rançons de l'histoire — mais Pizarre le fait exécuter malgré "
+            "tout."
+        ),
+    },
+    "cook-australie-nom": {
+        "slug": "cook-australie-nom",
+        "era": "Renaissance",
+        "prompt": "Pourquoi James Cook a-t-il nommé le lieu de son débarquement « Botany Bay » en 1770 ?",
+        "options": [
+            "En l'honneur d'un botaniste célèbre",
+            "Pour la richesse de sa flore observée par les botanistes",
+            "Car un village y portait déjà ce nom",
+            "Par erreur de traduction",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Les botanistes de l'expédition de Cook, dont Joseph Banks, "
+            "découvrent tant de nouvelles espèces végétales sur place que "
+            "la baie est baptisée « Botany Bay »."
+        ),
+    },
+    "sydney-fondation-nom": {
+        "slug": "sydney-fondation-nom",
+        "era": "Renaissance",
+        "prompt": "Que transportait principalement la « First Fleet » qui fonde la colonie de Sydney en 1788 ?",
+        "options": [
+            "Des marchandises précieuses",
+            "Des bagnards britanniques",
+            "Des colons volontaires fortunés",
+            "Des troupes militaires uniquement",
+        ],
+        "correct_index": 1,
+        "fun_fact": (
+            "Ayant perdu ses colonies pénitentiaires américaines, le "
+            "Royaume-Uni envoie plus de 700 bagnards fonder une nouvelle "
+            "colonie pénale à Port Jackson, en Australie."
+        ),
+    },
+    "saladin-jerusalem-annee": {
+        "slug": "saladin-jerusalem-annee",
+        "era": "Moyen Âge",
+        "prompt": "En quelle année Saladin reprend-il Jérusalem aux croisés ?",
+        "options": ["1099", "1187", "1291", "1453"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Après sa victoire à la bataille de Hattin, Saladin reprend "
+            "Jérusalem le 2 octobre 1187, en épargnant la population "
+            "chrétienne contrairement au massacre de 1099."
+        ),
+    },
+    "grenade-annee": {
+        "slug": "grenade-annee",
+        "era": "Renaissance",
+        "prompt": "Quel autre événement majeur a lieu la même année que la prise de Grenade (1492) ?",
+        "options": [
+            "L'expédition de Christophe Colomb",
+            "La Réforme protestante",
+            "La chute de Constantinople",
+            "Le sacre de Napoléon",
+        ],
+        "correct_index": 0,
+        "fun_fact": (
+            "La même année 1492, les Rois Catholiques achèvent la "
+            "Reconquista en prenant Grenade et financent l'expédition de "
+            "Christophe Colomb vers les Amériques."
+        ),
+    },
+    "lepante-consequence": {
+        "slug": "lepante-consequence",
+        "era": "Renaissance",
+        "prompt": "Quelle flotte est vaincue à la bataille de Lépante en 1571 ?",
+        "options": ["La flotte espagnole", "La flotte ottomane", "La flotte vénitienne", "La flotte portugaise"],
+        "correct_index": 1,
+        "fun_fact": (
+            "La flotte de la Sainte Ligue chrétienne écrase la flotte "
+            "ottomane à Lépante, l'une des plus grandes batailles navales "
+            "de l'histoire, stoppant symboliquement l'expansion navale "
+            "ottomane."
+        ),
+    },
+    "panipat-fondateur": {
+        "slug": "panipat-fondateur",
+        "era": "Renaissance",
+        "prompt": "Quel empire Babur fonde-t-il après sa victoire à Panipat en 1526 ?",
+        "options": ["L'Empire ottoman", "L'Empire moghol", "L'Empire perse", "Le sultanat de Delhi"],
+        "correct_index": 1,
+        "fun_fact": (
+            "Descendant de Gengis Khan et de Tamerlan, Babur fonde l'Empire "
+            "moghol après Panipat, qui dominera l'Inde pendant plus de "
+            "trois siècles."
+        ),
+    },
+    "ghana-independance-annee": {
+        "slug": "ghana-independance-annee",
+        "era": "Époque Contemporaine",
+        "prompt": "Quel est le premier pays d'Afrique subsaharienne à accéder à l'indépendance ?",
+        "options": ["Le Nigeria", "Le Kenya", "Le Ghana", "Le Sénégal"],
+        "correct_index": 2,
+        "fun_fact": (
+            "Le Ghana devient le 6 mars 1957 le premier pays d'Afrique "
+            "subsaharienne indépendant, inspirant les mouvements "
+            "d'indépendance dans tout le continent."
         ),
     },
 }

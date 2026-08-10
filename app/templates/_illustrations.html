@@ -512,6 +512,261 @@
   </g>
   <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
 </svg>
+{% elif slug == "siege-de-bagdad-1258" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le siège de Bagdad">
+  <defs>
+    <linearGradient id="skyBagdad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8b98a"/>
+      <stop offset="100%" stop-color="#8a3a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyBagdad)"/>
+  <g fill="#3a2a1c">
+    <rect x="60" y="160" width="280" height="100"/>
+    <circle cx="150" cy="150" r="24"/>
+    <circle cx="250" cy="150" r="24"/>
+    <rect x="140" y="150" width="20" height="30"/>
+    <rect x="240" y="150" width="20" height="30"/>
+  </g>
+  <g fill="#ba1a1a" opacity="0.6">
+    <circle cx="120" cy="120" r="10"/><circle cx="280" cy="130" r="8"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#2b2013"/>
+</svg>
+{% elif slug == "mort-de-barbe-noire" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La mort de Barbe Noire">
+  <defs>
+    <linearGradient id="skyBarbeNoire" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7d8a95"/>
+      <stop offset="100%" stop-color="#2b3a4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyBarbeNoire)"/>
+  <rect y="220" width="400" height="80" fill="#3a4a5a"/>
+  <g fill="#1a1c1b">
+    <path d="M100 220 v-70 l60 10 v60 z"/>
+    <rect x="100" y="150" width="6" height="70"/>
+    <polygon points="106,150 160,160 106,170"/>
+  </g>
+  <circle cx="90" cy="130" r="8" fill="#2b2013"/>
+</svg>
+{% elif slug == "mort-de-gengis-khan" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La mort de Gengis Khan">
+  <defs>
+    <linearGradient id="skyGengisKhan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a35c"/>
+      <stop offset="100%" stop-color="#5c4520"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGengisKhan)"/>
+  <ellipse cx="200" cy="250" rx="280" ry="60" fill="#8a6a3a" opacity="0.5"/>
+  <g fill="#3a2a1c">
+    <polygon points="200,120 240,220 160,220"/>
+    <circle cx="200" cy="110" r="12"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#2b2013"/>
+</svg>
+{% elif slug == "traite-de-nankin" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Le traité de Nankin">
+  <rect width="400" height="300" fill="#8a95a0"/>
+  <rect y="200" width="400" height="100" fill="#3a4a5a"/>
+  <g fill="#1a1c1b">
+    <rect x="60" y="120" width="90" height="90" rx="4"/>
+    <rect x="90" y="90" width="14" height="40"/>
+    <rect x="250" y="140" width="100" height="70" rx="4"/>
+  </g>
+  <g fill="#e3a15c">
+    <circle cx="105" cy="150" r="10"/>
+  </g>
+</svg>
+{% elif slug == "restauration-meiji" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La restauration Meiji">
+  <defs>
+    <linearGradient id="skyMeiji" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#e3a15c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyMeiji)"/>
+  <circle cx="200" cy="100" r="50" fill="#ba1a1a" opacity="0.85"/>
+  <g fill="#3a2a1c">
+    <polygon points="120,260 200,140 280,260"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
+{% elif slug == "independance-de-linde" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="L'indépendance de l'Inde">
+  <defs>
+    <linearGradient id="skyInde" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3a15c"/>
+      <stop offset="50%" stop-color="#e3e2e0"/>
+      <stop offset="100%" stop-color="#6b7a4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyInde)"/>
+  <circle cx="200" cy="150" r="30" fill="none" stroke="#2f3130" stroke-width="3"/>
+  <g stroke="#2f3130" stroke-width="1.5">
+    {% for i in range(24) %}<line x1="200" y1="150" x2="{{ 200 }}" y2="122" transform="rotate({{ i * 15 }} 200 150)"/>{% endfor %}
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#2b2013"/>
+</svg>
+{% elif slug == "bataille-dadoua" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La bataille d'Adoua">
+  <defs>
+    <linearGradient id="skyAdoua" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3c98a"/>
+      <stop offset="100%" stop-color="#8a5a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyAdoua)"/>
+  <polygon points="0,240 100,160 200,220 300,140 400,230 400,300 0,300" fill="#5c4520"/>
+  <g fill="#ba1a1a" opacity="0.6">
+    <circle cx="130" cy="200" r="6"/><circle cx="260" cy="190" r="6"/>
+  </g>
+</svg>
+{% elif slug == "conference-de-berlin" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La conférence de Berlin">
+  <rect width="400" height="300" fill="#dcd7c2"/>
+  <rect x="80" y="120" width="240" height="30" fill="#3a2a1c"/>
+  <g fill="#7a5a2e">
+    {% for i in range(6) %}<rect x="{{ 100 + i * 35 }}" y="150" width="20" height="60"/>{% endfor %}
+  </g>
+  <circle cx="200" cy="90" r="35" fill="#8a5a2e" opacity="0.4"/>
+  <rect x="0" y="255" width="400" height="45" fill="#4d3a1f"/>
+</svg>
+{% elif slug == "chute-de-tenochtitlan" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La chute de Tenochtitlan">
+  <defs>
+    <linearGradient id="skyTenochtitlan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9a35c"/>
+      <stop offset="100%" stop-color="#3a4a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyTenochtitlan)"/>
+  <rect y="230" width="400" height="70" fill="#5f7285" opacity="0.7"/>
+  <g fill="#3a2a1c">
+    <polygon points="150,230 200,140 250,230"/>
+    <rect x="120" y="200" width="30" height="30"/>
+    <rect x="250" y="205" width="30" height="25"/>
+  </g>
+</svg>
+{% elif slug == "capture-datahualpa" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La capture d'Atahualpa">
+  <defs>
+    <linearGradient id="skyCajamarca" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3c98a"/>
+      <stop offset="100%" stop-color="#c9a35c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyCajamarca)"/>
+  <polygon points="0,260 120,150 240,260" fill="#8a8577"/>
+  <polygon points="180,260 300,170 400,260" fill="#a9a08a"/>
+  <g fill="#e9c349">
+    <circle cx="150" cy="220" r="16"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#4d3a1f"/>
+</svg>
+{% elif slug == "cook-a-botany-bay" or slug == "fondation-de-sydney" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="{{ 'Cook a Botany Bay' if slug == 'cook-a-botany-bay' else 'Fondation de Sydney' }}">
+  <defs>
+    <linearGradient id="skyAustralie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#5f7285"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyAustralie)"/>
+  <rect y="220" width="400" height="80" fill="#3a4a5a"/>
+  <g fill="#e3e2e0">
+    <path d="M120 220 v-60 l50 10 v50 z"/>
+    <rect x="120" y="150" width="4" height="60"/>
+    <polygon points="124,150 165,158 124,166"/>
+  </g>
+  <g fill="#8a5a2e">
+    <rect x="240" y="200" width="30" height="20" rx="4"/>
+    <rect x="280" y="205" width="30" height="15" rx="4"/>
+  </g>
+</svg>
+{% elif slug == "prise-de-jerusalem-par-saladin" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La prise de Jérusalem par Saladin">
+  <defs>
+    <linearGradient id="skyJerusalem" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3c98a"/>
+      <stop offset="100%" stop-color="#a2431a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyJerusalem)"/>
+  <g fill="#c9a35c">
+    <rect x="60" y="170" width="280" height="90"/>
+  </g>
+  <g fill="#e9c349">
+    <circle cx="200" cy="140" r="22"/>
+    <polygon points="200,110 210,140 190,140"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#5c3d1f"/>
+</svg>
+{% elif slug == "prise-de-grenade" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La prise de Grenade">
+  <defs>
+    <linearGradient id="skyGrenade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8b98a"/>
+      <stop offset="100%" stop-color="#c9843f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGrenade)"/>
+  <g fill="#a9803e">
+    <rect x="70" y="150" width="260" height="100"/>
+    {% for i in range(7) %}<rect x="{{ 85 + i * 35 }}" y="130" width="20" height="30"/>{% endfor %}
+  </g>
+  <rect x="0" y="250" width="400" height="50" fill="#5c3d1f"/>
+</svg>
+{% elif slug == "bataille-de-lepante" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La bataille de Lépante">
+  <defs>
+    <linearGradient id="skyLepante" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8b98a"/>
+      <stop offset="100%" stop-color="#3a4a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyLepante)"/>
+  <rect y="220" width="400" height="80" fill="#3a4a5a"/>
+  <g fill="#1a1c1b">
+    <path d="M80 220 v-40 l40 8 v32 z"/><rect x="80" y="180" width="4" height="40"/>
+    <path d="M260 220 v-35 l40 8 v27 z"/><rect x="260" y="185" width="4" height="35"/>
+  </g>
+  <g fill="#ba1a1a" opacity="0.6">
+    <circle cx="200" cy="190" r="8"/>
+  </g>
+</svg>
+{% elif slug == "bataille-de-panipat" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La bataille de Panipat">
+  <defs>
+    <linearGradient id="skyPanipat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3c98a"/>
+      <stop offset="100%" stop-color="#a2431a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyPanipat)"/>
+  <g fill="#2f3130">
+    {% for i in range(5) %}<circle cx="{{ 60 + i * 70 }}" cy="230" r="12"/>{% endfor %}
+  </g>
+  <g fill="#5c3d1f" opacity="0.6">
+    <circle cx="150" cy="180" r="6"/><circle cx="250" cy="170" r="6"/>
+  </g>
+  <rect x="0" y="255" width="400" height="45" fill="#3a2a1c"/>
+</svg>
+{% elif slug == "independance-du-ghana" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="L'indépendance du Ghana">
+  <defs>
+    <linearGradient id="skyGhana" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ba1a1a"/>
+      <stop offset="50%" stop-color="#e9c349"/>
+      <stop offset="100%" stop-color="#2f7a3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGhana)"/>
+  <polygon points="200,150 220,180 190,180" fill="#1a1c1b"/>
+  <rect x="0" y="255" width="400" height="45" fill="#1a1c1b"/>
+</svg>
 {% else %}
 <svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Événement historique">
   <defs>
@@ -525,6 +780,37 @@
   <text x="200" y="162" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="40" fill="#735c00">C</text>
 </svg>
 {% endif %}
+{% endmacro %}
+
+{% macro world_map_illustration(css_class="w-full h-full") %}
+{# Stylized planisphere, not a literal projection — continent blobs are
+   positioned to roughly align with each event's map_pos (x%, y%) so pins
+   land on/near their real continent. viewBox is 0-100 on both axes with
+   preserveAspectRatio="none" so 1 unit == 1% of the container, matching
+   the CSS percentage positioning used for the event pins. #}
+<svg class="{{ css_class }}" viewBox="0 0 100 100" preserveAspectRatio="none" role="img" aria-label="Planisphère">
+  <rect width="100" height="100" fill="#dce6ea"/>
+  <g fill="#c9a35c" stroke="#a68a55" stroke-width="0.3" opacity="0.9">
+    <!-- Amérique du Nord -->
+    <path d="M4,22 C10,16 20,15 26,20 C30,24 29,30 25,34 C27,38 24,42 19,42 C14,44 8,40 6,34 C3,30 2,26 4,22 Z"/>
+    <!-- Amérique du Sud -->
+    <path d="M15,52 C20,50 25,53 25,60 C26,68 23,78 18,84 C15,80 13,72 13,64 C12,58 12,55 15,52 Z"/>
+    <!-- Europe -->
+    <path d="M40,16 C46,14 54,15 58,19 C60,23 57,27 53,28 C48,30 43,29 40,25 C38,22 38,18 40,16 Z"/>
+    <!-- Afrique -->
+    <path d="M40,34 C48,32 58,34 60,42 C62,52 60,64 54,74 C50,80 45,78 43,72 C39,62 37,50 38,42 C38,38 39,36 40,34 Z"/>
+    <!-- Asie -->
+    <path d="M58,12 C70,10 88,14 94,22 C97,28 92,34 85,36 C80,42 70,44 64,40 C58,38 55,32 56,26 C55,20 56,15 58,12 Z"/>
+    <!-- Inde -->
+    <path d="M68,38 C72,38 75,42 74,47 C73,50 70,50 68,47 C66,44 66,40 68,38 Z"/>
+    <!-- Australie -->
+    <path d="M84,72 C90,70 97,73 97,79 C97,84 91,87 85,85 C81,83 80,77 84,72 Z"/>
+  </g>
+  <g stroke="#a68a55" stroke-width="0.15" opacity="0.4">
+    {% for x in range(0, 101, 10) %}<line x1="{{ x }}" y1="0" x2="{{ x }}" y2="100"/>{% endfor %}
+    {% for y in range(0, 101, 10) %}<line x1="0" y1="{{ y }}" x2="100" y2="{{ y }}"/>{% endfor %}
+  </g>
+</svg>
 {% endmacro %}
 
 {% macro map_illustration(css_class="w-full h-full") %}
