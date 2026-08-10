@@ -1,5 +1,5 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import bastille_illustration %}
+{% from "_illustrations.html" import bastille_illustration, map_illustration %}
 {% block title %}{{ event.title }}{% endblock %}
 {% block content %}
 <main>
@@ -41,7 +41,7 @@
       </div>
     </aside>
 
-    <article class="lg:col-span-9 space-y-xl">
+    <article class="lg:col-span-6 space-y-xl">
       <div>
         <h2 class="font-headline-md text-2xl text-on-surface mb-md">Que s'est-il passé ?</h2>
         {% for paragraph in event.narrative %}
@@ -56,6 +56,44 @@
         <p class="font-body-base text-on-surface-variant leading-relaxed">{{ event.why_it_matters }}</p>
       </div>
     </article>
+
+    {% if event.characters or event.location_label %}
+    <aside class="lg:col-span-3 space-y-xl">
+      {% if event.characters %}
+      <div>
+        <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase mb-md">Personnages Clés</h3>
+        <div class="flex overflow-x-auto lg:flex-col gap-md pb-sm lg:pb-0">
+          {% for character in event.characters %}
+          <div class="flex items-center gap-md min-w-[200px] lg:min-w-0 bg-surface-container-lowest p-sm rounded-xl border border-outline-variant/20">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 text-xl" style="background-color: {{ character.bg }};">
+              <span role="img" aria-label="{{ character.role }}">{{ character.emoji }}</span>
+            </div>
+            <div>
+              <h4 class="font-body-bold text-on-surface text-sm">{{ character.name }}</h4>
+              <p class="font-label-caps text-secondary text-[10px] mt-0.5">{{ character.role }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if event.location_label %}
+      <div>
+        <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase mb-md">Lieu Historique</h3>
+        <div class="rounded-2xl overflow-hidden border border-outline-variant/30 h-48 relative ambient-shadow">
+          {{ map_illustration() }}
+          <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-sm text-white">
+            <p class="font-body-bold text-sm flex items-center gap-xs">
+              <span class="material-symbols-outlined text-[16px]">map</span>
+              {{ event.location_label }}
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </aside>
+    {% endif %}
   </section>
 
   <section class="max-w-[800px] mx-auto px-margin-mobile md:px-margin-desktop py-xl text-center">
@@ -63,5 +101,11 @@
       <span class="material-symbols-outlined">psychology</span> Répondre au Quiz (+20 XP)
     </a>
   </section>
+
+  <footer class="border-t border-outline-variant/20 py-lg text-center">
+    <p class="font-label-caps text-[10px] text-secondary/60">
+      © 2026 Chronos. Contenu à but éducatif — illustrations générées, non historiquement exhaustives.
+    </p>
+  </footer>
 </main>
 {% endblock %}

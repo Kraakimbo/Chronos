@@ -5,6 +5,7 @@ from flask_login import current_user, login_required
 
 from app import db
 from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS, TODAY_EVENT_SLUG
+from app.progress import badges_for, eras_progress, level_info
 
 main_bp = Blueprint("main", __name__)
 
@@ -19,7 +20,13 @@ class QuizResult:
 @login_required
 def home():
     event = EVENTS[TODAY_EVENT_SLUG]
-    return render_template("pages/home.html", event=event, active_page="home")
+    return render_template(
+        "pages/home.html",
+        event=event,
+        active_page="home",
+        level=level_info(current_user),
+        badges=badges_for(current_user),
+    )
 
 
 @main_bp.route("/explorer")
@@ -32,7 +39,14 @@ def explorer():
         {"key": "moyen-age", "name": "Moyen Âge", "range": "476 à 1492", "description": "Châteaux, chevaliers et expansion spirituelle."},
         {"key": "renaissance", "name": "Renaissance", "range": "1492 à 1789", "description": "Renouveau artistique, scientifique et grandes découvertes."},
     ]
-    return render_template("pages/explorer.html", event=event, eras=eras, active_page="explorer")
+    collections = [
+        {"key": "rome-antique", "badge": "Rome Antique", "title": "La Chute de l'Empire", "description": "Découvrez les derniers jours d'une civilisation millénaire."},
+        {"key": "revolution-industrielle", "badge": None, "title": "Révolution Industrielle", "description": None},
+        {"key": "egypte-pharaons", "badge": None, "title": "Égypte des Pharaons", "description": None},
+    ]
+    return render_template(
+        "pages/explorer.html", event=event, eras=eras, collections=collections, active_page="explorer"
+    )
 
 
 @main_bp.route("/evenement/<slug>")
@@ -74,7 +88,12 @@ def quiz():
 @main_bp.route("/profil")
 @login_required
 def profile():
-    return render_template("pages/profile.html", active_page="profile")
+    return render_template(
+        "pages/profile.html",
+        active_page="profile",
+        level=level_info(current_user),
+        eras=eras_progress(current_user),
+    )
 
 
 @main_bp.route("/profil/avatar", methods=["POST"])

@@ -7,30 +7,53 @@
     {{ avatar(current_user.avatar_id, "w-32 h-32 border-4 border-surface", "text-[56px]") }}
     <div class="flex-1 text-center md:text-left w-full">
       <h2 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-2">{{ current_user.username }}</h2>
-      <p class="font-body-bold text-primary uppercase tracking-widest mb-lg">{{ current_user.study_level or "Niveau non renseigné" }}</p>
+      <p class="font-body-bold text-primary uppercase tracking-widest mb-1">{{ level.rank }}</p>
+      <p class="font-body-base text-sm text-on-surface-variant mb-lg">{{ current_user.study_level or "Niveau d'étude non renseigné" }}</p>
       <div class="w-full max-w-md mx-auto md:mx-0">
         <div class="flex justify-between font-label-caps text-on-surface-variant mb-2">
-          <span>XP total</span><span>{{ current_user.xp }} XP</span>
+          <span>Niveau {{ level.level }}</span><span>{{ level.xp_in_level }} / {{ level.xp_target }} XP</span>
         </div>
         <div class="h-3 w-full bg-[#FFF9E6] rounded-full overflow-hidden border border-outline-variant/20">
-          <div class="h-full bg-primary-container rounded-full" style="width: {{ [current_user.xp % 500 / 5, 100] | min }}%;"></div>
+          <div class="h-full bg-primary-container rounded-full" style="width: {{ level.progress_percent }}%;"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-md md:gap-lg">
-    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
-      <h3 class="font-body-bold text-on-surface-variant mb-sm">Chronos Tokens</h3>
-      <p class="font-stat-lg text-2xl text-on-surface flex items-center gap-2">{{ token_icon(24) }} {{ current_user.tokens }}</p>
-    </div>
+  <section class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center max-w-sm mx-auto w-full">
+    <h3 class="font-body-bold text-on-surface-variant mb-sm">Vault Balance</h3>
+    {{ token_icon(72) }}
+    <p class="font-stat-lg text-3xl text-on-surface mt-sm">{{ current_user.tokens }}</p>
+    <p class="font-label-caps text-primary">Chronos Tokens</p>
+  </section>
+
+  <section class="grid grid-cols-1 sm:grid-cols-3 gap-md md:gap-lg">
     <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
       <h3 class="font-body-base text-sm text-on-surface-variant">Série active</h3>
       <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.streak_days }} <span class="text-base">jours 🔥</span></p>
     </div>
     <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
+      <h3 class="font-body-base text-sm text-on-surface-variant">Quiz réussis</h3>
+      <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.xp // 20 }}</p>
+    </div>
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
       <h3 class="font-body-base text-sm text-on-surface-variant">Membre depuis</h3>
       <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.created_at.strftime('%d/%m/%Y') }}</p>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="font-headline-md text-xl text-on-surface mb-md text-center md:text-left">Collections</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+      {% for era in eras %}
+      <div class="bg-surface-container-lowest rounded-2xl p-md ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
+        <div class="w-20 h-20 rounded-full flex items-center justify-center mb-sm border-2 {{ 'border-primary-container' if era.percent > 0 else 'border-outline-variant grayscale opacity-60' }}">
+          <span class="font-headline-md text-primary text-lg">{{ era.name[:2] }}</span>
+        </div>
+        <h4 class="font-body-bold text-sm text-on-surface">{{ era.name }}</h4>
+        <p class="font-label-caps text-[10px] mt-1 {{ 'text-primary' if era.status == 'Maîtrisé' else 'text-secondary' }}">{{ era.status }}</p>
+      </div>
+      {% endfor %}
     </div>
   </section>
 

@@ -1,5 +1,5 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import era_illustration, bastille_illustration %}
+{% from "_illustrations.html" import era_illustration, bastille_illustration, collection_illustration %}
 {% block title %}Chronos - Explorer{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-2xl">
@@ -27,6 +27,34 @@
       </div>
     </div>
     {% endfor %}
+  </div>
+
+  <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Collections Phares</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+    <div class="md:col-span-2 relative h-[300px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm">
+      <div class="absolute inset-0">{{ collection_illustration(collections[0].key) }}</div>
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute bottom-0 left-0 p-lg">
+        {% if collections[0].badge %}
+        <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ collections[0].badge }}</span>
+        {% endif %}
+        <h4 class="font-display-lg text-2xl text-white mb-xs">{{ collections[0].title }}</h4>
+        {% if collections[0].description %}
+        <p class="text-white/90 text-sm font-body-base">{{ collections[0].description }}</p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="flex flex-col gap-md">
+      {% for collection in collections[1:] %}
+      <div class="relative flex-1 rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm min-h-[142px]">
+        <div class="absolute inset-0">{{ collection_illustration(collection.key) }}</div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-md">
+          <h4 class="font-headline-md text-white text-xl">{{ collection.title }}</h4>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 
   <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
