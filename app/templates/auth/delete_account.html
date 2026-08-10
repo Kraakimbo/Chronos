@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Supprimer mon compte - Chronos{% endblock %}
+{% block content %}
+<div class="text-center mb-xl">
+  <h1 class="font-headline text-3xl text-error mb-sm">Supprimer mon compte</h1>
+  <p class="font-body text-on-surface-variant">
+    Cette action est <strong>définitive</strong> : ton compte {{ current_user.username }}
+    ({{ current_user.email }}) et toute ta progression seront supprimés. Confirme avec ton
+    mot de passe.
+  </p>
+</div>
+
+<form method="POST" novalidate class="flex flex-col gap-md">
+  {{ form.hidden_tag() }}
+
+  <div>
+    <label class="block font-body font-bold text-sm text-on-surface mb-xs" for="{{ form.password.id }}">{{ form.password.label.text }}</label>
+    {{ form.password(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-error focus:outline-none", autocomplete="current-password") }}
+    {% for error in form.password.errors %}
+      <p class="text-error text-xs mt-xs">{{ error }}</p>
+    {% endfor %}
+  </div>
+
+  {{ form.submit(class_="w-full h-[52px] bg-error text-on-error font-body font-bold rounded-full hover:opacity-90 transition-opacity mt-sm") }}
+</form>
+
+<p class="text-center font-body text-sm text-on-surface-variant mt-lg">
+  <a class="text-primary font-bold hover:opacity-80" href="{{ url_for('main.profile') }}">Annuler, retour au profil</a>
+</p>
+{% endblock %}

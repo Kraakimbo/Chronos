@@ -123,3 +123,10 @@ class LoginForm(FlaskForm):
     )
     remember_me = BooleanField("Se souvenir de moi")
     submit = SubmitField("Se connecter")
+
+
+class DeleteAccountForm(FlaskForm):
+    password = PasswordField(
+        "Mot de passe", validators=[DataRequired(message="Champ requis.")]
+    )
+    submit = SubmitField("Supprimer définitivement mon compte")

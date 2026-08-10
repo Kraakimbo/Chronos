@@ -4,7 +4,13 @@ from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 
 from app import db
-from app.auth.forms import LoginForm, RegistrationForm, RequestResetForm, ResetPasswordForm
+from app.auth.forms import (
+    DeleteAccountForm,
+    LoginForm,
+    RegistrationForm,
+    RequestResetForm,
+    ResetPasswordForm,
+)
 from app.email import send_reset_email
 from app.models import User
 
@@ -117,3 +123,22 @@ def reset_token(token):
         return redirect(url_for("auth.login"))
 
     return render_template("auth/reset_password.html", form=form)
+
+
+@auth_bp.route("/supprimer-compte", methods=["GET", "POST"])
+@login_required
+def delete_account():
+    form = DeleteAccountForm()
+    if form.validate_on_submit():
+        if not current_user.check_password(form.password.data):
+            flash("Mot de passe incorrect.", "error")
+            return render_template("auth/delete_account.html", form=form)
+
+        user = User.query.get(current_user.id)
+        logout_user()
+        db.session.delete(user)
+        db.session.commit()
+        flash("Ton compte a été supprimé définitivement.", "info")
+        return redirect(url_for("auth.login"))
+
+    return render_template("auth/delete_account.html", form=form)
