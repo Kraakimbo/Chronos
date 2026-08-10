@@ -75,6 +75,16 @@ Pour te connecter directement sans remplir le formulaire `/auth/inscription`, aj
 
 Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore (aucun doublon si l'app redémarre plusieurs fois). Va ensuite sur `/auth/connexion` avec ces identifiants. C'est un compte utilisateur classique (le projet n'a pas de rôle "administrateur" avec des permissions particulières côté app) — juste un raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement, puisque le disque gratuit de Render efface la base à chaque redémarrage.
 
+Pour un **deuxième compte** (ou plus), ajoute les mêmes 3 variables avec un suffixe `_2`, `_3`, etc. — pas dans les mêmes cases, chaque compte a son propre trio de variables :
+
+| Clé | Valeur |
+|---|---|
+| `ADMIN_USERNAME_2` | identifiant du 2e compte |
+| `ADMIN_EMAIL_2` | son email |
+| `ADMIN_PASSWORD_2` | son mot de passe |
+
+Continue avec `_3`, `_4`... pour d'autres comptes (jusqu'à 10 pris en charge).
+
 ### Structure
 
 ```
