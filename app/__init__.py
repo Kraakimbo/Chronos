@@ -51,4 +51,8 @@ def create_app(config_object="config.Config"):
     with app.app_context():
         db.create_all()
 
+        from app.seed import seed_admin_account
+
+        seed_admin_account()
+
     return app
