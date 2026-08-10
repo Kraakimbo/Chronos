@@ -73,7 +73,9 @@ Pour te connecter directement sans remplir le formulaire `/auth/inscription`, aj
 | `ADMIN_EMAIL` | ton email |
 | `ADMIN_PASSWORD` | un mot de passe (8+ caractères, majuscule, minuscule, chiffre) |
 
-Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore (aucun doublon si l'app redémarre plusieurs fois). Va ensuite sur `/auth/connexion` avec ces identifiants. C'est un compte utilisateur classique (le projet n'a pas de rôle "administrateur" avec des permissions particulières côté app) — juste un raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement, puisque le disque gratuit de Render efface la base à chaque redémarrage.
+Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore. Va ensuite sur `/auth/connexion` avec ces identifiants. C'est un compte utilisateur classique (le projet n'a pas de rôle "administrateur" avec des permissions particulières côté app) — juste un raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement, puisque le disque gratuit de Render efface la base à chaque redémarrage.
+
+⚠️ **Le mot de passe est resynchronisé à chaque démarrage** sur la valeur courante de `ADMIN_PASSWORD` (tant que l'identifiant *et* l'email correspondent exactement à un compte déjà créé) : change la variable dans Render puis redéploie, pas besoin de supprimer le compte avant. En contrepartie, si tu changes ce mot de passe *depuis l'app* (page profil, mot de passe oublié) sans retirer la variable d'environnement, il sera écrasé par `ADMIN_PASSWORD` au prochain redémarrage — retire la variable une fois que tu n'as plus besoin de ce raccourci. Si l'identifiant ou l'email est déjà pris par un **autre** compte (un vrai utilisateur inscrit normalement), ce compte-là n'est jamais modifié ; le bootstrap est simplement ignoré (visible dans les logs).
 
 Pour un **deuxième compte** (ou plus), ajoute les mêmes 3 variables avec un suffixe `_2`, `_3`, etc. — pas dans les mêmes cases, chaque compte a son propre trio de variables :
 
