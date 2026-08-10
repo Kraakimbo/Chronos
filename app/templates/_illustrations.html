@@ -1,0 +1,111 @@
+{# Inline SVG illustrations, hand-drawn silhouettes in the Chronos gold/parchment
+   palette. Used instead of hotlinked external images, which are ephemeral
+   and can break or vanish (see README code-improvement notes). #}
+
+{% macro bastille_illustration(css_class="w-full h-full") %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="La prise de la Bastille">
+  <defs>
+    <linearGradient id="skyBastille" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e0a1"/>
+      <stop offset="100%" stop-color="#e3a15c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyBastille)"/>
+  <circle cx="320" cy="70" r="36" fill="#fff3c4" opacity="0.8"/>
+  <g fill="#4d3a1f">
+    <rect x="40" y="150" width="34" height="110" rx="2"/>
+    <polygon points="40,150 57,120 74,150"/>
+    <rect x="110" y="120" width="46" height="140" rx="2"/>
+    <polygon points="110,120 133,85 156,120"/>
+    <rect x="190" y="145" width="34" height="115" rx="2"/>
+    <polygon points="190,145 207,115 224,145"/>
+    <rect x="260" y="130" width="42" height="130" rx="2"/>
+    <polygon points="260,130 281,98 302,130"/>
+    <rect x="0" y="255" width="400" height="45"/>
+  </g>
+  <g fill="#2b2013" opacity="0.6">
+    <circle cx="60" cy="270" r="6"/>
+    <circle cx="90" cy="272" r="6"/>
+    <circle cx="130" cy="269" r="6"/>
+    <circle cx="170" cy="273" r="6"/>
+    <circle cx="220" cy="270" r="6"/>
+    <circle cx="260" cy="272" r="6"/>
+    <circle cx="300" cy="269" r="6"/>
+    <circle cx="340" cy="273" r="6"/>
+  </g>
+</svg>
+{% endmacro %}
+
+{% macro era_illustration(era_key, css_class="w-full h-full") %}
+{% if era_key == "prehistoire" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Préhistoire">
+  <rect width="400" height="300" fill="#a9724f"/>
+  <rect width="400" height="300" fill="#3a2a1c" opacity="0.35"/>
+  <g fill="#f4e0a1" opacity="0.9">
+    <ellipse cx="120" cy="170" rx="55" ry="22" transform="rotate(-10 120 170)"/>
+    <ellipse cx="230" cy="140" rx="40" ry="16" transform="rotate(8 230 140)"/>
+    <circle cx="300" cy="180" r="10"/>
+    <circle cx="90" cy="120" r="8"/>
+  </g>
+  <circle cx="200" cy="230" r="55" fill="#e3a15c" opacity="0.7"/>
+</svg>
+{% elif era_key == "antiquite" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Antiquité">
+  <defs>
+    <linearGradient id="skyAntique" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe9b8"/>
+      <stop offset="100%" stop-color="#e3a15c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyAntique)"/>
+  <g fill="#7a5a2e">
+    <polygon points="80,240 160,110 240,240"/>
+    <polygon points="200,240 290,140 380,240"/>
+  </g>
+  <g fill="#5c421f" opacity="0.5">
+    <polygon points="80,240 160,110 165,110 90,240"/>
+    <polygon points="200,240 290,140 295,140 210,240"/>
+  </g>
+  <rect x="0" y="240" width="400" height="60" fill="#4d3a1f"/>
+</svg>
+{% elif era_key == "moyen-age" %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Moyen Âge">
+  <defs>
+    <linearGradient id="skyMedieval" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9d3c7"/>
+      <stop offset="100%" stop-color="#a68a68"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyMedieval)"/>
+  <g fill="#4d4335">
+    <rect x="60" y="140" width="40" height="120"/>
+    <polygon points="60,140 60,120 68,120 68,132 76,132 76,120 84,120 84,132 92,132 92,120 100,120 100,140"/>
+    <rect x="150" y="100" width="50" height="160"/>
+    <polygon points="150,100 150,78 160,78 160,90 170,90 170,78 180,78 180,90 190,90 190,78 200,78 200,100"/>
+    <rect x="240" y="140" width="40" height="120"/>
+    <polygon points="240,140 240,120 248,120 248,132 256,132 256,120 264,120 264,132 272,132 272,120 280,120 280,140"/>
+    <rect x="310" y="160" width="34" height="100"/>
+    <rect x="0" y="255" width="400" height="45"/>
+  </g>
+</svg>
+{% else %}
+<svg class="{{ css_class }}" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Renaissance">
+  <defs>
+    <linearGradient id="skyRenaissance" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdf2d0"/>
+      <stop offset="100%" stop-color="#e9c349"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyRenaissance)"/>
+  <g fill="#735c00">
+    <rect x="170" y="80" width="60" height="130"/>
+    <circle cx="200" cy="80" r="35"/>
+    <rect x="60" y="150" width="24" height="110"/>
+    <rect x="120" y="150" width="24" height="110"/>
+    <rect x="256" y="150" width="24" height="110"/>
+    <rect x="316" y="150" width="24" height="110"/>
+    <rect x="20" y="255" width="360" height="45"/>
+  </g>
+</svg>
+{% endif %}
+{% endmacro %}

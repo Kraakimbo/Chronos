@@ -1,0 +1,14 @@
+{% macro token_icon(size=20) %}
+<svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" class="inline-block align-middle shrink-0" aria-label="Chronos Token" role="img">
+  <circle cx="12" cy="12" r="11" fill="#d4af37" stroke="#735c00" stroke-width="1.5"/>
+  <circle cx="12" cy="12" r="8" fill="none" stroke="#735c00" stroke-width="1" opacity="0.5"/>
+  <path d="M12 6.5v5.2l3.6 2.1" fill="none" stroke="#554300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+{% endmacro %}
+
+{% macro avatar(avatar_id, size_class="w-10 h-10", text_size="text-lg") %}
+{% set av = avatars.get(avatar_id, avatars["1"]) %}
+<div class="{{ size_class }} rounded-full border border-outline-variant flex items-center justify-center shrink-0" style="background-color: {{ av.bg }};">
+  <span class="{{ text_size }}" role="img" aria-label="{{ av.label }}">{{ av.emoji }}</span>
+</div>
+{% endmacro %}

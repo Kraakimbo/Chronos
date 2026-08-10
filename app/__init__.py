@@ -52,6 +52,12 @@ def create_app(config_object="config.Config"):
     app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
 
+    from app.data import AVATARS
+
+    @app.context_processor
+    def inject_avatars():
+        return {"avatars": AVATARS}
+
     from app.models import User
 
     @login_manager.user_loader

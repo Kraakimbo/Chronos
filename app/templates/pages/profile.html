@@ -1,11 +1,10 @@
 {% extends "base_app.html" %}
+{% from "_icons.html" import token_icon, avatar with context %}
 {% block title %}Profil - Chronos{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl space-y-xl">
   <section class="bg-surface-container-lowest rounded-2xl p-lg md:p-xl ambient-shadow border border-outline-variant/30 flex flex-col md:flex-row items-center gap-lg">
-    <div class="w-32 h-32 rounded-full bg-surface-container-high border-4 border-surface flex items-center justify-center shrink-0">
-      <span class="material-symbols-outlined text-[56px] text-on-surface-variant">account_circle</span>
-    </div>
+    {{ avatar(current_user.avatar_id, "w-32 h-32 border-4 border-surface", "text-[56px]") }}
     <div class="flex-1 text-center md:text-left w-full">
       <h2 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-2">{{ current_user.username }}</h2>
       <p class="font-body-bold text-primary uppercase tracking-widest mb-lg">{{ current_user.study_level or "Niveau non renseigné" }}</p>
@@ -23,7 +22,7 @@
   <section class="grid grid-cols-1 md:grid-cols-3 gap-md md:gap-lg">
     <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
       <h3 class="font-body-bold text-on-surface-variant mb-sm">Chronos Tokens</h3>
-      <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.tokens }}</p>
+      <p class="font-stat-lg text-2xl text-on-surface flex items-center gap-2">{{ token_icon(24) }} {{ current_user.tokens }}</p>
     </div>
     <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col justify-between">
       <h3 class="font-body-base text-sm text-on-surface-variant">Série active</h3>
@@ -33,6 +32,19 @@
       <h3 class="font-body-base text-sm text-on-surface-variant">Membre depuis</h3>
       <p class="font-stat-lg text-2xl text-on-surface">{{ current_user.created_at.strftime('%d/%m/%Y') }}</p>
     </div>
+  </section>
+
+  <section>
+    <h3 class="font-headline-md text-xl text-on-surface mb-md text-center md:text-left">Choisis ton avatar</h3>
+    <form method="POST" action="{{ url_for('main.update_avatar') }}" class="grid grid-cols-4 sm:grid-cols-8 gap-md max-w-lg mx-auto md:mx-0">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      {% for id, av in avatars.items() %}
+      <button type="submit" name="avatar_id" value="{{ id }}"
+        class="flex flex-col items-center gap-1 p-sm rounded-xl border-2 transition-colors {{ 'border-primary-container bg-primary-container/10' if id == current_user.avatar_id else 'border-transparent hover:border-outline-variant' }}">
+        {{ avatar(id, "w-12 h-12", "text-2xl") }}
+      </button>
+      {% endfor %}
+    </form>
   </section>
 
   <section class="text-center">

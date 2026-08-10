@@ -1,5 +1,6 @@
 {% extends "base_app.html" %}
-{% block title %}Digital Museum - Accueil{% endblock %}
+{% from "_illustrations.html" import bastille_illustration %}
+{% block title %}Chronos - Accueil{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-2xl">
   <section class="flex flex-col gap-sm">
@@ -9,6 +10,7 @@
 
   <section class="relative w-full rounded-2xl overflow-hidden ambient-shadow border border-outline-variant bg-surface-container-lowest">
     <div class="relative h-[400px] md:h-[500px] w-full bg-surface-container flex items-end">
+      <div class="absolute inset-0">{{ bastille_illustration() }}</div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c1b]/90 via-[#1a1c1b]/40 to-transparent"></div>
       <div class="relative w-full p-lg md:p-xl flex flex-col gap-md">
         <div class="flex items-center gap-sm">

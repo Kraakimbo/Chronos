@@ -19,6 +19,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(255), unique=True, nullable=False, index=True)
     password_hash = db.Column(db.String(255), nullable=False)
     study_level = db.Column(db.String(32), nullable=True)
+    avatar_id = db.Column(db.String(8), nullable=False, default="1")
     xp = db.Column(db.Integer, nullable=False, default=0)
     tokens = db.Column(db.Integer, nullable=False, default=0)
     streak_days = db.Column(db.Integer, nullable=False, default=0)
