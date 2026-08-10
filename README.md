@@ -8,7 +8,9 @@ Application musée d'histoire gamifiée — design issu de Google Stitch, backen
 - **Mot de passe oublié** : demande de réinitialisation par email avec lien à durée de vie limitée (30 min).
 - **Pages câblées** : accueil (événement du jour), explorateur (frise des époques), fiche événement, quiz (question aléatoire à chaque visite parmi plusieurs, récompenses XP/tokens/série), profil avec statistiques réelles et choix d'avatar. Toutes protégées par connexion.
 - **Chronos Tokens** : icône dédiée (SVG inline, pas d'étoile générique), affichée dans la navigation, le profil et les résultats de quiz.
-- **Illustrations** : bannières SVG inline (silhouettes thématiques) pour l'événement du jour et chaque époque de l'explorateur — pas de dépendance à des images externes éphémères.
+- **Illustrations** : bannières SVG inline dédiées à chaque événement/époque — pas de dépendance à des images externes éphémères (ce sandbox de développement bloque d'ailleurs Wikimedia/Wikipedia par politique réseau ; de vraies photos nécessiteraient de les déposer manuellement dans `app/static/`).
+- **Calendrier "aujourd'hui dans l'histoire" réel** : 10 événements documentés (avant/pendant/après, récit, personnages, lieu, quiz dédié) répartis sur l'année. L'accueil calcule la vraie date du jour (`datetime.now()`) et affiche l'événement qui tombe exactement ce jour-là ; à défaut, un événement « à la une » tourne quotidiennement (jamais présenté comme s'étant produit ce jour précis).
+- **Explorateur interactif** : recherche en texte libre (insensible aux accents/casse), filtres par catégorie et par époque, bascule Frise Chronologique / Carte Interactive avec repères cliquables géolocalisés (approximativement) pour chaque événement.
 
 ## Sécurité
 

@@ -1,22 +1,29 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import bastille_illustration %}
+{% from "_illustrations.html" import event_illustration %}
 {% block title %}Chronos - Accueil{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-2xl">
   <section class="flex flex-col gap-sm">
-    <h2 class="font-display-lg text-3xl md:text-4xl text-on-surface">Aujourd'hui, {{ event.date_label.split(' ')[0:2] | join(' ') }}</h2>
-    <p class="font-body-base text-on-surface-variant max-w-2xl">Découvrez les événements qui ont façonné l'histoire ce jour-là.</p>
+    <h2 class="font-display-lg text-3xl md:text-4xl text-on-surface">Aujourd'hui, {{ today_label }}</h2>
+    <p class="font-body-base text-on-surface-variant max-w-2xl">
+      {% if is_exact_match %}
+        Découvrez les événements qui ont façonné l'histoire ce jour-là.
+      {% else %}
+        Aucun événement de notre calendrier ne tombe exactement aujourd'hui — voici un événement à la une en attendant.
+      {% endif %}
+    </p>
   </section>
 
   <section class="relative w-full rounded-2xl overflow-hidden ambient-shadow border border-outline-variant bg-surface-container-lowest">
     <div class="relative h-[400px] md:h-[500px] w-full bg-surface-container flex items-end">
-      <div class="absolute inset-0">{{ bastille_illustration() }}</div>
+      <div class="absolute inset-0">{{ event_illustration(event.slug) }}</div>
       <div class="absolute inset-0 bg-gradient-to-t from-[#1a1c1b]/90 via-[#1a1c1b]/40 to-transparent"></div>
       <div class="relative w-full p-lg md:p-xl flex flex-col gap-md">
         <div class="flex items-center gap-sm">
           <span class="bg-primary text-on-primary px-sm py-unit rounded-full font-label-caps uppercase tracking-wider">{{ event.era }}</span>
           <span class="text-surface-container-high font-body-base flex items-center gap-unit">
-            <span class="material-symbols-outlined text-[16px]">location_on</span>{{ event.location }} · {{ event.date_label }}
+            <span class="material-symbols-outlined text-[16px]">location_on</span>{{ event.location }}
+            {% if is_exact_match %}· Il y a {{ years_ago }} ans{% else %}· Événement à la une{% endif %}
           </span>
         </div>
         <h3 class="font-display-lg text-2xl md:text-4xl text-surface-container-lowest">{{ event.title }}</h3>
@@ -31,15 +38,20 @@
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
     <div class="md:col-span-2 flex flex-col gap-lg">
-      <h3 class="font-headline-md text-xl md:text-2xl text-on-surface">Prochaine étape</h3>
-      <div class="flex items-center gap-md p-md rounded-xl bg-surface-container-lowest border border-outline-variant ambient-shadow">
-        <div class="flex flex-col flex-grow">
-          <span class="text-primary font-label-caps uppercase mb-unit">{{ event.era }}</span>
-          <h4 class="font-body-bold text-on-surface">{{ event.title }}</h4>
-          <p class="font-body-base text-on-surface-variant">{{ event.why_it_matters }}</p>
-        </div>
-        <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="material-symbols-outlined text-outline">chevron_right</a>
+      <div class="flex items-center justify-between">
+        <h3 class="font-headline-md text-xl md:text-2xl text-on-surface">Autres événements</h3>
+        <a href="{{ url_for('main.explorer') }}" class="font-body-bold text-primary hover:opacity-80 transition-opacity">Voir tout</a>
       </div>
+      {% for other in other_events %}
+      <a href="{{ url_for('main.event_detail', slug=other.slug) }}" class="flex items-center gap-md p-md rounded-xl bg-surface-container-lowest border border-outline-variant ambient-shadow hover:bg-surface-container-low transition-colors">
+        <div class="flex flex-col flex-grow">
+          <span class="text-primary font-label-caps uppercase mb-unit">{{ other.date_label }} · {{ other.category }}</span>
+          <h4 class="font-body-bold text-on-surface">{{ other.title }}</h4>
+          <p class="font-body-base text-on-surface-variant">{{ other.summary }}</p>
+        </div>
+        <span class="material-symbols-outlined text-outline">chevron_right</span>
+      </a>
+      {% endfor %}
     </div>
 
     <div class="flex flex-col gap-lg">

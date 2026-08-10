@@ -1,21 +1,100 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import era_illustration, bastille_illustration, collection_illustration %}
+{% from "_illustrations.html" import era_illustration, event_illustration, collection_illustration %}
 {% block title %}Chronos - Explorer{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-2xl">
   <section class="mb-xl">
-    <div class="relative">
+    <form method="GET" action="{{ url_for('main.explorer') }}" class="relative">
+      <input type="hidden" name="view" value="{{ view }}">
       <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
         <span class="material-symbols-outlined text-outline">search</span>
       </div>
-      <input class="w-full bg-[#F2F0EC] border-none rounded-full py-4 pl-12 pr-4 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary-container transition-all duration-300 shadow-sm" placeholder="Rechercher une époque, un événement, une figure historique..." type="text" disabled>
+      <input
+        class="w-full bg-[#F2F0EC] border-none rounded-full py-4 pl-12 pr-4 text-on-surface placeholder:text-outline focus:ring-2 focus:ring-primary-container transition-all duration-300 shadow-sm"
+        placeholder="Rechercher une époque, un événement, un lieu..." type="text" name="q" value="{{ query }}">
+    </form>
+    <div class="flex gap-sm overflow-x-auto mt-md pb-xs">
+      {% for cat in categories %}
+      <a href="{{ url_for('main.explorer', q=query, category=cat, view=view) }}"
+        class="whitespace-nowrap px-md py-sm rounded-full border font-body-bold text-sm transition-colors shadow-sm
+        {{ 'border-primary-container bg-primary-container text-on-primary-container' if cat == category else 'border-outline text-on-surface-variant hover:bg-surface-variant' }}">
+        {{ cat }}
+      </a>
+      {% endfor %}
     </div>
   </section>
+
+  {% if results is not none %}
+  <h2 class="font-display-lg text-2xl md:text-4xl mb-lg">
+    {{ results|length }} résultat{{ 's' if results|length != 1 else '' }}
+    {% if query %}pour « {{ query }} »{% endif %}
+  </h2>
+  {% if results %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+    {% for r in results %}
+    <a href="{{ url_for('main.event_detail', slug=r.slug) }}" class="flex items-center gap-md p-md rounded-xl bg-surface-container-lowest border border-outline-variant ambient-shadow hover:bg-surface-container-low transition-colors">
+      <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">{{ event_illustration(r.slug, "w-full h-full") }}</div>
+      <div class="flex flex-col flex-grow">
+        <span class="text-primary font-label-caps uppercase mb-unit">{{ r.date_label }} · {{ r.category }}</span>
+        <h4 class="font-body-bold text-on-surface">{{ r.title }}</h4>
+        <p class="font-body-base text-on-surface-variant text-sm line-clamp-1">{{ r.summary }}</p>
+      </div>
+      <span class="material-symbols-outlined text-outline">chevron_right</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="text-on-surface-variant font-body-base">Aucun événement ne correspond à ta recherche. Essaie un autre mot-clé ou une autre catégorie.</p>
+  {% endif %}
+
+  {% else %}
+
+  <div class="flex justify-center mb-lg">
+    <div class="bg-[#F2F0EC] p-xs rounded-full inline-flex">
+      <a href="{{ url_for('main.explorer', q=query, category=category, view='frise') }}"
+        class="px-lg py-sm rounded-full text-sm font-body-bold transition-all {{ 'bg-white text-on-surface shadow-sm' if view != 'carte' else 'text-on-surface-variant' }}">
+        Frise Chronologique
+      </a>
+      <a href="{{ url_for('main.explorer', q=query, category=category, view='carte') }}"
+        class="px-lg py-sm rounded-full text-sm font-body-bold transition-all {{ 'bg-white text-on-surface shadow-sm' if view == 'carte' else 'text-on-surface-variant' }}">
+        Carte Interactive
+      </a>
+    </div>
+  </div>
+
+  {% if view == 'carte' %}
+  <div class="relative w-full h-[500px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-[0_4px_20px_rgba(0,0,0,0.06)] bg-[#efe6cf]">
+    <svg class="absolute inset-0 w-full h-full opacity-50" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <g stroke="#c9b98a" stroke-width="0.3">
+        {% for x in range(0, 101, 10) %}<line x1="{{ x }}" y1="0" x2="{{ x }}" y2="100"/>{% endfor %}
+        {% for y in range(0, 101, 10) %}<line x1="0" y1="{{ y }}" x2="100" y2="{{ y }}"/>{% endfor %}
+      </g>
+    </svg>
+    {% for e in map_events %}
+    <a href="{{ url_for('main.event_detail', slug=e.slug) }}"
+      class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer"
+      style="left: {{ e.map_pos[0] }}%; top: {{ e.map_pos[1] }}%;">
+      <div class="w-4 h-4 bg-primary-container rounded-full border-2 border-white shadow-md group-hover:scale-125 transition-transform"></div>
+      <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg p-sm shadow-lg border border-outline-variant/30 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
+        <p class="font-label-caps text-primary text-[10px] mb-1">{{ e.date_label }}</p>
+        <p class="font-body-bold text-sm text-on-surface">{{ e.title }}</p>
+      </div>
+    </a>
+    {% endfor %}
+    <div class="absolute bottom-4 left-4 right-4 bg-white/80 backdrop-blur rounded-[20px] p-md flex items-center justify-between">
+      <div>
+        <h4 class="font-headline-md text-lg text-on-surface mb-xs">Événements sur la carte</h4>
+        <p class="text-sm text-on-surface-variant font-body-base">{{ map_events|length }} événements géolocalisés — clique sur un repère.</p>
+      </div>
+    </div>
+  </div>
+  {% else %}
 
   <h2 class="font-display-lg text-2xl md:text-4xl mb-lg">Traverser les Âges</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
     {% for era in eras %}
-    <div class="relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-[0_4px_20px_rgba(0,0,0,0.06)] bg-surface-container flex items-end">
+    <a href="{{ url_for('main.explorer', era_key=era.key, view=view) }}"
+      class="relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-[0_4px_20px_rgba(0,0,0,0.06)] bg-surface-container flex items-end">
       <div class="absolute inset-0">{{ era_illustration(era.key) }}</div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
       <div class="absolute top-4 right-4 bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] tracking-wider uppercase">
@@ -25,7 +104,7 @@
         <h3 class="font-headline-md text-xl text-white mb-xs">{{ era.name }}</h3>
         <p class="text-white/80 text-sm font-body-base">{{ era.description }}</p>
       </div>
-    </div>
+    </a>
     {% endfor %}
   </div>
 
@@ -59,7 +138,7 @@
 
   <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
   <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="block relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm bg-surface-container flex items-end">
-    <div class="absolute inset-0">{{ bastille_illustration() }}</div>
+    <div class="absolute inset-0">{{ event_illustration(event.slug) }}</div>
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
     <div class="relative p-lg">
       <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ event.era }}</span>
@@ -67,5 +146,7 @@
       <p class="text-sm text-white/80">{{ event.summary }}</p>
     </div>
   </a>
+  {% endif %}
+  {% endif %}
 </main>
 {% endblock %}

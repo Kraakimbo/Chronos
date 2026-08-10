@@ -4,10 +4,26 @@ from flask import Blueprint, abort, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
 from app import db
-from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS, TODAY_EVENT_SLUG
+from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS
+from app.events import (
+    all_categories,
+    events_list,
+    find_todays_event,
+    search_events,
+    today_french_label,
+    years_ago,
+)
 from app.progress import badges_for, eras_progress, level_info
 
 main_bp = Blueprint("main", __name__)
+
+ERAS = [
+    {"key": "prehistoire", "name": "Préhistoire", "range": "-3M à -3000", "description": "L'aube de l'humanité et les premières expressions artistiques."},
+    {"key": "antiquite", "name": "Antiquité", "range": "-3000 à 476", "description": "L'essor des grandes civilisations et de l'écriture."},
+    {"key": "moyen-age", "name": "Moyen Âge", "range": "476 à 1492", "description": "Châteaux, chevaliers et expansion spirituelle."},
+    {"key": "renaissance", "name": "Renaissance", "range": "1492 à 1789", "description": "Renouveau artistique, scientifique et grandes découvertes."},
+    {"key": "epoque-contemporaine", "name": "Époque Contemporaine", "range": "1789 à aujourd'hui", "description": "Révolutions, guerres mondiales et conquête spatiale."},
+]
 
 
 class QuizResult:
@@ -19,10 +35,14 @@ class QuizResult:
 @main_bp.route("/")
 @login_required
 def home():
-    event = EVENTS[TODAY_EVENT_SLUG]
+    event, is_exact_match = find_todays_event()
     return render_template(
         "pages/home.html",
         event=event,
+        is_exact_match=is_exact_match,
+        today_label=today_french_label(),
+        years_ago=years_ago(event) if is_exact_match else None,
+        other_events=[e for e in events_list() if e["slug"] != event["slug"]][:2],
         active_page="home",
         level=level_info(current_user),
         badges=badges_for(current_user),
@@ -32,20 +52,34 @@ def home():
 @main_bp.route("/explorer")
 @login_required
 def explorer():
-    event = EVENTS[TODAY_EVENT_SLUG]
-    eras = [
-        {"key": "prehistoire", "name": "Préhistoire", "range": "-3M à -3000", "description": "L'aube de l'humanité et les premières expressions artistiques."},
-        {"key": "antiquite", "name": "Antiquité", "range": "-3000 à 476", "description": "L'essor des grandes civilisations et de l'écriture."},
-        {"key": "moyen-age", "name": "Moyen Âge", "range": "476 à 1492", "description": "Châteaux, chevaliers et expansion spirituelle."},
-        {"key": "renaissance", "name": "Renaissance", "range": "1492 à 1789", "description": "Renouveau artistique, scientifique et grandes découvertes."},
-    ]
+    event, _ = find_todays_event()
+    query = request.args.get("q", "").strip()
+    category = request.args.get("category", "Tous")
+    era_key = request.args.get("era_key", "")
+    view = request.args.get("view", "frise")
+
+    has_filter = bool(query or category != "Tous" or era_key)
+    results = search_events(query=query, category=category, era_key=era_key) if has_filter else None
+    map_events = [e for e in events_list() if e.get("map_pos")]
+
     collections = [
         {"key": "rome-antique", "badge": "Rome Antique", "title": "La Chute de l'Empire", "description": "Découvrez les derniers jours d'une civilisation millénaire."},
         {"key": "revolution-industrielle", "badge": None, "title": "Révolution Industrielle", "description": None},
         {"key": "egypte-pharaons", "badge": None, "title": "Égypte des Pharaons", "description": None},
     ]
     return render_template(
-        "pages/explorer.html", event=event, eras=eras, collections=collections, active_page="explorer"
+        "pages/explorer.html",
+        event=event,
+        eras=ERAS,
+        collections=collections,
+        results=results,
+        query=query,
+        category=category,
+        era_key=era_key,
+        categories=["Tous"] + all_categories(),
+        view=view,
+        map_events=map_events,
+        active_page="explorer",
     )
 
 
@@ -55,7 +89,9 @@ def event_detail(slug):
     event = EVENTS.get(slug)
     if event is None:
         abort(404)
-    return render_template("pages/event_detail.html", event=event, active_page="explorer")
+    return render_template(
+        "pages/event_detail.html", event=event, years_ago=years_ago(event), active_page="explorer"
+    )
 
 
 @main_bp.route("/quiz", methods=["GET", "POST"])

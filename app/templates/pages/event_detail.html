@@ -1,10 +1,10 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import bastille_illustration, map_illustration %}
+{% from "_illustrations.html" import event_illustration, map_illustration %}
 {% block title %}{{ event.title }}{% endblock %}
 {% block content %}
 <main>
   <section class="relative w-full py-2xl overflow-hidden">
-    <div class="absolute inset-0">{{ bastille_illustration() }}</div>
+    <div class="absolute inset-0">{{ event_illustration(event.slug) }}</div>
     <div class="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30"></div>
     <div class="relative max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
       <div class="flex items-center gap-sm mb-md">
@@ -12,7 +12,7 @@
           <span class="material-symbols-outlined">arrow_back</span>
         </a>
         <span class="px-sm py-xs bg-primary-container/20 text-on-primary-container border border-primary-container/30 rounded-full font-label-caps">{{ event.era }}</span>
-        <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }}</span>
+        <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }} · Il y a {{ years_ago }} ans</span>
       </div>
       <h1 class="font-display-lg text-3xl md:text-5xl text-on-surface mb-md max-w-3xl">{{ event.title }}</h1>
       <div class="flex items-center gap-xs text-on-surface-variant font-body-base">
