@@ -2735,6 +2735,1550 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "sacre-napoleon": {
+        "enfant": {
+            "summary": (
+                "Le 2 décembre 1804, Napoléon Bonaparte se couronne "
+                "lui-même empereur des Français, dans la cathédrale "
+                "Notre-Dame de Paris."
+            ),
+            "before": (
+                "Napoléon dirige déjà la France depuis plusieurs "
+                "années. Le peuple vote pour qu'il devienne empereur."
+            ),
+            "during": (
+                "Pendant une grande cérémonie, le pape vient de Rome, "
+                "mais c'est Napoléon lui-même qui pose la couronne sur "
+                "sa tête."
+            ),
+            "after": (
+                "La France devient un Empire. Napoléon va gouverner "
+                "jusqu'en 1814."
+            ),
+            "narrative": [
+                "Après plusieurs années au pouvoir, Napoléon Bonaparte "
+                "fait voter le peuple français pour devenir empereur.",
+                "Le 2 décembre 1804, à Notre-Dame de Paris, une grande "
+                "cérémonie a lieu. Le pape Pie VII vient de Rome, mais "
+                "Napoléon se couronne lui-même, puis couronne sa "
+                "femme Joséphine.",
+                "Ce geste montre que Napoléon tient son pouvoir de "
+                "lui-même et du peuple, pas de l'Église.",
+            ],
+            "why_it_matters": (
+                "Ce jour marque la naissance de l'Empire français. "
+                "Napoléon devient l'un des hommes les plus puissants "
+                "d'Europe."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Napoléon Bonaparte se couronne empereur des Français "
+                "à Notre-Dame de Paris, en présence du pape Pie VII, "
+                "marquant la naissance du Premier Empire."
+            ),
+            "before": (
+                "Premier consul depuis 1799 puis consul à vie, "
+                "Bonaparte fait approuver par référendum populaire "
+                "l'instauration d'un Empire héréditaire."
+            ),
+            "during": (
+                "Lors d'une cérémonie fastueuse à Notre-Dame, Napoléon "
+                "se couronne lui-même, puis couronne son épouse "
+                "Joséphine, sous le regard du pape venu de Rome."
+            ),
+            "after": (
+                "Le Premier Empire est instauré ; Napoléon règne sur "
+                "la France jusqu'à sa première abdication en 1814."
+            ),
+            "narrative": [
+                "Après le coup d'État du 18 brumaire en 1799 et "
+                "plusieurs années comme Premier consul, Napoléon "
+                "Bonaparte fait plébisciter par le peuple français "
+                "l'instauration d'un Empire héréditaire.",
+                "Le 2 décembre 1804, Notre-Dame de Paris accueille une "
+                "cérémonie de sacre fastueuse. Le pape Pie VII bénit "
+                "les insignes impériaux, mais c'est Napoléon lui-même "
+                "qui pose la couronne sur sa tête, puis couronne son "
+                "épouse Joséphine.",
+                "Ce geste, resté célèbre, symbolise la volonté de "
+                "Napoléon de tenir son pouvoir du peuple et de "
+                "lui-même plutôt que de l'Église.",
+            ],
+            "why_it_matters": (
+                "Le sacre marque la transformation de la République "
+                "française en Empire héréditaire et l'apogée politique "
+                "de Napoléon."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Napoléon Bonaparte se couronne empereur des Français "
+                "à Notre-Dame de Paris, en présence du pape Pie VII, "
+                "marquant la naissance du Premier Empire."
+            ),
+            "before": (
+                "Premier consul depuis 1799 puis consul à vie depuis "
+                "1802, Bonaparte fait approuver par référendum "
+                "populaire l'instauration d'un Empire héréditaire à son "
+                "profit, avec l'appui d'un Sénat largement acquis à sa "
+                "cause."
+            ),
+            "during": (
+                "Lors d'une cérémonie fastueuse à Notre-Dame, orchestrée "
+                "par le peintre Jacques-Louis David, Napoléon se "
+                "couronne lui-même, puis couronne son épouse Joséphine, "
+                "sous le regard du pape venu spécialement de Rome."
+            ),
+            "after": (
+                "Le Premier Empire est instauré ; Napoléon règne sur la "
+                "France et domine militairement l'Europe jusqu'à sa "
+                "première abdication en 1814."
+            ),
+            "narrative": [
+                "Après le coup d'État du 18 brumaire en 1799 et "
+                "plusieurs années passées comme Premier consul, "
+                "Napoléon Bonaparte fait plébisciter par le peuple "
+                "français l'instauration d'un Empire héréditaire à son "
+                "profit.",
+                "Le 2 décembre 1804, la cathédrale Notre-Dame de Paris "
+                "accueille une cérémonie de sacre fastueuse, orchestrée "
+                "par le peintre Jacques-Louis David. Le pape Pie VII, "
+                "venu tout exprès de Rome, bénit les insignes "
+                "impériaux, mais c'est Napoléon lui-même qui pose la "
+                "couronne sur sa tête, puis couronne son épouse "
+                "Joséphine.",
+                "Ce geste, resté célèbre, symbolise la volonté de "
+                "Napoléon de tenir son pouvoir du peuple et de "
+                "lui-même plutôt que de l'Église, tout en s'inscrivant "
+                "dans la continuité cérémonielle des sacres royaux "
+                "français.",
+            ],
+            "why_it_matters": (
+                "Le sacre marque la transformation de la République "
+                "française en Empire héréditaire et l'apogée politique "
+                "de Napoléon, qui dominera l'Europe militairement "
+                "jusqu'à sa défaite de 1814-1815."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Napoléon Bonaparte se couronne lui-même empereur des "
+                "Français à Notre-Dame de Paris, en présence — mais "
+                "sans l'intervention directe — du pape Pie VII, geste "
+                "hautement symbolique marquant la naissance du Premier "
+                "Empire."
+            ),
+            "before": (
+                "Premier consul depuis le coup d'État du 18 brumaire "
+                "en 1799, puis consul à vie depuis le plébiscite de "
+                "1802, Bonaparte fait approuver par un nouveau "
+                "référendum populaire — dont les résultats furent "
+                "largement manipulés — l'instauration d'un Empire "
+                "héréditaire à son profit."
+            ),
+            "during": (
+                "Lors d'une cérémonie fastueuse à Notre-Dame, dont la "
+                "mise en scène est confiée au peintre Jacques-Louis "
+                "David, Napoléon se saisit de la couronne des mains du "
+                "pape et se couronne lui-même, avant de couronner son "
+                "épouse Joséphine — un geste rompant délibérément avec "
+                "la tradition du sacre royal où le monarque recevait la "
+                "couronne des mains du prélat."
+            ),
+            "after": (
+                "Le Premier Empire est instauré ; Napoléon règne sur "
+                "la France et domine militairement l'Europe jusqu'à sa "
+                "première abdication en 1814, période marquée par la "
+                "création d'une noblesse impériale et d'institutions "
+                "durables comme le Code civil."
+            ),
+            "narrative": [
+                "Après le coup d'État du 18 brumaire en 1799 et "
+                "plusieurs années passées comme Premier consul, "
+                "Napoléon Bonaparte fait plébisciter par le peuple "
+                "français l'instauration d'un Empire héréditaire à son "
+                "profit, dans un contexte de menace de complots "
+                "royalistes qu'il instrumentalise pour justifier une "
+                "succession assurée.",
+                "Le 2 décembre 1804, la cathédrale Notre-Dame de Paris "
+                "accueille une cérémonie de sacre fastueuse, orchestrée "
+                "par le peintre Jacques-Louis David, qui en immortalisera "
+                "la scène dans un tableau monumental. Le pape Pie VII, "
+                "venu tout exprès de Rome dans l'espoir d'obtenir des "
+                "concessions religieuses, bénit les insignes impériaux, "
+                "mais c'est Napoléon lui-même qui pose la couronne sur "
+                "sa tête, puis couronne son épouse Joséphine.",
+                "Ce geste, resté célèbre, symbolise la volonté de "
+                "Napoléon de tenir son pouvoir du peuple et de "
+                "lui-même plutôt que de l'Église, tout en s'inscrivant "
+                "dans la continuité cérémonielle des sacres royaux "
+                "français qu'il cherche paradoxalement à égaler en "
+                "légitimité.",
+            ],
+            "why_it_matters": (
+                "Le sacre marque la transformation de la République "
+                "française en Empire héréditaire et l'apogée politique "
+                "de Napoléon, qui dominera l'Europe militairement "
+                "jusqu'à sa défaite de 1814-1815, tout en laissant un "
+                "héritage institutionnel durable — Code civil, Légion "
+                "d'honneur, administration centralisée — qui survivra "
+                "à sa chute."
+            ),
+        },
+    },
+    "signature-magna-carta": {
+        "enfant": {
+            "summary": (
+                "En 1215, le roi d'Angleterre Jean sans Terre accepte "
+                "un texte qui limite son pouvoir pour la première fois."
+            ),
+            "before": (
+                "Le roi Jean sans Terre est impopulaire : il a perdu "
+                "des guerres et fait payer trop d'impôts."
+            ),
+            "during": (
+                "Des seigneurs (les barons) obligent le roi à signer "
+                "un texte qui limite ses pouvoirs."
+            ),
+            "after": (
+                "Ce texte, la Grande Charte, deviendra très important "
+                "plus tard pour les droits des gens."
+            ),
+            "narrative": [
+                "Le roi Jean sans Terre fait payer trop d'impôts à ses "
+                "seigneurs, qui se révoltent contre lui.",
+                "En 1215, les barons obligent le roi à signer un "
+                "document appelé la Magna Carta (Grande Charte).",
+                "Ce texte dit qu'on ne peut pas mettre quelqu'un en "
+                "prison sans un vrai jugement. C'est une grande "
+                "nouveauté pour l'époque.",
+            ],
+            "why_it_matters": (
+                "C'est l'un des premiers textes à limiter le pouvoir "
+                "d'un roi. Il a inspiré beaucoup d'autres lois plus "
+                "tard, partout dans le monde."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le roi Jean sans Terre appose son sceau sur la Grande "
+                "Charte, un texte limitant pour la première fois le "
+                "pouvoir royal anglais face à ses barons."
+            ),
+            "before": (
+                "Impopulaire après des défaites militaires en France "
+                "et une fiscalité jugée abusive, le roi Jean sans Terre "
+                "fait face à une révolte de ses barons."
+            ),
+            "during": (
+                "Réunis à Runnymede, les barons contraignent le roi à "
+                "sceller un document limitant son pouvoir, notamment le "
+                "droit d'être jugé par ses pairs."
+            ),
+            "after": (
+                "Bien que rapidement contestée par le roi lui-même, la "
+                "Grande Charte sera plusieurs fois réaffirmée et "
+                "deviendra un texte fondateur du droit anglais."
+            ),
+            "narrative": [
+                "Au début du XIIIe siècle, le roi Jean sans Terre "
+                "s'aliène ses barons par de lourdes taxes destinées à "
+                "financer des guerres coûteuses contre le roi de "
+                "France.",
+                "En 1215, une coalition de barons en révolte s'empare "
+                "de Londres et contraint le roi à négocier. Le 15 "
+                "juin, à Runnymede, Jean sans Terre appose son sceau "
+                "sur la Magna Carta.",
+                "Le texte garantit qu'aucun homme libre ne peut être "
+                "emprisonné sans jugement légal de ses pairs — une "
+                "première limite posée au pouvoir royal absolu.",
+            ],
+            "why_it_matters": (
+                "La Magna Carta est devenue un symbole fondateur de "
+                "l'État de droit et a inspiré des principes "
+                "constitutionnels repris bien plus tard."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le roi Jean sans Terre appose son sceau sur la Grande "
+                "Charte, un texte limitant pour la première fois le "
+                "pouvoir royal anglais face à ses barons."
+            ),
+            "before": (
+                "Impopulaire après des défaites militaires en France "
+                "(notamment la perte de la Normandie) et une fiscalité "
+                "jugée abusive, le roi Jean sans Terre fait face à une "
+                "révolte de ses barons, aggravée par un conflit avec la "
+                "papauté."
+            ),
+            "during": (
+                "Réunis à Runnymede, les barons contraignent le roi à "
+                "sceller un document en soixante-trois articles "
+                "limitant son pouvoir et garantissant certains droits, "
+                "notamment celui d'être jugé par ses pairs."
+            ),
+            "after": (
+                "Bien que rapidement contestée par le roi lui-même dès "
+                "après sa signature, la Grande Charte sera plusieurs "
+                "fois réaffirmée par ses successeurs et deviendra un "
+                "texte fondateur du droit constitutionnel anglais."
+            ),
+            "narrative": [
+                "Au début du XIIIe siècle, le roi Jean sans Terre "
+                "d'Angleterre s'aliène ses barons par de lourdes taxes "
+                "destinées à financer des guerres coûteuses et "
+                "infructueuses contre le roi de France, ainsi que par "
+                "des conflits avec la papauté.",
+                "En 1215, une coalition de barons en révolte s'empare "
+                "de Londres et contraint le roi à négocier. Le 15 "
+                "juin, dans la prairie de Runnymede au bord de la "
+                "Tamise, Jean sans Terre appose son sceau sur la Magna "
+                "Carta, un document en soixante-trois articles.",
+                "Le texte garantit notamment qu'aucun homme libre ne "
+                "peut être emprisonné ou dépossédé sans jugement légal "
+                "de ses pairs, et qu'aucune taxe exceptionnelle ne peut "
+                "être levée sans l'accord d'un conseil de barons — une "
+                "première limite posée au pouvoir royal absolu.",
+            ],
+            "why_it_matters": (
+                "Bien que largement pensée pour protéger les intérêts "
+                "des barons plutôt que du peuple, la Magna Carta est "
+                "devenue un symbole fondateur de l'État de droit et a "
+                "inspiré des principes constitutionnels repris bien "
+                "plus tard, jusque dans la Déclaration d'indépendance "
+                "américaine."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le roi Jean sans Terre appose son sceau sur la Grande "
+                "Charte, texte transactionnel destiné à apaiser ses "
+                "barons mais qui deviendra, par ses réinterprétations "
+                "successives, l'un des fondements symboliques du "
+                "constitutionnalisme anglo-saxon."
+            ),
+            "before": (
+                "Impopulaire après la perte de la Normandie et "
+                "d'autres possessions continentales face à Philippe "
+                "Auguste, et après une fiscalité jugée abusive destinée "
+                "à financer des reconquêtes infructueuses, le roi Jean "
+                "sans Terre fait face à une révolte ouverte de ses "
+                "barons, aggravée par un long conflit avec la papauté "
+                "qui l'avait excommunié."
+            ),
+            "during": (
+                "Réunis à Runnymede après avoir pris Londres, les "
+                "barons contraignent le roi à sceller un document en "
+                "soixante-trois articles limitant son pouvoir — un "
+                "texte négocié dans l'urgence et dont beaucoup de "
+                "clauses répondaient à des griefs très concrets et "
+                "temporaires plutôt qu'à des principes abstraits."
+            ),
+            "after": (
+                "Annulée par le pape dès août 1215 à la demande du roi "
+                "lui-même, la charte est réémise sous une forme "
+                "modifiée après la mort de Jean en 1216, puis "
+                "régulièrement réaffirmée par ses successeurs, "
+                "processus par lequel elle acquiert progressivement son "
+                "statut de texte fondateur."
+            ),
+            "narrative": [
+                "Au début du XIIIe siècle, le roi Jean sans Terre "
+                "d'Angleterre s'aliène ses barons par de lourdes taxes "
+                "destinées à financer des guerres coûteuses et "
+                "infructueuses contre le roi de France, ainsi que par "
+                "des conflits avec la papauté qui aboutissent à son "
+                "excommunication en 1209.",
+                "En 1215, une coalition de barons en révolte s'empare "
+                "de Londres et contraint le roi à négocier. Le 15 "
+                "juin, dans la prairie de Runnymede au bord de la "
+                "Tamise, Jean sans Terre appose son sceau sur la Magna "
+                "Carta, un document en soixante-trois articles rédigé "
+                "dans l'urgence pour répondre à des griefs très "
+                "concrets des barons.",
+                "Le texte garantit notamment qu'aucun homme libre ne "
+                "peut être emprisonné ou dépossédé sans jugement légal "
+                "de ses pairs, et qu'aucune taxe exceptionnelle ne peut "
+                "être levée sans l'accord d'un conseil de barons — une "
+                "première limite posée au pouvoir royal absolu, même "
+                "si le terme « homme libre » exclut alors l'immense "
+                "majorité de la population, encore serve.",
+            ],
+            "why_it_matters": (
+                "Bien que largement pensée pour protéger les intérêts "
+                "matériels des barons plutôt que ceux du peuple, et "
+                "bien qu'annulée puis réémise à plusieurs reprises dans "
+                "les décennies suivant sa signature, la Magna Carta est "
+                "devenue, par un long processus de réinterprétation "
+                "juridique aux XVIIe et XVIIIe siècles, un symbole "
+                "fondateur de l'État de droit — inspirant jusqu'à la "
+                "Déclaration d'indépendance américaine et le "
+                "constitutionnalisme moderne."
+            ),
+        },
+    },
+    "eruption-vesuve": {
+        "enfant": {
+            "summary": (
+                "En l'an 79, le volcan Vésuve explose et recouvre la "
+                "ville de Pompéi de cendres, tuant beaucoup d'habitants."
+            ),
+            "before": (
+                "Pompéi est une ville romaine au pied du Vésuve, un "
+                "volcan que tout le monde croyait endormi pour "
+                "toujours."
+            ),
+            "during": (
+                "Le volcan explose et envoie des cendres et des pierres "
+                "très haut dans le ciel, pendant des heures."
+            ),
+            "after": (
+                "La ville est recouverte de cendres et disparaît sous "
+                "terre pendant plus de 1600 ans."
+            ),
+            "narrative": [
+                "Le Vésuve, un volcan près de Naples en Italie, était "
+                "considéré comme éteint. Le 24 août de l'an 79, il "
+                "explose brutalement.",
+                "Pendant des heures, des cendres et des pierres "
+                "tombent sur Pompéi. Puis des nuages de gaz très chauds "
+                "dévalent le volcan et tuent les gens restés sur place.",
+                "Un écrivain nommé Pline le Jeune a vu la catastrophe "
+                "depuis loin et l'a racontée. Son oncle, parti aider "
+                "les gens, est mort ce jour-là.",
+            ],
+            "why_it_matters": (
+                "Grâce aux cendres qui l'ont recouverte, on a retrouvé "
+                "Pompéi très bien conservée. On peut voir comment "
+                "vivaient les Romains il y a 2000 ans."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'éruption soudaine du Vésuve ensevelit les villes "
+                "romaines de Pompéi et Herculanum sous plusieurs "
+                "mètres de cendres."
+            ),
+            "before": (
+                "Pompéi et Herculanum sont des villes romaines "
+                "prospères au pied du Vésuve, un volcan considéré "
+                "comme endormi depuis des générations."
+            ),
+            "during": (
+                "En quelques heures, le volcan projette une colonne de "
+                "cendres sur des kilomètres, avant que des coulées de "
+                "gaz brûlants ne recouvrent les villes."
+            ),
+            "after": (
+                "Les cités sont abandonnées et oubliées pendant plus "
+                "de seize siècles, avant d'être redécouvertes à partir "
+                "du XVIIIe siècle."
+            ),
+            "narrative": [
+                "Le Vésuve, volcan surplombant la baie de Naples, "
+                "était considéré comme éteint. Le 24 août de l'an 79, "
+                "il entre brutalement en éruption, projetant cendres "
+                "et pierre ponce à près de 30 km d'altitude.",
+                "Pendant plusieurs heures, cendres et pierres "
+                "s'abattent sur Pompéi. Dans la nuit, des coulées "
+                "pyroclastiques — nuées de gaz brûlants — surprennent "
+                "et tuent ceux restés sur place, notamment à "
+                "Herculanum.",
+                "L'écrivain romain Pline le Jeune, témoin depuis "
+                "l'autre rive du golfe, laisse un récit détaillé de la "
+                "catastrophe, au cours de laquelle son oncle Pline "
+                "l'Ancien trouve la mort.",
+            ],
+            "why_it_matters": (
+                "L'éruption a paradoxalement permis la conservation "
+                "exceptionnelle de Pompéi, offrant depuis le XVIIIe "
+                "siècle un instantané unique de la vie romaine."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'éruption soudaine du Vésuve ensevelit les villes "
+                "romaines de Pompéi et Herculanum sous plusieurs "
+                "mètres de cendres, figeant leur vie quotidienne pour "
+                "deux millénaires."
+            ),
+            "before": (
+                "Pompéi et Herculanum sont des villes romaines "
+                "prospères au pied du Vésuve, volcan considéré comme "
+                "endormi depuis des générations et dont les habitants "
+                "ne perçoivent pas les signes avant-coureurs (séismes "
+                "répétés) comme une menace directe."
+            ),
+            "during": (
+                "En quelques heures, le volcan projette une colonne de "
+                "cendres et de pierre ponce sur des kilomètres, avant "
+                "que des coulées pyroclastiques brûlantes ne recouvrent "
+                "les villes."
+            ),
+            "after": (
+                "Les cités sont abandonnées et oubliées pendant plus "
+                "de seize siècles, avant d'être redécouvertes par des "
+                "fouilles archéologiques à partir du XVIIIe siècle."
+            ),
+            "narrative": [
+                "Le Vésuve, volcan surplombant la baie de Naples, "
+                "était considéré comme éteint par les habitants de la "
+                "région. Le 24 août de l'an 79, il entre brutalement "
+                "en éruption, projetant une immense colonne de cendres "
+                "et de pierre ponce à près de 30 kilomètres d'altitude.",
+                "Pendant plusieurs heures, cendres et pierres "
+                "s'abattent sur Pompéi, poussant une partie de la "
+                "population à fuir. Dans la nuit, des coulées "
+                "pyroclastiques — des nuées de gaz brûlants et de "
+                "débris dévalant les pentes du volcan à grande vitesse "
+                "— surprennent et tuent ceux restés sur place, "
+                "notamment à Herculanum, ensevelie plus rapidement "
+                "encore.",
+                "L'écrivain romain Pline le Jeune, témoin depuis "
+                "l'autre rive du golfe de Naples, laisse un récit "
+                "détaillé de la catastrophe, au cours de laquelle son "
+                "oncle Pline l'Ancien, parti porter secours, trouve la "
+                "mort.",
+            ],
+            "why_it_matters": (
+                "L'éruption a paradoxalement permis la conservation "
+                "exceptionnelle de Pompéi et Herculanum sous les "
+                "cendres, offrant aux archéologues depuis le XVIIIe "
+                "siècle un instantané unique et détaillé de la vie "
+                "quotidienne romaine."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'éruption plinienne soudaine du Vésuve ensevelit en "
+                "quelques heures les villes romaines de Pompéi et "
+                "Herculanum sous cendres et coulées pyroclastiques, "
+                "figeant leur vie quotidienne pour près de deux "
+                "millénaires et léguant à la postérité le récit "
+                "oculaire le plus ancien connu d'une éruption "
+                "volcanique."
+            ),
+            "before": (
+                "Pompéi et Herculanum sont des villes romaines "
+                "prospères au pied du Vésuve, volcan considéré comme "
+                "endormi depuis des générations ; des séismes répétés "
+                "dans les jours précédents, dont on sait rétrospectivement "
+                "qu'ils annonçaient l'éruption, ne sont pas perçus "
+                "comme une menace par une population habituée à "
+                "l'activité sismique modérée de la région."
+            ),
+            "during": (
+                "En quelques heures, le volcan projette une colonne "
+                "plinienne de cendres et de pierre ponce à près de 30 "
+                "km d'altitude, avant qu'une série de coulées "
+                "pyroclastiques — nuées ardentes de gaz et de débris "
+                "dévalant les pentes à plusieurs centaines de km/h — ne "
+                "recouvrent les villes en quelques minutes."
+            ),
+            "after": (
+                "Les cités sont abandonnées et progressivement oubliées "
+                "pendant plus de seize siècles, leur emplacement même "
+                "disparaissant de la mémoire collective, avant d'être "
+                "redécouvertes par des fouilles archéologiques "
+                "méthodiques à partir du XVIIIe siècle, sous l'impulsion "
+                "des Bourbons de Naples."
+            ),
+            "narrative": [
+                "Le Vésuve, volcan surplombant la baie de Naples, "
+                "était considéré comme éteint par les habitants de la "
+                "région, malgré des séismes répétés dans les jours "
+                "précédant l'éruption. Le 24 août de l'an 79 — une "
+                "datation elle-même débattue par les archéologues, qui "
+                "penchent parfois pour octobre sur la base de récentes "
+                "découvertes —, il entre brutalement en éruption, "
+                "projetant une immense colonne de cendres et de pierre "
+                "ponce à près de 30 kilomètres d'altitude.",
+                "Pendant plusieurs heures, cendres et pierres "
+                "s'abattent sur Pompéi, poussant une partie de la "
+                "population à fuir. Dans la nuit, des coulées "
+                "pyroclastiques — des nuées de gaz brûlants et de "
+                "débris dévalant les pentes du volcan à grande vitesse "
+                "— surprennent et tuent en quelques instants ceux "
+                "restés sur place, notamment à Herculanum, ensevelie "
+                "plus rapidement encore sous des dépôts qui carbonisent "
+                "instantanément le bois et préservent certains corps.",
+                "L'écrivain romain Pline le Jeune, témoin depuis "
+                "l'autre rive du golfe de Naples, laisse dans deux "
+                "lettres à l'historien Tacite un récit détaillé et "
+                "scientifiquement précieux de la catastrophe — le "
+                "terme « éruption plinienne » lui rend d'ailleurs "
+                "hommage —, au cours de laquelle son oncle Pline "
+                "l'Ancien, naturaliste et amiral parti porter secours "
+                "par la mer, trouve la mort à Stabies.",
+            ],
+            "why_it_matters": (
+                "L'éruption a paradoxalement permis la conservation "
+                "exceptionnelle de Pompéi et Herculanum sous les "
+                "cendres, offrant aux archéologues depuis le XVIIIe "
+                "siècle un instantané d'une précision inégalée de la "
+                "vie quotidienne romaine — architecture, fresques, "
+                "graffitis, corps figés dans leurs derniers instants — "
+                "tout en fournissant, par le témoignage de Pline le "
+                "Jeune, le premier récit scientifique connu d'une "
+                "éruption volcanique."
+            ),
+        },
+    },
+    "krach-de-1929": {
+        "enfant": {
+            "summary": (
+                "Le 24 octobre 1929, la Bourse de New York s'effondre. "
+                "C'est le début d'une très grande crise économique "
+                "dans le monde."
+            ),
+            "before": (
+                "Beaucoup de gens achètent des actions (des petits "
+                "morceaux d'entreprises) en empruntant de l'argent, "
+                "pensant que les prix vont toujours monter."
+            ),
+            "during": (
+                "Un jour, tout le monde veut vendre ses actions en "
+                "même temps. Les prix s'effondrent très vite."
+            ),
+            "after": (
+                "Des banques font faillite, beaucoup de gens perdent "
+                "leur travail. C'est le début d'une crise mondiale."
+            ),
+            "narrative": [
+                "Dans les années 1920, les prix à la Bourse de New "
+                "York montent beaucoup. Des gens empruntent de "
+                "l'argent pour acheter encore plus d'actions.",
+                "Le 24 octobre 1929, surnommé « jeudi noir », tout le "
+                "monde essaie de vendre ses actions en même temps. Les "
+                "prix s'effondrent.",
+                "Les jours suivants, la panique continue. En quelques "
+                "jours, énormément d'argent disparaît, et beaucoup de "
+                "gens sont ruinés.",
+            ],
+            "why_it_matters": (
+                "Ce krach boursier déclenche une immense crise "
+                "économique, appelée la Grande Dépression, qui touche "
+                "le monde entier pendant des années."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le « jeudi noir » à la Bourse de New York déclenche "
+                "un krach boursier qui précipite le monde dans la "
+                "Grande Dépression."
+            ),
+            "before": (
+                "Après des années de spéculation alimentée par l'achat "
+                "d'actions à crédit, les cours de la Bourse atteignent "
+                "des niveaux jugés intenables."
+            ),
+            "during": (
+                "Le 24 octobre 1929, une vague de ventes paniquées "
+                "s'abat sur Wall Street ; malgré une intervention des "
+                "grandes banques, la confiance s'effondre les jours "
+                "suivants."
+            ),
+            "after": (
+                "Le krach entraîne faillites bancaires et chômage de "
+                "masse aux États-Unis, puis se propage à l'économie "
+                "mondiale."
+            ),
+            "narrative": [
+                "Durant les « années folles », la Bourse de New York "
+                "connaît une hausse spectaculaire, alimentée par des "
+                "investisseurs empruntant pour acheter des actions.",
+                "Le 24 octobre 1929, surnommé « jeudi noir », une "
+                "vague de ventes massives s'abat sur le New York Stock "
+                "Exchange. Un consortium de banques tente d'enrayer la "
+                "chute, offrant un répit temporaire.",
+                "Mais la confiance ne revient pas : les 28 et 29 "
+                "octobre voient de nouvelles chutes vertigineuses. Des "
+                "milliards de dollars de valeur boursière s'évaporent.",
+            ],
+            "why_it_matters": (
+                "Le krach de 1929 déclenche la Grande Dépression, la "
+                "pire crise économique du XXe siècle, marquée par un "
+                "chômage massif dans le monde entier."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le « jeudi noir » à la Bourse de New York déclenche "
+                "un krach boursier qui précipite le monde dans la "
+                "Grande Dépression des années 1930."
+            ),
+            "before": (
+                "Après des années de spéculation effrénée alimentée "
+                "par l'achat d'actions à crédit (« buying on margin »), "
+                "les cours de la Bourse de New York atteignent des "
+                "niveaux jugés intenables par de nombreux économistes."
+            ),
+            "during": (
+                "Le 24 octobre 1929, une vague de ventes paniquées "
+                "s'abat sur Wall Street ; malgré une intervention des "
+                "grandes banques, la confiance s'effondre définitivement "
+                "les jours suivants."
+            ),
+            "after": (
+                "Le krach entraîne faillites bancaires et chômage de "
+                "masse aux États-Unis, puis se propage à l'économie "
+                "mondiale, provoquant la Grande Dépression."
+            ),
+            "narrative": [
+                "Durant les « années folles », la Bourse de New York "
+                "connaît une hausse spectaculaire, largement alimentée "
+                "par des investisseurs empruntant massivement pour "
+                "acheter des actions, pariant sur une hausse continue "
+                "des cours.",
+                "Le 24 octobre 1929, surnommé « jeudi noir », une "
+                "vague de ventes massives et paniquées s'abat sur le "
+                "New York Stock Exchange. Un consortium de grandes "
+                "banques tente d'enrayer la chute en rachetant des "
+                "actions, offrant un répit temporaire.",
+                "Mais la confiance ne revient pas : les 28 et 29 "
+                "octobre, surnommés « lundi noir » et « mardi noir », "
+                "voient de nouvelles chutes vertigineuses. En quelques "
+                "jours, des milliards de dollars de valeur boursière "
+                "s'évaporent, ruinant nombre d'investisseurs.",
+            ],
+            "why_it_matters": (
+                "Le krach de 1929 déclenche la Grande Dépression, la "
+                "pire crise économique du XXe siècle, marquée par des "
+                "faillites bancaires en série, un chômage massif et des "
+                "répercussions économiques et politiques mondiales "
+                "durant toute la décennie suivante."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le « jeudi noir » à la Bourse de New York, aggravé "
+                "les jours suivants par le « lundi noir » et le "
+                "« mardi noir », déclenche un krach boursier qui "
+                "précipite le monde dans la Grande Dépression, la plus "
+                "grave crise économique du XXe siècle."
+            ),
+            "before": (
+                "Après des années de spéculation effrénée alimentée "
+                "par l'achat d'actions à crédit (« buying on margin », "
+                "parfois avec seulement 10 % d'apport personnel), les "
+                "cours de la Bourse de New York atteignent des niveaux "
+                "largement déconnectés de la valeur réelle des "
+                "entreprises, malgré les avertissements de certains "
+                "économistes."
+            ),
+            "during": (
+                "Le 24 octobre 1929, une vague de ventes paniquées "
+                "s'abat sur Wall Street ; un consortium de grandes "
+                "banques menées par la Maison Morgan tente d'enrayer la "
+                "chute en rachetant symboliquement des actions, mais la "
+                "confiance s'effondre définitivement les jours suivants "
+                "malgré ce répit apparent."
+            ),
+            "after": (
+                "Le krach entraîne un effondrement du crédit, des "
+                "faillites bancaires en cascade et un chômage de masse "
+                "aux États-Unis, puis se propage à l'économie mondiale "
+                "via l'effondrement du commerce international, "
+                "provoquant la Grande Dépression qui durera jusqu'à la "
+                "fin des années 1930."
+            ),
+            "narrative": [
+                "Durant les « années folles », la Bourse de New York "
+                "connaît une hausse spectaculaire et largement "
+                "déconnectée de l'économie réelle, alimentée par des "
+                "investisseurs empruntant massivement pour acheter des "
+                "actions, pariant sur une hausse indéfinie des cours.",
+                "Le 24 octobre 1929, surnommé « jeudi noir », une "
+                "vague de ventes massives et paniquées s'abat sur le "
+                "New York Stock Exchange, provoquant la vente de près "
+                "de 13 millions de titres en une seule journée. Un "
+                "consortium de grandes banques menées par la Maison "
+                "Morgan tente d'enrayer la chute en rachetant "
+                "publiquement des actions, offrant un répit temporaire.",
+                "Mais la confiance ne revient pas : les 28 et 29 "
+                "octobre, surnommés « lundi noir » et « mardi noir », "
+                "voient de nouvelles chutes vertigineuses, avec près de "
+                "16 millions de titres échangés le seul mardi 29. En "
+                "quelques jours, des dizaines de milliards de dollars "
+                "de valeur boursière s'évaporent, ruinant nombre "
+                "d'investisseurs et fragilisant tout le système "
+                "bancaire américain.",
+            ],
+            "why_it_matters": (
+                "Le krach de 1929 déclenche la Grande Dépression, la "
+                "pire crise économique du XXe siècle : faillites "
+                "bancaires en série, chômage touchant jusqu'à un quart "
+                "de la population active américaine, effondrement du "
+                "commerce mondial aggravé par des mesures "
+                "protectionnistes, et répercussions politiques durables "
+                "— dont, selon de nombreux historiens, un terreau "
+                "favorable à la montée des régimes autoritaires en "
+                "Europe."
+            ),
+        },
+    },
+    "attaque-pearl-harbor": {
+        "enfant": {
+            "summary": (
+                "Le 7 décembre 1941, des avions japonais attaquent par "
+                "surprise la base américaine de Pearl Harbor. Les "
+                "États-Unis entrent alors en guerre."
+            ),
+            "before": (
+                "Le Japon et les États-Unis sont fâchés depuis "
+                "longtemps à cause de la guerre du Japon en Asie."
+            ),
+            "during": (
+                "Des avions japonais attaquent sans prévenir les "
+                "bateaux de guerre américains, à Hawaï."
+            ),
+            "after": (
+                "Le lendemain, les États-Unis déclarent la guerre au "
+                "Japon et rejoignent la Seconde Guerre mondiale."
+            ),
+            "narrative": [
+                "Le matin du 7 décembre 1941, des avions japonais "
+                "attaquent par surprise la base militaire américaine "
+                "de Pearl Harbor, à Hawaï.",
+                "En moins de deux heures, l'attaque détruit ou "
+                "endommage beaucoup de bateaux de guerre américains et "
+                "tue environ 2 400 personnes.",
+                "Le président Roosevelt appelle ce jour « une date qui "
+                "restera dans l'infamie ». Les États-Unis déclarent la "
+                "guerre au Japon dès le lendemain.",
+            ],
+            "why_it_matters": (
+                "Cette attaque fait entrer les États-Unis dans la "
+                "Seconde Guerre mondiale, qui devient alors un conflit "
+                "vraiment mondial."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'aviation japonaise attaque par surprise la flotte "
+                "américaine du Pacifique, provoquant l'entrée en "
+                "guerre des États-Unis."
+            ),
+            "before": (
+                "Les tensions entre les États-Unis et le Japon "
+                "s'aggravent après l'embargo américain sur le pétrole, "
+                "imposé en réponse à l'expansion japonaise en Asie."
+            ),
+            "during": (
+                "Des avions japonais lancés depuis des porte-avions "
+                "frappent sans avertissement la flotte américaine "
+                "ancrée à Pearl Harbor."
+            ),
+            "after": (
+                "Les États-Unis déclarent la guerre au Japon dès le "
+                "lendemain, entraînant leur entrée dans le conflit "
+                "mondial."
+            ),
+            "narrative": [
+                "Au matin du 7 décembre 1941, des centaines d'avions "
+                "japonais décollent de porte-avions et frappent par "
+                "surprise la base navale américaine de Pearl Harbor.",
+                "En un peu moins de deux heures, l'attaque coule ou "
+                "endommage huit cuirassés américains et fait environ "
+                "2 400 morts. Les porte-avions américains, absents ce "
+                "jour-là, échappent à la destruction.",
+                "Le président Roosevelt qualifie le 7 décembre de "
+                "« date qui restera dans l'infamie » devant le "
+                "Congrès, qui vote la guerre au Japon dès le lendemain.",
+            ],
+            "why_it_matters": (
+                "L'attaque de Pearl Harbor précipite l'entrée en "
+                "guerre des États-Unis et transforme le conflit "
+                "européen en une guerre véritablement mondiale."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'aviation japonaise attaque par surprise la flotte "
+                "américaine du Pacifique, provoquant l'entrée en "
+                "guerre des États-Unis dans la Seconde Guerre "
+                "mondiale."
+            ),
+            "before": (
+                "Les tensions entre les États-Unis et le Japon "
+                "impérial s'aggravent après l'embargo américain sur le "
+                "pétrole imposé en réponse à l'expansion japonaise en "
+                "Asie, alors que des négociations diplomatiques se "
+                "poursuivent encore officiellement."
+            ),
+            "during": (
+                "Des avions japonais lancés depuis des porte-avions "
+                "frappent sans avertissement la flotte américaine "
+                "ancrée à Pearl Harbor, détruisant ou endommageant de "
+                "nombreux navires de guerre."
+            ),
+            "after": (
+                "Les États-Unis déclarent la guerre au Japon dès le "
+                "lendemain, entraînant leur entrée dans le conflit "
+                "mondial aux côtés des Alliés."
+            ),
+            "narrative": [
+                "Au matin du 7 décembre 1941, alors que les "
+                "négociations diplomatiques se poursuivent officiellement "
+                "à Washington, des centaines d'avions japonais "
+                "décollent de porte-avions et frappent par surprise la "
+                "base navale américaine de Pearl Harbor, à Hawaï.",
+                "En un peu moins de deux heures, l'attaque coule ou "
+                "endommage huit cuirassés américains et détruit près "
+                "de 200 avions, faisant environ 2 400 morts, pour la "
+                "plupart des militaires. Les porte-avions américains, "
+                "absents ce jour-là, échappent à la destruction.",
+                "Le président Franklin D. Roosevelt qualifie le 7 "
+                "décembre de « date qui restera dans l'infamie » devant "
+                "le Congrès, qui vote la déclaration de guerre au Japon "
+                "dès le lendemain.",
+            ],
+            "why_it_matters": (
+                "L'attaque de Pearl Harbor précipite l'entrée en "
+                "guerre des États-Unis, jusque-là officiellement "
+                "neutres, et transforme définitivement le conflit "
+                "européen en une guerre véritablement mondiale."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'aviation embarquée japonaise attaque par surprise, "
+                "sans déclaration de guerre préalable, la flotte "
+                "américaine du Pacifique ancrée à Pearl Harbor, "
+                "provoquant l'entrée en guerre immédiate et quasi "
+                "unanime des États-Unis."
+            ),
+            "before": (
+                "Les tensions entre les États-Unis et le Japon "
+                "impérial s'aggravent après l'embargo américain total "
+                "sur le pétrole et l'acier imposé en juillet 1941 en "
+                "réponse à l'expansion japonaise en Indochine, alors "
+                "que des négociations diplomatiques se poursuivent "
+                "encore officiellement à Washington au moment même de "
+                "l'attaque."
+            ),
+            "during": (
+                "Des avions japonais lancés depuis six porte-avions "
+                "frappent en deux vagues successives, sans avertissement "
+                "ni déclaration de guerre préalable, la flotte "
+                "américaine ancrée à Pearl Harbor, ciblant "
+                "prioritairement les cuirassés — une doctrine navale "
+                "bientôt rendue obsolète par l'importance décisive des "
+                "porte-avions dans la guerre du Pacifique."
+            ),
+            "after": (
+                "Les États-Unis déclarent la guerre au Japon dès le "
+                "lendemain avec une quasi-unanimité au Congrès, mettant "
+                "fin à des années de fort courant isolationniste dans "
+                "l'opinion publique américaine, et l'Allemagne et "
+                "l'Italie déclarent à leur tour la guerre aux États-Unis "
+                "quelques jours plus tard."
+            ),
+            "narrative": [
+                "Au matin du 7 décembre 1941, alors que les "
+                "négociations diplomatiques se poursuivent officiellement "
+                "à Washington, des centaines d'avions japonais "
+                "décollent de six porte-avions et frappent par surprise "
+                "la base navale américaine de Pearl Harbor, à Hawaï, "
+                "en deux vagues successives.",
+                "En un peu moins de deux heures, l'attaque coule ou "
+                "endommage huit cuirassés américains et détruit près "
+                "de 200 avions, faisant environ 2 400 morts, pour la "
+                "plupart des militaires du seul cuirassé Arizona. Les "
+                "porte-avions américains, absents ce jour-là en "
+                "manœuvre, échappent à la destruction — un hasard qui "
+                "s'avérera stratégiquement décisif pour la suite de la "
+                "guerre du Pacifique.",
+                "Le président Franklin D. Roosevelt qualifie le 7 "
+                "décembre de « date qui restera dans l'infamie » devant "
+                "le Congrès, qui vote la déclaration de guerre au Japon "
+                "dès le lendemain à une quasi-unanimité, mettant fin "
+                "brutalement à des années de débat isolationniste aux "
+                "États-Unis.",
+            ],
+            "why_it_matters": (
+                "L'attaque de Pearl Harbor précipite l'entrée en "
+                "guerre des États-Unis, jusque-là officiellement "
+                "neutres malgré une aide croissante aux Alliés, et "
+                "transforme définitivement le conflit européen en une "
+                "guerre véritablement mondiale ; elle constitue aussi, "
+                "sur le plan militaire, une victoire tactique japonaise "
+                "mais une erreur stratégique majeure, l'industrie "
+                "américaine s'avérant capable de reconstruire sa flotte "
+                "bien plus vite que le Japon ne pouvait l'anticiper."
+            ),
+        },
+    },
+    "bombardement-hiroshima": {
+        "enfant": {
+            "summary": (
+                "Le 6 août 1945, les États-Unis larguent la première "
+                "bombe atomique de l'histoire sur la ville japonaise "
+                "d'Hiroshima."
+            ),
+            "before": (
+                "Le Japon continue la guerre malgré des bombardements "
+                "très destructeurs sur ses villes."
+            ),
+            "during": (
+                "Un avion américain largue une bombe atomique sur "
+                "Hiroshima. La ville est détruite en quelques instants."
+            ),
+            "after": (
+                "Trois jours plus tard, une deuxième bombe tombe sur "
+                "Nagasaki. Le Japon se rend le 15 août 1945."
+            ),
+            "narrative": [
+                "En 1945, le Japon continue de se battre malgré une "
+                "situation très difficile.",
+                "Le 6 août 1945, l'avion américain Enola Gay largue "
+                "une bombe atomique sur Hiroshima. La ville est "
+                "détruite et des dizaines de milliers de personnes "
+                "meurent immédiatement.",
+                "Le 9 août, une deuxième bombe tombe sur Nagasaki. Le "
+                "15 août, le Japon annonce qu'il arrête la guerre.",
+            ],
+            "why_it_matters": (
+                "C'est la première fois qu'une bombe atomique est "
+                "utilisée dans une guerre. Cela met fin à la Seconde "
+                "Guerre mondiale, mais pose de grandes questions "
+                "encore aujourd'hui."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Les États-Unis larguent la première bombe atomique de "
+                "l'histoire militaire sur la ville d'Hiroshima, "
+                "provoquant des destructions sans précédent."
+            ),
+            "before": (
+                "Dans les derniers mois de la guerre du Pacifique, le "
+                "Japon refuse de capituler malgré des bombardements "
+                "dévastateurs sur ses grandes villes."
+            ),
+            "during": (
+                "Le bombardier américain Enola Gay largue la bombe "
+                "atomique « Little Boy » sur Hiroshima, détruisant la "
+                "majeure partie de la ville en quelques instants."
+            ),
+            "after": (
+                "Une seconde bombe frappe Nagasaki trois jours plus "
+                "tard ; le Japon annonce sa capitulation le 15 août "
+                "1945."
+            ),
+            "narrative": [
+                "À l'été 1945, malgré une situation militaire "
+                "désespérée, le Japon refuse la capitulation sans "
+                "conditions exigée par les Alliés.",
+                "Le 6 août 1945 à 8h15, le bombardier américain Enola "
+                "Gay largue sur Hiroshima la bombe atomique « Little "
+                "Boy ». L'explosion détruit instantanément une grande "
+                "partie de la ville et tue des dizaines de milliers de "
+                "personnes.",
+                "Le Japon ne capitule pas immédiatement. Le 9 août, "
+                "une seconde bombe frappe Nagasaki. L'empereur Hirohito "
+                "annonce la capitulation du Japon le 15 août.",
+            ],
+            "why_it_matters": (
+                "Premier usage militaire de l'arme atomique, le "
+                "bombardement d'Hiroshima précipite la fin de la "
+                "Seconde Guerre mondiale tout en ouvrant l'ère "
+                "nucléaire."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Les États-Unis larguent la première bombe atomique de "
+                "l'histoire militaire sur la ville d'Hiroshima, "
+                "provoquant des destructions et des pertes humaines "
+                "sans précédent."
+            ),
+            "before": (
+                "Dans les derniers mois de la guerre du Pacifique, le "
+                "Japon refuse de capituler malgré des bombardements "
+                "conventionnels dévastateurs sur ses grandes villes, "
+                "les Alliés redoutant par ailleurs le coût humain "
+                "d'une invasion terrestre de l'archipel."
+            ),
+            "during": (
+                "Le bombardier américain Enola Gay largue la bombe "
+                "atomique « Little Boy » sur Hiroshima, détruisant la "
+                "majeure partie de la ville en quelques instants."
+            ),
+            "after": (
+                "Une seconde bombe atomique frappe Nagasaki trois "
+                "jours plus tard ; le Japon annonce sa capitulation le "
+                "15 août 1945, mettant fin à la Seconde Guerre "
+                "mondiale."
+            ),
+            "narrative": [
+                "À l'été 1945, malgré une situation militaire "
+                "désespérée, le gouvernement japonais refuse la "
+                "capitulation sans conditions exigée par les Alliés, "
+                "qui redoutent le coût humain d'une invasion terrestre "
+                "du Japon.",
+                "Le 6 août 1945 à 8h15 du matin, le bombardier "
+                "américain Enola Gay largue sur Hiroshima la bombe "
+                "atomique « Little Boy ». L'explosion détruit "
+                "instantanément une grande partie de la ville et tue "
+                "des dizaines de milliers de personnes sur le coup, un "
+                "bilan qui continuera de s'alourdir du fait des "
+                "radiations.",
+                "Le Japon ne capitule pas immédiatement. Le 9 août, "
+                "une seconde bombe atomique frappe la ville de "
+                "Nagasaki. L'empereur Hirohito annonce la capitulation "
+                "du Japon le 15 août, mettant un terme définitif à la "
+                "Seconde Guerre mondiale.",
+            ],
+            "why_it_matters": (
+                "Premier usage militaire de l'arme atomique de "
+                "l'histoire, le bombardement d'Hiroshima précipite la "
+                "fin de la Seconde Guerre mondiale tout en ouvrant "
+                "l'ère nucléaire et ses lourdes questions éthiques et "
+                "stratégiques, encore débattues aujourd'hui."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Les États-Unis larguent sur Hiroshima « Little Boy », "
+                "la première bombe atomique de l'histoire militaire, "
+                "provoquant des destructions et des pertes humaines "
+                "sans précédent dans un débat historiographique encore "
+                "vif sur la nécessité réelle de son emploi."
+            ),
+            "before": (
+                "Dans les derniers mois de la guerre du Pacifique, le "
+                "Japon refuse la capitulation sans conditions exigée "
+                "par les Alliés malgré des bombardements incendiaires "
+                "conventionnels déjà dévastateurs — celui de Tokyo en "
+                "mars 1945 ayant fait plus de morts en une nuit que "
+                "Hiroshima —, les stratèges américains redoutant par "
+                "ailleurs un coût humain considérable pour une "
+                "invasion terrestre."
+            ),
+            "during": (
+                "Le bombardier américain Enola Gay largue à 8h15 la "
+                "bombe atomique « Little Boy », d'un type à uranium "
+                "jamais testé auparavant, sur Hiroshima, ville choisie "
+                "notamment pour son importance militaire et l'absence "
+                "de bombardements antérieurs permettant de mesurer les "
+                "effets de l'arme."
+            ),
+            "after": (
+                "Une seconde bombe, au plutonium cette fois, frappe "
+                "Nagasaki trois jours plus tard ; le Japon annonce sa "
+                "capitulation le 15 août 1945, mettant fin à la Seconde "
+                "Guerre mondiale, mais laissant ouvert un débat "
+                "historiographique durable sur le poids respectif des "
+                "bombardements et de l'entrée en guerre soviétique "
+                "contre le Japon, survenue entre les deux bombes."
+            ),
+            "narrative": [
+                "À l'été 1945, malgré une situation militaire "
+                "désespérée, le gouvernement japonais refuse la "
+                "capitulation sans conditions exigée par les Alliés, "
+                "qui redoutent le coût humain d'une invasion terrestre "
+                "du Japon après les pertes très lourdes subies à "
+                "Iwo Jima et Okinawa.",
+                "Le 6 août 1945 à 8h15 du matin, le bombardier "
+                "américain Enola Gay largue sur Hiroshima la bombe "
+                "atomique « Little Boy », d'un type à uranium enrichi "
+                "jamais testé au préalable. L'explosion détruit "
+                "instantanément une grande partie de la ville et tue "
+                "des dizaines de milliers de personnes sur le coup, un "
+                "bilan qui continuera de s'alourdir dans les mois "
+                "suivants du fait des radiations, pour atteindre "
+                "environ 140 000 morts fin 1945.",
+                "Le Japon ne capitule pas immédiatement. Le 8 août, "
+                "l'URSS déclare la guerre au Japon et envahit la "
+                "Mandchourie ; le 9 août, une seconde bombe, au "
+                "plutonium, frappe la ville de Nagasaki. L'empereur "
+                "Hirohito, dans une intervention radiophonique inédite, "
+                "annonce la capitulation du Japon le 15 août, mettant "
+                "un terme définitif à la Seconde Guerre mondiale.",
+            ],
+            "why_it_matters": (
+                "Premier usage militaire de l'arme atomique de "
+                "l'histoire, le bombardement d'Hiroshima précipite la "
+                "fin de la Seconde Guerre mondiale tout en ouvrant "
+                "l'ère nucléaire et la dissuasion qui structurera la "
+                "guerre froide ; les historiens débattent encore de la "
+                "part exacte jouée par les bombardements atomiques "
+                "face à l'entrée en guerre soviétique dans la décision "
+                "japonaise de capituler, ainsi que des lourdes "
+                "questions éthiques posées par l'emploi d'une arme de "
+                "destruction massive contre une population "
+                "majoritairement civile."
+            ),
+        },
+    },
+    "capitulation-allemande-1945": {
+        "enfant": {
+            "summary": (
+                "Le 8 mai 1945, l'Allemagne accepte sa défaite. C'est "
+                "la fin de la guerre en Europe."
+            ),
+            "before": (
+                "Hitler se suicide le 30 avril 1945, pendant que "
+                "l'armée soviétique encercle Berlin."
+            ),
+            "during": (
+                "Des généraux allemands signent l'arrêt des combats, "
+                "d'abord en France, puis une deuxième fois à Berlin."
+            ),
+            "after": (
+                "La guerre continue encore en Asie, mais en Europe, "
+                "c'est fini. On fête la victoire le 8 mai."
+            ),
+            "narrative": [
+                "Fin avril 1945, l'armée soviétique encercle Berlin. "
+                "Hitler se suicide le 30 avril.",
+                "Le 7 mai, des généraux allemands signent la fin des "
+                "combats en France. Staline veut une deuxième "
+                "signature à Berlin.",
+                "Dans la nuit du 8 au 9 mai, une nouvelle cérémonie a "
+                "lieu à Berlin. En France, on fête la victoire le 8 "
+                "mai.",
+            ],
+            "why_it_matters": (
+                "C'est la fin de la guerre en Europe, après presque "
+                "six ans de combats terribles."
+            ),
+        },
+        "college": {
+            "summary": (
+                "La capitulation sans conditions de l'Allemagne nazie "
+                "met fin à la Seconde Guerre mondiale en Europe."
+            ),
+            "before": (
+                "Après le suicide d'Hitler le 30 avril 1945 et la "
+                "chute de Berlin encerclée par l'Armée rouge, "
+                "l'effondrement militaire allemand est total."
+            ),
+            "during": (
+                "Une première capitulation est signée à Reims le 7 "
+                "mai ; une seconde cérémonie, exigée par Staline, se "
+                "tient à Berlin dans la nuit du 8 au 9 mai."
+            ),
+            "after": (
+                "La guerre continue en Asie jusqu'en août, mais le 8 "
+                "mai reste commémoré comme la fin des combats en "
+                "Europe."
+            ),
+            "narrative": [
+                "Fin avril 1945, l'Armée rouge encercle Berlin. "
+                "Hitler se suicide dans son bunker le 30 avril.",
+                "Le 7 mai, le général Alfred Jodl signe à Reims l'acte "
+                "de capitulation. Staline exige une seconde cérémonie "
+                "sur le sol allemand.",
+                "Dans la nuit du 8 au 9 mai, une nouvelle cérémonie se "
+                "tient à Berlin devant les Soviétiques. En France, "
+                "c'est le 8 mai qui reste célébré.",
+            ],
+            "why_it_matters": (
+                "La capitulation allemande met fin à près de six ans "
+                "de guerre en Europe et ouvre la voie au début de la "
+                "guerre froide."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "La capitulation sans conditions de l'Allemagne nazie "
+                "met fin à la Seconde Guerre mondiale en Europe, "
+                "célébrée comme le « Jour de la Victoire »."
+            ),
+            "before": (
+                "Après le suicide d'Hitler le 30 avril 1945 et la "
+                "chute de Berlin encerclée par l'Armée rouge, "
+                "l'effondrement militaire allemand est total."
+            ),
+            "during": (
+                "Une première capitulation est signée à Reims le 7 "
+                "mai ; une seconde cérémonie, exigée par Staline, se "
+                "tient à Berlin dans la nuit du 8 au 9 mai."
+            ),
+            "after": (
+                "La guerre continue en Asie jusqu'à la capitulation "
+                "du Japon en août, mais le 8 mai reste commémoré comme "
+                "la fin des combats en Europe."
+            ),
+            "narrative": [
+                "Fin avril 1945, l'Armée rouge encercle Berlin. Adolf "
+                "Hitler se suicide dans son bunker le 30 avril, alors "
+                "que les combats font rage dans les rues de la "
+                "capitale allemande en ruines.",
+                "Le 7 mai, le général Alfred Jodl signe à Reims, au "
+                "quartier général du général Eisenhower, l'acte de "
+                "capitulation sans conditions de toutes les forces "
+                "allemandes. Staline, jugeant la cérémonie insuffisamment "
+                "solennelle, exige une seconde signature.",
+                "Dans la nuit du 8 au 9 mai, une nouvelle cérémonie se "
+                "tient à Berlin-Karlshorst devant les représentants "
+                "soviétiques. En France et dans la plupart des pays "
+                "occidentaux, c'est le 8 mai qui reste célébré comme le "
+                "jour de la victoire en Europe.",
+            ],
+            "why_it_matters": (
+                "La capitulation allemande met fin à près de six ans "
+                "de guerre en Europe, ayant fait des dizaines de "
+                "millions de morts, et ouvre la voie à la partition de "
+                "l'Allemagne et au début de la guerre froide."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "La capitulation sans conditions de l'Allemagne nazie, "
+                "signée en deux temps à Reims puis à Berlin sous "
+                "l'exigence soviétique, met fin à près de six ans de "
+                "guerre en Europe et ouvre immédiatement la question de "
+                "l'ordre d'après-guerre entre Alliés occidentaux et "
+                "URSS."
+            ),
+            "before": (
+                "Après le suicide d'Hitler dans son bunker le 30 avril "
+                "1945, alors que Berlin encerclée par l'Armée rouge est "
+                "en grande partie détruite par des combats de rue "
+                "acharnés, l'effondrement militaire allemand devient "
+                "total et incontestable, y compris pour les derniers "
+                "partisans d'une résistance à outrance."
+            ),
+            "during": (
+                "Une première capitulation, négociée par le général "
+                "Alfred Jodl au nom du gouvernement Dönitz, est signée "
+                "à Reims le 7 mai au quartier général d'Eisenhower ; "
+                "jugeant cette cérémonie occidentale insuffisamment "
+                "solennelle et voulant que l'acte soit signé sur le sol "
+                "allemand face à l'Armée rouge, Staline exige et "
+                "obtient une seconde cérémonie."
+            ),
+            "after": (
+                "La guerre continue en Asie jusqu'à la capitulation du "
+                "Japon en août, mais en Europe la date retenue pour la "
+                "commémoration diverge déjà entre Occident (8 mai) et "
+                "URSS puis Russie (9 mai, en raison du décalage "
+                "horaire de la signature nocturne), symptôme précoce de "
+                "la fracture qui deviendra la guerre froide."
+            ),
+            "narrative": [
+                "Fin avril 1945, l'Armée rouge encercle et prend "
+                "d'assaut Berlin au prix de combats de rue "
+                "particulièrement meurtriers. Adolf Hitler se suicide "
+                "dans son bunker le 30 avril, désignant l'amiral Dönitz "
+                "comme son successeur.",
+                "Le 7 mai, le général Alfred Jodl signe à Reims, au "
+                "quartier général du général Eisenhower, l'acte de "
+                "capitulation sans conditions de toutes les forces "
+                "allemandes. Staline, jugeant la cérémonie occidentale "
+                "insuffisamment solennelle et politiquement risquée "
+                "pour la place de l'URSS dans la victoire, exige une "
+                "seconde signature sur le sol allemand.",
+                "Dans la nuit du 8 au 9 mai, une nouvelle cérémonie se "
+                "tient à Berlin-Karlshorst devant les représentants "
+                "soviétiques, en présence du maréchal Joukov. En France "
+                "et dans la plupart des pays occidentaux, c'est le 8 "
+                "mai qui reste célébré comme le jour de la victoire en "
+                "Europe, tandis que l'URSS puis la Russie commémorent "
+                "le 9 mai.",
+            ],
+            "why_it_matters": (
+                "La capitulation allemande met fin à près de six ans "
+                "de guerre en Europe, ayant fait des dizaines de "
+                "millions de morts, et ouvre immédiatement la question "
+                "de l'occupation et du partage de l'Allemagne entre "
+                "quatre zones alliées — prélude direct à la partition "
+                "du pays et au début de la guerre froide entre les "
+                "Alliés occidentaux et l'URSS dès les mois suivants."
+            ),
+        },
+    },
+    "vol-de-gagarine": {
+        "enfant": {
+            "summary": (
+                "Le 12 avril 1961, le Russe Youri Gagarine devient le "
+                "premier être humain à voyager dans l'espace."
+            ),
+            "before": (
+                "L'URSS et les États-Unis font la course pour être les "
+                "premiers dans l'espace."
+            ),
+            "during": (
+                "Gagarine fait un tour complet de la Terre à bord d'un "
+                "vaisseau spatial, en moins de deux heures."
+            ),
+            "after": (
+                "Il atterrit en parachute et devient un héros célébré "
+                "dans le monde entier."
+            ),
+            "narrative": [
+                "Le 12 avril 1961, le cosmonaute russe Youri Gagarine "
+                "décolle à bord du vaisseau Vostok 1.",
+                "En 108 minutes, il fait un tour complet de la Terre, "
+                "à environ 300 km de hauteur. Il voit la Terre ronde de "
+                "ses propres yeux, une première pour un humain.",
+                "Il revient sur Terre en parachute et devient "
+                "immédiatement un héros dans le monde entier.",
+            ],
+            "why_it_matters": (
+                "Gagarine est le premier humain à aller dans l'espace. "
+                "Cela relance la course vers la Lune, que les "
+                "Américains atteindront huit ans plus tard."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le cosmonaute soviétique Youri Gagarine devient le "
+                "premier être humain à voyager dans l'espace, à bord "
+                "du vaisseau Vostok 1."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis se "
+                "livrent à une course à l'espace acharnée depuis le "
+                "lancement du satellite Spoutnik en 1957."
+            ),
+            "during": (
+                "Gagarine effectue une orbite complète autour de la "
+                "Terre à bord de Vostok 1, un vol d'un peu moins de "
+                "deux heures, avant d'atterrir en parachute."
+            ),
+            "after": (
+                "Gagarine devient un héros mondial, relançant la "
+                "course à l'espace qui mènera les Américains sur la "
+                "Lune huit ans plus tard."
+            ),
+            "narrative": [
+                "Le 12 avril 1961, le cosmonaute soviétique Youri "
+                "Gagarine, pilote de chasse de 27 ans, décolle de "
+                "Baïkonour à bord du vaisseau Vostok 1.",
+                "En 108 minutes, Gagarine effectue une orbite complète "
+                "autour de la Terre à environ 300 km d'altitude, "
+                "observant la courbure de la Terre, une vision alors "
+                "inédite.",
+                "Le vaisseau redescend et Gagarine s'éjecte pour "
+                "atterrir en parachute. Il est immédiatement célébré "
+                "comme un héros national.",
+            ],
+            "why_it_matters": (
+                "Le vol de Gagarine constitue une victoire majeure de "
+                "l'URSS dans la course à l'espace et pousse les "
+                "États-Unis à accélérer leur propre programme spatial."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le cosmonaute soviétique Youri Gagarine devient le "
+                "premier être humain à voyager dans l'espace, à bord "
+                "du vaisseau Vostok 1."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis se "
+                "livrent à une course à l'espace acharnée depuis le "
+                "lancement du satellite Spoutnik en 1957."
+            ),
+            "during": (
+                "Gagarine effectue une orbite complète autour de la "
+                "Terre à bord de Vostok 1, un vol d'un peu moins de "
+                "deux heures, avant d'atterrir en parachute en Russie."
+            ),
+            "after": (
+                "Gagarine devient un héros mondial et un symbole de la "
+                "propagande soviétique, relançant la course à l'espace "
+                "qui mènera les Américains sur la Lune huit ans plus "
+                "tard."
+            ),
+            "narrative": [
+                "Le 12 avril 1961, le cosmonaute soviétique Youri "
+                "Gagarine, un pilote de chasse de 27 ans, décolle du "
+                "cosmodrome de Baïkonour à bord du vaisseau Vostok 1 "
+                "pour devenir le premier être humain à quitter "
+                "l'atmosphère terrestre.",
+                "En 108 minutes, Gagarine effectue une orbite complète "
+                "autour de la Terre à une altitude d'environ 300 "
+                "kilomètres. Durant le vol, largement automatisé, il "
+                "observe et décrit la courbure de la Terre, une vision "
+                "alors inédite pour un être humain.",
+                "Le vaisseau redescend et Gagarine s'éjecte pour "
+                "atterrir en parachute près de la Volga, comme prévu "
+                "par la procédure soviétique. Il est immédiatement "
+                "célébré comme un héros national et devient une figure "
+                "mondiale de la conquête spatiale.",
+            ],
+            "why_it_matters": (
+                "Le vol de Gagarine constitue une victoire majeure de "
+                "l'URSS dans la course à l'espace et pousse les "
+                "États-Unis à accélérer leur propre programme spatial, "
+                "qui aboutira à l'alunissage d'Apollo 11 en 1969."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le cosmonaute soviétique Youri Gagarine devient, à "
+                "bord de Vostok 1, le premier être humain à voyager "
+                "dans l'espace, exploit largement automatisé par "
+                "prudence médicale mais présenté par la propagande "
+                "soviétique comme la démonstration éclatante de la "
+                "supériorité du système communiste."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis se "
+                "livrent à une course à l'espace acharnée depuis le "
+                "lancement du satellite Spoutnik en 1957, l'URSS "
+                "conservant jusque-là une avance technologique que le "
+                "programme Mercury américain, encore non habité, "
+                "n'était pas parvenu à combler."
+            ),
+            "during": (
+                "Gagarine effectue une orbite complète autour de la "
+                "Terre à bord de Vostok 1, un vol d'un peu moins de "
+                "deux heures dont les commandes de vol, par prudence "
+                "médicale face à l'inconnu de l'apesanteur, restent "
+                "verrouillées et ne peuvent être débloquées que par un "
+                "code transmis depuis le sol, avant un atterrissage en "
+                "parachute distinct de celui de la capsule."
+            ),
+            "after": (
+                "Gagarine devient un héros mondial et un symbole "
+                "diplomatique de premier plan pour l'URSS, relançant "
+                "une course à l'espace qui mènera les Américains sur la "
+                "Lune huit ans plus tard, en partie en réaction directe "
+                "à ce succès soviétique."
+            ),
+            "narrative": [
+                "Le 12 avril 1961, le cosmonaute soviétique Youri "
+                "Gagarine, un pilote de chasse de 27 ans sélectionné "
+                "parmi vingt candidats notamment pour sa petite taille "
+                "adaptée à l'exiguïté de la capsule, décolle du "
+                "cosmodrome de Baïkonour à bord du vaisseau Vostok 1 "
+                "pour devenir le premier être humain à quitter "
+                "l'atmosphère terrestre.",
+                "En 108 minutes, Gagarine effectue une orbite complète "
+                "autour de la Terre à une altitude d'environ 300 "
+                "kilomètres. Durant le vol, entièrement automatisé par "
+                "prudence médicale — les effets de l'apesanteur sur le "
+                "jugement humain étant alors inconnus —, il observe et "
+                "décrit la courbure de la Terre, une vision alors "
+                "inédite pour un être humain.",
+                "Le vaisseau redescend et Gagarine s'éjecte, comme "
+                "prévu par la procédure soviétique, pour atterrir en "
+                "parachute séparément de la capsule près de la Volga — "
+                "un détail dissimulé pendant des années pour préserver "
+                "l'homologation internationale du vol comme premier "
+                "'atterrissage habité'. Il est immédiatement célébré "
+                "comme un héros national et devient une figure mondiale "
+                "de la conquête spatiale.",
+            ],
+            "why_it_matters": (
+                "Le vol de Gagarine constitue une victoire majeure de "
+                "l'URSS dans la course à l'espace, renforçant "
+                "durablement son prestige diplomatique en pleine guerre "
+                "froide, et pousse le président Kennedy, un mois plus "
+                "tard, à fixer l'objectif d'un alunissage américain "
+                "avant la fin de la décennie — objectif atteint avec "
+                "Apollo 11 en 1969."
+            ),
+        },
+    },
 }
 
 
@@ -3332,6 +4876,294 @@ QUIZ_BY_LEVEL = {
             ],
             "correct_index": 0,
             "fun_fact": "Napoléon croyait l'armée prussienne durablement écartée après sa victoire à Ligny deux jours plus tôt — une erreur d'appréciation décisive.",
+        },
+    },
+    "sacre-napoleon-lieu": {
+        "enfant": {
+            "prompt": "Qui pose la couronne sur la tête de Napoléon le jour de son sacre ?",
+            "options": ["Napoléon lui-même", "Le pape", "Le roi d'Espagne", "Joséphine"],
+            "correct_index": 0,
+            "fun_fact": "Même si le pape est venu de Rome, c'est Napoléon lui-même qui se couronne, un geste très symbolique.",
+        },
+        "college": {
+            "prompt": "Qui a couronné Napoléon Ier lors de son sacre en 1804 ?",
+            "options": ["Le pape Pie VII", "Napoléon s'est couronné lui-même", "Le roi d'Espagne", "L'archevêque de Paris"],
+            "correct_index": 1,
+            "fun_fact": "Bien que le pape Pie VII ait fait le déplacement de Rome, c'est Napoléon lui-même qui a posé la couronne sur sa tête.",
+        },
+        "lycee": {
+            "prompt": "Qui a peint et orchestré la mise en scène du sacre de Napoléon ?",
+            "options": ["Jacques-Louis David", "Eugène Delacroix", "Jean-Auguste-Dominique Ingres", "Antoine-Jean Gros"],
+            "correct_index": 0,
+            "fun_fact": "Jacques-Louis David a orchestré la cérémonie et en a immortalisé la scène dans un tableau monumental.",
+        },
+        "etudiant_adulte": {
+            "prompt": "En quoi le geste de Napoléon se couronnant lui-même rompt-il avec la tradition du sacre royal ?",
+            "options": [
+                "Le monarque recevait traditionnellement la couronne des mains du prélat, symbolisant le pouvoir venu de Dieu",
+                "Aucun roi de France n'avait jamais été couronné à Notre-Dame auparavant",
+                "La tradition voulait que ce soit la reine qui couronne le roi",
+                "Les sacres royaux ne se déroulaient jamais en présence du pape",
+            ],
+            "correct_index": 0,
+            "fun_fact": "En se couronnant lui-même, Napoléon affirme tenir son pouvoir du peuple et de lui-même plutôt que de l'Église.",
+        },
+    },
+    "magna-carta-principe": {
+        "enfant": {
+            "prompt": "Que dit la Magna Carta sur la prison ?",
+            "options": [
+                "On ne peut pas mettre quelqu'un en prison sans un vrai jugement",
+                "Tout le monde doit aller en prison une fois dans sa vie",
+                "Le roi ne peut jamais aller en prison",
+                "Les prisons sont interdites en Angleterre",
+            ],
+            "correct_index": 0,
+            "fun_fact": "C'est une grande nouveauté pour l'époque : même le roi doit respecter des règles.",
+        },
+        "college": {
+            "prompt": "Quel principe la Magna Carta de 1215 a-t-elle établi ?",
+            "options": ["Le suffrage universel", "La limitation du pouvoir royal face aux barons", "L'abolition de l'esclavage", "La liberté de la presse"],
+            "correct_index": 1,
+            "fun_fact": "La Magna Carta garantit qu'aucun homme libre ne peut être emprisonné sans jugement légal, une limite inédite au pouvoir royal.",
+        },
+        "lycee": {
+            "prompt": "Où le roi Jean sans Terre appose-t-il son sceau sur la Magna Carta ?",
+            "options": ["À Runnymede, au bord de la Tamise", "À Londres, à la Tour", "À Cantorbéry", "À Westminster"],
+            "correct_index": 0,
+            "fun_fact": "Le 15 juin 1215, dans la prairie de Runnymede au bord de la Tamise, Jean sans Terre appose son sceau sur la Magna Carta.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la Magna Carta est-elle rapidement annulée après sa signature en 1215 ?",
+            "options": [
+                "Le pape l'annule dès août 1215 à la demande du roi lui-même",
+                "Les barons l'ont eux-mêmes rejetée",
+                "Elle n'a jamais été officiellement scellée",
+                "Le roi de France l'a déclarée illégale",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Annulée par le pape dès août 1215, la charte n'est réémise sous une forme modifiée qu'après la mort de Jean sans Terre en 1216.",
+        },
+    },
+    "vesuve-consequence": {
+        "enfant": {
+            "prompt": "Que devient la ville de Pompéi après l'éruption du Vésuve ?",
+            "options": [
+                "Elle est recouverte de cendres et oubliée pendant très longtemps",
+                "Elle est reconstruite immédiatement",
+                "Elle devient la capitale de l'Italie",
+                "Les habitants la déplacent ailleurs",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Pompéi a été retrouvée très bien conservée sous les cendres, plus de 1600 ans après l'éruption.",
+        },
+        "college": {
+            "prompt": "Qu'est-il arrivé à Pompéi après l'éruption du Vésuve en l'an 79 ?",
+            "options": ["La ville a été reconstruite immédiatement", "La ville a été ensevelie et oubliée pendant des siècles", "La ville a été déplacée", "La ville est devenue une nouvelle capitale romaine"],
+            "correct_index": 1,
+            "fun_fact": "Ensevelie sous plusieurs mètres de cendres, Pompéi a été oubliée pendant plus de seize siècles avant d'être redécouverte au XVIIIe siècle.",
+        },
+        "lycee": {
+            "prompt": "Qui a laissé un témoignage écrit détaillé de l'éruption du Vésuve ?",
+            "options": ["Pline le Jeune", "Cicéron", "Suétone", "Tacite lui-même, sur place"],
+            "correct_index": 0,
+            "fun_fact": "Pline le Jeune, témoin depuis l'autre rive du golfe de Naples, laisse un récit détaillé de la catastrophe dans deux lettres à Tacite.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi le terme « éruption plinienne » est-il utilisé pour ce type d'éruption volcanique ?",
+            "options": [
+                "En hommage au récit scientifique précis laissé par Pline le Jeune",
+                "Parce que le volcan s'appelait le Plinius",
+                "Parce que Pline l'Ancien a inventé ce type d'éruption",
+                "C'est le nom de la région où se trouve le Vésuve",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le récit de Pline le Jeune est si précis scientifiquement que ce type d'éruption porte aujourd'hui son nom.",
+        },
+    },
+    "krach-1929-consequence": {
+        "enfant": {
+            "prompt": "Que se passe-t-il après le krach de 1929 ?",
+            "options": [
+                "Beaucoup de gens perdent leur travail",
+                "Tout redevient normal en une semaine",
+                "Les prix des actions montent encore plus",
+                "Les banques deviennent plus riches",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le krach de 1929 déclenche une immense crise économique mondiale : la Grande Dépression.",
+        },
+        "college": {
+            "prompt": "Quelle crise économique majeure le krach de 1929 a-t-il déclenchée ?",
+            "options": ["La Grande Dépression", "La crise du pétrole", "L'hyperinflation allemande", "La crise des subprimes"],
+            "correct_index": 0,
+            "fun_fact": "Le krach de Wall Street en octobre 1929 précipite la Grande Dépression, la pire crise économique du XXe siècle.",
+        },
+        "lycee": {
+            "prompt": "Comment appelle-t-on les deux jours de chute vertigineuse qui suivent le « jeudi noir » ?",
+            "options": ["« Lundi noir » et « mardi noir »", "« Vendredi rouge » et « samedi rouge »", "Les « jours de panique »", "Le « grand effondrement »"],
+            "correct_index": 0,
+            "fun_fact": "Les 28 et 29 octobre 1929, surnommés « lundi noir » et « mardi noir », voient de nouvelles chutes vertigineuses.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel rôle joue le crédit boursier (« buying on margin ») dans l'ampleur du krach de 1929 ?",
+            "options": [
+                "Il a amplifié la spéculation et la chute, les investisseurs empruntant pour acheter des actions",
+                "Il a protégé les petits investisseurs de la chute",
+                "Il n'existait pas encore en 1929",
+                "Il concernait uniquement les banques, pas les particuliers",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Des investisseurs empruntant massivement, parfois avec seulement 10 % d'apport personnel, pour acheter des actions ont amplifié la chute.",
+        },
+    },
+    "pearl-harbor-consequence": {
+        "enfant": {
+            "prompt": "Que se passe-t-il le lendemain de l'attaque de Pearl Harbor ?",
+            "options": [
+                "Les États-Unis déclarent la guerre au Japon",
+                "Le Japon présente ses excuses",
+                "Les États-Unis quittent la guerre",
+                "Rien ne se passe",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le président Roosevelt appelle ce jour « une date qui restera dans l'infamie ».",
+        },
+        "college": {
+            "prompt": "Quelle a été la conséquence directe de l'attaque de Pearl Harbor ?",
+            "options": ["Le Japon a capitulé", "Les États-Unis sont entrés en guerre", "La France a été libérée", "L'URSS a rejoint l'Axe"],
+            "correct_index": 1,
+            "fun_fact": "Le lendemain de l'attaque du 7 décembre 1941, les États-Unis déclarent la guerre au Japon.",
+        },
+        "lycee": {
+            "prompt": "Pourquoi les porte-avions américains échappent-ils à la destruction à Pearl Harbor ?",
+            "options": [
+                "Ils étaient absents ce jour-là",
+                "Ils étaient trop bien protégés",
+                "Les Japonais les ont épargnés volontairement",
+                "Ils avaient été prévenus de l'attaque",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Les porte-avions américains, absents ce jour-là, échappent à la destruction — un hasard stratégiquement décisif pour la suite de la guerre.",
+        },
+        "etudiant_adulte": {
+            "prompt": "En quoi l'attaque de Pearl Harbor constitue-t-elle une erreur stratégique japonaise malgré son succès tactique ?",
+            "options": [
+                "L'industrie américaine reconstruit sa flotte bien plus vite que le Japon ne pouvait l'anticiper",
+                "Le Japon n'a coulé aucun navire américain",
+                "Les États-Unis étaient déjà en guerre avant l'attaque",
+                "L'attaque a été annulée à la dernière minute",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Malgré la destruction de plusieurs cuirassés, l'industrie américaine reconstruit sa flotte à un rythme que le Japon n'avait pas anticipé.",
+        },
+    },
+    "hiroshima-date": {
+        "enfant": {
+            "prompt": "Que se passe-t-il trois jours après la bombe sur Hiroshima ?",
+            "options": [
+                "Une deuxième bombe tombe sur Nagasaki",
+                "Le Japon gagne la guerre",
+                "La guerre s'arrête immédiatement",
+                "Hiroshima est reconstruite",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le 9 août 1945, une seconde bombe atomique frappe la ville de Nagasaki.",
+        },
+        "college": {
+            "prompt": "En quelle année la bombe atomique a-t-elle été larguée sur Hiroshima ?",
+            "options": ["1943", "1944", "1945", "1946"],
+            "correct_index": 2,
+            "fun_fact": "Le 6 août 1945, le bombardier Enola Gay largue la première bombe atomique de l'histoire militaire sur Hiroshima.",
+        },
+        "lycee": {
+            "prompt": "Comment s'appelle la bombe atomique larguée sur Hiroshima ?",
+            "options": ["Little Boy", "Fat Man", "Trinity", "Manhattan"],
+            "correct_index": 0,
+            "fun_fact": "La bombe « Little Boy » est larguée sur Hiroshima le 6 août 1945 à 8h15 du matin.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel événement militaire majeur survient entre les bombardements d'Hiroshima et de Nagasaki ?",
+            "options": [
+                "L'URSS déclare la guerre au Japon et envahit la Mandchourie",
+                "Le Japon capitule une première fois",
+                "Les États-Unis envahissent le Japon par voie terrestre",
+                "La Chine signe un armistice avec le Japon",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le 8 août, entre les deux bombardements, l'URSS déclare la guerre au Japon et envahit la Mandchourie.",
+        },
+    },
+    "victoire-europe-mois": {
+        "enfant": {
+            "prompt": "Où meurt Adolf Hitler, juste avant la fin de la guerre ?",
+            "options": [
+                "Dans son bunker à Berlin",
+                "En prison",
+                "Dans un avion",
+                "En Espagne",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Hitler se suicide dans son bunker le 30 avril 1945, alors que Berlin est encerclée.",
+        },
+        "college": {
+            "prompt": "En quel mois la capitulation allemande de 1945 a-t-elle été signée ?",
+            "options": ["Janvier", "Mai", "Août", "Décembre"],
+            "correct_index": 1,
+            "fun_fact": "L'Allemagne capitule le 8 mai 1945, une date encore commémorée chaque année en France.",
+        },
+        "lycee": {
+            "prompt": "Pourquoi une seconde cérémonie de capitulation a-t-elle lieu à Berlin après celle de Reims ?",
+            "options": [
+                "Staline la juge insuffisamment solennelle et l'exige sur le sol allemand",
+                "Les Allemands ont refusé de signer à Reims",
+                "Le général Eisenhower était absent le 7 mai",
+                "Les Français exigeaient leur propre cérémonie",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Staline, jugeant la cérémonie de Reims insuffisamment solennelle, exige une seconde signature à Berlin.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la date de commémoration de la victoire diffère-t-elle entre l'Occident (8 mai) et la Russie (9 mai) ?",
+            "options": [
+                "En raison du décalage horaire de la signature nocturne à Berlin",
+                "La Russie utilise un calendrier différent",
+                "La capitulation a été signée deux fois à des dates différentes",
+                "C'est une erreur historique jamais corrigée",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La signature nocturne à Berlin-Karlshorst tombe après minuit heure de Moscou, d'où le décalage entre le 8 et le 9 mai.",
+        },
+    },
+    "gagarine-duree": {
+        "enfant": {
+            "prompt": "Qu'a accompli Youri Gagarine le 12 avril 1961 ?",
+            "options": ["Le premier vol spatial habité", "Le premier alunissage", "La première sortie dans l'espace", "Le premier satellite artificiel"],
+            "correct_index": 0,
+            "fun_fact": "En 108 minutes, Gagarine devient le premier être humain à voyager dans l'espace.",
+        },
+        "college": {
+            "prompt": "Combien de temps dure le vol de Gagarine autour de la Terre ?",
+            "options": ["108 minutes", "24 heures", "8 jours", "3 heures"],
+            "correct_index": 0,
+            "fun_fact": "Gagarine effectue une orbite complète autour de la Terre en 108 minutes, à bord de Vostok 1.",
+        },
+        "lycee": {
+            "prompt": "Comment Gagarine revient-il sur Terre après son vol ?",
+            "options": ["Il s'éjecte et atterrit en parachute", "Le vaisseau se pose comme un avion", "Il amerrit dans l'océan", "Un autre vaisseau vient le récupérer en orbite"],
+            "correct_index": 0,
+            "fun_fact": "Le vaisseau redescend et Gagarine s'éjecte pour atterrir en parachute près de la Volga, comme prévu par la procédure soviétique.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi les commandes de vol de Vostok 1 sont-elles verrouillées pendant le vol de Gagarine ?",
+            "options": [
+                "Par prudence médicale, les effets de l'apesanteur sur le jugement humain étant alors inconnus",
+                "Gagarine n'était pas qualifié pour piloter",
+                "Le vaisseau n'avait pas de commandes manuelles",
+                "Les ingénieurs craignaient un sabotage",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le vol est entièrement automatisé par prudence médicale, un code transmis depuis le sol pouvant débloquer les commandes en cas de besoin.",
         },
     },
 }
