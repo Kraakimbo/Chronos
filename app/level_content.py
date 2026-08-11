@@ -1139,6 +1139,810 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "prise-des-tuileries": {
+        "enfant": {
+            "summary": (
+                "Le 10 août 1792, les Parisiens attaquent le palais où "
+                "vit le roi Louis XVI. C'est presque la fin du règne "
+                "des rois en France."
+            ),
+            "before": (
+                "La France est en guerre contre l'Autriche et la "
+                "Prusse. Les gens ne font plus confiance au roi, qui "
+                "avait essayé de fuir le pays."
+            ),
+            "during": (
+                "Une foule marche vers le palais des Tuileries. Louis "
+                "XVI part se cacher près de l'Assemblée, laissant ses "
+                "gardes suisses se battre seuls."
+            ),
+            "after": (
+                "Le roi perd son pouvoir. Quelques semaines plus tard, "
+                "la France devient une République, un pays sans roi."
+            ),
+            "narrative": [
+                "Le matin du 10 août 1792, des soldats venus de "
+                "plusieurs villes de France marchent vers le palais des "
+                "Tuileries, à Paris, où vit le roi.",
+                "Louis XVI a peur et quitte le palais pour se réfugier "
+                "près de l'Assemblée. Ses gardes suisses restent seuls "
+                "pour défendre le palais et se battent contre la foule.",
+                "Le palais est pris. Le roi perd son pouvoir : "
+                "l'Assemblée décide de le suspendre. Peu après, la "
+                "France devient une République.",
+            ],
+            "why_it_matters": (
+                "Ce jour-là marque la fin du pouvoir des rois en "
+                "France depuis mille ans. Peu après, la République est "
+                "proclamée."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'insurrection parisienne prend d'assaut le palais des "
+                "Tuileries, met fin à la monarchie de fait et précipite "
+                "la chute de Louis XVI."
+            ),
+            "before": (
+                "La France est en guerre contre l'Autriche et la "
+                "Prusse, et la confiance dans le roi s'est effondrée "
+                "après sa tentative de fuite manquée à Varennes en "
+                "1791."
+            ),
+            "during": (
+                "Des bataillons venus de plusieurs villes de France "
+                "marchent avec les Parisiens vers les Tuileries. Louis "
+                "XVI se réfugie auprès de l'Assemblée, laissant les "
+                "Gardes suisses défendre seuls le palais."
+            ),
+            "after": (
+                "L'Assemblée suspend le roi de ses fonctions. Six "
+                "semaines plus tard, une nouvelle assemblée, la "
+                "Convention, proclame la première République "
+                "française."
+            ),
+            "narrative": [
+                "Au matin du 10 août 1792, des bataillons de gardes "
+                "nationaux venus notamment de Marseille et de Bretagne "
+                "convergent avec les Parisiens vers le palais des "
+                "Tuileries, résidence du roi depuis 1789.",
+                "Craignant pour sa vie, Louis XVI quitte le palais avec "
+                "sa famille pour se réfugier auprès de l'Assemblée. Les "
+                "Gardes suisses restés sur place affrontent seuls "
+                "l'assaut : les combats font près d'un millier de "
+                "morts.",
+                "Le palais est pillé et pris par les insurgés. "
+                "L'Assemblée vote la suspension du roi et convoque une "
+                "Convention nationale élue au suffrage universel "
+                "masculin.",
+            ],
+            "why_it_matters": (
+                "Le 10 août 1792 met fin, dans les faits, à un "
+                "millénaire de monarchie en France et ouvre la voie à "
+                "la proclamation de la République quelques semaines "
+                "plus tard."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'insurrection parisienne prend d'assaut le palais des "
+                "Tuileries, met fin à la monarchie de fait et précipite "
+                "la chute de Louis XVI."
+            ),
+            "before": (
+                "La patrie est déclarée en danger face à l'invasion "
+                "prussienne et autrichienne annoncée par le manifeste "
+                "de Brunswick. La confiance dans la loyauté du roi "
+                "s'effondre après sa fuite manquée à Varennes en 1791."
+            ),
+            "during": (
+                "Des sections parisiennes et des fédérés venus de "
+                "province marchent sur les Tuileries. Louis XVI se "
+                "réfugie auprès de l'Assemblée législative, laissant "
+                "les Gardes suisses défendre seuls le palais, sans "
+                "ordre clair de se retirer."
+            ),
+            "after": (
+                "L'Assemblée suspend le roi de ses fonctions. Six "
+                "semaines plus tard, la Convention nouvellement élue "
+                "proclame la première République française, le 21 "
+                "septembre 1792."
+            ),
+            "narrative": [
+                "Au matin du 10 août 1792, des bataillons de gardes "
+                "nationaux fédérés, venus notamment de Marseille et de "
+                "Bretagne, convergent avec les sections révolutionnaires "
+                "parisiennes vers le palais des Tuileries, résidence du "
+                "roi depuis son retour forcé de Versailles en 1789.",
+                "Craignant pour sa vie, Louis XVI quitte le palais avec "
+                "sa famille pour se placer sous la protection de "
+                "l'Assemblée législative toute proche. Les quelque neuf "
+                "cents Gardes suisses restés sur place, sans ordre "
+                "clair de se retirer, affrontent seuls l'assaut : les "
+                "combats font près d'un millier de morts, pour "
+                "l'essentiel des gardes suisses.",
+                "Le palais est pillé, les insurgés s'emparent des "
+                "lieux. Face au fait accompli, l'Assemblée législative "
+                "vote la suspension du roi de ses fonctions et convoque "
+                "une Convention nationale élue au suffrage universel "
+                "masculin.",
+            ],
+            "why_it_matters": (
+                "Le 10 août 1792 met fin, dans les faits, à un "
+                "millénaire de monarchie en France. Il ouvre la voie à "
+                "la proclamation de la République le 21 septembre 1792 "
+                "et, quelques mois plus tard, au procès et à "
+                "l'exécution de Louis XVI."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'insurrection parisienne, appuyée par des fédérés "
+                "venus de province, prend d'assaut le palais des "
+                "Tuileries le 10 août 1792, met fin à la monarchie de "
+                "fait et précipite la chute puis l'exécution de Louis "
+                "XVI."
+            ),
+            "before": (
+                "La patrie est déclarée en danger le 11 juillet 1792 "
+                "face à l'invasion prussienne et autrichienne, "
+                "aggravée par le manifeste de Brunswick menaçant Paris "
+                "de représailles en cas d'atteinte à la famille royale "
+                "— un texte qui produit l'effet inverse de celui "
+                "recherché. La confiance dans la loyauté du roi, déjà "
+                "ébranlée par sa fuite manquée à Varennes en juin 1791, "
+                "s'effondre définitivement."
+            ),
+            "during": (
+                "Des sections parisiennes radicalisées et des "
+                "bataillons de fédérés, notamment marseillais, "
+                "marchent sur les Tuileries dans la nuit du 9 au 10 "
+                "août. Louis XVI, sur les conseils de son entourage, se "
+                "réfugie auprès de l'Assemblée législative, laissant "
+                "environ neuf cents Gardes suisses défendre seuls le "
+                "palais sans ordre clair de se retirer."
+            ),
+            "after": (
+                "L'Assemblée législative, dépassée par les événements, "
+                "vote la suspension du roi de ses fonctions et le fait "
+                "interner au Temple. Six semaines plus tard, la "
+                "Convention nouvellement élue au suffrage universel "
+                "masculin proclame la première République française, "
+                "le 21 septembre 1792."
+            ),
+            "narrative": [
+                "Au matin du 10 août 1792, des bataillons de gardes "
+                "nationaux fédérés, venus notamment de Marseille et de "
+                "Bretagne, convergent avec les sections révolutionnaires "
+                "parisiennes vers le palais des Tuileries, résidence du "
+                "roi depuis son retour forcé de Versailles en octobre "
+                "1789.",
+                "Craignant pour sa vie, Louis XVI quitte le palais avec "
+                "sa famille pour se placer sous la protection de "
+                "l'Assemblée législative toute proche. Les quelque neuf "
+                "cents Gardes suisses restés sur place, sans ordre "
+                "clair de se retirer transmis à temps, affrontent seuls "
+                "l'assaut : les combats font près d'un millier de "
+                "morts, pour l'essentiel des gardes suisses massacrés "
+                "après leur reddition.",
+                "Le palais est pillé, les insurgés s'emparent des "
+                "lieux. Face au fait accompli, l'Assemblée législative, "
+                "désormais sous la pression de la rue, vote la "
+                "suspension du roi de ses fonctions et convoque au "
+                "suffrage universel masculin une Convention nationale "
+                "chargée de doter le pays d'une nouvelle constitution.",
+            ],
+            "why_it_matters": (
+                "Le 10 août 1792 met fin, dans les faits, à un "
+                "millénaire de monarchie en France et marque un "
+                "tournant vers une phase plus radicale de la "
+                "Révolution. Il ouvre la voie à la proclamation de la "
+                "République le 21 septembre 1792 et, quelques mois "
+                "plus tard, au procès et à l'exécution de Louis XVI en "
+                "janvier 1793."
+            ),
+        },
+    },
+    "chute-mur-berlin": {
+        "enfant": {
+            "summary": (
+                "Le 9 novembre 1989, le mur qui séparait Berlin en deux "
+                "depuis presque 30 ans tombe. Les gens fêtent ça toute "
+                "la nuit."
+            ),
+            "before": (
+                "Depuis des mois, des gens manifestent pacifiquement en "
+                "Allemagne de l'Est pour demander plus de liberté."
+            ),
+            "during": (
+                "Un porte-parole annonce, un peu par erreur, que les "
+                "gens peuvent voyager librement tout de suite. Des "
+                "milliers de Berlinois se précipitent vers le mur."
+            ),
+            "after": (
+                "Les gardes laissent passer la foule. Les gens montent "
+                "sur le mur et commencent à le casser à coups de "
+                "marteau."
+            ),
+            "narrative": [
+                "Le soir du 9 novembre 1989, un porte-parole du "
+                "gouvernement est-allemand annonce, un peu par erreur, "
+                "que les habitants peuvent désormais voyager librement, "
+                "« immédiatement ».",
+                "En quelques heures, des milliers de Berlinois de l'Est "
+                "se pressent devant le mur. Les gardes, surpris, finissent "
+                "par les laisser passer.",
+                "Des foules de Berlinois de l'Est et de l'Ouest se "
+                "retrouvent enfin. Certains montent sur le mur, d'autres "
+                "commencent déjà à le casser.",
+            ],
+            "why_it_matters": (
+                "La chute du mur marque la fin de la séparation de "
+                "l'Allemagne en deux pays, et bientôt la fin de la "
+                "guerre froide en Europe."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'annonce inattendue de l'ouverture des frontières "
+                "est-allemandes provoque l'effondrement du mur de "
+                "Berlin, symbole de la guerre froide depuis 1961."
+            ),
+            "before": (
+                "Des mois de manifestations pacifiques en Allemagne de "
+                "l'Est, et l'assouplissement progressif du bloc "
+                "soviétique sous Gorbatchev, fragilisent un régime "
+                "est-allemand de plus en plus isolé."
+            ),
+            "during": (
+                "Une annonce gouvernementale mal formulée laisse croire "
+                "à une ouverture immédiate des frontières. Des milliers "
+                "de Berlinois affluent vers les points de passage, "
+                "submergeant des gardes sans instructions claires."
+            ),
+            "after": (
+                "Le mur est ouvert dans la nuit, puis peu à peu "
+                "démantelé par la foule à coups de marteau, ouvrant la "
+                "voie à la réunification allemande en octobre 1990."
+            ),
+            "narrative": [
+                "Le 9 novembre 1989 au soir, le porte-parole du "
+                "gouvernement est-allemand Günter Schabowski annonce en "
+                "conférence de presse, de façon confuse, que les "
+                "citoyens de RDA peuvent désormais voyager librement "
+                "« immédiatement, sans délai ».",
+                "En quelques heures, des milliers de Berlinois de l'Est "
+                "se pressent aux points de passage du mur. Débordés et "
+                "sans instructions claires, les gardes-frontières "
+                "finissent par ouvrir les barrières.",
+                "Des foules de Berlinois de l'Est et de l'Ouest se "
+                "retrouvent, certains montent sur le mur, d'autres "
+                "commencent à le fissurer à coups de marteau. Les "
+                "scènes de liesse sont retransmises dans le monde "
+                "entier.",
+            ],
+            "why_it_matters": (
+                "La chute du mur de Berlin marque symboliquement la fin "
+                "de la guerre froide en Europe, et ouvre la voie à la "
+                "réunification allemande moins d'un an plus tard."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'annonce inattendue de l'ouverture des frontières "
+                "est-allemandes provoque l'effondrement du mur de "
+                "Berlin, symbole de la guerre froide depuis 1961."
+            ),
+            "before": (
+                "Des mois de manifestations pacifiques en Allemagne de "
+                "l'Est (mouvement « Wir sind das Volk »), l'ouverture "
+                "de la frontière hongroise à l'été 1989 et "
+                "l'assouplissement du bloc soviétique sous Gorbatchev "
+                "fragilisent gravement le régime est-allemand."
+            ),
+            "during": (
+                "Une annonce gouvernementale mal formulée par Günter "
+                "Schabowski laisse croire à une ouverture immédiate des "
+                "frontières. Des milliers de Berlinois affluent vers "
+                "les points de passage, notamment Bornholmer Straße, "
+                "submergeant des gardes sans instructions claires."
+            ),
+            "after": (
+                "Le mur est ouvert vers 23h30 puis peu à peu démantelé "
+                "par la foule à coups de marteau et de burin, ouvrant "
+                "la voie à la réunification allemande le 3 octobre "
+                "1990."
+            ),
+            "narrative": [
+                "Le 9 novembre 1989 au soir, le porte-parole du "
+                "gouvernement est-allemand Günter Schabowski annonce en "
+                "conférence de presse, de façon confuse, que les "
+                "citoyens de RDA peuvent désormais voyager librement "
+                "« immédiatement, sans délai ».",
+                "En quelques heures, des milliers de Berlinois de l'Est "
+                "se pressent aux points de passage du mur, notamment à "
+                "Bornholmer Straße. Débordés et sans instructions "
+                "claires, les gardes-frontières finissent par ouvrir "
+                "les barrières vers 23h30.",
+                "Des foules de Berlinois de l'Est et de l'Ouest se "
+                "retrouvent, certains montent sur le mur, d'autres "
+                "commencent à le fissurer à coups de marteau et de "
+                "burin. Les scènes de liesse sont retransmises dans le "
+                "monde entier en direct.",
+            ],
+            "why_it_matters": (
+                "La chute du mur de Berlin marque symboliquement la fin "
+                "de la guerre froide et du rideau de fer en Europe, et "
+                "ouvre la voie à la réunification allemande moins d'un "
+                "an plus tard."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'annonce mal formulée, en conférence de presse, de "
+                "l'ouverture des frontières est-allemandes provoque en "
+                "quelques heures l'effondrement du mur de Berlin, "
+                "symbole du rideau de fer depuis 1961, dans un des "
+                "moments les plus filmés de l'histoire contemporaine."
+            ),
+            "before": (
+                "Des mois de manifestations pacifiques du lundi à "
+                "Leipzig, l'ouverture de la frontière hongroise à l'été "
+                "1989 qui permet à des milliers d'Est-Allemands de fuir "
+                "vers l'Ouest via l'Autriche, et l'assouplissement du "
+                "bloc soviétique sous l'impulsion de la Glasnost de "
+                "Gorbatchev fragilisent gravement un régime "
+                "est-allemand de plus en plus isolé, y compris de son "
+                "propre parrain soviétique."
+            ),
+            "during": (
+                "Lors d'une conférence de presse retransmise en "
+                "direct, le porte-parole du Politburo Günter "
+                "Schabowski, mal informé des modalités exactes d'une "
+                "nouvelle réglementation, répond à une question d'un "
+                "journaliste italien que la liberté de circulation "
+                "entre en vigueur « immédiatement, sans délai ». Des "
+                "milliers de Berlinois affluent en quelques heures vers "
+                "les points de passage, notamment Bornholmer Straße, "
+                "submergeant des gardes-frontières sans instructions "
+                "claires de leur hiérarchie."
+            ),
+            "after": (
+                "Face à l'ampleur de la foule et à l'absence d'ordre de "
+                "tirer, le commandant du poste de Bornholmer Straße, "
+                "Harald Jäger, prend seul la décision d'ouvrir les "
+                "barrières vers 23h30. Le mur est ensuite peu à peu "
+                "démantelé par des « pics du mur » (Mauerspechte), "
+                "ouvrant la voie à la réunification allemande, "
+                "officialisée le 3 octobre 1990."
+            ),
+            "narrative": [
+                "Le 9 novembre 1989 au soir, le porte-parole du "
+                "gouvernement est-allemand Günter Schabowski annonce en "
+                "conférence de presse, de façon confuse et sans avoir "
+                "pleinement pris connaissance du texte qu'on venait de "
+                "lui remettre, que les citoyens de RDA peuvent "
+                "désormais voyager librement « immédiatement, sans "
+                "délai ».",
+                "En quelques heures, des milliers de Berlinois de l'Est "
+                "se pressent aux points de passage du mur, notamment à "
+                "Bornholmer Straße. Débordés et sans instructions "
+                "claires de Berlin-Est, les gardes-frontières, menés "
+                "sur place par le lieutenant-colonel Harald Jäger, "
+                "finissent par ouvrir les barrières vers 23h30, faute "
+                "d'alternative pour contenir la foule sans recourir à "
+                "la force.",
+                "Des foules de Berlinois de l'Est et de l'Ouest se "
+                "retrouvent, certains montent sur le mur, d'autres "
+                "commencent à le fissurer à coups de marteau et de "
+                "burin — les « Mauerspechte », ou « pics du mur ». Les "
+                "scènes de liesse sont retransmises dans le monde "
+                "entier en direct, faisant de cette nuit l'un des "
+                "événements les plus filmés du XXe siècle.",
+            ],
+            "why_it_matters": (
+                "La chute du mur de Berlin marque symboliquement la fin "
+                "de la guerre froide et du rideau de fer en Europe. "
+                "Loin d'être planifiée par les autorités est-allemandes "
+                "— qui envisageaient un assouplissement progressif et "
+                "encadré des voyages, non une ouverture immédiate — "
+                "elle illustre la manière dont un malentendu "
+                "bureaucratique, amplifié par la couverture médiatique "
+                "en direct, peut précipiter l'effondrement d'un régime, "
+                "et ouvre la voie à la réunification allemande moins "
+                "d'un an plus tard."
+            ),
+        },
+    },
+    "debarquement-normandie": {
+        "enfant": {
+            "summary": (
+                "Le 6 juin 1944, des soldats américains, britanniques "
+                "et canadiens débarquent sur les plages de Normandie "
+                "pour libérer la France de l'armée allemande."
+            ),
+            "before": (
+                "Depuis des années, les Alliés préparent en secret ce "
+                "débarquement, en essayant de tromper les Allemands sur "
+                "le lieu exact."
+            ),
+            "during": (
+                "Des dizaines de milliers de soldats débarquent sur "
+                "cinq plages, avec l'aide de parachutistes largués la "
+                "nuit d'avant."
+            ),
+            "after": (
+                "Malgré de lourdes pertes, les Alliés réussissent à "
+                "s'installer en Normandie. C'est le début de la "
+                "libération de la France."
+            ),
+            "narrative": [
+                "Dans la nuit du 5 au 6 juin 1944, des milliers de "
+                "parachutistes sont largués en Normandie avant "
+                "l'attaque principale.",
+                "Au matin, des milliers de bateaux amènent des soldats "
+                "sur cinq plages. Les combats sont très durs, surtout "
+                "à Omaha Beach.",
+                "Le soir, les Alliés ont réussi à s'installer sur les "
+                "plages. C'est le début de la libération de la France, "
+                "occupée par l'Allemagne depuis 1940.",
+            ],
+            "why_it_matters": (
+                "Ce débarquement est un moment clé de la guerre : il "
+                "permet aux Alliés de libérer la France puis d'aider à "
+                "vaincre l'Allemagne nazie."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Les forces alliées débarquent sur les côtes "
+                "normandes lors de l'opération Overlord, la plus "
+                "grande invasion maritime de l'histoire."
+            ),
+            "before": (
+                "Après des années de préparation et de désinformation "
+                "pour tromper l'état-major allemand sur le lieu du "
+                "débarquement, les Alliés rassemblent une force "
+                "amphibie sans précédent."
+            ),
+            "during": (
+                "Près de 156 000 soldats alliés débarquent sur cinq "
+                "plages codées Utah, Omaha, Gold, Juno et Sword, "
+                "appuyés par des parachutistes largués dans la nuit."
+            ),
+            "after": (
+                "Malgré de lourdes pertes, notamment à Omaha Beach, les "
+                "Alliés établissent une tête de pont qui permettra la "
+                "libération de la France dans les mois suivants."
+            ),
+            "narrative": [
+                "Dans la nuit du 5 au 6 juin 1944, des milliers de "
+                "parachutistes américains et britanniques sont largués "
+                "derrière les lignes allemandes en Normandie.",
+                "À l'aube, une armada de plus de 5 000 navires appuie "
+                "le débarquement de troupes sur cinq plages. Les "
+                "combats sont particulièrement meurtriers à Omaha "
+                "Beach.",
+                "Malgré la résistance allemande, les têtes de pont sont "
+                "solidement établies en fin de journée, ouvrant un "
+                "second front décisif à l'ouest.",
+            ],
+            "why_it_matters": (
+                "Le débarquement de Normandie constitue un tournant "
+                "majeur de la Seconde Guerre mondiale, menant à la "
+                "libération de Paris en août 1944."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Les forces alliées débarquent sur les côtes normandes "
+                "lors de l'opération Overlord, la plus grande invasion "
+                "maritime de l'histoire, ouvrant un second front "
+                "décisif contre l'Allemagne nazie."
+            ),
+            "before": (
+                "Après des années de préparation et une vaste campagne "
+                "de désinformation (opération Fortitude) pour tromper "
+                "l'état-major allemand sur le lieu du débarquement, les "
+                "Alliés rassemblent une force amphibie sans précédent."
+            ),
+            "during": (
+                "Près de 156 000 soldats alliés débarquent sur cinq "
+                "plages codées Utah, Omaha, Gold, Juno et Sword, "
+                "appuyés par des parachutistes largués dans la nuit et "
+                "une flotte de plus de 5 000 navires."
+            ),
+            "after": (
+                "Malgré de lourdes pertes, notamment à Omaha Beach, les "
+                "Alliés établissent une tête de pont solide qui "
+                "permettra la libération de Paris dès le mois d'août "
+                "1944."
+            ),
+            "narrative": [
+                "Dans la nuit du 5 au 6 juin 1944, des milliers de "
+                "parachutistes américains et britanniques sont largués "
+                "derrière les lignes allemandes en Normandie, chargés "
+                "de sécuriser des points stratégiques avant l'assaut "
+                "principal.",
+                "À l'aube, une armada de plus de 5 000 navires appuie "
+                "le débarquement de troupes américaines, britanniques, "
+                "canadiennes et de la France libre sur cinq plages. Les "
+                "combats sont particulièrement meurtriers à Omaha "
+                "Beach, où les défenses allemandes infligent de lourdes "
+                "pertes.",
+                "Malgré la résistance allemande, les têtes de pont sont "
+                "solidement établies en fin de journée. Cette opération "
+                "Overlord ouvre un second front décisif à l'ouest, "
+                "tandis que l'Armée rouge repousse déjà les forces "
+                "allemandes à l'est.",
+            ],
+            "why_it_matters": (
+                "Le débarquement de Normandie constitue un tournant "
+                "majeur de la Seconde Guerre mondiale en Europe de "
+                "l'Ouest, menant à la libération de Paris en août 1944 "
+                "et à la capitulation allemande moins d'un an plus "
+                "tard."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Les forces alliées débarquent sur les côtes normandes "
+                "lors de l'opération Overlord, la plus grande invasion "
+                "maritime de l'histoire, ouvrant un second front "
+                "décisif à l'ouest alors que l'Armée rouge progresse "
+                "déjà à l'est."
+            ),
+            "before": (
+                "Après des années de préparation logistique colossale "
+                "et une vaste campagne de désinformation (opération "
+                "Fortitude, faisant croire à un débarquement dans le "
+                "Pas-de-Calais), les Alliés rassemblent une force "
+                "amphibie sans précédent, retardée d'un jour par les "
+                "conditions météorologiques."
+            ),
+            "during": (
+                "Près de 156 000 soldats alliés débarquent le 6 juin "
+                "sur cinq plages codées Utah, Omaha, Gold, Juno et "
+                "Sword, appuyés par plus de 23 000 parachutistes "
+                "largués dans la nuit et une flotte de plus de 5 000 "
+                "navires — la plus grande armada jamais réunie."
+            ),
+            "after": (
+                "Malgré de très lourdes pertes, notamment à Omaha "
+                "Beach où les défenses allemandes tiennent presque "
+                "l'assaut en échec, les Alliés établissent une tête de "
+                "pont solide qui permettra, après la percée d'Avranches "
+                "en juillet, la libération de Paris dès le 25 août "
+                "1944."
+            ),
+            "narrative": [
+                "Dans la nuit du 5 au 6 juin 1944, après un report "
+                "d'un jour dû à la météo, des milliers de "
+                "parachutistes américains et britanniques sont largués "
+                "derrière les lignes allemandes en Normandie, chargés "
+                "de sécuriser des points stratégiques avant l'assaut "
+                "principal.",
+                "À l'aube, une armada de plus de 5 000 navires appuie "
+                "le débarquement de troupes américaines, britanniques, "
+                "canadiennes et de la France libre sur cinq plages. Les "
+                "combats sont particulièrement meurtriers à Omaha "
+                "Beach, où les défenses allemandes du mur de l'Atlantique "
+                "infligent de très lourdes pertes aux premières vagues.",
+                "Malgré la résistance allemande, les têtes de pont sont "
+                "solidement établies en fin de journée, au prix "
+                "d'environ 10 000 pertes alliées. Cette opération "
+                "Overlord ouvre un second front décisif à l'ouest, "
+                "tandis que l'Armée rouge repousse déjà les forces "
+                "allemandes à l'est, prenant le Reich en étau.",
+            ],
+            "why_it_matters": (
+                "Le débarquement de Normandie constitue le tournant "
+                "logistique et militaire majeur de la Seconde Guerre "
+                "mondiale en Europe de l'Ouest : il force l'Allemagne "
+                "nazie à combattre simultanément sur deux fronts "
+                "majeurs, menant à la libération de Paris en août 1944 "
+                "puis à la capitulation allemande moins d'un an plus "
+                "tard, en mai 1945."
+            ),
+        },
+    },
+    "armistice-1918": {
+        "enfant": {
+            "summary": (
+                "Le 11 novembre 1918, la guerre entre la France et "
+                "l'Allemagne s'arrête enfin, après plus de quatre ans "
+                "de combats."
+            ),
+            "before": (
+                "L'Allemagne est épuisée et perd ses alliés les uns "
+                "après les autres. Elle doit accepter d'arrêter la "
+                "guerre."
+            ),
+            "during": (
+                "Des représentants allemands signent l'arrêt des "
+                "combats dans un wagon de train, en France, tôt le "
+                "matin."
+            ),
+            "after": (
+                "Les combats s'arrêtent à 11 heures. Cette date devient "
+                "un jour de commémoration important en France."
+            ),
+            "narrative": [
+                "À l'automne 1918, l'Allemagne, épuisée par la guerre, "
+                "doit demander l'arrêt des combats.",
+                "Dans la nuit, des représentants allemands rencontrent "
+                "le maréchal Foch dans un wagon de train, en forêt de "
+                "Compiègne, pour signer l'armistice.",
+                "L'armistice est signé tôt le matin et les combats "
+                "s'arrêtent à 11 heures précises, après plus de quatre "
+                "ans d'une guerre terrible.",
+            ],
+            "why_it_matters": (
+                "Cette date marque la fin de la Première Guerre "
+                "mondiale. Chaque année, le 11 novembre, la France se "
+                "souvient de cet événement."
+            ),
+        },
+        "college": {
+            "summary": (
+                "La signature de l'armistice dans un wagon-restaurant "
+                "en forêt de Compiègne met fin aux combats de la "
+                "Première Guerre mondiale."
+            ),
+            "before": (
+                "Épuisée, l'Allemagne voit ses alliés austro-hongrois "
+                "et ottomans capituler les uns après les autres et fait "
+                "face à des troubles révolutionnaires internes."
+            ),
+            "during": (
+                "Une délégation allemande signe l'armistice avec les "
+                "Alliés dans le wagon du maréchal Foch, à Rethondes, "
+                "tôt le matin du 11 novembre."
+            ),
+            "after": (
+                "Les combats cessent à 11h, heure symbolique du "
+                "« onzième jour du onzième mois à la onzième heure ». "
+                "Le traité de paix définitif sera signé à Versailles en "
+                "1919."
+            ),
+            "narrative": [
+                "À l'automne 1918, l'Allemagne, épuisée et privée du "
+                "soutien de ses alliés, doit se résoudre à demander un "
+                "armistice face à l'avancée alliée sur le front "
+                "occidental.",
+                "Dans la nuit du 10 au 11 novembre, une délégation "
+                "allemande négocie les conditions de cessation des "
+                "hostilités avec le maréchal Ferdinand Foch, dans un "
+                "wagon-restaurant en forêt de Compiègne.",
+                "L'armistice est signé à 5h15 du matin et entre en "
+                "vigueur à 11 heures précises, mettant fin à plus de "
+                "quatre années d'une guerre qui a fait environ 10 "
+                "millions de morts militaires.",
+            ],
+            "why_it_matters": (
+                "L'armistice du 11 novembre 1918 met fin à la Première "
+                "Guerre mondiale et devient une date de commémoration "
+                "nationale dans de nombreux pays."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "La signature de l'armistice dans un wagon-restaurant "
+                "en forêt de Compiègne met fin aux combats de la "
+                "Première Guerre mondiale."
+            ),
+            "before": (
+                "Épuisée, l'Allemagne voit ses alliés austro-hongrois "
+                "et ottomans capituler les uns après les autres à "
+                "l'automne 1918, tandis que des troubles révolutionnaires "
+                "éclatent à l'intérieur du pays, notamment la mutinerie "
+                "de la flotte à Kiel."
+            ),
+            "during": (
+                "Une délégation allemande, conduite par le politicien "
+                "Matthias Erzberger, signe l'armistice avec les Alliés "
+                "dans le wagon du maréchal Foch, à Rethondes, tôt le "
+                "matin du 11 novembre."
+            ),
+            "after": (
+                "Les combats cessent à 11h, heure symbolique du "
+                "« onzième jour du onzième mois à la onzième heure ». "
+                "Le traité de paix définitif, qui redessinera la carte "
+                "de l'Europe, sera signé à Versailles en juin 1919."
+            ),
+            "narrative": [
+                "À l'automne 1918, l'Allemagne, épuisée et privée du "
+                "soutien de ses alliés austro-hongrois et ottomans, "
+                "doit se résoudre à demander un armistice face à "
+                "l'avancée alliée sur le front occidental.",
+                "Dans la nuit du 10 au 11 novembre, une délégation "
+                "allemande négocie les conditions de cessation des "
+                "hostilités avec le maréchal Ferdinand Foch, dans un "
+                "wagon-restaurant aménagé en salle de réunion, en forêt "
+                "de Compiègne.",
+                "L'armistice est signé à 5h15 du matin et entre en "
+                "vigueur à 11 heures précises. Sur tout le front, les "
+                "combats cessent progressivement, mettant fin à plus de "
+                "quatre années d'une guerre qui a fait environ 10 "
+                "millions de morts militaires.",
+            ],
+            "why_it_matters": (
+                "L'armistice du 11 novembre 1918 met fin à la Première "
+                "Guerre mondiale et devient une date de commémoration "
+                "nationale dans de nombreux pays. Le traité de "
+                "Versailles qui suivra en 1919 redessinera la carte de "
+                "l'Europe."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "La signature de l'armistice dans un wagon-restaurant "
+                "en forêt de Compiègne, à 5h15 du matin, met fin aux "
+                "combats de la Première Guerre mondiale après plus de "
+                "quatre ans et environ dix millions de morts "
+                "militaires."
+            ),
+            "before": (
+                "Épuisée par le blocus naval britannique et privée du "
+                "soutien de ses alliés austro-hongrois et ottomans, qui "
+                "capitulent successivement à l'automne 1918, l'Allemagne "
+                "fait face à des troubles révolutionnaires internes, "
+                "déclenchés par la mutinerie de la flotte de guerre à "
+                "Kiel début novembre."
+            ),
+            "during": (
+                "Une délégation civile allemande, conduite par le "
+                "politicien centriste Matthias Erzberger — un choix "
+                "délibéré de l'état-major pour ne pas endosser la "
+                "défaite militairement —, négocie et signe l'armistice "
+                "avec les Alliés dans le wagon du maréchal Foch, à "
+                "Rethondes, tôt le matin du 11 novembre."
+            ),
+            "after": (
+                "Les combats cessent à 11h, heure symbolique du "
+                "« onzième jour du onzième mois à la onzième heure ». "
+                "Le traité de paix définitif, signé à Versailles en "
+                "juin 1919 et imposant à l'Allemagne de lourdes "
+                "réparations, redessinera profondément la carte de "
+                "l'Europe et alimentera durablement le ressentiment "
+                "allemand."
+            ),
+            "narrative": [
+                "À l'automne 1918, l'Allemagne, épuisée par le blocus "
+                "naval britannique et privée du soutien de ses alliés "
+                "austro-hongrois et ottomans, doit se résoudre à "
+                "demander un armistice face à l'avancée alliée sur le "
+                "front occidental et à l'effondrement du moral à "
+                "l'arrière.",
+                "Dans la nuit du 10 au 11 novembre, une délégation "
+                "allemande conduite par Matthias Erzberger négocie les "
+                "conditions de cessation des hostilités avec le "
+                "maréchal Ferdinand Foch, dans un wagon-restaurant "
+                "aménagé en salle de réunion, en forêt de Compiègne — "
+                "un lieu choisi par Foch pour son isolement et sa "
+                "discrétion.",
+                "L'armistice est signé à 5h15 du matin et entre en "
+                "vigueur à 11 heures précises. Sur tout le front, les "
+                "combats cessent progressivement — non sans un dernier "
+                "bilan macabre, certains commandants ayant continué "
+                "les offensives jusqu'à la dernière minute — mettant "
+                "fin à plus de quatre années d'une guerre qui a fait "
+                "environ 10 millions de morts militaires et autant de "
+                "victimes civiles.",
+            ],
+            "why_it_matters": (
+                "L'armistice du 11 novembre 1918 met fin à la Première "
+                "Guerre mondiale et devient une date de commémoration "
+                "nationale dans de nombreux pays. Le traité de "
+                "Versailles qui suivra en 1919 redessinera la carte de "
+                "l'Europe et imposera à l'Allemagne des conditions dont "
+                "la dureté nourrira, selon de nombreux historiens, la "
+                "montée des ressentiments qui contribuera au "
+                "déclenchement de la Seconde Guerre mondiale deux "
+                "décennies plus tard."
+            ),
+        },
+    },
 }
 
 
