@@ -18,6 +18,34 @@ notes, including entries still marked "introuvable".
 # portrait as the fallback -- every event has at least one of the three.
 COVER_PRIORITY = ("tableau", "photo", "portrait")
 
+# Shown on the gallery cards and the dedicated per-image page: a short,
+# generic explanation of what that image type is.
+IMAGE_TYPE_INFO = {
+    "photo": {
+        "label": "Photo d'archive",
+        "blurb": (
+            "Un cliché pris à l'époque des faits — ou, quand la "
+            "photographie n'existait pas encore, une photo du site ou "
+            "d'un artefact lié aujourd'hui."
+        ),
+    },
+    "tableau": {
+        "label": "Tableau / gravure",
+        "blurb": (
+            "Une représentation artistique de la scène : peinture, "
+            "gravure ou illustration réalisée par un·e artiste, parfois "
+            "bien après les faits."
+        ),
+    },
+    "portrait": {
+        "label": "Portrait",
+        "blurb": (
+            "Le visage d'un personnage historique central de cet "
+            "événement, d'après un portrait peint ou photographié."
+        ),
+    },
+}
+
 
 def cover_image(slug):
     """Best available image for the event's cover banner, or None."""

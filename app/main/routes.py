@@ -5,7 +5,7 @@ from flask_login import current_user, login_required
 
 from app import db
 from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS
-from app.event_images import EVENT_IMAGES, cover_image
+from app.event_images import EVENT_IMAGES, IMAGE_TYPE_INFO, cover_image
 from app.events import (
     all_categories,
     events_list,
@@ -96,6 +96,25 @@ def event_detail(slug):
         years_ago=years_ago(event),
         images=EVENT_IMAGES.get(slug, {}),
         cover=cover_image(slug),
+        active_page="explorer",
+    )
+
+
+@main_bp.route("/evenement/<slug>/image/<image_type>")
+@login_required
+def event_image_detail(slug, image_type):
+    event = EVENTS.get(slug)
+    if event is None:
+        abort(404)
+    image = EVENT_IMAGES.get(slug, {}).get(image_type)
+    if image is None:
+        abort(404)
+    return render_template(
+        "pages/event_image_detail.html",
+        event=event,
+        image=image,
+        image_type=image_type,
+        type_info=IMAGE_TYPE_INFO[image_type],
         active_page="explorer",
     )
 

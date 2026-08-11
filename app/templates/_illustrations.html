@@ -36,6 +36,15 @@
 </svg>
 {% endmacro %}
 
+{% macro event_cover_photo(slug, css_class="w-full h-full") %}
+{% set cover = cover_image_for(slug) %}
+{% if cover %}
+<img src="{{ cover.url }}" alt="{{ cover.subject or slug }}" class="{{ css_class }} object-cover">
+{% else %}
+{{ event_illustration(slug, css_class) }}
+{% endif %}
+{% endmacro %}
+
 {% macro event_illustration(slug, css_class="w-full h-full") %}
 {% if slug == "prise-de-la-bastille" %}
 {{ bastille_illustration(css_class) }}
