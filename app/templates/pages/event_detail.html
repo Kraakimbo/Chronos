@@ -67,15 +67,6 @@
         </h2>
         <p class="font-body-base text-on-surface-variant leading-relaxed">{{ event.why_it_matters }}</p>
       </div>
-      {% if learn_more_url %}
-      <a href="{{ learn_more_url }}" target="_blank" rel="noopener" class="flex items-center justify-between gap-md bg-surface-container-low rounded-2xl p-lg border border-outline-variant/30 hover:bg-surface-container transition-colors">
-        <span class="flex items-center gap-sm font-body-bold text-on-surface">
-          <span class="material-symbols-outlined text-primary">menu_book</span>
-          Pour aller plus loin sur Wikipédia
-        </span>
-        <span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
-      </a>
-      {% endif %}
     </article>
 
     {% if event.characters or event.location_label %}
