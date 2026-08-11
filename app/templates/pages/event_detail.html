@@ -96,6 +96,34 @@
     {% endif %}
   </section>
 
+  {% if images %}
+  <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-2xl">
+    <h2 class="font-headline-md text-2xl text-on-surface mb-md">Galerie d'archives</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+      {% for type_key, type_label in [("photo", "Photo d'archive"), ("tableau", "Tableau / gravure"), ("portrait", "Portrait")] %}
+      {% if images[type_key] %}
+      <figure class="bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow">
+        <img src="{{ images[type_key].url }}" alt="{{ images[type_key].subject or type_label }}" loading="lazy" class="w-full h-56 object-cover bg-surface-container-high">
+        <figcaption class="p-md">
+          <p class="font-label-caps text-secondary text-[10px] tracking-widest uppercase mb-xs">{{ type_label }}</p>
+          {% if images[type_key].subject %}
+          <p class="font-body-bold text-on-surface text-sm">{{ images[type_key].subject }}</p>
+          {% endif %}
+          <p class="font-body-base text-on-surface-variant text-xs mt-xs">
+            {% if images[type_key].credit %}{{ images[type_key].credit }}{% endif %}
+            {% if images[type_key].licence %} · {{ images[type_key].licence }}{% endif %}
+          </p>
+        </figcaption>
+      </figure>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <p class="font-label-caps text-[10px] text-secondary/60 mt-md">
+      Images hébergées sur Wikimedia Commons, sourcées automatiquement — licences à revérifier avant usage en production.
+    </p>
+  </section>
+  {% endif %}
+
   <section class="max-w-[800px] mx-auto px-margin-mobile md:px-margin-desktop py-xl text-center">
     <a href="{{ url_for('main.quiz') }}" class="bg-primary-container text-on-primary-container font-body-bold w-full md:w-auto px-2xl py-4 rounded-full inline-flex items-center justify-center gap-sm hover:scale-[0.98] transition-all duration-200 ambient-shadow">
       <span class="material-symbols-outlined">psychology</span> Répondre au Quiz (+20 XP)

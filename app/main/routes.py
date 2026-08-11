@@ -5,6 +5,7 @@ from flask_login import current_user, login_required
 
 from app import db
 from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS
+from app.event_images import EVENT_IMAGES
 from app.events import (
     all_categories,
     events_list,
@@ -90,7 +91,11 @@ def event_detail(slug):
     if event is None:
         abort(404)
     return render_template(
-        "pages/event_detail.html", event=event, years_ago=years_ago(event), active_page="explorer"
+        "pages/event_detail.html",
+        event=event,
+        years_ago=years_ago(event),
+        images=EVENT_IMAGES.get(slug, {}),
+        active_page="explorer",
     )
 
 
