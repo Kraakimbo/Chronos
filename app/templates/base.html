@@ -1,33 +1,36 @@
+{% from "_theme_toggle.html" import theme_toggle %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>{% block title %}Chronos{% endblock %}</title>
+{% include "_theme.html" %}
 <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 <script>
   tailwind.config = {
+    darkMode: "class",
     theme: {
       extend: {
         colors: {
-          "primary": "#735c00",
-          "primary-container": "#d4af37",
-          "on-primary": "#ffffff",
-          "on-primary-container": "#554300",
-          "background": "#faf9f7",
-          "surface": "#faf9f7",
-          "surface-container-lowest": "#ffffff",
-          "surface-container-low": "#f4f3f1",
-          "on-surface": "#1a1c1b",
-          "on-surface-variant": "#4d4635",
-          "outline": "#7f7663",
-          "outline-variant": "#d0c5af",
-          "error": "#ba1a1a",
-          "on-error": "#ffffff",
-          "error-container": "#ffdad6",
+          "primary": "var(--color-primary)",
+          "primary-container": "var(--color-primary-container)",
+          "on-primary": "var(--color-on-primary)",
+          "on-primary-container": "var(--color-on-primary-container)",
+          "background": "var(--color-background)",
+          "surface": "var(--color-surface)",
+          "surface-container-lowest": "var(--color-surface-container-lowest)",
+          "surface-container-low": "var(--color-surface-container-low)",
+          "on-surface": "var(--color-on-surface)",
+          "on-surface-variant": "var(--color-on-surface-variant)",
+          "outline": "var(--color-outline)",
+          "outline-variant": "var(--color-outline-variant)",
+          "error": "var(--color-error)",
+          "on-error": "var(--color-on-error)",
+          "error-container": "var(--color-error-container)",
         },
         fontFamily: {
           "headline": ["Playfair Display", "serif"],
@@ -48,8 +51,9 @@
 </script>
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col">
-<header class="flex justify-center items-center py-md border-b border-outline-variant/30">
+<header class="relative flex justify-center items-center py-md border-b border-outline-variant/30">
   <span class="font-headline text-2xl text-primary">Chronos</span>
+  <div class="absolute right-margin-mobile">{{ theme_toggle("w-9 h-9 rounded-full border border-outline-variant bg-surface-container-low flex items-center justify-center text-on-surface-variant") }}</div>
 </header>
 
 <main class="flex-1 flex flex-col items-center justify-center px-margin-mobile py-xl w-full">

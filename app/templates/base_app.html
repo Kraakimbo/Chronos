@@ -1,10 +1,12 @@
 {% from "_icons.html" import token_icon, avatar with context %}
+{% from "_theme_toggle.html" import theme_toggle %}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>{% block title %}Chronos{% endblock %}</title>
+{% include "_theme.html" %}
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
@@ -16,19 +18,19 @@
     theme: {
       extend: {
         colors: {
-          "error-container": "#ffdad6", "on-error": "#ffffff", "error": "#ba1a1a",
-          "on-error-container": "#93000a", "surface-container-high": "#e9e8e6",
-          "outline-variant": "#d0c5af", "primary-container": "#d4af37",
-          "primary": "#735c00", "surface-container-lowest": "#ffffff",
-          "on-surface-variant": "#4d4635", "on-primary-container": "#554300",
-          "background": "#faf9f7", "surface": "#faf9f7", "secondary": "#5f5e62",
-          "surface-container-low": "#f4f3f1", "on-secondary-container": "#656468",
-          "primary-fixed-dim": "#e9c349", "on-surface": "#1a1c1b",
-          "surface-bright": "#faf9f7", "tertiary": "#a23e18",
-          "outline": "#7f7663", "surface-container": "#efeeec",
-          "on-primary": "#ffffff", "on-background": "#1a1c1b",
-          "surface-container-highest": "#e3e2e0", "surface-variant": "#e3e2e0",
-          "tertiary-container": "#ff9875", "on-tertiary-container": "#802600",
+          "error-container": "var(--color-error-container)", "on-error": "var(--color-on-error)", "error": "var(--color-error)",
+          "on-error-container": "var(--color-on-error-container)", "surface-container-high": "var(--color-surface-container-high)",
+          "outline-variant": "var(--color-outline-variant)", "primary-container": "var(--color-primary-container)",
+          "primary": "var(--color-primary)", "surface-container-lowest": "var(--color-surface-container-lowest)",
+          "on-surface-variant": "var(--color-on-surface-variant)", "on-primary-container": "var(--color-on-primary-container)",
+          "background": "var(--color-background)", "surface": "var(--color-surface)", "secondary": "var(--color-secondary)",
+          "surface-container-low": "var(--color-surface-container-low)", "on-secondary-container": "var(--color-on-secondary-container)",
+          "primary-fixed-dim": "var(--color-primary-fixed-dim)", "on-surface": "var(--color-on-surface)",
+          "surface-bright": "var(--color-surface-bright)", "tertiary": "var(--color-tertiary)",
+          "outline": "var(--color-outline)", "surface-container": "var(--color-surface-container)",
+          "on-primary": "var(--color-on-primary)", "on-background": "var(--color-on-background)",
+          "surface-container-highest": "var(--color-surface-container-highest)", "surface-variant": "var(--color-surface-variant)",
+          "tertiary-container": "var(--color-tertiary-container)", "on-tertiary-container": "var(--color-on-tertiary-container)",
         },
         borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
         spacing: {
@@ -76,6 +78,7 @@
       <span class="font-stat-lg text-sm text-primary flex items-center gap-1">{{ token_icon(18) }} {{ current_user.tokens }}</span>
     </div>
     <a href="{{ url_for('main.profile') }}" title="Mon profil">{{ avatar(current_user.avatar_id) }}</a>
+    {{ theme_toggle() }}
     <a href="{{ url_for('auth.logout') }}" class="w-10 h-10 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant" title="Se déconnecter">
       <span class="material-symbols-outlined text-[20px]">logout</span>
     </a>
@@ -85,7 +88,10 @@
 <header class="md:hidden flex justify-between items-center px-margin-mobile py-sm w-full z-50 sticky top-0 backdrop-blur-lg border-b border-outline-variant/30 bg-surface/80">
   <a href="{{ url_for('main.profile') }}" title="Mon profil">{{ avatar(current_user.avatar_id, "w-8 h-8", "text-sm") }}</a>
   <h1 class="font-headline-md text-lg text-primary">Chronos</h1>
-  <div class="font-stat-lg text-sm flex items-center gap-1">🔥 {{ current_user.streak_days }} · {{ token_icon(16) }} {{ current_user.tokens }}</div>
+  <div class="flex items-center gap-sm">
+    <div class="font-stat-lg text-sm flex items-center gap-1">🔥 {{ current_user.streak_days }} · {{ token_icon(16) }} {{ current_user.tokens }}</div>
+    {{ theme_toggle("w-8 h-8 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0") }}
+  </div>
 </header>
 
 {% with messages = get_flashed_messages(with_categories=true) %}

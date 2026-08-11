@@ -1,5 +1,6 @@
 """Helpers for the "on this day" calendar: today's event, search, dates."""
 
+import difflib
 import unicodedata
 from datetime import date
 
@@ -67,6 +68,27 @@ def find_todays_event(today=None):
     return featured, False
 
 
+def _searchable_text(event):
+    return _normalize(
+        f"{event['title']} {event['era']} {event['category']} {event['location']}"
+    )
+
+
+def _fuzzy_match(query_words, haystack_words, threshold=0.78):
+    """True if any query word closely matches a word in the haystack.
+
+    Catches typos ("batille" -> "bastille") that a plain substring check
+    would miss. Short words (< 3 chars) are skipped since fuzzy-matching
+    them produces too many false positives.
+    """
+    for word in query_words:
+        if len(word) < 3:
+            continue
+        if difflib.get_close_matches(word, haystack_words, n=1, cutoff=threshold):
+            return True
+    return False
+
+
 def search_events(query=None, category=None, era_key=None):
     results = events_list()
     if category and category != "Tous":
@@ -75,14 +97,19 @@ def search_events(query=None, category=None, era_key=None):
         results = [e for e in results if e["era_key"] == era_key]
     if query:
         q = _normalize(query.strip())
-        results = [
-            e
-            for e in results
-            if q in _normalize(e["title"])
-            or q in _normalize(e["era"])
-            or q in _normalize(e["category"])
-            or q in _normalize(e["location"])
-        ]
+        exact = [e for e in results if q in _searchable_text(e)]
+        if exact:
+            results = exact
+        else:
+            # No exact substring match anywhere -- the query might just be
+            # misspelled, so retry with a typo-tolerant fuzzy match before
+            # giving up and showing "no results".
+            query_words = q.split()
+            results = [
+                e
+                for e in results
+                if _fuzzy_match(query_words, _searchable_text(e).split())
+            ]
     results.sort(key=chronological_key)
     return results
 
