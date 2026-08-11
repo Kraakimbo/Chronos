@@ -1,0 +1,10 @@
+{% macro theme_toggle(css_class="w-10 h-10 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant") %}
+<button type="button"
+  onclick="document.documentElement.classList.toggle('dark'); localStorage.setItem('chronos-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');"
+  class="{{ css_class }}"
+  title="Basculer entre thème clair et sombre"
+  aria-label="Basculer entre thème clair et sombre">
+  <span class="material-symbols-outlined text-[20px] dark:hidden">dark_mode</span>
+  <span class="material-symbols-outlined text-[20px] hidden dark:inline">light_mode</span>
+</button>
+{% endmacro %}

@@ -1,0 +1,77 @@
+{# Shared dark/light theme: CSS custom properties (one per Material-style
+   color token) swapped by a `.dark` class on <html>, plus a pre-paint
+   script that applies the stored/system preference before first render to
+   avoid a flash of the wrong theme. Included in both base.html and
+   base_app.html so the two template families (auth pages vs. the app
+   shell) share one palette instead of drifting apart. #}
+<style>
+  :root {
+    --color-primary: #735c00;
+    --color-primary-container: #d4af37;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #554300;
+    --color-primary-fixed-dim: #e9c349;
+    --color-background: #faf9f7;
+    --color-surface: #faf9f7;
+    --color-surface-bright: #faf9f7;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f4f3f1;
+    --color-surface-container: #efeeec;
+    --color-surface-container-high: #e9e8e6;
+    --color-surface-container-highest: #e3e2e0;
+    --color-surface-variant: #e3e2e0;
+    --color-on-surface: #1a1c1b;
+    --color-on-background: #1a1c1b;
+    --color-on-surface-variant: #4d4635;
+    --color-outline: #7f7663;
+    --color-outline-variant: #d0c5af;
+    --color-secondary: #5f5e62;
+    --color-on-secondary-container: #656468;
+    --color-tertiary: #a23e18;
+    --color-tertiary-container: #ff9875;
+    --color-on-tertiary-container: #802600;
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+  }
+  :root.dark {
+    --color-primary: #e9c349;
+    --color-primary-container: #574400;
+    --color-on-primary: #3d2f00;
+    --color-on-primary-container: #f6dfa0;
+    --color-primary-fixed-dim: #d4af37;
+    --color-background: #14120b;
+    --color-surface: #14120b;
+    --color-surface-bright: #3a3524;
+    --color-surface-container-lowest: #0f0d08;
+    --color-surface-container-low: #1c1912;
+    --color-surface-container: #201d15;
+    --color-surface-container-high: #2b2719;
+    --color-surface-container-highest: #362f1e;
+    --color-surface-variant: #4a4430;
+    --color-on-surface: #eae6da;
+    --color-on-background: #eae6da;
+    --color-on-surface-variant: #d3c8ab;
+    --color-outline: #9c9179;
+    --color-outline-variant: #4d4635;
+    --color-secondary: #cac4b6;
+    --color-on-secondary-container: #dcd4c3;
+    --color-tertiary: #ffb59c;
+    --color-tertiary-container: #7c2d0a;
+    --color-on-tertiary-container: #ffdbcc;
+    --color-error: #ffb4a9;
+    --color-on-error: #690003;
+    --color-error-container: #93000a;
+    --color-on-error-container: #ffdad4;
+  }
+</style>
+<script>
+  (function () {
+    var stored = localStorage.getItem("chronos-theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (stored === "dark" || (!stored && prefersDark)) {
+      document.documentElement.classList.add("dark");
+    }
+  })();
+</script>
