@@ -78,5 +78,5 @@ def eras_progress(user):
         else:
             percent = round((user.xp - era["threshold"]) / span * 100)
             status = f"{percent}% terminé"
-        result.append({**era, "status": status, "percent": percent})
+        result.append({**era, "status": status, "percent": percent, "next_threshold": next_threshold})
     return result

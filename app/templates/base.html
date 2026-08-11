@@ -4,59 +4,23 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="{% block meta_description %}Chronos : découvre l'histoire du monde, événement par événement, avec un contenu et des quiz adaptés à ton niveau d'étude.{% endblock %}">
 <title>{% block title %}Chronos{% endblock %}</title>
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
 {% include "_theme.html" %}
-<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "primary": "var(--color-primary)",
-          "primary-container": "var(--color-primary-container)",
-          "on-primary": "var(--color-on-primary)",
-          "on-primary-container": "var(--color-on-primary-container)",
-          "background": "var(--color-background)",
-          "surface": "var(--color-surface)",
-          "surface-container-lowest": "var(--color-surface-container-lowest)",
-          "surface-container-low": "var(--color-surface-container-low)",
-          "on-surface": "var(--color-on-surface)",
-          "on-surface-variant": "var(--color-on-surface-variant)",
-          "outline": "var(--color-outline)",
-          "outline-variant": "var(--color-outline-variant)",
-          "error": "var(--color-error)",
-          "on-error": "var(--color-on-error)",
-          "error-container": "var(--color-error-container)",
-        },
-        fontFamily: {
-          "headline": ["Playfair Display", "serif"],
-          "body": ["Plus Jakarta Sans", "sans-serif"],
-        },
-        spacing: {
-          "xs": "4px",
-          "sm": "8px",
-          "md": "16px",
-          "lg": "24px",
-          "xl": "32px",
-          "2xl": "48px",
-          "margin-mobile": "20px",
-        },
-      },
-    },
-  };
-</script>
+<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/playfair-display/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/plus-jakarta-sans/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/material-symbols/outlined.css') }}" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-md focus:py-sm focus:rounded-xl">Aller au contenu</a>
 <header class="relative flex justify-center items-center py-md border-b border-outline-variant/30">
   <span class="font-headline text-2xl text-primary">Chronos</span>
   <div class="absolute right-margin-mobile">{{ theme_toggle("w-9 h-9 rounded-full border border-outline-variant bg-surface-container-low flex items-center justify-center text-on-surface-variant") }}</div>
 </header>
 
-<main class="flex-1 flex flex-col items-center justify-center px-margin-mobile py-xl w-full">
+<main id="main-content" class="flex-1 flex flex-col items-center justify-center px-margin-mobile py-xl w-full">
   <div class="w-full max-w-md">
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}

@@ -39,6 +39,8 @@ def test_event_detail_renders(auth_client, slug):
 def test_event_detail_unknown_slug_404s(auth_client):
     response = auth_client.get("/evenement/does-not-exist")
     assert response.status_code == 404
+    assert "Retour à l'accueil".encode() in response.data
+    assert b"Not Found" not in response.data
 
 
 @pytest.mark.parametrize(

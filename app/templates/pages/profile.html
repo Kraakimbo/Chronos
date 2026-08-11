@@ -1,6 +1,7 @@
 {% extends "base_app.html" %}
 {% from "_icons.html" import token_icon, avatar with context %}
 {% block title %}Profil - Chronos{% endblock %}
+{% block meta_description %}Ton profil Chronos : niveau, série, jetons et collections débloquées.{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl space-y-xl">
   <section class="bg-surface-container-lowest rounded-2xl p-lg md:p-xl ambient-shadow border border-outline-variant/30 flex flex-col md:flex-row items-center gap-lg">
@@ -21,10 +22,10 @@
   </section>
 
   <section class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center max-w-sm mx-auto w-full">
-    <h3 class="font-body-bold text-on-surface-variant mb-sm">Vault Balance</h3>
+    <h3 class="font-body-bold text-on-surface-variant mb-sm">Solde du coffre</h3>
     {{ token_icon(72) }}
     <p class="font-stat-lg text-3xl text-on-surface mt-sm">{{ current_user.tokens }}</p>
-    <p class="font-label-caps text-primary">Chronos Tokens</p>
+    <p class="font-label-caps text-primary">Jetons Chronos</p>
   </section>
 
   <section class="grid grid-cols-1 sm:grid-cols-3 gap-md md:gap-lg">
@@ -43,7 +44,8 @@
   </section>
 
   <section>
-    <h3 class="font-headline-md text-xl text-on-surface mb-md text-center md:text-left">Collections</h3>
+    <h3 class="font-headline-md text-xl text-on-surface mb-xs text-center md:text-left">Collections</h3>
+    <p class="font-body-base text-sm text-on-surface-variant mb-md text-center md:text-left">Chaque ère se débloque en gagnant de l'XP au Quiz Quotidien — continue de répondre pour toutes les maîtriser.</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
       {% for era in eras %}
       <div class="bg-surface-container-lowest rounded-2xl p-md ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
@@ -52,6 +54,11 @@
         </div>
         <h4 class="font-body-bold text-sm text-on-surface">{{ era.name }}</h4>
         <p class="font-label-caps text-[10px] mt-1 {{ 'text-primary' if era.status == 'Maîtrisé' else 'text-secondary' }}">{{ era.status }}</p>
+        {% if era.percent == 0 %}
+        <p class="font-label-caps text-[9px] mt-0.5 text-on-surface-variant/70">Dès {{ era.threshold }} XP</p>
+        {% elif era.status != 'Maîtrisé' %}
+        <p class="font-label-caps text-[9px] mt-0.5 text-on-surface-variant/70">{{ current_user.xp }} / {{ era.next_threshold }} XP</p>
+        {% endif %}
       </div>
       {% endfor %}
     </div>

@@ -1,0 +1,36 @@
+{% extends "public_base.html" %}
+{% block title %}Chronos — 45 événements historiques expliqués simplement{% endblock %}
+{% block content %}
+<main class="w-full">
+  <section class="max-w-[900px] mx-auto px-margin-mobile md:px-margin-desktop py-2xl text-center">
+    <h1 class="font-display-lg text-3xl md:text-5xl text-on-surface mb-md text-balance">L'histoire du monde, un événement à la fois</h1>
+    <p class="font-body-base text-lg text-on-surface-variant max-w-2xl mx-auto mb-lg">
+      45 événements historiques, de la Préhistoire à aujourd'hui, expliqués avec un vrai souci du contexte — et un texte qui s'adapte à ton âge, du CP à l'université. Consulte librement, sans compte.
+    </p>
+    <a href="{{ url_for('auth.register') }}" class="inline-flex items-center gap-sm h-[52px] px-2xl bg-primary-container text-on-primary-container font-body-bold rounded-full hover:scale-[0.98] transition-all ambient-shadow">
+      Crée un compte gratuit pour débloquer le quiz et ta progression
+    </a>
+  </section>
+
+  <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pb-2xl">
+    <h2 class="font-headline-md text-2xl text-on-surface mb-lg">Les 45 événements</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+      {% for event in events %}
+      <a href="{{ url_for('public.discover_event', slug=event.slug) }}" class="group block rounded-2xl border border-outline-variant/30 bg-surface-container-lowest overflow-hidden ambient-shadow hover:border-primary-container transition-colors">
+        {% set img = cover_image_for(event.slug) %}
+        <div class="h-36 bg-surface-container-high relative overflow-hidden">
+          {% if img %}
+          <img src="{{ img.url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          {% endif %}
+        </div>
+        <div class="p-md">
+          <p class="font-label-caps text-[10px] text-primary uppercase tracking-widest mb-1">{{ event.era }} · {{ event.date_label }}</p>
+          <h3 class="font-body-bold text-on-surface mb-1">{{ event.title }}</h3>
+          <p class="font-body-base text-sm text-on-surface-variant line-clamp-2">{{ event.summary }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+{% endblock %}

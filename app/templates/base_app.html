@@ -5,70 +5,28 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="{% block meta_description %}Chronos : découvre l'histoire du monde, événement par événement, avec un contenu et des quiz adaptés à ton niveau d'étude.{% endblock %}">
 <title>{% block title %}Chronos{% endblock %}</title>
+<meta property="og:site_name" content="Chronos">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.meta_description() }}">
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
 {% include "_theme.html" %}
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "error-container": "var(--color-error-container)", "on-error": "var(--color-on-error)", "error": "var(--color-error)",
-          "on-error-container": "var(--color-on-error-container)", "surface-container-high": "var(--color-surface-container-high)",
-          "outline-variant": "var(--color-outline-variant)", "primary-container": "var(--color-primary-container)",
-          "primary": "var(--color-primary)", "surface-container-lowest": "var(--color-surface-container-lowest)",
-          "on-surface-variant": "var(--color-on-surface-variant)", "on-primary-container": "var(--color-on-primary-container)",
-          "background": "var(--color-background)", "surface": "var(--color-surface)", "secondary": "var(--color-secondary)",
-          "surface-container-low": "var(--color-surface-container-low)", "on-secondary-container": "var(--color-on-secondary-container)",
-          "primary-fixed-dim": "var(--color-primary-fixed-dim)", "on-surface": "var(--color-on-surface)",
-          "surface-bright": "var(--color-surface-bright)", "tertiary": "var(--color-tertiary)",
-          "outline": "var(--color-outline)", "surface-container": "var(--color-surface-container)",
-          "on-primary": "var(--color-on-primary)", "on-background": "var(--color-on-background)",
-          "surface-container-highest": "var(--color-surface-container-highest)", "surface-variant": "var(--color-surface-variant)",
-          "tertiary-container": "var(--color-tertiary-container)", "on-tertiary-container": "var(--color-on-tertiary-container)",
-        },
-        borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-        spacing: {
-          "gutter": "16px", "sm": "8px", "md": "16px", "unit": "4px", "xl": "32px",
-          "margin-mobile": "20px", "2xl": "48px", "lg": "24px", "xs": "4px", "margin-desktop": "40px",
-        },
-        fontFamily: {
-          "headline-md": ["Playfair Display"], "label-caps": ["Plus Jakarta Sans"],
-          "display-lg": ["Playfair Display"], "body-base": ["Plus Jakarta Sans"],
-          "body-bold": ["Plus Jakarta Sans"], "stat-lg": ["Playfair Display"],
-        },
-        fontSize: {
-          "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
-          "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "700" }],
-          "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
-          "body-base": ["16px", { lineHeight: "24px", fontWeight: "400" }],
-          "body-bold": ["16px", { lineHeight: "24px", fontWeight: "600" }],
-          "stat-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
-        },
-      },
-    },
-  };
-</script>
-<style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .ambient-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); }
-  .glass-nav { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
-</style>
+<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/playfair-display/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/plus-jakarta-sans/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/material-symbols/outlined.css') }}" rel="stylesheet">
 </head>
 <body class="bg-background text-on-background antialiased min-h-screen pb-24 md:pb-0">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-md focus:py-sm focus:rounded-xl">Aller au contenu</a>
 
 <header class="hidden md:flex justify-between items-center px-margin-desktop py-md w-full sticky top-0 z-50 glass-nav bg-surface/80 border-b border-outline-variant/30">
   <div class="font-headline-md text-headline-md text-primary">Chronos</div>
   <nav class="flex gap-md items-center">
-    <a class="{{ 'text-primary font-bold' if active_page == 'home' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.home') }}">Home</a>
-    <a class="{{ 'text-primary font-bold' if active_page == 'explorer' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.explorer') }}">Explore</a>
+    <a class="{{ 'text-primary font-bold' if active_page == 'home' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.home') }}">Accueil</a>
+    <a class="{{ 'text-primary font-bold' if active_page == 'explorer' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.explorer') }}">Explorer</a>
     <a class="{{ 'text-primary font-bold' if active_page == 'quiz' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.quiz') }}">Quiz</a>
-    <a class="{{ 'text-primary font-bold' if active_page == 'profile' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.profile') }}">Library</a>
+    <a class="{{ 'text-primary font-bold' if active_page == 'profile' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.profile') }}">Profil</a>
   </nav>
   <div class="flex items-center gap-md">
     <div class="flex items-center gap-unit bg-surface-container-high px-sm py-unit rounded-full">
@@ -79,8 +37,8 @@
     </div>
     <a href="{{ url_for('main.profile') }}" title="Mon profil">{{ avatar(current_user.avatar_id) }}</a>
     {{ theme_toggle() }}
-    <a href="{{ url_for('auth.logout') }}" class="w-10 h-10 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant" title="Se déconnecter">
-      <span class="material-symbols-outlined text-[20px]">logout</span>
+    <a href="{{ url_for('auth.logout') }}" class="w-10 h-10 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant" title="Se déconnecter" aria-label="Se déconnecter">
+      <span class="material-symbols-outlined text-[20px]" aria-hidden="true">logout</span>
     </a>
   </div>
 </header>
@@ -109,20 +67,21 @@
   {% endif %}
 {% endwith %}
 
+<span id="main-content"></span>
 {% block content %}{% endblock %}
 
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe pt-2 bg-surface/80 backdrop-blur-lg border-t border-outline-variant/30 h-16">
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe pt-2 bg-surface border-t border-outline-variant/30 h-16">
   <a class="flex flex-col items-center justify-center {{ 'text-primary' if active_page == 'home' else 'text-on-surface-variant' }} w-16" href="{{ url_for('main.home') }}">
-    <span class="material-symbols-outlined">home</span><span class="font-label-caps text-[10px] mt-1">Home</span>
+    <span class="material-symbols-outlined">home</span><span class="font-label-caps text-[10px] mt-1">Accueil</span>
   </a>
   <a class="flex flex-col items-center justify-center {{ 'text-primary' if active_page == 'explorer' else 'text-on-surface-variant' }} w-16" href="{{ url_for('main.explorer') }}">
-    <span class="material-symbols-outlined">explore</span><span class="font-label-caps text-[10px] mt-1">Explore</span>
+    <span class="material-symbols-outlined">explore</span><span class="font-label-caps text-[10px] mt-1">Explorer</span>
   </a>
   <a class="flex flex-col items-center justify-center {{ 'text-primary' if active_page == 'quiz' else 'text-on-surface-variant' }} w-16" href="{{ url_for('main.quiz') }}">
     <span class="material-symbols-outlined">quiz</span><span class="font-label-caps text-[10px] mt-1">Quiz</span>
   </a>
   <a class="flex flex-col items-center justify-center {{ 'text-primary' if active_page == 'profile' else 'text-on-surface-variant' }} w-16" href="{{ url_for('main.profile') }}">
-    <span class="material-symbols-outlined">menu_book</span><span class="font-label-caps text-[10px] mt-1">Library</span>
+    <span class="material-symbols-outlined">menu_book</span><span class="font-label-caps text-[10px] mt-1">Profil</span>
   </a>
 </nav>
 </body>
