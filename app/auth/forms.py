@@ -4,7 +4,6 @@ from wtforms.validators import (
     DataRequired,
     Email,
     EqualTo,
-    Length,
     Regexp,
     ValidationError,
 )
