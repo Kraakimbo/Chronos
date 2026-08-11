@@ -6020,6 +6020,385 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "mort-de-gengis-khan": {
+        "enfant": {
+            "summary": (
+                "En 1227, Gengis Khan, le chef qui a créé le très "
+                "grand empire mongol, meurt pendant une guerre."
+            ),
+            "before": (
+                "Gengis Khan a uni les tribus mongoles et conquis "
+                "énormément de territoires."
+            ),
+            "during": (
+                "Pendant une bataille contre un royaume voisin, "
+                "Gengis Khan meurt. On ne sait pas exactement comment."
+            ),
+            "after": (
+                "Son empire est partagé entre ses fils, qui continuent "
+                "les conquêtes après lui."
+            ),
+            "narrative": [
+                "Gengis Khan a uni les tribus mongoles et créé un "
+                "immense empire grâce à de nombreuses conquêtes.",
+                "En 1227, pendant une campagne militaire, il meurt le "
+                "18 août. On ne connaît pas la cause exacte : maladie "
+                "ou chute de cheval, selon les récits.",
+                "Personne ne connaît l'endroit exact de sa tombe, "
+                "gardé secret selon la tradition mongole.",
+            ],
+            "why_it_matters": (
+                "Gengis Khan laisse le plus grand empire connecté de "
+                "l'histoire, qui continuera de s'agrandir après lui."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le fondateur de l'Empire mongol, Gengis Khan, meurt "
+                "lors d'une campagne militaire, laissant derrière lui "
+                "le plus vaste empire continu de l'histoire."
+            ),
+            "before": (
+                "Depuis son couronnement en 1206, Gengis Khan a "
+                "unifié les tribus mongoles et conquis un territoire "
+                "immense, de la Chine du Nord à l'Asie centrale."
+            ),
+            "during": (
+                "Lors d'une campagne contre le royaume Tangut de Xi "
+                "Xia, Gengis Khan meurt, probablement de maladie ou "
+                "des suites d'une chute de cheval."
+            ),
+            "after": (
+                "L'empire est divisé entre ses fils et petits-fils, "
+                "qui continueront l'expansion mongole."
+            ),
+            "narrative": [
+                "Né vers 1162, Gengis Khan unifie les tribus rivales "
+                "des steppes mongoles et se fait proclamer souverain "
+                "suprême en 1206.",
+                "En 1227, alors qu'il mène une campagne contre le "
+                "royaume Tangut, Gengis Khan meurt le 18 août, dans "
+                "des circonstances rapportées différemment selon les "
+                "chroniques.",
+                "Son lieu de sépulture est resté volontairement "
+                "secret, selon la tradition mongole.",
+            ],
+            "why_it_matters": (
+                "À sa mort, Gengis Khan laisse un empire s'étendant de "
+                "la Chine à l'Europe de l'Est, que ses descendants "
+                "continueront d'agrandir."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le fondateur de l'Empire mongol, Gengis Khan, meurt "
+                "lors d'une campagne militaire, laissant derrière lui "
+                "le plus vaste empire continu de l'histoire."
+            ),
+            "before": (
+                "Depuis son couronnement en 1206, Gengis Khan a "
+                "unifié les tribus mongoles et conquis un territoire "
+                "immense, de la Chine du Nord à l'Asie centrale et la "
+                "Perse."
+            ),
+            "during": (
+                "Lors d'une campagne contre le royaume Tangut de Xi "
+                "Xia, Gengis Khan meurt, probablement de maladie ou "
+                "des suites d'une chute de cheval selon les sources."
+            ),
+            "after": (
+                "L'empire est divisé entre ses fils et petits-fils en "
+                "plusieurs khanats, qui continueront l'expansion "
+                "mongole jusqu'en Europe de l'Est et au Moyen-Orient."
+            ),
+            "narrative": [
+                "Né vers 1162 sous le nom de Temüjin, Gengis Khan "
+                "parvient à unifier les tribus rivales des steppes "
+                "mongoles et se fait proclamer souverain suprême en "
+                "1206. Il lance ensuite une série de campagnes "
+                "militaires fulgurantes qui font de l'Empire mongol le "
+                "plus vaste territoire continu jamais conquis dans "
+                "l'histoire.",
+                "En 1227, alors qu'il mène une campagne punitive contre "
+                "le royaume Tangut de Xi Xia, dans le nord-ouest de la "
+                "Chine actuelle, Gengis Khan meurt le 18 août, dans des "
+                "circonstances que les chroniques anciennes rapportent "
+                "différemment — maladie, blessure de chasse ou chute "
+                "de cheval.",
+                "Selon la tradition mongole, son lieu de sépulture est "
+                "resté volontairement secret, ses funérailles ayant été "
+                "suivies de l'exécution de tous ceux ayant croisé le "
+                "convoi funéraire, afin que personne ne puisse jamais "
+                "localiser sa tombe.",
+            ],
+            "why_it_matters": (
+                "À sa mort, Gengis Khan laisse un empire s'étendant de "
+                "la mer de Chine à l'Europe de l'Est, que ses "
+                "descendants continueront d'agrandir pendant des "
+                "décennies, transformant durablement les équilibres "
+                "politiques et commerciaux de l'Eurasie, notamment via "
+                "la Route de la soie."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le fondateur de l'Empire mongol, Gengis Khan, meurt "
+                "lors d'une campagne militaire dans des circonstances "
+                "encore débattues par les historiens, laissant derrière "
+                "lui le plus vaste empire continu de l'histoire et un "
+                "appareil administratif conçu pour lui survivre."
+            ),
+            "before": (
+                "Depuis son couronnement en 1206, Gengis Khan a "
+                "unifié les tribus mongoles et conquis un territoire "
+                "immense, de la Chine du Nord à l'Asie centrale et la "
+                "Perse, en s'appuyant sur une organisation militaire "
+                "et administrative méritocratique novatrice pour "
+                "l'époque."
+            ),
+            "during": (
+                "Lors d'une campagne punitive contre le royaume Tangut "
+                "de Xi Xia — puni pour avoir refusé de fournir des "
+                "troupes lors d'une précédente campagne —, Gengis Khan "
+                "meurt, probablement de maladie ou des suites d'une "
+                "chute de cheval selon les sources, sa mort étant "
+                "dissimulée jusqu'à la chute de la capitale tangut."
+            ),
+            "after": (
+                "L'empire est divisé entre ses fils et petits-fils en "
+                "plusieurs khanats selon un système de succession "
+                "qu'il avait lui-même organisé de son vivant, khanats "
+                "qui continueront l'expansion mongole jusqu'en Europe "
+                "de l'Est et au Moyen-Orient avant de se fragmenter "
+                "progressivement."
+            ),
+            "narrative": [
+                "Né vers 1162 sous le nom de Temüjin, Gengis Khan "
+                "parvient à unifier les tribus rivales des steppes "
+                "mongoles et se fait proclamer souverain suprême en "
+                "1206. Il lance ensuite une série de campagnes "
+                "militaires fulgurantes, appuyées sur une organisation "
+                "décimale de l'armée et un système méritocratique "
+                "inédit, qui font de l'Empire mongol le plus vaste "
+                "territoire continu jamais conquis dans l'histoire.",
+                "En 1227, alors qu'il mène une campagne punitive contre "
+                "le royaume Tangut de Xi Xia, dans le nord-ouest de la "
+                "Chine actuelle, Gengis Khan meurt le 18 août, dans des "
+                "circonstances que les chroniques anciennes rapportent "
+                "différemment — maladie, blessure de chasse ou chute "
+                "de cheval —, sa mort étant tenue secrète par son "
+                "entourage jusqu'à la prise de la capitale tangut, afin "
+                "de ne pas démoraliser les troupes.",
+                "Selon la tradition mongole, son lieu de sépulture est "
+                "resté volontairement secret, ses funérailles ayant été "
+                "suivies de l'exécution de tous ceux ayant croisé le "
+                "convoi funéraire, afin que personne ne puisse jamais "
+                "localiser sa tombe — un mystère que l'archéologie "
+                "n'est toujours pas parvenue à résoudre.",
+            ],
+            "why_it_matters": (
+                "À sa mort, Gengis Khan laisse un empire s'étendant de "
+                "la mer de Chine à l'Europe de l'Est, que ses "
+                "descendants continueront d'agrandir pendant des "
+                "décennies, transformant durablement les équilibres "
+                "politiques et commerciaux de l'Eurasie via la Route de "
+                "la soie, tout en facilitant, par la stabilité relative "
+                "instaurée dans ses territoires (la « paix mongole »), "
+                "des échanges culturels et commerciaux sans précédent "
+                "entre l'Orient et l'Occident."
+            ),
+        },
+    },
+    "traite-de-nankin": {
+        "enfant": {
+            "summary": (
+                "En 1842, la Chine perd une guerre contre le "
+                "Royaume-Uni et doit lui donner Hong Kong et ouvrir "
+                "des ports au commerce."
+            ),
+            "before": (
+                "Le Royaume-Uni vend de l'opium (une drogue) en Chine. "
+                "Les Chinois essaient de l'interdire."
+            ),
+            "during": (
+                "Le Royaume-Uni attaque la Chine avec sa flotte de "
+                "guerre, bien plus forte, et gagne facilement."
+            ),
+            "after": (
+                "La Chine doit signer un traité : elle donne Hong "
+                "Kong et ouvre cinq ports au commerce étranger."
+            ),
+            "narrative": [
+                "Au début du XIXe siècle, des marchands britanniques "
+                "vendent de l'opium en Chine. Les autorités chinoises "
+                "essaient d'arrêter ce commerce.",
+                "Cela déclenche une guerre en 1839. La marine "
+                "britannique, très supérieure, bat facilement l'armée "
+                "chinoise.",
+                "Le 29 août 1842, la Chine signe un traité qui donne "
+                "Hong Kong au Royaume-Uni et ouvre cinq ports au "
+                "commerce étranger.",
+            ],
+            "why_it_matters": (
+                "Ce traité marque le début d'une longue période "
+                "difficile pour la Chine, dominée par des pays "
+                "étrangers plus puissants."
+            ),
+        },
+        "college": {
+            "summary": (
+                "La Chine impériale, vaincue lors de la première "
+                "guerre de l'Opium, cède Hong Kong au Royaume-Uni et "
+                "ouvre ses ports au commerce britannique."
+            ),
+            "before": (
+                "Le refus chinois de laisser entrer l'opium "
+                "britannique dégénère en conflit armé avec le "
+                "Royaume-Uni dès 1839."
+            ),
+            "during": (
+                "Militairement écrasée par la marine britannique, la "
+                "Chine signe le traité de Nankin, premier des « "
+                "traités inégaux »."
+            ),
+            "after": (
+                "Hong Kong devient une colonie britannique, cinq ports "
+                "chinois sont ouverts au commerce étranger."
+            ),
+            "narrative": [
+                "Au début du XIXe siècle, des marchands britanniques "
+                "exportent massivement de l'opium vers la Chine, créant "
+                "une épidémie de toxicomanie.",
+                "Cette situation déclenche la première guerre de "
+                "l'Opium en 1839. La marine britannique inflige "
+                "défaite sur défaite à l'armée chinoise.",
+                "Le 29 août 1842, les représentants chinois signent un "
+                "traité qui cède Hong Kong et ouvre cinq ports au "
+                "commerce étranger.",
+            ],
+            "why_it_matters": (
+                "Premier des « traités inégaux » imposés à la Chine, "
+                "le traité de Nankin ouvre une période d'ingérence "
+                "étrangère et d'affaiblissement de l'Empire chinois."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "La Chine impériale, vaincue lors de la première "
+                "guerre de l'Opium, cède Hong Kong au Royaume-Uni et "
+                "ouvre ses ports au commerce britannique."
+            ),
+            "before": (
+                "Le refus chinois de laisser entrer l'opium "
+                "britannique, massivement exporté depuis l'Inde, "
+                "dégénère en conflit armé avec le Royaume-Uni dès 1839."
+            ),
+            "during": (
+                "Militairement écrasée par la marine britannique, la "
+                "Chine signe le traité de Nankin, premier des « "
+                "traités inégaux » imposés par les puissances "
+                "occidentales."
+            ),
+            "after": (
+                "Hong Kong devient une colonie britannique, cinq "
+                "ports chinois sont ouverts au commerce étranger, et "
+                "la Chine entame le « siècle de l'humiliation »."
+            ),
+            "narrative": [
+                "Au début du XIXe siècle, des marchands britanniques "
+                "exportent massivement de l'opium cultivé en Inde vers "
+                "la Chine, créant une épidémie de toxicomanie que les "
+                "autorités impériales tentent d'endiguer en interdisant "
+                "et confisquant les cargaisons.",
+                "Cette confiscation déclenche la première guerre de "
+                "l'Opium en 1839. La marine britannique, "
+                "technologiquement très supérieure, inflige défaite "
+                "sur défaite à l'armée chinoise le long des côtes et "
+                "des fleuves.",
+                "Le 29 août 1842, à bord d'un navire de guerre "
+                "britannique ancré près de Nankin, les représentants "
+                "chinois signent un traité de paix qui cède Hong Kong "
+                "au Royaume-Uni, ouvre cinq ports au commerce étranger "
+                "et impose de lourdes réparations financières à la "
+                "Chine.",
+            ],
+            "why_it_matters": (
+                "Premier des « traités inégaux » imposés à la Chine "
+                "par les puissances occidentales, le traité de Nankin "
+                "ouvre une période d'ingérence étrangère et "
+                "d'affaiblissement de l'Empire chinois que "
+                "l'historiographie chinoise désigne comme le « siècle "
+                "de l'humiliation »."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "La Chine impériale, militairement écrasée lors de la "
+                "première guerre de l'Opium par une marine britannique "
+                "technologiquement révolutionnaire, cède Hong Kong et "
+                "signe le premier d'une longue série de « traités "
+                "inégaux » qui structureront durablement les relations "
+                "sino-occidentales."
+            ),
+            "before": (
+                "Le refus chinois de laisser entrer l'opium "
+                "britannique, massivement exporté depuis l'Inde pour "
+                "compenser le déficit commercial britannique lié aux "
+                "importations de thé, dégénère en conflit armé dès "
+                "1839 après la destruction spectaculaire de cargaisons "
+                "d'opium par le commissaire impérial Lin Zexu."
+            ),
+            "during": (
+                "Militairement écrasée par une marine britannique dotée "
+                "de navires à vapeur cuirassés révolutionnaires face à "
+                "une flotte chinoise obsolète, la Chine signe le traité "
+                "de Nankin à bord du HMS Cornwallis, premier des "
+                "« traités inégaux » qui seront imposés par les "
+                "puissances occidentales puis le Japon au cours du "
+                "siècle suivant."
+            ),
+            "after": (
+                "Hong Kong devient une colonie britannique, cinq ports "
+                "chinois sont ouverts au commerce étranger sous "
+                "extraterritorialité juridique pour les ressortissants "
+                "étrangers, et la Chine entame le « siècle de "
+                "l'humiliation », marqué par des concessions "
+                "territoriales et commerciales répétées jusqu'au milieu "
+                "du XXe siècle."
+            ),
+            "narrative": [
+                "Au début du XIXe siècle, des marchands britanniques "
+                "exportent massivement de l'opium cultivé en Inde vers "
+                "la Chine pour compenser leur déficit commercial lié "
+                "aux importations de thé, créant une épidémie de "
+                "toxicomanie que les autorités impériales tentent "
+                "d'endiguer en interdisant et confisquant les "
+                "cargaisons, notamment sous l'action résolue du "
+                "commissaire Lin Zexu en 1839.",
+                "Cette confiscation déclenche la première guerre de "
+                "l'Opium. La marine britannique, dotée de navires à "
+                "vapeur cuirassés d'une supériorité technologique "
+                "écrasante face à une flotte chinoise obsolète, inflige "
+                "défaite sur défaite à l'armée chinoise le long des "
+                "côtes et des fleuves.",
+                "Le 29 août 1842, à bord du navire de guerre HMS "
+                "Cornwallis ancré près de Nankin, les représentants "
+                "chinois signent un traité de paix qui cède Hong Kong "
+                "au Royaume-Uni, ouvre cinq ports au commerce étranger "
+                "sous régime d'extraterritorialité juridique, et impose "
+                "de lourdes réparations financières à la Chine.",
+            ],
+            "why_it_matters": (
+                "Premier des « traités inégaux » imposés à la Chine "
+                "par les puissances occidentales puis le Japon, le "
+                "traité de Nankin ouvre une période d'ingérence "
+                "étrangère et d'affaiblissement de l'Empire chinois que "
+                "l'historiographie chinoise désigne comme le « siècle "
+                "de l'humiliation », dont le souvenir continue "
+                "d'influencer la diplomatie chinoise contemporaine."
+            ),
+        },
+    },
 }
 
 
