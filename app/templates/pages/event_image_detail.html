@@ -12,9 +12,21 @@
   </section>
 
   <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop">
+    <input type="checkbox" id="zoom-toggle" class="hidden peer">
     <div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow bg-surface-container-lowest">
-      <img src="{{ image.url }}" alt="{{ image.subject or type_info.label }}" class="w-full max-h-[70vh] object-contain bg-surface-container-high">
+      <label for="zoom-toggle" class="block cursor-zoom-in">
+        <img src="{{ image.url }}" alt="{{ image.subject or type_info.label }}" class="w-full max-h-[70vh] object-contain bg-surface-container-high">
+      </label>
+      <span class="absolute bottom-sm right-sm px-sm py-xs bg-black/50 backdrop-blur-sm text-white text-[10px] font-label-caps uppercase tracking-widest rounded-full pointer-events-none flex items-center gap-1">
+        <span class="material-symbols-outlined text-[14px]">zoom_in</span> Cliquer pour agrandir
+      </span>
     </div>
+    <label for="zoom-toggle" class="hidden peer-checked:flex fixed inset-0 z-50 bg-black/90 items-center justify-center p-lg cursor-zoom-out">
+      <img src="{{ image.url }}" alt="{{ image.subject or type_info.label }}" class="max-w-full max-h-full object-contain">
+      <span class="absolute top-lg right-lg w-10 h-10 rounded-full bg-white/10 text-white flex items-center justify-center">
+        <span class="material-symbols-outlined">close</span>
+      </span>
+    </label>
   </section>
 
   <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-3 gap-xl">
@@ -58,6 +70,10 @@
           </dd>
         </div>
       </dl>
+      <button type="button" data-copy-link data-copy-idle="Copier le lien de cette page" data-copy-done="Lien copié !" class="mt-lg w-full flex items-center justify-center gap-sm px-md py-sm rounded-full border border-outline-variant text-on-surface font-body-bold text-sm hover:bg-surface-container-lowest transition-colors">
+        <span class="material-symbols-outlined text-[18px]">link</span>
+        <span data-copy-label>Copier le lien de cette page</span>
+      </button>
     </aside>
   </section>
 
@@ -74,4 +90,17 @@
     </p>
   </footer>
 </main>
+<script>
+  // Progressive enhancement only: copies the current page URL to the
+  // clipboard. Without JS the button is simply inert.
+  document.querySelectorAll("[data-copy-link]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var label = button.querySelector("[data-copy-label]");
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        label.textContent = button.dataset.copyDone;
+        setTimeout(function () { label.textContent = button.dataset.copyIdle; }, 2000);
+      });
+    });
+  });
+</script>
 {% endblock %}
