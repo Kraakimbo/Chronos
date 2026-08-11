@@ -49,8 +49,8 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
       {% for era in eras %}
       <div class="bg-surface-container-lowest rounded-2xl p-md ambient-shadow border border-outline-variant/30 flex flex-col items-center text-center">
-        <div class="w-20 h-20 rounded-full flex items-center justify-center mb-sm border-2 {{ 'border-primary-container' if era.percent > 0 else 'border-outline-variant grayscale opacity-60' }}">
-          <span class="font-headline-md text-primary text-lg">{{ era.name[:2] }}</span>
+        <div class="w-20 h-20 rounded-full flex items-center justify-center mb-sm border-2 {{ 'border-primary-container' if era.percent > 0 else 'border-outline-variant' }}">
+          <span class="font-headline-md text-lg {{ 'text-primary' if era.percent > 0 else 'text-on-surface-variant' }}">{{ era.name[:2] }}</span>
         </div>
         <h4 class="font-body-bold text-sm text-on-surface">{{ era.name }}</h4>
         <p class="font-label-caps text-[10px] mt-1 {{ 'text-primary' if era.status == 'Maîtrisé' else 'text-secondary' }}">{{ era.status }}</p>
