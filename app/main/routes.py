@@ -4,7 +4,7 @@ from flask import Blueprint, abort, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
 from app import db
-from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS
+from app.data import AVATARS, EVENTS, QUIZ_QUESTIONS
 from app.event_images import EVENT_IMAGES, IMAGE_TYPE_INFO, cover_image
 from app.learn_more import LEARN_MORE_LINKS
 from app.events import (

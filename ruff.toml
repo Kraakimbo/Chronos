@@ -1,0 +1,13 @@
+target-version = "py311"
+line-length = 100
+
+[lint]
+# Sensible defaults: pyflakes (F) for real bugs (unused imports/vars,
+# undefined names) and a slice of pycodestyle (E/W) for obvious style
+# issues. Deliberately not turning on import-sorting (I) or docstring
+# (D) rules -- this codebase doesn't follow either convention yet, and
+# a lint step should catch mistakes, not relitigate house style.
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # line-length: many French strings run long, not worth breaking up
+]

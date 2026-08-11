@@ -5,3 +5,6 @@ venv/
 instance/
 .env
 *.db
+.coverage
+.pytest_cache/
+.ruff_cache/
