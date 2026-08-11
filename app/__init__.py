@@ -54,6 +54,7 @@ def create_app(config_object="config.Config"):
 
     from app.data import AVATARS
     from app.event_images import IMAGE_TYPE_INFO, cover_image
+    from app.character_images import character_image
 
     @app.context_processor
     def inject_avatars():
@@ -61,7 +62,11 @@ def create_app(config_object="config.Config"):
 
     @app.context_processor
     def inject_event_images():
-        return {"cover_image_for": cover_image, "image_type_info": IMAGE_TYPE_INFO}
+        return {
+            "cover_image_for": cover_image,
+            "image_type_info": IMAGE_TYPE_INFO,
+            "character_image_for": character_image,
+        }
 
     from app.models import User
 
