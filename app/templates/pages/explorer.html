@@ -70,9 +70,12 @@
       class="absolute -translate-x-1/2 -translate-y-1/2 group cursor-pointer"
       style="left: {{ e.map_pos[0] }}%; top: {{ e.map_pos[1] }}%;">
       <div class="w-4 h-4 bg-primary-container rounded-full border-2 border-white shadow-md group-hover:scale-125 transition-transform"></div>
-      <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg p-sm shadow-lg border border-outline-variant/30 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
-        <p class="font-label-caps text-primary text-[10px] mb-1">{{ e.date_label }}</p>
-        <p class="font-body-bold text-sm text-on-surface">{{ e.title }}</p>
+      <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-lg p-sm shadow-lg border border-outline-variant/30 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none flex items-center gap-sm">
+        <div class="w-10 h-10 rounded-md overflow-hidden shrink-0">{{ event_cover_photo(e.slug, "w-full h-full") }}</div>
+        <div>
+          <p class="font-label-caps text-primary text-[10px] mb-1">{{ e.date_label }}</p>
+          <p class="font-body-bold text-sm text-on-surface">{{ e.title }}</p>
+        </div>
       </div>
     </a>
     {% endfor %}

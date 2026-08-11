@@ -76,10 +76,15 @@
         <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase mb-md">Personnages Clés</h3>
         <div class="flex overflow-x-auto lg:flex-col gap-md pb-sm lg:pb-0">
           {% for character in event.characters %}
+          {% set portrait = character_image_for(event.slug, character.name) %}
           <div class="flex items-center gap-md min-w-[200px] lg:min-w-0 bg-surface-container-lowest p-sm rounded-xl border border-outline-variant/20">
+            {% if portrait %}
+            <img src="{{ portrait.url }}" alt="{{ character.name }}" loading="lazy" class="w-12 h-12 rounded-full object-cover shrink-0 border border-outline-variant/30">
+            {% else %}
             <div class="w-12 h-12 rounded-full flex items-center justify-center shrink-0 text-xl" style="background-color: {{ character.bg }};">
               <span role="img" aria-label="{{ character.role }}">{{ character.emoji }}</span>
             </div>
+            {% endif %}
             <div>
               <h4 class="font-body-bold text-on-surface text-sm">{{ character.name }}</h4>
               <p class="font-label-caps text-secondary text-[10px] mt-0.5">{{ character.role }}</p>
