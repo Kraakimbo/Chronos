@@ -1,0 +1,4 @@
+# Dev/test-only dependencies, on top of requirements.txt. Not installed in
+# production (Render only installs requirements.txt).
+-r requirements.txt
+pytest==8.3.3
