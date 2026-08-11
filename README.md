@@ -111,3 +111,24 @@ app/
     pages/                       # accueil, explorer, event_detail, quiz, profile
     email/                        # gabarit de l'email de réinitialisation
 ```
+
+/!\ Comment déployer l'app de Stitch vers l'App Store : 
+Voici la procédure complète pour passer de votre maquette Stitch à l'App Store :
+
+1.Exporter le code depuis Google Stitch :Récupération du projet.
+Une fois votre design terminé sur l'interface de Google Stitch, vous devez exporter le projet. Pour une application destinée à l'App Store, choisissez l'export en SwiftUI (le framework natif d'Apple) ou en Flutter (si vous prévoyez une application multiplateforme). Vous obtiendrez un code propre et prêt à être exploité.
+
+2.S'inscrire au Apple Developer Program :
+Étape administrative obligatoire.Pour avoir le droit de publier sur les plateformes d'Apple, vous devez posséder un compte développeur officiel.L'inscription se fait sur le site d'Apple et coûte 99 $ par an.Vous aurez besoin d'une pièce d'identité valide et d'un appareil Apple pour l'authentification sécurisée.
+
+3.Configurer App Store Connect :
+La fiche de l'application.App Store Connect est le tableau de bord où vous gérez la présence de votre application.Créez une "carte d'identité" pour votre application appelée Bundle ID (par exemple, com.votreentreprise.nomappli).Créez une nouvelle fiche d'application dans la section "Mes apps".Renseignez toutes les informations visibles par les utilisateurs : nom, description, mots-clés, et importez les captures d'écran de l'interface que vous avez générée avec Stitch.
+
+4.Compiler le code avec Xcode :
+Nécessite un Mac.
+C'est ici que le code brut de Stitch devient une véritable application iOS.Ouvrez le code source exporté dans Xcode (le logiciel de développement d'Apple, disponible uniquement sur Mac).
+Liez votre compte Apple Developer à Xcode pour signer numériquement l'application.Compilez le projet en générant une archive (via le menu Product > Archive).
+Depuis la fenêtre "Organizer", envoyez cette archive finalisée vers App Store Connect.
+
+5.Soumettre à la validation (App Review) :
+L'étape finale.De retour sur App Store Connect, sélectionnez la version compilée de l'application que vous venez d'envoyer via Xcode. Remplissez les dernières informations requises (comme les comptes de test si votre app nécessite une connexion) et cliquez sur Soumettre pour examen. Apple mettra généralement entre 24 et 48 heures pour tester et valider votre application.
