@@ -60,10 +60,15 @@ def test_quiz_answer_validated_against_the_shown_level_variant(app, client, leve
     assert "Bonne réponse".encode() in response.data
 
 
-def test_event_without_pilot_content_still_renders(auth_client):
-    # Any slug not in CONTENT_BY_LEVEL should fall back to its own text.
+def test_all_events_covered_by_level_content():
     from app.data import EVENTS
 
-    fallback_slug = next(s for s in EVENTS if s not in CONTENT_BY_LEVEL)
-    response = auth_client.get(f"/evenement/{fallback_slug}")
-    assert response.status_code == 200
+    assert set(EVENTS.keys()) <= set(CONTENT_BY_LEVEL.keys())
+
+
+def test_resolve_event_content_falls_back_for_unknown_event():
+    from app.level_content import resolve_event_content
+
+    fake_event = {"slug": "not-a-real-event", "summary": "original"}
+    resolved = resolve_event_content(fake_event, "enfant")
+    assert resolved == fake_event

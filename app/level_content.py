@@ -10,12 +10,10 @@ shorter sentences for "enfant", up to more nuanced/detailed phrasing for
 and wrong answers are built from that level's own wording, so a harder
 level asks a harder, more specific question.
 
-Coverage is partial by design: this started as a pilot on a handful of
-events (spanning eras/categories) to validate tone before rewriting all
-45. See app.data.EVENTS for the slugs still missing an entry here --
-resolve_event_content()/resolve_quiz() fall back to the original
-single-level text for those, so nothing breaks for events not yet
-covered.
+All 45 events in app.data.EVENTS have a full four-level entry here, each
+with a matching quiz question per level. resolve_event_content() and
+resolve_quiz() still fall back to the original single-level text for any
+unrecognised slug or level, so new/unknown events never break.
 
 Each level's dict for an event has the same shape as the relevant
 subset of app.data.EVENTS[slug]: summary, before, during, after,
@@ -8385,6 +8383,580 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "bataille-de-lepante": {
+        "enfant": {
+            "summary": (
+                "Le 7 octobre 1571, une flotte de pays chrétiens "
+                "d'Europe écrase la flotte de l'Empire ottoman lors "
+                "d'une immense bataille navale."
+            ),
+            "before": (
+                "L'Empire ottoman devient de plus en plus puissant en "
+                "Méditerranée et fait peur aux pays chrétiens du sud "
+                "de l'Europe."
+            ),
+            "during": (
+                "Deux immenses flottes de bateaux se battent près de "
+                "Lépante, en Grèce."
+            ),
+            "after": (
+                "La flotte ottomane est presque entièrement détruite."
+            ),
+            "narrative": [
+                "En 1571, le pape organise une alliance de pays "
+                "chrétiens pour combattre la flotte ottomane.",
+                "Le 7 octobre 1571, les deux flottes, avec plus de 200 "
+                "bateaux chacune, se battent près de Lépante.",
+                "La flotte ottomane est presque complètement détruite "
+                "et beaucoup d'esclaves chrétiens sont libérés.",
+            ],
+            "why_it_matters": (
+                "Cette bataille arrête pour un temps l'expansion des "
+                "Ottomans sur la mer Méditerranée."
+            ),
+        },
+        "college": {
+            "summary": (
+                "La flotte de la Sainte Ligue chrétienne écrase la "
+                "flotte ottomane lors d'une des plus grandes batailles "
+                "navales de l'histoire."
+            ),
+            "before": (
+                "L'Empire ottoman, en pleine expansion méditerranéenne "
+                "après la prise de Chypre, menace directement les "
+                "puissances catholiques d'Europe du Sud."
+            ),
+            "during": (
+                "Une flotte coalisée espagnole, vénitienne et "
+                "pontificale affronte la flotte ottomane dans le golfe "
+                "de Patras."
+            ),
+            "after": (
+                "La flotte ottomane est quasiment anéantie, mettant un "
+                "coup d'arrêt symbolique à son expansion navale."
+            ),
+            "narrative": [
+                "En 1571, après la conquête de Chypre par les "
+                "Ottomans, le pape Pie V organise une alliance navale, "
+                "la Sainte Ligue, sous le commandement de Don Juan "
+                "d'Autriche.",
+                "Le 7 octobre 1571, les deux flottes, comptant chacune "
+                "plus de 200 galères, s'affrontent dans le golfe de "
+                "Patras, près de Lépante.",
+                "La flotte ottomane est presque entièrement détruite "
+                "ou capturée, et des milliers de rameurs chrétiens "
+                "réduits en esclavage sont libérés.",
+            ],
+            "why_it_matters": (
+                "Lépante met un coup d'arrêt symbolique fort à "
+                "l'expansion navale ottomane en Méditerranée "
+                "occidentale."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "La flotte de la Sainte Ligue chrétienne écrase la "
+                "flotte ottomane lors d'une des plus grandes batailles "
+                "navales de l'histoire, stoppant l'expansion navale "
+                "ottomane en Méditerranée."
+            ),
+            "before": (
+                "L'Empire ottoman, en pleine expansion méditerranéenne "
+                "après la prise de Chypre, menace directement les "
+                "puissances catholiques d'Europe du Sud."
+            ),
+            "during": (
+                "Une flotte coalisée espagnole, vénitienne et "
+                "pontificale affronte la flotte ottomane dans le golfe "
+                "de Patras, dans un combat rapproché entre galères."
+            ),
+            "after": (
+                "La flotte ottomane est quasiment anéantie, mettant un "
+                "coup d'arrêt symbolique à son expansion navale, bien "
+                "que l'Empire reconstruise rapidement sa marine."
+            ),
+            "narrative": [
+                "En 1571, après la conquête de Chypre par les "
+                "Ottomans, le pape Pie V parvient à organiser une "
+                "alliance navale, la Sainte Ligue, réunissant "
+                "l'Espagne, Venise, les États pontificaux et plusieurs "
+                "autres puissances italiennes, sous le commandement de "
+                "Don Juan d'Autriche.",
+                "Le 7 octobre 1571, les deux flottes, comptant chacune "
+                "plus de 200 galères et des dizaines de milliers "
+                "d'hommes, s'affrontent dans le golfe de Patras, près "
+                "de la ville de Lépante. Le combat, mené au corps à "
+                "corps entre navires selon les usages navals de "
+                "l'époque, tourne rapidement à l'avantage de la Sainte "
+                "Ligue.",
+                "La flotte ottomane est presque entièrement détruite "
+                "ou capturée, et des milliers de rameurs chrétiens "
+                "réduits en esclavage sur les galères ottomanes sont "
+                "libérés. La bataille marque l'une des plus grandes "
+                "défaites navales de l'histoire ottomane.",
+            ],
+            "why_it_matters": (
+                "Bien que l'Empire ottoman reconstruise rapidement sa "
+                "flotte, Lépante met un coup d'arrêt symbolique fort à "
+                "son expansion navale en Méditerranée occidentale et "
+                "reste, pour l'historiographie européenne, l'une des "
+                "batailles les plus célèbres de la Renaissance."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "La flotte coalisée de la Sainte Ligue chrétienne "
+                "écrase la flotte ottomane à Lépante, dans l'une des "
+                "dernières grandes batailles navales de galères de "
+                "l'histoire, victoire au retentissement psychologique "
+                "considérable en Europe mais aux conséquences "
+                "stratégiques finalement limitées."
+            ),
+            "before": (
+                "L'Empire ottoman, en pleine expansion méditerranéenne "
+                "après la prise de Chypre aux Vénitiens — accompagnée "
+                "du massacre notoire des défenseurs de Famagouste —, "
+                "menace directement les puissances catholiques d'Europe "
+                "du Sud, poussant le pape Pie V à surmonter les "
+                "rivalités traditionnelles entre Venise et l'Espagne "
+                "pour former une coalition."
+            ),
+            "during": (
+                "Une flotte coalisée espagnole, vénitienne et "
+                "pontificale sous le commandement de Don Juan "
+                "d'Autriche, demi-frère du roi d'Espagne, affronte la "
+                "flotte ottomane dans le golfe de Patras, dans un "
+                "combat rapproché entre galères où l'artillerie "
+                "embarquée chrétienne, notamment sur des galéasses "
+                "vénitiennes, joue un rôle décisif face à une flotte "
+                "ottomane techniquement moins avancée."
+            ),
+            "after": (
+                "La flotte ottomane est quasiment anéantie, mettant un "
+                "coup d'arrêt symbolique fort à son expansion navale, "
+                "bien que l'Empire reconstruise sa marine en moins "
+                "d'un an — un chroniqueur ottoman comparant la perte à "
+                "« se raser la barbe, qui repousse toujours » — "
+                "limitant la portée stratégique réelle de la victoire "
+                "chrétienne."
+            ),
+            "narrative": [
+                "En 1571, après la conquête de Chypre par les "
+                "Ottomans, accompagnée du massacre notoire des "
+                "défenseurs vénitiens de Famagouste, le pape Pie V "
+                "parvient à surmonter les rivalités traditionnelles "
+                "entre Venise et l'Espagne pour organiser une alliance "
+                "navale, la Sainte Ligue, sous le commandement de Don "
+                "Juan d'Autriche.",
+                "Le 7 octobre 1571, les deux flottes, comptant chacune "
+                "plus de 200 galères et des dizaines de milliers "
+                "d'hommes, s'affrontent dans le golfe de Patras, près "
+                "de la ville de Lépante. L'artillerie embarquée sur les "
+                "galéasses vénitiennes, technologiquement supérieure, "
+                "désorganise dès le début la flotte ottomane, faisant "
+                "rapidement pencher le combat en faveur de la Sainte "
+                "Ligue.",
+                "La flotte ottomane est presque entièrement détruite "
+                "ou capturée, et des milliers de rameurs chrétiens "
+                "réduits en esclavage sur les galères ottomanes sont "
+                "libérés. La bataille marque l'une des plus grandes "
+                "défaites navales de l'histoire ottomane, même si "
+                "l'Empire reconstruit sa flotte en moins d'un an.",
+            ],
+            "why_it_matters": (
+                "Bien que l'Empire ottoman reconstruise rapidement sa "
+                "flotte et conserve l'essentiel de sa puissance "
+                "méditerranéenne dans les décennies suivantes, Lépante "
+                "met un coup d'arrêt symbolique fort à son expansion "
+                "navale et reste, pour l'historiographie européenne, "
+                "l'une des batailles les plus célèbres de la "
+                "Renaissance, autant pour son retentissement "
+                "psychologique que pour sa portée militaire réelle."
+            ),
+        },
+    },
+    "bataille-de-panipat": {
+        "enfant": {
+            "summary": (
+                "Le 21 avril 1526, Babur bat le sultanat de Delhi lors "
+                "d'une grande bataille en Inde, et fonde un nouvel "
+                "empire : l'Empire moghol."
+            ),
+            "before": (
+                "Babur, qui descend de Gengis Khan, a perdu son "
+                "royaume et veut en trouver un nouveau en Inde."
+            ),
+            "during": (
+                "Avec moins de soldats mais des canons, Babur bat "
+                "l'armée du sultan de Delhi, qui meurt au combat."
+            ),
+            "after": (
+                "Babur prend Delhi et fonde l'Empire moghol, qui "
+                "dirigera l'Inde pendant très longtemps."
+            ),
+            "narrative": [
+                "Babur, qui descend de Gengis Khan et de Tamerlan, "
+                "perd son royaume et se tourne vers l'Inde pour en "
+                "trouver un nouveau.",
+                "Le 21 avril 1526, à Panipat, l'armée de Babur, plus "
+                "petite mais avec des canons, affronte celle du sultan "
+                "Ibrahim Lodi.",
+                "Babur gagne la bataille et le sultan meurt. Babur "
+                "prend ensuite Delhi et Agra.",
+            ],
+            "why_it_matters": (
+                "Cette victoire crée l'Empire moghol, qui va diriger "
+                "une grande partie de l'Inde pendant plus de 300 ans."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le conquérant Babur, descendant de Gengis Khan et de "
+                "Tamerlan, écrase le sultanat de Delhi et fonde "
+                "l'Empire moghol."
+            ),
+            "before": (
+                "Chassé de son royaume d'Asie centrale, Babur cherche "
+                "à établir un nouveau territoire et envahit le nord de "
+                "l'Inde."
+            ),
+            "during": (
+                "Bien qu'en infériorité numérique, l'armée de Babur, "
+                "utilisant l'artillerie, écrase les forces du sultan "
+                "Ibrahim Lodi, tué au combat."
+            ),
+            "after": (
+                "Babur s'empare de Delhi et d'Agra et fonde l'Empire "
+                "moghol, qui dominera l'Inde jusqu'au XIXe siècle."
+            ),
+            "narrative": [
+                "Descendant de Gengis Khan et de Tamerlan, le prince "
+                "Babur perd son royaume ancestral et se tourne vers "
+                "l'Inde du Nord pour y bâtir un nouvel empire.",
+                "Le 21 avril 1526, à Panipat, l'armée réduite mais "
+                "bien équipée de Babur affronte les forces bien plus "
+                "nombreuses du sultan Ibrahim Lodi.",
+                "Grâce à une tactique combinant artillerie et charges "
+                "de cavalerie, Babur remporte une victoire écrasante ; "
+                "le sultan Ibrahim Lodi est tué sur le champ de "
+                "bataille.",
+            ],
+            "why_it_matters": (
+                "Cette victoire fonde l'Empire moghol, qui dominera le "
+                "sous-continent indien pendant plus de trois siècles."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le conquérant Babur, descendant de Gengis Khan et de "
+                "Tamerlan, écrase le sultanat de Delhi et fonde "
+                "l'Empire moghol qui dominera l'Inde pendant plus de "
+                "trois siècles."
+            ),
+            "before": (
+                "Chassé de son royaume d'Asie centrale, Babur cherche "
+                "à établir un nouveau territoire et envahit le nord de "
+                "l'Inde, alors dirigé par le sultanat de Delhi."
+            ),
+            "during": (
+                "Bien qu'en infériorité numérique, l'armée de Babur, "
+                "utilisant l'artillerie et des tactiques innovantes, "
+                "écrase les forces du sultan Ibrahim Lodi, tué au "
+                "combat."
+            ),
+            "after": (
+                "Babur s'empare de Delhi et d'Agra et fonde l'Empire "
+                "moghol, qui dominera le sous-continent indien jusqu'au "
+                "XIXe siècle."
+            ),
+            "narrative": [
+                "Descendant à la fois de Gengis Khan et de Tamerlan, "
+                "le prince Babur perd son royaume ancestral en Asie "
+                "centrale et se tourne vers l'Inde du Nord pour y "
+                "bâtir un nouvel empire, profitant des divisions "
+                "internes du sultanat de Delhi.",
+                "Le 21 avril 1526, à Panipat, au nord de Delhi, "
+                "l'armée réduite mais bien équipée de Babur — notamment "
+                "dotée de canons et de mousquets, encore rares en Inde "
+                "à l'époque — affronte les forces bien plus nombreuses "
+                "mais moins organisées du sultan Ibrahim Lodi.",
+                "Grâce à une tactique combinant artillerie et charges "
+                "de cavalerie, Babur remporte une victoire écrasante ; "
+                "le sultan Ibrahim Lodi est tué sur le champ de "
+                "bataille. Babur s'empare rapidement de Delhi puis "
+                "d'Agra.",
+            ],
+            "why_it_matters": (
+                "Cette victoire fonde l'Empire moghol, qui dominera la "
+                "majeure partie du sous-continent indien pendant plus "
+                "de trois siècles et laissera un héritage architectural "
+                "et culturel considérable, dont le Taj Mahal reste le "
+                "symbole le plus célèbre."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le conquérant Babur, descendant de Gengis Khan et de "
+                "Tamerlan et déjà chassé à deux reprises de ses "
+                "territoires ancestraux d'Asie centrale, écrase le "
+                "sultanat de Delhi grâce à une supériorité tactique et "
+                "technologique décisive, fondant l'Empire moghol qui "
+                "laissera l'un des héritages culturels les plus "
+                "durables du sous-continent indien."
+            ),
+            "before": (
+                "Chassé de son royaume d'Asie centrale par les "
+                "Ouzbeks après plusieurs tentatives de reconquête "
+                "infructueuses, Babur, prince lettré et mémorialiste "
+                "réputé, se tourne vers l'Inde du Nord pour y bâtir un "
+                "nouvel empire, profitant des divisions internes du "
+                "sultanat de Delhi et de rivalités entre gouverneurs "
+                "afghans."
+            ),
+            "during": (
+                "Bien qu'en infériorité numérique face à une armée "
+                "renforcée d'éléphants de guerre, l'armée de Babur, "
+                "utilisant l'artillerie de campagne selon une tactique "
+                "de char de guerre improvisé (les chariots liés entre "
+                "eux, méthode ottomane qu'il avait observée), écrase "
+                "les forces du sultan Ibrahim Lodi, tué au combat avec "
+                "une grande partie de sa noblesse."
+            ),
+            "after": (
+                "Babur s'empare de Delhi et d'Agra et fonde l'Empire "
+                "moghol, laissant à sa mort en 1530 un mémoire "
+                "autobiographique, le Baburnama, considéré comme l'une "
+                "des œuvres littéraires majeures de la Renaissance "
+                "asiatique et une source historique de premier plan."
+            ),
+            "narrative": [
+                "Descendant à la fois de Gengis Khan et de Tamerlan, le "
+                "prince Babur, chassé de son royaume ancestral d'Asie "
+                "centrale par les Ouzbeks après plusieurs tentatives de "
+                "reconquête infructueuses, se tourne vers l'Inde du "
+                "Nord pour y bâtir un nouvel empire, profitant des "
+                "divisions internes du sultanat de Delhi.",
+                "Le 21 avril 1526, à Panipat, au nord de Delhi, l'armée "
+                "réduite mais bien équipée de Babur — notamment dotée "
+                "de canons et de mousquets, encore rares en Inde à "
+                "l'époque, et déployée selon une tactique de chariots "
+                "liés inspirée des usages ottomans — affronte les "
+                "forces bien plus nombreuses, y compris en éléphants de "
+                "guerre, mais moins organisées du sultan Ibrahim Lodi.",
+                "Grâce à cette combinaison d'artillerie et de charges "
+                "de cavalerie enveloppantes, Babur remporte une victoire "
+                "écrasante ; le sultan Ibrahim Lodi est tué sur le "
+                "champ de bataille avec une grande partie de sa "
+                "noblesse. Babur s'empare rapidement de Delhi puis "
+                "d'Agra.",
+            ],
+            "why_it_matters": (
+                "Cette victoire fonde l'Empire moghol, qui dominera la "
+                "majeure partie du sous-continent indien pendant plus "
+                "de trois siècles et laissera un héritage architectural "
+                "et culturel considérable, dont le Taj Mahal reste le "
+                "symbole le plus célèbre, tandis que le récit "
+                "autobiographique de Babur, le Baburnama, demeure l'une "
+                "des sources historiques les plus précieuses sur cette "
+                "période."
+            ),
+        },
+    },
+    "independance-du-ghana": {
+        "enfant": {
+            "summary": (
+                "Le 6 mars 1957, le Ghana devient le premier pays "
+                "d'Afrique noire à devenir indépendant."
+            ),
+            "before": (
+                "Le Ghana, dirigé par Kwame Nkrumah, se bat depuis "
+                "longtemps pour ne plus être une colonie du "
+                "Royaume-Uni."
+            ),
+            "during": (
+                "Le 6 mars 1957, le pays devient indépendant et prend "
+                "le nom de Ghana."
+            ),
+            "after": (
+                "Kwame Nkrumah devient le premier dirigeant du pays."
+            ),
+            "narrative": [
+                "Le Ghana était une colonie britannique. Kwame Nkrumah "
+                "mène une longue lutte pour l'indépendance.",
+                "Le 6 mars 1957, le pays devient enfin indépendant. Il "
+                "prend le nom de Ghana, en souvenir d'un ancien empire "
+                "africain.",
+                "Kwame Nkrumah devient le premier dirigeant du pays et "
+                "encourage les autres colonies africaines à devenir "
+                "indépendantes aussi.",
+            ],
+            "why_it_matters": (
+                "Le Ghana est le premier pays d'Afrique noire "
+                "indépendant. Beaucoup d'autres pays africains vont "
+                "suivre son exemple."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le Ghana devient la première colonie d'Afrique "
+                "subsaharienne à accéder à l'indépendance, ouvrant la "
+                "voie à la décolonisation du continent."
+            ),
+            "before": (
+                "Sous la direction de Kwame Nkrumah, la Gold Coast "
+                "britannique mène une campagne de plusieurs années "
+                "pour l'indépendance complète."
+            ),
+            "during": (
+                "Le 6 mars 1957, le pays accède à l'indépendance sous "
+                "le nom de Ghana, avec Kwame Nkrumah comme premier "
+                "chef de gouvernement."
+            ),
+            "after": (
+                "L'indépendance ghanéenne inspire les mouvements "
+                "d'indépendance dans toute l'Afrique subsaharienne."
+            ),
+            "narrative": [
+                "Colonie britannique sous le nom de Gold Coast, le "
+                "territoire mène une campagne pour l'indépendance, "
+                "portée par le leader panafricaniste Kwame Nkrumah.",
+                "Après des grèves et des négociations, le pays accède "
+                "à l'indépendance le 6 mars 1957, prenant le nom de "
+                "Ghana en hommage à l'ancien empire médiéval.",
+                "Kwame Nkrumah devient le premier chef de gouvernement "
+                "et appelle les autres colonies africaines à suivre "
+                "l'exemple ghanéen.",
+            ],
+            "why_it_matters": (
+                "Premier pays d'Afrique subsaharienne indépendant, le "
+                "Ghana devient un symbole de la décolonisation du "
+                "continent."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le Ghana devient la première colonie d'Afrique "
+                "subsaharienne à accéder à l'indépendance, ouvrant la "
+                "voie à la décolonisation du continent africain."
+            ),
+            "before": (
+                "Sous la direction de Kwame Nkrumah, la Gold Coast "
+                "britannique mène une campagne de plusieurs années "
+                "pour l'autonomie puis l'indépendance complète."
+            ),
+            "during": (
+                "Le 6 mars 1957, le pays accède à l'indépendance sous "
+                "le nom de Ghana, en référence à l'ancien empire "
+                "africain médiéval, avec Kwame Nkrumah comme premier "
+                "chef de gouvernement."
+            ),
+            "after": (
+                "L'indépendance ghanéenne inspire et accélère les "
+                "mouvements d'indépendance dans toute l'Afrique "
+                "subsaharienne, dont la grande majorité des colonies "
+                "accéderont à leur tour à l'indépendance dans les "
+                "années qui suivent."
+            ),
+            "narrative": [
+                "Colonie britannique sous le nom de Gold Coast, le "
+                "territoire mène à partir de la fin des années 1940 "
+                "une campagne pour l'autonomie puis l'indépendance "
+                "complète, portée notamment par le leader panafricaniste "
+                "Kwame Nkrumah et son parti, le Convention People's "
+                "Party.",
+                "Après des grèves, des manifestations et des "
+                "négociations avec les autorités britanniques, le pays "
+                "accède à l'indépendance le 6 mars 1957, prenant le nom "
+                "de Ghana en hommage à l'ancien empire du Ghana "
+                "médiéval d'Afrique de l'Ouest, bien que situé sur un "
+                "territoire différent.",
+                "Kwame Nkrumah devient le premier chef de gouvernement "
+                "puis président du pays, et se fait rapidement le "
+                "porte-voix d'un panafricanisme militant, appelant les "
+                "autres colonies africaines à suivre l'exemple "
+                "ghanéen.",
+            ],
+            "why_it_matters": (
+                "Premier pays d'Afrique subsaharienne à obtenir son "
+                "indépendance, le Ghana devient un symbole et un "
+                "catalyseur de la décolonisation du continent : dix-"
+                "sept autres pays africains accéderont à leur tour à "
+                "l'indépendance dès 1960, surnommée « l'année de "
+                "l'Afrique »."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le Ghana devient la première colonie d'Afrique "
+                "subsaharienne à accéder à l'indépendance, au terme "
+                "d'une transition négociée relativement pacifique par "
+                "rapport à d'autres processus de décolonisation "
+                "africains, ouvrant symboliquement la voie à la vague "
+                "de décolonisation du continent."
+            ),
+            "before": (
+                "Sous la direction de Kwame Nkrumah, revenu d'études "
+                "aux États-Unis et au Royaume-Uni imprégné des idées "
+                "panafricanistes, la Gold Coast britannique mène à "
+                "partir de la fin des années 1940 une campagne "
+                "d'abord réformiste puis résolument indépendantiste, "
+                "combinant grèves, boycotts et une stratégie électorale "
+                "au sein même des institutions coloniales."
+            ),
+            "during": (
+                "Le 6 mars 1957, à minuit, le pays accède à "
+                "l'indépendance sous le nom de Ghana lors d'une "
+                "cérémonie où Nkrumah prononce son célèbre discours "
+                "proclamant que « l'indépendance du Ghana est sans "
+                "valeur si elle n'est pas liée à la libération totale "
+                "de l'Afrique »."
+            ),
+            "after": (
+                "L'indépendance ghanéenne inspire et accélère les "
+                "mouvements d'indépendance dans toute l'Afrique "
+                "subsaharienne, Nkrumah devenant l'un des principaux "
+                "artisans de la fondation de l'Organisation de l'unité "
+                "africaine en 1963, bien qu'il soit lui-même renversé "
+                "par un coup d'État militaire en 1966."
+            ),
+            "narrative": [
+                "Colonie britannique sous le nom de Gold Coast, le "
+                "territoire mène à partir de la fin des années 1940 "
+                "une campagne pour l'autonomie puis l'indépendance "
+                "complète, portée notamment par le leader panafricaniste "
+                "Kwame Nkrumah, revenu d'études aux États-Unis et au "
+                "Royaume-Uni, et son parti, le Convention People's "
+                "Party, qui mêle mobilisation populaire et stratégie "
+                "institutionnelle.",
+                "Après des grèves, des manifestations et des "
+                "négociations constitutionnelles progressives avec les "
+                "autorités britanniques, le pays accède à "
+                "l'indépendance le 6 mars 1957 à minuit, prenant le nom "
+                "de Ghana en hommage à l'ancien empire du Ghana "
+                "médiéval d'Afrique de l'Ouest, bien que situé sur un "
+                "territoire différent. Nkrumah y prononce un discours "
+                "resté célèbre, liant explicitement l'indépendance "
+                "ghanéenne à la cause panafricaine.",
+                "Kwame Nkrumah devient le premier chef de gouvernement "
+                "puis président du pays, et se fait rapidement le "
+                "porte-voix d'un panafricanisme militant, appelant les "
+                "autres colonies africaines à suivre l'exemple "
+                "ghanéen, avant que ses dérives autoritaires "
+                "croissantes ne contribuent à sa chute par coup d'État "
+                "militaire en 1966.",
+            ],
+            "why_it_matters": (
+                "Premier pays d'Afrique subsaharienne à obtenir son "
+                "indépendance, le Ghana devient un symbole et un "
+                "catalyseur de la décolonisation du continent : "
+                "dix-sept autres pays africains accéderont à leur tour "
+                "à l'indépendance dès 1960, surnommée « l'année de "
+                "l'Afrique », un mouvement dont Nkrumah restera l'une "
+                "des figures intellectuelles et politiques majeures "
+                "malgré son propre renversement."
+            ),
+        },
+    },
 }
 
 
@@ -9502,6 +10074,538 @@ QUIZ_BY_LEVEL = {
             ],
             "correct_index": 0,
             "fun_fact": "Le condenseur séparé de Watt, maintenu froid en permanence, évite de réchauffer puis refroidir sans cesse le cylindre principal.",
+        },
+    },
+    "bagdad-consequence": {
+        "enfant": {
+            "prompt": "Que font les Mongols des bibliothèques de Bagdad en 1258 ?",
+            "options": ["Ils les brûlent", "Ils les protègent", "Ils les vendent", "Ils les copient"],
+            "correct_index": 0,
+            "fun_fact": "Les bibliothèques de Bagdad sont incendiées, une perte immense pour le savoir de l'époque.",
+        },
+        "college": {
+            "prompt": "Qu'est-ce que le sac de Bagdad par les Mongols en 1258 a marqué ?",
+            "options": ["Le début du califat abbasside", "La fin de l'âge d'or intellectuel abbasside", "La conversion des Mongols à l'islam", "La fondation de l'Empire ottoman"],
+            "correct_index": 1,
+            "fun_fact": "Les Mongols d'Hulagu Khan détruisent les immenses bibliothèques de Bagdad en 1258, mettant fin à cinq siècles d'âge d'or scientifique.",
+        },
+        "lycee": {
+            "prompt": "Qui dirige l'armée mongole lors du sac de Bagdad en 1258 ?",
+            "options": ["Hulagu Khan", "Gengis Khan", "Kubilai Khan", "Tamerlan"],
+            "correct_index": 0,
+            "fun_fact": "Hulagu Khan, petit-fils de Gengis Khan, mène l'armée mongole jusqu'aux portes de Bagdad en 1258.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Comment l'historiographie moderne nuance-t-elle le récit traditionnel du sac de Bagdad ?",
+            "options": [
+                "Elle tend à revoir à la baisse les estimations médiévales du nombre de victimes",
+                "Elle affirme que le sac n'a jamais eu lieu",
+                "Elle attribue le sac aux Ottomans plutôt qu'aux Mongols",
+                "Elle situe l'événement au XVe siècle",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'historiographie moderne tend à revoir à la baisse les estimations médiévales du nombre de victimes, sans nier l'ampleur du désastre.",
+        },
+    },
+    "barbe-noire-lieu": {
+        "enfant": {
+            "prompt": "Où le pirate Barbe Noire a-t-il été tué en 1718 ?",
+            "options": ["À Ocracoke, Caroline du Nord", "Aux Bahamas", "À la Jamaïque", "À Tortuga"],
+            "correct_index": 0,
+            "fun_fact": "Barbe Noire est tué le 22 novembre 1718 lors d'un combat contre les hommes du lieutenant Robert Maynard.",
+        },
+        "college": {
+            "prompt": "Où le pirate Barbe Noire a-t-il été tué en 1718 ?",
+            "options": ["Aux Bahamas", "À la Jamaïque", "À Ocracoke, Caroline du Nord", "À Tortuga"],
+            "correct_index": 2,
+            "fun_fact": "Barbe Noire est tué le 22 novembre 1718 lors d'un combat au sabre contre les hommes du lieutenant Robert Maynard.",
+        },
+        "lycee": {
+            "prompt": "Comment s'appelait le navire amiral de Barbe Noire ?",
+            "options": ["Le Queen Anne's Revenge", "Le Jolly Roger", "Le Black Pearl", "Le Flying Dutchman"],
+            "correct_index": 0,
+            "fun_fact": "Barbe Noire avait bloqué le port de Charleston avec son navire amiral, le Queen Anne's Revenge.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Que suggèrent les historiens sur la réputation de cruauté de Barbe Noire ?",
+            "options": [
+                "Elle reposait davantage sur une mise en scène intimidante que sur des actes de violence avérés",
+                "Elle était largement sous-estimée par ses contemporains",
+                "Elle provenait uniquement de récits fictifs du XXe siècle",
+                "Elle n'a jamais été discutée par les historiens",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La réputation de cruauté de Barbe Noire reposait surtout sur sa mise en scène intimidante, plus que sur des violences avérées envers ses prisonniers.",
+        },
+    },
+    "gengis-khan-empire": {
+        "enfant": {
+            "prompt": "Qu'a fondé Gengis Khan avant sa mort en 1227 ?",
+            "options": ["Le plus vaste empire continu de l'histoire", "La Route de la soie", "L'Empire ottoman", "Le califat abbasside"],
+            "correct_index": 0,
+            "fun_fact": "En unifiant les tribus mongoles, Gengis Khan bâtit le plus vaste territoire continu jamais conquis dans l'histoire.",
+        },
+        "college": {
+            "prompt": "Qu'a fondé Gengis Khan avant sa mort en 1227 ?",
+            "options": ["Le plus vaste empire continu de l'histoire", "La Route de la soie", "L'Empire ottoman", "Le califat abbasside"],
+            "correct_index": 0,
+            "fun_fact": "En unifiant les tribus mongoles puis en menant des conquêtes fulgurantes, Gengis Khan bâtit le plus vaste territoire continu de l'histoire.",
+        },
+        "lycee": {
+            "prompt": "Contre quel royaume Gengis Khan mène-t-il campagne au moment de sa mort ?",
+            "options": ["Le royaume Tangut de Xi Xia", "La dynastie Song", "Le sultanat de Khwarezm", "Le royaume de Corée"],
+            "correct_index": 0,
+            "fun_fact": "Gengis Khan meurt en 1227 alors qu'il mène une campagne punitive contre le royaume Tangut de Xi Xia.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la mort de Gengis Khan est-elle tenue secrète par son entourage ?",
+            "options": [
+                "Pour ne pas démoraliser les troupes avant la prise de la capitale tangut",
+                "Parce que sa succession n'était pas encore décidée",
+                "Pour permettre à un imposteur de le remplacer",
+                "Ce n'est pas historiquement attesté",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Sa mort est tenue secrète par son entourage jusqu'à la prise de la capitale tangut, afin de ne pas démoraliser les troupes.",
+        },
+    },
+    "nankin-consequence": {
+        "enfant": {
+            "prompt": "Quel territoire la Chine cède-t-elle au Royaume-Uni par le traité de Nankin ?",
+            "options": ["Hong Kong", "Shanghai", "Macao", "Taïwan"],
+            "correct_index": 0,
+            "fun_fact": "Le traité de Nankin cède Hong Kong au Royaume-Uni et ouvre cinq ports chinois au commerce étranger.",
+        },
+        "college": {
+            "prompt": "Quel territoire la Chine cède-t-elle au Royaume-Uni par le traité de Nankin en 1842 ?",
+            "options": ["Shanghai", "Hong Kong", "Macao", "Taïwan"],
+            "correct_index": 1,
+            "fun_fact": "Le traité de Nankin, qui met fin à la première guerre de l'Opium, cède Hong Kong au Royaume-Uni.",
+        },
+        "lycee": {
+            "prompt": "Quelle marchandise est à l'origine du conflit menant au traité de Nankin ?",
+            "options": ["L'opium", "Le thé", "La soie", "Le sel"],
+            "correct_index": 0,
+            "fun_fact": "Le refus chinois de laisser entrer l'opium britannique, massivement exporté depuis l'Inde, dégénère en conflit armé dès 1839.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi les marchands britanniques exportaient-ils massivement de l'opium vers la Chine ?",
+            "options": [
+                "Pour compenser leur déficit commercial lié aux importations de thé",
+                "Pour financer la construction du chemin de fer indien",
+                "À la demande du gouvernement chinois lui-même",
+                "Pour affaiblir l'armée chinoise avant une invasion",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'exportation massive d'opium visait à compenser le déficit commercial britannique lié aux importations de thé chinois.",
+        },
+    },
+    "meiji-consequence": {
+        "enfant": {
+            "prompt": "Qu'a déclenché la restauration Meiji au Japon en 1868 ?",
+            "options": ["Une modernisation rapide", "L'isolement total du Japon", "La colonisation du Japon", "L'abolition de l'empereur"],
+            "correct_index": 0,
+            "fun_fact": "Après 1868, le Japon se modernise très vite et devient une puissance industrielle en quelques décennies.",
+        },
+        "college": {
+            "prompt": "Qu'a déclenché la restauration Meiji au Japon en 1868 ?",
+            "options": ["L'isolement total du Japon", "Une modernisation et industrialisation accélérées", "La colonisation du Japon par les États-Unis", "L'abolition de l'empereur"],
+            "correct_index": 1,
+            "fun_fact": "Après la restauration du pouvoir impérial en 1868, le Japon engage un vaste programme de modernisation.",
+        },
+        "lycee": {
+            "prompt": "Quel événement de 1853 fragilise durablement l'autorité du shogunat japonais ?",
+            "options": ["L'arrivée des navires du commodore Perry", "Un tremblement de terre à Tokyo", "Une famine nationale", "Une invasion chinoise"],
+            "correct_index": 0,
+            "fun_fact": "L'arrivée en 1853 des navires de guerre américains du commodore Perry, exigeant l'ouverture du pays, fragilise durablement le shogunat.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Sur quels modèles étrangers le nouveau gouvernement Meiji construit-il son armée et sa marine ?",
+            "options": [
+                "L'armée sur le modèle prussien, la marine sur le modèle britannique",
+                "L'armée et la marine sur le modèle français uniquement",
+                "Sur le modèle chinois traditionnel",
+                "Sur le modèle américain exclusivement",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le Japon adopte une armée sur le modèle prussien et une marine sur le modèle britannique, deux puissances alors jugées les plus performantes.",
+        },
+    },
+    "inde-independance-consequence": {
+        "enfant": {
+            "prompt": "Quel événement a immédiatement suivi l'indépendance de l'Inde en 1947 ?",
+            "options": ["La partition avec le Pakistan", "Une alliance avec le Royaume-Uni", "La guerre avec la Chine", "L'abolition de la démocratie"],
+            "correct_index": 0,
+            "fun_fact": "L'indépendance de l'Inde s'accompagne d'une partition douloureuse avec le Pakistan.",
+        },
+        "college": {
+            "prompt": "Quel événement a immédiatement suivi l'indépendance de l'Inde en 1947 ?",
+            "options": ["Une alliance avec le Royaume-Uni", "La partition avec le Pakistan", "La guerre avec la Chine", "L'abolition de la démocratie"],
+            "correct_index": 1,
+            "fun_fact": "L'indépendance de l'Inde le 15 août 1947 s'accompagne d'une partition douloureuse avec le Pakistan.",
+        },
+        "lycee": {
+            "prompt": "Quelle doctrine Gandhi développe-t-il pour lutter contre la domination britannique ?",
+            "options": ["La résistance non-violente (satyagraha)", "La guérilla armée", "Le boycott économique uniquement", "L'alliance militaire avec le Japon"],
+            "correct_index": 0,
+            "fun_fact": "La doctrine de résistance non-violente de Gandhi, le satyagraha, mobilise des millions d'Indiens.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Qui trace la ligne de partition entre l'Inde et le Pakistan en 1947 ?",
+            "options": [
+                "Un juriste britannique n'ayant jamais visité l'Inde auparavant",
+                "Gandhi et Nehru conjointement",
+                "Une commission de l'ONU",
+                "Le vice-roi Mountbatten lui-même, en personne",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La « ligne Radcliffe » est tracée à la hâte par un juriste britannique, Cyril Radcliffe, qui n'avait jamais visité l'Inde.",
+        },
+    },
+    "adoua-consequence": {
+        "enfant": {
+            "prompt": "Quel pays l'Éthiopie a-t-elle vaincu à la bataille d'Adoua en 1896 ?",
+            "options": ["L'Italie", "La France", "Le Royaume-Uni", "L'Espagne"],
+            "correct_index": 0,
+            "fun_fact": "L'Éthiopie écrase l'armée italienne à Adoua et reste l'un des seuls pays africains à échapper à la colonisation.",
+        },
+        "college": {
+            "prompt": "Quel pays l'Éthiopie a-t-elle vaincu à la bataille d'Adoua en 1896 ?",
+            "options": ["La France", "Le Royaume-Uni", "L'Italie", "L'Espagne"],
+            "correct_index": 2,
+            "fun_fact": "En écrasant l'armée italienne à Adoua en 1896, l'Éthiopie préserve son indépendance face à la colonisation européenne.",
+        },
+        "lycee": {
+            "prompt": "Qui commande l'armée éthiopienne victorieuse à Adoua ?",
+            "options": ["L'empereur Ménélik II", "Le négus Haïlé Sélassié", "Le roi Théodoros II", "L'impératrice Zewditou"],
+            "correct_index": 0,
+            "fun_fact": "L'empereur Ménélik II organise et commande l'armée éthiopienne, forte d'environ 100 000 hommes, à Adoua.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel rôle joue l'impératrice Taytu Betoul lors de la campagne d'Adoua ?",
+            "options": [
+                "Elle commande elle-même une partie des troupes au combat",
+                "Elle négocie seule la paix avec l'Italie après la bataille",
+                "Elle reste à Addis-Abeba sans participer à la campagne",
+                "Elle est capturée par les Italiens avant la bataille",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'impératrice Taytu Betoul commande elle-même une partie des troupes éthiopiennes et contribue activement à la victoire.",
+        },
+    },
+    "berlin-conference-participants": {
+        "enfant": {
+            "prompt": "Qui n'est pas invité à la conférence de Berlin de 1884 ?",
+            "options": ["Les représentants africains", "Les représentants allemands", "Les représentants britanniques", "Les représentants français"],
+            "correct_index": 0,
+            "fun_fact": "La conférence de Berlin décide du partage de l'Afrique sans qu'aucun Africain n'y soit invité.",
+        },
+        "college": {
+            "prompt": "Qui était absent des négociations lors de la conférence de Berlin de 1884-85 ?",
+            "options": ["Les représentants britanniques", "Les représentants africains", "Les représentants allemands", "Les représentants français"],
+            "correct_index": 1,
+            "fun_fact": "La conférence de Berlin réunit quatorze puissances pour décider du partage colonial de l'Afrique, sans représentant africain.",
+        },
+        "lycee": {
+            "prompt": "Quel principe la conférence de Berlin établit-elle pour revendiquer un territoire africain ?",
+            "options": ["L'« occupation effective »", "Le droit du premier explorateur", "Un vote des populations locales", "L'ancienneté commerciale"],
+            "correct_index": 0,
+            "fun_fact": "La conférence établit le principe de l'« occupation effective » requise pour revendiquer un territoire, accélérant la colonisation.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel territoire est reconnu à titre personnel à Léopold II lors de la conférence de Berlin ?",
+            "options": [
+                "L'État indépendant du Congo",
+                "La colonie du Congo français",
+                "Le Mozambique",
+                "La Rhodésie",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'État indépendant du Congo est reconnu comme possession personnelle du roi belge Léopold II, qui en fera l'un des régimes coloniaux les plus violents de l'histoire.",
+        },
+    },
+    "tenochtitlan-consequence": {
+        "enfant": {
+            "prompt": "Quel empire prend fin avec la chute de Tenochtitlan en 1521 ?",
+            "options": ["L'Empire aztèque", "L'Empire inca", "L'Empire maya", "L'Empire toltèque"],
+            "correct_index": 0,
+            "fun_fact": "La chute de Tenochtitlan, le 13 août 1521, met fin à l'Empire aztèque.",
+        },
+        "college": {
+            "prompt": "Quel empire prend fin avec la chute de Tenochtitlan en 1521 ?",
+            "options": ["L'Empire inca", "L'Empire aztèque", "L'Empire maya", "L'Empire toltèque"],
+            "correct_index": 1,
+            "fun_fact": "Après un siège de plus de deux mois, Hernán Cortés et ses alliés amérindiens mettent fin à l'Empire aztèque.",
+        },
+        "lycee": {
+            "prompt": "Quel peuple amérindien s'allie à Cortés contre les Aztèques ?",
+            "options": ["Les Tlaxcaltèques", "Les Mayas", "Les Incas", "Les Zapotèques"],
+            "correct_index": 0,
+            "fun_fact": "Cortés noue une alliance stratégique avec les Tlaxcaltèques, un peuple tributaire hostile à la domination aztèque.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel facteur, au-delà des combats eux-mêmes, explique l'effondrement démographique du Mexique central après la conquête ?",
+            "options": [
+                "Les épidémies importées d'Europe, comme la variole",
+                "La famine provoquée par la destruction des cultures",
+                "La déportation massive vers l'Espagne",
+                "Les migrations volontaires vers d'autres régions",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La population autochtone du Mexique central s'effondre de plus de 90 % au siècle suivant, principalement à cause des épidémies importées.",
+        },
+    },
+    "atahualpa-rancon": {
+        "enfant": {
+            "prompt": "Comment Atahualpa essaie-t-il d'être libéré après sa capture ?",
+            "options": ["En remplissant une pièce d'or et d'argent", "En offrant une armée", "En cédant son trône", "En épousant Pizarre"],
+            "correct_index": 0,
+            "fun_fact": "Atahualpa propose une énorme rançon en or et en argent, mais Pizarre le fait quand même exécuter.",
+        },
+        "college": {
+            "prompt": "Comment Atahualpa a-t-il tenté d'obtenir sa libération après sa capture en 1532 ?",
+            "options": ["En offrant une armée", "En remplissant une pièce d'or et d'argent", "En cédant son trône", "En épousant Pizarre"],
+            "correct_index": 1,
+            "fun_fact": "Atahualpa propose de remplir une pièce d'or et deux fois d'argent en échange de sa liberté — l'une des plus grandes rançons de l'histoire.",
+        },
+        "lycee": {
+            "prompt": "Dans quelle ville Atahualpa est-il capturé par les Espagnols ?",
+            "options": ["Cajamarca", "Cuzco", "Quito", "Lima"],
+            "correct_index": 0,
+            "fun_fact": "C'est lors d'une rencontre organisée à Cajamarca que les conquistadors tendent leur embuscade.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi Pizarre fait-il exécuter Atahualpa malgré le paiement intégral de la rançon ?",
+            "options": [
+                "Par crainte d'une révolte inca coordonnée depuis l'intérieur du pays",
+                "Parce que la rançon n'a pas été payée en totalité",
+                "Sur ordre direct du roi d'Espagne",
+                "Parce qu'Atahualpa avait tenté de s'échapper",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Malgré la rançon intégralement livrée, Pizarre fait exécuter Atahualpa en 1533, craignant une révolte inca coordonnée.",
+        },
+    },
+    "cook-australie-nom": {
+        "enfant": {
+            "prompt": "Pourquoi James Cook appelle-t-il l'endroit « Botany Bay » ?",
+            "options": ["À cause des nombreuses plantes découvertes là-bas", "En l'honneur d'un ami", "À cause de la forme de la baie", "Par erreur de traduction"],
+            "correct_index": 0,
+            "fun_fact": "Les botanistes de l'expédition de Cook découvrent tant de nouvelles plantes que la baie est baptisée « Botany Bay ».",
+        },
+        "college": {
+            "prompt": "Pourquoi James Cook a-t-il nommé le lieu de son débarquement « Botany Bay » en 1770 ?",
+            "options": ["En l'honneur d'un botaniste célèbre", "Pour la richesse de sa flore observée par les botanistes", "Car un village y portait déjà ce nom", "Par erreur de traduction"],
+            "correct_index": 1,
+            "fun_fact": "Les botanistes de l'expédition de Cook, dont Joseph Banks, découvrent tant de nouvelles espèces végétales que la baie est baptisée « Botany Bay ».",
+        },
+        "lycee": {
+            "prompt": "Quelle mission secrète l'Amirauté confie-t-elle à Cook en plus de l'observation astronomique ?",
+            "options": ["Chercher un continent austral inconnu", "Cartographier l'Afrique", "Trouver une route vers l'Inde", "Négocier avec les Espagnols"],
+            "correct_index": 0,
+            "fun_fact": "En plus d'observer le passage de Vénus, Cook reçoit l'ordre secret de rechercher un vaste continent austral supposé exister.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Sous quel statut juridique Cook revendique-t-il l'Australie orientale pour la couronne britannique ?",
+            "options": [
+                "Terra nullius, une terre jugée n'appartenir à personne",
+                "Un protectorat négocié avec les peuples aborigènes",
+                "Une cession pacifique par traité",
+                "Un mandat de la Royal Society",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Cook déclare la terre terra nullius malgré l'occupation aborigène continue depuis des dizaines de milliers d'années, fiction juridique abrogée seulement en 1992.",
+        },
+    },
+    "sydney-fondation-nom": {
+        "enfant": {
+            "prompt": "Que transportait surtout la « First Fleet » qui fonde Sydney en 1788 ?",
+            "options": ["Des bagnards britanniques", "Des marchandises précieuses", "Des soldats uniquement", "Des animaux exotiques"],
+            "correct_index": 0,
+            "fun_fact": "La First Fleet transportait plus de 700 bagnards envoyés fonder une nouvelle colonie pénale.",
+        },
+        "college": {
+            "prompt": "Que transportait principalement la « First Fleet » qui fonde la colonie de Sydney en 1788 ?",
+            "options": ["Des marchandises précieuses", "Des bagnards britanniques", "Des colons volontaires fortunés", "Des troupes militaires uniquement"],
+            "correct_index": 1,
+            "fun_fact": "Ayant perdu ses colonies pénitentiaires américaines, le Royaume-Uni envoie plus de 700 bagnards fonder une nouvelle colonie en Australie.",
+        },
+        "lycee": {
+            "prompt": "Pourquoi le Royaume-Uni a-t-il besoin d'une nouvelle colonie pénitentiaire en 1788 ?",
+            "options": [
+                "Il a perdu ses colonies pénitentiaires américaines après l'indépendance des États-Unis",
+                "Ses prisons européennes ont brûlé",
+                "Il voulait concurrencer la France en Australie",
+                "Les bagnards avaient demandé à partir en Australie",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Ayant perdu ses colonies pénitentiaires américaines après 1783, le Royaume-Uni cherche une nouvelle destination pour ses bagnards.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la date du 26 janvier est-elle aujourd'hui contestée en Australie ?",
+            "options": [
+                "Une part croissante de l'opinion la considère comme un « jour d'invasion » pour les Aborigènes",
+                "Elle correspond à une erreur de calendrier historique",
+                "Elle commémore en réalité une défaite militaire",
+                "Elle n'est plus reconnue officiellement depuis 1901",
+            ],
+            "correct_index": 0,
+            "fun_fact": "« Australia Day », le 26 janvier, est de plus en plus contestée par les communautés aborigènes et une part croissante de l'opinion, qui la voient comme un « jour d'invasion ».",
+        },
+    },
+    "saladin-jerusalem-annee": {
+        "enfant": {
+            "prompt": "En quelle année Saladin reprend-il Jérusalem aux croisés ?",
+            "options": ["1187", "1099", "1291", "1453"],
+            "correct_index": 0,
+            "fun_fact": "Saladin reprend Jérusalem le 2 octobre 1187, après sa victoire à la bataille de Hattin.",
+        },
+        "college": {
+            "prompt": "En quelle année Saladin reprend-il Jérusalem aux croisés ?",
+            "options": ["1099", "1187", "1291", "1453"],
+            "correct_index": 1,
+            "fun_fact": "Après sa victoire à la bataille de Hattin, Saladin reprend Jérusalem le 2 octobre 1187.",
+        },
+        "lycee": {
+            "prompt": "Quelle bataille, remportée par Saladin quelques mois avant la prise de Jérusalem, décime l'armée franque ?",
+            "options": ["La bataille de Hattin", "La bataille d'Ascalon", "Le siège d'Acre", "La bataille d'Antioche"],
+            "correct_index": 0,
+            "fun_fact": "L'armée des États latins d'Orient subit une défaite écrasante à Hattin, perdant l'essentiel de sa capacité militaire avant la chute de Jérusalem.",
+        },
+        "etudiant_adulte": {
+            "prompt": "En quoi la reddition de Jérusalem par Saladin contraste-t-elle avec la prise de la ville par les croisés en 1099 ?",
+            "options": [
+                "Saladin autorise les habitants chrétiens à partir moyennant rançon, sans massacre",
+                "Saladin détruit entièrement la ville",
+                "Saladin convertit de force toute la population",
+                "Saladin réduit tous les habitants en esclavage",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Contrairement au massacre de 1099, Saladin négocie une reddition organisée épargnant la population, geste resté célèbre dans les deux traditions historiques.",
+        },
+    },
+    "grenade-annee": {
+        "enfant": {
+            "prompt": "Quel autre événement important a lieu la même année que la prise de Grenade (1492) ?",
+            "options": ["L'expédition de Christophe Colomb", "La chute de Constantinople", "Le sacre de Napoléon", "La Réforme protestante"],
+            "correct_index": 0,
+            "fun_fact": "En 1492, les rois d'Espagne prennent Grenade et financent aussi le voyage de Christophe Colomb.",
+        },
+        "college": {
+            "prompt": "Quel autre événement majeur a lieu la même année que la prise de Grenade (1492) ?",
+            "options": ["L'expédition de Christophe Colomb", "La Réforme protestante", "La chute de Constantinople", "Le sacre de Napoléon"],
+            "correct_index": 0,
+            "fun_fact": "La même année 1492, les Rois Catholiques achèvent la Reconquista à Grenade et financent l'expédition de Colomb.",
+        },
+        "lycee": {
+            "prompt": "Comment s'appelle le dernier sultan nasride de Grenade ?",
+            "options": ["Boabdil (Muhammad XII)", "Al-Musta'sim", "Saladin", "Babur"],
+            "correct_index": 0,
+            "fun_fact": "Le sultan Boabdil remet les clés de Grenade et de l'Alhambra aux souverains catholiques le 2 janvier 1492.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel autre décret majeur les Rois Catholiques promulguent-ils en 1492, en plus de la prise de Grenade ?",
+            "options": [
+                "L'expulsion des juifs d'Espagne",
+                "L'abolition de l'Inquisition",
+                "La création de l'université de Salamanque",
+                "L'interdiction du christianisme",
+            ],
+            "correct_index": 0,
+            "fun_fact": "En 1492, les Rois Catholiques décrètent aussi l'expulsion des juifs d'Espagne, faisant de cette année un tournant majeur d'unification religieuse forcée.",
+        },
+    },
+    "lepante-consequence": {
+        "enfant": {
+            "prompt": "Quelle flotte est vaincue à la bataille de Lépante en 1571 ?",
+            "options": ["La flotte ottomane", "La flotte espagnole", "La flotte vénitienne", "La flotte portugaise"],
+            "correct_index": 0,
+            "fun_fact": "La flotte chrétienne de la Sainte Ligue écrase la flotte ottomane lors d'une immense bataille navale.",
+        },
+        "college": {
+            "prompt": "Quelle flotte est vaincue à la bataille de Lépante en 1571 ?",
+            "options": ["La flotte espagnole", "La flotte ottomane", "La flotte vénitienne", "La flotte portugaise"],
+            "correct_index": 1,
+            "fun_fact": "La flotte de la Sainte Ligue chrétienne écrase la flotte ottomane à Lépante, l'une des plus grandes batailles navales de l'histoire.",
+        },
+        "lycee": {
+            "prompt": "Qui commande la flotte de la Sainte Ligue à Lépante ?",
+            "options": ["Don Juan d'Autriche", "Philippe II d'Espagne", "Le pape Pie V en personne", "Le doge de Venise"],
+            "correct_index": 0,
+            "fun_fact": "La Sainte Ligue, réunissant l'Espagne, Venise et les États pontificaux, est commandée par Don Juan d'Autriche.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la portée stratégique réelle de la victoire de Lépante est-elle finalement limitée ?",
+            "options": [
+                "L'Empire ottoman reconstruit sa flotte en moins d'un an",
+                "La Sainte Ligue s'est dissoute avant la bataille",
+                "Les Ottomans n'avaient en réalité perdu aucun navire",
+                "La bataille n'a jamais vraiment eu lieu",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Un chroniqueur ottoman aurait comparé la perte de la flotte à « se raser la barbe, qui repousse toujours » — l'Empire la reconstruit en moins d'un an.",
+        },
+    },
+    "panipat-fondateur": {
+        "enfant": {
+            "prompt": "Quel empire Babur fonde-t-il après sa victoire à Panipat en 1526 ?",
+            "options": ["L'Empire moghol", "L'Empire ottoman", "L'Empire perse", "Le sultanat de Delhi"],
+            "correct_index": 0,
+            "fun_fact": "Après sa victoire à Panipat, Babur fonde l'Empire moghol, qui dominera l'Inde pendant plus de 300 ans.",
+        },
+        "college": {
+            "prompt": "Quel empire Babur fonde-t-il après sa victoire à Panipat en 1526 ?",
+            "options": ["L'Empire ottoman", "L'Empire moghol", "L'Empire perse", "Le sultanat de Delhi"],
+            "correct_index": 1,
+            "fun_fact": "Descendant de Gengis Khan et de Tamerlan, Babur fonde l'Empire moghol après Panipat.",
+        },
+        "lycee": {
+            "prompt": "De quels deux grands conquérants Babur descend-il ?",
+            "options": ["Gengis Khan et Tamerlan", "Attila et Gengis Khan", "Saladin et Tamerlan", "Alexandre le Grand et Gengis Khan"],
+            "correct_index": 0,
+            "fun_fact": "Babur descend à la fois de Gengis Khan et de Tamerlan, deux des plus grands conquérants de l'histoire.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quelle tactique, empruntée aux Ottomans, Babur utilise-t-il pour vaincre à Panipat ?",
+            "options": [
+                "Des chariots liés entre eux pour former une ligne défensive avec artillerie",
+                "Une attaque exclusivement nocturne",
+                "L'usage de bateaux sur le fleuve voisin",
+                "Le recours à des espions infiltrés",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Babur déploie ses canons selon une tactique de chariots liés inspirée des usages ottomans, décisive face à l'armée bien plus nombreuse d'Ibrahim Lodi.",
+        },
+    },
+    "ghana-independance-annee": {
+        "enfant": {
+            "prompt": "Quel est le premier pays d'Afrique subsaharienne à devenir indépendant ?",
+            "options": ["Le Ghana", "Le Nigeria", "Le Kenya", "Le Sénégal"],
+            "correct_index": 0,
+            "fun_fact": "Le Ghana devient le 6 mars 1957 le premier pays d'Afrique subsaharienne indépendant.",
+        },
+        "college": {
+            "prompt": "Quel est le premier pays d'Afrique subsaharienne à accéder à l'indépendance ?",
+            "options": ["Le Nigeria", "Le Kenya", "Le Ghana", "Le Sénégal"],
+            "correct_index": 2,
+            "fun_fact": "Le Ghana devient le 6 mars 1957 le premier pays d'Afrique subsaharienne indépendant, inspirant tout le continent.",
+        },
+        "lycee": {
+            "prompt": "Quel parti politique Kwame Nkrumah dirige-t-il pour obtenir l'indépendance du Ghana ?",
+            "options": ["Le Convention People's Party", "L'African National Congress", "Le Parti démocratique", "L'Union panafricaine"],
+            "correct_index": 0,
+            "fun_fact": "Kwame Nkrumah mène la campagne pour l'indépendance à la tête de son parti, le Convention People's Party.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quelle organisation panafricaine Nkrumah contribue-t-il à fonder en 1963 ?",
+            "options": [
+                "L'Organisation de l'unité africaine",
+                "L'Union africaine actuelle",
+                "La Communauté économique des États de l'Afrique de l'Ouest",
+                "Le Mouvement des non-alignés",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Nkrumah devient l'un des principaux artisans de la fondation de l'Organisation de l'unité africaine en 1963, avant d'être renversé par un coup d'État en 1966.",
         },
     },
 }
