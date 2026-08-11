@@ -6989,6 +6989,411 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "conference-de-berlin": {
+        "enfant": {
+            "summary": (
+                "En 1884, des pays européens se réunissent à Berlin "
+                "pour se partager l'Afrique entre eux, sans demander "
+                "leur avis aux Africains."
+            ),
+            "before": (
+                "Les pays européens se disputent des territoires en "
+                "Afrique et risquent de se faire la guerre entre eux."
+            ),
+            "during": (
+                "Le chancelier allemand Bismarck invite les pays "
+                "européens à se mettre d'accord sur le partage de "
+                "l'Afrique."
+            ),
+            "after": (
+                "Dans les années suivantes, presque toute l'Afrique "
+                "est colonisée par les pays européens."
+            ),
+            "narrative": [
+                "Au début des années 1880, les pays européens se "
+                "disputent des territoires en Afrique.",
+                "Bismarck organise une réunion à Berlin, qui commence "
+                "le 15 novembre 1884, avec quatorze pays. Aucun "
+                "Africain n'est invité.",
+                "La conférence décide des règles pour se partager le "
+                "continent africain entre pays européens.",
+            ],
+            "why_it_matters": (
+                "Cette conférence organise la colonisation de "
+                "l'Afrique, avec des frontières tracées sans tenir "
+                "compte des peuples qui y vivent."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Les grandes puissances européennes se réunissent à "
+                "Berlin pour régler entre elles le partage colonial de "
+                "l'Afrique, sans représentant africain."
+            ),
+            "before": (
+                "La compétition coloniale entre puissances européennes "
+                "en Afrique s'intensifie, menaçant de dégénérer en "
+                "conflit ouvert entre elles."
+            ),
+            "during": (
+                "À l'invitation du chancelier allemand Bismarck, les "
+                "représentants de quatorze puissances établissent des "
+                "règles communes pour se partager le continent."
+            ),
+            "after": (
+                "Dans les décennies qui suivent, la quasi-totalité de "
+                "l'Afrique est colonisée, souvent selon des frontières "
+                "artificielles."
+            ),
+            "narrative": [
+                "Au début des années 1880, la rivalité entre "
+                "puissances européennes pour le contrôle de "
+                "territoires africains s'envenime au point de menacer "
+                "la paix entre elles.",
+                "Bismarck convoque une conférence à Berlin, qui "
+                "s'ouvre le 15 novembre 1884. Aucun représentant "
+                "africain n'est convié aux discussions.",
+                "La conférence établit des règles pour la "
+                "reconnaissance mutuelle des possessions coloniales, "
+                "déclenchant la « ruée vers l'Afrique »."
+            ],
+            "why_it_matters": (
+                "La conférence de Berlin formalise le partage colonial "
+                "de l'Afrique, dessinant des frontières arbitraires "
+                "dont les conséquences se font encore sentir "
+                "aujourd'hui."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Les grandes puissances européennes se réunissent à "
+                "Berlin pour régler entre elles le partage colonial de "
+                "l'Afrique, sans qu'aucun représentant africain n'y "
+                "soit convié."
+            ),
+            "before": (
+                "La compétition coloniale entre puissances européennes "
+                "en Afrique s'intensifie, en particulier autour du "
+                "bassin du Congo, menaçant de dégénérer en conflit "
+                "ouvert entre elles."
+            ),
+            "during": (
+                "À l'invitation du chancelier allemand Otto von "
+                "Bismarck, les représentants de quatorze puissances "
+                "établissent des règles communes pour se partager le "
+                "continent africain."
+            ),
+            "after": (
+                "Dans les décennies qui suivent, la quasi-totalité du "
+                "continent africain est colonisée par les puissances "
+                "européennes, souvent selon des frontières artificielles "
+                "tracées sans considération pour les peuples et "
+                "royaumes existants."
+            ),
+            "narrative": [
+                "Au début des années 1880, la rivalité entre "
+                "puissances européennes pour le contrôle de "
+                "territoires africains, en particulier autour du "
+                "bassin du fleuve Congo, s'envenime au point de "
+                "menacer la paix entre elles.",
+                "Le chancelier allemand Otto von Bismarck convoque une "
+                "conférence à Berlin, qui s'ouvre le 15 novembre 1884 "
+                "et réunit les représentants de quatorze pays européens "
+                "ainsi que des États-Unis. Aucun représentant africain "
+                "n'est convié aux discussions qui décident pourtant du "
+                "sort du continent.",
+                "La conférence, qui se conclut en février 1885, "
+                "établit des règles pour la reconnaissance mutuelle des "
+                "possessions coloniales et l'« occupation effective » "
+                "requise pour revendiquer un territoire, déclenchant "
+                "une accélération brutale de la colonisation du "
+                "continent africain, connue sous le nom de « ruée vers "
+                "l'Afrique »."
+            ],
+            "why_it_matters": (
+                "La conférence de Berlin formalise le partage colonial "
+                "de l'Afrique entre puissances européennes, dessinant "
+                "des frontières arbitraires dont les conséquences "
+                "politiques et ethniques se font encore sentir sur le "
+                "continent aujourd'hui."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Les grandes puissances européennes, réunies à Berlin "
+                "à l'initiative de Bismarck pour désamorcer leurs "
+                "rivalités coloniales, établissent en réalité un cadre "
+                "juridique — l'« occupation effective » — qui "
+                "accélère brutalement la colonisation de l'Afrique "
+                "plutôt que de la freiner."
+            ),
+            "before": (
+                "La compétition coloniale entre puissances européennes "
+                "en Afrique s'intensifie, en particulier autour du "
+                "bassin du Congo où Léopold II, roi des Belges, mène à "
+                "titre personnel une entreprise coloniale rivale de "
+                "celle de la France, menaçant de dégénérer en conflit "
+                "ouvert."
+            ),
+            "during": (
+                "À l'invitation du chancelier allemand Otto von "
+                "Bismarck, davantage motivé par le désir d'arbitrer "
+                "entre puissances et de gagner en influence "
+                "diplomatique que par un intérêt colonial allemand "
+                "propre, les représentants de quatorze puissances "
+                "établissent des règles communes, actant notamment la "
+                "reconnaissance de l'État indépendant du Congo comme "
+                "possession personnelle de Léopold II."
+            ),
+            "after": (
+                "Dans les décennies qui suivent, la quasi-totalité du "
+                "continent africain est colonisée selon des frontières "
+                "artificielles tracées sans considération pour les "
+                "peuples existants, l'État du Congo de Léopold II "
+                "devenant l'un des régimes coloniaux les plus violents "
+                "de l'histoire."
+            ),
+            "narrative": [
+                "Au début des années 1880, la rivalité entre "
+                "puissances européennes pour le contrôle de "
+                "territoires africains, en particulier autour du "
+                "bassin du fleuve Congo où le roi belge Léopold II "
+                "mène à titre personnel une entreprise coloniale "
+                "concurrente de la France, s'envenime au point de "
+                "menacer la paix entre elles.",
+                "Le chancelier allemand Otto von Bismarck, davantage "
+                "motivé par un rôle d'arbitre diplomatique que par un "
+                "intérêt colonial allemand propre, convoque une "
+                "conférence à Berlin, qui s'ouvre le 15 novembre 1884 "
+                "et réunit quatorze pays. Aucun représentant africain "
+                "n'est convié aux discussions qui décident pourtant du "
+                "sort du continent, et l'État indépendant du Congo y "
+                "est reconnu comme possession personnelle de Léopold "
+                "II.",
+                "La conférence, qui se conclut en février 1885, "
+                "établit des règles pour la reconnaissance mutuelle des "
+                "possessions coloniales et l'« occupation effective » "
+                "requise pour revendiquer un territoire, déclenchant "
+                "une accélération brutale de la colonisation connue "
+                "sous le nom de « ruée vers l'Afrique » — le Congo de "
+                "Léopold II devenant dans les décennies suivantes l'un "
+                "des systèmes d'exploitation coloniale les plus "
+                "meurtriers de l'histoire.",
+            ],
+            "why_it_matters": (
+                "La conférence de Berlin formalise le partage colonial "
+                "de l'Afrique entre puissances européennes, dessinant "
+                "des frontières arbitraires dont les conséquences "
+                "politiques et ethniques — conflits frontaliers, "
+                "tensions interethniques héritées du découpage colonial "
+                "— se font encore sentir sur le continent aujourd'hui."
+            ),
+        },
+    },
+    "chute-de-tenochtitlan": {
+        "enfant": {
+            "summary": (
+                "En 1521, le conquistador espagnol Hernán Cortés prend "
+                "la capitale aztèque, Tenochtitlan. C'est la fin de "
+                "l'Empire aztèque."
+            ),
+            "before": (
+                "Les Espagnols avaient été chassés de la ville une "
+                "première fois. Cortés revient avec des alliés "
+                "amérindiens."
+            ),
+            "during": (
+                "Après un long siège, et alors qu'une maladie tue "
+                "beaucoup d'Aztèques, la ville finit par tomber."
+            ),
+            "after": (
+                "La ville est détruite. Les Espagnols construisent "
+                "Mexico à sa place."
+            ),
+            "narrative": [
+                "En 1519, le conquistador espagnol Hernán Cortés "
+                "arrive à Tenochtitlan, une ville immense construite "
+                "sur un lac.",
+                "Les Espagnols sont chassés une première fois en 1520. "
+                "Cortés revient avec des alliés amérindiens qui "
+                "n'aiment pas les Aztèques.",
+                "Après un siège de plus de deux mois, et alors qu'une "
+                "épidémie tue beaucoup d'habitants, la ville tombe le "
+                "13 août 1521.",
+            ],
+            "why_it_matters": (
+                "C'est le début de la colonisation espagnole du "
+                "Mexique, avec des conséquences terribles pour les "
+                "populations locales."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Après un siège de plusieurs mois, le conquistador "
+                "Hernán Cortés et ses alliés amérindiens s'emparent de "
+                "la capitale aztèque, marquant la fin de l'Empire "
+                "aztèque."
+            ),
+            "before": (
+                "Après avoir été chassé de la ville lors de la « Nuit "
+                "triste » en 1520, Cortés rassemble une alliance de "
+                "peuples amérindiens hostiles aux Aztèques."
+            ),
+            "during": (
+                "Un siège de plus de deux mois, combiné à une épidémie "
+                "de variole, affaiblit considérablement la défense de "
+                "la ville avant sa chute."
+            ),
+            "after": (
+                "Tenochtitlan est détruite et sur ses ruines sera "
+                "bâtie Mexico, marquant le début de la colonisation "
+                "espagnole du Mexique."
+            ),
+            "narrative": [
+                "Arrivé au Mexique en 1519, Hernán Cortés est d'abord "
+                "accueilli avec méfiance par l'empereur aztèque "
+                "Moctezuma II à Tenochtitlan, une ville flamboyante "
+                "bâtie sur un lac.",
+                "Après des tensions croissantes, les Espagnols sont "
+                "chassés en 1520 lors de la « Nuit triste ». Cortés "
+                "noue une alliance stratégique avec des peuples "
+                "amérindiens hostiles aux Aztèques.",
+                "Renforcé par ces alliés et alors qu'une épidémie de "
+                "variole décime la population aztèque, Cortés assiège "
+                "Tenochtitlan pendant plus de deux mois. La ville tombe "
+                "le 13 août 1521.",
+            ],
+            "why_it_matters": (
+                "La chute de Tenochtitlan marque le début de la "
+                "colonisation espagnole du Mexique, avec des "
+                "conséquences dévastatrices pour les populations "
+                "autochtones."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Après un siège de plusieurs mois, le conquistador "
+                "Hernán Cortés et ses alliés amérindiens s'emparent de "
+                "la capitale aztèque, marquant la fin de l'Empire "
+                "aztèque."
+            ),
+            "before": (
+                "Après avoir été chassé de la ville lors de la « Nuit "
+                "triste » en 1520, Cortés rassemble une alliance de "
+                "peuples amérindiens hostiles aux Aztèques pour "
+                "reprendre Tenochtitlan."
+            ),
+            "during": (
+                "Un siège de plus de deux mois, combiné à une épidémie "
+                "de variole ravageant la population aztèque, affaiblit "
+                "considérablement la défense de la ville avant sa "
+                "chute finale."
+            ),
+            "after": (
+                "Tenochtitlan est détruite et sur ses ruines sera "
+                "bâtie Mexico, capitale de la Nouvelle-Espagne, "
+                "marquant le début de la colonisation espagnole du "
+                "Mexique."
+            ),
+            "narrative": [
+                "Arrivé au Mexique en 1519, le conquistador espagnol "
+                "Hernán Cortés est d'abord accueilli avec méfiance par "
+                "l'empereur aztèque Moctezuma II à Tenochtitlan, "
+                "capitale flamboyante bâtie sur un lac et comptant "
+                "alors plus d'habitants que n'importe quelle ville "
+                "d'Europe.",
+                "Après des tensions croissantes, les Espagnols sont "
+                "chassés de la ville en 1520 lors d'un épisode sanglant "
+                "surnommé la « Nuit triste ». Cortés se replie, "
+                "rassemble des renforts et surtout noue une alliance "
+                "stratégique avec des peuples amérindiens, notamment "
+                "les Tlaxcaltèques, hostiles à la domination aztèque.",
+                "Renforcé par ces alliés et alors qu'une épidémie de "
+                "variole apportée par les Européens décime la "
+                "population aztèque, Cortés assiège Tenochtitlan "
+                "pendant plus de deux mois. La ville tombe le 13 août "
+                "1521, marquant la fin de l'Empire aztèque.",
+            ],
+            "why_it_matters": (
+                "La chute de Tenochtitlan marque le début de la "
+                "colonisation espagnole du Mexique et de l'Amérique "
+                "centrale, avec des conséquences démographiques et "
+                "culturelles dévastatrices pour les populations "
+                "autochtones, décimées par les épidémies et la "
+                "domination coloniale."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Après un siège de plusieurs mois rendu possible par "
+                "une coalition amérindienne majoritairement hostile "
+                "aux Aztèques, le conquistador Hernán Cortés s'empare "
+                "de Tenochtitlan, chute qui doit autant à la stratégie "
+                "espagnole qu'à une épidémie de variole dévastatrice "
+                "et aux dissensions internes de l'Empire aztèque."
+            ),
+            "before": (
+                "Après avoir été chassé de la ville lors de la « Nuit "
+                "triste » en 1520, épisode durant lequel les Espagnols "
+                "perdent une grande partie de leurs hommes et du trésor "
+                "amassé, Cortés rassemble une vaste alliance de peuples "
+                "amérindiens tributaires ou ennemis des Aztèques, au "
+                "premier rang desquels les Tlaxcaltèques."
+            ),
+            "during": (
+                "Un siège de plus de deux mois, mené avec l'appui de "
+                "brigantins construits spécialement pour couper les "
+                "voies d'approvisionnement lacustres de la ville, "
+                "combiné à une épidémie de variole introduite par les "
+                "Européens et à laquelle la population amérindienne "
+                "n'a aucune immunité, affaiblit considérablement la "
+                "défense de la ville avant sa chute finale."
+            ),
+            "after": (
+                "Tenochtitlan est détruite et sur ses ruines sera "
+                "bâtie Mexico, capitale de la Nouvelle-Espagne, "
+                "amorçant une colonisation dont l'ampleur démographique "
+                "— la population autochtone du Mexique central chutera "
+                "de plus de 90 % en un siècle, principalement à cause "
+                "des épidémies — reste l'une des catastrophes "
+                "démographiques les plus sévères de l'histoire."
+            ),
+            "narrative": [
+                "Arrivé au Mexique en 1519, le conquistador espagnol "
+                "Hernán Cortés est d'abord accueilli avec méfiance par "
+                "l'empereur aztèque Moctezuma II à Tenochtitlan, "
+                "capitale flamboyante bâtie sur un lac et comptant "
+                "alors plus d'habitants que n'importe quelle ville "
+                "d'Europe — une cité dont l'organisation urbaine "
+                "impressionne profondément les chroniqueurs espagnols.",
+                "Après des tensions croissantes, les Espagnols sont "
+                "chassés de la ville en 1520 lors d'un épisode sanglant "
+                "surnommé la « Nuit triste ». Cortés se replie, "
+                "rassemble des renforts et surtout noue une alliance "
+                "stratégique déterminante avec des peuples amérindiens, "
+                "notamment les Tlaxcaltèques, tributaires rancuniers de "
+                "la domination aztèque et dont les guerriers "
+                "constitueront l'essentiel des forces assiégeantes.",
+                "Renforcé par ces alliés et alors qu'une épidémie de "
+                "variole apportée par les Européens décime une "
+                "population sans aucune immunité, Cortés assiège "
+                "Tenochtitlan pendant plus de deux mois, coupant "
+                "l'approvisionnement en eau et en vivres à l'aide de "
+                "brigantins construits pour l'occasion. La ville tombe "
+                "le 13 août 1521, marquant la fin de l'Empire aztèque.",
+            ],
+            "why_it_matters": (
+                "La chute de Tenochtitlan marque le début de la "
+                "colonisation espagnole du Mexique et de l'Amérique "
+                "centrale, avec des conséquences démographiques et "
+                "culturelles parmi les plus dévastatrices de "
+                "l'histoire : la population autochtone du Mexique "
+                "central s'effondre de plus de 90 % au cours du siècle "
+                "suivant, principalement du fait des épidémies "
+                "importées, bien plus que des combats eux-mêmes."
+            ),
+        },
+    },
 }
 
 
