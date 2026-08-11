@@ -7394,6 +7394,411 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "capture-datahualpa": {
+        "enfant": {
+            "summary": (
+                "En 1532, des Espagnols capturent par surprise "
+                "l'empereur inca Atahualpa. C'est le début de la fin "
+                "de l'Empire inca."
+            ),
+            "before": (
+                "L'Empire inca vient de sortir d'une guerre entre "
+                "deux frères pour le trône. Il ne se méfie pas des "
+                "Espagnols."
+            ),
+            "during": (
+                "Pendant une rencontre, les Espagnols de Pizarre "
+                "tendent un piège et capturent Atahualpa."
+            ),
+            "after": (
+                "Atahualpa donne beaucoup d'or pour être libéré, mais "
+                "les Espagnols le tuent quand même."
+            ),
+            "narrative": [
+                "En 1532, Francisco Pizarre arrive au Pérou avec très "
+                "peu d'hommes, alors que l'Empire inca sort d'une "
+                "guerre civile.",
+                "Atahualpa, le nouvel empereur, accepte de rencontrer "
+                "les Espagnols. Ceux-ci tendent un piège et le "
+                "capturent, le 16 novembre 1532.",
+                "Pour être libre, Atahualpa remplit une pièce d'or et "
+                "d'argent. Mais les Espagnols le tuent quand même en "
+                "1533.",
+            ],
+            "why_it_matters": (
+                "Cette capture désorganise l'Empire inca et permet aux "
+                "Espagnols de le conquérir en quelques années "
+                "seulement."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Une poignée de conquistadors espagnols menés par "
+                "Francisco Pizarre capture par surprise l'empereur "
+                "inca Atahualpa, précipitant l'effondrement de "
+                "l'Empire inca."
+            ),
+            "before": (
+                "Affaibli par une récente guerre civile entre "
+                "héritiers du trône, l'Empire inca ne se méfie pas de "
+                "la petite troupe espagnole qui approche."
+            ),
+            "during": (
+                "Lors d'une rencontre organisée à Cajamarca, les "
+                "conquistadors tendent une embuscade et capturent "
+                "Atahualpa, massacrant sa garde pourtant plus "
+                "nombreuse."
+            ),
+            "after": (
+                "Malgré une rançon colossale versée en or, Atahualpa "
+                "est exécuté quelques mois plus tard, ouvrant la voie "
+                "à la conquête espagnole du Pérou."
+            ),
+            "narrative": [
+                "En 1532, Francisco Pizarre débarque au Pérou avec à "
+                "peine 180 hommes, alors que l'Empire inca sort d'une "
+                "guerre civile entre les frères Atahualpa et Huáscar.",
+                "Atahualpa accepte de rencontrer les Espagnols à "
+                "Cajamarca. Profitant de l'effet de surprise et de "
+                "leurs armes à feu, les Espagnols massacrent sa garde "
+                "et le capturent.",
+                "Pour obtenir sa libération, Atahualpa propose de "
+                "remplir une pièce d'or et deux fois d'argent. Bien que "
+                "la rançon soit livrée, Pizarre le fait exécuter en "
+                "1533.",
+            ],
+            "why_it_matters": (
+                "La capture puis l'exécution d'Atahualpa permettent "
+                "aux Espagnols, pourtant en très petit nombre, de "
+                "conquérir en quelques années l'ensemble du Pérou."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Une poignée de conquistadors espagnols menés par "
+                "Francisco Pizarre capture par surprise l'empereur "
+                "inca Atahualpa, précipitant l'effondrement de "
+                "l'Empire inca."
+            ),
+            "before": (
+                "Affaibli par une récente guerre civile entre "
+                "héritiers du trône, l'Empire inca, alors le plus "
+                "vaste des Amériques, ne se méfie pas de la petite "
+                "troupe espagnole qui approche."
+            ),
+            "during": (
+                "Lors d'une rencontre organisée à Cajamarca, les "
+                "conquistadors tendent une embuscade et capturent "
+                "Atahualpa, massacrant sa garde pourtant nettement "
+                "plus nombreuse."
+            ),
+            "after": (
+                "Malgré une rançon colossale versée en or et en "
+                "argent pour sa libération, Atahualpa est exécuté "
+                "quelques mois plus tard, ouvrant la voie à la "
+                "conquête espagnole du Pérou."
+            ),
+            "narrative": [
+                "En 1532, Francisco Pizarre débarque au Pérou avec à "
+                "peine environ 180 hommes, alors que l'Empire inca, le "
+                "plus vaste d'Amérique précolombienne, sort tout juste "
+                "d'une guerre civile opposant les frères Atahualpa et "
+                "Huáscar pour le trône.",
+                "Atahualpa, victorieux de cette guerre civile, accepte "
+                "de rencontrer les Espagnols à Cajamarca, entouré de "
+                "plusieurs milliers de guerriers mais peu armés pour le "
+                "combat. Pizarre tend une embuscade : profitant de "
+                "l'effet de surprise et de leurs armes à feu et "
+                "chevaux, inconnus des Incas, les Espagnols massacrent "
+                "la garde impériale et capturent Atahualpa le 16 "
+                "novembre 1532.",
+                "Pour obtenir sa libération, Atahualpa propose de "
+                "remplir une pièce de sa prison d'or et deux fois "
+                "d'argent — l'une des plus grandes rançons de "
+                "l'histoire. Bien que la rançon soit livrée, Pizarre "
+                "fait tout de même exécuter Atahualpa en 1533, "
+                "craignant une révolte inca.",
+            ],
+            "why_it_matters": (
+                "La capture puis l'exécution d'Atahualpa désorganisent "
+                "durablement l'Empire inca et permettent aux "
+                "Espagnols, pourtant en très petit nombre, de "
+                "conquérir en quelques années l'ensemble du Pérou, "
+                "l'un des épisodes les plus marquants de la "
+                "colonisation européenne des Amériques."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Une poignée de conquistadors espagnols menés par "
+                "Francisco Pizarre, exploitant la crédulité tactique "
+                "d'un empereur trop confiant dans sa supériorité "
+                "numérique, capture par surprise Atahualpa, épisode "
+                "considéré comme l'un des plus frappants exemples "
+                "d'effondrement rapide d'un empire face à une force "
+                "numériquement dérisoire."
+            ),
+            "before": (
+                "Affaibli par une récente et sanglante guerre civile "
+                "entre les frères Atahualpa et Huáscar, l'Empire inca, "
+                "alors le plus vaste des Amériques et doté d'une "
+                "administration sophistiquée, ne se méfie pas de la "
+                "petite troupe espagnole qui approche, la percevant "
+                "davantage comme une curiosité que comme une menace "
+                "militaire sérieuse."
+            ),
+            "during": (
+                "Lors d'une rencontre organisée à Cajamarca où "
+                "Atahualpa se présente délibérément peu armé pour ne "
+                "pas provoquer d'incident diplomatique, les "
+                "conquistadors, inspirés des tactiques de Cortés au "
+                "Mexique, tendent une embuscade et capturent Atahualpa, "
+                "massacrant en quelques heures sa garde pourtant "
+                "nettement plus nombreuse grâce à l'effet de surprise, "
+                "aux armes à feu et à la cavalerie, inconnus des "
+                "Incas."
+            ),
+            "after": (
+                "Malgré une rançon colossale versée en or et en "
+                "argent pour sa libération — l'une des plus importantes "
+                "de l'histoire —, Atahualpa est jugé sommairement et "
+                "exécuté quelques mois plus tard sur la base d'accusations "
+                "largement fabriquées, ouvrant la voie à la conquête "
+                "espagnole du Pérou et à des décennies de guerre civile "
+                "entre factions espagnoles rivales."
+            ),
+            "narrative": [
+                "En 1532, Francisco Pizarre débarque au Pérou avec à "
+                "peine environ 180 hommes, alors que l'Empire inca, le "
+                "plus vaste d'Amérique précolombienne, sort tout juste "
+                "d'une guerre civile particulièrement sanglante "
+                "opposant les frères Atahualpa et Huáscar pour le "
+                "trône.",
+                "Atahualpa, victorieux de cette guerre civile, accepte "
+                "de rencontrer les Espagnols à Cajamarca, entouré de "
+                "plusieurs milliers de guerriers mais délibérément peu "
+                "armés pour ne pas provoquer d'incident. Pizarre tend "
+                "une embuscade : profitant de l'effet de surprise et de "
+                "leurs armes à feu et chevaux, inconnus des Incas, les "
+                "Espagnols massacrent la garde impériale et capturent "
+                "Atahualpa le 16 novembre 1532.",
+                "Pour obtenir sa libération, Atahualpa propose de "
+                "remplir une pièce de sa prison d'or et deux fois "
+                "d'argent — l'une des plus grandes rançons de "
+                "l'histoire. Bien que la rançon soit intégralement "
+                "livrée, Pizarre fait tout de même exécuter Atahualpa "
+                "en 1533 à l'issue d'un procès sommaire, craignant une "
+                "révolte inca coordonnée depuis l'intérieur du pays.",
+            ],
+            "why_it_matters": (
+                "La capture puis l'exécution d'Atahualpa désorganisent "
+                "durablement le commandement centralisé de l'Empire "
+                "inca et permettent aux Espagnols, pourtant en très "
+                "petit nombre, de conquérir en quelques années "
+                "l'ensemble du Pérou, épisode devenu l'archétype "
+                "historique de l'effondrement d'un empire par "
+                "décapitation de son autorité plutôt que par "
+                "supériorité militaire globale."
+            ),
+        },
+    },
+    "cook-a-botany-bay": {
+        "enfant": {
+            "summary": (
+                "Le 29 avril 1770, l'explorateur James Cook débarque "
+                "sur la côte est de l'Australie, un territoire encore "
+                "inconnu des Européens."
+            ),
+            "before": (
+                "James Cook explore l'océan Pacifique avec son bateau "
+                "l'Endeavour, à la recherche de nouvelles terres."
+            ),
+            "during": (
+                "Cook atteint la côte est de l'Australie et débarque "
+                "dans une baie qu'il appelle Botany Bay."
+            ),
+            "after": (
+                "Cook déclare que cette côte appartient au Royaume-Uni."
+            ),
+            "narrative": [
+                "En 1768, James Cook part explorer l'océan Pacifique "
+                "avec son bateau, l'Endeavour.",
+                "Le 19 avril 1770, il découvre la côte est de "
+                "l'Australie. Le 29 avril, il débarque dans une baie "
+                "qu'il nomme Botany Bay, à cause des nombreuses "
+                "plantes découvertes là-bas.",
+                "Cook déclare que toute cette côte appartient "
+                "maintenant au Royaume-Uni, sans demander l'avis des "
+                "Aborigènes qui y vivent déjà.",
+            ],
+            "why_it_matters": (
+                "Ce voyage ouvre la voie à la colonisation britannique "
+                "de l'Australie, qui commencera vraiment en 1788."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le navigateur britannique James Cook débarque sur la "
+                "côte est de l'Australie, ouvrant la voie à la "
+                "colonisation britannique du continent."
+            ),
+            "before": (
+                "Parti explorer le Pacifique à bord de l'Endeavour, "
+                "Cook reçoit aussi l'ordre secret de chercher un "
+                "continent austral inconnu."
+            ),
+            "during": (
+                "Après avoir cartographié la Nouvelle-Zélande, Cook "
+                "atteint la côte est de l'Australie et débarque à "
+                "Botany Bay, nommée pour la richesse de sa flore."
+            ),
+            "after": (
+                "Cook revendique la côte est de l'Australie au nom de "
+                "la couronne britannique, ouvrant la voie à la "
+                "colonisation qui débutera en 1788."
+            ),
+            "narrative": [
+                "En 1768, James Cook prend la mer à bord de "
+                "l'Endeavour pour observer le passage de Vénus, avec "
+                "aussi des instructions secrètes de chercher un "
+                "continent austral.",
+                "Après avoir cartographié la Nouvelle-Zélande, Cook "
+                "atteint le 19 avril 1770 la côte sud-est de "
+                "l'Australie. Le 29 avril, il débarque à Botany Bay.",
+                "Cook revendique l'ensemble du littoral oriental "
+                "australien au nom de la couronne britannique, sans "
+                "consulter les peuples aborigènes.",
+            ],
+            "why_it_matters": (
+                "L'exploration de Cook ouvre la voie à la colonisation "
+                "britannique de l'Australie, qui débutera officiellement "
+                "en 1788."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le navigateur britannique James Cook débarque sur la "
+                "côte est de l'Australie, ouvrant la voie à la "
+                "colonisation britannique du continent."
+            ),
+            "before": (
+                "Parti explorer le Pacifique à bord de l'Endeavour, "
+                "notamment pour observer le passage de Vénus, Cook "
+                "reçoit également l'ordre secret de chercher un "
+                "continent austral inconnu."
+            ),
+            "during": (
+                "Après avoir cartographié la Nouvelle-Zélande, Cook "
+                "atteint la côte est de l'Australie et débarque à "
+                "Botany Bay, nommée ainsi pour la richesse de sa flore "
+                "observée par les botanistes de l'expédition."
+            ),
+            "after": (
+                "Cook revendique la côte est de l'Australie au nom de "
+                "la couronne britannique sous le nom de Nouvelle-Galles "
+                "du Sud, ouvrant la voie à la colonisation britannique "
+                "qui débutera en 1788."
+            ),
+            "narrative": [
+                "En 1768, le lieutenant James Cook prend la mer à "
+                "bord de l'Endeavour pour une expédition scientifique "
+                "officiellement chargée d'observer le passage de Vénus "
+                "devant le Soleil depuis Tahiti, mais porteuse aussi "
+                "d'instructions secrètes de rechercher un vaste "
+                "continent austral supposé exister.",
+                "Après avoir cartographié les côtes de la "
+                "Nouvelle-Zélande, Cook navigue vers l'ouest et atteint "
+                "le 19 avril 1770 la côte sud-est de l'Australie, "
+                "jusqu'alors inconnue des Européens. Le 29 avril, il "
+                "débarque à Botany Bay, ainsi nommée en raison de "
+                "l'abondance de nouvelles espèces végétales que les "
+                "botanistes de l'expédition y découvrent.",
+                "Poursuivant sa route vers le nord le long de la côte, "
+                "Cook revendique formellement l'ensemble du littoral "
+                "oriental australien au nom de la couronne britannique, "
+                "sous le nom de Nouvelle-Galles du Sud, sans "
+                "consultation des peuples aborigènes qui habitent le "
+                "continent depuis des dizaines de milliers d'années.",
+            ],
+            "why_it_matters": (
+                "L'exploration de Cook ouvre la voie à la colonisation "
+                "britannique de l'Australie, qui débutera officiellement "
+                "en 1788 avec l'arrivée de la First Fleet, transformant "
+                "durablement le destin du continent et de ses peuples "
+                "autochtones."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le navigateur britannique James Cook débarque à "
+                "Botany Bay sur la côte est de l'Australie au terme "
+                "d'une expédition officiellement scientifique mais "
+                "porteuse d'instructions secrètes stratégiques, "
+                "ouvrant la voie à la colonisation britannique d'un "
+                "continent qu'il déclare unilatéralement terra "
+                "nullius."
+            ),
+            "before": (
+                "Parti explorer le Pacifique à bord de l'Endeavour, "
+                "notamment pour observer le passage de Vénus depuis "
+                "Tahiti au bénéfice de la Royal Society, Cook reçoit "
+                "également l'ordre secret de l'Amirauté de chercher un "
+                "continent austral inconnu, dans un contexte de "
+                "rivalité coloniale avec la France."
+            ),
+            "during": (
+                "Après avoir cartographié la Nouvelle-Zélande, Cook "
+                "atteint la côte est de l'Australie et débarque à "
+                "Botany Bay, où de premiers contacts tendus avec les "
+                "Aborigènes Gweagal se soldent par des coups de feu "
+                "britanniques, épisode largement occulté par la "
+                "mémoire coloniale au profit du récit botanique."
+            ),
+            "after": (
+                "Cook revendique la côte est de l'Australie au nom de "
+                "la couronne britannique sous le nom de Nouvelle-Galles "
+                "du Sud, la déclarant terra nullius — terre "
+                "n'appartenant à personne — malgré l'occupation "
+                "aborigène continue depuis des dizaines de milliers "
+                "d'années, fiction juridique qui structurera la "
+                "colonisation australienne jusqu'à son abrogation "
+                "judiciaire en 1992."
+            ),
+            "narrative": [
+                "En 1768, le lieutenant James Cook prend la mer à "
+                "bord de l'Endeavour pour une expédition scientifique "
+                "officiellement chargée d'observer le passage de Vénus "
+                "devant le Soleil depuis Tahiti pour le compte de la "
+                "Royal Society, mais porteuse aussi d'instructions "
+                "secrètes de l'Amirauté de rechercher un vaste "
+                "continent austral supposé exister.",
+                "Après avoir cartographié les côtes de la "
+                "Nouvelle-Zélande, Cook navigue vers l'ouest et atteint "
+                "le 19 avril 1770 la côte sud-est de l'Australie. Le 29 "
+                "avril, il débarque à Botany Bay, où un premier contact "
+                "avec des Aborigènes Gweagal tourne à l'affrontement, "
+                "avant que les botanistes de l'expédition n'y "
+                "découvrent une flore inédite qui donne son nom au "
+                "lieu.",
+                "Poursuivant sa route vers le nord le long de la côte, "
+                "Cook revendique formellement l'ensemble du littoral "
+                "oriental australien au nom de la couronne britannique, "
+                "sous le nom de Nouvelle-Galles du Sud, le déclarant "
+                "terra nullius sans consultation ni même reconnaissance "
+                "des peuples aborigènes qui habitent le continent "
+                "depuis des dizaines de milliers d'années.",
+            ],
+            "why_it_matters": (
+                "L'exploration de Cook ouvre la voie à la colonisation "
+                "britannique de l'Australie, qui débutera officiellement "
+                "en 1788 avec l'arrivée de la First Fleet ; la fiction "
+                "juridique de terra nullius qu'il instaure ne sera "
+                "officiellement abrogée par la justice australienne "
+                "qu'en 1992, avec l'arrêt Mabo reconnaissant enfin les "
+                "titres fonciers autochtones."
+            ),
+        },
+    },
 }
 
 
