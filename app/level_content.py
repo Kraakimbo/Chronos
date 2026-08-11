@@ -4279,6 +4279,1347 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "discours-i-have-a-dream": {
+        "enfant": {
+            "summary": (
+                "Le 28 août 1963, Martin Luther King fait un discours "
+                "très célèbre pour demander la fin du racisme aux "
+                "États-Unis."
+            ),
+            "before": (
+                "Aux États-Unis, les personnes noires n'ont pas les "
+                "mêmes droits que les personnes blanches. Beaucoup de "
+                "gens se battent contre cette injustice."
+            ),
+            "during": (
+                "Devant plus de 200 000 personnes, Martin Luther King "
+                "dit qu'il rêve d'un pays où tout le monde est traité "
+                "pareil."
+            ),
+            "after": (
+                "Ce discours aide à faire changer les lois contre le "
+                "racisme aux États-Unis, quelques années plus tard."
+            ),
+            "narrative": [
+                "Le 28 août 1963, plus de 200 000 personnes se "
+                "rassemblent à Washington pour demander la fin du "
+                "racisme.",
+                "Devant le Lincoln Memorial, Martin Luther King fait un "
+                "discours célèbre. Il dit qu'il rêve que ses enfants "
+                "soient jugés sur leur caractère, pas sur la couleur de "
+                "leur peau.",
+                "Ce discours, vu à la télévision par des millions de "
+                "gens, marque un grand moment pour les droits civiques "
+                "aux États-Unis.",
+            ],
+            "why_it_matters": (
+                "Ce discours reste un symbole très important de la "
+                "lutte contre le racisme. Il a aidé à faire changer les "
+                "lois l'année suivante."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Martin Luther King prononce son discours emblématique "
+                "devant plus de 200 000 personnes, lors de la Marche "
+                "sur Washington pour l'emploi et la liberté."
+            ),
+            "before": (
+                "Le mouvement pour les droits civiques prend de "
+                "l'ampleur aux États-Unis face à la ségrégation "
+                "raciale persistante, notamment dans les États du Sud."
+            ),
+            "during": (
+                "Devant le Lincoln Memorial, Martin Luther King "
+                "prononce un discours appelant à la fin du racisme, "
+                "culminant sur la formule « I have a dream »."
+            ),
+            "after": (
+                "Le discours contribue à l'adoption du Civil Rights "
+                "Act en 1964, interdisant la discrimination raciale "
+                "légale aux États-Unis."
+            ),
+            "narrative": [
+                "Le 28 août 1963, plus de 200 000 personnes se "
+                "rassemblent à Washington pour la « Marche sur "
+                "Washington », réclamant la fin de la ségrégation et "
+                "l'égalité économique.",
+                "Devant le Lincoln Memorial, le pasteur Martin Luther "
+                "King prononce un discours qui restera l'un des plus "
+                "célèbres du XXe siècle, développant une vision d'une "
+                "Amérique sans discrimination raciale.",
+                "Le discours, retransmis à la télévision devant des "
+                "millions de téléspectateurs, marque un tournant dans "
+                "la prise de conscience nationale sur les droits "
+                "civiques.",
+            ],
+            "why_it_matters": (
+                "Ce discours reste un symbole majeur du mouvement "
+                "américain pour les droits civiques, qui aboutira au "
+                "Civil Rights Act de 1964."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Martin Luther King prononce son discours emblématique "
+                "devant plus de 200 000 personnes, lors de la Marche "
+                "sur Washington pour l'emploi et la liberté."
+            ),
+            "before": (
+                "Le mouvement pour les droits civiques prend de "
+                "l'ampleur aux États-Unis face à la ségrégation "
+                "raciale persistante, notamment dans les États du Sud "
+                "où les lois « Jim Crow » restent en vigueur."
+            ),
+            "during": (
+                "Devant le Lincoln Memorial, Martin Luther King "
+                "prononce un discours appelant à la fin du racisme et "
+                "à l'égalité entre Américains, culminant sur la "
+                "formule « I have a dream »."
+            ),
+            "after": (
+                "Le discours contribue à l'adoption du Civil Rights "
+                "Act en 1964 et du Voting Rights Act en 1965, "
+                "interdisant la discrimination raciale légale aux "
+                "États-Unis."
+            ),
+            "narrative": [
+                "Le 28 août 1963, plus de 200 000 personnes se "
+                "rassemblent à Washington pour la « Marche sur "
+                "Washington pour l'emploi et la liberté », réclamant "
+                "la fin de la ségrégation raciale et l'égalité "
+                "économique pour les Afro-Américains.",
+                "Devant le Lincoln Memorial, le pasteur Martin Luther "
+                "King prononce un discours qui restera l'un des plus "
+                "célèbres du XXe siècle. S'écartant en partie de son "
+                "texte préparé, il développe une vision d'une Amérique "
+                "où ses enfants « ne seront pas jugés sur la couleur "
+                "de leur peau mais sur le contenu de leur caractère ».",
+                "Le discours, retransmis à la télévision devant des "
+                "millions de téléspectateurs, marque un tournant dans "
+                "la prise de conscience nationale sur les droits "
+                "civiques aux États-Unis.",
+            ],
+            "why_it_matters": (
+                "Ce discours reste un symbole majeur du mouvement "
+                "américain pour les droits civiques, qui aboutira "
+                "l'année suivante au Civil Rights Act de 1964 "
+                "interdisant la discrimination raciale dans de "
+                "nombreux domaines de la vie publique."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Martin Luther King prononce, en s'écartant largement "
+                "de son texte préparé, son discours « I Have a Dream » "
+                "devant plus de 200 000 personnes lors de la Marche sur "
+                "Washington pour l'emploi et la liberté, moment fondateur "
+                "de la mémoire collective du mouvement des droits "
+                "civiques."
+            ),
+            "before": (
+                "Le mouvement pour les droits civiques, structuré "
+                "depuis le boycott des bus de Montgomery en 1955-56, "
+                "prend une ampleur nationale face à la ségrégation "
+                "raciale persistante dans les États du Sud sous le "
+                "régime des lois « Jim Crow », et face à des violences "
+                "policières de plus en plus médiatisées."
+            ),
+            "during": (
+                "Devant le Lincoln Memorial, Martin Luther King "
+                "prononce un discours dont la seconde partie, "
+                "improvisée sur l'encouragement de la chanteuse Mahalia "
+                "Jackson (« Tell them about the dream, Martin ! »), "
+                "s'écarte du texte préparé pour culminer sur l'anaphore "
+                "« I have a dream »."
+            ),
+            "after": (
+                "Le discours, largement salué mais aussi critiqué par "
+                "certains militants plus radicaux comme insuffisamment "
+                "offensif, contribue néanmoins à l'adoption du Civil "
+                "Rights Act en 1964 et du Voting Rights Act en 1965."
+            ),
+            "narrative": [
+                "Le 28 août 1963, plus de 200 000 personnes se "
+                "rassemblent à Washington pour la « Marche sur "
+                "Washington pour l'emploi et la liberté », mobilisation "
+                "organisée notamment par Bayard Rustin et A. Philip "
+                "Randolph, réclamant la fin de la ségrégation raciale "
+                "et l'égalité économique pour les Afro-Américains.",
+                "Devant le Lincoln Memorial, le pasteur Martin Luther "
+                "King prononce un discours qui restera l'un des plus "
+                "célèbres du XXe siècle. Encouragé par la chanteuse "
+                "gospel Mahalia Jackson à improviser, il s'écarte de "
+                "son texte préparé pour développer, par l'anaphore « I "
+                "have a dream », une vision d'une Amérique où ses "
+                "enfants « ne seront pas jugés sur la couleur de leur "
+                "peau mais sur le contenu de leur caractère ».",
+                "Le discours, retransmis à la télévision devant des "
+                "millions de téléspectateurs, marque un tournant dans "
+                "la prise de conscience nationale, même si sa portée "
+                "réelle sur l'administration Kennedy, alors hésitante, "
+                "reste débattue par les historiens.",
+            ],
+            "why_it_matters": (
+                "Ce discours reste un symbole majeur du mouvement "
+                "américain pour les droits civiques, qui aboutira "
+                "l'année suivante au Civil Rights Act de 1964 puis au "
+                "Voting Rights Act de 1965, tout en illustrant les "
+                "tensions internes du mouvement entre stratégie "
+                "non-violente et appels à une action plus radicale, "
+                "portés notamment par Malcolm X."
+            ),
+        },
+    },
+    "revolution-doctobre": {
+        "enfant": {
+            "summary": (
+                "En novembre 1917, un groupe appelé les bolcheviks "
+                "prend le pouvoir en Russie. C'est le début de l'Union "
+                "soviétique."
+            ),
+            "before": (
+                "La Russie est épuisée par la guerre. Le tsar (le roi "
+                "russe) a déjà été renversé quelques mois avant."
+            ),
+            "during": (
+                "Des soldats bolcheviks, menés par Lénine, prennent le "
+                "palais où siège le gouvernement, presque sans "
+                "combattre."
+            ),
+            "after": (
+                "Lénine prend le pouvoir. Une guerre civile commence "
+                "bientôt en Russie."
+            ),
+            "narrative": [
+                "En 1917, la Russie est épuisée par la guerre et la "
+                "famine. Le tsar a déjà été renversé quelques mois "
+                "avant.",
+                "Dans la nuit du 6 au 7 novembre 1917, des soldats "
+                "bolcheviks, dirigés par Lénine, prennent facilement le "
+                "contrôle de la ville de Petrograd, puis le Palais "
+                "d'Hiver.",
+                "Le lendemain, Lénine annonce la formation d'un nouveau "
+                "gouvernement, dirigé par son parti.",
+            ],
+            "why_it_matters": (
+                "Cette révolution crée le premier pays communiste du "
+                "monde, l'URSS, qui va exister jusqu'en 1991."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Les bolcheviks de Lénine renversent le gouvernement "
+                "provisoire russe lors d'une insurrection presque sans "
+                "effusion de sang, ouvrant la voie au premier État "
+                "communiste du monde."
+            ),
+            "before": (
+                "Affaibli par la Première Guerre mondiale et la "
+                "révolution de février 1917 qui a renversé le tsar, le "
+                "gouvernement provisoire russe perd le soutien "
+                "populaire."
+            ),
+            "during": (
+                "Des gardes rouges bolcheviks s'emparent des points "
+                "stratégiques de Petrograd puis prennent d'assaut le "
+                "Palais d'Hiver, siège du gouvernement provisoire."
+            ),
+            "after": (
+                "Lénine proclame un gouvernement soviétique ; une "
+                "guerre civile éclate bientôt, menant à la fondation "
+                "de l'URSS en 1922."
+            ),
+            "narrative": [
+                "Après l'abdication du tsar Nicolas II en février "
+                "1917, un gouvernement provisoire peine à s'imposer "
+                "face à une population épuisée par la guerre, tandis "
+                "que les bolcheviks de Lénine gagnent en influence.",
+                "Dans la nuit du 6 au 7 novembre 1917 (« révolution "
+                "d'Octobre » selon l'ancien calendrier russe), des "
+                "gardes rouges occupent sans grande résistance les "
+                "points stratégiques de Petrograd avant de prendre le "
+                "Palais d'Hiver.",
+                "Le lendemain, Lénine proclame la formation d'un "
+                "gouvernement soviétique et annonce des décrets sur la "
+                "paix et sur la terre.",
+            ],
+            "why_it_matters": (
+                "La révolution d'Octobre installe le premier État "
+                "communiste de l'histoire, qui deviendra l'URSS en "
+                "1922."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Les bolcheviks de Lénine renversent le gouvernement "
+                "provisoire russe lors d'une insurrection presque sans "
+                "effusion de sang, ouvrant la voie au premier État "
+                "communiste du monde."
+            ),
+            "before": (
+                "Affaibli par la Première Guerre mondiale et la "
+                "révolution de février 1917 qui a renversé le tsar, le "
+                "gouvernement provisoire russe perd le soutien "
+                "populaire face à la montée en influence des soviets."
+            ),
+            "during": (
+                "Des gardes rouges bolcheviks s'emparent des points "
+                "stratégiques de Petrograd puis prennent d'assaut le "
+                "Palais d'Hiver, siège du gouvernement provisoire."
+            ),
+            "after": (
+                "Lénine proclame un gouvernement soviétique ; une "
+                "guerre civile éclate bientôt en Russie, menant à la "
+                "fondation de l'URSS en 1922."
+            ),
+            "narrative": [
+                "Après l'abdication du tsar Nicolas II en février "
+                "1917, un gouvernement provisoire peine à s'imposer "
+                "face à une population russe épuisée par la guerre et "
+                "la famine, tandis que les soviets — conseils "
+                "d'ouvriers et de soldats — gagnent en influence, "
+                "notamment sous l'impulsion des bolcheviks de Vladimir "
+                "Lénine.",
+                "Dans la nuit du 6 au 7 novembre 1917 (24-25 octobre "
+                "selon le calendrier julien alors en vigueur en "
+                "Russie, d'où le nom de « révolution d'Octobre »), des "
+                "gardes rouges bolcheviks occupent sans grande "
+                "résistance les points stratégiques de Petrograd — "
+                "gares, ponts, centrale téléphonique — avant de "
+                "prendre d'assaut le Palais d'Hiver, siège du "
+                "gouvernement provisoire.",
+                "Le lendemain, Lénine proclame la formation d'un "
+                "gouvernement soviétique et annonce des décrets "
+                "immédiats sur la paix et sur la terre, cherchant à "
+                "s'assurer le soutien des soldats et des paysans.",
+            ],
+            "why_it_matters": (
+                "La révolution d'Octobre installe le premier État "
+                "communiste de l'histoire, qui deviendra l'URSS en "
+                "1922 et façonnera une grande partie de la géopolitique "
+                "mondiale du XXe siècle, jusqu'à sa dissolution en "
+                "1991."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Les bolcheviks de Lénine renversent, lors d'une "
+                "insurrection soigneusement préparée mais presque sans "
+                "effusion de sang, le gouvernement provisoire russe "
+                "issu de la révolution de février, ouvrant la voie au "
+                "premier État communiste de l'histoire."
+            ),
+            "before": (
+                "Affaibli par la Première Guerre mondiale, une famine "
+                "persistante et son incapacité à répondre aux "
+                "revendications de paix, de terre et de pain, le "
+                "gouvernement provisoire dirigé par Kerenski perd tout "
+                "soutien populaire au profit des soviets, où les "
+                "bolcheviks obtiennent la majorité à l'automne 1917."
+            ),
+            "during": (
+                "Des gardes rouges bolcheviks, sur ordre d'un comité "
+                "militaire révolutionnaire dirigé en coulisses par "
+                "Trotski, s'emparent sans grande résistance des points "
+                "stratégiques de Petrograd avant de prendre d'assaut le "
+                "Palais d'Hiver, défendu par une garnison symbolique."
+            ),
+            "after": (
+                "Lénine proclame un gouvernement soviétique et fait "
+                "adopter dans la foulée les décrets sur la paix et sur "
+                "la terre ; la dissolution de l'Assemblée constituante "
+                "élue peu après, où les bolcheviks sont minoritaires, "
+                "signale rapidement la nature autoritaire du nouveau "
+                "régime, et une guerre civile éclate dès 1918."
+            ),
+            "narrative": [
+                "Après l'abdication du tsar Nicolas II en février "
+                "1917, un gouvernement provisoire dirigé par Kerenski "
+                "peine à s'imposer face à une population russe épuisée "
+                "par la guerre et la famine, tandis que les soviets — "
+                "conseils d'ouvriers et de soldats — gagnent en "
+                "influence, notamment sous l'impulsion des bolcheviks "
+                "de Vladimir Lénine, de retour d'exil en avril.",
+                "Dans la nuit du 6 au 7 novembre 1917 (24-25 octobre "
+                "selon le calendrier julien alors en vigueur en "
+                "Russie, d'où le nom de « révolution d'Octobre »), des "
+                "gardes rouges bolcheviks, coordonnés par un comité "
+                "militaire révolutionnaire que dirige en coulisses "
+                "Léon Trotski, occupent sans grande résistance les "
+                "points stratégiques de Petrograd avant de prendre "
+                "d'assaut le Palais d'Hiver, faiblement défendu.",
+                "Le lendemain, Lénine proclame la formation d'un "
+                "gouvernement soviétique et annonce des décrets "
+                "immédiats sur la paix et sur la terre. Quelques "
+                "semaines plus tard, la dissolution manu militari de "
+                "l'Assemblée constituante, où les bolcheviks n'obtiennent "
+                "qu'une minorité des sièges lors des seules élections "
+                "réellement libres de l'histoire soviétique, révèle "
+                "d'emblée la nature autoritaire du nouveau pouvoir.",
+            ],
+            "why_it_matters": (
+                "La révolution d'Octobre installe le premier État "
+                "communiste de l'histoire, qui deviendra l'URSS en "
+                "1922 et façonnera une grande partie de la géopolitique "
+                "mondiale du XXe siècle — guerre froide, décolonisation, "
+                "mouvements communistes internationaux — jusqu'à sa "
+                "dissolution en 1991."
+            ),
+        },
+    },
+    "these-de-luther": {
+        "enfant": {
+            "summary": (
+                "Le 31 octobre 1517, le moine Martin Luther affiche un "
+                "texte critiquant l'Église catholique. C'est le début "
+                "d'un grand changement religieux."
+            ),
+            "before": (
+                "L'Église catholique vend des documents qui promettent "
+                "de réduire les péchés des gens, en échange d'argent."
+            ),
+            "during": (
+                "Martin Luther écrit 95 critiques contre cette "
+                "pratique et les affiche sur la porte d'une église."
+            ),
+            "after": (
+                "Son texte se répand très vite grâce à l'imprimerie et "
+                "provoque une grande division dans l'Église."
+            ),
+            "narrative": [
+                "Au XVIe siècle, l'Église catholique vend des "
+                "« indulgences », des documents censés réduire les "
+                "péchés en échange d'argent.",
+                "Le 31 octobre 1517, le moine Martin Luther écrit 95 "
+                "critiques contre cette pratique et les affiche, selon "
+                "la légende, sur la porte d'une église à Wittenberg.",
+                "Grâce à l'imprimerie, son texte se répand très vite en "
+                "Allemagne et déclenche un grand débat religieux.",
+            ],
+            "why_it_matters": (
+                "Cet événement est considéré comme le début de la "
+                "Réforme protestante, qui va diviser la religion "
+                "chrétienne en Europe."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le moine Martin Luther affiche ses 95 thèses "
+                "critiquant la vente des indulgences, un geste "
+                "considéré comme le point de départ de la Réforme "
+                "protestante."
+            ),
+            "before": (
+                "L'Église catholique finance notamment la basilique "
+                "Saint-Pierre de Rome par la vente d'indulgences, "
+                "promettant la réduction des peines des péchés en "
+                "échange d'argent."
+            ),
+            "during": (
+                "Le moine augustin Martin Luther rédige 95 thèses "
+                "contestant cette pratique et les affiche sur la porte "
+                "de l'église du château de Wittenberg."
+            ),
+            "after": (
+                "Le texte se diffuse rapidement grâce à l'imprimerie "
+                "et déclenche une rupture religieuse majeure, menant à "
+                "la naissance du protestantisme."
+            ),
+            "narrative": [
+                "Au début du XVIe siècle, l'Église catholique autorise "
+                "la vente d'indulgences pour financer notamment la "
+                "basilique Saint-Pierre de Rome, ce qui scandalise le "
+                "moine Martin Luther, professeur à Wittenberg.",
+                "Le 31 octobre 1517, Luther rédige 95 thèses "
+                "contestant la théologie des indulgences et les "
+                "affiche, selon la tradition, sur la porte de l'église "
+                "du château de Wittenberg.",
+                "Grâce à l'imprimerie récemment développée par "
+                "Gutenberg, le texte est rapidement diffusé dans tout "
+                "le Saint-Empire, déclenchant un débat qui échappe vite "
+                "au contrôle de l'Église romaine.",
+            ],
+            "why_it_matters": (
+                "Cet acte est traditionnellement considéré comme le "
+                "point de départ de la Réforme protestante, qui va "
+                "diviser durablement le christianisme occidental."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le moine Martin Luther affiche ses 95 thèses "
+                "critiquant la vente des indulgences, un geste "
+                "considéré comme le point de départ de la Réforme "
+                "protestante."
+            ),
+            "before": (
+                "L'Église catholique finance notamment la basilique "
+                "Saint-Pierre de Rome par la vente d'indulgences, "
+                "promettant la réduction des peines des péchés en "
+                "échange d'argent, une pratique promue en Allemagne "
+                "par le prédicateur Johann Tetzel."
+            ),
+            "during": (
+                "Le moine augustin Martin Luther rédige 95 thèses "
+                "théologiques contestant cette pratique et, selon la "
+                "tradition, les affiche sur la porte de l'église du "
+                "château de Wittenberg."
+            ),
+            "after": (
+                "Le texte se diffuse rapidement grâce à l'imprimerie "
+                "et déclenche une rupture religieuse majeure, menant à "
+                "la naissance du protestantisme."
+            ),
+            "narrative": [
+                "Au début du XVIe siècle, l'Église catholique autorise "
+                "la vente d'indulgences pour financer notamment la "
+                "construction de la basilique Saint-Pierre de Rome. Le "
+                "prédicateur Johann Tetzel promeut cette pratique en "
+                "Allemagne avec un zèle qui scandalise le moine "
+                "augustin Martin Luther, professeur de théologie à "
+                "Wittenberg.",
+                "Le 31 octobre 1517, Luther rédige 95 thèses en latin "
+                "contestant la théologie des indulgences et, selon la "
+                "tradition la plus répandue, les affiche sur la porte "
+                "de l'église du château de Wittenberg — un lieu qui "
+                "servait aussi de tableau d'affichage universitaire.",
+                "Grâce à l'imprimerie récemment développée par "
+                "Gutenberg, le texte est rapidement traduit en allemand "
+                "et diffusé dans tout le Saint-Empire, déclenchant un "
+                "débat théologique qui échappe vite au contrôle de "
+                "l'Église romaine.",
+            ],
+            "why_it_matters": (
+                "Cet acte est traditionnellement considéré comme le "
+                "point de départ de la Réforme protestante, qui va "
+                "diviser durablement le christianisme occidental et "
+                "bouleverser la carte religieuse et politique de "
+                "l'Europe pour les siècles suivants."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le moine augustin Martin Luther rédige et diffuse ses "
+                "95 thèses critiquant la théologie des indulgences, "
+                "geste devenu — non sans une part de reconstruction "
+                "légendaire ultérieure — le symbole fondateur de la "
+                "Réforme protestante."
+            ),
+            "before": (
+                "L'Église catholique autorise la vente d'indulgences "
+                "pour financer notamment la construction de la "
+                "basilique Saint-Pierre de Rome, pratique que le "
+                "prédicateur dominicain Johann Tetzel promeut en "
+                "Allemagne avec un zèle commercial qui scandalise "
+                "Luther, déjà engagé dans une réflexion théologique sur "
+                "la justification par la foi seule."
+            ),
+            "during": (
+                "Le 31 octobre 1517, Luther rédige en latin, à "
+                "destination initiale d'un cercle académique et non du "
+                "grand public, 95 thèses contestant la théologie des "
+                "indulgences ; l'affichage sur la porte de l'église du "
+                "château de Wittenberg, s'il correspond à un usage "
+                "universitaire courant de l'époque, n'est attesté avec "
+                "certitude que par un témoignage tardif de son "
+                "collaborateur Melanchthon."
+            ),
+            "after": (
+                "Traduit en allemand sans l'accord initial de Luther, "
+                "le texte se diffuse en quelques semaines dans tout le "
+                "Saint-Empire grâce à l'imprimerie, échappant "
+                "rapidement au cadre du débat académique pour devenir "
+                "une contestation ouverte de l'autorité pontificale, "
+                "menant à l'excommunication de Luther en 1521."
+            ),
+            "narrative": [
+                "Au début du XVIe siècle, l'Église catholique autorise "
+                "la vente d'indulgences pour financer notamment la "
+                "construction de la basilique Saint-Pierre de Rome. Le "
+                "prédicateur dominicain Johann Tetzel promeut cette "
+                "pratique en Allemagne avec un zèle commercial qui "
+                "scandalise le moine augustin Martin Luther, professeur "
+                "de théologie à Wittenberg, déjà engagé dans une "
+                "réflexion sur la justification par la foi seule.",
+                "Le 31 octobre 1517, Luther rédige en latin 95 thèses "
+                "contestant la théologie des indulgences, initialement "
+                "destinées à un débat académique plutôt qu'à une "
+                "provocation publique. L'affichage sur la porte de "
+                "l'église du château de Wittenberg, devenu l'image "
+                "d'Épinal de l'événement, n'est en réalité attesté avec "
+                "certitude que par un témoignage tardif de son "
+                "collègue Melanchthon.",
+                "Traduit en allemand sans l'accord initial de Luther, "
+                "grâce à l'imprimerie récemment développée par "
+                "Gutenberg, le texte se diffuse en quelques semaines "
+                "dans tout le Saint-Empire, déclenchant un débat "
+                "théologique qui échappe vite au contrôle de l'Église "
+                "romaine et se transforme en contestation ouverte de "
+                "l'autorité pontificale.",
+            ],
+            "why_it_matters": (
+                "Cet acte est traditionnellement considéré comme le "
+                "point de départ de la Réforme protestante, qui va "
+                "diviser durablement le christianisme occidental et "
+                "bouleverser la carte religieuse et politique de "
+                "l'Europe pour les siècles suivants, des guerres de "
+                "religion françaises à la guerre de Trente Ans."
+            ),
+        },
+    },
+    "liberation-mandela": {
+        "enfant": {
+            "summary": (
+                "Le 11 février 1990, Nelson Mandela sort de prison "
+                "après 27 ans. C'est le début de la fin de l'apartheid "
+                "en Afrique du Sud."
+            ),
+            "before": (
+                "Mandela est en prison depuis 1962 parce qu'il "
+                "combattait l'apartheid, un système qui séparait les "
+                "gens noirs et blancs."
+            ),
+            "during": (
+                "Le président sud-africain de Klerk décide de libérer "
+                "Mandela, qui sort de prison sous les applaudissements "
+                "de la foule."
+            ),
+            "after": (
+                "Mandela discute avec de Klerk pour mettre fin à "
+                "l'apartheid. En 1994, il devient président."
+            ),
+            "narrative": [
+                "Nelson Mandela est en prison depuis 1964 pour avoir "
+                "combattu l'apartheid, un système injuste qui séparait "
+                "les Noirs et les Blancs en Afrique du Sud.",
+                "Le président Frederik de Klerk décide de changer les "
+                "choses et de libérer Mandela.",
+                "Le 11 février 1990, Mandela sort enfin de prison, "
+                "acclamé par une foule immense et regardé par le monde "
+                "entier.",
+            ],
+            "why_it_matters": (
+                "Sa libération ouvre la voie à la fin de l'apartheid. "
+                "En 1994, Mandela devient le premier président noir "
+                "d'Afrique du Sud."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Après 27 ans d'emprisonnement, Nelson Mandela est "
+                "libéré, marquant le début du démantèlement officiel "
+                "du régime d'apartheid en Afrique du Sud."
+            ),
+            "before": (
+                "Emprisonné depuis 1962 pour son opposition au régime "
+                "ségrégationniste de l'apartheid, Mandela est devenu le "
+                "symbole mondial de la lutte contre la discrimination "
+                "raciale."
+            ),
+            "during": (
+                "Sous la pression internationale croissante, le "
+                "président Frederik de Klerk annonce la libération de "
+                "Mandela, qui sort de prison le 11 février 1990."
+            ),
+            "after": (
+                "Mandela négocie avec de Klerk la fin de l'apartheid, "
+                "avant d'être élu premier président noir d'Afrique du "
+                "Sud en 1994."
+            ),
+            "narrative": [
+                "Condamné à la prison à vie en 1964, Nelson Mandela, "
+                "dirigeant du Congrès national africain (ANC), devient "
+                "pendant ses 27 années de détention le symbole mondial "
+                "de la résistance à l'apartheid.",
+                "Face à des sanctions internationales croissantes, le "
+                "président Frederik de Klerk, arrivé au pouvoir en "
+                "1989, amorce une politique de réformes.",
+                "Le 11 février 1990, Nelson Mandela sort de prison sous "
+                "les acclamations et une couverture médiatique "
+                "mondiale, puis entame des négociations avec de Klerk.",
+            ],
+            "why_it_matters": (
+                "La libération de Mandela ouvre la voie aux "
+                "négociations qui mettront fin à l'apartheid et aux "
+                "premières élections multiraciales de 1994."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Après 27 ans d'emprisonnement, Nelson Mandela est "
+                "libéré, marquant le début du démantèlement officiel "
+                "du régime d'apartheid en Afrique du Sud."
+            ),
+            "before": (
+                "Emprisonné depuis 1962 pour son opposition au régime "
+                "ségrégationniste de l'apartheid, Mandela est devenu le "
+                "symbole mondial de la lutte contre la discrimination "
+                "raciale en Afrique du Sud."
+            ),
+            "during": (
+                "Sous la pression internationale croissante, le "
+                "président sud-africain Frederik de Klerk annonce la "
+                "libération de Mandela, qui sort de prison le 11 "
+                "février 1990 sous les acclamations."
+            ),
+            "after": (
+                "Mandela négocie avec de Klerk la fin de l'apartheid, "
+                "avant d'être élu premier président noir d'Afrique du "
+                "Sud lors des premières élections multiraciales de "
+                "1994."
+            ),
+            "narrative": [
+                "Condamné à la prison à vie en 1964 pour sabotage et "
+                "complot contre l'État sud-africain, Nelson Mandela, "
+                "dirigeant du Congrès national africain (ANC), devient "
+                "pendant ses 27 années de détention le symbole mondial "
+                "de la résistance au régime d'apartheid.",
+                "Face à des sanctions économiques internationales "
+                "croissantes et à une contestation interne grandissante, "
+                "le président Frederik de Klerk, arrivé au pouvoir en "
+                "1989, amorce une politique de réformes et lève "
+                "l'interdiction frappant l'ANC.",
+                "Le 11 février 1990, Nelson Mandela sort de la prison "
+                "de Victor Verster, près du Cap, sous les acclamations "
+                "de la foule et une couverture médiatique mondiale. Il "
+                "entame aussitôt des négociations avec de Klerk pour "
+                "démanteler l'apartheid.",
+            ],
+            "why_it_matters": (
+                "La libération de Mandela ouvre la voie aux "
+                "négociations qui mettront fin à l'apartheid et aux "
+                "premières élections multiraciales de 1994, lors "
+                "desquelles Mandela est élu président, devenant un "
+                "symbole mondial de réconciliation."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Après 27 ans de détention, dont 18 sur l'île-bagne de "
+                "Robben Island, Nelson Mandela est libéré à la suite de "
+                "négociations secrètes entamées dès 1985, marquant le "
+                "début du démantèlement officiel et négocié du régime "
+                "d'apartheid."
+            ),
+            "before": (
+                "Emprisonné depuis 1962 puis condamné à perpétuité en "
+                "1964 pour son opposition au régime ségrégationniste de "
+                "l'apartheid, Mandela devient, malgré son absence "
+                "presque totale de représentation publique pendant "
+                "près de trois décennies, le symbole mondial de la "
+                "lutte contre la discrimination raciale."
+            ),
+            "during": (
+                "Sous la pression conjuguée des sanctions économiques "
+                "internationales, d'une contestation interne "
+                "grandissante et de négociations secrètes déjà entamées "
+                "avec Mandela lui-même depuis 1985, le président "
+                "Frederik de Klerk, arrivé au pouvoir en 1989, lève "
+                "l'interdiction frappant l'ANC et annonce la libération "
+                "de Mandela sans conditions."
+            ),
+            "after": (
+                "Mandela négocie avec de Klerk le démantèlement "
+                "progressif de l'apartheid, aboutissant en 1993 au "
+                "partage du prix Nobel de la paix entre les deux hommes "
+                "puis, en 1994, à son élection comme premier président "
+                "noir d'Afrique du Sud lors des premières élections "
+                "multiraciales."
+            ),
+            "narrative": [
+                "Condamné à la prison à vie en 1964 pour sabotage et "
+                "complot contre l'État sud-africain, Nelson Mandela, "
+                "dirigeant du Congrès national africain (ANC), devient "
+                "pendant ses 27 années de détention — dont 18 passées "
+                "sur l'île-bagne de Robben Island — le symbole mondial "
+                "de la résistance au régime d'apartheid, malgré une "
+                "quasi-absence d'image ou de parole publique pendant "
+                "cette période.",
+                "Face à des sanctions économiques internationales "
+                "croissantes et à une contestation interne "
+                "grandissante, le président Frederik de Klerk, arrivé "
+                "au pouvoir en 1989 et déjà engagé dans des discussions "
+                "confidentielles avec Mandela depuis plusieurs années, "
+                "lève l'interdiction frappant l'ANC et le parti "
+                "communiste sud-africain début février 1990.",
+                "Le 11 février 1990, Nelson Mandela sort de la prison "
+                "de Victor Verster, près du Cap, sous les acclamations "
+                "de la foule et une couverture médiatique mondiale sans "
+                "précédent. Il entame aussitôt des négociations "
+                "complexes et souvent tendues avec de Klerk pour "
+                "démanteler l'apartheid par voie légale.",
+            ],
+            "why_it_matters": (
+                "La libération de Mandela ouvre la voie à quatre "
+                "années de négociations souvent périlleuses — marquées "
+                "par des violences politiques considérables — qui "
+                "mettront fin à l'apartheid et aux premières élections "
+                "multiraciales de 1994, lors desquelles Mandela est élu "
+                "président, devenant un symbole mondial de "
+                "réconciliation malgré les tensions économiques et "
+                "sociales que l'apartheid laissera durablement en "
+                "héritage."
+            ),
+        },
+    },
+    "lancement-spoutnik": {
+        "enfant": {
+            "summary": (
+                "Le 4 octobre 1957, l'URSS envoie dans l'espace le "
+                "premier satellite du monde, Spoutnik 1."
+            ),
+            "before": (
+                "L'URSS et les États-Unis sont en compétition pour "
+                "construire des fusées."
+            ),
+            "during": (
+                "Une fusée soviétique envoie dans l'espace une boule "
+                "de métal qui émet un petit signal radio."
+            ),
+            "after": (
+                "Les Américains ont très peur d'être en retard. Ils "
+                "créent la NASA l'année suivante."
+            ),
+            "narrative": [
+                "Le 4 octobre 1957, l'URSS lance Spoutnik 1, une "
+                "petite boule de métal de 58 centimètres avec quatre "
+                "antennes.",
+                "Une fois dans l'espace, le satellite envoie juste un "
+                "petit signal radio, un « bip-bip » que des gens du "
+                "monde entier peuvent entendre.",
+                "Aux États-Unis, c'est un choc énorme : ils ont peur "
+                "d'être en retard sur les Soviétiques.",
+            ],
+            "why_it_matters": (
+                "Spoutnik marque le début de la conquête spatiale, qui "
+                "mènera plus tard les hommes sur la Lune."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'URSS met sur orbite Spoutnik 1, premier satellite "
+                "artificiel de l'histoire, déclenchant la course à "
+                "l'espace avec les États-Unis."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis "
+                "développent chacun des programmes de fusées, "
+                "initialement à but militaire."
+            ),
+            "during": (
+                "Une fusée soviétique R-7 place en orbite Spoutnik 1, "
+                "une sphère métallique de 58 centimètres émettant un "
+                "simple signal radio."
+            ),
+            "after": (
+                "La nouvelle provoque un choc aux États-Unis, qui "
+                "créent la NASA l'année suivante."
+            ),
+            "narrative": [
+                "Le 4 octobre 1957, l'URSS lance depuis Baïkonour une "
+                "fusée R-7 emportant Spoutnik 1, une sphère métallique "
+                "polie de 58 centimètres équipée de quatre antennes.",
+                "Une fois en orbite, le satellite émet un simple signal "
+                "radio régulier, captable par des radioamateurs du "
+                "monde entier.",
+                "Aux États-Unis, la nouvelle provoque une onde de choc "
+                "connue sous le nom de « moment Spoutnik » : le pays "
+                "craint d'avoir pris du retard technologique.",
+            ],
+            "why_it_matters": (
+                "Spoutnik 1 marque le début de l'ère spatiale, qui "
+                "aboutira à la création de la NASA en 1958 et à "
+                "l'alunissage d'Apollo 11 en 1969."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'URSS met sur orbite Spoutnik 1, premier satellite "
+                "artificiel de l'histoire, déclenchant la course à "
+                "l'espace avec les États-Unis."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis "
+                "développent chacun des programmes de fusées, "
+                "initialement à but militaire, capables d'atteindre "
+                "l'espace."
+            ),
+            "during": (
+                "Une fusée soviétique R-7 place en orbite Spoutnik 1, "
+                "une sphère métallique de 58 centimètres émettant un "
+                "simple signal radio régulier."
+            ),
+            "after": (
+                "La nouvelle provoque un choc aux États-Unis, qui "
+                "créent la NASA l'année suivante et accélèrent leur "
+                "propre programme spatial."
+            ),
+            "narrative": [
+                "Le 4 octobre 1957, l'Union soviétique lance depuis le "
+                "cosmodrome de Baïkonour une fusée R-7 emportant "
+                "Spoutnik 1, une sphère métallique polie d'à peine 58 "
+                "centimètres de diamètre équipée de quatre antennes "
+                "radio.",
+                "Une fois en orbite, le satellite se contente d'émettre "
+                "un signal radio simple et régulier, un « bip-bip » "
+                "captable par des radioamateurs du monde entier, "
+                "preuve manifeste de la réussite soviétique.",
+                "Aux États-Unis, la nouvelle provoque une onde de choc "
+                "connue sous le nom de « moment Spoutnik » : l'opinion "
+                "publique et le gouvernement américains, pris de "
+                "court, craignent d'avoir pris du retard technologique "
+                "et militaire sur l'URSS.",
+            ],
+            "why_it_matters": (
+                "Spoutnik 1 marque le début de l'ère spatiale et de la "
+                "course à l'espace entre les États-Unis et l'URSS, qui "
+                "aboutira notamment à la création de la NASA en 1958 "
+                "et, onze ans plus tard, à l'alunissage d'Apollo 11."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'URSS met sur orbite Spoutnik 1, premier objet "
+                "artificiel de l'histoire humaine à quitter "
+                "l'atmosphère terrestre, déclenchant un « moment "
+                "Spoutnik » qui redéfinit durablement la perception "
+                "américaine de son avance technologique."
+            ),
+            "before": (
+                "En pleine guerre froide, l'URSS et les États-Unis "
+                "développent chacun, sur la base de technologies de "
+                "missiles balistiques intercontinentaux à visée "
+                "militaire, des programmes capables d'atteindre "
+                "l'espace, dans un contexte d'Année géophysique "
+                "internationale (1957-58) que les deux camps "
+                "cherchaient à marquer scientifiquement."
+            ),
+            "during": (
+                "Une fusée soviétique R-7 — initialement conçue comme "
+                "missile balistique intercontinental — place en orbite "
+                "Spoutnik 1, sphère métallique de 58 centimètres dont "
+                "la simplicité technique délibérée (un simple émetteur "
+                "radio) permettait une mise au point rapide."
+            ),
+            "after": (
+                "La nouvelle provoque un choc politique et culturel "
+                "considérable aux États-Unis, qui créent la NASA "
+                "l'année suivante, réforment leur enseignement "
+                "scientifique via le National Defense Education Act, "
+                "et accélèrent leur propre programme spatial jusqu'à "
+                "l'objectif lunaire fixé par Kennedy en 1961."
+            ),
+            "narrative": [
+                "Le 4 octobre 1957, l'Union soviétique lance depuis le "
+                "cosmodrome de Baïkonour une fusée R-7 — à l'origine "
+                "conçue comme missile balistique intercontinental — "
+                "emportant Spoutnik 1, une sphère métallique polie "
+                "d'à peine 58 centimètres de diamètre équipée de "
+                "quatre antennes radio.",
+                "Une fois en orbite, le satellite se contente d'émettre "
+                "un signal radio simple et régulier, un « bip-bip » "
+                "captable par des radioamateurs du monde entier — une "
+                "simplicité technique délibérée, gage de rapidité de "
+                "développement plus que de sophistication scientifique.",
+                "Aux États-Unis, la nouvelle provoque une onde de choc "
+                "connue sous le nom de « moment Spoutnik » : l'opinion "
+                "publique et le gouvernement américains, pris de "
+                "court, craignent d'avoir pris du retard technologique "
+                "et militaire sur l'URSS, un choc amplifié par l'échec "
+                "retentissant et télévisé du lancement du satellite "
+                "américain Vanguard TV3 deux mois plus tard.",
+            ],
+            "why_it_matters": (
+                "Spoutnik 1 marque le début de l'ère spatiale et de la "
+                "course à l'espace entre les États-Unis et l'URSS, "
+                "provoquant une refonte en profondeur de la politique "
+                "scientifique et éducative américaine et aboutissant "
+                "notamment à la création de la NASA en 1958 puis, onze "
+                "ans plus tard, à l'alunissage d'Apollo 11."
+            ),
+        },
+    },
+    "chute-empire-romain-occident": {
+        "enfant": {
+            "summary": (
+                "En 476, un chef appelé Odoacre renverse le dernier "
+                "empereur romain d'Occident. C'est souvent considéré "
+                "comme la fin de l'Antiquité."
+            ),
+            "before": (
+                "L'Empire romain d'Occident est très affaibli depuis "
+                "longtemps, à cause de nombreuses invasions."
+            ),
+            "during": (
+                "Odoacre, un chef militaire, renverse le jeune "
+                "empereur Romulus Augustule sans grande bataille."
+            ),
+            "after": (
+                "Odoacre devient roi d'Italie. Il n'y aura plus "
+                "d'empereur romain en Occident."
+            ),
+            "narrative": [
+                "Au Ve siècle, l'Empire romain d'Occident est très "
+                "affaibli par des invasions répétées.",
+                "En 476, Odoacre, un chef militaire d'origine "
+                "germanique, renverse le jeune empereur Romulus "
+                "Augustule et se proclame roi d'Italie.",
+                "Odoacre ne se déclare pas empereur lui-même. C'est la "
+                "fin de la lignée des empereurs romains d'Occident.",
+            ],
+            "why_it_matters": (
+                "Cet événement est souvent considéré comme la fin de "
+                "l'Antiquité et le début du Moyen Âge en Europe."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le chef germanique Odoacre dépose le dernier empereur "
+                "romain d'Occident, Romulus Augustule, marquant "
+                "traditionnellement la fin de l'Antiquité en Europe."
+            ),
+            "before": (
+                "Affaibli par des décennies d'invasions et de crises, "
+                "l'Empire romain d'Occident ne contrôle plus qu'une "
+                "fraction de son territoire d'origine."
+            ),
+            "during": (
+                "Le chef militaire germanique Odoacre renverse le "
+                "jeune empereur Romulus Augustule et se proclame roi "
+                "d'Italie, sans nommer de nouvel empereur."
+            ),
+            "after": (
+                "Odoacre renvoie les insignes impériaux à "
+                "Constantinople, laissant l'empereur d'Orient seul "
+                "héritier officiel du titre impérial."
+            ),
+            "narrative": [
+                "Au Ve siècle, l'Empire romain d'Occident est exsangue "
+                ": invasions germaniques répétées, généraux qui font et "
+                "défont les empereurs à leur guise.",
+                "En 476, Odoacre, chef militaire d'origine germanique, "
+                "se retourne contre le pouvoir impérial. Il dépose "
+                "Romulus Augustule sans effusion de sang notable et se "
+                "proclame roi d'Italie.",
+                "Plutôt que de se proclamer empereur, Odoacre renvoie "
+                "les insignes impériaux à Constantinople, reconnaissant "
+                "l'empereur d'Orient comme seul souverain légitime.",
+            ],
+            "why_it_matters": (
+                "Cet événement est conventionnellement retenu comme la "
+                "date de la fin de l'Empire romain d'Occident et de "
+                "l'Antiquité."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le chef germanique Odoacre dépose le dernier empereur "
+                "romain d'Occident, Romulus Augustule, marquant "
+                "traditionnellement la fin de l'Antiquité en Europe."
+            ),
+            "before": (
+                "Affaibli par des décennies d'invasions, de crises "
+                "économiques et de coups d'État militaires, l'Empire "
+                "romain d'Occident ne contrôle plus qu'une fraction de "
+                "son territoire d'origine."
+            ),
+            "during": (
+                "Le chef militaire germanique Odoacre renverse le "
+                "jeune empereur Romulus Augustule et se proclame roi "
+                "d'Italie, sans nommer de nouvel empereur."
+            ),
+            "after": (
+                "Odoacre renvoie les insignes impériaux à "
+                "Constantinople, laissant l'empereur d'Orient seul "
+                "héritier officiel du titre impérial romain."
+            ),
+            "narrative": [
+                "Au Ve siècle, l'Empire romain d'Occident est exsangue "
+                ": invasions germaniques répétées, généraux qui font et "
+                "défont les empereurs à leur guise, économie exsangue. "
+                "Le dernier empereur, Romulus Augustule, n'a que "
+                "quelques mois de règne, porté au pouvoir enfant par "
+                "son propre père.",
+                "En 476, Odoacre, chef militaire d'origine germanique "
+                "à la tête de troupes fédérées au service de Rome, se "
+                "retourne contre le pouvoir impérial après le refus de "
+                "lui accorder des terres en Italie. Il dépose Romulus "
+                "Augustule sans effusion de sang notable et se "
+                "proclame roi d'Italie.",
+                "Plutôt que de se faire proclamer empereur à son tour, "
+                "Odoacre renvoie les insignes impériaux à "
+                "Constantinople, reconnaissant symboliquement "
+                "l'empereur d'Orient, Zénon, comme seul souverain "
+                "légitime — mettant ainsi fin à la lignée des "
+                "empereurs d'Occident.",
+            ],
+            "why_it_matters": (
+                "Cet événement est conventionnellement retenu par les "
+                "historiens comme la date de la fin de l'Empire romain "
+                "d'Occident et de l'Antiquité, ouvrant la période du "
+                "Moyen Âge en Europe occidentale."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le chef militaire germanique Odoacre dépose le "
+                "dernier empereur romain d'Occident, Romulus Augustule "
+                "— un événement que l'historiographie moderne nuance "
+                "de plus en plus, y voyant davantage une transition "
+                "administrative progressive qu'une rupture brutale."
+            ),
+            "before": (
+                "Affaibli par des décennies d'invasions germaniques, "
+                "de crises économiques et de coups d'État militaires "
+                "récurrents depuis le début du Ve siècle, l'Empire "
+                "romain d'Occident ne contrôle plus, en 476, qu'une "
+                "fraction de son territoire d'origine, essentiellement "
+                "l'Italie."
+            ),
+            "during": (
+                "Le chef militaire germanique Odoacre, à la tête de "
+                "troupes fédérées mécontentes de ne pas recevoir les "
+                "terres promises, renverse le jeune empereur Romulus "
+                "Augustule — lui-même usurpateur installé quelques "
+                "mois plus tôt par son père — et se proclame roi "
+                "d'Italie sans nommer de nouvel empereur."
+            ),
+            "after": (
+                "Odoacre renvoie les insignes impériaux à "
+                "Constantinople et se fait reconnaître comme patrice "
+                "par l'empereur d'Orient Zénon, gouvernant de facto "
+                "l'Italie en position de souverain autonome tout en "
+                "maintenant une fiction de continuité administrative "
+                "romaine."
+            ),
+            "narrative": [
+                "Au Ve siècle, l'Empire romain d'Occident est exsangue "
+                ": invasions germaniques répétées, généraux qui font et "
+                "défont les empereurs à leur guise, économie exsangue. "
+                "Le dernier empereur, Romulus Augustule, usurpateur "
+                "jamais reconnu par Constantinople, n'a que quelques "
+                "mois de règne, porté au pouvoir enfant par son propre "
+                "père, le général Oreste.",
+                "En 476, Odoacre, chef militaire d'origine germanique "
+                "à la tête de troupes fédérées au service de Rome, se "
+                "retourne contre le pouvoir impérial après le refus "
+                "d'Oreste de lui accorder des terres en Italie promises "
+                "en échange de services militaires. Il dépose Romulus "
+                "Augustule sans effusion de sang notable et se proclame "
+                "roi d'Italie.",
+                "Plutôt que de se faire proclamer empereur à son tour, "
+                "Odoacre renvoie les insignes impériaux à "
+                "Constantinople, reconnaissant symboliquement "
+                "l'empereur d'Orient, Zénon, comme seul souverain "
+                "légitime, tout en obtenant de lui le titre de patrice "
+                "— une manœuvre politique qui préserve une continuité "
+                "institutionnelle formelle malgré la rupture de fait.",
+            ],
+            "why_it_matters": (
+                "Cet événement est conventionnellement retenu par "
+                "l'historiographie traditionnelle comme la date de la "
+                "fin de l'Empire romain d'Occident et de l'Antiquité, "
+                "bien que les historiens contemporains, à la suite "
+                "notamment de Peter Brown, tendent à y voir davantage "
+                "une étape d'un long processus de transformation "
+                "romano-germanique que la rupture brutale longtemps "
+                "enseignée."
+            ),
+        },
+    },
+    "invention-machine-vapeur-watt": {
+        "enfant": {
+            "summary": (
+                "En 1769, l'ingénieur écossais James Watt invente une "
+                "machine à vapeur bien meilleure. C'est le début de "
+                "grandes usines en Europe."
+            ),
+            "before": (
+                "Les machines à vapeur qui existaient déjà gaspillaient "
+                "beaucoup d'énergie."
+            ),
+            "during": (
+                "James Watt trouve un moyen d'améliorer beaucoup la "
+                "machine à vapeur."
+            ),
+            "after": (
+                "Ses machines sont utilisées dans les mines puis dans "
+                "les usines, partout en Angleterre."
+            ),
+            "narrative": [
+                "Dans les années 1760, l'ingénieur écossais James Watt "
+                "répare une vieille machine à vapeur utilisée pour "
+                "pomper l'eau des mines.",
+                "Il remarque qu'elle gaspille beaucoup d'énergie. Il "
+                "invente une nouvelle pièce qui améliore beaucoup son "
+                "efficacité.",
+                "Le 5 janvier 1769, il dépose le brevet de son "
+                "invention. Plus tard, ses machines se répandent dans "
+                "les usines.",
+            ],
+            "why_it_matters": (
+                "L'invention de Watt aide à démarrer la révolution "
+                "industrielle, qui change complètement la façon de "
+                "travailler et de vivre."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'ingénieur écossais James Watt dépose le brevet de "
+                "sa machine à vapeur perfectionnée, une innovation "
+                "décisive pour la révolution industrielle."
+            ),
+            "before": (
+                "Les machines à vapeur existantes, comme celle de "
+                "Newcomen, sont peu efficaces énergétiquement et "
+                "limitées au pompage de l'eau dans les mines."
+            ),
+            "during": (
+                "James Watt met au point un condenseur séparé qui "
+                "améliore radicalement le rendement de la machine à "
+                "vapeur, et en dépose le brevet."
+            ),
+            "after": (
+                "Associé à l'industriel Matthew Boulton, Watt "
+                "commercialise ses machines, qui se répandent dans les "
+                "mines puis les usines textiles."
+            ),
+            "narrative": [
+                "Dans les années 1760, James Watt travaille comme "
+                "réparateur d'instruments à Glasgow, où on lui confie "
+                "une machine à vapeur de Newcomen.",
+                "Watt remarque qu'elle gaspille énormément d'énergie. "
+                "Il conçoit un condenseur séparé, qui améliore "
+                "considérablement le rendement.",
+                "Le 5 janvier 1769, Watt dépose son brevet. Associé à "
+                "Matthew Boulton, ses machines se répandent rapidement "
+                "dans les mines puis les usines britanniques.",
+            ],
+            "why_it_matters": (
+                "L'amélioration de la machine à vapeur par Watt est "
+                "considérée comme l'un des déclencheurs majeurs de la "
+                "révolution industrielle."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'ingénieur écossais James Watt dépose le brevet de "
+                "sa machine à vapeur perfectionnée, une innovation "
+                "décisive qui va déclencher la révolution industrielle."
+            ),
+            "before": (
+                "Les machines à vapeur existantes, comme celle de "
+                "Newcomen, sont peu efficaces énergétiquement et "
+                "limitées au pompage de l'eau dans les mines."
+            ),
+            "during": (
+                "James Watt met au point un condenseur séparé qui "
+                "améliore radicalement le rendement de la machine à "
+                "vapeur, et en dépose le brevet."
+            ),
+            "after": (
+                "Associé à l'industriel Matthew Boulton, Watt "
+                "commercialise ses machines, qui se répandent dans les "
+                "mines puis les usines textiles, propulsant la "
+                "révolution industrielle britannique."
+            ),
+            "narrative": [
+                "Dans les années 1760, l'ingénieur écossais James Watt "
+                "travaille comme réparateur d'instruments à "
+                "l'université de Glasgow, où on lui confie la "
+                "réparation d'un modèle de machine à vapeur de "
+                "Newcomen, utilisée pour pomper l'eau des mines.",
+                "Watt remarque que la machine gaspille énormément "
+                "d'énergie en refroidissant puis en réchauffant sans "
+                "cesse le même cylindre. Il conçoit un condenseur "
+                "séparé, permettant de maintenir le cylindre principal "
+                "chaud en permanence, ce qui améliore considérablement "
+                "le rendement énergétique.",
+                "Le 5 janvier 1769, Watt dépose le brevet de son "
+                "invention. Faute de moyens pour l'exploiter seul, il "
+                "s'associe quelques années plus tard à l'industriel "
+                "Matthew Boulton, et leurs machines à vapeur "
+                "perfectionnées se répandent rapidement dans les mines "
+                "puis les usines textiles britanniques.",
+            ],
+            "why_it_matters": (
+                "L'amélioration de la machine à vapeur par Watt est "
+                "considérée comme l'un des déclencheurs majeurs de la "
+                "révolution industrielle, en fournissant une source "
+                "d'énergie mécanique fiable qui transformera profondément "
+                "l'économie et la société des XVIIIe et XIXe siècles."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'ingénieur écossais James Watt dépose le brevet de "
+                "sa machine à vapeur à condenseur séparé, innovation "
+                "qui ne prend son plein essor économique qu'une "
+                "quinzaine d'années plus tard grâce à son association "
+                "avec l'industriel Matthew Boulton, et qui devient l'un "
+                "des symboles de la révolution industrielle."
+            ),
+            "before": (
+                "Les machines à vapeur existantes, notamment celle de "
+                "Newcomen inventée en 1712, sont peu efficaces "
+                "énergétiquement et limitées au pompage de l'eau dans "
+                "les mines de charbon, leur rendement thermique "
+                "dépassant à peine 1 %."
+            ),
+            "during": (
+                "James Watt, ayant identifié lors de la réparation "
+                "d'un modèle de Newcomen que l'essentiel de l'énergie "
+                "se perdait à réchauffer puis refroidir sans cesse le "
+                "même cylindre, met au point un condenseur séparé "
+                "maintenu froid en permanence tandis que le cylindre "
+                "principal reste chaud, et en dépose le brevet."
+            ),
+            "after": (
+                "Faute de capital pour exploiter seul son invention, "
+                "Watt ne parvient à la commercialiser efficacement "
+                "qu'après son association avec l'industriel Matthew "
+                "Boulton à Birmingham en 1775 ; leurs machines "
+                "perfectionnées, capables ensuite de produire un "
+                "mouvement rotatif et non plus seulement un pompage, se "
+                "répandent dans les mines puis les usines textiles."
+            ),
+            "narrative": [
+                "Dans les années 1760, l'ingénieur écossais James Watt "
+                "travaille comme réparateur d'instruments à "
+                "l'université de Glasgow, où on lui confie la "
+                "réparation d'un modèle de machine à vapeur de "
+                "Newcomen, utilisée depuis 1712 pour pomper l'eau des "
+                "mines mais au rendement thermique dérisoire.",
+                "Watt remarque que la machine gaspille énormément "
+                "d'énergie en refroidissant puis en réchauffant sans "
+                "cesse le même cylindre. Il conçoit un condenseur "
+                "séparé, maintenu froid en permanence pendant que le "
+                "cylindre principal reste chaud, ce qui améliore "
+                "considérablement le rendement énergétique — une idée "
+                "qui lui serait venue, selon la légende, lors d'une "
+                "promenade dominicale.",
+                "Le 5 janvier 1769, Watt dépose le brevet de son "
+                "invention, mais faute de moyens financiers pour "
+                "l'exploiter, il lui faudra attendre 1775 et son "
+                "association avec l'industriel Matthew Boulton à "
+                "Birmingham pour commercialiser à grande échelle des "
+                "machines à vapeur perfectionnées, bientôt capables "
+                "d'entraîner un mouvement rotatif utilisable dans les "
+                "usines textiles.",
+            ],
+            "why_it_matters": (
+                "L'amélioration de la machine à vapeur par Watt est "
+                "considérée comme l'un des déclencheurs majeurs de la "
+                "révolution industrielle, en fournissant une source "
+                "d'énergie mécanique fiable et transportable qui "
+                "affranchira la production industrielle de sa "
+                "dépendance aux cours d'eau, transformant profondément "
+                "l'économie, l'urbanisation et la société des XVIIIe "
+                "et XIXe siècles."
+            ),
+        },
+    },
 }
 
 
@@ -5164,6 +6505,238 @@ QUIZ_BY_LEVEL = {
             ],
             "correct_index": 0,
             "fun_fact": "Le vol est entièrement automatisé par prudence médicale, un code transmis depuis le sol pouvant débloquer les commandes en cas de besoin.",
+        },
+    },
+    "mlk-discours-lieu": {
+        "enfant": {
+            "prompt": "Où Martin Luther King fait-il son discours célèbre ?",
+            "options": ["Devant le Lincoln Memorial à Washington", "Devant la Maison-Blanche", "À New York", "Au Capitole"],
+            "correct_index": 0,
+            "fun_fact": "King prononce son discours devant plus de 200 000 personnes rassemblées au Lincoln Memorial.",
+        },
+        "college": {
+            "prompt": "Où Martin Luther King a-t-il prononcé son discours « I Have a Dream » ?",
+            "options": ["Devant la Maison-Blanche", "Devant le Lincoln Memorial à Washington", "À l'ONU à New York", "Au Capitole"],
+            "correct_index": 1,
+            "fun_fact": "Le 28 août 1963, King prononce son discours devant plus de 200 000 personnes lors de la Marche sur Washington.",
+        },
+        "lycee": {
+            "prompt": "Quelle formule célèbre King utilise-t-il pour décrire son rêve d'égalité ?",
+            "options": [
+                "« Ne pas être jugés sur la couleur de leur peau mais sur le contenu de leur caractère »",
+                "« La liberté ou la mort »",
+                "« Nous ne céderons jamais »",
+                "« Un homme, une voix »",
+            ],
+            "correct_index": 0,
+            "fun_fact": "King développe une vision d'une Amérique où ses enfants « ne seront pas jugés sur la couleur de leur peau mais sur le contenu de leur caractère ».",
+        },
+        "etudiant_adulte": {
+            "prompt": "Comment la partie la plus célèbre du discours de King a-t-elle vu le jour ?",
+            "options": [
+                "En s'écartant de son texte préparé, encouragé par la chanteuse Mahalia Jackson",
+                "Elle avait été entièrement écrite à l'avance par ses conseillers",
+                "Elle a été improvisée à la suite d'une panne de micro",
+                "Elle reprenait mot pour mot un discours de Lincoln",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Encouragé par Mahalia Jackson à improviser, King s'écarte de son texte préparé pour développer l'anaphore « I have a dream ».",
+        },
+    },
+    "revolution-octobre-lieu": {
+        "enfant": {
+            "prompt": "Quel bâtiment les bolcheviks prennent-ils en novembre 1917 ?",
+            "options": ["Le Palais d'Hiver", "Le Kremlin", "Une église", "Un aéroport"],
+            "correct_index": 0,
+            "fun_fact": "Le Palais d'Hiver, où siège le gouvernement, est pris presque sans combat par les bolcheviks.",
+        },
+        "college": {
+            "prompt": "Quel bâtiment les bolcheviks prennent-ils d'assaut lors de la révolution d'Octobre ?",
+            "options": ["Le Kremlin", "Le Palais d'Hiver", "La cathédrale Saint-Basile", "Le palais de Peterhof"],
+            "correct_index": 1,
+            "fun_fact": "Le Palais d'Hiver de Petrograd, siège du gouvernement provisoire, est pris d'assaut dans la nuit du 6 au 7 novembre 1917.",
+        },
+        "lycee": {
+            "prompt": "Pourquoi appelle-t-on cet événement la « révolution d'Octobre » alors qu'il a lieu en novembre ?",
+            "options": [
+                "À cause du calendrier julien alors en vigueur en Russie",
+                "C'est une erreur historique jamais corrigée",
+                "Les combats ont commencé en octobre et fini en novembre",
+                "Lénine préférait le nom « Octobre »",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Selon le calendrier julien alors en vigueur en Russie, l'événement tombe le 24-25 octobre, d'où son nom.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel signe précoce révèle la nature autoritaire du nouveau pouvoir bolchevique ?",
+            "options": [
+                "La dissolution manu militari de l'Assemblée constituante où les bolcheviks sont minoritaires",
+                "Le maintien du tsar comme chef d'État symbolique",
+                "L'interdiction immédiate du parti bolchevique lui-même",
+                "Le refus de Lénine de prendre le pouvoir",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Les bolcheviks n'obtiennent qu'une minorité de sièges lors des seules élections réellement libres de l'histoire soviétique, avant de dissoudre l'Assemblée.",
+        },
+    },
+    "luther-consequence": {
+        "enfant": {
+            "prompt": "Contre quoi Martin Luther proteste-t-il en 1517 ?",
+            "options": ["La vente d'indulgences par l'Église", "Les impôts du roi", "La construction des châteaux", "Le prix du pain"],
+            "correct_index": 0,
+            "fun_fact": "Luther conteste la vente de documents censés réduire les péchés en échange d'argent.",
+        },
+        "college": {
+            "prompt": "Quel mouvement religieux les 95 thèses de Luther ont-elles déclenché ?",
+            "options": ["La Réforme protestante", "Les croisades", "Le schisme d'Orient", "L'Inquisition"],
+            "correct_index": 0,
+            "fun_fact": "En contestant la vente des indulgences en 1517, Luther déclenche la Réforme protestante.",
+        },
+        "lycee": {
+            "prompt": "Grâce à quelle technologie le texte de Luther se diffuse-t-il si rapidement ?",
+            "options": ["L'imprimerie", "La poste royale", "Les journaux", "Le télégraphe"],
+            "correct_index": 0,
+            "fun_fact": "Grâce à l'imprimerie récemment développée par Gutenberg, le texte est rapidement traduit et diffusé dans tout le Saint-Empire.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi l'image de Luther affichant ses thèses sur la porte de l'église est-elle historiquement incertaine ?",
+            "options": [
+                "Elle n'est attestée que par un témoignage tardif de son collègue Melanchthon",
+                "Luther a lui-même démenti cet épisode",
+                "Aucune église n'existait à Wittenberg à l'époque",
+                "Les thèses ont été publiées uniquement à Rome",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'affichage sur la porte de l'église, devenu image d'Épinal, n'est attesté avec certitude que par un témoignage tardif de Melanchthon.",
+        },
+    },
+    "mandela-duree-prison": {
+        "enfant": {
+            "prompt": "Combien d'années Mandela a-t-il passées en prison ?",
+            "options": ["27 ans", "7 ans", "50 ans", "2 ans"],
+            "correct_index": 0,
+            "fun_fact": "Mandela est resté 27 ans en prison avant sa libération le 11 février 1990.",
+        },
+        "college": {
+            "prompt": "Combien d'années Nelson Mandela a-t-il passées en prison avant sa libération en 1990 ?",
+            "options": ["7 ans", "17 ans", "27 ans", "37 ans"],
+            "correct_index": 2,
+            "fun_fact": "Emprisonné en 1962, Mandela est libéré le 11 février 1990 après 27 ans de détention.",
+        },
+        "lycee": {
+            "prompt": "Sur quelle île Mandela passe-t-il la majeure partie de sa détention ?",
+            "options": ["Robben Island", "Madagascar", "Sainte-Hélène", "L'île d'Elbe"],
+            "correct_index": 0,
+            "fun_fact": "Mandela passe 18 de ses 27 années de détention sur l'île-bagne de Robben Island, au large du Cap.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quand les négociations secrètes entre Mandela et le gouvernement sud-africain ont-elles réellement débuté ?",
+            "options": [
+                "Dès 1985, bien avant sa libération officielle en 1990",
+                "Le jour même de sa libération",
+                "Seulement après les élections de 1994",
+                "Elles n'ont jamais eu lieu avant sa libération",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Des négociations secrètes entre Mandela et le pouvoir sud-africain avaient débuté dès 1985, cinq ans avant sa libération.",
+        },
+    },
+    "spoutnik-annee": {
+        "enfant": {
+            "prompt": "En quelle année l'URSS a-t-elle envoyé Spoutnik 1 dans l'espace ?",
+            "options": ["1957", "1961", "1969", "1949"],
+            "correct_index": 0,
+            "fun_fact": "Spoutnik 1 est lancé le 4 octobre 1957, marquant le début de l'ère spatiale.",
+        },
+        "college": {
+            "prompt": "En quelle année l'URSS a-t-elle lancé Spoutnik 1, premier satellite artificiel ?",
+            "options": ["1949", "1957", "1961", "1969"],
+            "correct_index": 1,
+            "fun_fact": "Lancé le 4 octobre 1957, Spoutnik 1 déclenche la course à l'espace entre l'URSS et les États-Unis.",
+        },
+        "lycee": {
+            "prompt": "Quelle agence spatiale les États-Unis créent-ils en réaction au « moment Spoutnik » ?",
+            "options": ["La NASA", "L'ESA", "Roscosmos", "Le CNES"],
+            "correct_index": 0,
+            "fun_fact": "Pris de court, les États-Unis créent la NASA dès 1958, l'année suivant le lancement de Spoutnik.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Sur quelle technologie militaire la fusée R-7 ayant lancé Spoutnik était-elle initialement basée ?",
+            "options": [
+                "Un missile balistique intercontinental",
+                "Un avion de chasse",
+                "Un sous-marin nucléaire",
+                "Un radar de défense antiaérienne",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La fusée R-7, à l'origine conçue comme missile balistique intercontinental, a été réutilisée pour lancer Spoutnik 1.",
+        },
+    },
+    "chute-rome-consequence": {
+        "enfant": {
+            "prompt": "Qui dépose le dernier empereur romain d'Occident en 476 ?",
+            "options": ["Odoacre", "Attila", "Clovis", "Charlemagne"],
+            "correct_index": 0,
+            "fun_fact": "Odoacre dépose le jeune empereur Romulus Augustule et devient roi d'Italie.",
+        },
+        "college": {
+            "prompt": "Qui dépose le dernier empereur romain d'Occident en 476 ?",
+            "options": ["Attila", "Odoacre", "Clovis", "Charlemagne"],
+            "correct_index": 1,
+            "fun_fact": "Le chef germanique Odoacre dépose Romulus Augustule en 476, une date retenue comme la fin de l'Antiquité.",
+        },
+        "lycee": {
+            "prompt": "Que fait Odoacre des insignes impériaux après avoir déposé Romulus Augustule ?",
+            "options": [
+                "Il les renvoie à Constantinople",
+                "Il les détruit publiquement",
+                "Il les garde et se proclame empereur",
+                "Il les vend aux Wisigoths",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Odoacre renvoie les insignes impériaux à Constantinople, reconnaissant l'empereur d'Orient comme seul souverain légitime.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Comment l'historiographie contemporaine tend-elle à réinterpréter la déposition de 476 ?",
+            "options": [
+                "Comme une étape d'un long processus de transformation romano-germanique plutôt qu'une rupture brutale",
+                "Comme un événement sans aucune importance historique",
+                "Comme le véritable début de l'Empire byzantin",
+                "Comme une invention tardive des historiens médiévaux",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Des historiens comme Peter Brown y voient davantage une étape d'un long processus de transformation que la rupture brutale longtemps enseignée.",
+        },
+    },
+    "watt-invention": {
+        "enfant": {
+            "prompt": "Quelle amélioration James Watt apporte-t-il à la machine à vapeur ?",
+            "options": ["Un condenseur séparé qui économise l'énergie", "Des roues en caoutchouc", "Un moteur électrique", "Une chaudière en verre"],
+            "correct_index": 0,
+            "fun_fact": "Grâce à son condenseur séparé, la machine de Watt gaspille beaucoup moins d'énergie.",
+        },
+        "college": {
+            "prompt": "Quelle amélioration James Watt apporte-t-il à la machine à vapeur en 1769 ?",
+            "options": ["Un condenseur séparé", "Des roues en caoutchouc", "Un moteur électrique", "Une chaudière en verre"],
+            "correct_index": 0,
+            "fun_fact": "En ajoutant un condenseur séparé, Watt améliore considérablement le rendement énergétique de la machine à vapeur.",
+        },
+        "lycee": {
+            "prompt": "Avec quel industriel Watt s'associe-t-il pour commercialiser ses machines ?",
+            "options": ["Matthew Boulton", "Thomas Newcomen", "Robert Stephenson", "Richard Arkwright"],
+            "correct_index": 0,
+            "fun_fact": "Faute de moyens pour exploiter seul son invention, Watt s'associe à l'industriel Matthew Boulton.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quelle limite majeure de la machine de Newcomen la machine de Watt corrige-t-elle ?",
+            "options": [
+                "Le gaspillage d'énergie dû au réchauffement et refroidissement répétés du même cylindre",
+                "L'impossibilité de fonctionner dans les mines",
+                "L'usage exclusif du charbon comme combustible",
+                "Sa taille trop réduite pour être efficace",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le condenseur séparé de Watt, maintenu froid en permanence, évite de réchauffer puis refroidir sans cesse le cylindre principal.",
         },
     },
 }
