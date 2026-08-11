@@ -21,6 +21,7 @@
         <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }} · Il y a {{ years_ago }} ans{% if event.approximate %} · date approximative{% endif %}</span>
       </div>
       <h1 class="font-display-lg text-3xl md:text-5xl text-on-surface mb-md max-w-3xl">{{ event.title }}</h1>
+      <p class="font-body-base text-on-surface-variant max-w-2xl mb-md">{{ event.summary }}</p>
       <div class="flex items-center gap-xs text-on-surface-variant font-body-base">
         <span class="material-symbols-outlined text-[20px]">location_on</span>
         <span>{{ event.location }}</span>
@@ -110,22 +111,36 @@
   {% if images %}
   <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-2xl">
     <h2 class="font-headline-md text-2xl text-on-surface mb-md">Galerie d'archives</h2>
+    <p class="font-body-base text-on-surface-variant text-sm mb-lg">Survolez (ou touchez) une image pour en savoir plus sur sa nature et sa source.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
-      {% for type_key, type_label in [("photo", "Photo d'archive"), ("tableau", "Tableau / gravure"), ("portrait", "Portrait")] %}
+      {% set gallery_info = {
+        "photo": {"label": "Photo d'archive", "blurb": "Un cliché pris à l'époque des faits — ou, quand la photographie n'existait pas encore, une photo du site ou d'un artefact lié aujourd'hui."},
+        "tableau": {"label": "Tableau / gravure", "blurb": "Une représentation artistique de la scène : peinture, gravure ou illustration réalisée par un·e artiste, parfois bien après les faits."},
+        "portrait": {"label": "Portrait", "blurb": "Le visage d'un personnage historique central de cet événement, d'après un portrait peint ou photographié."},
+      } %}
+      {% for type_key in ["photo", "tableau", "portrait"] %}
       {% if images[type_key] %}
-      <figure class="bg-surface-container-low rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow">
-        <img src="{{ images[type_key].url }}" alt="{{ images[type_key].subject or type_label }}" loading="lazy" class="w-full h-56 object-cover bg-surface-container-high">
-        <figcaption class="p-md">
-          <p class="font-label-caps text-secondary text-[10px] tracking-widest uppercase mb-xs">{{ type_label }}</p>
-          {% if images[type_key].subject %}
-          <p class="font-body-bold text-on-surface text-sm">{{ images[type_key].subject }}</p>
+      {% set img = images[type_key] %}
+      {% set info = gallery_info[type_key] %}
+      <div class="group relative h-64 rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" tabindex="0">
+        <img src="{{ img.url }}" alt="{{ img.subject or info.label }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-focus:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+        <span class="absolute top-sm left-sm px-sm py-xs bg-black/50 backdrop-blur-sm text-white text-[10px] font-label-caps tracking-widest uppercase rounded-full">{{ info.label }}</span>
+        <div class="absolute inset-x-0 bottom-0 p-md">
+          {% if img.subject %}
+          <p class="font-body-bold text-white text-sm">{{ img.subject }}</p>
           {% endif %}
-          <p class="font-body-base text-on-surface-variant text-xs mt-xs">
-            {% if images[type_key].credit %}{{ images[type_key].credit }}{% endif %}
-            {% if images[type_key].licence %} · {{ images[type_key].licence }}{% endif %}
-          </p>
-        </figcaption>
-      </figure>
+          <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-focus:grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-out">
+            <div class="overflow-hidden">
+              <p class="text-white/90 text-xs mt-xs leading-snug">{{ info.blurb }}</p>
+              <p class="text-white/60 text-[10px] mt-xs">
+                {% if img.credit %}{{ img.credit }}{% endif %}
+                {% if img.licence %} · {{ img.licence }}{% endif %}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       {% endif %}
       {% endfor %}
     </div>
