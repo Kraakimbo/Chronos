@@ -59,8 +59,6 @@ def home():
 @login_required
 def explorer():
     study_level = current_user.study_level
-    event, _ = find_todays_event()
-    event = resolve_event_content(event, study_level)
     query = request.args.get("q", "").strip()
     category = request.args.get("category", "Tous")
     era_key = request.args.get("era_key", "")
@@ -76,19 +74,9 @@ def explorer():
         if e.get("map_pos")
     ]
 
-    collections = [
-        resolve_event_content(EVENTS[s], study_level)
-        for s in (
-            "chute-empire-romain-occident",
-            "invention-machine-vapeur-watt",
-            "decouverte-tombe-toutankhamon",
-        )
-    ]
     return render_template(
         "pages/explorer.html",
-        event=event,
         eras=ERAS,
-        collections=collections,
         results=results,
         query=query,
         category=category,

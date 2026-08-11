@@ -1,0 +1,14 @@
+{
+  "name": "chronos-a11y",
+  "version": "1.0.0",
+  "private": true,
+  "description": "axe-core accessibility smoke test, run against every major Chronos page (see README.md).",
+  "scripts": {
+    "test": "node run.mjs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1"
+  }
+}

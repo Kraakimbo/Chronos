@@ -124,31 +124,6 @@
     {% endfor %}
   </div>
 
-  <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Collections Phares</h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-    <a href="{{ url_for('main.event_detail', slug=collections[0].slug) }}" class="md:col-span-2 relative h-[300px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm block group">
-      <div class="absolute inset-0">{{ event_cover_photo(collections[0].slug) }}</div>
-      <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
-      <div class="absolute bottom-0 left-0 p-lg">
-        <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ collections[0].date_label }} · {{ collections[0].era }}</span>
-        <h4 class="font-display-lg text-2xl text-white mb-xs">{{ collections[0].title }}</h4>
-        <p class="text-white/90 text-sm font-body-base">{{ collections[0].summary }}</p>
-      </div>
-    </a>
-    <div class="flex flex-col gap-md">
-      {% for collection in collections[1:] %}
-      <a href="{{ url_for('main.event_detail', slug=collection.slug) }}" class="relative flex-1 rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm min-h-[142px] block group">
-        <div class="absolute inset-0">{{ event_cover_photo(collection.slug) }}</div>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent group-hover:from-black/90 transition-colors"></div>
-        <div class="absolute bottom-0 left-0 p-md">
-          <span class="text-white/70 text-[10px] font-label-caps uppercase">{{ collection.date_label }}</span>
-          <h4 class="font-headline-md text-white text-xl">{{ collection.title }}</h4>
-        </div>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
-
   {% endif %}
   {% endif %}
 </main>

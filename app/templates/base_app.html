@@ -12,13 +12,14 @@
 <meta property="og:description" content="{{ self.meta_description() }}">
 <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
 {% include "_theme.html" %}
-<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/playfair-display/index.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/plus-jakarta-sans/index.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/material-symbols/outlined.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
 </head>
 <body class="bg-background text-on-background antialiased min-h-screen pb-24 md:pb-0">
 <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-md focus:py-sm focus:rounded-xl">Aller au contenu</a>
+{% block page_h1 %}<h1 class="sr-only">{{ self.title() }}</h1>{% endblock %}
 
 <header class="hidden md:flex justify-between items-center px-margin-desktop py-md w-full sticky top-0 z-50 glass-nav bg-surface/80 border-b border-outline-variant/30">
   <div class="font-headline-md text-headline-md text-primary">Chronos</div>
@@ -45,7 +46,7 @@
 
 <header class="md:hidden flex justify-between items-center px-margin-mobile py-sm w-full z-50 sticky top-0 backdrop-blur-lg border-b border-outline-variant/30 bg-surface/80">
   <a href="{{ url_for('main.profile') }}" title="Mon profil">{{ avatar(current_user.avatar_id, "w-8 h-8", "text-sm") }}</a>
-  <h1 class="font-headline-md text-lg text-primary">Chronos</h1>
+  <span class="font-headline-md text-lg text-primary">Chronos</span>
   <div class="flex items-center gap-sm">
     <div class="font-stat-lg text-sm flex items-center gap-1">🔥 {{ current_user.streak_days }} · {{ token_icon(16) }} {{ current_user.tokens }}</div>
     {{ theme_toggle("w-8 h-8 rounded-full border border-outline-variant bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0") }}

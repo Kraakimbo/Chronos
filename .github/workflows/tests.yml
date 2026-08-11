@@ -38,3 +38,49 @@ jobs:
 
       - name: Run tests with coverage
         run: pytest -v --cov=app --cov-report=term-missing
+
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: tests/a11y/package-lock.json
+
+      - name: Install axe-core/Playwright
+        working-directory: tests/a11y
+        run: npm ci
+
+      - name: Install Chromium
+        working-directory: tests/a11y
+        run: npx playwright install --with-deps chromium
+
+      - name: Start the app
+        env:
+          SECRET_KEY: ci-a11y-secret
+          DATABASE_URL: "sqlite:////tmp/chronos_a11y.db"
+        run: |
+          nohup python run.py > /tmp/chronos_a11y_server.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -sf http://127.0.0.1:5000/auth/connexion > /dev/null && break
+            sleep 1
+          done
+
+      - name: Run accessibility audit
+        working-directory: tests/a11y
+        run: node run.mjs
+
+      - name: Server logs (on failure)
+        if: failure()
+        run: cat /tmp/chronos_a11y_server.log || true
