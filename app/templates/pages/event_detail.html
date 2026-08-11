@@ -111,21 +111,19 @@
   {% if images %}
   <section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-2xl">
     <h2 class="font-headline-md text-2xl text-on-surface mb-md">Galerie d'archives</h2>
-    <p class="font-body-base text-on-surface-variant text-sm mb-lg">Survolez (ou touchez) une image pour en savoir plus sur sa nature et sa source.</p>
+    <p class="font-body-base text-on-surface-variant text-sm mb-lg">Survolez (ou touchez) une image pour un aperçu, cliquez pour la voir en grand avec tous ses détails.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
-      {% set gallery_info = {
-        "photo": {"label": "Photo d'archive", "blurb": "Un cliché pris à l'époque des faits — ou, quand la photographie n'existait pas encore, une photo du site ou d'un artefact lié aujourd'hui."},
-        "tableau": {"label": "Tableau / gravure", "blurb": "Une représentation artistique de la scène : peinture, gravure ou illustration réalisée par un·e artiste, parfois bien après les faits."},
-        "portrait": {"label": "Portrait", "blurb": "Le visage d'un personnage historique central de cet événement, d'après un portrait peint ou photographié."},
-      } %}
       {% for type_key in ["photo", "tableau", "portrait"] %}
       {% if images[type_key] %}
       {% set img = images[type_key] %}
-      {% set info = gallery_info[type_key] %}
-      <div class="group relative h-64 rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" tabindex="0">
+      {% set info = image_type_info[type_key] %}
+      <a href="{{ url_for('main.event_image_detail', slug=event.slug, image_type=type_key) }}" class="group relative h-64 rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
         <img src="{{ img.url }}" alt="{{ img.subject or info.label }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-focus:scale-105">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
         <span class="absolute top-sm left-sm px-sm py-xs bg-black/50 backdrop-blur-sm text-white text-[10px] font-label-caps tracking-widest uppercase rounded-full">{{ info.label }}</span>
+        <span class="absolute top-sm right-sm w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm text-white flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+          <span class="material-symbols-outlined text-[18px]">open_in_full</span>
+        </span>
         <div class="absolute inset-x-0 bottom-0 p-md">
           {% if img.subject %}
           <p class="font-body-bold text-white text-sm">{{ img.subject }}</p>
@@ -140,7 +138,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </a>
       {% endif %}
       {% endfor %}
     </div>

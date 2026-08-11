@@ -1,5 +1,5 @@
 {% extends "base_app.html" %}
-{% from "_illustrations.html" import era_illustration, event_illustration, world_map_illustration %}
+{% from "_illustrations.html" import era_illustration, event_cover_photo, world_map_illustration with context %}
 {% block title %}Chronos - Explorer{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-2xl">
@@ -33,7 +33,7 @@
   <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
     {% for r in results %}
     <a href="{{ url_for('main.event_detail', slug=r.slug) }}" class="flex items-center gap-md p-md rounded-xl bg-surface-container-lowest border border-outline-variant ambient-shadow hover:bg-surface-container-low transition-colors">
-      <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">{{ event_illustration(r.slug, "w-full h-full") }}</div>
+      <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">{{ event_cover_photo(r.slug, "w-full h-full") }}</div>
       <div class="flex flex-col flex-grow">
         <span class="text-primary font-label-caps uppercase mb-unit">{{ r.date_label }} · {{ r.category }}</span>
         <h4 class="font-body-bold text-on-surface">{{ r.title }}</h4>
@@ -106,7 +106,7 @@
   <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Collections Phares</h3>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
     <a href="{{ url_for('main.event_detail', slug=collections[0].slug) }}" class="md:col-span-2 relative h-[300px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm block group">
-      <div class="absolute inset-0">{{ event_illustration(collections[0].slug) }}</div>
+      <div class="absolute inset-0">{{ event_cover_photo(collections[0].slug) }}</div>
       <div class="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors"></div>
       <div class="absolute bottom-0 left-0 p-lg">
         <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ collections[0].date_label }} · {{ collections[0].era }}</span>
@@ -117,7 +117,7 @@
     <div class="flex flex-col gap-md">
       {% for collection in collections[1:] %}
       <a href="{{ url_for('main.event_detail', slug=collection.slug) }}" class="relative flex-1 rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm min-h-[142px] block group">
-        <div class="absolute inset-0">{{ event_illustration(collection.slug) }}</div>
+        <div class="absolute inset-0">{{ event_cover_photo(collection.slug) }}</div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent group-hover:from-black/90 transition-colors"></div>
         <div class="absolute bottom-0 left-0 p-md">
           <span class="text-white/70 text-[10px] font-label-caps uppercase">{{ collection.date_label }}</span>
@@ -130,7 +130,7 @@
 
   <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
   <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="block relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm bg-surface-container flex items-end">
-    <div class="absolute inset-0">{{ event_illustration(event.slug) }}</div>
+    <div class="absolute inset-0">{{ event_cover_photo(event.slug) }}</div>
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
     <div class="relative p-lg">
       <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ event.era }}</span>

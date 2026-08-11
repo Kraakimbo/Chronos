@@ -1,0 +1,77 @@
+{% extends "base_app.html" %}
+{% block title %}{{ image.subject or type_info.label }} — {{ event.title }}{% endblock %}
+{% block content %}
+<main>
+  <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop pt-lg">
+    <div class="flex items-center gap-sm mb-lg">
+      <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </a>
+      <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">Retour à « {{ event.title }} »</span>
+    </div>
+  </section>
+
+  <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow bg-surface-container-lowest">
+      <img src="{{ image.url }}" alt="{{ image.subject or type_info.label }}" class="w-full max-h-[70vh] object-contain bg-surface-container-high">
+    </div>
+  </section>
+
+  <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop py-xl grid grid-cols-1 md:grid-cols-3 gap-xl">
+    <div class="md:col-span-2">
+      <span class="px-sm py-xs bg-primary-container/20 text-on-primary-container border border-primary-container/30 rounded-full font-label-caps inline-block mb-md">{{ type_info.label }}</span>
+      {% if image.subject %}
+      <h1 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-md">{{ image.subject }}</h1>
+      {% else %}
+      <h1 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-md">{{ type_info.label }}</h1>
+      {% endif %}
+      <p class="font-body-base text-on-surface-variant leading-relaxed">{{ type_info.blurb }}</p>
+      <p class="font-body-base text-on-surface-variant leading-relaxed mt-md">
+        Cette image illustre l'événement
+        <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="text-primary font-body-bold hover:underline">{{ event.title }}</a>
+        ({{ event.date_label }}).
+      </p>
+    </div>
+
+    <aside class="bg-surface-container-low rounded-2xl p-lg border border-outline-variant/30">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase mb-md">Source</h3>
+      <dl class="space-y-md">
+        {% if image.credit %}
+        <div>
+          <dt class="font-label-caps text-secondary text-[10px] tracking-widest uppercase mb-1">Crédit</dt>
+          <dd class="font-body-base text-on-surface text-sm">{{ image.credit }}</dd>
+        </div>
+        {% endif %}
+        {% if image.licence %}
+        <div>
+          <dt class="font-label-caps text-secondary text-[10px] tracking-widest uppercase mb-1">Licence</dt>
+          <dd class="font-body-base text-on-surface text-sm">{{ image.licence }}</dd>
+        </div>
+        {% endif %}
+        <div>
+          <dt class="font-label-caps text-secondary text-[10px] tracking-widest uppercase mb-1">Hébergement</dt>
+          <dd class="font-body-base text-on-surface text-sm">
+            <a href="{{ image.url }}" target="_blank" rel="noopener" class="text-primary hover:underline inline-flex items-center gap-1">
+              Wikimedia Commons
+              <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="max-w-[1000px] mx-auto px-margin-mobile md:px-margin-desktop pb-2xl">
+    <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="inline-flex items-center gap-sm text-primary font-body-bold hover:underline">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Retour à l'événement
+    </a>
+  </section>
+
+  <footer class="border-t border-outline-variant/20 py-lg text-center">
+    <p class="font-label-caps text-[10px] text-secondary/60">
+      © 2026 Chronos. Contenu à but éducatif — illustrations générées, non historiquement exhaustives.
+    </p>
+  </footer>
+</main>
+{% endblock %}

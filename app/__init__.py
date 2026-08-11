@@ -53,10 +53,15 @@ def create_app(config_object="config.Config"):
     app.register_blueprint(main_bp)
 
     from app.data import AVATARS
+    from app.event_images import IMAGE_TYPE_INFO, cover_image
 
     @app.context_processor
     def inject_avatars():
         return {"avatars": AVATARS}
+
+    @app.context_processor
+    def inject_event_images():
+        return {"cover_image_for": cover_image, "image_type_info": IMAGE_TYPE_INFO}
 
     from app.models import User
 
