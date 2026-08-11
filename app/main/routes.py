@@ -14,6 +14,7 @@ from app.events import (
     today_french_label,
     years_ago,
 )
+from app.level_content import resolve_event_content, resolve_quiz
 from app.progress import badges_for, eras_progress, level_info
 
 main_bp = Blueprint("main", __name__)
@@ -36,14 +37,17 @@ class QuizResult:
 @main_bp.route("/")
 @login_required
 def home():
+    study_level = current_user.study_level
     event, is_exact_match = find_todays_event()
+    other_events = [e for e in events_list(chronological=True) if e["slug"] != event["slug"]][:2]
+    event = resolve_event_content(event, study_level)
     return render_template(
         "pages/home.html",
         event=event,
         is_exact_match=is_exact_match,
         today_label=today_french_label(),
         years_ago=years_ago(event) if is_exact_match else None,
-        other_events=[e for e in events_list(chronological=True) if e["slug"] != event["slug"]][:2],
+        other_events=[resolve_event_content(e, study_level) for e in other_events],
         active_page="home",
         level=level_info(current_user),
         badges=badges_for(current_user),
@@ -53,7 +57,9 @@ def home():
 @main_bp.route("/explorer")
 @login_required
 def explorer():
+    study_level = current_user.study_level
     event, _ = find_todays_event()
+    event = resolve_event_content(event, study_level)
     query = request.args.get("q", "").strip()
     category = request.args.get("category", "Tous")
     era_key = request.args.get("era_key", "")
@@ -61,12 +67,21 @@ def explorer():
 
     has_filter = bool(query or category != "Tous" or era_key)
     results = search_events(query=query, category=category, era_key=era_key) if has_filter else None
-    map_events = [e for e in events_list(chronological=True) if e.get("map_pos")]
+    if results is not None:
+        results = [resolve_event_content(e, study_level) for e in results]
+    map_events = [
+        resolve_event_content(e, study_level)
+        for e in events_list(chronological=True)
+        if e.get("map_pos")
+    ]
 
     collections = [
-        EVENTS["chute-empire-romain-occident"],
-        EVENTS["invention-machine-vapeur-watt"],
-        EVENTS["decouverte-tombe-toutankhamon"],
+        resolve_event_content(EVENTS[s], study_level)
+        for s in (
+            "chute-empire-romain-occident",
+            "invention-machine-vapeur-watt",
+            "decouverte-tombe-toutankhamon",
+        )
     ]
     return render_template(
         "pages/explorer.html",
@@ -80,7 +95,7 @@ def explorer():
         categories=["Tous"] + all_categories(),
         view=view,
         map_events=map_events,
-        timeline_events=events_list(chronological=True),
+        timeline_events=[resolve_event_content(e, study_level) for e in events_list(chronological=True)],
         active_page="explorer",
     )
 
@@ -91,6 +106,7 @@ def event_detail(slug):
     event = EVENTS.get(slug)
     if event is None:
         abort(404)
+    event = resolve_event_content(event, current_user.study_level)
     return render_template(
         "pages/event_detail.html",
         event=event,
@@ -124,12 +140,14 @@ def event_image_detail(slug, image_type):
 @login_required
 def quiz():
     result = None
+    study_level = current_user.study_level
 
     if request.method == "POST":
         slug = request.form.get("question_slug")
-        question = QUIZ_QUESTIONS.get(slug)
-        if question is None:
+        base_question = QUIZ_QUESTIONS.get(slug)
+        if base_question is None:
             abort(400)
+        question = resolve_quiz(base_question, study_level)
 
         try:
             chosen_index = int(request.form["answer_index"])
@@ -142,7 +160,8 @@ def quiz():
             db.session.commit()
         result = QuizResult(chosen_index=chosen_index, correct=correct)
     else:
-        question = QUIZ_QUESTIONS[random.choice(list(QUIZ_QUESTIONS))]
+        base_question = QUIZ_QUESTIONS[random.choice(list(QUIZ_QUESTIONS))]
+        question = resolve_quiz(base_question, study_level)
 
     return render_template("pages/quiz.html", question=question, result=result, active_page="quiz")
 
