@@ -1943,6 +1943,798 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "declaration-independance-americaine": {
+        "enfant": {
+            "summary": (
+                "Le 4 juillet 1776, les treize colonies américaines "
+                "annoncent qu'elles ne veulent plus être gouvernées par "
+                "l'Angleterre."
+            ),
+            "before": (
+                "Les colonies américaines sont en guerre contre "
+                "l'Angleterre depuis 1775. Elles trouvent injuste de "
+                "payer des taxes sans avoir leur mot à dire."
+            ),
+            "during": (
+                "Des représentants des colonies, réunis à Philadelphie, "
+                "votent un texte écrit surtout par Thomas Jefferson."
+            ),
+            "after": (
+                "La guerre continue encore plusieurs années, jusqu'à ce "
+                "que l'Angleterre accepte enfin l'indépendance des "
+                "États-Unis en 1783."
+            ),
+            "narrative": [
+                "Depuis 1775, les treize colonies américaines sont en "
+                "guerre contre l'Angleterre.",
+                "Réunis à Philadelphie, des représentants des colonies "
+                "votent un texte écrit surtout par Thomas Jefferson, le "
+                "4 juillet 1776.",
+                "Le texte dit que « tous les hommes sont créés égaux » "
+                "et ont le droit d'être libres.",
+            ],
+            "why_it_matters": (
+                "Ce texte donne naissance aux États-Unis d'Amérique et "
+                "a inspiré d'autres pays, dont la France, quelques "
+                "années plus tard."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le Congrès continental adopte la déclaration "
+                "proclamant l'indépendance des treize colonies "
+                "américaines vis-à-vis de la Grande-Bretagne."
+            ),
+            "before": (
+                "Les colonies américaines, en guerre depuis 1775 "
+                "contre la couronne britannique, réclament la fin des "
+                "taxes imposées sans qu'elles aient de représentants au "
+                "Parlement."
+            ),
+            "during": (
+                "Le Congrès continental adopte le texte rédigé "
+                "principalement par Thomas Jefferson, proclamant les "
+                "treize colonies libres et indépendantes."
+            ),
+            "after": (
+                "La guerre d'indépendance se poursuit jusqu'en 1783, "
+                "date à laquelle la Grande-Bretagne reconnaît "
+                "officiellement les États-Unis d'Amérique."
+            ),
+            "narrative": [
+                "Depuis 1775, les treize colonies britanniques "
+                "d'Amérique du Nord sont en guerre contre la couronne, "
+                "exaspérées par des taxes imposées sans représentation "
+                "au Parlement de Londres.",
+                "Réuni à Philadelphie, le Congrès continental charge un "
+                "comité de cinq membres, dont Thomas Jefferson, de "
+                "rédiger une déclaration justifiant la rupture. Le "
+                "texte est adopté le 4 juillet 1776.",
+                "La déclaration proclame que « tous les hommes sont "
+                "créés égaux » et dotés de droits inaliénables, dont la "
+                "vie, la liberté et la recherche du bonheur.",
+            ],
+            "why_it_matters": (
+                "Ce texte fondateur donne naissance aux États-Unis "
+                "d'Amérique et inspirera d'autres déclarations de "
+                "droits, dont celle de 1789 en France."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le Congrès continental adopte la déclaration "
+                "proclamant l'indépendance des treize colonies "
+                "américaines vis-à-vis de la Grande-Bretagne."
+            ),
+            "before": (
+                "Les colonies américaines, en guerre depuis 1775 "
+                "contre la couronne britannique après les batailles de "
+                "Lexington et Concord, réclament la fin des taxes "
+                "imposées sans qu'elles aient de représentants au "
+                "Parlement de Londres — le principe de « no taxation "
+                "without representation »."
+            ),
+            "during": (
+                "Le Congrès continental, réuni à Philadelphie, adopte "
+                "le texte rédigé principalement par Thomas Jefferson au "
+                "sein d'un comité de cinq membres, proclamant les "
+                "treize colonies libres et indépendantes."
+            ),
+            "after": (
+                "La guerre d'indépendance se poursuit jusqu'en 1783, "
+                "date à laquelle le traité de Paris consacre la "
+                "reconnaissance officielle des États-Unis d'Amérique "
+                "par la Grande-Bretagne."
+            ),
+            "narrative": [
+                "Depuis 1775, les treize colonies britanniques "
+                "d'Amérique du Nord sont en guerre ouverte contre la "
+                "couronne, exaspérées par des taxes imposées sans "
+                "qu'elles aient de représentants au Parlement de "
+                "Londres.",
+                "Réuni à Philadelphie, le Congrès continental charge un "
+                "comité de cinq membres, dont Thomas Jefferson, John "
+                "Adams et Benjamin Franklin, de rédiger une déclaration "
+                "justifiant la rupture avec la Grande-Bretagne. Le "
+                "texte est adopté le 4 juillet 1776.",
+                "La déclaration proclame que « tous les hommes sont "
+                "créés égaux » et dotés de droits inaliénables, dont la "
+                "vie, la liberté et la recherche du bonheur. Elle "
+                "énumère aussi les griefs contre le roi George III pour "
+                "justifier la séparation.",
+            ],
+            "why_it_matters": (
+                "Ce texte fondateur donne naissance aux États-Unis "
+                "d'Amérique et inspirera par la suite d'autres "
+                "déclarations de droits, dont la Déclaration des droits "
+                "de l'homme et du citoyen française de 1789."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le Congrès continental adopte à Philadelphie la "
+                "déclaration proclamant l'indépendance des treize "
+                "colonies américaines vis-à-vis de la Grande-Bretagne, "
+                "texte fondateur dont la portée philosophique dépassera "
+                "largement son contexte initial."
+            ),
+            "before": (
+                "Les colonies américaines, en guerre depuis les "
+                "batailles de Lexington et Concord en avril 1775, "
+                "réclament la fin de taxes imposées sans représentation "
+                "au Parlement de Londres — principe résumé par le "
+                "slogan « no taxation without representation » — dans "
+                "un climat où l'idée d'indépendance, encore minoritaire "
+                "en 1775, gagne rapidement du terrain."
+            ),
+            "during": (
+                "Le Congrès continental, réuni à Philadelphie, adopte "
+                "le 4 juillet 1776 le texte rédigé principalement par "
+                "Thomas Jefferson au sein d'un comité de cinq membres "
+                "incluant John Adams et Benjamin Franklin, après "
+                "plusieurs jours de débats et d'amendements, dont la "
+                "suppression d'un paragraphe de Jefferson condamnant la "
+                "traite négrière."
+            ),
+            "after": (
+                "La guerre d'indépendance se poursuit jusqu'en 1783, "
+                "année où le traité de Paris consacre la reconnaissance "
+                "officielle des États-Unis par la Grande-Bretagne, "
+                "avec l'appui décisif de la France à partir de 1778."
+            ),
+            "narrative": [
+                "Depuis 1775, les treize colonies britanniques "
+                "d'Amérique du Nord sont en guerre ouverte contre la "
+                "couronne, exaspérées par des taxes imposées sans "
+                "qu'elles aient de représentants au Parlement de "
+                "Londres.",
+                "Réuni à Philadelphie, le Congrès continental charge un "
+                "comité de cinq membres, dont Thomas Jefferson, John "
+                "Adams et Benjamin Franklin, de rédiger une déclaration "
+                "justifiant la rupture avec la Grande-Bretagne. Le "
+                "texte, débattu et amendé pendant plusieurs jours, est "
+                "adopté le 4 juillet 1776.",
+                "La déclaration proclame que « tous les hommes sont "
+                "créés égaux » et dotés de droits inaliénables, dont la "
+                "vie, la liberté et la recherche du bonheur — une "
+                "formule qui, malgré la persistance de l'esclavage dans "
+                "les colonies signataires, deviendra une référence "
+                "universelle. Elle énumère aussi les griefs contre le "
+                "roi George III pour justifier la séparation.",
+            ],
+            "why_it_matters": (
+                "Ce texte fondateur donne naissance aux États-Unis "
+                "d'Amérique et inspirera par la suite d'autres "
+                "déclarations de droits, dont la Déclaration des droits "
+                "de l'homme et du citoyen française de 1789, tout en "
+                "laissant en suspens la contradiction entre ses "
+                "principes d'égalité universelle et le maintien de "
+                "l'esclavage, qui ne sera abolie que près d'un siècle "
+                "plus tard."
+            ),
+        },
+    },
+    "arrivee-christophe-colomb": {
+        "enfant": {
+            "summary": (
+                "En octobre 1492, Christophe Colomb et son équipage "
+                "arrivent sur une île, après avoir traversé l'océan "
+                "pour trouver une nouvelle route vers l'Asie."
+            ),
+            "before": (
+                "Les rois d'Espagne payent le voyage de Colomb, qui "
+                "veut trouver un chemin vers l'Asie en passant par "
+                "l'ouest."
+            ),
+            "during": (
+                "Après plus d'un mois de voyage en mer sans voir de "
+                "terre, un marin aperçoit enfin une côte."
+            ),
+            "after": (
+                "Colomb explore d'autres îles, pensant être arrivé près "
+                "de l'Asie, puis rentre en Espagne annoncer sa "
+                "découverte."
+            ),
+            "narrative": [
+                "Le 3 août 1492, Christophe Colomb part d'Espagne avec "
+                "trois bateaux pour essayer de rejoindre l'Asie en "
+                "passant par l'ouest.",
+                "Après plus de deux mois de voyage, un marin aperçoit "
+                "enfin la terre, dans la nuit du 11 au 12 octobre 1492. "
+                "L'équipage débarque sur une île qu'ils appellent San "
+                "Salvador.",
+                "Colomb pense avoir atteint l'Asie. Il visite d'autres "
+                "îles avant de retourner en Espagne pour annoncer la "
+                "nouvelle.",
+            ],
+            "why_it_matters": (
+                "C'est le premier vrai contact entre l'Europe et "
+                "l'Amérique. Après cela, beaucoup d'Européens viendront "
+                "s'installer sur ce continent."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Après plus de deux mois de traversée, l'expédition de "
+                "Christophe Colomb atteint une île des Bahamas, "
+                "marquant le début des grandes découvertes européennes "
+                "en Amérique."
+            ),
+            "before": (
+                "Financé par les rois catholiques d'Espagne, Colomb "
+                "cherche une route occidentale vers les Indes en "
+                "traversant l'Atlantique."
+            ),
+            "during": (
+                "Après 36 jours de traversée sans terre en vue, un "
+                "marin de la Pinta aperçoit la côte d'une île qu'ils "
+                "nomment San Salvador."
+            ),
+            "after": (
+                "Colomb explore ensuite Cuba et Hispaniola, convaincu "
+                "d'avoir atteint les abords de l'Asie, avant de rentrer "
+                "en Espagne porter la nouvelle."
+            ),
+            "narrative": [
+                "Le 3 août 1492, Christophe Colomb quitte l'Espagne "
+                "avec trois navires — la Santa María, la Pinta et la "
+                "Niña — dans l'espoir de rejoindre l'Asie en naviguant "
+                "vers l'ouest.",
+                "Après plus de deux mois de traversée éprouvante, un "
+                "vigie de la Pinta aperçoit la terre dans la nuit du 11 "
+                "au 12 octobre 1492. L'expédition débarque sur une île "
+                "des Bahamas.",
+                "Persuadé d'avoir atteint les Indes orientales, Colomb "
+                "nomme les habitants qu'il rencontre « Indiens » et "
+                "poursuit son exploration avant de regagner l'Espagne.",
+            ],
+            "why_it_matters": (
+                "Ce premier contact durable entre l'Europe et le "
+                "continent américain ouvre l'ère de la colonisation "
+                "européenne des Amériques, aux conséquences immenses "
+                "pour les populations autochtones."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Après plus de deux mois de traversée, l'expédition de "
+                "Christophe Colomb atteint une île des Bahamas, "
+                "marquant le début des grandes découvertes européennes "
+                "en Amérique."
+            ),
+            "before": (
+                "Financé par les rois catholiques d'Espagne, Isabelle "
+                "de Castille et Ferdinand d'Aragon, Colomb cherche une "
+                "route occidentale vers les Indes en traversant "
+                "l'Atlantique, convaincu — à tort quant à la distance "
+                "réelle — de la sphéricité de la Terre."
+            ),
+            "during": (
+                "Après 36 jours de traversée sans terre en vue, "
+                "marquée par les doutes croissants de l'équipage, un "
+                "marin de la Pinta aperçoit la côte d'une île qu'ils "
+                "nomment San Salvador."
+            ),
+            "after": (
+                "Colomb explore ensuite Cuba et Hispaniola, convaincu "
+                "d'avoir atteint les abords de l'Asie, avant de rentrer "
+                "en Espagne porter la nouvelle de sa découverte."
+            ),
+            "narrative": [
+                "Le 3 août 1492, Christophe Colomb quitte le port de "
+                "Palos, en Espagne, avec trois navires — la Santa "
+                "María, la Pinta et la Niña — et un équipage d'environ "
+                "90 hommes, dans l'espoir de rejoindre l'Asie en "
+                "naviguant vers l'ouest.",
+                "Après plus de deux mois de traversée éprouvante, "
+                "marquée par les doutes de l'équipage, un vigie de la "
+                "Pinta aperçoit la terre dans la nuit du 11 au 12 "
+                "octobre 1492. L'expédition débarque sur une île des "
+                "Bahamas que Colomb baptise San Salvador.",
+                "Persuadé d'avoir atteint les Indes orientales, Colomb "
+                "nomme les habitants qu'il rencontre « Indiens ». Il "
+                "poursuit son exploration vers Cuba et Hispaniola avant "
+                "de regagner l'Espagne, où la nouvelle de sa découverte "
+                "se répand rapidement en Europe.",
+            ],
+            "why_it_matters": (
+                "Ce premier contact durable entre l'Europe et le "
+                "continent américain ouvre l'ère de la colonisation "
+                "européenne des Amériques, aux conséquences immenses — "
+                "et dévastatrices pour les populations autochtones — "
+                "pour les siècles suivants."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Après 36 jours de traversée sans terre en vue, "
+                "l'expédition de Christophe Colomb, financée par la "
+                "couronne espagnole, atteint une île des Bahamas, "
+                "inaugurant sans le savoir un contact durable entre "
+                "l'Europe et un continent dont l'existence était "
+                "insoupçonnée."
+            ),
+            "before": (
+                "Financé par les rois catholiques d'Espagne, Isabelle "
+                "de Castille et Ferdinand d'Aragon, après le refus "
+                "initial du Portugal, Colomb cherche une route "
+                "occidentale vers les Indes en traversant l'Atlantique, "
+                "sur la base d'une sous-estimation majeure de la "
+                "circonférence terrestre qui, sans la présence "
+                "inattendue d'un continent, aurait rendu le voyage "
+                "impossible faute de vivres."
+            ),
+            "during": (
+                "Après 36 jours de traversée sans terre en vue, marquée "
+                "par les doutes croissants de l'équipage et une "
+                "quasi-mutinerie, un marin de la Pinta, Rodrigo de "
+                "Triana, aperçoit le premier la côte d'une île des "
+                "Bahamas que Colomb nomme San Salvador, sans jamais "
+                "reconnaître de son vivant qu'il ne s'agissait pas de "
+                "l'Asie."
+            ),
+            "after": (
+                "Colomb explore ensuite Cuba et Hispaniola, convaincu "
+                "d'avoir atteint les abords du Japon puis de la Chine, "
+                "avant de rentrer en Espagne porter la nouvelle, "
+                "laissant derrière lui un premier comptoir, La Navidad, "
+                "qui sera détruit avant son retour lors d'un second "
+                "voyage."
+            ),
+            "narrative": [
+                "Le 3 août 1492, Christophe Colomb quitte le port de "
+                "Palos, en Espagne, avec trois navires — la Santa "
+                "María, la Pinta et la Niña — et un équipage d'environ "
+                "90 hommes, dans l'espoir de rejoindre l'Asie en "
+                "naviguant vers l'ouest, sur la base de calculs sous-"
+                "estimant largement la circonférence de la Terre.",
+                "Après plus de deux mois de traversée éprouvante, "
+                "marquée par les doutes de l'équipage, un vigie de la "
+                "Pinta aperçoit la terre dans la nuit du 11 au 12 "
+                "octobre 1492. L'expédition débarque sur une île des "
+                "Bahamas que Colomb baptise San Salvador, sans jamais "
+                "comprendre qu'il venait de découvrir, pour l'Europe, "
+                "un continent jusque-là inconnu.",
+                "Persuadé d'avoir atteint les Indes orientales, Colomb "
+                "nomme les habitants qu'il rencontre « Indiens », une "
+                "appellation qui perdurera des siècles. Il poursuit son "
+                "exploration vers Cuba et Hispaniola avant de regagner "
+                "l'Espagne, où la nouvelle de sa découverte se répand "
+                "rapidement, déclenchant une vague de conquêtes et de "
+                "colonisation.",
+            ],
+            "why_it_matters": (
+                "Ce premier contact durable entre l'Europe et le "
+                "continent américain ouvre l'ère de la colonisation "
+                "européenne des Amériques et du « Grand Échange "
+                "colombien » — transferts de plantes, d'animaux, de "
+                "maladies et de populations entre les deux hémisphères "
+                "— aux conséquences aussi immenses que dévastatrices "
+                "pour les populations autochtones, décimées dans les "
+                "décennies suivantes principalement par les maladies "
+                "importées d'Europe."
+            ),
+        },
+    },
+    "nuit-du-4-aout": {
+        "enfant": {
+            "summary": (
+                "Dans la nuit du 4 août 1789, les nobles et l'Église "
+                "acceptent d'abandonner leurs privilèges, ce qui met "
+                "fin aux droits des seigneurs sur les paysans."
+            ),
+            "before": (
+                "Depuis la prise de la Bastille, des paysans en colère "
+                "attaquent des châteaux dans les campagnes."
+            ),
+            "during": (
+                "Pendant une réunion de nuit, des nobles abandonnent "
+                "l'un après l'autre leurs droits sur les paysans."
+            ),
+            "after": (
+                "Les impôts payés aux seigneurs et à l'Église sont "
+                "supprimés. Tout le monde devient égal devant la loi."
+            ),
+            "narrative": [
+                "Pendant l'été 1789, des paysans en colère attaquent "
+                "des châteaux pour détruire les papiers qui les "
+                "obligeaient à payer des impôts aux seigneurs.",
+                "Le soir du 4 août, à l'Assemblée, deux députés "
+                "proposent d'abandonner ces droits féodaux. D'autres "
+                "nobles font pareil les uns après les autres.",
+                "En une nuit, l'Assemblée vote la fin de nombreux "
+                "privilèges et impôts injustes qui existaient depuis "
+                "très longtemps.",
+            ],
+            "why_it_matters": (
+                "Cette nuit marque la fin de siècles d'inégalités entre "
+                "nobles et paysans, et prépare l'idée que tous les "
+                "citoyens sont égaux devant la loi."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Dans un climat d'émotion collective, l'Assemblée "
+                "constituante vote l'abolition des privilèges féodaux, "
+                "mettant fin de facto au système seigneurial en "
+                "France."
+            ),
+            "before": (
+                "Depuis la prise de la Bastille, des révoltes "
+                "paysannes contre les droits seigneuraux se multiplient "
+                "dans les campagnes, épisode connu sous le nom de "
+                "« Grande Peur »."
+            ),
+            "during": (
+                "Lors d'une séance de nuit, des députés nobles et "
+                "ecclésiastiques renoncent tour à tour à leurs "
+                "privilèges, dans un mouvement d'entraînement "
+                "collectif."
+            ),
+            "after": (
+                "Les décrets qui suivent suppriment la dîme, les "
+                "droits féodaux et les privilèges fiscaux, posant les "
+                "bases d'une société d'égalité devant la loi."
+            ),
+            "narrative": [
+                "À l'été 1789, la « Grande Peur » s'empare des "
+                "campagnes françaises : des rumeurs d'un complot "
+                "aristocratique poussent les paysans à attaquer "
+                "châteaux et registres seigneuriaux.",
+                "Dans la soirée du 4 août 1789, le vicomte de Noailles "
+                "et le duc d'Aiguillon proposent l'abolition des droits "
+                "féodaux. Nobles et clergé renoncent les uns après les "
+                "autres à leurs privilèges.",
+                "En quelques heures, l'Assemblée vote l'abolition de la "
+                "dîme, des droits seigneuriaux et des privilèges "
+                "fiscaux des ordres.",
+            ],
+            "why_it_matters": (
+                "La nuit du 4 août 1789 met fin, en droit, à des "
+                "siècles de société d'ordres, posant l'un des "
+                "fondements de l'égalité civile proclamée quelques "
+                "jours plus tard."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Dans un climat d'émotion collective, l'Assemblée "
+                "constituante vote l'abolition des privilèges féodaux, "
+                "mettant fin de facto au système seigneurial en "
+                "France."
+            ),
+            "before": (
+                "Depuis la prise de la Bastille, des révoltes "
+                "paysannes contre les droits seigneuraux se multiplient "
+                "dans les campagnes, épisode connu sous le nom de "
+                "« Grande Peur », alimenté par la crainte d'un complot "
+                "aristocratique."
+            ),
+            "during": (
+                "Lors d'une séance de nuit à l'Assemblée constituante, "
+                "des députés nobles et ecclésiastiques renoncent tour à "
+                "tour à leurs privilèges, dans un mouvement "
+                "d'entraînement collectif largement improvisé."
+            ),
+            "after": (
+                "Les décrets qui suivent dans les jours suivants "
+                "suppriment la dîme, les droits féodaux, les privilèges "
+                "fiscaux et la vénalité des offices, posant les bases "
+                "juridiques d'une société d'égalité devant la loi."
+            ),
+            "narrative": [
+                "À l'été 1789, la « Grande Peur » s'empare des "
+                "campagnes françaises : des rumeurs d'un complot "
+                "aristocratique poussent les paysans à attaquer "
+                "châteaux et registres seigneuriaux pour détruire les "
+                "preuves de leurs obligations féodales.",
+                "Dans la soirée du 4 août 1789, à l'Assemblée "
+                "constituante, le vicomte de Noailles et le duc "
+                "d'Aiguillon proposent l'abolition des droits féodaux "
+                "pour apaiser les campagnes. Dans un mouvement "
+                "d'émulation, nobles et clergé renoncent les uns après "
+                "les autres à leurs privilèges.",
+                "En quelques heures nocturnes, l'Assemblée vote "
+                "l'abolition de la dîme, des droits seigneuriaux, des "
+                "privilèges fiscaux des ordres et de la vénalité des "
+                "offices. Les décrets définitifs seront rédigés et "
+                "votés dans les jours suivants.",
+            ],
+            "why_it_matters": (
+                "La nuit du 4 août 1789 met fin, en droit, à des "
+                "siècles de société d'ordres et de privilèges féodaux, "
+                "posant l'un des fondements de l'égalité civile "
+                "proclamée quelques jours plus tard dans la Déclaration "
+                "des droits de l'homme et du citoyen."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Dans un climat d'émotion collective largement "
+                "improvisé, l'Assemblée constituante vote en une seule "
+                "nuit l'abolition des privilèges féodaux, mettant fin "
+                "de facto à des siècles de société d'ordres en France."
+            ),
+            "before": (
+                "Depuis la prise de la Bastille, des révoltes paysannes "
+                "contre les droits seigneuraux se multiplient dans les "
+                "campagnes lors de la « Grande Peur », alimentée par "
+                "des rumeurs de complot aristocratique et par la "
+                "disette persistante de l'été 1789."
+            ),
+            "during": (
+                "Lors d'une séance de nuit à l'Assemblée constituante, "
+                "initialement convoquée pour traiter du brigandage "
+                "rural, des députés nobles et ecclésiastiques renoncent "
+                "tour à tour à leurs privilèges dans un mouvement "
+                "d'entraînement collectif largement improvisé et "
+                "peut-être orchestré en coulisses par certains libéraux."
+            ),
+            "after": (
+                "Les décrets rédigés dans les jours suivants nuancent "
+                "cependant la portée du vote initial : certains droits "
+                "seront rachetables plutôt qu'abolis sans compensation, "
+                "un point qui restera contesté jusqu'à leur suppression "
+                "définitive et sans indemnité en 1793."
+            ),
+            "narrative": [
+                "À l'été 1789, la « Grande Peur » s'empare des "
+                "campagnes françaises : des rumeurs d'un complot "
+                "aristocratique poussent les paysans à attaquer "
+                "châteaux et registres seigneuriaux pour détruire les "
+                "preuves de leurs obligations féodales.",
+                "Dans la soirée du 4 août 1789, à l'Assemblée "
+                "constituante, le vicomte de Noailles et le duc "
+                "d'Aiguillon proposent l'abolition des droits féodaux "
+                "pour apaiser les campagnes. Dans un mouvement "
+                "d'émulation qui surprend les députés eux-mêmes, nobles "
+                "et clergé renoncent les uns après les autres à leurs "
+                "privilèges, certains par conviction, d'autres pour ne "
+                "pas paraître en retrait.",
+                "En quelques heures nocturnes, l'Assemblée vote "
+                "l'abolition de principe de la dîme, des droits "
+                "seigneuriaux, des privilèges fiscaux des ordres et de "
+                "la vénalité des offices — même si les décrets "
+                "définitifs, rédigés dans les jours suivants, "
+                "atténueront la portée immédiate de certaines mesures.",
+            ],
+            "why_it_matters": (
+                "La nuit du 4 août 1789 met fin, en droit, à des "
+                "siècles de société d'ordres et de privilèges féodaux, "
+                "posant l'un des fondements de l'égalité civile "
+                "proclamée quelques jours plus tard dans la Déclaration "
+                "des droits de l'homme et du citoyen — même si, dans "
+                "les faits, l'abolition complète et sans indemnité des "
+                "droits seigneuriaux ne sera votée qu'en 1793, sous la "
+                "Convention."
+            ),
+        },
+    },
+    "bataille-de-waterloo": {
+        "enfant": {
+            "summary": (
+                "Le 18 juin 1815, l'armée de Napoléon perd la bataille "
+                "de Waterloo. C'est la fin définitive de son règne "
+                "d'empereur."
+            ),
+            "before": (
+                "Napoléon revient au pouvoir en France après avoir été "
+                "exilé sur une île. Les autres pays d'Europe s'allient "
+                "aussitôt contre lui."
+            ),
+            "during": (
+                "L'armée française combat les Anglais, puis les "
+                "Prussiens arrivent en renfort et changent le cours de "
+                "la bataille."
+            ),
+            "after": (
+                "Napoléon doit abandonner son titre d'empereur. Il est "
+                "envoyé sur une île très loin, Sainte-Hélène, où il "
+                "mourra."
+            ),
+            "narrative": [
+                "Après s'être évadé de l'île d'Elbe, Napoléon reprend "
+                "le pouvoir en France. Les pays d'Europe s'unissent "
+                "aussitôt contre lui.",
+                "Le 18 juin 1815, près du village de Waterloo, en "
+                "Belgique, l'armée française affronte les Anglais du "
+                "duc de Wellington.",
+                "En fin de journée, l'armée prussienne arrive en "
+                "renfort et l'armée française est vaincue.",
+            ],
+            "why_it_matters": (
+                "Cette défaite met fin pour toujours au règne de "
+                "Napoléon comme empereur des Français."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'armée de Napoléon est défaite par les forces "
+                "coalisées britanniques et prussiennes, mettant fin "
+                "définitivement à l'épopée impériale française."
+            ),
+            "before": (
+                "Revenu du bannissement de l'île d'Elbe, Napoléon "
+                "reprend le pouvoir en France pendant les Cent-Jours, "
+                "provoquant la formation d'une septième coalition "
+                "contre lui."
+            ),
+            "during": (
+                "L'armée française affronte les troupes britanniques du "
+                "duc de Wellington, puis l'arrivée de l'armée prussienne "
+                "de Blücher en fin de journée fait basculer la "
+                "bataille."
+            ),
+            "after": (
+                "Napoléon abdique une seconde fois quatre jours plus "
+                "tard et est exilé sur l'île de Sainte-Hélène, où il "
+                "mourra en 1821."
+            ),
+            "narrative": [
+                "Après son évasion de l'île d'Elbe en février 1815, "
+                "Napoléon reprend le pouvoir en France. Les grandes "
+                "puissances européennes forment aussitôt une nouvelle "
+                "coalition pour l'arrêter.",
+                "Le 18 juin 1815, près du village belge de Waterloo, "
+                "l'armée française affronte les troupes anglo-alliées "
+                "du duc de Wellington, retranchées sur le plateau du "
+                "Mont-Saint-Jean.",
+                "En fin d'après-midi, l'armée prussienne du maréchal "
+                "Blücher, que Napoléon croyait tenue à distance, arrive "
+                "sur le flanc droit français. Prise en tenaille, "
+                "l'armée française se débande.",
+            ],
+            "why_it_matters": (
+                "Waterloo met un terme définitif à l'épopée "
+                "napoléonienne et ouvre en Europe une longue période de "
+                "restauration monarchique."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'armée de Napoléon est défaite par les forces "
+                "coalisées britanniques et prussiennes, mettant fin "
+                "définitivement à l'épopée impériale française."
+            ),
+            "before": (
+                "Revenu du bannissement de l'île d'Elbe, Napoléon "
+                "reprend le pouvoir en France pendant les Cent-Jours, "
+                "provoquant la formation d'une septième coalition "
+                "réunissant Britanniques, Prussiens, Autrichiens et "
+                "Russes contre lui."
+            ),
+            "during": (
+                "L'armée française affronte les troupes britanniques du "
+                "duc de Wellington, retranchées sur le plateau du "
+                "Mont-Saint-Jean, puis l'arrivée décisive de l'armée "
+                "prussienne de Blücher en fin de journée fait basculer "
+                "la bataille."
+            ),
+            "after": (
+                "Napoléon abdique une seconde fois quatre jours plus "
+                "tard et est exilé par les Britanniques sur l'île "
+                "isolée de Sainte-Hélène, dans l'Atlantique Sud, où il "
+                "mourra en 1821."
+            ),
+            "narrative": [
+                "Après son évasion de l'île d'Elbe en février 1815, "
+                "Napoléon reprend le pouvoir en France sans coup férir. "
+                "Les grandes puissances européennes, réunies au congrès "
+                "de Vienne, forment aussitôt une nouvelle coalition "
+                "pour l'arrêter.",
+                "Le 18 juin 1815, près du village belge de Waterloo, "
+                "l'armée française affronte les troupes anglo-alliées "
+                "du duc de Wellington, retranchées sur le plateau du "
+                "Mont-Saint-Jean. Les assauts français, dont la célèbre "
+                "charge de cavalerie du maréchal Ney, ne parviennent "
+                "pas à percer les lignes ennemies.",
+                "En fin d'après-midi, l'armée prussienne du maréchal "
+                "Blücher, que Napoléon croyait tenue à distance, arrive "
+                "sur le flanc droit français. Prise en tenaille, la "
+                "Grande Armée se débande. La Garde impériale, engagée "
+                "en dernier recours, est repoussée.",
+            ],
+            "why_it_matters": (
+                "Waterloo met un terme définitif à l'épopée "
+                "napoléonienne et ouvre en Europe une longue période de "
+                "restauration monarchique et d'équilibre entre grandes "
+                "puissances qui durera jusqu'à la Première Guerre "
+                "mondiale."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'armée française est défaite près du village belge "
+                "de Waterloo par les forces coalisées "
+                "anglo-néerlandaises et prussiennes, mettant fin en une "
+                "seule journée à l'épisode des Cent-Jours et "
+                "définitivement à l'épopée impériale napoléonienne."
+            ),
+            "before": (
+                "Revenu du bannissement de l'île d'Elbe en février "
+                "1815 et accueilli en libérateur par une partie de la "
+                "population, Napoléon reprend le pouvoir en France "
+                "pendant les Cent-Jours sans qu'un coup de feu ne soit "
+                "tiré, provoquant aussitôt la formation d'une septième "
+                "coalition réunissant Britanniques, Prussiens, "
+                "Autrichiens et Russes, déterminés à ne négocier avec "
+                "lui sous aucun prétexte."
+            ),
+            "during": (
+                "Retardé par un terrain détrempé qui l'oblige à "
+                "différer son attaque de plusieurs heures — un délai "
+                "qui laissera aux Prussiens le temps d'intervenir — "
+                "l'armée française affronte les troupes britanniques et "
+                "alliées du duc de Wellington, retranchées sur le "
+                "plateau du Mont-Saint-Jean, avant que l'arrivée "
+                "décisive de l'armée prussienne de Blücher, que "
+                "Napoléon croyait mise hors de combat deux jours plus "
+                "tôt à Ligny, ne fasse définitivement basculer la "
+                "bataille en fin de journée."
+            ),
+            "after": (
+                "Napoléon abdique une seconde fois quatre jours plus "
+                "tard, le 22 juin, en faveur de son fils, avant d'être "
+                "capturé et exilé par les Britanniques sur l'île "
+                "isolée de Sainte-Hélène, dans l'Atlantique Sud, où il "
+                "mourra en 1821, probablement d'un cancer de l'estomac."
+            ),
+            "narrative": [
+                "Après son évasion de l'île d'Elbe en février 1815, "
+                "Napoléon reprend le pouvoir en France sans coup férir, "
+                "porté par une partie de l'armée et de la population "
+                "lasse de la Restauration. Les grandes puissances "
+                "européennes, réunies au congrès de Vienne, le "
+                "déclarent aussitôt hors-la-loi et forment une nouvelle "
+                "coalition pour l'arrêter.",
+                "Le 18 juin 1815, près du village belge de Waterloo, "
+                "l'armée française, retardée par un sol détrempé, "
+                "affronte les troupes anglo-alliées du duc de "
+                "Wellington, retranchées sur le plateau du "
+                "Mont-Saint-Jean. Les assauts français, dont la célèbre "
+                "et coûteuse charge de cavalerie du maréchal Ney contre "
+                "des carrés d'infanterie intacts, ne parviennent pas à "
+                "percer les lignes ennemies.",
+                "En fin d'après-midi, l'armée prussienne du maréchal "
+                "Blücher, que Napoléon croyait durablement écartée "
+                "après sa victoire à Ligny deux jours plus tôt, arrive "
+                "sur le flanc droit français. Prise en tenaille, la "
+                "Grande Armée se débande. La Garde impériale, engagée "
+                "en dernier recours, est repoussée pour la première "
+                "fois de son histoire.",
+            ],
+            "why_it_matters": (
+                "Waterloo met un terme définitif à l'épopée "
+                "napoléonienne et à vingt-trois années de guerres "
+                "quasi ininterrompues en Europe depuis la Révolution "
+                "française, ouvrant une longue période de restauration "
+                "monarchique et d'équilibre concerté entre grandes "
+                "puissances (le « concert européen ») qui, malgré des "
+                "crises ponctuelles, durera jusqu'à la Première Guerre "
+                "mondiale."
+            ),
+        },
+    },
 }
 
 
@@ -2237,6 +3029,309 @@ QUIZ_BY_LEVEL = {
                 "Empire, bien plus que l'importance historique du "
                 "pharaon lui-même."
             ),
+        },
+    },
+    "tuileries-consequence": {
+        "enfant": {
+            "prompt": "Que fait Louis XVI pendant l'attaque des Tuileries ?",
+            "options": [
+                "Il part se réfugier près de l'Assemblée",
+                "Il combat avec ses gardes",
+                "Il s'enfuit à l'étranger",
+                "Il négocie avec la foule",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Louis XVI quitte le palais pour se réfugier près de l'Assemblée, laissant ses gardes suisses se battre seuls.",
+        },
+        "college": {
+            "prompt": "Quelle a été la conséquence directe de la prise des Tuileries le 10 août 1792 ?",
+            "options": [
+                "Le couronnement de Louis XVI",
+                "La suspension du roi et la fin de la monarchie de fait",
+                "La signature de la paix avec la Prusse",
+                "La construction d'un nouveau palais royal",
+            ],
+            "correct_index": 1,
+            "fun_fact": "Après le 10 août 1792, l'Assemblée législative suspend Louis XVI. Six semaines plus tard, la Convention proclame la première République.",
+        },
+        "lycee": {
+            "prompt": "Qui défend seul le palais des Tuileries après le départ de Louis XVI vers l'Assemblée ?",
+            "options": [
+                "Les Gardes suisses",
+                "La Garde nationale",
+                "L'armée régulière française",
+                "Des volontaires parisiens royalistes",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Les quelque neuf cents Gardes suisses, sans ordre clair de se retirer, affrontent seuls l'assaut : les combats font près d'un millier de morts.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi le manifeste de Brunswick a-t-il aggravé la situation de Louis XVI plutôt que de le protéger ?",
+            "options": [
+                "En menaçant Paris de représailles, il a radicalisé l'opinion contre le roi soupçonné de complicité",
+                "Il annonçait l'abdication immédiate du roi",
+                "Il proposait une alliance militaire entre la France et la Prusse",
+                "Il a été rédigé par Louis XVI lui-même",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le manifeste de Brunswick, menaçant Paris de représailles en cas d'atteinte à la famille royale, produit l'effet inverse de celui recherché.",
+        },
+    },
+    "mur-berlin-annee": {
+        "enfant": {
+            "prompt": "Pourquoi les Berlinois se précipitent-ils vers le mur le 9 novembre 1989 ?",
+            "options": [
+                "Un porte-parole annonce qu'ils peuvent voyager librement",
+                "Le mur prend feu",
+                "Une fête est organisée sur place",
+                "Le président ouest-allemand donne l'ordre de le détruire",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'annonce confuse d'un porte-parole a poussé des milliers de Berlinois vers les points de passage du mur.",
+        },
+        "college": {
+            "prompt": "En quelle année le mur de Berlin est-il tombé ?",
+            "options": ["1961", "1975", "1989", "1991"],
+            "correct_index": 2,
+            "fun_fact": "Le mur de Berlin, érigé en 1961, est tombé le 9 novembre 1989 après une annonce gouvernementale confuse.",
+        },
+        "lycee": {
+            "prompt": "Qui est le porte-parole dont l'annonce confuse déclenche l'ouverture du mur le 9 novembre 1989 ?",
+            "options": ["Günter Schabowski", "Helmut Kohl", "Mikhaïl Gorbatchev", "Erich Honecker"],
+            "correct_index": 0,
+            "fun_fact": "Günter Schabowski annonce en conférence de presse, de façon confuse, que les citoyens de RDA peuvent voyager librement « immédiatement ».",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi les gardes-frontières finissent-ils par ouvrir les barrières du mur, sans ordre officiel de le faire ?",
+            "options": [
+                "Débordés par la foule et sans instructions claires, ils n'ont pas d'autre option pour éviter un drame",
+                "Ils avaient reçu l'ordre secret de Gorbatchev",
+                "Le mur s'est effondré tout seul sous la pression",
+                "L'armée ouest-allemande a franchi la frontière",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le lieutenant-colonel Harald Jäger, à Bornholmer Straße, ouvre les barrières faute d'alternative pour contenir la foule sans recourir à la force.",
+        },
+    },
+    "debarquement-date": {
+        "enfant": {
+            "prompt": "Que font des milliers de parachutistes la nuit avant le débarquement ?",
+            "options": [
+                "Ils sont largués en Normandie pour sécuriser des points stratégiques",
+                "Ils bombardent Paris",
+                "Ils attendent en Angleterre",
+                "Ils négocient avec les Allemands",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Dans la nuit du 5 au 6 juin 1944, des milliers de parachutistes sont largués en Normandie avant l'assaut principal.",
+        },
+        "college": {
+            "prompt": "Sur combien de plages les troupes alliées ont-elles débarqué le 6 juin 1944 ?",
+            "options": ["Deux", "Trois", "Cinq", "Sept"],
+            "correct_index": 2,
+            "fun_fact": "Les Alliés ont débarqué sur cinq plages normandes codées Utah, Omaha, Gold, Juno et Sword.",
+        },
+        "lycee": {
+            "prompt": "Sur quelle plage les défenses allemandes infligent-elles les pertes les plus lourdes aux Alliés ?",
+            "options": ["Omaha Beach", "Utah Beach", "Sword Beach", "Juno Beach"],
+            "correct_index": 0,
+            "fun_fact": "Les combats sont particulièrement meurtriers à Omaha Beach, où les défenses allemandes infligent de très lourdes pertes.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quel est l'objectif de l'opération Fortitude, menée en parallèle du débarquement ?",
+            "options": [
+                "Tromper l'état-major allemand en lui faisant croire à un débarquement dans le Pas-de-Calais",
+                "Bombarder les usines d'armement allemandes",
+                "Négocier une reddition anticipée de l'Allemagne",
+                "Évacuer les civils normands avant l'assaut",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'opération Fortitude, vaste campagne de désinformation, a fait croire aux Allemands à un débarquement dans le Pas-de-Calais.",
+        },
+    },
+    "armistice-heure": {
+        "enfant": {
+            "prompt": "Où l'armistice de 1918 est-il signé ?",
+            "options": [
+                "Dans un wagon de train, en forêt de Compiègne",
+                "Au château de Versailles",
+                "À Berlin",
+                "Sur un bateau"
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'armistice est signé dans un wagon-restaurant aménagé, en forêt de Compiègne.",
+        },
+        "college": {
+            "prompt": "À quelle heure les combats ont-ils officiellement cessé le 11 novembre 1918 ?",
+            "options": ["6 heures", "9 heures", "11 heures", "Minuit"],
+            "correct_index": 2,
+            "fun_fact": "L'armistice, signé à 5h15, est entré en vigueur à 11 heures précises — le « onzième jour du onzième mois à la onzième heure ».",
+        },
+        "lycee": {
+            "prompt": "Qui négocie et signe l'armistice avec le maréchal Foch le 11 novembre 1918 ?",
+            "options": [
+                "Une délégation allemande menée par Matthias Erzberger",
+                "Le Kaiser Guillaume II en personne",
+                "Le chancelier Bismarck",
+                "Un général austro-hongrois",
+            ],
+            "correct_index": 0,
+            "fun_fact": "La délégation allemande, conduite par le politicien Matthias Erzberger, signe l'armistice dans le wagon du maréchal Foch.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi l'état-major allemand confie-t-il la signature de l'armistice à une délégation civile plutôt que militaire ?",
+            "options": [
+                "Pour ne pas endosser militairement la responsabilité de la défaite",
+                "Parce qu'aucun général n'était disponible",
+                "Sur exigence des Alliés",
+                "Parce que l'armée avait déjà capitulé séparément",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le choix du civil Matthias Erzberger pour signer l'armistice est un choix délibéré de l'état-major pour ne pas endosser la défaite militairement.",
+        },
+    },
+    "independance-americaine-annee": {
+        "enfant": {
+            "prompt": "Qui a écrit le texte de la déclaration d'indépendance américaine ?",
+            "options": ["Thomas Jefferson", "George Washington", "Benjamin Franklin", "John Adams"],
+            "correct_index": 0,
+            "fun_fact": "Le texte a été écrit surtout par Thomas Jefferson et voté le 4 juillet 1776.",
+        },
+        "college": {
+            "prompt": "Qui a principalement rédigé la déclaration d'indépendance américaine de 1776 ?",
+            "options": ["George Washington", "Thomas Jefferson", "Benjamin Franklin", "John Adams"],
+            "correct_index": 1,
+            "fun_fact": "Thomas Jefferson a rédigé l'essentiel du texte, adopté à Philadelphie le 4 juillet 1776.",
+        },
+        "lycee": {
+            "prompt": "Sur quel principe repose la contestation des colonies américaines contre la couronne britannique ?",
+            "options": [
+                "« No taxation without representation »",
+                "Le droit divin des rois",
+                "La liberté de culte",
+                "Le droit à l'autodétermination des peuples",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Les colonies réclament la fin des taxes imposées sans qu'elles aient de représentants au Parlement de Londres.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Quelle contradiction majeure la déclaration d'indépendance laisse-t-elle en suspens ?",
+            "options": [
+                "La proclamation de l'égalité universelle alors que l'esclavage perdure dans les colonies signataires",
+                "L'absence de toute référence à la liberté individuelle",
+                "Le refus d'accorder le droit de vote aux hommes propriétaires",
+                "L'interdiction du commerce avec la France",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Un paragraphe de Jefferson condamnant la traite négrière est supprimé du texte final ; l'esclavage ne sera aboli que près d'un siècle plus tard.",
+        },
+    },
+    "colomb-annee": {
+        "enfant": {
+            "prompt": "Comment s'appelle l'île où Christophe Colomb débarque en 1492 ?",
+            "options": ["San Salvador", "Cuba", "Hispaniola", "La Jamaïque"],
+            "correct_index": 0,
+            "fun_fact": "Colomb débarque sur une île des Bahamas qu'il baptise San Salvador.",
+        },
+        "college": {
+            "prompt": "En quelle année l'expédition de Christophe Colomb atteint-elle les Amériques ?",
+            "options": ["1453", "1492", "1517", "1534"],
+            "correct_index": 1,
+            "fun_fact": "Le 12 octobre 1492, après 36 jours de traversée, l'expédition de Colomb débarque sur une île des Bahamas.",
+        },
+        "lycee": {
+            "prompt": "Quel nom Colomb donne-t-il aux habitants qu'il rencontre, persuadé d'avoir atteint l'Asie ?",
+            "options": ["Indiens", "Américains", "Antillais", "Caraïbes"],
+            "correct_index": 0,
+            "fun_fact": "Persuadé d'avoir atteint les Indes orientales, Colomb nomme les habitants qu'il rencontre « Indiens ».",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi la traversée de Colomb aurait-elle probablement échoué sans la présence imprévue d'un continent ?",
+            "options": [
+                "Il avait largement sous-estimé la circonférence réelle de la Terre",
+                "Ses navires n'avaient pas assez de voiles",
+                "L'équipage refusait de naviguer de nuit",
+                "Il naviguait sans carte du tout",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Les calculs de Colomb sous-estimaient largement la distance à parcourir ; sans continent américain sur la route, le voyage aurait été impossible faute de vivres.",
+        },
+    },
+    "nuit-4-aout-consequence": {
+        "enfant": {
+            "prompt": "Qu'abandonnent les nobles dans la nuit du 4 août 1789 ?",
+            "options": [
+                "Leurs droits et privilèges sur les paysans",
+                "Leurs terres au roi",
+                "Leurs titres de noblesse",
+                "Leurs châteaux à l'Église",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Des nobles renoncent l'un après l'autre à leurs droits féodaux sur les paysans, pendant une réunion de nuit.",
+        },
+        "college": {
+            "prompt": "Qu'a aboli l'Assemblée constituante dans la nuit du 4 août 1789 ?",
+            "options": ["La monarchie", "Les privilèges féodaux", "L'esclavage dans les colonies", "La peine de mort"],
+            "correct_index": 1,
+            "fun_fact": "Dans un mouvement d'entraînement collectif, nobles et clergé renoncent tour à tour à leurs privilèges féodaux et fiscaux.",
+        },
+        "lycee": {
+            "prompt": "Quels sont les deux députés à l'origine de la proposition d'abolition des droits féodaux ?",
+            "options": [
+                "Le vicomte de Noailles et le duc d'Aiguillon",
+                "Robespierre et Danton",
+                "Mirabeau et Sieyès",
+                "La Fayette et Necker",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Le vicomte de Noailles et le duc d'Aiguillon proposent l'abolition des droits féodaux pour apaiser les campagnes en révolte.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi l'abolition votée dans la nuit du 4 août 1789 est-elle en réalité plus nuancée qu'il n'y paraît ?",
+            "options": [
+                "Les décrets rédigés ensuite rendent certains droits rachetables plutôt qu'abolis sans compensation",
+                "Le roi a immédiatement annulé le vote",
+                "Seuls les droits religieux ont finalement été supprimés",
+                "L'Assemblée s'est rétractée dès le lendemain",
+            ],
+            "correct_index": 0,
+            "fun_fact": "L'abolition complète et sans indemnité des droits seigneuriaux ne sera votée qu'en 1793, sous la Convention.",
+        },
+    },
+    "waterloo-consequence": {
+        "enfant": {
+            "prompt": "Qu'est-il arrivé à Napoléon après sa défaite à Waterloo ?",
+            "options": [
+                "Il a été exilé sur l'île de Sainte-Hélène",
+                "Il a repris le pouvoir en France",
+                "Il a été exécuté",
+                "Il est devenu roi d'Espagne",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Napoléon est exilé par les Britanniques sur l'île isolée de Sainte-Hélène, où il mourra en 1821.",
+        },
+        "college": {
+            "prompt": "Quelle armée arrive en renfort en fin de journée et fait basculer la bataille de Waterloo ?",
+            "options": ["L'armée prussienne de Blücher", "L'armée autrichienne", "L'armée russe", "L'armée espagnole"],
+            "correct_index": 0,
+            "fun_fact": "L'arrivée de l'armée prussienne de Blücher en fin de journée fait basculer la bataille en faveur des coalisés.",
+        },
+        "lycee": {
+            "prompt": "Sur quel plateau les troupes de Wellington sont-elles retranchées à Waterloo ?",
+            "options": ["Le Mont-Saint-Jean", "Les hauteurs de Ligny", "Le plateau d'Austerlitz", "Le mont Valérien"],
+            "correct_index": 0,
+            "fun_fact": "Les troupes anglo-alliées de Wellington sont retranchées sur le plateau du Mont-Saint-Jean, près du village de Waterloo.",
+        },
+        "etudiant_adulte": {
+            "prompt": "Pourquoi Napoléon est-il pris par surprise par l'arrivée de l'armée prussienne à Waterloo ?",
+            "options": [
+                "Il la croyait hors de combat après sa victoire à Ligny deux jours plus tôt",
+                "Elle n'était pas censée exister",
+                "Elle combattait officiellement aux côtés de la France",
+                "Elle arrivait d'Espagne et non d'Allemagne",
+            ],
+            "correct_index": 0,
+            "fun_fact": "Napoléon croyait l'armée prussienne durablement écartée après sa victoire à Ligny deux jours plus tôt — une erreur d'appréciation décisive.",
         },
     },
 }
