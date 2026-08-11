@@ -3,7 +3,7 @@ from urllib.parse import urlparse
 from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 
-from app import db
+from app import db, limiter
 from app.auth.forms import (
     DeleteAccountForm,
     LoginForm,
@@ -26,6 +26,7 @@ def _is_safe_redirect_target(target: str) -> bool:
 
 
 @auth_bp.route("/inscription", methods=["GET", "POST"])
+@limiter.limit("10 per hour", methods=["POST"])
 def register():
     if current_user.is_authenticated:
         return redirect(url_for("main.home"))
@@ -49,6 +50,7 @@ def register():
 
 
 @auth_bp.route("/connexion", methods=["GET", "POST"])
+@limiter.limit("10 per minute", methods=["POST"])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for("main.home"))
@@ -84,6 +86,7 @@ def logout():
 
 
 @auth_bp.route("/mot-de-passe-oublie", methods=["GET", "POST"])
+@limiter.limit("5 per hour", methods=["POST"])
 def reset_request():
     if current_user.is_authenticated:
         return redirect(url_for("main.home"))

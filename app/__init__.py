@@ -3,6 +3,8 @@ import os
 
 from dotenv import load_dotenv
 from flask import Flask, render_template
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from flask_login import LoginManager
 from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
@@ -15,6 +17,10 @@ db = SQLAlchemy()
 login_manager = LoginManager()
 csrf = CSRFProtect()
 mail = Mail()
+# In-memory storage: fine for a single-process deploy. If Chronos ever runs
+# with multiple gunicorn workers, this needs a shared backend (e.g. Redis)
+# or each worker enforces its own separate limit.
+limiter = Limiter(key_func=get_remote_address)
 
 
 def create_app(config_object="config.Config"):
@@ -45,6 +51,10 @@ def create_app(config_object="config.Config"):
     login_manager.login_view = "auth.login"
     login_manager.login_message = "Connecte-toi pour continuer ton exploration."
     login_manager.login_message_category = "info"
+
+    app.config.setdefault("RATELIMIT_ENABLED", True)
+    app.config.setdefault("RATELIMIT_STORAGE_URI", "memory://")
+    limiter.init_app(app)
 
     from app.auth.routes import auth_bp
     from app.main.routes import main_bp

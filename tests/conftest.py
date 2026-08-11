@@ -19,7 +19,7 @@ from app.models import User  # noqa: E402
 @pytest.fixture()
 def app():
     flask_app = create_app()
-    flask_app.config.update(TESTING=True, WTF_CSRF_ENABLED=False)
+    flask_app.config.update(TESTING=True, WTF_CSRF_ENABLED=False, RATELIMIT_ENABLED=False)
     with flask_app.app_context():
         db.drop_all()
         db.create_all()

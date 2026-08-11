@@ -8,10 +8,10 @@
 <title>{% block title %}Chronos{% endblock %}</title>
 <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
 {% include "_theme.html" %}
-<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/playfair-display/index.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/plus-jakarta-sans/index.css') }}" rel="stylesheet">
 <link href="{{ url_for('static', filename='fonts/material-symbols/outlined.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
 </head>
 <body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col">
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-md focus:py-sm focus:rounded-xl">Aller au contenu</a>
