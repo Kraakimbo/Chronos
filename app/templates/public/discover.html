@@ -20,7 +20,7 @@
         {% set img = cover_image_for(event.slug) %}
         <div class="h-36 bg-surface-container-high relative overflow-hidden">
           {% if img %}
-          <img src="{{ img.url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+          <img src="{{ img.url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" onerror="this.onerror=null;this.style.display='none';">
           {% endif %}
         </div>
         <div class="p-md">
