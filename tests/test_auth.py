@@ -1,7 +1,7 @@
-def test_home_redirects_to_login_when_anonymous(client):
+def test_home_redirects_to_public_discover_when_anonymous(client):
     response = client.get("/")
     assert response.status_code == 302
-    assert "/auth/connexion" in response.headers["Location"]
+    assert response.headers["Location"] == "/decouvrir"
 
 
 def test_register_then_login(client):

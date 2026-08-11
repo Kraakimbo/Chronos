@@ -43,7 +43,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Paris, France",
         "location_label": "Place de la Bastille",
-        "map_pos": (48, 35),
+        "map_pos": (50.7, 22.9),
         "summary": (
             "Un événement majeur de la Révolution française où les insurgés "
             "parisiens s'emparent de la forteresse de la Bastille, symbole "
@@ -111,7 +111,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Paris, France",
         "location_label": "Palais des Tuileries",
-        "map_pos": (48, 35),
+        "map_pos": (50.7, 22.9),
         "summary": (
             "L'insurrection parisienne prend d'assaut le palais des "
             "Tuileries, met fin à la monarchie de fait et précipite la chute "
@@ -180,7 +180,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Rome, Italie",
         "location_label": "Théâtre de Pompée",
-        "map_pos": (52, 42),
+        "map_pos": (53.5, 26.7),
         "summary": (
             "Un groupe de sénateurs romains, craignant l'instauration d'une "
             "monarchie, assassine Jules César en plein Sénat aux Ides de mars."
@@ -313,7 +313,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Berlin, Allemagne",
         "location_label": "Point de passage Bornholmer Straße",
-        "map_pos": (53, 30),
+        "map_pos": (53.7, 20.8),
         "summary": (
             "L'annonce inattendue de l'ouverture des frontières est-allemandes "
             "provoque l'effondrement du mur de Berlin, symbole de la guerre "
@@ -379,7 +379,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Normandie, France",
         "location_label": "Plages du Débarquement",
-        "map_pos": (46, 33),
+        "map_pos": (49.8, 22.6),
         "summary": (
             "Les forces alliées débarquent sur les côtes normandes lors de "
             "l'opération Overlord, la plus grande invasion maritime de "
@@ -448,7 +448,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Compiègne, France",
         "location_label": "Clairière de Rethondes",
-        "map_pos": (48, 34),
+        "map_pos": (50.8, 22.5),
         "summary": (
             "La signature de l'armistice dans un wagon-restaurant en forêt "
             "de Compiègne met fin aux combats de la Première Guerre mondiale."
@@ -512,7 +512,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Philadelphie, États-Unis",
         "location_label": "Independence Hall",
-        "map_pos": (25, 38),
+        "map_pos": (29.1, 27.8),
         "summary": (
             "Le Congrès continental adopte la déclaration proclamant "
             "l'indépendance des treize colonies américaines vis-à-vis de la "
@@ -580,7 +580,7 @@ EVENTS = {
         "category": "Exploration",
         "location": "Bahamas",
         "location_label": "Île de Guanahani",
-        "map_pos": (22, 55),
+        "map_pos": (28.7, 36.5),
         "summary": (
             "Après plus de deux mois de traversée, l'expédition de "
             "Christophe Colomb atteint une île des Bahamas, marquant le "
@@ -645,7 +645,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Versailles, France",
         "location_label": "Assemblée constituante",
-        "map_pos": (47, 35),
+        "map_pos": (50.6, 22.9),
         "summary": (
             "Dans un climat d'émotion collective, l'Assemblée constituante "
             "vote l'abolition des privilèges féodaux, mettant fin de facto "
@@ -713,7 +713,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Waterloo, Belgique",
         "location_label": "Mont-Saint-Jean",
-        "map_pos": (49, 32),
+        "map_pos": (51.2, 21.8),
         "summary": (
             "L'armée de Napoléon est défaite par les forces coalisées "
             "britanniques et prussiennes, mettant fin définitivement à "
@@ -781,7 +781,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Paris, France",
         "location_label": "Cathédrale Notre-Dame",
-        "map_pos": (48, 35),
+        "map_pos": (50.7, 22.9),
         "summary": (
             "Napoléon Bonaparte se couronne empereur des Français à "
             "Notre-Dame de Paris, en présence du pape Pie VII, marquant la "
@@ -847,7 +847,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Constantinople",
         "location_label": "Constantinople (Istanbul)",
-        "map_pos": (58, 40),
+        "map_pos": (58.1, 27.2),
         "summary": (
             "Après un siège de près de deux mois, les troupes ottomanes de "
             "Mehmed II s'emparent de Constantinople, mettant fin à onze "
@@ -917,7 +917,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Runnymede, Angleterre",
         "location_label": "Prairie de Runnymede",
-        "map_pos": (44, 25),
+        "map_pos": (49.8, 21.4),
         "summary": (
             "Le roi Jean sans Terre appose son sceau sur la Grande Charte, "
             "un texte limitant pour la première fois le pouvoir royal "
@@ -986,7 +986,7 @@ EVENTS = {
         "category": "Catastrophe naturelle",
         "location": "Pompéi, Italie",
         "location_label": "Golfe de Naples",
-        "map_pos": (53, 44),
+        "map_pos": (54.0, 27.4),
         "summary": (
             "L'éruption soudaine du Vésuve ensevelit les villes romaines de "
             "Pompéi et Herculanum sous plusieurs mètres de cendres, figeant "
@@ -1055,7 +1055,7 @@ EVENTS = {
         "category": "Économie",
         "location": "New York, États-Unis",
         "location_label": "Wall Street",
-        "map_pos": (24, 37),
+        "map_pos": (29.4, 27.4),
         "summary": (
             "Le « jeudi noir » à la Bourse de New York déclenche un krach "
             "boursier qui précipite le monde dans la Grande Dépression des "
@@ -1121,7 +1121,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Hawaï, États-Unis",
         "location_label": "Base navale de Pearl Harbor",
-        "map_pos": (12, 48),
+        "map_pos": (6.1, 38.1),
         "summary": (
             "L'aviation japonaise attaque par surprise la flotte américaine "
             "du Pacifique, provoquant l'entrée en guerre des États-Unis "
@@ -1188,7 +1188,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Hiroshima, Japon",
         "location_label": "Hiroshima",
-        "map_pos": (78, 40),
+        "map_pos": (86.8, 30.9),
         "summary": (
             "Les États-Unis larguent la première bombe atomique de "
             "l'histoire militaire sur la ville d'Hiroshima, provoquant des "
@@ -1257,7 +1257,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Reims puis Berlin",
         "location_label": "Berlin, quartier de Karlshorst",
-        "map_pos": (53, 30),
+        "map_pos": (53.7, 20.8),
         "summary": (
             "La capitulation sans conditions de l'Allemagne nazie met fin à "
             "la Seconde Guerre mondiale en Europe, célébrée comme le "
@@ -1325,7 +1325,7 @@ EVENTS = {
         "category": "Science",
         "location": "Baïkonour, URSS",
         "location_label": "Cosmodrome de Baïkonour",
-        "map_pos": (66, 26),
+        "map_pos": (67.6, 24.5),
         "summary": (
             "Le cosmonaute soviétique Youri Gagarine devient le premier "
             "être humain à voyager dans l'espace, à bord du vaisseau "
@@ -1392,7 +1392,7 @@ EVENTS = {
         "category": "Société",
         "location": "Washington, États-Unis",
         "location_label": "Lincoln Memorial",
-        "map_pos": (23, 37),
+        "map_pos": (28.6, 28.4),
         "summary": (
             "Martin Luther King prononce son discours emblématique devant "
             "plus de 200 000 personnes, lors de la Marche sur Washington "
@@ -1459,7 +1459,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Petrograd, Russie",
         "location_label": "Palais d'Hiver",
-        "map_pos": (62, 24),
+        "map_pos": (58.4, 16.7),
         "summary": (
             "Les bolcheviks de Lénine renversent le gouvernement "
             "provisoire russe lors d'une insurrection presque sans effusion "
@@ -1529,7 +1529,7 @@ EVENTS = {
         "category": "Religion",
         "location": "Wittenberg, Saint-Empire",
         "location_label": "Église du château de Wittenberg",
-        "map_pos": (52, 27),
+        "map_pos": (53.5, 21.2),
         "summary": (
             "Le moine Martin Luther affiche ses 95 thèses critiquant la "
             "vente des indulgences, un geste considéré comme le point de "
@@ -1597,7 +1597,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Le Cap, Afrique du Sud",
         "location_label": "Prison de Victor Verster",
-        "map_pos": (52, 68),
+        "map_pos": (55.1, 68.8),
         "summary": (
             "Après 27 ans d'emprisonnement, Nelson Mandela est libéré, "
             "marquant le début du démantèlement officiel du régime "
@@ -1667,7 +1667,7 @@ EVENTS = {
         "category": "Science",
         "location": "Baïkonour, URSS",
         "location_label": "Cosmodrome de Baïkonour",
-        "map_pos": (66, 26),
+        "map_pos": (67.6, 24.5),
         "summary": (
             "L'URSS met sur orbite Spoutnik 1, premier satellite artificiel "
             "de l'histoire, déclenchant la course à l'espace avec les "
@@ -1733,7 +1733,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Ravenne, Italie",
         "location_label": "Ravenne, capitale impériale",
-        "map_pos": (52, 41),
+        "map_pos": (53.4, 25.3),
         "summary": (
             "Le chef germanique Odoacre dépose le dernier empereur romain "
             "d'Occident, Romulus Augustule, marquant traditionnellement la "
@@ -1801,7 +1801,7 @@ EVENTS = {
         "category": "Science",
         "location": "Écosse, Royaume-Uni",
         "location_label": "Glasgow",
-        "map_pos": (44, 21),
+        "map_pos": (48.8, 19.0),
         "summary": (
             "L'ingénieur écossais James Watt dépose le brevet de sa machine "
             "à vapeur perfectionnée, une innovation décisive qui va "
@@ -1871,7 +1871,7 @@ EVENTS = {
         "category": "Exploration",
         "location": "Vallée des Rois, Égypte",
         "location_label": "Vallée des Rois",
-        "map_pos": (56, 44),
+        "map_pos": (59.1, 35.7),
         "summary": (
             "L'archéologue britannique Howard Carter découvre l'entrée de "
             "la tombe intacte du pharaon Toutânkhamon, l'une des plus "
@@ -1942,7 +1942,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Bagdad, Irak",
         "location_label": "Bagdad, capitale abbasside",
-        "map_pos": (62, 45),
+        "map_pos": (62.3, 31.5),
         "summary": (
             "L'armée mongole d'Hulagu Khan met à sac Bagdad, capitale du "
             "califat abbasside, mettant fin à cinq siècles d'âge d'or "
@@ -2012,7 +2012,7 @@ EVENTS = {
         "category": "Piraterie",
         "location": "Ocracoke, Caroline du Nord",
         "location_label": "Détroit d'Ocracoke",
-        "map_pos": (28, 45),
+        "map_pos": (28.9, 30.5),
         "summary": (
             "Le célèbre pirate Edward Teach, dit « Barbe Noire », est tué "
             "lors d'un abordage naval, marquant le déclin de l'âge d'or de "
@@ -2084,7 +2084,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Empire mongol (actuelle Mongolie/Chine)",
         "location_label": "Région du Gansu",
-        "map_pos": (78, 22),
+        "map_pos": (78.6, 23.8),
         "summary": (
             "Le fondateur de l'Empire mongol, Gengis Khan, meurt lors d'une "
             "campagne militaire, laissant derrière lui le plus vaste empire "
@@ -2155,7 +2155,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Nankin, Chine",
         "location_label": "Nankin",
-        "map_pos": (85, 38),
+        "map_pos": (83.0, 32.2),
         "summary": (
             "La Chine impériale, vaincue lors de la première guerre de "
             "l'Opium, cède Hong Kong au Royaume-Uni et ouvre ses ports au "
@@ -2224,7 +2224,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Kyoto, Japon",
         "location_label": "Kyoto",
-        "map_pos": (92, 35),
+        "map_pos": (87.7, 30.6),
         "summary": (
             "Le pouvoir impérial est officiellement restauré au Japon aux "
             "dépens du shogunat, ouvrant une ère de modernisation "
@@ -2295,7 +2295,7 @@ EVENTS = {
         "category": "Politique",
         "location": "New Delhi, Inde",
         "location_label": "New Delhi",
-        "map_pos": (72, 48),
+        "map_pos": (71.4, 34.1),
         "summary": (
             "Après des décennies de résistance non-violente menée par "
             "Gandhi, l'Inde britannique accède à l'indépendance, "
@@ -2368,7 +2368,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Adoua, Éthiopie",
         "location_label": "Adoua",
-        "map_pos": (58, 60),
+        "map_pos": (60.8, 42.1),
         "summary": (
             "L'armée éthiopienne de l'empereur Ménélik II inflige une "
             "défaite écrasante aux troupes coloniales italiennes, "
@@ -2439,7 +2439,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Berlin, Allemagne",
         "location_label": "Berlin",
-        "map_pos": (53, 30),
+        "map_pos": (53.7, 20.8),
         "summary": (
             "Les grandes puissances européennes se réunissent à Berlin pour "
             "régler entre elles le partage colonial de l'Afrique, sans "
@@ -2509,7 +2509,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Tenochtitlan (actuelle Mexico)",
         "location_label": "Tenochtitlan",
-        "map_pos": (15, 50),
+        "map_pos": (22.5, 39.2),
         "summary": (
             "Après un siège de plusieurs mois, le conquistador Hernán "
             "Cortés et ses alliés amérindiens s'emparent de la capitale "
@@ -2579,7 +2579,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Cajamarca, Pérou",
         "location_label": "Cajamarca",
-        "map_pos": (20, 68),
+        "map_pos": (28.2, 54.0),
         "summary": (
             "Une poignée de conquistadors espagnols menés par Francisco "
             "Pizarre capture par surprise l'empereur inca Atahualpa, "
@@ -2650,7 +2650,7 @@ EVENTS = {
         "category": "Exploration",
         "location": "Botany Bay, Australie",
         "location_label": "Botany Bay",
-        "map_pos": (95, 80),
+        "map_pos": (92.0, 68.9),
         "summary": (
             "Le navigateur britannique James Cook débarque sur la côte est "
             "de l'Australie, ouvrant la voie à la colonisation britannique "
@@ -2724,7 +2724,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Sydney, Australie",
         "location_label": "Port Jackson",
-        "map_pos": (96, 78),
+        "map_pos": (92.0, 68.8),
         "summary": (
             "La « First Fleet » britannique, chargée de déporter des "
             "bagnards, débarque à Port Jackson et fonde la première colonie "
@@ -2796,7 +2796,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Jérusalem",
         "location_label": "Jérusalem",
-        "map_pos": (60, 43),
+        "map_pos": (59.8, 32.3),
         "summary": (
             "Le sultan ayyoubide Saladin reprend Jérusalem aux croisés "
             "après près d'un siècle de domination latine, un choc majeur "
@@ -2866,7 +2866,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Grenade, Espagne",
         "location_label": "Alhambra de Grenade",
-        "map_pos": (40, 40),
+        "map_pos": (49.0, 29.3),
         "summary": (
             "Les Rois Catholiques Isabelle de Castille et Ferdinand "
             "d'Aragon s'emparent de Grenade, dernier royaume musulman "
@@ -2934,7 +2934,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Golfe de Patras, Grèce",
         "location_label": "Golfe de Patras",
-        "map_pos": (56, 40),
+        "map_pos": (56.0, 28.7),
         "summary": (
             "La flotte de la Sainte Ligue chrétienne écrase la flotte "
             "ottomane lors d'une des plus grandes batailles navales de "
@@ -3005,7 +3005,7 @@ EVENTS = {
         "category": "Militaire",
         "location": "Panipat, Inde",
         "location_label": "Panipat",
-        "map_pos": (72, 46),
+        "map_pos": (71.4, 33.7),
         "summary": (
             "Le conquérant Babur, descendant de Gengis Khan et de Tamerlan, "
             "écrase le sultanat de Delhi et fonde l'Empire moghol qui "
@@ -3071,7 +3071,7 @@ EVENTS = {
         "category": "Politique",
         "location": "Accra, Ghana",
         "location_label": "Accra",
-        "map_pos": (48, 58),
+        "map_pos": (49.9, 46.9),
         "summary": (
             "Le Ghana devient la première colonie d'Afrique subsaharienne "
             "à accéder à l'indépendance, ouvrant la voie à la "
