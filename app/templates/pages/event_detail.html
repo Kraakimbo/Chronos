@@ -4,7 +4,13 @@
 {% block content %}
 <main>
   <section class="relative w-full py-2xl overflow-hidden">
-    <div class="absolute inset-0">{{ event_illustration(event.slug) }}</div>
+    <div class="absolute inset-0">
+      {% if cover %}
+      <img src="{{ cover.url }}" alt="{{ cover.subject or event.title }}" class="w-full h-full object-cover">
+      {% else %}
+      {{ event_illustration(event.slug) }}
+      {% endif %}
+    </div>
     <div class="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30"></div>
     <div class="relative max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
       <div class="flex items-center gap-sm mb-md">
@@ -19,6 +25,11 @@
         <span class="material-symbols-outlined text-[20px]">location_on</span>
         <span>{{ event.location }}</span>
       </div>
+      {% if cover and (cover.credit or cover.licence) %}
+      <p class="font-label-caps text-[10px] text-on-surface-variant/70 mt-sm">
+        {% if cover.credit %}{{ cover.credit }}{% endif %}{% if cover.licence %} · {{ cover.licence }}{% endif %}
+      </p>
+      {% endif %}
     </div>
   </section>
 

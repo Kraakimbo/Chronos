@@ -13,6 +13,20 @@ Chronos_archives_photos_tableaux_portraits.xlsx for the full research
 notes, including entries still marked "introuvable".
 """
 
+# Preferred image type for the event-detail page's cover banner: a scene
+# (painting/engraving) reads best as a banner, then a period photo, and a
+# portrait as the fallback -- every event has at least one of the three.
+COVER_PRIORITY = ("tableau", "photo", "portrait")
+
+
+def cover_image(slug):
+    """Best available image for the event's cover banner, or None."""
+    images = EVENT_IMAGES.get(slug, {})
+    for image_type in COVER_PRIORITY:
+        if image_type in images:
+            return images[image_type]
+    return None
+
 EVENT_IMAGES = {
     'prise-de-la-bastille': {
         'tableau': {
