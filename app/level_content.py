@@ -6399,6 +6399,596 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "restauration-meiji": {
+        "enfant": {
+            "summary": (
+                "En 1868, le Japon redonne le pouvoir à son empereur. "
+                "Le pays se modernise très vite après ça."
+            ),
+            "before": (
+                "Pendant longtemps, ce sont des chefs militaires "
+                "appelés shoguns qui dirigent le Japon, pas "
+                "l'empereur."
+            ),
+            "during": (
+                "Des groupes veulent changer les choses et redonnent "
+                "le pouvoir au jeune empereur Meiji."
+            ),
+            "after": (
+                "Le Japon se modernise très vite : usines, "
+                "technologies occidentales, nouvelle armée."
+            ),
+            "narrative": [
+                "Pendant des siècles, le Japon est dirigé par des "
+                "chefs militaires appelés shoguns, pas par l'empereur.",
+                "Le 3 janvier 1868, des groupes réformistes redonnent "
+                "le pouvoir à l'empereur, un jeune homme qui prend le "
+                "nom de Meiji.",
+                "Le Japon commence alors à se moderniser très "
+                "rapidement, en copiant des technologies occidentales.",
+            ],
+            "why_it_matters": (
+                "Grâce à cette restauration, le Japon devient en "
+                "quelques décennies un pays moderne et puissant."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le pouvoir impérial est officiellement restauré au "
+                "Japon aux dépens du shogunat, ouvrant une ère de "
+                "modernisation accélérée."
+            ),
+            "before": (
+                "Depuis des siècles, le Japon est dirigé dans les "
+                "faits par des shoguns. L'arrivée de navires "
+                "occidentaux dans les années 1850 fragilise ce "
+                "système."
+            ),
+            "during": (
+                "Des clans réformistes renversent le dernier shogun "
+                "Tokugawa Yoshinobu et proclament la restauration du "
+                "pouvoir impérial sous le jeune empereur Meiji."
+            ),
+            "after": (
+                "Le nouveau gouvernement lance des réformes radicales "
+                "d'industrialisation qui font du Japon une puissance "
+                "mondiale."
+            ),
+            "narrative": [
+                "Pendant plus de deux siècles, le Japon vit isolé sous "
+                "l'autorité des shoguns Tokugawa. L'arrivée en 1853 "
+                "des navires américains du commodore Perry fragilise "
+                "durablement leur autorité.",
+                "Des clans réformistes prennent les armes. Le 3 "
+                "janvier 1868, ils proclament à Kyoto la restauration "
+                "du pouvoir impérial sous le jeune empereur Meiji.",
+                "Le nouveau gouvernement engage aussitôt un vaste "
+                "programme de modernisation : abolition du système "
+                "féodal, industrialisation accélérée.",
+            ],
+            "why_it_matters": (
+                "La restauration Meiji transforme en quelques "
+                "décennies le Japon en une puissance industrielle et "
+                "militaire majeure."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le pouvoir impérial est officiellement restauré au "
+                "Japon aux dépens du shogunat, ouvrant une ère de "
+                "modernisation accélérée qui transformera le pays en "
+                "puissance mondiale."
+            ),
+            "before": (
+                "Depuis des siècles, le Japon est dirigé dans les "
+                "faits par des shoguns, tandis que l'empereur ne "
+                "conserve qu'un rôle symbolique. L'arrivée de navires "
+                "occidentaux dans les années 1850 fragilise ce "
+                "système."
+            ),
+            "during": (
+                "Des clans réformistes renversent le dernier shogun "
+                "Tokugawa Yoshinobu et proclament la restauration du "
+                "pouvoir impérial sous le jeune empereur Meiji."
+            ),
+            "after": (
+                "Le nouveau gouvernement lance des réformes radicales "
+                "d'industrialisation et de modernisation qui font du "
+                "Japon, en quelques décennies, une puissance militaire "
+                "et industrielle majeure."
+            ),
+            "narrative": [
+                "Pendant plus de deux siècles, le Japon vit isolé du "
+                "reste du monde sous l'autorité des shoguns Tokugawa, "
+                "tandis que l'empereur ne conserve qu'un rôle religieux "
+                "et symbolique à Kyoto. L'arrivée en 1853 des navires "
+                "de guerre américains du commodore Perry, exigeant "
+                "l'ouverture du pays, fragilise durablement l'autorité "
+                "du shogunat.",
+                "Des clans réformistes, jugeant le shogunat incapable "
+                "de défendre le pays face aux puissances occidentales, "
+                "prennent les armes. Le 3 janvier 1868, ils proclament "
+                "à Kyoto la restauration du pouvoir impérial sous le "
+                "jeune empereur Mutsuhito, qui prendra le nom de règne "
+                "Meiji.",
+                "Le nouveau gouvernement impérial engage aussitôt un "
+                "vaste programme de modernisation : abolition du "
+                "système féodal, industrialisation accélérée, adoption "
+                "de technologies et d'institutions occidentales, tout "
+                "en préservant une identité nationale forte.",
+            ],
+            "why_it_matters": (
+                "La restauration Meiji transforme en quelques "
+                "décennies le Japon d'un pays féodal isolé en une "
+                "puissance industrielle et militaire majeure, seule "
+                "nation asiatique à rivaliser avec les puissances "
+                "occidentales au tournant du XXe siècle."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le pouvoir impérial est officiellement restauré au "
+                "Japon aux dépens du shogunat Tokugawa, moins par "
+                "attachement réel à la personne de l'empereur que "
+                "comme fiction légitimante pour des réformateurs "
+                "déterminés à moderniser le pays."
+            ),
+            "before": (
+                "Depuis des siècles, le Japon est dirigé dans les "
+                "faits par des shoguns. L'arrivée de navires "
+                "occidentaux dans les années 1850, en particulier "
+                "l'expédition du commodore Perry, fragilise ce système "
+                "en révélant l'infériorité militaire du pays et en "
+                "imposant des traités inégaux."
+            ),
+            "during": (
+                "Des clans du sud-ouest (Satsuma, Chōshū), longtemps "
+                "opposés au shogunat, renversent le dernier shogun "
+                "Tokugawa Yoshinobu et proclament la restauration du "
+                "pouvoir impérial sous le jeune empereur Meiji, "
+                "instrumentalisant sa figure pour asseoir leur propre "
+                "programme réformiste."
+            ),
+            "after": (
+                "Le nouveau gouvernement lance des réformes radicales "
+                "d'industrialisation, adoptant en quelques décennies "
+                "une constitution, une armée et une administration "
+                "largement inspirées des modèles prussien et "
+                "britannique, qui font du Japon une puissance mondiale."
+            ),
+            "narrative": [
+                "Pendant plus de deux siècles, le Japon vit isolé du "
+                "reste du monde sous l'autorité des shoguns Tokugawa, "
+                "tandis que l'empereur ne conserve qu'un rôle religieux "
+                "et symbolique à Kyoto. L'arrivée en 1853 des navires "
+                "de guerre américains du commodore Perry, exigeant "
+                "l'ouverture du pays sous la menace, fragilise "
+                "durablement l'autorité du shogunat en révélant "
+                "l'infériorité technologique du Japon.",
+                "Des clans réformistes du sud-ouest, notamment Satsuma "
+                "et Chōshū, jugeant le shogunat incapable de défendre "
+                "le pays face aux puissances occidentales, prennent les "
+                "armes. Le 3 janvier 1868, ils proclament à Kyoto la "
+                "restauration du pouvoir impérial sous le jeune "
+                "empereur Mutsuhito, qui prendra le nom de règne Meiji "
+                "— une fiction légitimante servant avant tout leur "
+                "propre programme de modernisation.",
+                "Le nouveau gouvernement impérial engage aussitôt un "
+                "vaste programme de modernisation : abolition du "
+                "système féodal et des castes samouraïs, "
+                "industrialisation accélérée, adoption de technologies "
+                "et d'institutions occidentales — armée sur le modèle "
+                "prussien, marine sur le modèle britannique — tout en "
+                "préservant une identité nationale forte centrée sur "
+                "la figure impériale.",
+            ],
+            "why_it_matters": (
+                "La restauration Meiji transforme en quelques "
+                "décennies le Japon d'un pays féodal isolé en une "
+                "puissance industrielle et militaire majeure, seule "
+                "nation asiatique à rivaliser avec les puissances "
+                "occidentales au tournant du XXe siècle — victoires "
+                "contre la Chine (1895) puis la Russie (1905) à "
+                "l'appui —, au prix d'un tournant ensuite de plus en "
+                "plus militariste qui mènera le pays à l'expansionnisme "
+                "des années 1930."
+            ),
+        },
+    },
+    "independance-de-linde": {
+        "enfant": {
+            "summary": (
+                "Le 15 août 1947, l'Inde devient indépendante du "
+                "Royaume-Uni, mais le pays est aussi divisé en deux : "
+                "l'Inde et le Pakistan."
+            ),
+            "before": (
+                "Gandhi et beaucoup d'Indiens luttent depuis longtemps "
+                "pour l'indépendance, sans utiliser la violence."
+            ),
+            "during": (
+                "Le Royaume-Uni accepte l'indépendance de l'Inde, mais "
+                "divise le pays en deux : l'Inde et le Pakistan."
+            ),
+            "after": (
+                "Beaucoup de gens doivent déménager entre les deux "
+                "pays. C'est une période très violente et difficile."
+            ),
+            "narrative": [
+                "Depuis les années 1920, Gandhi mène un mouvement pour "
+                "l'indépendance de l'Inde, sans violence.",
+                "Le 15 août 1947, l'Inde devient enfin indépendante. "
+                "Mais le pays est aussi divisé en deux : l'Inde et le "
+                "Pakistan.",
+                "Cette division provoque le déplacement de millions de "
+                "personnes et de grandes violences entre "
+                "communautés.",
+            ],
+            "why_it_matters": (
+                "L'indépendance de l'Inde crée la plus grande "
+                "démocratie du monde, mais laisse des tensions encore "
+                "présentes aujourd'hui."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Après des décennies de résistance non-violente menée "
+                "par Gandhi, l'Inde britannique accède à "
+                "l'indépendance, immédiatement suivie de la partition "
+                "avec le Pakistan."
+            ),
+            "before": (
+                "Le mouvement d'indépendance indien, porté par Gandhi "
+                "et sa doctrine de résistance non-violente, "
+                "s'intensifie après la Seconde Guerre mondiale."
+            ),
+            "during": (
+                "Le Royaume-Uni accorde l'indépendance à l'Inde le 15 "
+                "août 1947, mais divise le territoire en deux États : "
+                "l'Inde et le Pakistan."
+            ),
+            "after": (
+                "La partition provoque des déplacements de population "
+                "massifs et des violences qui font des centaines de "
+                "milliers de morts."
+            ),
+            "narrative": [
+                "Colonie britannique depuis le XIXe siècle, l'Inde "
+                "développe un puissant mouvement d'indépendance porté "
+                "par Gandhi, dont la résistance non-violente mobilise "
+                "des millions d'Indiens.",
+                "Le 15 août 1947, l'Inde devient indépendante sous la "
+                "direction de Nehru. Mais le territoire est "
+                "simultanément partitionné entre l'Inde, à majorité "
+                "hindoue, et le Pakistan, à majorité musulmane.",
+                "Cette partition provoque l'un des plus grands "
+                "déplacements de population de l'histoire, accompagné "
+                "de violences intercommunautaires.",
+            ],
+            "why_it_matters": (
+                "L'indépendance de l'Inde met fin à près de deux "
+                "siècles de domination coloniale et donne naissance à "
+                "la plus grande démocratie du monde."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Après des décennies de résistance non-violente menée "
+                "par Gandhi, l'Inde britannique accède à "
+                "l'indépendance, immédiatement suivie de la partition "
+                "douloureuse avec le Pakistan."
+            ),
+            "before": (
+                "Le mouvement d'indépendance indien, porté notamment "
+                "par Gandhi et sa doctrine de résistance non-violente, "
+                "s'intensifie après la Seconde Guerre mondiale, qui a "
+                "épuisé le Royaume-Uni."
+            ),
+            "during": (
+                "Le Royaume-Uni accorde l'indépendance à l'Inde le 15 "
+                "août 1947, mais divise simultanément le territoire en "
+                "deux États : l'Inde à majorité hindoue et le Pakistan "
+                "à majorité musulmane."
+            ),
+            "after": (
+                "La partition provoque des déplacements de population "
+                "massifs et des violences intercommunautaires qui font "
+                "des centaines de milliers de morts."
+            ),
+            "narrative": [
+                "Colonie britannique depuis le XIXe siècle, l'Inde "
+                "développe à partir des années 1920 un puissant "
+                "mouvement d'indépendance porté notamment par Mohandas "
+                "Gandhi, dont la doctrine de résistance non-violente "
+                "(satyagraha) mobilise des millions d'Indiens.",
+                "Épuisé économiquement par la Seconde Guerre mondiale, "
+                "le Royaume-Uni accepte finalement d'accorder "
+                "l'indépendance. Le 15 août 1947, l'Inde devient "
+                "indépendante sous la direction du Premier ministre "
+                "Jawaharlal Nehru. Mais le territoire est simultanément "
+                "partitionné en deux dominions : l'Union indienne, à "
+                "majorité hindoue, et le Pakistan, à majorité "
+                "musulmane.",
+                "Cette partition, décidée dans l'urgence, provoque l'un "
+                "des plus grands déplacements de population de "
+                "l'histoire — environ 15 millions de personnes "
+                "traversant les nouvelles frontières — accompagné de "
+                "violences intercommunautaires qui font plusieurs "
+                "centaines de milliers de morts.",
+            ],
+            "why_it_matters": (
+                "L'indépendance de l'Inde met fin à près de deux "
+                "siècles de domination coloniale britannique et donne "
+                "naissance à la plus grande démocratie du monde, "
+                "tandis que la partition avec le Pakistan laisse des "
+                "tensions régionales encore vives aujourd'hui."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Après des décennies de résistance non-violente menée "
+                "par Gandhi et une intense négociation constitutionnelle "
+                "menée dans l'urgence par Lord Mountbatten, l'Inde "
+                "britannique accède à l'indépendance, immédiatement "
+                "suivie d'une partition dont la rapidité d'exécution "
+                "reste un objet de vive controverse historiographique."
+            ),
+            "before": (
+                "Le mouvement d'indépendance indien, porté notamment "
+                "par Gandhi et sa doctrine de résistance non-violente "
+                "(satyagraha), s'intensifie après la Seconde Guerre "
+                "mondiale, qui a épuisé économiquement le Royaume-Uni "
+                "et affaibli sa légitimité impériale, tandis que les "
+                "tensions entre le Congrès et la Ligue musulmane de "
+                "Jinnah s'aggravent sur la question d'un État séparé."
+            ),
+            "during": (
+                "Le Royaume-Uni, par la voix du dernier vice-roi Lord "
+                "Mountbatten, accorde l'indépendance à l'Inde le 15 "
+                "août 1947 selon un calendrier accéléré, tout en "
+                "divisant simultanément le territoire selon des "
+                "frontières (la ligne Radcliffe) tracées à la hâte par "
+                "un juriste britannique n'ayant jamais mis les pieds en "
+                "Inde auparavant."
+            ),
+            "after": (
+                "La partition provoque des déplacements de population "
+                "massifs — environ 15 millions de personnes — et des "
+                "violences intercommunautaires qui font plusieurs "
+                "centaines de milliers de morts, un traumatisme "
+                "fondateur dont les conséquences géopolitiques, "
+                "notamment sur le Cachemire, perdurent aujourd'hui."
+            ),
+            "narrative": [
+                "Colonie britannique depuis le XIXe siècle, l'Inde "
+                "développe à partir des années 1920 un puissant "
+                "mouvement d'indépendance porté notamment par Mohandas "
+                "Gandhi, dont la doctrine de résistance non-violente "
+                "mobilise des millions d'Indiens, tandis que les "
+                "tensions s'aggravent avec la Ligue musulmane de "
+                "Muhammad Ali Jinnah, qui réclame un État séparé pour "
+                "les musulmans indiens.",
+                "Épuisé économiquement par la Seconde Guerre mondiale, "
+                "le Royaume-Uni accepte d'accorder l'indépendance selon "
+                "un calendrier accéléré fixé par le dernier vice-roi "
+                "Lord Mountbatten. Le 15 août 1947, l'Inde devient "
+                "indépendante sous la direction du Premier ministre "
+                "Jawaharlal Nehru, mais le territoire est simultanément "
+                "partitionné selon la « ligne Radcliffe », tracée à la "
+                "hâte par un juriste britannique n'ayant jamais visité "
+                "l'Inde.",
+                "Cette partition, décidée et exécutée en quelques "
+                "semaines, provoque l'un des plus grands déplacements "
+                "de population de l'histoire — environ 15 millions de "
+                "personnes traversant les nouvelles frontières — "
+                "accompagné de violences intercommunautaires d'une "
+                "ampleur qui continue de nourrir un débat "
+                "historiographique sur la responsabilité britannique "
+                "dans la précipitation du processus.",
+            ],
+            "why_it_matters": (
+                "L'indépendance de l'Inde met fin à près de deux "
+                "siècles de domination coloniale britannique et donne "
+                "naissance à la plus grande démocratie du monde, "
+                "tandis que la partition avec le Pakistan laisse des "
+                "tensions régionales encore vives aujourd'hui, "
+                "notamment autour du Cachemire, objet de plusieurs "
+                "guerres indo-pakistanaises depuis 1947."
+            ),
+        },
+    },
+    "bataille-dadoua": {
+        "enfant": {
+            "summary": (
+                "Le 1er mars 1896, l'armée éthiopienne bat l'armée "
+                "italienne qui voulait coloniser le pays."
+            ),
+            "before": (
+                "L'Italie essaie de prendre le contrôle de l'Éthiopie, "
+                "comme d'autres pays européens le font en Afrique."
+            ),
+            "during": (
+                "Près de la ville d'Adoua, l'armée éthiopienne, très "
+                "nombreuse, écrase l'armée italienne en une journée."
+            ),
+            "after": (
+                "L'Italie doit accepter que l'Éthiopie reste "
+                "indépendante."
+            ),
+            "narrative": [
+                "À la fin du XIXe siècle, l'Italie essaie de prendre "
+                "le contrôle de l'Éthiopie.",
+                "L'empereur éthiopien Ménélik II refuse de se "
+                "soumettre. Le 1er mars 1896, près d'Adoua, son armée "
+                "affronte les troupes italiennes.",
+                "En une seule journée, l'armée éthiopienne écrase "
+                "l'armée italienne, beaucoup plus petite.",
+            ],
+            "why_it_matters": (
+                "Cette victoire permet à l'Éthiopie de rester "
+                "indépendante, alors que presque toute l'Afrique est "
+                "colonisée à cette époque."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'armée éthiopienne de l'empereur Ménélik II inflige "
+                "une défaite écrasante aux troupes coloniales "
+                "italiennes, préservant l'indépendance de l'Éthiopie."
+            ),
+            "before": (
+                "L'Italie, cherchant à étendre sa colonie d'Érythrée, "
+                "envahit le territoire éthiopien après l'échec d'un "
+                "traité litigieux."
+            ),
+            "during": (
+                "Près d'Adoua, l'armée éthiopienne, largement "
+                "supérieure en nombre, écrase les troupes italiennes "
+                "en une seule journée."
+            ),
+            "after": (
+                "L'Italie reconnaît l'indépendance complète de "
+                "l'Éthiopie, seule nation africaine à avoir vaincu "
+                "militairement une puissance coloniale au XIXe siècle."
+            ),
+            "narrative": [
+                "À la fin du XIXe siècle, en pleine « ruée vers "
+                "l'Afrique », l'Italie cherche à étendre son influence "
+                "vers l'Éthiopie.",
+                "Face au refus de l'empereur Ménélik II de se "
+                "soumettre, l'Italie envahit le territoire éthiopien. "
+                "Le 1er mars 1896, près d'Adoua, l'armée éthiopienne "
+                "affronte les troupes italiennes, très inférieures en "
+                "nombre.",
+                "La bataille tourne rapidement au désastre pour "
+                "l'Italie : en une seule journée, son armée est "
+                "écrasée.",
+            ],
+            "why_it_matters": (
+                "La victoire d'Adoua préserve durablement "
+                "l'indépendance de l'Éthiopie, l'une des rares nations "
+                "africaines à échapper à la colonisation européenne."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'armée éthiopienne de l'empereur Ménélik II inflige "
+                "une défaite écrasante aux troupes coloniales "
+                "italiennes, préservant l'indépendance de l'Éthiopie."
+            ),
+            "before": (
+                "L'Italie, cherchant à étendre sa colonie d'Érythrée, "
+                "envahit le territoire éthiopien après l'échec d'un "
+                "traité litigieux sur le statut de protectorat."
+            ),
+            "during": (
+                "Près d'Adoua, l'armée éthiopienne, largement "
+                "supérieure en nombre et bien organisée par Ménélik "
+                "II, écrase les troupes italiennes en une seule "
+                "journée de combat."
+            ),
+            "after": (
+                "L'Italie reconnaît l'indépendance complète de "
+                "l'Éthiopie par le traité d'Addis-Abeba, qui reste la "
+                "seule nation africaine à avoir vaincu militairement "
+                "une puissance coloniale européenne au XIXe siècle."
+            ),
+            "narrative": [
+                "À la fin du XIXe siècle, en pleine « ruée vers "
+                "l'Afrique » coloniale, l'Italie cherche à étendre son "
+                "influence depuis sa colonie érythréenne vers "
+                "l'Éthiopie, s'appuyant sur un traité dont les versions "
+                "italienne et amharique diffèrent sur le statut de "
+                "protectorat du pays.",
+                "Face au refus de l'empereur Ménélik II de se "
+                "soumettre, l'Italie envahit militairement le "
+                "territoire éthiopien. Le 1er mars 1896, près de la "
+                "ville d'Adoua, l'armée éthiopienne, forte d'environ "
+                "100 000 hommes bien organisés et partiellement "
+                "équipés d'armes modernes achetées en Europe, affronte "
+                "les troupes italiennes, largement inférieures en "
+                "nombre.",
+                "La bataille tourne rapidement au désastre pour "
+                "l'Italie : en une seule journée, son armée est "
+                "écrasée, subissant des milliers de morts et de "
+                "prisonniers. C'est l'une des plus lourdes défaites "
+                "coloniales européennes du XIXe siècle.",
+            ],
+            "why_it_matters": (
+                "La victoire d'Adoua préserve durablement "
+                "l'indépendance de l'Éthiopie, qui restera avec le "
+                "Liberia l'une des rares nations africaines à échapper "
+                "à la colonisation européenne, et devient un puissant "
+                "symbole de résistance anticoloniale à travers le "
+                "continent."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'armée éthiopienne de l'empereur Ménélik II, "
+                "renforcée par une diplomatie habile ayant permis "
+                "l'achat d'armes modernes européennes, inflige une "
+                "défaite écrasante aux troupes coloniales italiennes à "
+                "Adoua, épisode fondateur de la mémoire anticoloniale "
+                "africaine."
+            ),
+            "before": (
+                "L'Italie, cherchant à étendre sa colonie d'Érythrée, "
+                "envahit le territoire éthiopien après l'échec d'un "
+                "traité de Wuchale dont les versions italienne et "
+                "amharique diffèrent sur le statut de protectorat — une "
+                "divergence linguistique qui alimente durablement le "
+                "conflit diplomatique."
+            ),
+            "during": (
+                "Près d'Adoua, l'armée éthiopienne, largement "
+                "supérieure en nombre et dont l'impératrice Taytu "
+                "Betoul joue un rôle stratégique actif, écrase en une "
+                "seule journée les troupes italiennes, désorganisées "
+                "par des cartes imprécises et une coordination "
+                "défaillante entre leurs colonnes."
+            ),
+            "after": (
+                "L'Italie reconnaît l'indépendance complète de "
+                "l'Éthiopie par le traité d'Addis-Abeba, une "
+                "humiliation qui provoque la chute du gouvernement "
+                "italien et retarde de plusieurs décennies toute "
+                "nouvelle tentative de conquête du pays."
+            ),
+            "narrative": [
+                "À la fin du XIXe siècle, en pleine « ruée vers "
+                "l'Afrique » coloniale, l'Italie cherche à étendre son "
+                "influence depuis sa colonie érythréenne vers "
+                "l'Éthiopie, s'appuyant sur un traité de Wuchale dont "
+                "les versions italienne et amharique diffèrent sur le "
+                "statut de protectorat du pays.",
+                "Face au refus de l'empereur Ménélik II de se "
+                "soumettre, l'Italie envahit militairement le "
+                "territoire éthiopien. Le 1er mars 1896, près de la "
+                "ville d'Adoua, l'armée éthiopienne, forte d'environ "
+                "100 000 hommes bien organisés et partiellement "
+                "équipés d'armes modernes achetées en Europe grâce à "
+                "une diplomatie habile de Ménélik II, affronte les "
+                "troupes italiennes, largement inférieures en nombre et "
+                "désorganisées par des cartes imprécises.",
+                "La bataille tourne rapidement au désastre pour "
+                "l'Italie : en une seule journée, son armée est "
+                "écrasée, subissant des milliers de morts et de "
+                "prisonniers. L'impératrice Taytu Betoul, qui commande "
+                "elle-même une partie des troupes, contribue activement "
+                "à la victoire.",
+            ],
+            "why_it_matters": (
+                "La victoire d'Adoua préserve durablement "
+                "l'indépendance de l'Éthiopie, qui restera avec le "
+                "Liberia l'une des rares nations africaines à échapper "
+                "à la colonisation européenne, et devient un puissant "
+                "symbole de résistance anticoloniale repris tout au "
+                "long du XXe siècle par les mouvements panafricanistes "
+                "et d'indépendance à travers le continent."
+            ),
+        },
+    },
 }
 
 
