@@ -6,6 +6,7 @@ from flask_login import current_user, login_required
 from app import db
 from app.data import AVATARS, DEFAULT_QUIZ_SLUG, EVENTS, QUIZ_QUESTIONS
 from app.event_images import EVENT_IMAGES, IMAGE_TYPE_INFO, cover_image
+from app.learn_more import LEARN_MORE_LINKS
 from app.events import (
     all_categories,
     events_list,
@@ -80,6 +81,7 @@ def explorer():
         categories=["Tous"] + all_categories(),
         view=view,
         map_events=map_events,
+        timeline_events=events_list(chronological=True),
         active_page="explorer",
     )
 
@@ -96,6 +98,7 @@ def event_detail(slug):
         years_ago=years_ago(event),
         images=EVENT_IMAGES.get(slug, {}),
         cover=cover_image(slug),
+        learn_more_url=LEARN_MORE_LINKS.get(slug),
         active_page="explorer",
     )
 
