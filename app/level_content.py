@@ -80,19 +80,28 @@ CONTENT_BY_LEVEL = {
                 "Révolution française."
             ),
             "before": (
-                "Le renvoi du ministre Necker, très populaire, et le "
-                "rassemblement de troupes royales autour de Paris "
-                "provoquent la colère et l'inquiétude des habitants."
+                "Depuis plusieurs mois, la crise financière et "
+                "politique s'aggrave en France. Le renvoi du ministre "
+                "populaire Necker, le 11 juillet, ainsi que le "
+                "rassemblement de troupes royales autour de Paris, "
+                "provoquent la colère et l'inquiétude des Parisiens, "
+                "qui craignent un coup de force du roi contre "
+                "l'Assemblée."
             ),
             "during": (
-                "Après avoir pillé les Invalides pour prendre des fusils, "
-                "la foule se dirige vers la Bastille afin de récupérer la "
-                "poudre à canon qui y est stockée."
+                "Après avoir pillé l'Hôtel des Invalides pour s'emparer "
+                "de milliers de fusils, la foule se dirige vers la "
+                "Bastille afin d'y récupérer la poudre à canon qui y "
+                "est stockée. Les négociations avec le gouverneur "
+                "échouent et des coups de feu éclatent des deux côtés."
             ),
             "after": (
-                "Le gouverneur de Launay capitule, la foule libère les "
-                "prisonniers et une nouvelle force armée, la Garde "
-                "nationale, est créée pour maintenir l'ordre à Paris."
+                "Après plusieurs heures de combat, le gouverneur de "
+                "Launay capitule. La foule libère les sept prisonniers "
+                "et s'empare des munitions. Dans les jours qui suivent, "
+                "une nouvelle force armée, la Garde nationale, est "
+                "créée pour maintenir l'ordre à Paris, et Louis XVI est "
+                "contraint de reculer."
             ),
             "narrative": [
                 "Le 14 juillet 1789, une foule d'artisans et de "
@@ -125,19 +134,28 @@ CONTENT_BY_LEVEL = {
                 "Bastille, symbole de l'absolutisme royal."
             ),
             "before": (
-                "Tensions croissantes à Paris, renvoi de Necker, "
-                "concentration des troupes royales autour de la "
-                "capitale."
+                "Les tensions politiques et sociales s'accumulent à "
+                "Paris depuis le printemps 1789 : renvoi du ministre "
+                "Necker le 11 juillet, disette persistante et "
+                "concentration de régiments royaux autour de la "
+                "capitale font craindre un coup de force contre "
+                "l'Assemblée nationale naissante."
             ),
             "during": (
-                "Le peuple cherche des armes et de la poudre, se "
-                "dirigeant vers la forteresse-prison symbole de "
-                "l'absolutisme."
+                "En quête d'armes et de poudre, le peuple parisien, "
+                "déjà en possession de fusils pris aux Invalides, se "
+                "dirige vers la forteresse-prison de la Bastille, "
+                "symbole de l'absolutisme royal. Les négociations avec "
+                "le gouverneur de Launay échouent et l'assaut est donné "
+                "en fin de matinée."
             ),
             "after": (
-                "Capitulation du gouverneur de Launay, création de la "
-                "Garde nationale, début du démantèlement de la "
-                "forteresse."
+                "Le gouverneur de Launay capitule en fin d'après-midi "
+                "face à l'arrivée de canons apportés par des gardes "
+                "françaises ralliées à la foule. Les prisonniers sont "
+                "libérés, la Garde nationale est créée sous La Fayette, "
+                "et le démantèlement de la forteresse commence dans la "
+                "foulée."
             ),
             "narrative": [
                 "Le 14 juillet 1789, au matin, une foule nombreuse "
@@ -283,19 +301,27 @@ CONTENT_BY_LEVEL = {
                 "le jour des Ides de mars."
             ),
             "before": (
-                "Nommé dictateur à vie, César concentre des pouvoirs "
-                "jugés excessifs par une partie du Sénat, qui redoute la "
-                "fin de la République romaine."
+                "Vainqueur de la guerre civile contre son rival Pompée, "
+                "César a été nommé dictateur à vie en février 44 av. "
+                "J.-C. Il concentre entre ses mains des pouvoirs jugés "
+                "excessifs par une partie du Sénat, qui redoute de le "
+                "voir se proclamer roi et mettre fin à la République."
             ),
             "during": (
-                "Un groupe de sénateurs, surnommés les « Libérateurs », "
-                "entoure César sous prétexte d'une pétition et le "
-                "poignarde à plusieurs reprises."
+                "Un groupe de sénateurs, surnommés les « Libérateurs » "
+                "et menés par Brutus et Cassius, profite d'une séance du "
+                "Sénat pour l'entourer sous prétexte de lui présenter "
+                "une pétition. Ils le poignardent alors à de multiples "
+                "reprises, sans qu'il ne cherche vraiment à se "
+                "défendre."
             ),
             "after": (
-                "L'assassinat plonge Rome dans une nouvelle guerre "
-                "civile, remportée par le fils adoptif de César, Octave, "
-                "futur empereur Auguste."
+                "Loin d'apaiser la situation, l'assassinat plonge Rome "
+                "dans le chaos : privés d'un plan de gouvernement, les "
+                "conjurés perdent rapidement le contrôle des "
+                "événements, et une nouvelle guerre civile éclate, "
+                "remportée par le fils adoptif de César, Octave, futur "
+                "empereur Auguste."
             ),
             "narrative": [
                 "Le 15 mars 44 av. J.-C. — les Ides de mars — Jules "
@@ -324,19 +350,30 @@ CONTENT_BY_LEVEL = {
                 "aux Ides de mars."
             ),
             "before": (
-                "César, nommé dictateur à vie, concentre des pouvoirs "
-                "jugés excessifs par une partie du Sénat, qui redoute la "
-                "fin de la République."
+                "César, vainqueur de la guerre civile qui l'opposait à "
+                "Pompée, a été nommé dictateur à vie en février 44 av. "
+                "J.-C. Cette concentration de pouvoirs, ajoutée à des "
+                "honneurs quasi royaux, inquiète une partie du Sénat, "
+                "attachée à la tradition républicaine et hostile à "
+                "toute idée de monarchie."
             ),
             "during": (
-                "Un groupe de sénateurs, les « Libérateurs », l'entoure "
-                "et le poignarde à plusieurs reprises lors d'une séance "
-                "du Sénat."
+                "Réunis en un groupe d'une soixantaine de sénateurs "
+                "surnommés les « Libérateurs » et menés par Marcus "
+                "Junius Brutus et Cassius Longinus, les conjurés "
+                "entourent César sous prétexte d'une pétition lors "
+                "d'une séance tenue exceptionnellement dans la curie du "
+                "théâtre de Pompée, puis le poignardent à de nombreuses "
+                "reprises."
             ),
             "after": (
-                "Le vide politique laissé par César déclenche une "
-                "nouvelle guerre civile, dont sortira vainqueur son fils "
-                "adoptif Octave, futur empereur Auguste."
+                "Convaincus que la seule suppression du « tyran » "
+                "suffirait à restaurer la République, les conjurés "
+                "n'avaient préparé aucun plan de gouvernement pour "
+                "l'après-César. Le vide politique qu'ils laissent "
+                "déclenche au contraire une nouvelle guerre civile, "
+                "dont sortira vainqueur le fils adoptif de César, "
+                "Octave, futur empereur Auguste."
             ),
             "narrative": [
                 "Le 15 mars de l'an 44 av. J.-C. — les Ides de mars dans "
@@ -475,19 +512,28 @@ CONTENT_BY_LEVEL = {
                 "centaines de millions de téléspectateurs."
             ),
             "before": (
-                "En pleine course à l'espace avec l'URSS, les États-Unis "
-                "lancent le programme Apollo pour poser un équipage sur "
-                "la Lune avant la fin des années 1960."
+                "Depuis le lancement du satellite Spoutnik par l'URSS "
+                "en 1957, les États-Unis sont engagés dans une course à "
+                "l'espace acharnée avec les Soviétiques. Le président "
+                "Kennedy fixe dès 1961 l'objectif d'envoyer un équipage "
+                "sur la Lune avant la fin de la décennie, donnant "
+                "naissance au programme Apollo."
             ),
             "during": (
-                "Le module lunaire Eagle se pose sur la Mer de la "
-                "Tranquillité ; Armstrong puis Aldrin marchent à la "
-                "surface pendant que Collins reste en orbite lunaire."
+                "Le 16 juillet 1969, la fusée Saturn V décolle du "
+                "Centre spatial Kennedy avec Armstrong, Aldrin et "
+                "Collins à son bord. Quatre jours plus tard, le module "
+                "lunaire Eagle se pose sur la Mer de la Tranquillité ; "
+                "Armstrong puis Aldrin sortent marcher à sa surface, "
+                "tandis que Collins reste seul en orbite lunaire à bord "
+                "du module de commande."
             ),
             "after": (
                 "L'équipage rapporte des échantillons de roches "
-                "lunaires et rentre sain et sauf sur Terre, marquant "
-                "l'apogée du programme spatial américain."
+                "lunaires et regagne la Terre sain et sauf après un "
+                "amerrissage dans le Pacifique. La mission marque "
+                "l'apogée du programme spatial américain et une "
+                "victoire symbolique majeure dans la guerre froide."
             ),
             "narrative": [
                 "Le 16 juillet 1969, la fusée Saturn V emporte Neil "
@@ -519,19 +565,30 @@ CONTENT_BY_LEVEL = {
                 "de millions de téléspectateurs."
             ),
             "before": (
-                "En pleine course à l'espace avec l'URSS, les États-Unis "
-                "lancent le programme Apollo pour poser un équipage sur "
-                "la Lune avant 1970."
+                "Depuis le lancement du satellite Spoutnik par l'URSS "
+                "en 1957 puis le premier vol habité de Youri Gagarine "
+                "en 1961, les États-Unis sont engagés dans une course à "
+                "l'espace acharnée. Kennedy fixe dès 1961 l'objectif "
+                "d'un alunissage humain avant la fin de la décennie, "
+                "lançant le programme Apollo, qui mobilisera jusqu'à "
+                "400 000 personnes."
             ),
             "during": (
-                "Le module lunaire Eagle se pose sur la Mer de la "
-                "Tranquillité ; Armstrong puis Aldrin sortent marcher à "
-                "la surface pendant que Collins reste en orbite lunaire."
+                "Le 16 juillet 1969, la fusée Saturn V emporte "
+                "Armstrong, Aldrin et Collins depuis le Centre spatial "
+                "Kennedy. Le 20 juillet, le module lunaire Eagle se "
+                "pose sur la Mer de la Tranquillité malgré des alertes "
+                "informatiques et un terrain semé de rochers ; le "
+                "lendemain, Armstrong puis Aldrin sortent marcher à la "
+                "surface pendant que Collins reste seul en orbite "
+                "lunaire."
             ),
             "after": (
-                "L'équipage rapporte des échantillons lunaires et rentre "
-                "sain et sauf sur Terre, marquant l'apogée du programme "
-                "spatial américain."
+                "L'équipage rapporte près de 22 kg d'échantillons "
+                "lunaires et rentre sain et sauf sur Terre après un "
+                "amerrissage dans le Pacifique. La mission marque "
+                "l'aboutissement du programme Apollo et un tournant "
+                "symbolique majeur de la guerre froide."
             ),
             "narrative": [
                 "Le 16 juillet 1969, la fusée Saturn V emporte Neil "
@@ -672,19 +729,28 @@ CONTENT_BY_LEVEL = {
                 "mettant fin à onze siècles d'Empire byzantin."
             ),
             "before": (
-                "Affaibli et isolé, l'Empire byzantin ne contrôle plus "
-                "que sa capitale, encerclée par l'armée ottomane du "
-                "jeune sultan Mehmed II."
+                "Réduit depuis des décennies à sa seule capitale et à "
+                "quelques territoires isolés, l'Empire byzantin ne peut "
+                "compter sur aucun secours occidental significatif "
+                "malgré des appels répétés. Il se retrouve encerclé "
+                "par l'immense armée du jeune sultan ottoman Mehmed II, "
+                "déterminé à s'emparer de la ville."
             ),
             "during": (
-                "Après des semaines de siège et de bombardements par une "
-                "artillerie inédite, les troupes ottomanes percent les "
-                "murailles et envahissent la ville."
+                "Le siège débute début avril 1453. Pendant près de deux "
+                "mois, la ville résiste aux bombardements d'une "
+                "artillerie inédite, dont un canon géant capable de "
+                "tirer d'énormes boulets. Mehmed II fait même "
+                "transporter une partie de sa flotte par voie terrestre "
+                "pour contourner les défenses maritimes de la ville."
             ),
             "after": (
-                "Constantinople devient la capitale de l'Empire ottoman "
-                "sous le nom d'Istanbul ; sa chute marque, pour de "
-                "nombreux historiens, la fin du Moyen Âge en Europe."
+                "Le 29 mai, un assaut général finit par percer les "
+                "murailles. L'empereur Constantin XI meurt dans les "
+                "combats et la ville tombe. Rebaptisée Istanbul, elle "
+                "devient la nouvelle capitale de l'Empire ottoman, "
+                "marquant pour beaucoup d'historiens la fin du Moyen "
+                "Âge en Europe."
             ),
             "narrative": [
                 "Depuis des siècles, Constantinople résiste aux sièges "
@@ -714,20 +780,30 @@ CONTENT_BY_LEVEL = {
                 "mettant fin à onze siècles d'Empire byzantin."
             ),
             "before": (
-                "Affaibli et isolé, l'Empire byzantin ne contrôle plus "
-                "que sa capitale, encerclée par l'armée ottomane du "
-                "jeune sultan Mehmed II."
+                "Réduit depuis des décennies à sa seule capitale, "
+                "l'Empire byzantin, diplomatiquement isolé malgré des "
+                "appels répétés à l'Occident, se retrouve encerclé par "
+                "l'armée immense du jeune sultan ottoman Mehmed II, "
+                "déterminé à réussir là où ses prédécesseurs avaient "
+                "échoué."
             ),
             "during": (
-                "Après des semaines de siège et de bombardements par "
-                "une artillerie inédite, les troupes ottomanes percent "
-                "les murailles théodosiennes et envahissent la ville."
+                "Le siège débute début avril 1453. Pendant près de deux "
+                "mois, la ville, défendue par une garnison réduite sous "
+                "l'empereur Constantin XI, résiste à des bombardements "
+                "incessants menés par une artillerie inédite, dont la "
+                "célèbre bombarde d'Orban. Mehmed II fait transporter "
+                "une partie de sa flotte par voie terrestre pour "
+                "contourner la chaîne bloquant l'accès à la Corne d'Or."
             ),
             "after": (
-                "Constantinople devient la capitale de l'Empire ottoman "
-                "sous le nom d'Istanbul ; la chute de la ville est "
-                "traditionnellement considérée comme la fin du Moyen "
-                "Âge en Europe."
+                "Le 29 mai 1453 à l'aube, un assaut général finit par "
+                "percer les défenses théodosiennes, vieilles de mille "
+                "ans. Constantin XI meurt dans les combats. Rebaptisée "
+                "Istanbul, la ville devient la nouvelle capitale de "
+                "l'Empire ottoman, marquant pour de nombreux historiens "
+                "la transition symbolique entre Moyen Âge et "
+                "Renaissance."
             ),
             "narrative": [
                 "Depuis des siècles, Constantinople résiste aux sièges "
@@ -881,19 +957,28 @@ CONTENT_BY_LEVEL = {
                 "XXe siècle."
             ),
             "before": (
-                "Après des années de fouilles infructueuses financées "
-                "par Lord Carnarvon, Howard Carter cherche la tombe d'un "
-                "pharaon mineur dont l'existence n'était que supposée."
+                "Depuis 1907, l'archéologue britannique Howard Carter "
+                "fouille méthodiquement la Vallée des Rois pour le "
+                "compte de son riche mécène, Lord Carnarvon, à la "
+                "recherche de la tombe d'un pharaon mineur du Nouvel "
+                "Empire dont l'existence n'était encore attestée que "
+                "par de rares indices."
             ),
             "during": (
-                "Les ouvriers de Carter dégagent un escalier menant à "
-                "une porte scellée portant les sceaux intacts de "
-                "Toutânkhamon, jamais pillée."
+                "Le 4 novembre 1922, alors que le financement de "
+                "l'expédition touche à sa fin, les ouvriers de Carter "
+                "découvrent une marche taillée dans la roche. Elle mène "
+                "à un escalier puis à une porte scellée, dont les "
+                "cachets intacts laissent penser que la tombe n'a "
+                "jamais été pillée."
             ),
             "after": (
-                "Le dégagement et l'inventaire du trésor funéraire, dont "
-                "le célèbre masque en or, dureront près de dix ans et "
-                "captiveront le monde entier."
+                "Le 26 novembre, Carter perce un trou dans la porte "
+                "intérieure et découvre un trésor funéraire "
+                "exceptionnel, quasi intact depuis plus de 3 000 ans. "
+                "Le dégagement et l'inventaire de plus de 5 000 objets, "
+                "dont le célèbre masque en or, dureront près de dix ans "
+                "et fascineront le monde entier."
             ),
             "narrative": [
                 "Depuis 1907, l'archéologue britannique Howard Carter "
@@ -926,19 +1011,30 @@ CONTENT_BY_LEVEL = {
                 "XXe siècle."
             ),
             "before": (
-                "Après des années de fouilles infructueuses financées "
-                "par Lord Carnarvon, Howard Carter cherche la tombe d'un "
-                "pharaon mineur dont l'existence n'était que supposée."
+                "Depuis 1907, l'archéologue britannique Howard Carter "
+                "fouille systématiquement la Vallée des Rois pour le "
+                "compte de son mécène Lord Carnarvon, à la recherche de "
+                "la tombe du pharaon Toutânkhamon, un souverain mineur "
+                "mort jeune dont l'emplacement restait inconnu, alors "
+                "que la plupart des égyptologues jugeaient déjà la "
+                "vallée entièrement explorée."
             ),
             "during": (
-                "Les ouvriers de Carter dégagent un escalier menant à "
-                "une porte scellée portant les sceaux intacts de "
-                "Toutânkhamon, encore jamais pillée."
+                "Le 4 novembre 1922, alors que Carnarvon envisage "
+                "d'arrêter le financement de la campagne, les ouvriers "
+                "de Carter découvrent une marche taillée dans la roche "
+                "menant à un escalier, puis à une porte scellée "
+                "portant des cachets encore intacts de la nécropole "
+                "royale — signe qu'elle n'a jamais été profanée."
             ),
             "after": (
-                "Le dégagement et l'inventaire du trésor funéraire, "
-                "comprenant le célèbre masque en or, dureront près de "
-                "dix ans et captiveront le monde entier."
+                "Le 26 novembre 1922, en présence de Lord Carnarvon, "
+                "Carter perce un trou dans la porte intérieure et "
+                "découvre à la lueur d'une bougie un trésor funéraire "
+                "quasi intact depuis plus de 3 000 ans. Le dégagement "
+                "méthodique de plus de 5 000 objets, dont le célèbre "
+                "masque en or massif, mobilisera toute une équipe "
+                "pendant près de dix ans."
             ),
             "narrative": [
                 "Depuis 1907, l'archéologue britannique Howard Carter "
