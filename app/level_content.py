@@ -7799,6 +7799,592 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "fondation-de-sydney": {
+        "enfant": {
+            "summary": (
+                "Le 26 janvier 1788, des bateaux britanniques "
+                "arrivent en Australie avec des bagnards, pour fonder "
+                "la première colonie européenne du pays."
+            ),
+            "before": (
+                "Le Royaume-Uni cherche un nouvel endroit pour envoyer "
+                "ses prisonniers, après avoir perdu ses colonies "
+                "américaines."
+            ),
+            "during": (
+                "Onze bateaux arrivent en Australie, avec environ "
+                "1 400 personnes, dont beaucoup de prisonniers."
+            ),
+            "after": (
+                "Une nouvelle colonie est fondée : Sydney, en "
+                "Nouvelle-Galles du Sud."
+            ),
+            "narrative": [
+                "Après avoir perdu ses colonies en Amérique, le "
+                "Royaume-Uni cherche un nouvel endroit pour envoyer "
+                "ses prisonniers.",
+                "Onze bateaux, la « First Fleet », quittent "
+                "l'Angleterre avec environ 1 400 personnes, dont plus "
+                "de 700 prisonniers.",
+                "Le 26 janvier 1788, les bateaux arrivent à Port "
+                "Jackson. Le capitaine Arthur Phillip fonde la colonie "
+                "de Nouvelle-Galles du Sud.",
+            ],
+            "why_it_matters": (
+                "C'est le début de la colonisation européenne de "
+                "l'Australie, avec de lourdes conséquences pour les "
+                "peuples aborigènes qui y vivaient déjà."
+            ),
+        },
+        "college": {
+            "summary": (
+                "La « First Fleet » britannique, chargée de déporter "
+                "des bagnards, débarque à Port Jackson et fonde la "
+                "première colonie européenne d'Australie."
+            ),
+            "before": (
+                "Ayant perdu ses colonies pénitentiaires américaines "
+                "après l'indépendance des États-Unis, le Royaume-Uni "
+                "cherche une nouvelle destination pour ses bagnards."
+            ),
+            "during": (
+                "Une flotte de onze navires, transportant environ "
+                "1 400 personnes dont plus de 700 bagnards, débarque à "
+                "Port Jackson après huit mois de traversée."
+            ),
+            "after": (
+                "La colonie de Nouvelle-Galles du Sud se développe "
+                "rapidement, marquant le début de la colonisation "
+                "européenne de l'Australie."
+            ),
+            "narrative": [
+                "Après avoir perdu ses colonies pénitentiaires "
+                "nord-américaines, le Royaume-Uni décide d'établir une "
+                "nouvelle colonie pénale sur la côte australienne "
+                "repérée par Cook.",
+                "Sous le commandement du capitaine Arthur Phillip, une "
+                "flotte de onze navires quitte l'Angleterre en mai "
+                "1787 avec environ 1 400 personnes à bord.",
+                "Le 26 janvier 1788, Arthur Phillip hisse le drapeau "
+                "britannique et proclame la colonie de Nouvelle-Galles "
+                "du Sud — une date célébrée depuis comme « Australia "
+                "Day ».",
+            ],
+            "why_it_matters": (
+                "La fondation de cette colonie pénitentiaire marque le "
+                "début de la colonisation européenne de l'Australie, "
+                "aux dépens des peuples aborigènes."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "La « First Fleet » britannique, chargée de déporter "
+                "des bagnards, débarque à Port Jackson et fonde la "
+                "première colonie européenne d'Australie."
+            ),
+            "before": (
+                "Ayant perdu ses colonies pénitentiaires américaines "
+                "après l'indépendance des États-Unis, le Royaume-Uni "
+                "cherche une nouvelle destination pour ses bagnards."
+            ),
+            "during": (
+                "Une flotte de onze navires, transportant environ "
+                "1 400 personnes dont plus de 700 bagnards, débarque à "
+                "Port Jackson après huit mois de traversée."
+            ),
+            "after": (
+                "La colonie pénitentiaire de Nouvelle-Galles du Sud se "
+                "développe rapidement, marquant le début de la "
+                "colonisation européenne durable de l'Australie, aux "
+                "dépens des peuples aborigènes."
+            ),
+            "narrative": [
+                "Après avoir perdu ses colonies pénitentiaires "
+                "nord-américaines à la suite de l'indépendance des "
+                "États-Unis en 1783, le Royaume-Uni, confronté à une "
+                "surpopulation carcérale, décide d'établir une nouvelle "
+                "colonie pénale sur la côte australienne repérée par "
+                "Cook dix-huit ans plus tôt.",
+                "Sous le commandement du capitaine Arthur Phillip, une "
+                "flotte de onze navires — la « First Fleet » — quitte "
+                "l'Angleterre en mai 1787 avec environ 1 400 personnes "
+                "à bord, dont plus de 700 bagnards. Après un voyage de "
+                "plus de huit mois, la flotte atteint Botany Bay puis "
+                "se déplace vers le mouillage plus favorable de Port "
+                "Jackson.",
+                "Le 26 janvier 1788, Arthur Phillip hisse le drapeau "
+                "britannique et proclame formellement la colonie de "
+                "Nouvelle-Galles du Sud — une date célébrée depuis "
+                "comme « Australia Day », bien que profondément "
+                "contestée par les communautés aborigènes, pour qui "
+                "elle marque le début de la dépossession de leurs "
+                "terres.",
+            ],
+            "why_it_matters": (
+                "La fondation de cette colonie pénitentiaire marque le "
+                "début de la colonisation européenne durable de "
+                "l'Australie, dont les conséquences pour les peuples "
+                "aborigènes — dépossession des terres, épidémies, "
+                "violences — se font sentir pendant des générations."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "La « First Fleet » britannique, flotte pénitentiaire "
+                "commandée par Arthur Phillip, débarque à Port "
+                "Jackson et fonde la première colonie européenne "
+                "d'Australie, épisode fondateur dont la date continue "
+                "de diviser la société australienne contemporaine."
+            ),
+            "before": (
+                "Ayant perdu ses colonies pénitentiaires américaines "
+                "après l'indépendance des États-Unis en 1783 et "
+                "confronté à une surpopulation carcérale critique, le "
+                "Royaume-Uni cherche une nouvelle destination pour ses "
+                "bagnards, retenant la côte australienne repérée par "
+                "Cook malgré son éloignement extrême et l'incertitude "
+                "sur sa viabilité agricole."
+            ),
+            "during": (
+                "Une flotte de onze navires, transportant environ "
+                "1 400 personnes dont plus de 700 bagnards souvent "
+                "condamnés pour des délits mineurs, débarque à Port "
+                "Jackson après huit mois d'une traversée éprouvante, "
+                "les premières années de la colonie étant marquées par "
+                "une famine quasi permanente faute de sols adaptés aux "
+                "cultures européennes."
+            ),
+            "after": (
+                "La colonie pénitentiaire de Nouvelle-Galles du Sud se "
+                "développe malgré des débuts très difficiles, marquant "
+                "le début de la colonisation européenne durable de "
+                "l'Australie, aux dépens des peuples aborigènes dont la "
+                "population s'effondre dans les décennies suivantes "
+                "sous l'effet des épidémies et des violences."
+            ),
+            "narrative": [
+                "Après avoir perdu ses colonies pénitentiaires "
+                "nord-américaines à la suite de l'indépendance des "
+                "États-Unis en 1783, le Royaume-Uni, confronté à une "
+                "surpopulation carcérale critique, décide d'établir une "
+                "nouvelle colonie pénale sur la côte australienne "
+                "repérée par Cook dix-huit ans plus tôt, malgré son "
+                "éloignement extrême et l'incertitude quant à sa "
+                "viabilité agricole.",
+                "Sous le commandement du capitaine Arthur Phillip, une "
+                "flotte de onze navires — la « First Fleet » — quitte "
+                "l'Angleterre en mai 1787 avec environ 1 400 personnes "
+                "à bord, dont plus de 700 bagnards. Après un voyage de "
+                "plus de huit mois, la flotte atteint Botany Bay puis "
+                "se déplace vers le mouillage plus favorable de Port "
+                "Jackson, jugé plus propice à l'installation.",
+                "Le 26 janvier 1788, Arthur Phillip hisse le drapeau "
+                "britannique et proclame formellement la colonie de "
+                "Nouvelle-Galles du Sud — une date célébrée depuis "
+                "comme « Australia Day », mais de plus en plus "
+                "contestée par les communautés aborigènes et une part "
+                "croissante de l'opinion australienne, qui la "
+                "considèrent comme un « jour d'invasion ».",
+            ],
+            "why_it_matters": (
+                "La fondation de cette colonie pénitentiaire marque le "
+                "début de la colonisation européenne durable de "
+                "l'Australie, dont les conséquences pour les peuples "
+                "aborigènes — dépossession des terres sous couvert de "
+                "terra nullius, épidémies, violences — se font sentir "
+                "pendant des générations et restent un sujet politique "
+                "vif dans l'Australie contemporaine."
+            ),
+        },
+    },
+    "prise-de-jerusalem-par-saladin": {
+        "enfant": {
+            "summary": (
+                "En 1187, le sultan Saladin reprend la ville de "
+                "Jérusalem, qui était aux mains des croisés depuis "
+                "presque cent ans."
+            ),
+            "before": (
+                "Les croisés perdent une grande bataille contre "
+                "Saladin, ce qui les affaiblit beaucoup."
+            ),
+            "during": (
+                "Saladin marche sur Jérusalem. La ville, presque sans "
+                "défenseurs, doit se rendre."
+            ),
+            "after": (
+                "Saladin est généreux : il laisse les habitants "
+                "chrétiens partir, contrairement à ce qui s'était passé "
+                "en 1099."
+            ),
+            "narrative": [
+                "En juillet 1187, l'armée des croisés perd une grande "
+                "bataille contre Saladin, à Hattin.",
+                "Saladin marche ensuite vers Jérusalem, presque vide de "
+                "soldats. La ville ne peut pas résister longtemps.",
+                "Le 2 octobre 1187, Saladin reprend la ville et laisse "
+                "les habitants chrétiens partir, contre une rançon.",
+            ],
+            "why_it_matters": (
+                "Cette perte choque l'Europe et provoque le départ "
+                "d'une nouvelle croisade, mais Jérusalem reste aux "
+                "mains des musulmans."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le sultan ayyoubide Saladin reprend Jérusalem aux "
+                "croisés après près d'un siècle de domination latine, "
+                "un choc pour la chrétienté occidentale."
+            ),
+            "before": (
+                "Affaiblis par leurs divisions internes, les États "
+                "latins d'Orient subissent une lourde défaite face à "
+                "Saladin à la bataille de Hattin."
+            ),
+            "during": (
+                "Après un court siège, la garnison chrétienne de "
+                "Jérusalem, incapable de résister, négocie une "
+                "reddition qui épargne la population."
+            ),
+            "after": (
+                "La perte de Jérusalem déclenche l'appel à la "
+                "troisième croisade, mais Saladin conserve le contrôle "
+                "de la ville."
+            ),
+            "narrative": [
+                "En juillet 1187, l'armée des États latins d'Orient "
+                "subit une défaite écrasante face à Saladin à la "
+                "bataille de Hattin.",
+                "Profitant de cette victoire, Saladin marche sur "
+                "Jérusalem, tenue par les croisés depuis 1099. La "
+                "ville, presque dépourvue de défenseurs, ne peut "
+                "résister longtemps.",
+                "Contrairement au massacre de 1099, Saladin négocie une "
+                "reddition le 2 octobre 1187, autorisant les habitants "
+                "chrétiens à partir moyennant rançon.",
+            ],
+            "why_it_matters": (
+                "La perte de Jérusalem provoque un choc majeur en "
+                "Europe et déclenche l'appel à la troisième croisade."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le sultan ayyoubide Saladin reprend Jérusalem aux "
+                "croisés après près d'un siècle de domination latine, "
+                "un choc majeur pour la chrétienté occidentale."
+            ),
+            "before": (
+                "Affaiblis par leurs divisions internes, les États "
+                "latins d'Orient subissent une lourde défaite face à "
+                "Saladin à la bataille de Hattin, quelques mois avant "
+                "le siège de Jérusalem."
+            ),
+            "during": (
+                "Après un court siège, la garnison chrétienne de "
+                "Jérusalem, incapable de résister, négocie une "
+                "reddition qui épargne la population."
+            ),
+            "after": (
+                "La perte de Jérusalem déclenche en Europe l'appel à "
+                "la troisième croisade, mais Saladin conserve le "
+                "contrôle de la ville."
+            ),
+            "narrative": [
+                "En juillet 1187, l'armée des États latins d'Orient, "
+                "affaiblie par des rivalités internes, subit une "
+                "défaite écrasante face aux forces du sultan ayyoubide "
+                "Saladin à la bataille de Hattin, en Galilée, perdant "
+                "l'essentiel de sa capacité militaire.",
+                "Profitant de cette victoire, Saladin marche sur "
+                "Jérusalem, tenue par les croisés depuis sa conquête en "
+                "1099 lors de la première croisade. La ville, presque "
+                "dépourvue de défenseurs après Hattin, ne peut résister "
+                "longtemps au siège.",
+                "Contrairement au massacre qui avait suivi la prise "
+                "chrétienne de la ville en 1099, Saladin négocie une "
+                "reddition le 2 octobre 1187, autorisant les habitants "
+                "chrétiens à quitter la ville moyennant rançon, un "
+                "geste de clémence resté célèbre dans les deux "
+                "traditions historiques.",
+            ],
+            "why_it_matters": (
+                "La perte de Jérusalem provoque un choc majeur en "
+                "Europe occidentale et déclenche l'appel à la troisième "
+                "croisade, mais la ville restera sous contrôle "
+                "musulman, à l'exception de brèves périodes, jusqu'au "
+                "XXe siècle."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le sultan ayyoubide Saladin reprend Jérusalem aux "
+                "croisés au terme d'une campagne éclair rendue possible "
+                "par la destruction de l'armée franque à Hattin, "
+                "épisode que la clémence de sa reddition a rendu "
+                "célèbre dans les deux traditions historiographiques, "
+                "occidentale et musulmane."
+            ),
+            "before": (
+                "Affaiblis par leurs divisions internes — notamment la "
+                "rivalité entre Guy de Lusignan et Raymond III de "
+                "Tripoli — les États latins d'Orient subissent une "
+                "défaite écrasante face à Saladin à la bataille de "
+                "Hattin, où la quasi-totalité de l'élite militaire "
+                "franque, y compris la relique de la Vraie Croix, est "
+                "capturée."
+            ),
+            "during": (
+                "Après un court siège mené avec une habileté "
+                "diplomatique autant que militaire, la garnison "
+                "chrétienne de Jérusalem, menée par Balian d'Ibelin et "
+                "incapable de résister durablement, négocie une "
+                "reddition organisée qui préserve la population, à la "
+                "différence du bain de sang qui avait marqué la prise "
+                "croisée de 1099."
+            ),
+            "after": (
+                "La perte de Jérusalem déclenche en Europe l'appel à "
+                "la troisième croisade, menée notamment par Richard "
+                "Cœur de Lion, qui échouera à reprendre la ville mais "
+                "obtiendra un accès pour les pèlerins chrétiens par "
+                "traité, tandis que Saladin conserve durablement le "
+                "contrôle de la cité."
+            ),
+            "narrative": [
+                "En juillet 1187, l'armée des États latins d'Orient, "
+                "affaiblie par des rivalités internes entre barons "
+                "francs, subit une défaite écrasante face aux forces du "
+                "sultan ayyoubide Saladin à la bataille de Hattin, en "
+                "Galilée, perdant l'essentiel de sa capacité militaire "
+                "et voyant la relique de la Vraie Croix capturée.",
+                "Profitant de cette victoire, Saladin marche sur "
+                "Jérusalem, tenue par les croisés depuis sa conquête en "
+                "1099 lors de la première croisade. La ville, presque "
+                "dépourvue de défenseurs après Hattin et défendue "
+                "tant bien que mal par Balian d'Ibelin, ne peut résister "
+                "longtemps au siège.",
+                "Contrairement au massacre qui avait suivi la prise "
+                "chrétienne de la ville en 1099, Saladin négocie une "
+                "reddition organisée le 2 octobre 1187, autorisant les "
+                "habitants chrétiens à quitter la ville moyennant "
+                "rançon — un geste de clémence resté célèbre dans les "
+                "deux traditions historiques et qui contribuera "
+                "durablement à sa réputation chevaleresque en Occident "
+                "même.",
+            ],
+            "why_it_matters": (
+                "La perte de Jérusalem provoque un choc majeur en "
+                "Europe occidentale et déclenche l'appel à la troisième "
+                "croisade, mais la ville restera sous contrôle "
+                "musulman, à l'exception de brèves périodes, jusqu'au "
+                "XXe siècle, tandis que la figure de Saladin, "
+                "notamment grâce à sa clémence de 1187, deviendra "
+                "paradoxalement un modèle de chevalerie admiré jusque "
+                "dans la littérature occidentale médiévale."
+            ),
+        },
+    },
+    "prise-de-grenade": {
+        "enfant": {
+            "summary": (
+                "Le 2 janvier 1492, les rois d'Espagne prennent "
+                "Grenade, la dernière ville musulmane du pays. C'est "
+                "la fin de huit siècles de présence musulmane en "
+                "Espagne."
+            ),
+            "before": (
+                "Grenade est la dernière ville musulmane d'Espagne, "
+                "après des siècles de reconquête par les royaumes "
+                "chrétiens."
+            ),
+            "during": (
+                "Après un long siège, le sultan Boabdil rend la ville "
+                "sans combattre et part en exil."
+            ),
+            "after": (
+                "Cette même année, les rois d'Espagne financent aussi "
+                "le voyage de Christophe Colomb."
+            ),
+            "narrative": [
+                "Depuis le VIIIe siècle, l'Espagne chrétienne "
+                "reconquiert petit à petit son territoire. Au XVe "
+                "siècle, il ne reste que Grenade aux mains des "
+                "musulmans.",
+                "Isabelle et Ferdinand, les rois d'Espagne, attaquent "
+                "Grenade pendant plusieurs années.",
+                "Le 2 janvier 1492, le sultan Boabdil rend la ville et "
+                "part en exil au Maroc.",
+            ],
+            "why_it_matters": (
+                "Cette victoire met fin à huit siècles de présence "
+                "musulmane en Espagne, et permet de financer le voyage "
+                "de Christophe Colomb la même année."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Les Rois Catholiques Isabelle de Castille et "
+                "Ferdinand d'Aragon s'emparent de Grenade, dernier "
+                "royaume musulman d'Espagne, achevant huit siècles de "
+                "Reconquista."
+            ),
+            "before": (
+                "Le royaume nasride de Grenade, dernier territoire "
+                "musulman d'Al-Andalus, résiste depuis des décennies "
+                "face à l'avancée des royaumes chrétiens espagnols."
+            ),
+            "during": (
+                "Après un long siège, le sultan Boabdil rend la ville "
+                "aux souverains catholiques sans combat final, "
+                "quittant l'Alhambra pour l'exil."
+            ),
+            "after": (
+                "La chute de Grenade marque la fin de huit siècles de "
+                "présence musulmane en Espagne et permet de financer, "
+                "la même année, l'expédition de Christophe Colomb."
+            ),
+            "narrative": [
+                "Depuis la conquête musulmane du VIIIe siècle, "
+                "l'Espagne chrétienne mène par étapes une reconquête "
+                "connue sous le nom de Reconquista.",
+                "Isabelle et Ferdinand, dont le mariage a uni les deux "
+                "principaux royaumes chrétiens d'Espagne, lancent une "
+                "campagne de plusieurs années contre Grenade.",
+                "Après un siège prolongé, le sultan Boabdil capitule et "
+                "remet les clés de la ville aux souverains catholiques "
+                "le 2 janvier 1492, avant de partir en exil au Maroc.",
+            ],
+            "why_it_matters": (
+                "La chute de Grenade met fin à huit siècles de "
+                "présence musulmane en Espagne et permet aux Rois "
+                "Catholiques de financer, la même année, l'expédition "
+                "de Christophe Colomb."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Les Rois Catholiques Isabelle de Castille et "
+                "Ferdinand d'Aragon s'emparent de Grenade, dernier "
+                "royaume musulman d'Espagne, achevant huit siècles de "
+                "Reconquista."
+            ),
+            "before": (
+                "Le royaume nasride de Grenade, dernier territoire "
+                "musulman d'Al-Andalus, résiste depuis des décennies "
+                "face à l'avancée des royaumes chrétiens espagnols."
+            ),
+            "during": (
+                "Après un long siège, le sultan Boabdil rend la ville "
+                "aux souverains catholiques sans combat final, "
+                "quittant l'Alhambra pour l'exil."
+            ),
+            "after": (
+                "La chute de Grenade marque la fin de huit siècles de "
+                "présence musulmane en Espagne et permet aux Rois "
+                "Catholiques de financer, la même année, l'expédition "
+                "de Christophe Colomb."
+            ),
+            "narrative": [
+                "Depuis la conquête musulmane du VIIIe siècle, "
+                "l'Espagne chrétienne mène par étapes une reconquête "
+                "connue sous le nom de Reconquista. Au XVe siècle, il "
+                "ne subsiste plus qu'un seul territoire musulman dans "
+                "la péninsule : le royaume nasride de Grenade.",
+                "Isabelle Ire de Castille et Ferdinand II d'Aragon, "
+                "dont le mariage a uni les deux principaux royaumes "
+                "chrétiens d'Espagne, lancent une campagne de plusieurs "
+                "années contre Grenade, affaiblie par des divisions "
+                "internes entre prétendants au trône nasride.",
+                "Après un siège prolongé, le sultan Boabdil (Muhammad "
+                "XII) capitule et remet les clés de la ville et de la "
+                "forteresse de l'Alhambra aux souverains catholiques le "
+                "2 janvier 1492, avant de partir en exil au Maroc.",
+            ],
+            "why_it_matters": (
+                "La chute de Grenade met fin à huit siècles de "
+                "présence musulmane en Espagne et permet aux Rois "
+                "Catholiques, la même année 1492, de financer "
+                "l'expédition de Christophe Colomb vers les Amériques, "
+                "deux événements qui redessinent durablement l'histoire "
+                "mondiale."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Les Rois Catholiques Isabelle de Castille et "
+                "Ferdinand d'Aragon s'emparent de Grenade au terme "
+                "d'une guerre de dix ans marquée autant par les "
+                "divisions dynastiques nasrides que par l'avancée "
+                "militaire chrétienne, achevant huit siècles de "
+                "Reconquista dans une année 1492 qui redessine "
+                "durablement l'histoire mondiale."
+            ),
+            "before": (
+                "Le royaume nasride de Grenade, dernier territoire "
+                "musulman d'Al-Andalus, résiste depuis des décennies "
+                "face à l'avancée des royaumes chrétiens espagnols, "
+                "affaibli en fin de compte moins par la pression "
+                "militaire extérieure que par une guerre civile interne "
+                "opposant Boabdil à son propre père puis à son oncle "
+                "pour le trône nasride."
+            ),
+            "during": (
+                "Après une guerre de dix ans (1482-1492) menée "
+                "méthodiquement place forte par place forte grâce à une "
+                "artillerie de siège moderne, le sultan Boabdil rend la "
+                "ville aux souverains catholiques sans combat final, "
+                "négociant des conditions de capitulation initialement "
+                "clémentes envers la population musulmane restante "
+                "avant leur violation ultérieure."
+            ),
+            "after": (
+                "La chute de Grenade marque la fin de huit siècles de "
+                "présence musulmane en Espagne et permet aux Rois "
+                "Catholiques de financer, la même année, l'expédition "
+                "de Christophe Colomb, tandis que les conditions de "
+                "tolérance religieuse initialement promises aux "
+                "musulmans et juifs grenadins seront rapidement remises "
+                "en cause, aboutissant à des expulsions et conversions "
+                "forcées dans les décennies suivantes."
+            ),
+            "narrative": [
+                "Depuis la conquête musulmane du VIIIe siècle, "
+                "l'Espagne chrétienne mène par étapes une reconquête "
+                "connue sous le nom de Reconquista. Au XVe siècle, il "
+                "ne subsiste plus qu'un seul territoire musulman dans "
+                "la péninsule : le royaume nasride de Grenade, déjà "
+                "fragilisé par une guerre civile dynastique opposant "
+                "Boabdil à son père puis à son oncle.",
+                "Isabelle Ire de Castille et Ferdinand II d'Aragon, "
+                "dont le mariage a uni les deux principaux royaumes "
+                "chrétiens d'Espagne, lancent une campagne de dix ans "
+                "contre Grenade, menée méthodiquement place forte par "
+                "place forte grâce à une artillerie de siège moderne et "
+                "profitant des divisions internes entre prétendants au "
+                "trône nasride.",
+                "Après ce siège prolongé, le sultan Boabdil (Muhammad "
+                "XII) capitule et remet les clés de la ville et de la "
+                "forteresse de l'Alhambra aux souverains catholiques le "
+                "2 janvier 1492, avant de partir en exil au Maroc, "
+                "malgré des conditions de capitulation initialement "
+                "clémentes qui seront rapidement violées par les "
+                "nouvelles autorités.",
+            ],
+            "why_it_matters": (
+                "La chute de Grenade met fin à huit siècles de "
+                "présence musulmane en Espagne et permet aux Rois "
+                "Catholiques, la même année 1492, de financer "
+                "l'expédition de Christophe Colomb vers les Amériques "
+                "et de décréter l'expulsion des juifs d'Espagne, faisant "
+                "de cette seule année l'un des tournants les plus "
+                "denses de l'histoire mondiale, entre unification "
+                "religieuse forcée en Espagne et ouverture d'un nouveau "
+                "continent à la colonisation européenne."
+            ),
+        },
+    },
 }
 
 
