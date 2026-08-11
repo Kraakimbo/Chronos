@@ -5620,6 +5620,406 @@ CONTENT_BY_LEVEL = {
             ),
         },
     },
+    "siege-de-bagdad-1258": {
+        "enfant": {
+            "summary": (
+                "En 1258, l'armée mongole détruit la ville de Bagdad, "
+                "qui était un grand centre du savoir dans le monde "
+                "musulman."
+            ),
+            "before": (
+                "Bagdad est depuis très longtemps une ville pleine de "
+                "savants, de livres et de bibliothèques."
+            ),
+            "during": (
+                "L'armée mongole d'Hulagu Khan attaque et détruit la "
+                "ville en moins de deux semaines."
+            ),
+            "after": (
+                "Les bibliothèques sont brûlées, beaucoup d'habitants "
+                "sont tués. C'est un grand coup pour le savoir dans le "
+                "monde musulman."
+            ),
+            "narrative": [
+                "Bagdad est depuis longtemps une grande ville de "
+                "savants, avec d'immenses bibliothèques.",
+                "En 1258, l'armée mongole d'Hulagu Khan attaque la "
+                "ville. Après moins de deux semaines, les défenses "
+                "tombent.",
+                "La destruction est terrible : les bibliothèques sont "
+                "brûlées, beaucoup d'habitants meurent, et le chef de "
+                "la ville est tué.",
+            ],
+            "why_it_matters": (
+                "Cette destruction met fin à une longue période où "
+                "Bagdad était un des plus grands centres du savoir au "
+                "monde."
+            ),
+        },
+        "college": {
+            "summary": (
+                "L'armée mongole d'Hulagu Khan met à sac Bagdad, "
+                "capitale du califat abbasside, mettant fin à cinq "
+                "siècles d'âge d'or intellectuel du monde musulman."
+            ),
+            "before": (
+                "Bagdad est depuis le VIIIe siècle le cœur "
+                "intellectuel du monde musulman, abritant la Maison de "
+                "la Sagesse et d'immenses bibliothèques."
+            ),
+            "during": (
+                "Après un siège de moins de deux semaines, les troupes "
+                "mongoles d'Hulagu Khan, petit-fils de Gengis Khan, "
+                "percent les défenses et pillent la ville."
+            ),
+            "after": (
+                "Le dernier calife abbasside est exécuté, la ville "
+                "est largement détruite, marquant la fin du califat "
+                "abbasside."
+            ),
+            "narrative": [
+                "Depuis sa fondation au VIIIe siècle, Bagdad est la "
+                "capitale du califat abbasside et l'un des plus grands "
+                "centres intellectuels du monde, abritant la Maison de "
+                "la Sagesse.",
+                "En 1258, Hulagu Khan, petit-fils de Gengis Khan, mène "
+                "une armée mongole jusqu'aux portes de Bagdad. Le "
+                "siège dure moins de deux semaines : le 10 février, "
+                "les défenses cèdent.",
+                "Le sac de Bagdad qui suit est d'une violence extrême "
+                ": des centaines de milliers d'habitants sont tués, les "
+                "bibliothèques incendiées. Le calife est exécuté "
+                "quelques jours plus tard.",
+            ],
+            "why_it_matters": (
+                "La destruction de Bagdad met fin à cinq siècles d'âge "
+                "d'or intellectuel abbasside et marque un tournant "
+                "dans le déclin scientifique du monde musulman "
+                "médiéval."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "L'armée mongole d'Hulagu Khan met à sac Bagdad, "
+                "capitale du califat abbasside, mettant fin à cinq "
+                "siècles d'âge d'or intellectuel du monde musulman."
+            ),
+            "before": (
+                "Bagdad est depuis le VIIIe siècle le cœur "
+                "intellectuel et culturel du monde musulman, abritant "
+                "la Maison de la Sagesse et d'immenses bibliothèques."
+            ),
+            "during": (
+                "Après un siège de moins de deux semaines, les troupes "
+                "mongoles d'Hulagu Khan, petit-fils de Gengis Khan, "
+                "percent les défenses et pillent systématiquement la "
+                "ville."
+            ),
+            "after": (
+                "Le dernier calife abbasside est exécuté, la ville "
+                "est largement détruite et sa population décimée, "
+                "marquant la fin du califat abbasside."
+            ),
+            "narrative": [
+                "Depuis sa fondation au VIIIe siècle, Bagdad est la "
+                "capitale du califat abbasside et l'un des plus grands "
+                "centres intellectuels du monde, abritant la Maison de "
+                "la Sagesse où savants et traducteurs préservent et "
+                "enrichissent le savoir grec, perse et indien.",
+                "En 1258, Hulagu Khan, petit-fils de Gengis Khan, mène "
+                "une armée mongole jusqu'aux portes de Bagdad après que "
+                "le calife Al-Musta'sim a refusé de se soumettre. Le "
+                "siège dure moins de deux semaines : le 10 février, "
+                "les défenses de la ville cèdent et les troupes "
+                "mongoles s'y répandent.",
+                "Le sac de Bagdad qui suit est d'une violence extrême "
+                ": des centaines de milliers d'habitants sont tués, les "
+                "bibliothèques incendiées, leurs manuscrits jetés dans "
+                "le Tigre au point, selon la légende, de teinter le "
+                "fleuve d'encre. Le calife Al-Musta'sim est exécuté "
+                "quelques jours plus tard.",
+            ],
+            "why_it_matters": (
+                "La destruction de Bagdad met fin à cinq siècles d'âge "
+                "d'or intellectuel abbasside et marque, pour de "
+                "nombreux historiens, un tournant dans le déclin "
+                "scientifique et culturel du monde musulman médiéval, "
+                "dont les effets se feront sentir pendant des siècles."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "L'armée mongole d'Hulagu Khan met à sac Bagdad, "
+                "capitale du califat abbasside depuis plus de cinq "
+                "siècles, dans l'un des massacres urbains les plus "
+                "documentés du Moyen Âge, mettant fin à un âge d'or "
+                "intellectuel dont l'ampleur des pertes reste débattue "
+                "par les historiens."
+            ),
+            "before": (
+                "Bagdad est depuis le VIIIe siècle le cœur "
+                "intellectuel du monde musulman, abritant la Maison de "
+                "la Sagesse, où savants et traducteurs préservent et "
+                "enrichissent le savoir grec, perse et indien, même si "
+                "le califat abbasside a déjà perdu l'essentiel de son "
+                "autorité politique réelle au profit de dynasties "
+                "locales bien avant 1258."
+            ),
+            "during": (
+                "Après un siège de moins de deux semaines, les troupes "
+                "mongoles d'Hulagu Khan, petit-fils de Gengis Khan et "
+                "conseillé par des ministres perses hostiles au "
+                "califat, percent les défenses et pillent "
+                "systématiquement la ville, épargnant toutefois les "
+                "chrétiens et certains savants sur intercession de "
+                "conseillers proches du khan."
+            ),
+            "after": (
+                "Le dernier calife abbasside, Al-Musta'sim, est "
+                "exécuté selon la tradition mongole sans effusion de "
+                "sang royal — roulé dans un tapis puis piétiné par des "
+                "chevaux —, la ville est largement détruite et sa "
+                "population décimée, marquant la fin institutionnelle "
+                "du califat abbasside, dont une branche symbolique "
+                "survivra néanmoins au Caire sous protection mamelouke."
+            ),
+            "narrative": [
+                "Depuis sa fondation au VIIIe siècle, Bagdad est la "
+                "capitale du califat abbasside et l'un des plus grands "
+                "centres intellectuels du monde, abritant la Maison de "
+                "la Sagesse où savants et traducteurs préservent et "
+                "enrichissent le savoir grec, perse et indien, même si "
+                "le pouvoir politique réel du calife s'était largement "
+                "délité au profit de dynasties locales bien avant "
+                "l'arrivée des Mongols.",
+                "En 1258, Hulagu Khan, petit-fils de Gengis Khan, mène "
+                "une armée mongole jusqu'aux portes de Bagdad après que "
+                "le calife Al-Musta'sim, mal conseillé, a refusé de se "
+                "soumettre. Le siège dure moins de deux semaines : le "
+                "10 février, les défenses de la ville cèdent et les "
+                "troupes mongoles s'y répandent, épargnant néanmoins, "
+                "sur intercession de certains conseillers, les "
+                "communautés chrétiennes et quelques savants.",
+                "Le sac de Bagdad qui suit est d'une violence extrême, "
+                "documentée par plusieurs chroniqueurs contemporains : "
+                "des centaines de milliers d'habitants sont tués — un "
+                "chiffre que l'historiographie moderne tend toutefois à "
+                "revoir à la baisse par rapport aux estimations "
+                "médiévales —, les bibliothèques incendiées, leurs "
+                "manuscrits jetés dans le Tigre au point, selon la "
+                "légende, de teinter le fleuve d'encre. Le calife est "
+                "exécuté quelques jours plus tard.",
+            ],
+            "why_it_matters": (
+                "La destruction de Bagdad met fin à cinq siècles d'âge "
+                "d'or intellectuel abbasside et marque, pour de "
+                "nombreux historiens, un tournant dans le déclin "
+                "scientifique et culturel du monde musulman médiéval, "
+                "même si certains chercheurs contemporains nuancent "
+                "l'ampleur de cette rupture en soulignant le déclin "
+                "politique déjà bien engagé du califat avant 1258."
+            ),
+        },
+    },
+    "mort-de-barbe-noire": {
+        "enfant": {
+            "summary": (
+                "Le 22 novembre 1718, le pirate Barbe Noire est tué "
+                "pendant un combat naval. Sa mort marque la fin de "
+                "l'époque des grands pirates."
+            ),
+            "before": (
+                "Barbe Noire était un pirate très célèbre et effrayant "
+                "dans les Caraïbes."
+            ),
+            "during": (
+                "Un officier britannique, Robert Maynard, attaque le "
+                "bateau de Barbe Noire. Un combat éclate sur le pont."
+            ),
+            "after": (
+                "Barbe Noire est tué au combat. Sa tête est coupée et "
+                "montrée sur le bateau de son vainqueur."
+            ),
+            "narrative": [
+                "Edward Teach, surnommé « Barbe Noire », est l'un des "
+                "pirates les plus célèbres et effrayants des Caraïbes.",
+                "En 1718, un officier britannique nommé Robert Maynard "
+                "est envoyé pour le capturer.",
+                "Le 22 novembre 1718, un combat éclate entre les deux "
+                "hommes. Barbe Noire est tué après un combat très "
+                "violent.",
+            ],
+            "why_it_matters": (
+                "La mort de Barbe Noire marque la fin d'une époque où "
+                "les pirates faisaient très peur sur les mers."
+            ),
+        },
+        "college": {
+            "summary": (
+                "Le célèbre pirate Edward Teach, dit « Barbe Noire », "
+                "est tué lors d'un abordage naval, marquant le déclin "
+                "de l'âge d'or de la piraterie."
+            ),
+            "before": (
+                "Après avoir terrorisé le commerce dans les Caraïbes, "
+                "Barbe Noire s'est retiré en Caroline du Nord, où il "
+                "négocie discrètement avec les autorités locales."
+            ),
+            "during": (
+                "Le lieutenant Robert Maynard, envoyé par le "
+                "gouverneur de Virginie, surprend Barbe Noire à "
+                "Ocracoke ; un combat s'ensuit sur le pont du navire."
+            ),
+            "after": (
+                "Barbe Noire est tué au terme du combat, décapité, et "
+                "sa tête exposée à la proue du navire de Maynard."
+            ),
+            "narrative": [
+                "Edward Teach, surnommé « Barbe Noire », devient l'un "
+                "des pirates les plus redoutés des Caraïbes au début du "
+                "XVIIIe siècle.",
+                "En 1718, il se retire à Ocracoke, en Caroline du "
+                "Nord. Le gouverneur de Virginie envoie une expédition "
+                "sous le commandement du lieutenant Robert Maynard pour "
+                "le capturer.",
+                "Le 22 novembre 1718, un combat au sabre s'engage sur "
+                "le pont. Barbe Noire, blessé à de multiples reprises, "
+                "finit par être tué.",
+            ],
+            "why_it_matters": (
+                "La mort de Barbe Noire marque symboliquement le "
+                "déclin de l'âge d'or de la piraterie caribéenne."
+            ),
+        },
+        "lycee": {
+            "summary": (
+                "Le célèbre pirate Edward Teach, dit « Barbe Noire », "
+                "est tué lors d'un abordage naval, marquant le déclin "
+                "de l'âge d'or de la piraterie dans les Caraïbes et "
+                "l'Atlantique."
+            ),
+            "before": (
+                "Après avoir terrorisé le commerce dans les Caraïbes "
+                "et jusqu'à bloquer le port de Charleston avec son "
+                "navire amiral, Barbe Noire s'est retiré en Caroline du "
+                "Nord, où il négocie discrètement avec les autorités "
+                "locales."
+            ),
+            "during": (
+                "Le lieutenant Robert Maynard, envoyé par le "
+                "gouverneur de Virginie, surprend Barbe Noire à "
+                "Ocracoke ; un combat au corps à corps s'ensuit sur le "
+                "pont du navire."
+            ),
+            "after": (
+                "Barbe Noire est tué au terme du combat, décapité, et "
+                "sa tête exposée à la proue du navire de Maynard en "
+                "guise d'avertissement aux autres pirates."
+            ),
+            "narrative": [
+                "Edward Teach, surnommé « Barbe Noire » pour son "
+                "épaisse barbe noire qu'il tressait et enflammait "
+                "parfois au combat pour effrayer ses adversaires, "
+                "devient l'un des pirates les plus redoutés des "
+                "Caraïbes et de la côte atlantique américaine au début "
+                "du XVIIIe siècle, période connue comme l'âge d'or de "
+                "la piraterie.",
+                "En 1718, après avoir bloqué le port de Charleston "
+                "avec son navire amiral le Queen Anne's Revenge, il se "
+                "retire à Ocracoke, en Caroline du Nord, où il profite "
+                "d'une amnistie tout en poursuivant discrètement ses "
+                "activités. Le gouverneur de Virginie, inquiet, envoie "
+                "une expédition navale sous le commandement du "
+                "lieutenant Robert Maynard pour le capturer.",
+                "Le 22 novembre 1718, les navires de Maynard rejoignent "
+                "Barbe Noire à Ocracoke. Après un échange de tirs, un "
+                "combat au sabre s'engage sur le pont. Barbe Noire, "
+                "blessé à de multiples reprises, finit par être tué. Sa "
+                "tête est tranchée et suspendue à la proue du navire de "
+                "Maynard.",
+            ],
+            "why_it_matters": (
+                "La mort de Barbe Noire marque symboliquement le "
+                "déclin de l'âge d'or de la piraterie caribéenne, alors "
+                "que les grandes puissances européennes intensifient "
+                "leur répression navale contre les pirates dans les "
+                "décennies suivantes."
+            ),
+        },
+        "etudiant_adulte": {
+            "summary": (
+                "Le pirate Edward Teach, dit « Barbe Noire », dont la "
+                "réputation terrifiante devait davantage à sa mise en "
+                "scène théâtrale qu'à une violence documentée envers "
+                "ses victimes, est tué lors d'un abordage naval qui "
+                "devient l'un des épisodes les plus mythifiés de l'âge "
+                "d'or de la piraterie."
+            ),
+            "before": (
+                "Après avoir terrorisé le commerce dans les Caraïbes "
+                "et bloqué le port de Charleston avec son navire "
+                "amiral le Queen Anne's Revenge, Barbe Noire s'est "
+                "retiré à Ocracoke, en Caroline du Nord, où il "
+                "bénéficie d'une amnistie royale tout en poursuivant "
+                "discrètement ses activités, probablement avec la "
+                "complicité tacite du gouverneur local."
+            ),
+            "during": (
+                "Le lieutenant Robert Maynard, envoyé par le "
+                "gouverneur de Virginie soucieux de préserver le "
+                "commerce colonial, surprend Barbe Noire à Ocracoke à "
+                "l'aide d'un stratagème dissimulant l'essentiel de son "
+                "équipage sous le pont ; un combat au corps à corps "
+                "particulièrement acharné s'ensuit, Barbe Noire "
+                "recevant selon les récits une vingtaine de blessures "
+                "avant de succomber."
+            ),
+            "after": (
+                "Barbe Noire est tué au terme du combat, décapité, et "
+                "sa tête exposée à la proue du navire de Maynard en "
+                "guise d'avertissement, tandis que les fouilles menées "
+                "depuis 1996 sur l'épave présumée du Queen Anne's "
+                "Revenge continuent d'alimenter la documentation "
+                "historique de sa légende."
+            ),
+            "narrative": [
+                "Edward Teach, surnommé « Barbe Noire » pour son "
+                "épaisse barbe noire qu'il tressait et enflammait "
+                "parfois au combat pour effrayer ses adversaires, "
+                "devient l'un des pirates les plus redoutés des "
+                "Caraïbes et de la côte atlantique américaine au début "
+                "du XVIIIe siècle — sa réputation de cruauté, notent "
+                "les historiens, reposant davantage sur cette mise en "
+                "scène intimidante que sur des actes de violence "
+                "avérés envers ses prisonniers.",
+                "En 1718, après avoir bloqué le port de Charleston "
+                "avec son navire amiral le Queen Anne's Revenge, il se "
+                "retire à Ocracoke, en Caroline du Nord, où il profite "
+                "d'une amnistie royale tout en poursuivant discrètement "
+                "ses activités. Le gouverneur de Virginie, inquiet pour "
+                "le commerce colonial, envoie une expédition navale "
+                "sous le commandement du lieutenant Robert Maynard.",
+                "Le 22 novembre 1718, les navires de Maynard rejoignent "
+                "Barbe Noire à Ocracoke à l'aide d'un stratagème "
+                "dissimulant l'essentiel de l'équipage sous le pont. "
+                "Après un échange de tirs, un combat au sabre "
+                "particulièrement acharné s'engage ; Barbe Noire, "
+                "blessé à une vingtaine de reprises selon les récits, "
+                "finit par être tué. Sa tête est tranchée et suspendue "
+                "à la proue du navire de Maynard.",
+            ],
+            "why_it_matters": (
+                "La mort de Barbe Noire marque symboliquement le "
+                "déclin de l'âge d'or de la piraterie caribéenne, alors "
+                "que les grandes puissances européennes intensifient "
+                "leur répression navale dans les décennies suivantes, "
+                "tout en léguant à la postérité l'une des figures les "
+                "plus mythifiées — et sans doute les plus "
+                "surestimées dans sa cruauté réelle — de l'imaginaire "
+                "collectif de la piraterie."
+            ),
+        },
+    },
 }
 
 
