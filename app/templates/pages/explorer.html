@@ -149,16 +149,6 @@
     </div>
   </div>
 
-  <h3 class="font-headline-md text-xl md:text-2xl mt-2xl mb-lg">Événement du jour</h3>
-  <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="block relative h-[220px] rounded-[20px] overflow-hidden border border-[#E2DFD7] shadow-sm bg-surface-container flex items-end">
-    <div class="absolute inset-0">{{ event_cover_photo(event.slug) }}</div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-    <div class="relative p-lg">
-      <span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-[10px] mb-sm inline-block">{{ event.era }}</span>
-      <h4 class="font-display-lg text-2xl mb-xs text-white">{{ event.title }}</h4>
-      <p class="text-sm text-white/80">{{ event.summary }}</p>
-    </div>
-  </a>
   {% endif %}
   {% endif %}
 </main>

@@ -7,7 +7,7 @@
   <section class="relative w-full py-2xl overflow-hidden">
     <div class="absolute inset-0">
       {% if cover %}
-      <img src="{{ cover.url }}" alt="{{ cover.subject or event.title }}" class="w-full h-full object-cover">
+      <img src="{{ cover.url }}" alt="{{ cover.subject or event.title }}" class="w-full h-full object-cover" onerror="this.onerror=null;this.style.display='none';">
       {% else %}
       {{ event_illustration(event.slug) }}
       {% endif %}
@@ -124,7 +124,7 @@
       {% set img = images[type_key] %}
       {% set info = image_type_info[type_key] %}
       <a href="{{ url_for('main.event_image_detail', slug=event.slug, image_type=type_key) }}" class="group relative h-64 rounded-2xl overflow-hidden border border-outline-variant/30 ambient-shadow block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-        <img src="{{ img.url }}" alt="{{ img.subject or info.label }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-focus:scale-105">
+        <img src="{{ img.url }}" alt="{{ img.subject or info.label }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-focus:scale-105" onerror="this.onerror=null;this.style.display='none';">
         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
         <span class="absolute top-sm left-sm px-sm py-xs bg-black/50 backdrop-blur-sm text-white text-[10px] font-label-caps tracking-widest uppercase rounded-full">{{ info.label }}</span>
         <span class="absolute top-sm right-sm w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm text-white flex items-center justify-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
