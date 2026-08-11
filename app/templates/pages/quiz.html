@@ -1,6 +1,7 @@
 {% extends "base_app.html" %}
 {% from "_icons.html" import token_icon %}
 {% block title %}Quiz - Chronos{% endblock %}
+{% block meta_description %}Réponds au Quiz Quotidien de Chronos et gagne de l'XP en testant tes connaissances d'histoire.{% endblock %}
 {% block content %}
 <main class="max-w-[900px] mx-auto px-margin-mobile pt-lg pb-2xl flex flex-col gap-lg">
   <div class="flex items-center gap-sm">
@@ -44,7 +45,11 @@
   <div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 ambient-shadow p-xl text-center flex flex-col items-center">
     {% if result.correct %}
       <h3 class="font-display-lg text-2xl text-primary mb-xs">Bonne réponse !</h3>
+      {% if result.reward_granted %}
       <p class="font-stat-lg text-lg text-primary-container mb-lg flex items-center justify-center gap-1">+20 XP · +5 {{ token_icon(18) }}</p>
+      {% else %}
+      <p class="font-body-base text-on-surface-variant mb-lg">Tu as déjà récupéré la récompense du Quiz Quotidien aujourd'hui — reviens demain pour de nouveaux XP !</p>
+      {% endif %}
     {% else %}
       <h3 class="font-display-lg text-2xl text-error mb-xs">Pas tout à fait...</h3>
       <p class="font-body-base text-on-surface-variant mb-lg">La bonne réponse est surlignée en or ci-dessus.</p>

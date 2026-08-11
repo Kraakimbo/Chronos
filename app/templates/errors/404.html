@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Page introuvable - Chronos{% endblock %}
+{% block content %}
+<div class="text-center mb-xl">
+  <span class="font-headline text-6xl text-primary block mb-md">404</span>
+  <h1 class="font-headline text-2xl text-on-surface mb-sm">Cet événement n'existe pas (encore)</h1>
+  <p class="font-body text-on-surface-variant">Le lien suivi est cassé ou la page a été déplacée. Rien n'est perdu : reprends ton exploration depuis l'accueil.</p>
+</div>
+<a href="{{ url_for('main.home') if current_user.is_authenticated else url_for('auth.login') }}" class="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body font-bold rounded-full hover:opacity-90 transition-opacity flex items-center justify-center">
+  Retour à l'accueil
+</a>
+{% endblock %}

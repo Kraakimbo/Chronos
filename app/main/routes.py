@@ -29,9 +29,10 @@ ERAS = [
 
 
 class QuizResult:
-    def __init__(self, chosen_index: int, correct: bool):
+    def __init__(self, chosen_index: int, correct: bool, reward_granted: bool = False):
         self.chosen_index = chosen_index
         self.correct = correct
+        self.reward_granted = reward_granted
 
 
 @main_bp.route("/")
@@ -155,10 +156,11 @@ def quiz():
             abort(400)
 
         correct = chosen_index == question["correct_index"]
+        reward_granted = False
         if correct:
-            current_user.record_quiz_win()
+            reward_granted = current_user.record_quiz_win()
             db.session.commit()
-        result = QuizResult(chosen_index=chosen_index, correct=correct)
+        result = QuizResult(chosen_index=chosen_index, correct=correct, reward_granted=reward_granted)
     else:
         base_question = QUIZ_QUESTIONS[random.choice(list(QUIZ_QUESTIONS))]
         question = resolve_quiz(base_question, study_level)

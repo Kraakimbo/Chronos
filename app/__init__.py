@@ -2,7 +2,7 @@ import logging
 import os
 
 from dotenv import load_dotenv
-from flask import Flask
+from flask import Flask, render_template
 from flask_login import LoginManager
 from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
@@ -48,9 +48,11 @@ def create_app(config_object="config.Config"):
 
     from app.auth.routes import auth_bp
     from app.main.routes import main_bp
+    from app.public.routes import public_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
+    app.register_blueprint(public_bp)
 
     from app.data import AVATARS
     from app.event_images import IMAGE_TYPE_INFO, cover_image
@@ -73,6 +75,14 @@ def create_app(config_object="config.Config"):
     @login_manager.user_loader
     def load_user(user_id):
         return db.session.get(User, int(user_id))
+
+    @app.errorhandler(404)
+    def not_found(_error):
+        return render_template("errors/404.html"), 404
+
+    @app.errorhandler(500)
+    def server_error(_error):
+        return render_template("errors/500.html"), 500
 
     with app.app_context():
         db.create_all()

@@ -45,13 +45,21 @@ class User(db.Model, UserMixin):
             return None
         return db.session.get(User, data.get("user_id"))
 
-    def record_quiz_win(self, xp_reward: int = 20, token_reward: int = 5) -> None:
+    def record_quiz_win(self, xp_reward: int = 20, token_reward: int = 5) -> bool:
+        """Grant the daily quiz reward once per calendar day.
+
+        Returns whether this call actually granted XP/tokens, so callers can
+        tell an already-claimed win from a fresh one instead of letting a
+        replayed quiz farm unlimited XP.
+        """
         today = date.today()
-        if self.last_quiz_date != today:
-            self.streak_days = (self.streak_days + 1) if self.last_quiz_date else 1
-            self.last_quiz_date = today
+        if self.last_quiz_date == today:
+            return False
+        self.streak_days = (self.streak_days + 1) if self.last_quiz_date else 1
+        self.last_quiz_date = today
         self.xp += xp_reward
         self.tokens += token_reward
+        return True
 
     def __repr__(self):
         return f"<User {self.username}>"

@@ -1,0 +1,49 @@
+{% from "_theme_toggle.html" import theme_toggle %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>{% block title %}Chronos — L'histoire du monde, expliquée simplement{% endblock %}</title>
+<meta name="description" content="{{ meta_description or "Chronos : découvre l'histoire du monde, événement par événement, avec un contenu adapté à ton niveau d'étude." }}">
+{% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
+<meta property="og:site_name" content="Chronos">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
+<meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+<meta property="og:description" content="{{ meta_description or "Chronos : découvre l'histoire du monde, événement par événement." }}">
+{% if canonical_url %}<meta property="og:url" content="{{ canonical_url }}">{% endif %}
+{% if cover %}<meta property="og:image" content="{{ cover.url }}">{% endif %}
+<meta name="twitter:card" content="{{ 'summary_large_image' if cover else 'summary' }}">
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='favicon.svg') }}">
+{% include "_theme.html" %}
+<link href="{{ url_for('static', filename='css/chronos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/playfair-display/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/plus-jakarta-sans/index.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='fonts/material-symbols/outlined.css') }}" rel="stylesheet">
+<style>
+  .ambient-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); }
+</style>
+{% block structured_data %}{% endblock %}
+</head>
+<body class="bg-background text-on-background font-body antialiased min-h-screen flex flex-col">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-primary focus:text-on-primary focus:px-md focus:py-sm focus:rounded-xl">Aller au contenu</a>
+
+<header class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md w-full sticky top-0 z-50 bg-surface/90 backdrop-blur border-b border-outline-variant/30">
+  <a href="{{ url_for('public.discover') }}" class="font-headline-md text-xl text-primary">Chronos</a>
+  <div class="flex items-center gap-sm">
+    {{ theme_toggle("w-9 h-9 rounded-full border border-outline-variant bg-surface-container-low flex items-center justify-center text-on-surface-variant") }}
+    <a href="{{ url_for('auth.login') }}" class="hidden sm:inline-flex items-center h-10 px-md rounded-full border border-outline-variant text-on-surface font-body-bold text-sm hover:bg-surface-container-low transition-colors">Se connecter</a>
+    <a href="{{ url_for('auth.register') }}" class="inline-flex items-center h-10 px-md rounded-full bg-on-surface text-surface-container-lowest font-body-bold text-sm hover:opacity-90 transition-opacity">Créer un compte</a>
+  </div>
+</header>
+
+<span id="main-content"></span>
+{% block content %}{% endblock %}
+
+<footer class="border-t border-outline-variant/20 py-lg text-center mt-auto">
+  <p class="font-label-caps text-[10px] text-secondary/60">
+    © 2026 Chronos. Contenu à but éducatif, rédigé à partir de sources historiques — images d'archives via Wikimedia Commons.
+  </p>
+</footer>
+</body>
+</html>

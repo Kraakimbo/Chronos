@@ -1,0 +1,66 @@
+// Single source of truth for Chronos' design tokens, shared by every page
+// (auth screens and the main app shell alike) instead of two independently
+// maintained copies. Regenerate app/static/css/chronos.css after editing
+// this file -- see frontend/README.md.
+module.exports = {
+  content: ["../app/templates/**/*.html"],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "var(--color-primary)",
+        "primary-container": "var(--color-primary-container)",
+        "primary-fixed-dim": "var(--color-primary-fixed-dim)",
+        "on-primary": "var(--color-on-primary)",
+        "on-primary-container": "var(--color-on-primary-container)",
+        "secondary": "var(--color-secondary)",
+        "on-secondary-container": "var(--color-on-secondary-container)",
+        "tertiary": "var(--color-tertiary)",
+        "tertiary-container": "var(--color-tertiary-container)",
+        "on-tertiary-container": "var(--color-on-tertiary-container)",
+        "background": "var(--color-background)",
+        "on-background": "var(--color-on-background)",
+        "surface": "var(--color-surface)",
+        "surface-bright": "var(--color-surface-bright)",
+        "surface-variant": "var(--color-surface-variant)",
+        "surface-container-lowest": "var(--color-surface-container-lowest)",
+        "surface-container-low": "var(--color-surface-container-low)",
+        "surface-container": "var(--color-surface-container)",
+        "surface-container-high": "var(--color-surface-container-high)",
+        "surface-container-highest": "var(--color-surface-container-highest)",
+        "on-surface": "var(--color-on-surface)",
+        "on-surface-variant": "var(--color-on-surface-variant)",
+        "outline": "var(--color-outline)",
+        "outline-variant": "var(--color-outline-variant)",
+        "error": "var(--color-error)",
+        "on-error": "var(--color-on-error)",
+        "error-container": "var(--color-error-container)",
+        "on-error-container": "var(--color-on-error-container)",
+      },
+      borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+      spacing: {
+        "xs": "4px", "sm": "8px", "md": "16px", "unit": "4px", "lg": "24px", "xl": "32px",
+        "2xl": "48px", "gutter": "16px", "margin-mobile": "20px", "margin-desktop": "40px",
+      },
+      fontFamily: {
+        "headline": ["Playfair Display", "serif"],
+        "body": ["Plus Jakarta Sans", "sans-serif"],
+        "headline-md": ["Playfair Display", "serif"],
+        "label-caps": ["Plus Jakarta Sans", "sans-serif"],
+        "display-lg": ["Playfair Display", "serif"],
+        "body-base": ["Plus Jakarta Sans", "sans-serif"],
+        "body-bold": ["Plus Jakarta Sans", "sans-serif"],
+        "stat-lg": ["Playfair Display", "serif"],
+      },
+      fontSize: {
+        "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "700" }],
+        "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "body-base": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "body-bold": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+        "stat-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/container-queries")],
+};

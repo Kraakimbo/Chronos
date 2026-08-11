@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Erreur - Chronos{% endblock %}
+{% block content %}
+<div class="text-center mb-xl">
+  <span class="font-headline text-6xl text-primary block mb-md">500</span>
+  <h1 class="font-headline text-2xl text-on-surface mb-sm">Une erreur est survenue de notre côté</h1>
+  <p class="font-body text-on-surface-variant">Ce n'est pas de ta faute — réessaie dans un instant. Si ça persiste, reviens un peu plus tard.</p>
+</div>
+<a href="{{ url_for('main.home') if current_user.is_authenticated else url_for('auth.login') }}" class="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body font-bold rounded-full hover:opacity-90 transition-opacity flex items-center justify-center">
+  Retour à l'accueil
+</a>
+{% endblock %}

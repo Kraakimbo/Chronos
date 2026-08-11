@@ -1,6 +1,7 @@
 {% extends "base_app.html" %}
 {% from "_illustrations.html" import event_cover_photo with context %}
-{% block title %}Chronos - Accueil{% endblock %}
+{% block title %}Accueil - Chronos{% endblock %}
+{% block meta_description %}{{ event.title }} : {{ event.summary }}{% endblock %}
 {% block content %}
 <main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col gap-2xl">
   <section class="flex flex-col gap-sm">
