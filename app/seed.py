@@ -81,7 +81,9 @@ def seed_admin_account() -> None:
             )
             continue
 
-        admin = User(username=username, email=email, study_level=study_level)
+        admin = User(
+            username=username, email=email, study_level=study_level, email_confirmed=True
+        )
         admin.set_password(password)
         db.session.add(admin)
         db.session.commit()

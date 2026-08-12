@@ -1,0 +1,11 @@
+Bonjour {{ user.username }},
+
+Bienvenue sur Chronos ! Pour confirmer ton adresse email, clique sur le
+lien ci-dessous (valable 3 jours) :
+
+{{ confirm_url }}
+
+Si tu n'es pas à l'origine de cette inscription, ignore simplement cet
+email.
+
+L'équipe Chronos
