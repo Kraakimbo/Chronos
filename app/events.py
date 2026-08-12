@@ -1,10 +1,18 @@
-"""Helpers for the "on this day" calendar: today's event, search, dates."""
+"""Helpers for the "on this day" calendar: today's event, search, dates.
+
+Events live in the historical_events table (see app.models.HistoricalEvent,
+seeded once from app.data.EVENTS -- see app.seed.seed_events). Every
+function here returns plain dicts shaped exactly like the old static
+EVENTS[slug] entries, via HistoricalEvent.to_dict(), so templates and
+app.level_content's overrides work unchanged regardless of the storage
+backend.
+"""
 
 import difflib
 import unicodedata
 from datetime import date
 
-from app.data import EVENTS
+from app.models import HistoricalEvent
 
 
 def _normalize(text):
@@ -24,10 +32,19 @@ def chronological_key(event):
 
 
 def events_list(chronological=False):
-    events = list(EVENTS.values())
+    events = [e.to_dict() for e in HistoricalEvent.query.all()]
     if chronological:
         events.sort(key=chronological_key)
     return events
+
+
+def get_event(slug):
+    event = HistoricalEvent.query.get(slug)
+    return event.to_dict() if event else None
+
+
+def all_slugs():
+    return [row[0] for row in HistoricalEvent.query.with_entities(HistoricalEvent.slug).all()]
 
 
 def today_french_label(today=None):

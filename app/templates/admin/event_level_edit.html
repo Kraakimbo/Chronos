@@ -1,0 +1,55 @@
+{% extends "base_app.html" %}
+{% block title %}Admin · {{ event.title }} ({{ level_labels[level] }}) - Chronos{% endblock %}
+{% block content %}
+<main class="max-w-[900px] mx-auto px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="flex items-center gap-sm mb-lg">
+    <a href="{{ url_for('admin.edit_event', slug=event.slug) }}" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" aria-label="Retour à l'événement">
+      <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+    </a>
+    <h2 class="font-display-lg text-2xl md:text-3xl text-on-surface">« {{ event.title }} »</h2>
+  </div>
+
+  <div class="flex flex-wrap gap-sm mb-lg">
+    <a href="{{ url_for('admin.edit_event', slug=event.slug) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">Texte de référence</a>
+    {% for lvl in levels %}
+    <span class="px-md py-sm rounded-full font-body-bold text-sm {{ 'bg-on-surface text-surface-container-lowest' if lvl == level else 'border border-outline-variant text-on-surface-variant' }}">
+      {% if lvl != level %}<a href="{{ url_for('admin.edit_event_level', slug=event.slug, level=lvl) }}" class="hover:opacity-80">{{ level_labels[lvl] }}</a>{% else %}{{ level_labels[lvl] }}{% endif %}
+    </span>
+    {% endfor %}
+  </div>
+
+  {% if not has_override %}
+  <p class="text-sm text-on-surface-variant bg-surface-container-low rounded-xl px-md py-sm mb-lg">
+    Aucun texte spécifique à ce niveau pour l'instant — le texte de référence est pré-rempli ci-dessous. Enregistrer créera une version propre à ce niveau.
+  </p>
+  {% endif %}
+
+  <form method="POST" novalidate class="flex flex-col gap-lg">
+    {{ form.hidden_tag() }}
+
+    {% macro field(f, rows=None) %}
+      <div>
+        <label class="block font-body-bold text-sm text-on-surface mb-xs" for="{{ f.id }}">{{ f.label.text }}</label>
+        {% if f.description %}
+          <p class="text-xs text-on-surface-variant mb-xs">{{ f.description }}</p>
+        {% endif %}
+        {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", rows=rows) }}
+        {% for error in f.errors %}
+          <p class="text-error text-xs mt-xs">{{ error }}</p>
+        {% endfor %}
+      </div>
+    {% endmacro %}
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      {{ field(form.summary, rows=2) }}
+      {{ field(form.before, rows=2) }}
+      {{ field(form.during, rows=2) }}
+      {{ field(form.after, rows=2) }}
+      {{ field(form.narrative, rows=10) }}
+      {{ field(form.why_it_matters, rows=3) }}
+    </div>
+
+    {{ form.submit(class_="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body-bold rounded-full hover:opacity-90 transition-opacity") }}
+  </form>
+</main>
+{% endblock %}

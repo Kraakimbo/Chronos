@@ -134,7 +134,7 @@ Pour te connecter directement sans remplir le formulaire `/auth/inscription`, aj
 | `ADMIN_EMAIL` | ton email |
 | `ADMIN_PASSWORD` | un mot de passe (8+ caractères, majuscule, minuscule, chiffre) |
 
-Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore. Va ensuite sur `/auth/connexion` avec ces identifiants. C'est un compte utilisateur classique (le projet n'a pas de rôle "administrateur" avec des permissions particulières côté app) — juste un raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement, puisque le disque gratuit de Render efface la base à chaque redémarrage.
+Au prochain déploiement/redémarrage, ce compte est créé automatiquement s'il n'existe pas encore. Va ensuite sur `/auth/connexion` avec ces identifiants. C'était à l'origine un simple raccourci pour éviter de repasser par le formulaire d'inscription à chaque redéploiement (puisque le disque gratuit de Render effaçait la base à chaque redémarrage) ; ces comptes ont maintenant aussi le rôle **admin** (`is_admin`, voir section suivante), qui donne accès à `/admin/evenements`.
 
 ⚠️ **Le mot de passe est resynchronisé à chaque démarrage** sur la valeur courante de `ADMIN_PASSWORD` (tant que l'identifiant *et* l'email correspondent exactement à un compte déjà créé) : change la variable dans Render puis redéploie, pas besoin de supprimer le compte avant. En contrepartie, si tu changes ce mot de passe *depuis l'app* (page profil, mot de passe oublié) sans retirer la variable d'environnement, il sera écrasé par `ADMIN_PASSWORD` au prochain redémarrage — retire la variable une fois que tu n'as plus besoin de ce raccourci. Si l'identifiant ou l'email est déjà pris par un **autre** compte (un vrai utilisateur inscrit normalement), ce compte-là n'est jamais modifié ; le bootstrap est simplement ignoré (visible dans les logs).
 
@@ -148,16 +148,36 @@ Pour un **deuxième compte** (ou plus), ajoute les mêmes 3 variables avec un su
 
 Continue avec `_3`, `_4`... pour d'autres comptes (jusqu'à 10 pris en charge).
 
+#### Éditer le contenu (panneau admin)
+
+Les 45 événements du calendrier (`app/data.py` à l'origine) et leurs 4 variantes de texte par niveau d'étude (`app/level_content.py` à l'origine) sont maintenant en base de données, éditables sans redéploiement via **`/admin/evenements`** (lien "Admin" dans la nav desktop, visible seulement pour un compte admin). Cette table est peuplée automatiquement une seule fois au premier démarrage à partir du contenu existant dans le code ; les éditions faites depuis l'admin ne sont ensuite jamais écrasées par un redéploiement.
+
+- **Texte de référence** (`/admin/evenements/<slug>/modifier`) : titre, dates, lieu, résumé/récit/personnages — c'est ce texte qui s'affiche sur l'aperçu public (`/decouvrir/...`).
+- **Texte par niveau d'étude** (`/admin/evenements/<slug>/niveau/<niveau>`) : la réécriture spécifique à chaque niveau (enfant/collège/lycée/étudiant-adulte), affichée aux utilisateurs connectés selon leur profil. Sans texte spécifique pour un niveau donné, le texte de référence sert de repli.
+
+Pour donner le rôle admin à un compte qui n'est pas un compte bootstrap `ADMIN_*` (ex. ton compte personnel déjà inscrit normalement), passe par le SQL Editor de Supabase :
+
+```sql
+UPDATE users SET is_admin = true WHERE username = 'ton_identifiant';
+```
+
+Les questions de quiz (`app/data.py:QUIZ_QUESTIONS`, `app/level_content.py:QUIZ_BY_LEVEL`) restent en code pour l'instant, hors périmètre de cette première étape.
+
 ### Structure
 
 ```
 migrations/                 # historique des migrations Alembic (voir "Migrations de base de données")
 app/
   __init__.py             # application factory (db, migrate, login manager, mail, CSRF, blueprints)
-  models.py                # modèles User et AccountEvent (auth + XP/tokens/série + jeton de reset + historique)
+  models.py                # User, AccountEvent, HistoricalEvent, EventLevelContent
   audit.py                  # journalisation des événements de compte (connexion, reset, ...)
-  data.py                   # contenu de démo (événements, quiz) — futur CMS/DB
+  data.py                   # source du seed initial des événements (voir app/seed.py) + banque de quiz
+  level_content.py           # source du seed initial du texte par niveau + résolution des overrides (DB)
   email.py                   # envoi (ou log local) de l'email de réinitialisation
+  seed.py                    # comptes bootstrap ADMIN_*, peuplement initial des événements/textes par niveau
+  admin/
+    forms.py                # formulaires d'édition événement / texte par niveau
+    routes.py                # /admin/evenements, /admin/evenements/<slug>/modifier|niveau/<niveau>
   auth/
     forms.py                # formulaires inscription / connexion / reset
     routes.py                # /auth/inscription, /connexion, /deconnexion, /mot-de-passe-oublie, /reinitialiser/<token>

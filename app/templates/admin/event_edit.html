@@ -1,0 +1,95 @@
+{% extends "base_app.html" %}
+{% block title %}Admin · {{ event.title }} - Chronos{% endblock %}
+{% block content %}
+<main class="max-w-[900px] mx-auto px-margin-mobile md:px-margin-desktop py-xl">
+  <div class="flex items-center gap-sm mb-lg">
+    <a href="{{ url_for('admin.events_list') }}" class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low" aria-label="Retour à la liste">
+      <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+    </a>
+    <h2 class="font-display-lg text-2xl md:text-3xl text-on-surface">Modifier « {{ event.title }} »</h2>
+  </div>
+
+  <div class="flex flex-wrap gap-sm mb-lg">
+    <span class="px-md py-sm rounded-full font-body-bold text-sm bg-on-surface text-surface-container-lowest">Texte de référence</span>
+    {% for lvl in levels %}
+    <a href="{{ url_for('admin.edit_event_level', slug=event.slug, level=lvl) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">{{ level_labels[lvl] }}</a>
+    {% endfor %}
+  </div>
+
+  <form method="POST" novalidate class="flex flex-col gap-lg">
+    {{ form.hidden_tag() }}
+
+    {% macro field(f, rows=None) %}
+      <div>
+        <label class="block font-body-bold text-sm text-on-surface mb-xs" for="{{ f.id }}">{{ f.label.text }}</label>
+        {% if f.description %}
+          <p class="text-xs text-on-surface-variant mb-xs">{{ f.description }}</p>
+        {% endif %}
+        {% if rows %}
+          {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", rows=rows) }}
+        {% else %}
+          {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none") }}
+        {% endif %}
+        {% for error in f.errors %}
+          <p class="text-error text-xs mt-xs">{{ error }}</p>
+        {% endfor %}
+      </div>
+    {% endmacro %}
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">Identité</h3>
+      {{ field(form.title) }}
+      <div class="grid grid-cols-3 gap-md">
+        {{ field(form.day) }}
+        {{ field(form.month) }}
+        {{ field(form.year) }}
+      </div>
+      {{ field(form.date_label) }}
+      <label class="flex items-center gap-sm cursor-pointer">
+        {{ form.approximate(class_="accent-[#735c00] w-4 h-4") }}
+        <span class="font-body-base text-sm text-on-surface">{{ form.approximate.label.text }}</span>
+      </label>
+      {% if form.approximate.description %}
+        <p class="text-xs text-on-surface-variant -mt-sm">{{ form.approximate.description }}</p>
+      {% endif %}
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">Classement</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+        {{ field(form.era) }}
+        {{ field(form.era_key) }}
+        {{ field(form.category) }}
+        {{ field(form.quiz_slug) }}
+      </div>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">Lieu</h3>
+      {{ field(form.location) }}
+      {{ field(form.location_label) }}
+      <div class="grid grid-cols-2 gap-md">
+        {{ field(form.map_pos_x) }}
+        {{ field(form.map_pos_y) }}
+      </div>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">Texte</h3>
+      {{ field(form.summary, rows=2) }}
+      {{ field(form.before, rows=2) }}
+      {{ field(form.during, rows=2) }}
+      {{ field(form.after, rows=2) }}
+      {{ field(form.narrative, rows=10) }}
+      {{ field(form.why_it_matters, rows=3) }}
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">Personnages clés</h3>
+      {{ field(form.characters, rows=4) }}
+    </div>
+
+    {{ form.submit(class_="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body-bold rounded-full hover:opacity-90 transition-opacity") }}
+  </form>
+</main>
+{% endblock %}

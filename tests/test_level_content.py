@@ -66,9 +66,10 @@ def test_all_events_covered_by_level_content():
     assert set(EVENTS.keys()) <= set(CONTENT_BY_LEVEL.keys())
 
 
-def test_resolve_event_content_falls_back_for_unknown_event():
+def test_resolve_event_content_falls_back_for_unknown_event(app):
     from app.level_content import resolve_event_content
 
     fake_event = {"slug": "not-a-real-event", "summary": "original"}
-    resolved = resolve_event_content(fake_event, "enfant")
+    with app.app_context():
+        resolved = resolve_event_content(fake_event, "enfant")
     assert resolved == fake_event

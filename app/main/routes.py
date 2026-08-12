@@ -4,12 +4,13 @@ from flask import Blueprint, abort, redirect, render_template, request, url_for
 from flask_login import current_user, login_required
 
 from app import db
-from app.data import AVATARS, EVENTS, QUIZ_QUESTIONS
+from app.data import AVATARS, QUIZ_QUESTIONS
 from app.event_images import EVENT_IMAGES, IMAGE_TYPE_INFO, cover_image
 from app.events import (
     all_categories,
     events_list,
     find_todays_event,
+    get_event,
     search_events,
     today_french_label,
     years_ago,
@@ -105,7 +106,7 @@ def explorer():
 @main_bp.route("/evenement/<slug>")
 @login_required
 def event_detail(slug):
-    event = EVENTS.get(slug)
+    event = get_event(slug)
     if event is None:
         abort(404)
     event = resolve_event_content(event, current_user.study_level)
@@ -122,7 +123,7 @@ def event_detail(slug):
 @main_bp.route("/evenement/<slug>/image/<image_type>")
 @login_required
 def event_image_detail(slug, image_type):
-    event = EVENTS.get(slug)
+    event = get_event(slug)
     if event is None:
         abort(404)
     image = EVENT_IMAGES.get(slug, {}).get(image_type)

@@ -1,6 +1,7 @@
 import logging
 import os
 import socket
+import sys
 
 import sentry_sdk
 from dotenv import load_dotenv
@@ -76,10 +77,12 @@ def create_app(config_object="config.Config"):
     app.config.setdefault("RATELIMIT_STORAGE_URI", "memory://")
     limiter.init_app(app)
 
+    from app.admin.routes import admin_bp
     from app.auth.routes import auth_bp
     from app.main.routes import main_bp
     from app.public.routes import public_bp
 
+    app.register_blueprint(admin_bp)
     app.register_blueprint(auth_bp)
     app.register_blueprint(main_bp)
     app.register_blueprint(public_bp)
@@ -124,8 +127,15 @@ def create_app(config_object="config.Config"):
         if os.environ.get("FLASK_ENV") == "testing":
             db.create_all()
 
-        from app.seed import seed_admin_account
+        # Skip when invoked as `flask db ...`: Flask-Migrate loads this same
+        # factory to introspect models, before any migration has run --
+        # querying tables here would fail on a database that doesn't have
+        # them yet (or, for `db migrate`, isn't even meant to be touched).
+        if "db" not in sys.argv:
+            from app.seed import seed_admin_account, seed_event_level_content, seed_events
 
-        seed_admin_account()
+            seed_admin_account()
+            seed_events()
+            seed_event_level_content()
 
     return app

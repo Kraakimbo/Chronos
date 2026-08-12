@@ -11,16 +11,15 @@ action to create an account for the full experience.
 
 from flask import Blueprint, abort, render_template, url_for
 
-from app.data import EVENTS
 from app.event_images import cover_image
-from app.events import chronological_key, years_ago
+from app.events import all_slugs, events_list, get_event, years_ago
 
 public_bp = Blueprint("public", __name__)
 
 
 @public_bp.route("/decouvrir")
 def discover():
-    events = sorted(EVENTS.values(), key=chronological_key)
+    events = events_list(chronological=True)
     return render_template(
         "public/discover.html",
         events=events,
@@ -33,7 +32,7 @@ def discover():
 
 @public_bp.route("/decouvrir/<slug>")
 def discover_event(slug):
-    event = EVENTS.get(slug)
+    event = get_event(slug)
     if event is None:
         abort(404)
     return render_template(
@@ -51,7 +50,7 @@ def sitemap():
     urls = [url_for("public.discover", _external=True)]
     urls += [
         url_for("public.discover_event", slug=slug, _external=True)
-        for slug in EVENTS
+        for slug in all_slugs()
     ]
     xml = render_template("public/sitemap.xml", urls=urls)
     return xml, 200, {"Content-Type": "application/xml"}
