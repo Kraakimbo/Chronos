@@ -25,6 +25,12 @@ class User(db.Model, UserMixin):
     streak_days = db.Column(db.Integer, nullable=False, default=0)
     last_quiz_date = db.Column(db.Date, nullable=True)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
+    events = db.relationship(
+        "AccountEvent",
+        backref="user",
+        cascade="all, delete-orphan",
+        order_by="AccountEvent.created_at.desc()",
+    )
 
     def set_password(self, raw_password: str) -> None:
         self.password_hash = generate_password_hash(raw_password)
@@ -63,3 +69,38 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return f"<User {self.username}>"
+
+
+ACCOUNT_EVENT_TYPES = (
+    "signup",
+    "login_success",
+    "login_failed",
+    "password_reset_requested",
+    "password_reset_completed",
+)
+
+ACCOUNT_EVENT_LABELS = {
+    "signup": "Création du compte",
+    "login_success": "Connexion réussie",
+    "login_failed": "Tentative de connexion échouée",
+    "password_reset_requested": "Demande de réinitialisation du mot de passe",
+    "password_reset_completed": "Mot de passe réinitialisé",
+}
+
+
+class AccountEvent(db.Model):
+    __tablename__ = "account_events"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False, index=True)
+    event_type = db.Column(db.String(32), nullable=False)
+    ip_address = db.Column(db.String(45), nullable=True)
+    user_agent = db.Column(db.String(255), nullable=True)
+    created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc), index=True)
+
+    @property
+    def label(self) -> str:
+        return ACCOUNT_EVENT_LABELS.get(self.event_type, self.event_type)
+
+    def __repr__(self):
+        return f"<AccountEvent {self.event_type} user={self.user_id}>"

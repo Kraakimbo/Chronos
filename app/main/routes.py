@@ -177,6 +177,7 @@ def profile():
         active_page="profile",
         level=level_info(current_user),
         eras=eras_progress(current_user),
+        recent_events=current_user.events[:10],
     )
 
 

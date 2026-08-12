@@ -6,7 +6,7 @@ Application musée d'histoire gamifiée — design issu de Google Stitch, backen
 
 - **Comptes utilisateurs** : inscription (identifiant, email, mot de passe, niveau d'étude), connexion, déconnexion, suppression de compte.
 - **Mot de passe oublié** : demande de réinitialisation par email avec lien à durée de vie limitée (30 min).
-- **Pages câblées** : accueil (événement du jour), explorateur (frise des époques), fiche événement, quiz (question aléatoire à chaque visite parmi plusieurs, récompenses XP/tokens/série), profil avec statistiques réelles et choix d'avatar. Toutes protégées par connexion.
+- **Pages câblées** : accueil (événement du jour), explorateur (frise des époques), fiche événement, quiz (question aléatoire à chaque visite parmi plusieurs, récompenses XP/tokens/série), profil avec statistiques réelles, choix d'avatar et historique d'activité (connexions, tentatives échouées, réinitialisations de mot de passe). Toutes protégées par connexion.
 - **Chronos Tokens** : icône dédiée (SVG inline, pas d'étoile générique), affichée dans la navigation, le profil et les résultats de quiz.
 - **Illustrations** : bannières SVG inline dédiées à chaque événement/époque — pas de dépendance à des images externes éphémères (ce sandbox de développement bloque d'ailleurs Wikimedia/Wikipedia par politique réseau ; de vraies photos nécessiteraient de les déposer manuellement dans `app/static/`).
 - **Calendrier "aujourd'hui dans l'histoire" réel** : 45 événements documentés (avant/pendant/après, récit, personnages, lieu, quiz dédié) répartis sur l'année et sur tous les continents (Europe, Amériques précolombiennes et coloniales, Afrique, Asie, Moyen-Orient, Océanie, Caraïbes), de l'Antiquité (79, 476, -44) à la fin du XXe siècle. L'accueil calcule la vraie date du jour (`datetime.now()`) et affiche l'événement qui tombe exactement ce jour-là ; à défaut, un événement « à la une » tourne quotidiennement (jamais présenté comme s'étant produit ce jour précis). Tout événement listé (recherche, filtres, accueil) est trié chronologiquement par la vraie date historique (`app/events.py:chronological_key`), jamais par ordre d'écriture. Un événement dont le jour exact n'est pas fiable historiquement peut être marqué `"approximate": True` (voir commentaire dans `app/data.py`) : il reste consultable partout (recherche, filtres, carte) mais n'apparaît jamais comme « événement du jour ».
@@ -65,7 +65,35 @@ Dans **Settings → Health Check Path**, mettre `/auth/connexion` (la route `/` 
 
 Cliquer sur **Create Web Service** : Render construit et démarre l'app, puis fournit une URL publique du type `https://chronos-xxxx.onrender.com`.
 
-⚠️ **Persistance** : le plan gratuit a un disque éphémère — la base SQLite (et donc les comptes créés) est réinitialisée à chaque redéploiement ou redémarrage après inactivité. Pour une démo qui doit garder ses données, ajouter une base Postgres gratuite Render et définir `DATABASE_URL` avec l'URL fournie (nécessite d'ajouter `psycopg2-binary` à `requirements.txt`).
+⚠️ **Persistance** : le plan gratuit a un disque éphémère — la base SQLite (et donc les comptes créés) est réinitialisée à chaque redéploiement ou redémarrage après inactivité. Pour garder les comptes durablement, voir la section [Base de données persistante](#base-de-données-persistante) ci-dessous.
+
+#### Base de données persistante
+
+`requirements.txt` inclut déjà `psycopg2-binary` : il suffit de définir `DATABASE_URL` sur Render pour que l'app bascule sur Postgres au prochain redémarrage, sans autre changement de code.
+
+Options :
+
+- **[Neon](https://neon.tech) ou [Supabase](https://supabase.com)** (recommandé pour rester gratuit durablement) : créer un projet Postgres gratuit, copier la *connection string* (`postgresql://...`) fournie, la coller dans `DATABASE_URL` sur Render.
+- **Render Postgres** (tout centralisé au même endroit) : **New → PostgreSQL** sur Render, puis copier l'*Internal Database URL* dans `DATABASE_URL` du service web. Le plan gratuit Render Postgres expire après 90 jours (à recréer) ; le plan payant (~7 $/mois) est permanent avec backups automatiques.
+
+Dans les deux cas, redéployer (ou redémarrer) le service web après avoir ajouté `DATABASE_URL` : `db.create_all()` crée automatiquement les tables (`users`, `account_events`) sur la nouvelle base au démarrage.
+
+#### Envoi réel des emails (mot de passe oublié)
+
+Le code envoie déjà l'email via SMTP dès que `MAIL_SERVER` est configuré (voir `app/email.py`) — aucun développement n'est nécessaire, seulement les variables d'environnement sur Render.
+
+Avec [Brevo](https://www.brevo.com) (ex-Sendinblue, 300 emails/jour gratuits à vie) : créer un compte, valider un email expéditeur (ou un domaine) dans **Expéditeurs, domaines et dédiabilité**, récupérer une clé SMTP dans **SMTP & API**, puis définir sur Render :
+
+| Clé | Valeur |
+|---|---|
+| `MAIL_SERVER` | `smtp-relay.brevo.com` |
+| `MAIL_PORT` | `587` |
+| `MAIL_USE_TLS` | `true` |
+| `MAIL_USERNAME` | ton identifiant SMTP Brevo |
+| `MAIL_PASSWORD` | ta clé SMTP Brevo |
+| `MAIL_DEFAULT_SENDER` | l'adresse expéditrice validée dans Brevo |
+
+Tout autre fournisseur SMTP standard (Resend, SendGrid, Amazon SES, ...) fonctionne de la même façon en changeant `MAIL_SERVER`/`MAIL_PORT`/`MAIL_USERNAME`/`MAIL_PASSWORD`.
 
 #### Compte de connexion sans passer par l'inscription
 
@@ -96,7 +124,8 @@ Continue avec `_3`, `_4`... pour d'autres comptes (jusqu'à 10 pris en charge).
 ```
 app/
   __init__.py             # application factory (db, login manager, mail, CSRF, blueprints)
-  models.py                # modèle User (auth + XP/tokens/série + jeton de reset)
+  models.py                # modèles User et AccountEvent (auth + XP/tokens/série + jeton de reset + historique)
+  audit.py                  # journalisation des événements de compte (connexion, reset, ...)
   data.py                   # contenu de démo (événements, quiz) — futur CMS/DB
   email.py                   # envoi (ou log local) de l'email de réinitialisation
   auth/

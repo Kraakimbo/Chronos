@@ -4,6 +4,7 @@ from flask import Blueprint, flash, redirect, render_template, request, url_for
 from flask_login import current_user, login_required, login_user, logout_user
 
 from app import db, limiter
+from app.audit import log_account_event
 from app.auth.forms import (
     DeleteAccountForm,
     LoginForm,
@@ -41,6 +42,7 @@ def register():
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
+        log_account_event(user, "signup")
 
         login_user(user)
         flash("Bienvenue dans Chronos ! Ton compte a été créé.", "success")
@@ -63,10 +65,13 @@ def login():
         ).first()
 
         if user is None or not user.check_password(form.password.data):
+            if user is not None:
+                log_account_event(user, "login_failed")
             flash("Identifiant ou mot de passe incorrect.", "error")
             return render_template("auth/login.html", form=form)
 
         login_user(user, remember=form.remember_me.data)
+        log_account_event(user, "login_success")
         flash(f"Content de te revoir, {user.username} !", "success")
 
         next_page = request.args.get("next")
@@ -96,6 +101,7 @@ def reset_request():
         user = User.query.filter_by(email=form.email.data.strip().lower()).first()
         if user:
             send_reset_email(user)
+            log_account_event(user, "password_reset_requested")
         # Same message whether or not the account exists, to avoid leaking
         # which emails are registered.
         flash(
@@ -122,6 +128,7 @@ def reset_token(token):
     if form.validate_on_submit():
         user.set_password(form.password.data)
         db.session.commit()
+        log_account_event(user, "password_reset_completed")
         flash("Ton mot de passe a été mis à jour, tu peux te connecter.", "success")
         return redirect(url_for("auth.login"))
 

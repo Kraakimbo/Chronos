@@ -77,6 +77,20 @@
     </form>
   </section>
 
+  {% if recent_events %}
+  <section>
+    <h3 class="font-headline-md text-xl text-on-surface mb-md text-center md:text-left">Activité récente</h3>
+    <div class="bg-surface-container-lowest rounded-2xl ambient-shadow border border-outline-variant/30 divide-y divide-outline-variant/20 overflow-hidden">
+      {% for event in recent_events %}
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 px-lg py-sm">
+        <span class="font-body-base text-sm {{ 'text-error' if event.event_type == 'login_failed' else 'text-on-surface' }}">{{ event.label }}</span>
+        <span class="font-label-caps text-[11px] text-on-surface-variant">{{ event.created_at.strftime('%d/%m/%Y %H:%M') }}{% if event.ip_address %} · {{ event.ip_address }}{% endif %}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   <section class="text-center">
     <a href="{{ url_for('auth.delete_account') }}" class="text-sm text-error font-body-bold hover:opacity-80">
       Supprimer mon compte
