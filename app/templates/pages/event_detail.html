@@ -13,23 +13,23 @@
       {{ event_illustration(event.slug) }}
       {% endif %}
     </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/30"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/75 to-black/30"></div>
     <div class="relative max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
       <div class="flex items-center gap-sm mb-md">
-        <a href="{{ url_for('main.home') }}" class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface" aria-label="Retour à l'accueil">
+        <a href="{{ url_for('main.home') }}" class="w-10 h-10 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white" aria-label="Retour à l'accueil">
           <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
         </a>
-        <span class="px-sm py-xs bg-primary-container/20 text-on-primary-container border border-primary-container/30 rounded-full font-label-caps">{{ event.era }}</span>
-        <span class="text-on-surface-variant font-label-caps tracking-widest uppercase">{{ event.date_label }} · Il y a {{ years_ago }} ans{% if event.approximate %} · date approximative{% endif %}</span>
+        <span class="px-sm py-xs bg-primary-container text-on-primary-container rounded-full font-label-caps">{{ event.era }}</span>
+        <span class="text-white/80 font-label-caps tracking-widest uppercase drop-shadow">{{ event.date_label }} · Il y a {{ years_ago }} ans{% if event.approximate %} · date approximative{% endif %}</span>
       </div>
-      <h1 class="font-display-lg text-3xl md:text-5xl text-on-surface mb-md max-w-3xl">{{ event.title }}</h1>
-      <p class="font-body-base text-on-surface-variant max-w-2xl mb-md">{{ event.summary }}</p>
-      <div class="flex items-center gap-xs text-on-surface-variant font-body-base">
+      <h1 class="font-display-lg text-3xl md:text-5xl text-white mb-md max-w-3xl drop-shadow">{{ event.title }}</h1>
+      <p class="font-body-base text-white/90 max-w-2xl mb-md drop-shadow">{{ event.summary }}</p>
+      <div class="flex items-center gap-xs text-white/80 font-body-base drop-shadow">
         <span class="material-symbols-outlined text-[20px]">location_on</span>
         <span>{{ event.location }}</span>
       </div>
       {% if cover and (cover.credit or cover.licence) %}
-      <p class="font-label-caps text-[10px] text-on-surface-variant/70 mt-sm">
+      <p class="font-label-caps text-[10px] text-white/60 mt-sm">
         {% if cover.credit %}{{ cover.credit }}{% endif %}{% if cover.licence %} · {{ cover.licence }}{% endif %}
       </p>
       {% endif %}

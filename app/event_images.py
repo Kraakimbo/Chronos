@@ -266,7 +266,7 @@ EVENT_IMAGES = {
             'licence': 'Domaine public / CC (à revérifier)',
         },
         'tableau': {
-            'url': 'https://commons.wikimedia.org/wiki/Special:FilePath/Karl_Brullov_-_The_Last_Day_of_Pompeii_-_Google_Art_Project.jpg',
+            'url': 'https://commons.wikimedia.org/wiki/Special:FilePath/Karl_Briullov,_The_Last_Day_of_Pompeii_(1827%E2%80%931833).jpg',
             'subject': 'Le dernier jour de Pompéi',
             'credit': 'Karl Brioullov, Musée russe',
             'licence': 'Domaine public',

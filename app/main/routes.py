@@ -20,11 +20,23 @@ from app.progress import badges_for, eras_progress, level_info
 main_bp = Blueprint("main", __name__)
 
 ERAS = [
-    {"key": "prehistoire", "name": "Préhistoire", "range": "-3M à -3000", "description": "L'aube de l'humanité et les premières expressions artistiques."},
-    {"key": "antiquite", "name": "Antiquité", "range": "-3000 à 476", "description": "L'essor des grandes civilisations et de l'écriture."},
-    {"key": "moyen-age", "name": "Moyen Âge", "range": "476 à 1492", "description": "Châteaux, chevaliers et expansion spirituelle."},
-    {"key": "renaissance", "name": "Renaissance", "range": "1492 à 1789", "description": "Renouveau artistique, scientifique et grandes découvertes."},
-    {"key": "epoque-contemporaine", "name": "Époque Contemporaine", "range": "1789 à aujourd'hui", "description": "Révolutions, guerres mondiales et conquête spatiale."},
+    {
+        "key": "prehistoire", "name": "Préhistoire", "range": "-3M à -3000",
+        "description": "L'aube de l'humanité et les premières expressions artistiques.",
+        "illustration_slug": None,
+        # No event in EVENTS covers this era (the oldest, "assassinat-cesar",
+        # is -44/Antiquité) so there's no existing cover image to reuse.
+        # Found via web search, not opened directly -- Wikimedia Commons is
+        # unreachable from this environment. See
+        # Illustrations_epoques!A2 in the archives spreadsheet for the
+        # sourcing note; verify before relying on it for anything but this
+        # decorative background (there's an SVG fallback either way).
+        "illustration_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lascaux_painting.jpg",
+    },
+    {"key": "antiquite", "name": "Antiquité", "range": "-3000 à 476", "description": "L'essor des grandes civilisations et de l'écriture.", "illustration_slug": "assassinat-cesar"},
+    {"key": "moyen-age", "name": "Moyen Âge", "range": "476 à 1492", "description": "Châteaux, chevaliers et expansion spirituelle.", "illustration_slug": "chute-de-constantinople"},
+    {"key": "renaissance", "name": "Renaissance", "range": "1492 à 1789", "description": "Renouveau artistique, scientifique et grandes découvertes.", "illustration_slug": "arrivee-christophe-colomb"},
+    {"key": "epoque-contemporaine", "name": "Époque Contemporaine", "range": "1789 à aujourd'hui", "description": "Révolutions, guerres mondiales et conquête spatiale.", "illustration_slug": "prise-de-la-bastille"},
 ]
 
 
@@ -36,8 +48,9 @@ class QuizResult:
 
 
 @main_bp.route("/")
-@login_required
 def home():
+    if not current_user.is_authenticated:
+        return redirect(url_for("public.discover"))
     study_level = current_user.study_level
     event, is_exact_match = find_todays_event()
     other_events = [e for e in events_list(chronological=True) if e["slug"] != event["slug"]][:2]
