@@ -96,6 +96,16 @@ Avec [Brevo](https://www.brevo.com) (ex-Sendinblue, 300 emails/jour gratuits à 
 
 Pour un autre fournisseur d'email transactionnel (Resend, SendGrid, Amazon SES, ...), le principe est le même : utiliser son API HTTPS plutôt que son SMTP, tant que l'app tourne sur Render — ça demanderait d'adapter `app/email.py` au format de l'API choisie.
 
+#### Suivi des erreurs (Sentry)
+
+Sans configuration, les erreurs de production ne sont visibles que dans les logs Render (qu'il faut consulter manuellement). Pour les recevoir automatiquement avec la stack trace complète :
+
+1. Créer un compte gratuit sur [sentry.io](https://sentry.io) (5 000 erreurs/mois gratuites), créer un projet **Flask**.
+2. Copier le **DSN** fourni (URL du type `https://xxxx@xxxx.ingest.sentry.io/xxxx`).
+3. Sur Render, ajouter la variable `SENTRY_DSN` avec cette valeur.
+
+Sans `SENTRY_DSN` (développement local, tests), rien n'est envoyé nulle part — comportement inchangé.
+
 #### Compte de connexion sans passer par l'inscription
 
 Pour te connecter directement sans remplir le formulaire `/auth/inscription`, ajoute ces variables dans **Environment** sur Render (voir `app/seed.py`) :
