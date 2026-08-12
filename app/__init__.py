@@ -1,5 +1,6 @@
 import logging
 import os
+import socket
 
 from dotenv import load_dotenv
 from flask import Flask, render_template
@@ -12,6 +13,12 @@ from flask_wtf import CSRFProtect
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 load_dotenv()
+
+# Flask-Mail opens the SMTP connection with no timeout of its own, so a
+# stalled network path to the mail provider would otherwise hang the
+# request (and eventually the whole gunicorn worker) forever. This bounds
+# every socket the process opens that doesn't set its own timeout.
+socket.setdefaulttimeout(10)
 
 db = SQLAlchemy()
 login_manager = LoginManager()
