@@ -10,8 +10,8 @@ class Config:
             "SECRET_KEY is not set. Copy .env.example to .env and set a random SECRET_KEY."
         )
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL", f"sqlite:///{os.path.join(basedir, 'instance', 'chronos.db')}"
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL") or (
+        f"sqlite:///{os.path.join(basedir, 'instance', 'chronos.db')}"
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
