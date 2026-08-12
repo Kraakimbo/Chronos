@@ -1,0 +1,21 @@
+{
+  "name": "chronos-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wrapper natif (Capacitor) pour publier le site Chronos sur l'App Store et Google Play.",
+  "scripts": {
+    "sync": "cap sync"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/app": "^7.1.1",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/ios": "^7.4.4",
+    "@capacitor/splash-screen": "^7.0.4",
+    "@capacitor/status-bar": "^7.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.4.4"
+  }
+}

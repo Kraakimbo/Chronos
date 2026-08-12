@@ -1,0 +1,23 @@
+{
+  "appId": "com.chronos.app",
+  "appName": "Chronos",
+  "webDir": "www",
+  "server": {
+    "url": "https://chronos-dqh6.onrender.com",
+    "androidScheme": "https",
+    "cleartext": false,
+    "allowNavigation": ["chronos-dqh6.onrender.com"]
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 800,
+      "backgroundColor": "#FAF9F7",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#FAF9F7"
+    }
+  }
+}
