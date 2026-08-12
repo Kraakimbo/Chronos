@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.chronos.app"
+    namespace "app.chronos.museum"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.chronos.app"
+        applicationId "app.chronos.museum"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

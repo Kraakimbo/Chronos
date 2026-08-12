@@ -1,4 +1,4 @@
-package com.chronos.app;
+package app.chronos.museum;
 
 import com.getcapacitor.BridgeActivity;
 
