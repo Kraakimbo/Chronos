@@ -34,7 +34,7 @@ python run.py
 
 Puis ouvrir `http://localhost:5000/auth/inscription`.
 
-Sans configuration SMTP (`MAIL_SERVER` non défini dans `.env`), le lien de réinitialisation de mot de passe est simplement écrit dans les logs de l'application au lieu d'être envoyé par email — pratique pour le développement local.
+Sans configuration email (`BREVO_API_KEY` non défini dans `.env`), le lien de réinitialisation de mot de passe est simplement écrit dans les logs de l'application au lieu d'être envoyé par email — pratique pour le développement local.
 
 ### Déployer sur Render (gratuit)
 
@@ -59,7 +59,7 @@ Puis dans l'onglet **Environment**, ajouter les variables :
 | `SECRET_KEY` | une valeur générée avec `python -c "import secrets; print(secrets.token_hex(32))"` |
 | `FLASK_ENV` | `production` |
 
-`DATABASE_URL`, `MAIL_SERVER` et les autres variables de `.env.example` sont optionnelles : sans elles, l'app utilise SQLite et journalise les liens de réinitialisation de mot de passe dans les logs Render au lieu de les envoyer par email.
+`DATABASE_URL`, `BREVO_API_KEY` et les autres variables de `.env.example` sont optionnelles : sans elles, l'app utilise SQLite et journalise les liens de réinitialisation de mot de passe dans les logs Render au lieu de les envoyer par email.
 
 Dans **Settings → Health Check Path**, mettre `/auth/connexion` (la route `/` redirige vers la connexion si non authentifié, ce que le health check par défaut sur `/` peut mal interpréter).
 
@@ -80,20 +80,21 @@ Dans les deux cas, redéployer (ou redémarrer) le service web après avoir ajou
 
 #### Envoi réel des emails (mot de passe oublié)
 
-Le code envoie déjà l'email via SMTP dès que `MAIL_SERVER` est configuré (voir `app/email.py`) — aucun développement n'est nécessaire, seulement les variables d'environnement sur Render.
+Le code envoie l'email via l'**API HTTPS de Brevo** (voir `app/email.py`) dès que `BREVO_API_KEY` est configuré — aucun développement n'est nécessaire, seulement les variables d'environnement sur Render.
 
-Avec [Brevo](https://www.brevo.com) (ex-Sendinblue, 300 emails/jour gratuits à vie) : créer un compte, valider un email expéditeur (ou un domaine) dans **Expéditeurs, domaines et dédiabilité**, récupérer une clé SMTP dans **SMTP & API**, puis définir sur Render :
+⚠️ **Pas de SMTP classique** : Render bloque les connexions sortantes sur les ports SMTP habituels (25/465/587) sur ses services web, donc `smtp-relay.brevo.com:587` (ou tout autre fournisseur SMTP) ne fonctionnera jamais depuis Render (timeout de connexion). C'est pour ça que le code passe par l'API HTTPS de Brevo (port 443, jamais bloqué) plutôt que par du SMTP.
+
+Avec [Brevo](https://www.brevo.com) (ex-Sendinblue, 300 emails/jour gratuits à vie) :
+1. Créer un compte, valider un email expéditeur (ou un domaine) dans **Expéditeurs, domaines et IPs dédiées**.
+2. Récupérer une **clé API** (pas la clé SMTP) dans **Paramètres → SMTP & API → onglet API Keys** — génère-en une nouvelle si besoin.
+3. Définir sur Render :
 
 | Clé | Valeur |
 |---|---|
-| `MAIL_SERVER` | `smtp-relay.brevo.com` |
-| `MAIL_PORT` | `587` |
-| `MAIL_USE_TLS` | `true` |
-| `MAIL_USERNAME` | ton identifiant SMTP Brevo |
-| `MAIL_PASSWORD` | ta clé SMTP Brevo |
+| `BREVO_API_KEY` | ta clé API Brevo |
 | `MAIL_DEFAULT_SENDER` | l'adresse expéditrice validée dans Brevo |
 
-Tout autre fournisseur SMTP standard (Resend, SendGrid, Amazon SES, ...) fonctionne de la même façon en changeant `MAIL_SERVER`/`MAIL_PORT`/`MAIL_USERNAME`/`MAIL_PASSWORD`.
+Pour un autre fournisseur d'email transactionnel (Resend, SendGrid, Amazon SES, ...), le principe est le même : utiliser son API HTTPS plutôt que son SMTP, tant que l'app tourne sur Render — ça demanderait d'adapter `app/email.py` au format de l'API choisie.
 
 #### Compte de connexion sans passer par l'inscription
 
