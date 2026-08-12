@@ -47,14 +47,30 @@ IMAGE_TYPE_INFO = {
 }
 
 
+def event_images_for(slug):
+    """{image_type: {url, subject, credit, licence}} for one event's gallery.
+
+    Reads from the event_images table (editable from
+    /admin/evenements/<slug>/illustrations) rather than EVENT_IMAGES
+    directly -- that dict is only the one-time seed source now (see
+    app.seed.seed_event_images).
+    """
+    from app.models import EventImage
+
+    rows = EventImage.query.filter_by(event_slug=slug).all()
+    return {row.image_type: row.to_dict() for row in rows}
+
+
 def cover_image(slug):
     """Best available image for the event's cover banner, or None."""
-    images = EVENT_IMAGES.get(slug, {})
+    images = event_images_for(slug)
     for image_type in COVER_PRIORITY:
         if image_type in images:
             return images[image_type]
     return None
 
+# One-time seed source for the event_images table (see app.seed.seed_event_images)
+# -- no longer read directly at request time, see event_images_for() above.
 EVENT_IMAGES = {
     'prise-de-la-bastille': {
         'tableau': {

@@ -4,8 +4,9 @@ from flask import Blueprint, abort, flash, redirect, render_template, url_for
 from flask_login import current_user, login_required
 
 from app import db
-from app.admin.forms import EventEditForm, LevelContentForm
-from app.models import EventLevelContent, HistoricalEvent, STUDY_LEVELS
+from app.admin.forms import EventEditForm, EventImagesForm, LevelContentForm
+from app.event_images import IMAGE_TYPE_INFO
+from app.models import EVENT_IMAGE_TYPES, EventImage, EventLevelContent, HistoricalEvent, STUDY_LEVELS
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
 
@@ -142,4 +143,55 @@ def edit_event_level(slug, level):
         levels=STUDY_LEVELS,
         level_labels=LEVEL_LABELS,
         has_override=row is not None,
+    )
+
+
+@admin_bp.route("/evenements/<slug>/illustrations", methods=["GET", "POST"])
+@admin_required
+def edit_event_images(slug):
+    event = HistoricalEvent.query.get(slug)
+    if event is None:
+        abort(404)
+
+    rows = {row.image_type: row for row in EventImage.query.filter_by(event_slug=slug).all()}
+
+    form = EventImagesForm()
+    if form.validate_on_submit():
+        for image_type in EVENT_IMAGE_TYPES:
+            url = (getattr(form, f"{image_type}_url").data or "").strip()
+            row = rows.get(image_type)
+            if not url:
+                if row is not None:
+                    db.session.delete(row)
+                continue
+            if row is None:
+                row = EventImage(event_slug=slug, image_type=image_type)
+                db.session.add(row)
+            row.url = url
+            row.subject = (getattr(form, f"{image_type}_subject").data or "").strip() or None
+            row.description = (getattr(form, f"{image_type}_description").data or "").strip() or None
+            row.credit = (getattr(form, f"{image_type}_credit").data or "").strip() or None
+            row.licence = (getattr(form, f"{image_type}_licence").data or "").strip() or None
+        db.session.commit()
+        flash(f"Illustrations de « {event.title} » mises à jour.", "success")
+        return redirect(url_for("admin.edit_event_images", slug=slug))
+    elif not form.is_submitted():
+        for image_type in EVENT_IMAGE_TYPES:
+            row = rows.get(image_type)
+            if row is None:
+                continue
+            getattr(form, f"{image_type}_url").data = row.url
+            getattr(form, f"{image_type}_subject").data = row.subject
+            getattr(form, f"{image_type}_description").data = row.description
+            getattr(form, f"{image_type}_credit").data = row.credit
+            getattr(form, f"{image_type}_licence").data = row.licence
+
+    return render_template(
+        "admin/event_images_edit.html",
+        form=form,
+        event=event,
+        levels=STUDY_LEVELS,
+        level_labels=LEVEL_LABELS,
+        image_types=EVENT_IMAGE_TYPES,
+        image_type_info=IMAGE_TYPE_INFO,
     )

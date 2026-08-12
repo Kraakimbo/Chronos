@@ -171,3 +171,33 @@ def seed_event_level_content() -> None:
             count += 1
     db.session.commit()
     current_app.logger.info("%d textes par niveau d'étude importés en base.", count)
+
+
+def seed_event_images() -> None:
+    """Populate event_images from app.event_images.EVENT_IMAGES, once.
+
+    Same one-time-only rule as seed_events: a no-op once the table has
+    any row, so admin edits (per event, per image type) survive redeploys.
+    """
+    from app.event_images import EVENT_IMAGES
+    from app.models import EventImage
+
+    if EventImage.query.first() is not None:
+        return
+
+    count = 0
+    for slug, images in EVENT_IMAGES.items():
+        for image_type, image in images.items():
+            db.session.add(
+                EventImage(
+                    event_slug=slug,
+                    image_type=image_type,
+                    url=image["url"],
+                    subject=image.get("subject"),
+                    credit=image.get("credit"),
+                    licence=image.get("licence"),
+                )
+            )
+            count += 1
+    db.session.commit()
+    current_app.logger.info("%d illustrations d'événements importées en base.", count)

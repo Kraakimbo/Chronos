@@ -140,7 +140,7 @@
           {% endif %}
           <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-focus:grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-out">
             <div class="overflow-hidden">
-              <p class="text-white/90 text-xs mt-xs leading-snug">{{ info.blurb }}</p>
+              <p class="text-white/90 text-xs mt-xs leading-snug">{{ img.description or info.blurb }}</p>
               <p class="text-white/60 text-[10px] mt-xs">
                 {% if img.credit %}{{ img.credit }}{% endif %}
                 {% if img.licence %} · {{ img.licence }}{% endif %}

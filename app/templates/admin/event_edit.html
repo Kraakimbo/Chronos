@@ -1,4 +1,5 @@
 {% extends "base_app.html" %}
+{% from "admin/_tabs.html" import event_tabs %}
 {% block title %}Admin · {{ event.title }} - Chronos{% endblock %}
 {% block content %}
 <main class="max-w-[900px] mx-auto px-margin-mobile md:px-margin-desktop py-xl">
@@ -9,12 +10,7 @@
     <h2 class="font-display-lg text-2xl md:text-3xl text-on-surface">Modifier « {{ event.title }} »</h2>
   </div>
 
-  <div class="flex flex-wrap gap-sm mb-lg">
-    <span class="px-md py-sm rounded-full font-body-bold text-sm bg-on-surface text-surface-container-lowest">Texte de référence</span>
-    {% for lvl in levels %}
-    <a href="{{ url_for('admin.edit_event_level', slug=event.slug, level=lvl) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">{{ level_labels[lvl] }}</a>
-    {% endfor %}
-  </div>
+  {{ event_tabs(event, levels, level_labels, 'reference') }}
 
   <form method="POST" novalidate class="flex flex-col gap-lg">
     {{ form.hidden_tag() }}
