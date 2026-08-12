@@ -1,3 +1,5 @@
+import smtplib
+
 from flask import current_app, render_template, url_for
 from flask_mail import Message
 
@@ -24,4 +26,13 @@ def send_reset_email(user) -> None:
         recipients=[user.email],
     )
     msg.body = render_template("email/reset_password.txt", user=user, reset_url=reset_url)
-    mail.send(msg)
+    try:
+        mail.send(msg)
+    except (smtplib.SMTPException, OSError, TimeoutError):
+        # A flaky SMTP provider must not turn into a 500 for the user, and
+        # the caller always shows the same "if an account exists..."
+        # message regardless of outcome (no account enumeration) -- so it's
+        # safe to swallow this and just log it for us to investigate.
+        current_app.logger.exception(
+            "Échec de l'envoi de l'email de réinitialisation à %s", user.email
+        )
