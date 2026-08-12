@@ -2,6 +2,7 @@ import logging
 import os
 import socket
 
+import sentry_sdk
 from dotenv import load_dotenv
 from flask import Flask, render_template
 from flask_limiter import Limiter
@@ -9,6 +10,7 @@ from flask_limiter.util import get_remote_address
 from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
+from sentry_sdk.integrations.flask import FlaskIntegration
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 load_dotenv()
@@ -17,6 +19,18 @@ load_dotenv()
 # its own timeout, so a stalled network call can't hang a request (and
 # eventually the whole gunicorn worker) forever.
 socket.setdefaulttimeout(10)
+
+# Opt-in error monitoring: unset SENTRY_DSN locally/in tests to skip this
+# entirely (nothing is sent anywhere without it configured).
+if os.environ.get("SENTRY_DSN"):
+    sentry_sdk.init(
+        dsn=os.environ["SENTRY_DSN"],
+        integrations=[FlaskIntegration()],
+        environment=os.environ.get("FLASK_ENV", "development"),
+        # Error tracking only -- no performance/trace sampling, to keep
+        # this simple and stay comfortably within Sentry's free tier.
+        traces_sample_rate=0.0,
+    )
 
 db = SQLAlchemy()
 login_manager = LoginManager()
