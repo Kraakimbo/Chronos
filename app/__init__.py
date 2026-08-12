@@ -8,6 +8,7 @@ from flask import Flask, render_template
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_login import LoginManager
+from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from sentry_sdk.integrations.flask import FlaskIntegration
@@ -33,6 +34,7 @@ if os.environ.get("SENTRY_DSN"):
     )
 
 db = SQLAlchemy()
+migrate = Migrate()
 login_manager = LoginManager()
 csrf = CSRFProtect()
 # In-memory storage: fine for a single-process deploy. If Chronos ever runs
@@ -62,6 +64,7 @@ def create_app(config_object="config.Config"):
     os.makedirs(app.instance_path, exist_ok=True)
 
     db.init_app(app)
+    migrate.init_app(app, db)
     csrf.init_app(app)
 
     login_manager.init_app(app)
@@ -111,8 +114,15 @@ def create_app(config_object="config.Config"):
     def server_error(_error):
         return render_template("errors/500.html"), 500
 
+    # Schema is managed by Flask-Migrate (see Procfile: `flask db upgrade`
+    # runs before gunicorn starts) rather than db.create_all(), which only
+    # creates missing tables and silently leaves new columns on existing
+    # tables unapplied -- exactly what broke the users.email_confirmed
+    # rollout. Tests are the one exception: they want a throwaway schema
+    # that always matches the current models, not a migration history.
     with app.app_context():
-        db.create_all()
+        if os.environ.get("FLASK_ENV") == "testing":
+            db.create_all()
 
         from app.seed import seed_admin_account
 

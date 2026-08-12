@@ -29,6 +29,7 @@ pip install -r requirements.txt
 cp .env.example .env
 # éditer .env et définir SECRET_KEY (python -c "import secrets; print(secrets.token_hex(32))")
 
+flask --app run.py db upgrade  # crée les tables (voir "Migrations de base de données" plus bas)
 python run.py
 ```
 
@@ -76,7 +77,24 @@ Options :
 - **[Neon](https://neon.tech) ou [Supabase](https://supabase.com)** (recommandé pour rester gratuit durablement) : créer un projet Postgres gratuit, copier la *connection string* (`postgresql://...`) fournie, la coller dans `DATABASE_URL` sur Render.
 - **Render Postgres** (tout centralisé au même endroit) : **New → PostgreSQL** sur Render, puis copier l'*Internal Database URL* dans `DATABASE_URL` du service web. Le plan gratuit Render Postgres expire après 90 jours (à recréer) ; le plan payant (~7 $/mois) est permanent avec backups automatiques.
 
-Dans les deux cas, redéployer (ou redémarrer) le service web après avoir ajouté `DATABASE_URL` : `db.create_all()` crée automatiquement les tables (`users`, `account_events`) sur la nouvelle base au démarrage.
+Dans les deux cas, redéployer (ou redémarrer) le service web après avoir ajouté `DATABASE_URL` : les migrations (voir ci-dessous) créent automatiquement les tables sur la nouvelle base au démarrage.
+
+#### Migrations de base de données
+
+Le schéma est géré par [Flask-Migrate](https://flask-migrate.readthedocs.io/) (Alembic), pas par `db.create_all()` : `db.create_all()` crée les tables manquantes mais **ne modifie jamais** une table déjà existante, donc toute nouvelle colonne ajoutée à un modèle (`app/models.py`) serait silencieusement absente en production tant que la base n'est pas persistante ; une fois une vraie base persistante en place (Postgres), ça casse le déploiement au lieu de simplement ne rien faire — c'est exactement ce qui est arrivé lors de l'ajout de `users.email_confirmed`.
+
+Le `Procfile` lance désormais `flask db upgrade` avant Gunicorn à chaque déploiement Render, donc les migrations s'appliquent automatiquement sans action manuelle pour les prochains changements de schéma.
+
+**Après avoir modifié un modèle** dans `app/models.py` :
+
+```bash
+flask --app run.py db migrate -m "description du changement"
+flask --app run.py db upgrade   # applique en local pour vérifier avant de commit
+```
+
+Relis toujours le fichier généré dans `migrations/versions/` avant de le commiter — l'autogénération d'Alembic est fiable pour les cas simples (nouvelle colonne, nouvelle table) mais pas infaillible (renommages, contraintes complexes).
+
+Les tests (`tests/conftest.py`) ne passent pas par les migrations : ils recréent un schéma frais avec `db.create_all()` à chaque run, pour toujours refléter l'état actuel des modèles sans dépendre de l'historique des migrations.
 
 #### Envoi réel des emails (mot de passe oublié)
 
@@ -133,8 +151,9 @@ Continue avec `_3`, `_4`... pour d'autres comptes (jusqu'à 10 pris en charge).
 ### Structure
 
 ```
+migrations/                 # historique des migrations Alembic (voir "Migrations de base de données")
 app/
-  __init__.py             # application factory (db, login manager, mail, CSRF, blueprints)
+  __init__.py             # application factory (db, migrate, login manager, mail, CSRF, blueprints)
   models.py                # modèles User et AccountEvent (auth + XP/tokens/série + jeton de reset + historique)
   audit.py                  # journalisation des événements de compte (connexion, reset, ...)
   data.py                   # contenu de démo (événements, quiz) — futur CMS/DB
