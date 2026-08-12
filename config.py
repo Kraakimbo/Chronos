@@ -19,13 +19,12 @@ class Config:
     SESSION_COOKIE_SAMESITE = "Lax"
     SESSION_COOKIE_SECURE = os.environ.get("FLASK_ENV") == "production"
 
-    # Optional SMTP config for password-reset emails. When MAIL_SERVER is
-    # unset (e.g. local dev), the reset link is logged instead of emailed.
-    MAIL_SERVER = os.environ.get("MAIL_SERVER")
-    MAIL_PORT = int(os.environ.get("MAIL_PORT", 587))
-    MAIL_USE_TLS = os.environ.get("MAIL_USE_TLS", "true").lower() == "true"
-    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    # Password-reset emails are sent through Brevo's HTTPS API rather than
+    # SMTP: Render blocks outbound SMTP ports (25/465/587) on its web
+    # services, so raw smtplib connections time out there. When
+    # BREVO_API_KEY is unset (e.g. local dev), the reset link is logged
+    # instead of emailed.
+    BREVO_API_KEY = os.environ.get("BREVO_API_KEY")
     MAIL_DEFAULT_SENDER = os.environ.get("MAIL_DEFAULT_SENDER", "no-reply@chronos.app")
 
     # Optional bootstrap account, auto-created at startup so you can log in

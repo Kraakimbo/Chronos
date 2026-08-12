@@ -7,23 +7,20 @@ from flask import Flask, render_template
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from flask_login import LoginManager
-from flask_mail import Mail
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 load_dotenv()
 
-# Flask-Mail opens the SMTP connection with no timeout of its own, so a
-# stalled network path to the mail provider would otherwise hang the
-# request (and eventually the whole gunicorn worker) forever. This bounds
-# every socket the process opens that doesn't set its own timeout.
+# Defensive default: bounds any socket the process opens that doesn't set
+# its own timeout, so a stalled network call can't hang a request (and
+# eventually the whole gunicorn worker) forever.
 socket.setdefaulttimeout(10)
 
 db = SQLAlchemy()
 login_manager = LoginManager()
 csrf = CSRFProtect()
-mail = Mail()
 # In-memory storage: fine for a single-process deploy. If Chronos ever runs
 # with multiple gunicorn workers, this needs a shared backend (e.g. Redis)
 # or each worker enforces its own separate limit.
@@ -52,7 +49,6 @@ def create_app(config_object="config.Config"):
 
     db.init_app(app)
     csrf.init_app(app)
-    mail.init_app(app)
 
     login_manager.init_app(app)
     login_manager.login_view = "auth.login"
