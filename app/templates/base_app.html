@@ -53,6 +53,18 @@
   </div>
 </header>
 
+{% if current_user.is_authenticated and not current_user.email_confirmed %}
+  <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-md">
+    <div class="rounded-xl px-md py-sm text-sm font-bold bg-surface-container-low text-on-surface-variant flex flex-col sm:flex-row sm:items-center gap-sm justify-between">
+      <span>Confirme ton email pour sécuriser ton compte : vérifie ta boîte de réception (et les spams).</span>
+      <form method="POST" action="{{ url_for('auth.resend_confirmation') }}" class="shrink-0">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button type="submit" class="text-primary underline hover:opacity-80">Renvoyer l'email</button>
+      </form>
+    </div>
+  </div>
+{% endif %}
+
 {% with messages = get_flashed_messages(with_categories=true) %}
   {% if messages %}
     <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop pt-md flex flex-col gap-sm">

@@ -9,6 +9,8 @@ from app import db
 
 STUDY_LEVELS = ("enfant", "college", "lycee", "etudiant_adulte")
 RESET_TOKEN_SALT = "password-reset"
+EMAIL_CONFIRM_SALT = "email-confirmation"
+EMAIL_CONFIRM_TOKEN_MAX_AGE = 60 * 60 * 24 * 3  # 3 days
 
 
 class User(db.Model, UserMixin):
@@ -24,6 +26,7 @@ class User(db.Model, UserMixin):
     tokens = db.Column(db.Integer, nullable=False, default=0)
     streak_days = db.Column(db.Integer, nullable=False, default=0)
     last_quiz_date = db.Column(db.Date, nullable=True)
+    email_confirmed = db.Column(db.Boolean, nullable=False, default=False)
     created_at = db.Column(db.DateTime, default=lambda: datetime.now(timezone.utc))
     events = db.relationship(
         "AccountEvent",
@@ -38,18 +41,32 @@ class User(db.Model, UserMixin):
     def check_password(self, raw_password: str) -> bool:
         return check_password_hash(self.password_hash, raw_password)
 
-    def get_reset_token(self, expires_sec: int = 1800) -> str:
+    def _make_token(self, salt: str) -> str:
         serializer = URLSafeTimedSerializer(current_app.config["SECRET_KEY"])
-        return serializer.dumps({"user_id": self.id}, salt=RESET_TOKEN_SALT)
+        return serializer.dumps({"user_id": self.id}, salt=salt)
 
     @staticmethod
-    def verify_reset_token(token: str, expires_sec: int = 1800):
+    def _verify_token(token: str, salt: str, expires_sec: int):
         serializer = URLSafeTimedSerializer(current_app.config["SECRET_KEY"])
         try:
-            data = serializer.loads(token, salt=RESET_TOKEN_SALT, max_age=expires_sec)
+            data = serializer.loads(token, salt=salt, max_age=expires_sec)
         except (BadSignature, SignatureExpired):
             return None
         return db.session.get(User, data.get("user_id"))
+
+    def get_reset_token(self, expires_sec: int = 1800) -> str:
+        return self._make_token(RESET_TOKEN_SALT)
+
+    @staticmethod
+    def verify_reset_token(token: str, expires_sec: int = 1800):
+        return User._verify_token(token, RESET_TOKEN_SALT, expires_sec)
+
+    def get_confirmation_token(self) -> str:
+        return self._make_token(EMAIL_CONFIRM_SALT)
+
+    @staticmethod
+    def verify_confirmation_token(token: str, expires_sec: int = EMAIL_CONFIRM_TOKEN_MAX_AGE):
+        return User._verify_token(token, EMAIL_CONFIRM_SALT, expires_sec)
 
     def record_quiz_win(self, xp_reward: int = 20, token_reward: int = 5) -> bool:
         """Grant the daily quiz reward once per calendar day.
@@ -77,6 +94,7 @@ ACCOUNT_EVENT_TYPES = (
     "login_failed",
     "password_reset_requested",
     "password_reset_completed",
+    "email_confirmed",
 )
 
 ACCOUNT_EVENT_LABELS = {
@@ -85,6 +103,7 @@ ACCOUNT_EVENT_LABELS = {
     "login_failed": "Tentative de connexion échouée",
     "password_reset_requested": "Demande de réinitialisation du mot de passe",
     "password_reset_completed": "Mot de passe réinitialisé",
+    "email_confirmed": "Email confirmé",
 }
 
 

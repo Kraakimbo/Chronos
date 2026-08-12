@@ -12,7 +12,7 @@ from app.auth.forms import (
     RequestResetForm,
     ResetPasswordForm,
 )
-from app.email import send_reset_email
+from app.email import send_confirmation_email, send_reset_email
 from app.models import User
 
 auth_bp = Blueprint("auth", __name__, url_prefix="/auth")
@@ -43,6 +43,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         log_account_event(user, "signup")
+        send_confirmation_email(user)
 
         login_user(user)
         flash("Bienvenue dans Chronos ! Ton compte a été créé.", "success")
@@ -133,6 +134,37 @@ def reset_token(token):
         return redirect(url_for("auth.login"))
 
     return render_template("auth/reset_password.html", form=form)
+
+
+@auth_bp.route("/confirmer/<token>")
+def confirm_email(token):
+    user = User.verify_confirmation_token(token)
+    if user is None:
+        flash("Ce lien de confirmation est invalide ou a expiré.", "error")
+        return redirect(url_for("main.home") if current_user.is_authenticated else url_for("auth.login"))
+
+    if not user.email_confirmed:
+        user.email_confirmed = True
+        db.session.commit()
+        log_account_event(user, "email_confirmed")
+        flash("Ton email a bien été confirmé.", "success")
+    else:
+        flash("Cet email était déjà confirmé.", "info")
+
+    return redirect(url_for("main.home") if current_user.is_authenticated else url_for("auth.login"))
+
+
+@auth_bp.route("/renvoyer-confirmation", methods=["POST"])
+@login_required
+@limiter.limit("5 per hour")
+def resend_confirmation():
+    if not current_user.email_confirmed:
+        send_confirmation_email(current_user)
+    flash("Un nouvel email de confirmation vient d'être envoyé.", "info")
+    referrer = request.referrer
+    if referrer and _is_safe_redirect_target(referrer):
+        return redirect(referrer)
+    return redirect(url_for("main.home"))
 
 
 @auth_bp.route("/supprimer-compte", methods=["GET", "POST"])
