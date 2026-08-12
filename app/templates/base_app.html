@@ -28,6 +28,9 @@
     <a class="{{ 'text-primary font-bold' if active_page == 'explorer' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.explorer') }}">Explorer</a>
     <a class="{{ 'text-primary font-bold' if active_page == 'quiz' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.quiz') }}">Quiz</a>
     <a class="{{ 'text-primary font-bold' if active_page == 'profile' else 'text-secondary font-medium' }} hover:opacity-80 transition-opacity" href="{{ url_for('main.profile') }}">Profil</a>
+    {% if current_user.is_admin %}
+    <a class="text-secondary font-medium hover:opacity-80 transition-opacity" href="{{ url_for('admin.events_list') }}">Admin</a>
+    {% endif %}
   </nav>
   <div class="flex items-center gap-md">
     <div class="flex items-center gap-unit bg-surface-container-high px-sm py-unit rounded-full">

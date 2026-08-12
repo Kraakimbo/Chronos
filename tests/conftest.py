@@ -23,6 +23,12 @@ def app():
     with flask_app.app_context():
         db.drop_all()
         db.create_all()
+
+        from app.seed import seed_event_level_content, seed_events
+
+        seed_events()
+        seed_event_level_content()
+
         yield flask_app
         db.session.remove()
         db.drop_all()

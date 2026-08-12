@@ -82,7 +82,11 @@ def seed_admin_account() -> None:
             continue
 
         admin = User(
-            username=username, email=email, study_level=study_level, email_confirmed=True
+            username=username,
+            email=email,
+            study_level=study_level,
+            email_confirmed=True,
+            is_admin=True,
         )
         admin.set_password(password)
         db.session.add(admin)
@@ -90,3 +94,80 @@ def seed_admin_account() -> None:
         current_app.logger.info(
             "Compte admin bootstrap créé : %s (%s)", username, email
         )
+
+
+def seed_events() -> None:
+    """Populate historical_events from app.data.EVENTS, once.
+
+    A no-op once the table has any row: after the first deploy, the
+    database (not app/data.py) is the source of truth, so admin edits
+    made via /admin/evenements are never overwritten by a redeploy.
+    """
+    from app.data import EVENTS
+    from app.models import HistoricalEvent
+
+    if HistoricalEvent.query.first() is not None:
+        return
+
+    for slug, event in EVENTS.items():
+        map_pos = event.get("map_pos")
+        db.session.add(
+            HistoricalEvent(
+                slug=slug,
+                title=event["title"],
+                month=event["month"],
+                day=event["day"],
+                year=event["year"],
+                date_label=event["date_label"],
+                era=event["era"],
+                era_key=event["era_key"],
+                category=event["category"],
+                location=event["location"],
+                location_label=event.get("location_label"),
+                map_pos_x=map_pos[0] if map_pos else None,
+                map_pos_y=map_pos[1] if map_pos else None,
+                summary=event["summary"],
+                before=event["before"],
+                during=event["during"],
+                after=event["after"],
+                narrative=event.get("narrative", []),
+                why_it_matters=event["why_it_matters"],
+                characters=event.get("characters", []),
+                quiz_slug=event.get("quiz_slug"),
+                approximate=bool(event.get("approximate")),
+            )
+        )
+    db.session.commit()
+    current_app.logger.info("%d événements historiques importés en base.", len(EVENTS))
+
+
+def seed_event_level_content() -> None:
+    """Populate event_level_content from app.level_content.CONTENT_BY_LEVEL, once.
+
+    Same one-time-only rule as seed_events: a no-op once the table has any
+    row, so admin edits (per event, per study level) survive redeploys.
+    """
+    from app.level_content import CONTENT_BY_LEVEL
+    from app.models import EventLevelContent
+
+    if EventLevelContent.query.first() is not None:
+        return
+
+    count = 0
+    for slug, by_level in CONTENT_BY_LEVEL.items():
+        for level, text in by_level.items():
+            db.session.add(
+                EventLevelContent(
+                    event_slug=slug,
+                    level=level,
+                    summary=text["summary"],
+                    before=text["before"],
+                    during=text["during"],
+                    after=text["after"],
+                    narrative=text.get("narrative", []),
+                    why_it_matters=text["why_it_matters"],
+                )
+            )
+            count += 1
+    db.session.commit()
+    current_app.logger.info("%d textes par niveau d'étude importés en base.", count)

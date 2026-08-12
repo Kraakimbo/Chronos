@@ -66,6 +66,12 @@ jobs:
         working-directory: tests/a11y
         run: npx playwright install --with-deps chromium
 
+      - name: Apply database migrations
+        env:
+          SECRET_KEY: ci-a11y-secret
+          DATABASE_URL: "sqlite:////tmp/chronos_a11y.db"
+        run: flask --app run.py db upgrade
+
       - name: Start the app
         env:
           SECRET_KEY: ci-a11y-secret

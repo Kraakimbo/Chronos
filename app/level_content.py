@@ -10614,14 +10614,20 @@ QUIZ_BY_LEVEL = {
 def resolve_event_content(event, level):
     """Merge an event dict with its level-specific text, if any.
 
-    Falls back to the event's own (single-level) text for slugs not yet
-    covered in CONTENT_BY_LEVEL, and for an unrecognized/missing level.
+    Reads overrides from the event_level_content table (editable from
+    /admin/evenements/<slug>/niveau/<level>) rather than CONTENT_BY_LEVEL
+    directly -- that dict is only the one-time seed source now (see
+    app.seed.seed_event_level_content). Falls back to the event's own
+    (single-level) text for slugs/levels with no row in the database, and
+    for an unrecognized/missing level.
     """
+    from app.models import EventLevelContent
+
     level = level if level in STUDY_LEVELS else DEFAULT_LEVEL
-    overrides = CONTENT_BY_LEVEL.get(event["slug"], {}).get(level)
-    if not overrides:
+    row = EventLevelContent.query.filter_by(event_slug=event["slug"], level=level).first()
+    if row is None:
         return event
-    return {**event, **overrides}
+    return {**event, **row.to_overrides()}
 
 
 def resolve_quiz(question, level):
