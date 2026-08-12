@@ -1,0 +1,21 @@
+{% macro event_tabs(event, levels, level_labels, active) %}
+<div class="flex flex-wrap gap-sm mb-lg">
+  {% if active == 'reference' %}
+  <span class="px-md py-sm rounded-full font-body-bold text-sm bg-on-surface text-surface-container-lowest">Texte de référence</span>
+  {% else %}
+  <a href="{{ url_for('admin.edit_event', slug=event.slug) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">Texte de référence</a>
+  {% endif %}
+  {% for lvl in levels %}
+    {% if active == lvl %}
+    <span class="px-md py-sm rounded-full font-body-bold text-sm bg-on-surface text-surface-container-lowest">{{ level_labels[lvl] }}</span>
+    {% else %}
+    <a href="{{ url_for('admin.edit_event_level', slug=event.slug, level=lvl) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">{{ level_labels[lvl] }}</a>
+    {% endif %}
+  {% endfor %}
+  {% if active == 'illustrations' %}
+  <span class="px-md py-sm rounded-full font-body-bold text-sm bg-on-surface text-surface-container-lowest">Illustrations</span>
+  {% else %}
+  <a href="{{ url_for('admin.edit_event_images', slug=event.slug) }}" class="px-md py-sm rounded-full font-body-bold text-sm border border-outline-variant text-on-surface-variant hover:bg-surface-container-low transition-colors">Illustrations</a>
+  {% endif %}
+</div>
+{% endmacro %}

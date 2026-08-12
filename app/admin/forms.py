@@ -63,3 +63,43 @@ class LevelContentForm(FlaskForm):
     )
     why_it_matters = TextAreaField("Pourquoi c'est important", validators=[DataRequired()])
     submit = SubmitField("Enregistrer")
+
+
+class EventImagesForm(FlaskForm):
+    """One optional image per type (photo/tableau/portrait). Laisser l'URL
+    vide retire l'image de ce type de la galerie."""
+
+    photo_url = StringField("URL", validators=[Optional()])
+    photo_subject = StringField("Sujet / légende", validators=[Optional()])
+    photo_description = TextAreaField(
+        "Description",
+        validators=[Optional()],
+        description="Texte affiché au survol de la carte et sur la page de l'image. "
+        "Laisser vide pour utiliser le texte générique par défaut.",
+    )
+    photo_credit = StringField("Crédit", validators=[Optional()])
+    photo_licence = StringField("Licence", validators=[Optional()])
+
+    tableau_url = StringField("URL", validators=[Optional()])
+    tableau_subject = StringField("Sujet / légende", validators=[Optional()])
+    tableau_description = TextAreaField(
+        "Description",
+        validators=[Optional()],
+        description="Texte affiché au survol de la carte et sur la page de l'image. "
+        "Laisser vide pour utiliser le texte générique par défaut.",
+    )
+    tableau_credit = StringField("Crédit", validators=[Optional()])
+    tableau_licence = StringField("Licence", validators=[Optional()])
+
+    portrait_url = StringField("URL", validators=[Optional()])
+    portrait_subject = StringField("Sujet / légende", validators=[Optional()])
+    portrait_description = TextAreaField(
+        "Description",
+        validators=[Optional()],
+        description="Texte affiché au survol de la carte et sur la page de l'image. "
+        "Laisser vide pour utiliser le texte générique par défaut.",
+    )
+    portrait_credit = StringField("Crédit", validators=[Optional()])
+    portrait_licence = StringField("Licence", validators=[Optional()])
+
+    submit = SubmitField("Enregistrer")

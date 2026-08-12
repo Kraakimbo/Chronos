@@ -154,6 +154,7 @@ Les 45 événements du calendrier (`app/data.py` à l'origine) et leurs 4 varian
 
 - **Texte de référence** (`/admin/evenements/<slug>/modifier`) : titre, dates, lieu, résumé/récit/personnages — c'est ce texte qui s'affiche sur l'aperçu public (`/decouvrir/...`).
 - **Texte par niveau d'étude** (`/admin/evenements/<slug>/niveau/<niveau>`) : la réécriture spécifique à chaque niveau (enfant/collège/lycée/étudiant-adulte), affichée aux utilisateurs connectés selon leur profil. Sans texte spécifique pour un niveau donné, le texte de référence sert de repli.
+- **Illustrations** (`/admin/evenements/<slug>/illustrations`) : les images de la "Galerie d'archives" en bas de fiche (photo/tableau/portrait — `app/event_images.py` à l'origine), avec URL, légende, description (texte affiché au survol/sur la page dédiée — vide = texte générique par défaut selon le type d'image), crédit et licence. Laisser l'URL vide retire l'image de ce type. La meilleure image disponible sert aussi de bannière de couverture.
 
 Pour donner le rôle admin à un compte qui n'est pas un compte bootstrap `ADMIN_*` (ex. ton compte personnel déjà inscrit normalement), passe par le SQL Editor de Supabase :
 

@@ -239,3 +239,53 @@ class EventLevelContent(db.Model):
 
     def __repr__(self):
         return f"<EventLevelContent {self.event_slug}/{self.level}>"
+
+
+EVENT_IMAGE_TYPES = ("photo", "tableau", "portrait")
+
+
+class EventImage(db.Model):
+    """One archive image (photo/tableau/portrait) for an event's gallery.
+
+    Seeded once from app.event_images.EVENT_IMAGES (see
+    app.seed.seed_event_images); editable from
+    /admin/evenements/<slug>/illustrations. app.event_images.event_images_for()
+    converts rows back into the {image_type: {...}} dict shape templates
+    already expect, so nothing downstream needed to change.
+    """
+
+    __tablename__ = "event_images"
+    __table_args__ = (db.UniqueConstraint("event_slug", "image_type", name="uq_event_image_type"),)
+
+    id = db.Column(db.Integer, primary_key=True)
+    event_slug = db.Column(
+        db.String(64), db.ForeignKey("historical_events.slug"), nullable=False, index=True
+    )
+    image_type = db.Column(db.String(16), nullable=False)
+    url = db.Column(db.String(1024), nullable=False)
+    subject = db.Column(db.String(255), nullable=True)
+    description = db.Column(
+        db.Text,
+        nullable=True,
+        doc="Per-image blurb shown on the gallery card/detail page; falls "
+        "back to the generic per-type IMAGE_TYPE_INFO blurb when unset.",
+    )
+    credit = db.Column(db.String(255), nullable=True)
+    licence = db.Column(db.String(255), nullable=True)
+    updated_at = db.Column(
+        db.DateTime,
+        default=lambda: datetime.now(timezone.utc),
+        onupdate=lambda: datetime.now(timezone.utc),
+    )
+
+    def to_dict(self) -> dict:
+        return {
+            "url": self.url,
+            "subject": self.subject,
+            "description": self.description,
+            "credit": self.credit,
+            "licence": self.licence,
+        }
+
+    def __repr__(self):
+        return f"<EventImage {self.event_slug}/{self.image_type}>"

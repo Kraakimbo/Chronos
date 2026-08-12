@@ -132,10 +132,16 @@ def create_app(config_object="config.Config"):
         # querying tables here would fail on a database that doesn't have
         # them yet (or, for `db migrate`, isn't even meant to be touched).
         if "db" not in sys.argv:
-            from app.seed import seed_admin_account, seed_event_level_content, seed_events
+            from app.seed import (
+                seed_admin_account,
+                seed_event_images,
+                seed_event_level_content,
+                seed_events,
+            )
 
             seed_admin_account()
             seed_events()
             seed_event_level_content()
+            seed_event_images()
 
     return app

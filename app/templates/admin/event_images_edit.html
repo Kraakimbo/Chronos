@@ -1,6 +1,6 @@
 {% extends "base_app.html" %}
 {% from "admin/_tabs.html" import event_tabs %}
-{% block title %}Admin · {{ event.title }} ({{ level_labels[level] }}) - Chronos{% endblock %}
+{% block title %}Admin · {{ event.title }} (Illustrations) - Chronos{% endblock %}
 {% block content %}
 <main class="max-w-[900px] mx-auto px-margin-mobile md:px-margin-desktop py-xl">
   <div class="flex items-center gap-sm mb-lg">
@@ -10,13 +10,11 @@
     <h2 class="font-display-lg text-2xl md:text-3xl text-on-surface">« {{ event.title }} »</h2>
   </div>
 
-  {{ event_tabs(event, levels, level_labels, level) }}
+  {{ event_tabs(event, levels, level_labels, 'illustrations') }}
 
-  {% if not has_override %}
   <p class="text-sm text-on-surface-variant bg-surface-container-low rounded-xl px-md py-sm mb-lg">
-    Aucun texte spécifique à ce niveau pour l'instant — le texte de référence est pré-rempli ci-dessous. Enregistrer créera une version propre à ce niveau.
+    Ces images forment la "Galerie d'archives" en bas de la fiche événement, et la meilleure disponible sert de bannière de couverture (priorité : tableau, puis photo, puis portrait). Laisser l'URL vide retire l'image de ce type.
   </p>
-  {% endif %}
 
   <form method="POST" novalidate class="flex flex-col gap-lg">
     {{ form.hidden_tag() }}
@@ -27,21 +25,27 @@
         {% if f.description %}
           <p class="text-xs text-on-surface-variant mb-xs">{{ f.description }}</p>
         {% endif %}
-        {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", rows=rows) }}
+        {% if rows %}
+          {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none", rows=rows) }}
+        {% else %}
+          {{ f(class_="w-full rounded-xl border border-outline-variant bg-surface-container-lowest px-md py-sm focus:ring-2 focus:ring-primary-container focus:outline-none") }}
+        {% endif %}
         {% for error in f.errors %}
           <p class="text-error text-xs mt-xs">{{ error }}</p>
         {% endfor %}
       </div>
     {% endmacro %}
 
+    {% for image_type in image_types %}
     <div class="bg-surface-container-lowest rounded-2xl p-lg ambient-shadow border border-outline-variant/30 space-y-md">
-      {{ field(form.summary, rows=2) }}
-      {{ field(form.before, rows=2) }}
-      {{ field(form.during, rows=2) }}
-      {{ field(form.after, rows=2) }}
-      {{ field(form.narrative, rows=10) }}
-      {{ field(form.why_it_matters, rows=3) }}
+      <h3 class="font-label-caps text-on-surface-variant tracking-widest uppercase">{{ image_type_info[image_type].label }}</h3>
+      {{ field(form[image_type + "_url"]) }}
+      {{ field(form[image_type + "_subject"]) }}
+      {{ field(form[image_type + "_description"], rows=3) }}
+      {{ field(form[image_type + "_credit"]) }}
+      {{ field(form[image_type + "_licence"]) }}
     </div>
+    {% endfor %}
 
     {{ form.submit(class_="w-full h-[52px] bg-on-surface text-surface-container-lowest font-body-bold rounded-full hover:opacity-90 transition-opacity") }}
   </form>

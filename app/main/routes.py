@@ -5,7 +5,7 @@ from flask_login import current_user, login_required
 
 from app import db
 from app.data import AVATARS, QUIZ_QUESTIONS
-from app.event_images import EVENT_IMAGES, IMAGE_TYPE_INFO, cover_image
+from app.event_images import IMAGE_TYPE_INFO, cover_image, event_images_for
 from app.events import (
     all_categories,
     events_list,
@@ -114,7 +114,7 @@ def event_detail(slug):
         "pages/event_detail.html",
         event=event,
         years_ago=years_ago(event),
-        images=EVENT_IMAGES.get(slug, {}),
+        images=event_images_for(slug),
         cover=cover_image(slug),
         active_page="explorer",
     )
@@ -126,7 +126,7 @@ def event_image_detail(slug, image_type):
     event = get_event(slug)
     if event is None:
         abort(404)
-    image = EVENT_IMAGES.get(slug, {}).get(image_type)
+    image = event_images_for(slug).get(image_type)
     if image is None:
         abort(404)
     return render_template(

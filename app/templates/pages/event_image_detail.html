@@ -39,7 +39,7 @@
       {% else %}
       <h1 class="font-display-lg text-2xl md:text-4xl text-on-surface mb-md">{{ type_info.label }}</h1>
       {% endif %}
-      <p class="font-body-base text-on-surface-variant leading-relaxed">{{ type_info.blurb }}</p>
+      <p class="font-body-base text-on-surface-variant leading-relaxed">{{ image.description or type_info.blurb }}</p>
       <p class="font-body-base text-on-surface-variant leading-relaxed mt-md">
         Cette image illustre l'événement
         <a href="{{ url_for('main.event_detail', slug=event.slug) }}" class="text-primary font-body-bold hover:underline">{{ event.title }}</a>
