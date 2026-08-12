@@ -6,6 +6,23 @@
 .ambient-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); }
 .glass-nav { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
 
+/* Fades the trailing edge of a horizontally-scrollable row (mobile card
+   carousels) so clipped content reads as "more to scroll" instead of an
+   abrupt cut. Masks the actual pixels rather than painting a matching
+   background color on top, so it works regardless of the row's own
+   background (cards, page, dark mode, ...). Disabled once a row switches
+   to a vertical layout at the lg breakpoint (see lg:flex-col usages). */
+.scroll-fade-x {
+  mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
+  -webkit-mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
+}
+@media (min-width: 1024px) {
+  .scroll-fade-x {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
 /* Visible keyboard focus everywhere, on top of Tailwind's focus: utilities. */
 a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--color-primary);

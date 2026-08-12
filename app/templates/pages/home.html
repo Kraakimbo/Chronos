@@ -16,13 +16,13 @@
   </section>
 
   <section class="relative w-full rounded-2xl overflow-hidden ambient-shadow border border-outline-variant bg-surface-container-lowest">
-    <div class="relative h-[400px] md:h-[500px] w-full bg-surface-container flex items-end">
+    <div class="relative min-h-[400px] md:min-h-[500px] w-full bg-surface-container flex items-end">
       <div class="absolute inset-0">{{ event_cover_photo(event.slug) }}</div>
       <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/75 to-black/25"></div>
       <div class="relative w-full p-lg md:p-xl flex flex-col gap-md">
-        <div class="flex items-center gap-sm">
+        <div class="flex flex-wrap items-center gap-x-sm gap-y-unit">
           <span class="bg-primary text-on-primary px-sm py-unit rounded-full font-label-caps uppercase tracking-wider">{{ event.era }}</span>
-          <span class="text-white/90 font-body-base flex items-center gap-unit drop-shadow">
+          <span class="text-white/90 font-body-base flex items-center gap-unit drop-shadow flex-wrap">
             <span class="material-symbols-outlined text-[16px]">location_on</span>{{ event.location }}
             {% if is_exact_match %}· Il y a {{ years_ago }} ans{% else %}· Événement à la une{% endif %}
           </span>
