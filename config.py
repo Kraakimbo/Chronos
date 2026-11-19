@@ -10,9 +10,29 @@ class Config:
             "SECRET_KEY is not set. Copy .env.example to .env and set a random SECRET_KEY."
         )
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL") or (
-        f"sqlite:///{os.path.join(basedir, 'instance', 'chronos.db')}"
-    )
+    def _normalized_database_uri() -> str:
+        """Force the psycopg2 dialect regardless of the URL scheme given.
+
+        requirements.txt installs psycopg2-binary, not psycopg (v3). Some
+        providers (Supabase included) hand out connection strings using
+        "postgres://" (Heroku-style, deprecated by SQLAlchemy) or
+        "postgresql+psycopg://" (the v3 dialect) -- either one makes
+        SQLAlchemy try to import a driver that isn't installed here
+        ("ModuleNotFoundError: No module named 'psycopg'"), so normalize
+        to "postgresql+psycopg2://" no matter what scheme was configured.
+        """
+        url = os.environ.get("DATABASE_URL")
+        if not url:
+            return f"sqlite:///{os.path.join(basedir, 'instance', 'chronos.db')}"
+        if url.startswith("postgres://"):
+            url = "postgresql://" + url[len("postgres://") :]
+        if url.startswith("postgresql://"):
+            url = "postgresql+psycopg2://" + url[len("postgresql://") :]
+        elif url.startswith("postgresql+psycopg://"):
+            url = "postgresql+psycopg2://" + url[len("postgresql+psycopg://") :]
+        return url
+
+    SQLALCHEMY_DATABASE_URI = _normalized_database_uri()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     SESSION_COOKIE_HTTPONLY = True
